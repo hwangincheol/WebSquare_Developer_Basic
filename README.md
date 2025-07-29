@@ -19,6 +19,7 @@
 ![2](https://github.com/user-attachments/assets/895dfbeb-9879-4ecb-b44c-b410d10d0bc8)
 조회 버튼을 누를시에 연결된 데이터를 불러옴.
 
+![4](https://github.com/user-attachments/assets/a7724657-ea4a-46b5-a79b-43bafca443c4)
 ![3](https://github.com/user-attachments/assets/4deda87a-2e67-41c0-975f-fdb18a8da114)
 1. 그리드 뷰에서 선택된 데이터를 아래에 별도로 보여줌.
 2. Property 속성 > rowStatusVisible 값을 true로 설정하여 수정되었을 경우 표시를 남김 (rowStatusHeaderValue로 상태 이름 지정)

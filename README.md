@@ -11,6 +11,7 @@
 - 기본과정 교재 : WebSquare_Developer_Basic/WRE/WebContent/edu/docs/WebSquare5_developer_basic_SP5.pdf
 
 <br><br>
+- 예제 : WebSquare_Developer_Basic/WRE/WebContent/edu/training1_gridView.xml
 ![1](https://github.com/user-attachments/assets/be4ff109-137a-4178-abcc-8511fa7b297c)
 - 예제 : WebSquare_Developer_Basic/WRE/WebContent/edu/training1_gridView.xml
 

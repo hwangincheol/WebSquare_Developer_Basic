@@ -33,6 +33,7 @@
 7. 마찬가지로 inputType 값을 calendar로 수정. viewType도 icon으로 수정.
 
 <br>
+
 (추가 그리드 속성 설정) 
 - 그리드 공간 안남게 채워주는 역할 : autoFit 값을 allColumn 통해 균등하게 분배
 - 웹 크기를 줄였을 때 특정 사이즈 부터 적용 하지 않을 때 : autoFitMinWidth 기본값은 400px, 넉넉하게 900px으로 설정 (autoFit 사용 시 autoFitMinWidth도 같이 적용하는게 좋음)
@@ -47,6 +48,7 @@
 - 우편 번호 컬럼에 포멧 설정 : displayFormat 값을 ###-###으로 설정. (displayFormat 말고 displayFormatter 값을 통해 함수의 형태로 설정이 가능함)
 
 <br>
+
 (추가 그리드 이벤트 설정) 
 - 사번 컬럼을 더블클릭 했을때 alert창 띄우기 : oncelldbclick 값을 스크립트 눌러서 alert 띄우는 함수 작성.
 - outline > Head > DataColeection > DataList(내가 설정한 데이터) 클릭 후 Property 이벤트 > ondataload, oninsertrow, onremoverow 값을 함수를 통해 총 건수 구하는 스크립트 작성
@@ -57,10 +59,4 @@
 
 <br>
 
-
-
-[Certification.pdf](https://github.com/user-attachments/files/21490839/Certification.pdf)
-
-
-
-
+![5](https://github.com/user-attachments/assets/ccf76532-cabb-49a9-98d4-fcd3986dae37)

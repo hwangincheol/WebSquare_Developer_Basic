@@ -32,7 +32,7 @@
 6-2. viewType을 icon으로 바꿔주면서 선택이 가능한걸 화면을 통해 보여줌.
 7. 마찬가지로 inputType 값을 calendar로 수정. viewType도 icon으로 수정.
 
-
+<br>
 (추가 그리드 속성 설정) 
 - 그리드 공간 안남게 채워주는 역할 : autoFit 값을 allColumn 통해 균등하게 분배
 - 웹 크기를 줄였을 때 특정 사이즈 부터 적용 하지 않을 때 : autoFitMinWidth 기본값은 400px, 넉넉하게 900px으로 설정 (autoFit 사용 시 autoFitMinWidth도 같이 적용하는게 좋음)
@@ -46,6 +46,7 @@
 - 화면에 보여주는 행 수 조절 : visibleRowNum 값을 원하는 값으로 (보통은 10 ~ 15개 사용, all로 설정 X)
 - 우편 번호 컬럼에 포멧 설정 : displayFormat 값을 ###-###으로 설정. (displayFormat 말고 displayFormatter 값을 통해 함수의 형태로 설정이 가능함)
 
+<br>
 (추가 그리드 이벤트 설정) 
 - 사번 컬럼을 더블클릭 했을때 alert창 띄우기 : oncelldbclick 값을 스크립트 눌러서 alert 띄우는 함수 작성.
 - outline > Head > DataColeection > DataList(내가 설정한 데이터) 클릭 후 Property 이벤트 > ondataload, oninsertrow, onremoverow 값을 함수를 통해 총 건수 구하는 스크립트 작성
@@ -54,8 +55,11 @@
 - 업로드는 엑셀에서 라벨로 나오기때문에 엉뚱하게 올라감. 그래서 option객체를 만들고 헤더가 있으니 option.headerExist = "1"; option.type = "1"; .advancedExcelUpload(option); 처럼 설정.
 - 그리드 뷰 선택 > 도움말(Help) > API > 밑으로 내리다보면 advancedExcelDownload( options, infoArr ) 부분이 있는데 참고하면 좋음.
 
+<br>
 
 
+
+[Certification.pdf](https://github.com/user-attachments/files/21490839/Certification.pdf)
 
 
 

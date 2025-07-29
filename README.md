@@ -21,14 +21,14 @@
 
 ![4](https://github.com/user-attachments/assets/a7724657-ea4a-46b5-a79b-43bafca443c4)
 ![3](https://github.com/user-attachments/assets/4deda87a-2e67-41c0-975f-fdb18a8da114)
-1. 그리드 뷰에서 각각의 row를 선택할 때 마다 아래쪽에 마스터-디테일 구조가 나타남.
+1. 그리드 뷰에서 각각의 row를 선택할 때 마다 아래쪽에 마스터-디테일 구조가 나타남. <br>
 1-2. 웹스퀘어의 그리드 뷰가 각각의 row 인덱스를 클릭할때마다 해당하는 단건의 데이터를 가상으로 만들고, 가상의 데이터와 테이블을 연결해주는 기능이 있음. (DataList를 드래그해서 바인딩해주면 됨)
 2. Property 속성 > rowStatusVisible 값을 true로 설정하여 수정되었을 경우 표시를 남김 (rowStatusHeaderValue로 상태 이름 지정)
-3. 열을 추가해서 해당 열 헤더, 바디에 inputType을 checkbox로 바꾼다음, 연결되는 DataList에 CHK라는 행 추가해서 해당 바디에 id값을 CHK로 선택.
+3. 열을 추가해서 해당 열 헤더, 바디에 inputType을 checkbox로 바꾼다음, 연결되는 DataList에 CHK라는 행 추가해서 해당 바디에 id값을 CHK로 선택. <br>
 3-2. 내가 만든 데이터 컬럼의 값이 바뀔때 상태값을 건드리지 않으려면 Outline > Header > 신규로 만든 데이터 컬럼을 선택 > Property 속성 > ignoreStatus 값을 true로 설정. (체크 용도로 사용하는 컬럼은 꼭 설정 해야함)
 4. Property 속성 > customFormatter 값을 함수 형태로 성별에 따라 사번 색상이 다르게 코드 작성. 해당 기능은 값을 체크해서 스타일을 변경할 때 자주 사용함(데이터 값을 절대 변경하지 말것)
 5. Property 이벤트 > onafteredit 값을 스크립트 눌러서 코드를 작성. 이름이 편집모드에 들어갔을때만 색상을 파란색으로 변경.
-6. 그리드 뷰의 컬럼은 inputType 기본값이 text라서 지금과 같은 코드성 데이터를 사용할때에는 select나 radio, combo같이 필요에따라 수정. (select처럼 선택해서 사용할 시 더블 클릭해서 설정 > 데이터객체 연결)
+6. 그리드 뷰의 컬럼은 inputType 기본값이 text라서 지금과 같은 코드성 데이터를 사용할때에는 select나 radio, combo같이 필요에따라 수정. (select처럼 선택해서 사용할 시 더블 클릭해서 설정 > 데이터객체 연결) <br>
 6-2. viewType을 icon으로 바꿔주면서 선택이 가능한걸 화면을 통해 보여줌.
 7. 마찬가지로 inputType 값을 calendar로 수정. viewType도 icon으로 수정.
 

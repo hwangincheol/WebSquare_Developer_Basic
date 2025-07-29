@@ -23,7 +23,8 @@
 ![3](https://github.com/user-attachments/assets/4deda87a-2e67-41c0-975f-fdb18a8da114)
 1. 그리드 뷰에서 선택된 데이터를 아래에 별도로 보여줌.
 2. Property 속성 > rowStatusVisible 값을 true로 설정하여 수정되었을 경우 표시를 남김 (rowStatusHeaderValue로 상태 이름 지정)
-3. 
+3. 열을 추가해서 해당 열 헤더, 바디에 inputType을 checkbox로 바꾼다음, 연결되는 DataList에 CHK라는 행 추가해서 해당 바디에 id값을 CHK로 선택.
+3-2. 내가 만든 데이터 컬럼의 값이 바뀔때 상태값을 건드리지 않으려면 Outline > Header > 신규로 만든 데이터 컬럼을 선택 > Property 속성 > ignoreStatus 값을 true로 설정. (체크 용도로 사용하는 컬럼은 꼭 설정 해야함)
 
 5. Property 이벤트 > onafteredit 값을 스크립트 눌러서 이름이 편집모드에 들어갔을때만 색상을 파란색으로 변경.
 6. 그리드 뷰의 컬럼은 inputType 기본값이 text라서 지금과 같은 코드성 데이터를 사용할때에는 select나 radio, combo같이 필요에따라 수정. (select처럼 선택해서 사용할 시 더블 클릭해서 설정 > 데이터객체 연결)
@@ -47,7 +48,10 @@
 (추가 그리드 이벤트 설정) 
 - 사번 컬럼을 더블클릭 했을때 alert창 띄우기 : oncelldbclick 값을 스크립트 눌러서 alert 띄우는 함수 작성.
 - outline > Head > DataColeection > DataList(내가 설정한 데이터) 클릭 후 Property 이벤트 > ondataload, oninsertrow, onremoverow 값을 함수를 통해 총 건수 구하는 스크립트 작성
-
+- 마찬가지로 행추가, 행삭제, 다중삭제, 초기화 등 버튼 클릭하고 우클릭 > 이벤트 설정을 통해 스크립트 작성후 동작 설정. (delete와 달리 remove는 진짜로 지워버림. CRUD를 보통 한꺼번에 처리해서 delete를 많이 씀)
+- 다운로드는 스크립트 .advancedExcelDownload([]); 에서 [] 처럼 빈상태면 그리드 보이는 화면 그대로 다운로드 됨.
+- 업로드는 엑셀에서 라벨로 나오기때문에 엉뚱하게 올라감. 그래서 option객체를 만들고 헤더가 있으니 option.headerExist = "1"; option.type = "1"; .advancedExcelUpload(option); 처럼 설정.
+- 그리드 뷰 선택 > 도움말(Help) > API > 밑으로 내리다보면 advancedExcelDownload( options, infoArr) 이 있는데 참고하면 좋음.
 
 
 

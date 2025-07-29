@@ -19,4 +19,38 @@
 ![2](https://github.com/user-attachments/assets/895dfbeb-9879-4ecb-b44c-b410d10d0bc8)
 조회 버튼을 누를시에 연결된 데이터를 불러옴.
 
+![3](https://github.com/user-attachments/assets/4deda87a-2e67-41c0-975f-fdb18a8da114)
+1. 그리드 뷰에서 선택된 데이터를 아래에 별도로 보여줌.
+2. Property 속성 > rowStatusVisible 값을 true로 설정하여 수정되었을 경우 표시를 남김 (rowStatusHeaderValue로 상태 이름 지정)
+3. 
+
+5. Property 이벤트 > onafteredit 값을 스크립트 눌러서 이름이 편집모드에 들어갔을때만 색상을 파란색으로 변경.
+6. 그리드 뷰의 컬럼은 inputType 기본값이 text라서 지금과 같은 코드성 데이터를 사용할때에는 select나 radio, combo같이 필요에따라 수정. (select처럼 선택해서 사용할 시 더블 클릭해서 설정 > 데이터객체 연결)
+6-2. viewType을 icon으로 바꿔주면서 선택이 가능한걸 화면을 통해 보여줌.
+7. 마찬가지로 inputType 값을 calendar로 수정. viewType도 icon으로 수정.
+
+
+(추가 그리드 속성 설정) 
+- 그리드 공간 안남게 채워주는 역할 : autoFit 값을 allColumn 통해 균등하게 분배
+- 웹 크기를 줄였을 때 특정 사이즈 부터 적용 하지 않을 때 : autoFitMinWidth 기본값은 400px, 넉넉하게 900px으로 설정 (autoFit 사용 시 autoFitMinWidth도 같이 적용하는게 좋음)
+- 컬럼을 움직이게 할때 : columnMove 값을 true로 하여 드래그로 컬럼을 움직이게 할 수 있음.
+- 그리드의 헤더를 더블 클릭해서 정렬 : sortable 값을 true (컨트롤키를 눌러 멀티sort 가능, sort 설정 시 개별 헤더에 설정 가능)
+- 그리드 뷰의 순번을 적용하고자 할때 : rowNumVisible 값을 true로 설정하면 순번에 해당하는 항목이 자동 생성 (rowNumHeaderValue로 순번 이름 지정)
+- 이름 컬럼 헤더에 필터 적용 : 헤더에 useFilter 값을 true, 그리드에서 useFilterList 값을 true
+- 클릭해서 데이터 수정 : editModeEvent 기본값은 더블클릭. 편의상 원클릭으로 수정.
+- 탭 키를 사용하여 편집모드로 적용 : keyMoveEditMode 값을 true
+- 마지막 컬럼에서 아랫줄로 제어 하고 싶을 때 : focusFlow 값을 linear
+- 화면에 보여주는 행 수 조절 : visibleRowNum 값을 원하는 값으로 (보통은 10 ~ 15개 사용, all로 설정 X)
+- 우편 번호 컬럼에 포멧 설정 : displayFormat 값을 ###-###으로 설정. (displayFormat 말고 displayFormatter 값을 통해 함수의 형태로 설정이 가능함)
+
+(추가 그리드 이벤트 설정) 
+- 사번 컬럼을 더블클릭 했을때 alert창 띄우기 : oncelldbclick 값을 스크립트 눌러서 alert 띄우는 함수 작성.
+- outline > Head > DataColeection > DataList(내가 설정한 데이터) 클릭 후 Property 이벤트 > ondataload, oninsertrow, onremoverow 값을 함수를 통해 총 건수 구하는 스크립트 작성
+
+
+
+
+
+
+
 

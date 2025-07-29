@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:w2="http://www.inswave.com/websquare"
+	xmlns:xf="http://www.w3.org/2002/xforms">
+	<head>
+		<w2:historyInfo>
+			<w2:history meta_no="01" meta_desc="최초작성" meta_date="20230425" meta_user="InswaveSystems" ></w2:history>
+		</w2:historyInfo>
+		<w2:type>COMPONENT</w2:type>
+		<w2:buildDate />
+		<w2:MSA />
+		<xf:model>
+			<w2:dataCollection baseNode="map">
+			</w2:dataCollection>
+			<w2:workflowCollection />
+			<xf:submission id="submission1" ref="" target="data:json,dlt_dataList1" action="/data/sampleData/sampleData_CheckBox.json"
+				method="post" mediatype="application/json" encoding="UTF-8" instance="" replace="" errorHandler="" customHandler="" mode="asynchronous"
+				processMsg="" ev:submit="" ev:submitdone="" ev:submiterror="" abortTrigger="">
+			</xf:submission>
+		</xf:model>
+		<w2:layoutInfo />
+		<w2:publicInfo method="" />
+		<script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function () {
+
+};
+]]></script>
+	</head>
+	<body ev:onpageload="scwin.onpageload">
+		<xf:group class="sub_contents" id="" style="">
+			<xf:group class="ws_example_grp_desc" id="" style="">
+				<w2:textbox escape="false" id=""
+					label='CheckBox컴포넌트의 선택 항목을 직접 입력하고, 선택 항목을 표시하는 방법을 설정하는 예제입니다.&lt;br/&gt;&lt;br/&gt;이 기능은 아래의 속성으로 사용할 수 있습니다.&lt;br/&gt;- cols : (속성)선택 항목을 표시할 열의 수.&lt;br/&gt;- rows: (속성)선택 항목을 표시할 행의 수.'
+					style="">
+				</w2:textbox>
+			</xf:group>
+			<xf:group class="example_div_tb_style_wrap" id="">
+				<xf:group class="example_div_tb_style_wrap" id="" style="">
+					<xf:group class="example_div_tr_style" id="" style="">
+						<w2:textbox class="example_div_th_style" escape="false" id="" label="직접입력한 데이터 표시하기" style=""></w2:textbox>
+						<xf:group class="example_div_td_style" id="" style="">
+							<w2:textbox class="ws5_example_txt_normal" displayFormat="" escape="false" id=""
+								label="CheckBox컴포넌트에 직접 입력한 DataList가 표시되는 것을 확인한다." style="">
+							</w2:textbox>
+							<xf:select selectedindex="-1" id="cbx_exam1" appearance="full" style="min-width: 80px;min-height: 21px;" cols="" rows=""
+								ref="">
+								<xf:choices>
+									<xf:item>
+										<xf:label><![CDATA[Apple]]></xf:label>
+										<xf:value><![CDATA[aaa]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[Banana]]></xf:label>
+										<xf:value><![CDATA[bbb]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[Coconut]]></xf:label>
+										<xf:value><![CDATA[ccc]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[Grapefruit]]></xf:label>
+										<xf:value><![CDATA[ggg]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[Mango]]></xf:label>
+										<xf:value><![CDATA[mmm]]></xf:value>
+									</xf:item>
+								</xf:choices>
+							</xf:select>
+
+						</xf:group>
+					</xf:group>
+					<xf:group class="example_div_tr_style" id="" style="">
+						<w2:textbox class="example_div_th_style" escape="false" id="" label="선택 항목 3열로 표시하기" style=""></w2:textbox>
+						<xf:group class="example_div_td_style" id="" style="">
+							<w2:textbox class="ws5_example_txt_normal" displayFormat="" escape="false" id="" label="선택 항목이 3열로 표시되는 것을 확인한다." style="">
+							</w2:textbox>
+							<xf:select appearance="full" cols="3" id="cbx_exam2" ref="" rows="" selectedindex="-1"
+								style="min-width: 80px;min-height: 21px;">
+								<xf:choices>
+									<xf:item>
+										<xf:label><![CDATA[Apple]]></xf:label>
+										<xf:value><![CDATA[aaa]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[Banana]]></xf:label>
+										<xf:value><![CDATA[bbb]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[Coconut]]></xf:label>
+										<xf:value><![CDATA[ccc]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[Grapefruit]]></xf:label>
+										<xf:value><![CDATA[ggg]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[Mango]]></xf:label>
+										<xf:value><![CDATA[mmm]]></xf:value>
+									</xf:item>
+								</xf:choices>
+							</xf:select>
+						</xf:group>
+					</xf:group>
+					<xf:group class="example_div_tr_style" id="" style="">
+						<w2:textbox class="example_div_th_style" escape="false" id="" label="선택 항목 3행으로 표시하기" style=""></w2:textbox>
+						<xf:group class="example_div_td_style" id="" style="">
+							<w2:textbox class="ws5_example_txt_normal" displayFormat="" escape="false" id="" label="선택 항목이 3행으로 표시되는 것을 확인한다."
+								style="">
+							</w2:textbox>
+							<xf:select appearance="full" cols="" id="cbx_exam3" ref="" rows="3" selectedindex="-1"
+								style="min-width: 80px;min-height: 21px;">
+								<xf:choices>
+									<xf:item>
+										<xf:label><![CDATA[Apple]]></xf:label>
+										<xf:value><![CDATA[aaa]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[Banana]]></xf:label>
+										<xf:value><![CDATA[bbb]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[Coconut]]></xf:label>
+										<xf:value><![CDATA[ccc]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[Grapefruit]]></xf:label>
+										<xf:value><![CDATA[ggg]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[Mango]]></xf:label>
+										<xf:value><![CDATA[mmm]]></xf:value>
+									</xf:item>
+								</xf:choices>
+							</xf:select>
+							
+						</xf:group>
+					</xf:group>
+				</xf:group>
+			</xf:group>
+
+		</xf:group>
+	</body>
+</html>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:w2="http://www.inswave.com/websquare"
+	xmlns:xf="http://www.w3.org/2002/xforms">
+	<head meta_screenName="[GridView] 선택된 열 또는 행의 인덱스 반환받기" meta_type="메인">
+		<w2:historyInfo>
+			<w2:history meta_no="01" meta_desc="최초작성" meta_date=" 20230712" meta_user="InswaveSystems"></w2:history>
+		</w2:historyInfo>
+		<w2:type>COMPONENT</w2:type>
+		<w2:buildDate />
+		<w2:MSA />
+		<xf:model>
+			<w2:dataCollection baseNode="map">
+				<w2:dataList baseNode="list" id="dlt_books_1" repeatNode="map" style="" valueAttribute="">
+					<w2:columnInfo>
+						<w2:column dataType="text" id="categoryLabel" name="분류"></w2:column>
+						<w2:column dataType="text" id="label" name="도서명"></w2:column>
+					</w2:columnInfo>
+				</w2:dataList>
+			</w2:dataCollection>
+			<w2:workflowCollection />
+		</xf:model>
+		<w2:layoutInfo />
+		<w2:publicInfo method="" />
+		<script lazy="false" type="text/javascript"><![CDATA[scwin.onpageload = function () {
+    // DataList 'dlt_books_1'에 데이터 할당하기
+    let data = [
+        { "label": "공정하다는 착각", "categoryLabel": "인문" },
+        { "label": "기분을 관리하면 인생이 관리된다", "categoryLabel": "시/에세이" },
+        { "label": "내가 틀릴 수도 있습니다", "categoryLabel": "인문" },
+        { "label": "우리는 여전히 삶을 사랑하는가", "categoryLabel": "인문" },
+        { "label": "저만치 혼자서", "categoryLabel": "소설" },
+        { "label": "무엇이 옳은가", "categoryLabel": "인문" },
+        { "label": "불편한 편의점", "categoryLabel": "소설" },
+        { "label": "잘했고 잘하고 있고 잘 될 것이다", "categoryLabel": "시/에세이" },
+        { "label": "책들의 부엌", "categoryLabel": "소설" }
+    ];
+    dlt_books_1.setJSON(data);
+
+    // 예제 테스트를 위해 셀에 포커스 지정.
+    grd_exam.setFocusedCell(2, 1);
+};
+
+/**
+ * 버튼 [선택된 열의 인덱스 반환받기] 클릭 시
+ */
+scwin.btn_exam1_1_onclick = function (e) {
+    // GridView 'grd_exam'의 선택된 열의 Index를 반환받습니다.
+    // 선택된 열이 없으면 null이 반환됩니다.
+    let colIndex = grd_exam.getFocusedColumnIndex();
+
+    alert("focusedColumnIndex : " + colIndex);
+    console.log("focusedColumnIndex : ", colIndex);
+};
+
+/**
+ * 버튼 [선택된 행의 인덱스 반환받기] 클릭 시
+ */
+scwin.btn_exam1_2_onclick = function (e) {
+    // GridView 'grd_exam'의 선택된 행의 Index를 반환받습니다.
+    // 선택된 행이 없으면 -1이 반환됩니다.
+    let rowIndex = grd_exam.getFocusedRowIndex();
+
+    alert("focusedRowIndex : " + rowIndex);
+    console.log("focusedRowIndex : ", rowIndex);
+};
+/**
+ * 버튼 [GridView의 포커스 제거하기] 클릭 시
+ */
+scwin.btn_exam_removeFocusedCell_onclick = function (e) {
+    // GridView 'grd_exam'의 포커스를 제거합니다.
+    grd_exam.removeFocusedCell();
+};
+]]></script>
+	</head>
+	<body ev:onpageload="scwin.onpageload">
+		<xf:group class="sub_contents" id="" style="">
+			<xf:group class="ws_example_grp_desc" id="" style="">
+				<w2:textbox escape="false" id=""
+					label="GridView의 선택된 열 또는 행의 인덱스를 반환받는 예제입니다.&lt;br/&gt;다음의 GridView 함수로 구현할 수 있습니다.&lt;br/&gt;- getFocusedColumnIndex: 포커스된 셀의 열 인덱스를 반환. 포커스된 열이 없으면 null이 반환됩니다.&lt;br/&gt;- getFocusedRowIndex: 포커스된 셀의 행 인덱스를 반환. 포커스된 행이 없으면 -1이 반환됩니다."
+					style="">
+				</w2:textbox>
+				<w2:textbox class="" escape="false" id=""
+					label="GridView의 셀을 선택(클릭)하고, 버튼 [선택된 열의 인덱스 반환받기] 또는 [선택된 행의 인덱스 반환받기]를 클릭하면 브라우저 'alert'으로 반환 값을 확인할 수 있습니다." style="">
+				</w2:textbox>
+			</xf:group>
+			<xf:group class="example_div_tb_style_wrap mb_def" id="" style="">
+				<xf:group class="example_div_tr_style" id="" style="">
+					<xf:group class="example_div_td_style" id="" style="">
+						<xf:group class="mb_def_box nobottom" id="" style="">
+							<xf:trigger id="btn_exam1_1" style="" type="button" class="btn_exam_exec" ev:onclick="scwin.btn_exam1_1_onclick">
+								<xf:label><![CDATA[선택된 열의 인덱스 반환받기]]></xf:label>
+							</xf:trigger>
+							<xf:trigger class="btn_exam_exec" id="btn_exam1_2" style="" type="button" ev:onclick="scwin.btn_exam1_2_onclick">
+								<xf:label><![CDATA[선택된 행의 인덱스 반환받기]]></xf:label>
+							</xf:trigger>
+						</xf:group>
+						<xf:group class="mb_def_box nobottom" id="" style="">
+							<xf:trigger class="btn_cm" ev:onclick="scwin.btn_exam_removeFocusedCell_onclick" id="btn_exam_removeFocusedCell" style=""
+								type="button">
+								<xf:label><![CDATA[GridView의 포커스 제거하기]]></xf:label>
+							</xf:trigger>
+						</xf:group>
+						<xf:group id="" class="mb_def_box nobottom" style="">
+							<w2:gridView autoFit="lastColumn" autoFitMinWidth="170" class="gvw" dataList="data:dlt_books_1" defaultCellHeight="26"
+								id="grd_exam" initFixedHeightByRowNum="4" readOnly="true" rowNumWidth="26" style="height:60px;" tooltipDisplay="true"
+								visibleRowNum="4" rowNumVisible="true">
+								<w2:caption id="caption1" style="" value="this is a grid caption."></w2:caption>
+								<w2:header id="header1" style="">
+									<w2:row id="row1" style="">
+										<w2:column displayMode="label" id="column5" inputType="text" value="분류" width="70"></w2:column>
+										<w2:column displayMode="label" id="column3" inputType="text" value="도서명" width="100"></w2:column>
+									</w2:row>
+								</w2:header>
+								<w2:gBody id="gBody1" style="">
+									<w2:row id="row2" style="">
+										<w2:column displayMode="label" id="categoryLabel" inputType="text" width="70"></w2:column>
+										<w2:column displayMode="label" id="label" inputType="text" textAlign="left" width="100"></w2:column>
+									</w2:row>
+								</w2:gBody>
+							</w2:gridView>
+						</xf:group>
+					</xf:group>
+				</xf:group>
+			</xf:group>
+		</xf:group>
+	</body>
+</html>

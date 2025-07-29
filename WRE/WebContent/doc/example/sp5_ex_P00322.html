@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR.html11/DTD.html11.dtd">
+<html xmlns="http://www.w3.org/1999.html" xml:lang="ko"><head><meta http-equiv="Cache-Control" content="no-cache"/><meta http-equiv="Pragma" content="no-cache"/><meta http-equiv="Expires" content="-1"/><title>[WidgetContainer] 위젯 추가 - 파라미터 정의하기, 반환받기</title><link rel="stylesheet" href="css/book.css" type="text/css" /><meta http-equiv="Content-Type" content="application.html+xml; charset=utf-8" /><meta name="EPB-UUID" content="b3283707c39ac371" /></head><body><div class="chapter_content"><h1 id="r_6e467a037161d403" class="chapter_title">[WidgetContainer] 위젯 추가 - 파라미터 정의하기, 반환받기</h1><h1 id="r_e0e68c20f92b2200" class="element heading1" data-element-id="e0e68c20f92b2200"><div class="r_heading_inner"><span class="heading1_n">1</span><span>개요</span></div></h1><pre id="r_33b77a63d118a180" class="element pre" data-element-id="33b77a63d118a180">WidgetContainer의 함수 'addWidgets'로 위젯을 추가할 때, 위젯에 파라미터를 설정하고, 설정된 파라미터를 반환받는 예제입니다.</pre><p id="r_8fd7ef678c82a6d8" class="element r_example_link_p" data-element-id="8fd7ef678c82a6d8"><a class="link" target="_blank" href="http://example.websquare.kr/link.html?p=P00322">P00322</a></p><h1 id="r_d5cefe0e3bce5470" class="element heading1" data-element-id="d5cefe0e3bce5470"><div class="r_heading_inner"><span class="heading1_n">2</span><span>구현된 기능</span></div></h1><ul id="r_482a8b6a0ce519f6" class="element unordered_list" data-element-id="482a8b6a0ce519f6"><li><p>위젯 추가 시 파라미터 설정하기</p></li><li><p>Widget 화면에서 파라미터 반환받기</p></li><li><p>WidgetContainer 화면에서 파라미터 반환받기</p></li></ul><h1 id="r_1df7cda4ed64172c" class="element heading1" data-element-id="1df7cda4ed64172c"><div class="r_heading_inner"><span class="heading1_n">3</span><span>예제 테스트 방법</span></div></h1><h2 id="r_cce87bc453a66516" class="element heading2" data-element-id="cce87bc453a66516"><div class="r_heading_inner"><span class="heading2_n">3.1</span><span>위젯 추가 시 파라미터 설정하기</span></div></h2><p id="r_fc1bc0a66196fa5e" class="element r_heading_dt_p" data-element-id="fc1bc0a66196fa5e">STEP 1. 초기 상태를 확인합니다.</p><pre id="r_b4f10d7cb6fbc40f" class="element pre" data-element-id="b4f10d7cb6fbc40f">WidgetContainer에 추가된 위젯이 없습니다.</pre><div id="r_3f6360c9dc584070" class="element image" data-element-id="3f6360c9dc584070"><p class="caption"><span class="image_caption_n">그림 1.</span>브라우저(Chrome) 실행 예시</p><p class="content"><img alt="" src="images/image1843.png" width="354" height="302" /></p></div><p id="r_5a6e2e4cfef5a6af" class="element r_heading_dt_p" data-element-id="5a6e2e4cfef5a6af">STEP 2. 파라미터가 설정된 위젯 추가하기</p><pre id="r_98c0363b1c2d3407" class="element pre" data-element-id="98c0363b1c2d3407">버튼 <span class="r_exec_btn_style_span">1. 위젯 추가하기 - 파라미터 설정</span>을 클릭합니다.</pre><p id="r_faeb1d11861121b3" class="element r_heading_dt_p" data-element-id="faeb1d11861121b3">STEP 3. 실행된 결과를 확인합니다.</p><pre id="r_5a31158673262e78" class="element pre" data-element-id="5a31158673262e78">위젯의 타이틀이 'params 설정'인 위젯이 추가됩니다.
+추가된 위젯 화면의 Textarea에 함수 'addWidgets'의 첫 번째 인자의 위젯 옵션 'params'에 설정한 값이 출력됩니다.(브라우저의 개발자 도구의 콘솔(console)탭에서도 확인할 수 있습니다)</pre><div id="r_ccb274e96893de8b" class="element image" data-element-id="ccb274e96893de8b"><p class="caption"><span class="image_caption_n">그림 2.</span>브라우저(Chrome) 실행 예시</p><p class="content"><img alt="" src="images/image1844.png" width="352" height="270" /></p></div><p id="r_d0f54314a674c8cd" class="element r_caption_code_1_p" data-element-id="d0f54314a674c8cd">로그</p><div id="r_0325ee143a0a41c4" class="element code support_code_numbering" data-element-id="0325ee143a0a41c4"><pre><span class="digits_1 code_line"></span>[05:21:28] # $p.getParameter("params"); 반환 값: 
+<span class="digits_1 code_line"></span>{
+<span class="digits_1 code_line"></span>  "type": "exam",
+<span class="digits_1 code_line"></span>  "widget_id": "wg_exam1"
+<span class="digits_1 code_line"></span>}</pre></div><h2 id="r_009f5d5a845c8f33" class="element heading2" data-element-id="009f5d5a845c8f33"><div class="r_heading_inner"><span class="heading2_n">3.2</span><span>WidgetContainer 화면에서 파라미터 반환받기</span></div></h2><p id="r_877b23b41cd0f032" class="element r_heading_dt_p" data-element-id="877b23b41cd0f032">STEP 1. 초기 상태를 확인합니다.</p><pre id="r_abd86d4e583a2c5b" class="element pre" data-element-id="abd86d4e583a2c5b">버튼 <span class="r_exec_btn_style_span">1. 위젯 추가하기 - 파라미터 설정</span>을 클릭하여 위젯 'params 설정'이 추가되어 있어야 합니다.</pre><div id="r_46f4cf4a87d89cb8" class="element image" data-element-id="46f4cf4a87d89cb8"><p class="caption"><span class="image_caption_n">그림 3.</span>브라우저(Chrome) 실행 예시</p><p class="content"><img alt="" src="images/image1844.png" width="352" height="270" /></p></div><p id="r_e1c0dc4b451a5d2c" class="element r_heading_dt_p" data-element-id="e1c0dc4b451a5d2c">STEP 2. WidgetContainer 화면에서 파라미터 반환받기</p><pre id="r_3769a1ce7d134354" class="element pre" data-element-id="3769a1ce7d134354">버튼 <span class="r_exec_btn_style_span">2. 위젯 'params 설정'의 파라미터 반환받기</span>을 클릭합니다.</pre><p id="r_686fb771255c6a2f" class="element r_heading_dt_p" data-element-id="686fb771255c6a2f">STEP 3. 실행된 결과를 확인합니다.</p><pre id="r_b16e73eb47043eea" class="element pre" data-element-id="b16e73eb47043eea">함수 'addWidgets'의 첫 번째 인자의 위젯 옵션 'params'에 설정한 값이 로그확인 Textarea와 브라우저의 개발자 도구의 콘솔(console)탭에 출력됩니다.</pre><p id="r_99cd151ccc566d8e" class="element r_caption_code_1_p" data-element-id="99cd151ccc566d8e">로그</p><div id="r_3729a132d3faa149" class="element code support_code_numbering" data-element-id="3729a132d3faa149"><pre><span class="digits_1 code_line"></span>[05:32:22] # 스크립트 wgc_exam1.getWidgetById("wg_exam1").getParams(); 반환 값: 
+<span class="digits_1 code_line"></span>{
+<span class="digits_1 code_line"></span>  "type": "exam",
+<span class="digits_1 code_line"></span>  "widget_id": "wg_exam1"
+<span class="digits_1 code_line"></span>}</pre></div><h1 id="r_542c6d31614a9335" class="element heading1" data-element-id="542c6d31614a9335"><div class="r_heading_inner"><span class="heading1_n">4</span><span>구현 예시</span></div></h1><h2 id="r_1a5847e6fb0078c9" class="element heading2" data-element-id="1a5847e6fb0078c9"><div class="r_heading_inner"><span class="heading2_n">4.1</span><span>위젯 추가 시 파라미터 설정하기</span></div></h2><pre id="r_0750053a14c5ff51" class="element pre" data-element-id="0750053a14c5ff51">WidgetContainer의 함수 'addWidgets'를 이용하여 스크립트를 작성합니다.
+함수 'addWidgets'의 첫 번째 인자에 위젯 정보가 담긴 JSON을 정의합니다.
+첫 번째 인자 위젯 옵션의 'params'에 파라미터를 정의합니다.
+세부 스크립트는 아래의 예시에 작성되어 있습니다.</pre><p id="r_b3830c2c1ec411bd" class="element r_caption_code_1_p" data-element-id="b3830c2c1ec411bd">스크립트</p><div id="r_c106ad305cce4136" class="element code support_code_numbering" data-element-id="c106ad305cce4136"><pre><span class="digits_10 code_line"></span><span class="r_h_comment_span">// 위젯 생성 옵션 정보</span>
+<span class="digits_10 code_line"></span><span class="r_h_keyword_span">let</span> widgetOptions = {};
+<span class="digits_10 code_line"></span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">// [필수] 위젯에 할당할 파라미터.</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">// - Widget 화면(src)에서는 $p.getParameter("params")로 추출할 수 있습니다.</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">// - Widget 객체에서는 함수 'getParams'로 추출할 수 있습니다.</span>
+<span class="digits_10 code_line"></span>widgetOptions.params = {
+<span class="digits_10 code_line"></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="r_h_string_span">"type"</span>: <span class="r_h_string_span">"exam"</span>,
+<span class="digits_10 code_line"></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="r_h_string_span">"widget_id"</span>: <span class="r_h_string_span">"wg_exam1"</span>
+<span class="digits_10 code_line"></span>};
+<span class="digits_10 code_line"></span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">// [필수] 위젯 ID. 동일한 ID를 가진 위젯이 있으면 추가되지 않습니다.</span>
+<span class="digits_10 code_line"></span>widgetOptions.id = <span class="r_h_string_span">"wg_exam1"</span>;
+<span class="digits_10 code_line"></span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">// [필수] 위젯 파일 경로 </span>
+<span class="digits_10 code_line"></span>widgetOptions.src = <span class="r_h_string_span">"/page/P00322S01.xml"</span>;
+<span class="digits_10 code_line"></span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">// [필수] scope 적용 여부로 true 고정</span>
+<span class="digits_10 code_line"></span>widgetOptions.scope = <span class="r_h_keyword_span">true</span>;
+<span class="digits_10 code_line"></span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">// [필수] 위젯 너비 : (설정 값 / WidgetContainer의 속성 'col'의 설정 값 * 100)으로 '%'단위로 그려집니다.</span>
+<span class="digits_10 code_line"></span>widgetOptions.unitWidth = <span class="r_h_number_span">1</span>;
+<span class="digits_10 code_line"></span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">// [필수] 위젯 높이 : (설정 값 * WidgetContainer의 속성 'unitHeightPixel'의 설정 값)으로 'px'단위로 그려집니다.</span>
+<span class="digits_10 code_line"></span>widgetOptions.unitHeight = <span class="r_h_number_span">10</span>;
+<span class="digits_10 code_line"></span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">// [권장] 위젯 타이틀</span>
+<span class="digits_10 code_line"></span>widgetOptions.title = <span class="r_h_string_span">"params 설정"</span>;
+<span class="digits_10 code_line"></span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">// 위젯의 x 위치</span>
+<span class="digits_10 code_line"></span>widgetOptions.x = <span class="r_h_number_span">0</span>;
+<span class="digits_10 code_line"></span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">// 위젯의 y 위치</span>
+<span class="digits_10 code_line"></span>widgetOptions.y = <span class="r_h_number_span">0</span>;
+<span class="digits_10 code_line"></span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">// WidgetContainer 'wgc_exam1'에 위젯 1개를 추가합니다.</span>
+<span class="digits_10 code_line"></span>wgc_exam1.addWidgets(widgetOptions);</pre></div><h2 id="r_f8d1cbc97c0b2cf2" class="element heading2" data-element-id="f8d1cbc97c0b2cf2"><div class="r_heading_inner"><span class="heading2_n">4.2</span><span>Widget 화면에서 파라미터 반환받기</span></div></h2><pre id="r_6a76613662e49fcf" class="element pre" data-element-id="6a76613662e49fcf">$p의 함수 'getParameter' 이용하여 스크립트를 작성합니다.
+첫 번째 인자에 고정 값 'params'를 할당합니다.
+세부 지정은 아래의 스크립트 예시에 작성되어 있습니다.</pre><p id="r_8e8fb39ba1c5c534" class="element r_caption_code_1_p" data-element-id="8e8fb39ba1c5c534">스크립트</p><div id="r_55f63fe11826caf4" class="element code support_code_numbering" data-element-id="55f63fe11826caf4"><pre><span class="digits_10 code_line"></span><span class="r_h_comment_span">// 예제 파일 '/page/P00322S01.xml'의 스크립트 'scwin.onpageload'에 작성되어 있습니다.</span>
+<span class="digits_10 code_line"></span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">// WidgetContainer의 함수 'addWidgets'의 첫 번째 인자의 위젯 옵션 'params'에 지정한 값 반환받기</span>
+<span class="digits_10 code_line"></span><span class="r_h_keyword_span">let</span> jsnParam = $p.getParameter(<span class="r_h_string_span">"params"</span>);
+<span class="digits_10 code_line"></span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">// 반환 값 예시)</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">// {</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">//     "type": "exam",</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">//     "widget_id": "wg_exam1"</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">// }</span></pre></div><h2 id="r_79a7a317d06d7cfe" class="element heading2" data-element-id="79a7a317d06d7cfe"><div class="r_heading_inner"><span class="heading2_n">4.3</span><span>WidgetContainer 화면에서 파라미터 반환받기</span></div></h2><pre id="r_b4dce83e7e1aad6a" class="element pre" data-element-id="b4dce83e7e1aad6a">WidgetContainer의 추가된 위젯 객체의 함수 'getParams'를 사용하여 구현할 수 있습니다.
+위젯 객체를 반환하는 주요 함수는 다음과 같습니다.</pre><ul id="r_b551fe6ddc723e81" class="element unordered_list" data-element-id="b551fe6ddc723e81"><li><p>getWidgetById: 위젯의 'id'를 받아 widget 객체를 반환</p></li><li><p>getWidgetByTitle: 위젯의 'title'을 받아 widget 객체를 반환</p></li></ul><pre id="r_91be11c6d07c0dfb" class="element pre" data-element-id="91be11c6d07c0dfb">세부 지정은 아래의 스크립트 예시에 작성되어 있습니다.</pre><p id="r_e7e0a5aa1f0a3b97" class="element r_caption_code_1_p" data-element-id="e7e0a5aa1f0a3b97">스크립트</p><div id="r_7373377c8963039a" class="element code support_code_numbering" data-element-id="7373377c8963039a"><pre><span class="digits_10 code_line"></span><span class="r_h_comment_span">// WidgetContainer에 추가된 위젯의 ID가 'wgc_exam1'인 위젯 객체를 반환받습니다.</span>
+<span class="digits_10 code_line"></span><span class="r_h_keyword_span">let</span> objWidget = wgc_exam1.getWidgetById(<span class="r_h_string_span">"wg_exam1"</span>);
+<span class="digits_10 code_line"></span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">// 추가된 위젯이 없는 경우 메시지 처리.</span>
+<span class="digits_10 code_line"></span><span class="r_h_keyword_span">if</span> (!objWidget) {
+<span class="digits_10 code_line"></span>&nbsp;&nbsp;&nbsp;&nbsp;alert(<span class="r_h_string_span">"버튼 [1. 위젯 추가하기 - 파라미터 설정] 클릭 후 사용할 수 있습니다."</span>);
+<span class="digits_10 code_line"></span>&nbsp;&nbsp;&nbsp;&nbsp;return;
+<span class="digits_10 code_line"></span>}
+<span class="digits_10 code_line"></span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">// 위젯 객체에서 파라미터를 반환받습니다.</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">// (WidgetContainer의 함수 'addWidgets'의 첫 번째 인자의 위젯 옵션 'params'에 지정한 값)</span>
+<span class="digits_10 code_line"></span><span class="r_h_keyword_span">let</span> result = objWidget.getParams();
+<span class="digits_10 code_line"></span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">// 반환 값 예시)</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">// {</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">//     "type": "exam",</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">//     "widget_id": "wg_exam1"</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">// }</span></pre></div><h1 id="r_ca9831858cf3af9b" class="element heading1" data-element-id="ca9831858cf3af9b"><div class="r_heading_inner"><span class="heading1_n">5</span><span>주요 API</span></div></h1><ul id="r_f79c4257c681e310" class="element unordered_list" data-element-id="f79c4257c681e310"><li><p><span class="r_ex_api_method_span">addWidgets( option )</span></p><p>option.params</p></li><li><p><span class="r_ex_api_method_span">getWidgetById( id )</span></p></li><li><p><span class="r_ex_api_method_span">[Widget Object].getParams()</span> </p></li><li><p><span class="r_ex_api_utility_span">$p.getParameter( param )</span></p></li></ul><h1 id="r_c8c487b9d5aeba17" class="element heading1" data-element-id="c8c487b9d5aeba17"><div class="r_heading_inner"><span class="heading1_n">6</span><span>참고 문서</span></div></h1><ul id="r_eff5d3a45c956930" class="element unordered_list" data-element-id="eff5d3a45c956930"><li><p><span class="r_bold01_span">[웹스퀘어5 SP5 개발 가이드] WidgetContainer</span> </p><p>링크 : <a class="link" target="_blank" href="https://docs1.inswave.com/sp5_user_guide/2059d4ce88b2fc16#6f01c6c535be09d8">https://docs1.inswave.com/sp5_user_guide/2059d4ce88b2fc16#6f01c6c535be09d8</a></p></li></ul></div></body></html>

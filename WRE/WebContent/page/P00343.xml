@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:w2="http://www.inswave.com/websquare"
+	xmlns:xf="http://www.w3.org/2002/xforms">
+	<head meta_screenName="[GridView] 읽기 전용으로 설정된 특정 컬럼의 데이터 붙여넣기(Ctrl+V) 허용하기" meta_type="메인">
+		<w2:historyInfo>
+			<w2:history meta_no="01" meta_desc="최초작성" meta_date="20230821" meta_user="InswaveSystems"></w2:history>
+		</w2:historyInfo>
+		<w2:type>COMPONENT</w2:type>
+		<w2:buildDate />
+		<w2:MSA />
+		<xf:model>
+			<w2:dataCollection baseNode="map">
+				<w2:dataList baseNode="list" id="dlt_exam1" repeatNode="map" style="" valueAttribute="">
+					<w2:columnInfo>
+						<w2:column id="col_1" name="붙여넣기 불가" dataType="text"></w2:column>
+						<w2:column id="col_2" name="붙여넣기 가능" dataType="text"></w2:column>
+					</w2:columnInfo>
+					<w2:data use="true">
+						<w2:row>
+							<col_1><![CDATA[임시 값]]></col_1>
+							<col_2><![CDATA[임시 값]]></col_2>
+						</w2:row>
+						<w2:row>
+							<col_1><![CDATA[임시 값]]></col_1>
+							<col_2><![CDATA[임시 값]]></col_2>
+						</w2:row>
+						<w2:row>
+							<col_1><![CDATA[임시 값]]></col_1>
+							<col_2><![CDATA[임시 값]]></col_2>
+						</w2:row>
+					</w2:data>
+				</w2:dataList>
+			</w2:dataCollection>
+			<w2:workflowCollection />
+		</xf:model>
+		<w2:layoutInfo />
+		<w2:publicInfo />
+		<script lazy="false" type="text/javascript"><![CDATA[scwin.onpageload = function () {
+
+};
+]]></script>
+	</head>
+	<body ev:onpageload="scwin.onpageload">
+		<xf:group class="sub_contents">
+			<xf:group class="ws_example_grp_desc">
+				<w2:textbox escape="false" label="읽기 전용으로 설정된 특정 컬럼의 셀에 데이터 붙여넣기(Ctrl+V)를 허용하는 예제입니다." style="" class=""></w2:textbox>
+				<w2:textbox class="ws_example_txt_desc_info" escape="false" label="이 기능은 키보드를 사용할 수 있는 환경에서만 지원합니다." style="">
+				</w2:textbox>
+			</xf:group>
+			<xf:group class="example_div_tb_style_wrap">
+				<xf:group class="example_div_tr_style">
+					<xf:group class="example_div_td_style">
+						<xf:group class="mb_def_box nobottom" id="" style="">
+							<w2:span class="txt_bold" label="1. 아래의 Input의 값을 복사(Ctrl+C)합니다." style="display: inline-block;"></w2:span>
+							<xf:input class="" editType="select" id="ibx_exam1" initValue="NOW" placeholder="" style="width:180px;display: block;">
+							</xf:input>
+						</xf:group>
+						<xf:group class="mb_def_box nobottom" id="" style="">
+							<w2:span class="txt_bold" label="2. 아래의 GridView의 셀을 클릭하고 붙여넣기(Ctrl+V)합니다." style="display: inline-block;"></w2:span>
+						</xf:group>
+						<w2:gridView autoFit="allColumn" autoFitMinWidth="220" class="gvw" dataList="data:dlt_exam1" defaultCellHeight="26"
+							id="grd_exam1" initFixedHeightByRowNum="3" readOnly="true" style="height:60px;" visibleRowNum="3" checkReadOnlyOnPaste="true"
+							checkReadOnlyOnPasteEnable="col_2">
+							<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
+							<w2:header style="" id="header1">
+								<w2:row style="" id="row1">
+									<w2:column width="110" inputType="text" id="column2" value="붙여넣기 불가" displayMode="label"></w2:column>
+									<w2:column width="110" inputType="text" id="column1" value="붙여넣기 가능" displayMode="label"></w2:column>
+								</w2:row>
+							</w2:header>
+							<w2:gBody style="" id="gBody1">
+								<w2:row style="" id="row2">
+									<w2:column width="110" inputType="text" id="col_1" displayMode="label"></w2:column>
+									<w2:column width="110" inputType="text" id="col_2" displayMode="label"></w2:column>
+								</w2:row>
+							</w2:gBody>
+						</w2:gridView>
+					</xf:group>
+				</xf:group>
+			</xf:group>
+		</xf:group>
+	</body>
+</html>

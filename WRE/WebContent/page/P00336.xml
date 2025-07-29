@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:w2="http://www.inswave.com/websquare"
+	xmlns:xf="http://www.w3.org/2002/xforms">
+	<head meta_screenName="[컴포넌트 공통] 선택 항목 목록 크기 결정 방법 선택하기" meta_type="메인">
+		<w2:historyInfo>
+			<w2:history meta_no="01" meta_desc="최초작성" meta_date=" 20230811" meta_user="InswaveSystems"></w2:history>
+			<w2:history meta_no="02" meta_desc="설명부 오타 수정" meta_date="20230926" meta_user="InswaveSystems"></w2:history>
+		</w2:historyInfo>
+		<w2:type>COMPONENT</w2:type>
+		<w2:buildDate />
+		<w2:MSA />
+		<xf:model>
+			<w2:dataCollection baseNode="map">
+			</w2:dataCollection>
+			<w2:workflowCollection />
+		</xf:model>
+		<w2:layoutInfo />
+		<w2:publicInfo method="" />
+		<script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function () {
+
+};
+
+
+]]></script>
+	</head>
+	<body ev:onpageload="scwin.onpageload">
+		<xf:group class="sub_contents" id="" style="" nextTabID="">
+			<xf:group class="ws_example_grp_desc" id="" style="">
+				<w2:textbox escape="false" id=""
+					label='AutoComplete과 SelectBox의 공통 속성 submenuSize 사용 예제입니다.&lt;br/&gt;submenuSize를 이용해서 선택 항목의 크기를 자동으로 조절 할 지 선택합니다.&lt;br/&gt;- auto : Label의 텍스트 길이에 맞게 선택항목의 크기를 조절합니다.&lt;br/&gt;- fixed : Label의 텍스트 길이와 상관없이 컴포넌트의 길이에 맞게 고정 된 너비를 갖습니다.'
+					style="">
+				</w2:textbox>
+			</xf:group>
+			<xf:group class="example_div_tb_style_wrap mb_def" id="">
+
+				<xf:group class="example_div_tr_style" id="" style="">
+
+					<xf:group class="example_div_th_style" id="" style="">
+						<w2:span class="mr_def txt_blue" id="" label="AutoComplete 예제" style=""></w2:span>
+					</xf:group>
+					<xf:group class="example_div_td_style" id="" style="">
+						<w2:textbox class="ws5_example_txt_normal" escape="false" id=""
+							label='AutoComplete에 submenSize를 각각 auto, fixed로 적용해 비교 예제입니다.' style="">
+						</w2:textbox>
+						<xf:group id="" style="margin-bottom: 5px;">
+							<w2:autoComplete editType="select" id="" useKeywordHighlight="false" style="width: 148px;margin-right: 15px;"
+								submenuSize="auto" search="start" useLocale="false" allOption="" chooseOption="true" chooseOptionLabel="submenuSize : Auto" ref="">
+								<w2:choices>
+									<w2:item>
+										<w2:label><![CDATA[auto]]></w2:label>
+										<w2:value><![CDATA[]]>
+										</w2:value>
+									</w2:item>
+									<w2:item>
+										<w2:label><![CDATA[submenSize]]></w2:label>
+										<w2:value><![CDATA[]]>
+										</w2:value>
+									</w2:item>
+									<w2:item>
+										<w2:label><![CDATA[submenuSize: auto 옵션은 가장 긴 Label에 맞게 크기가 조절됩니다.]]></w2:label>
+										<w2:value><![CDATA[]]>
+										</w2:value>
+									</w2:item>
+									<w2:item>
+										<w2:label><![CDATA[AutoComplete에 submenSize 적용 옵션 비교 예제입니다.]]></w2:label>
+										<w2:value><![CDATA[]]>
+										</w2:value>
+									</w2:item>
+								</w2:choices>
+							</w2:autoComplete>
+							<w2:autoComplete submenuSize="fixed" search="start" editType="select" useKeywordHighlight="false"
+								style="width: 148px;" id="" useLocale="false" allOption="" chooseOption="true" ref="" chooseOptionLabel="submenuSize : Fixed">
+								<w2:choices>
+									<w2:item>
+										<w2:label><![CDATA[fixed 옵션은]]></w2:label>
+										<w2:value><![CDATA[]]>
+										</w2:value>
+									</w2:item>
+									<w2:item>
+										<w2:label><![CDATA[label의 길이와 무관하게]]></w2:label>
+										<w2:value><![CDATA[]]>
+										</w2:value>
+									</w2:item>
+									<w2:item>
+										<w2:label><![CDATA[컴포넌트 길이에 고정됩니다.]]></w2:label>
+										<w2:value><![CDATA[]]>
+										</w2:value>
+									</w2:item>
+									<w2:item>
+										<w2:label><![CDATA[AutoComplete에 submenSize 적용 유무 비교 예제입니다.]]></w2:label>
+										<w2:value><![CDATA[]]>
+										</w2:value>
+									</w2:item>
+								</w2:choices>
+							</w2:autoComplete>
+						</xf:group>
+					</xf:group>
+
+				</xf:group>
+				<xf:group class="example_div_tr_style" id="" style="">
+					<xf:group class="example_div_th_style" id="" style="">
+						<w2:span class="mr_def txt_blue" id="" label="SelectBox 예제" style=""></w2:span>
+					</xf:group>
+					<xf:group class="example_div_td_style" id="" style="">
+						<w2:textbox class="ws5_example_txt_normal" escape="false" id=""
+							label="SelectBox에 submenSize를 각각 auto, fixed로 적용해 비교 예제입니다." style="">
+						</w2:textbox>
+						<xf:group id="" style="margin-bottom: 5px;">
+							<xf:select1 id="" chooseOption="true" style="width: 148px;margin-right: 15px;" submenuSize="auto" allOption=""
+								disabled="false" direction="auto" appearance="minimal" disabledClass="w2selectbox_disabled" chooseOptionLabel="submenuSize : Auto"
+								ref="" textAlign="left">
+								<xf:choices>
+									<xf:item>
+										<xf:label><![CDATA[auto]]></xf:label>
+										<xf:value><![CDATA[]]>
+										</xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[submenSize]]></xf:label>
+										<xf:value><![CDATA[]]>
+										</xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[submenuSize: auto 옵션은 가장 긴 Label에 맞게 크기가 조절됩니다.]]></xf:label>
+										<xf:value><![CDATA[]]>
+										</xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[SelectBox에 submenSize를 각각 auto, fixed로 적용해 비교 예제입니다.]]></xf:label>
+										<xf:value><![CDATA[]]>
+										</xf:value>
+									</xf:item>
+								</xf:choices>
+							</xf:select1>
+							<xf:select1 allOption="" appearance="minimal" chooseOption="true" direction="auto" disabled="false"
+								disabledClass="w2selectbox_disabled" id="" style="width: 148px;" submenuSize="fixed" ref="" chooseOptionLabel="submenuSize : Fixed"
+								textAlign="left">
+								<xf:choices>
+									<xf:item>
+										<xf:label><![CDATA[fixed 옵션은]]></xf:label>
+										<xf:value><![CDATA[]]>
+										</xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[label의 길이와 무관하게]]></xf:label>
+										<xf:value><![CDATA[]]>
+										</xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[컴포넌트 길이에 고정됩니다.]]></xf:label>
+										<xf:value><![CDATA[]]>
+										</xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[SelectBox에 submenSize를 각각 auto, fixed로 적용해 비교 예제입니다.]]></xf:label>
+										<xf:value><![CDATA[]]>
+										</xf:value>
+									</xf:item>
+								</xf:choices>
+							</xf:select1>
+						</xf:group>
+					</xf:group>
+				</xf:group>
+			</xf:group>
+		</xf:group>
+
+
+	</body>
+</html>

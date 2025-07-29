@@ -1,0 +1,134 @@
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="../cm/css/api.css">
+    </head>
+    <body>
+        <div class="api_wrap">
+            <div class="api_wrap_inner">
+                <div class="api_container">
+                    <div class="api_content">
+                        <header class="api_header">
+                            <p class="api_component">WebSquare.uiplugin.pageInherit</p>
+                            <p class="api_version">5.0_5.5005A.20230904.185702</p>
+                            <p>페이지 인헤리트. 외부 XML을 include.
+ WebSquare에서 작성된 외부 XML을 include하는 기능을 제공. <br/>
+ src 속성으로 외부 리소스 경로를 설정.             
+ JSP의 include처럼 웹스퀘어 XML 화면 파일을 현재 화면에 include.<br/>
+ 주로 화면에서 항상 쓰이는 영역을 별도의 파일로 구성하여 사용. 
+ 혹은, 공통이 되는 top, left의 메뉴 구성 시 사용.<br/>
+ 컴포넌트의 최상위는 &lt;div&gt; 태그로 감싸고 하위로 src에 해당하는 화면 XML이 배치됨. 
+ 최상위 태그는 tagname 속성을 통해 변경 가능.<br/></p>
+                        </header>
+                        <section class="properties_section">
+                            <h2>Property Detail</h2>
+                            <dl class="api_dl">
+                            <dt id="class">class</dt>
+                            <dd><p>HTML의 class 속성과 동일한 기능을 제공. <br />CSS 파일이나 style 블럭에 정의한 여러 개의 class를 공백으로 구분하여 적용 가능.<br />Engine 내부에서 각 컴포넌트 별로 지정된 class를 적용하나, class 속성을 이용하여 컴포넌트의 CSS를 제어 가능.</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="id">id</dt>
+                            <dd><p>컴포넌트 ID.<br />컴포넌트 ID는 전역 객체로 할당됨. 각 컴포넌트 ID를 통해 Script에서 해당 컴포넌트에 접근 가능.</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="initScript">initScript</dt>
+                            <dd><p>src 속성에 정의 된 화면의 로딩이 끝난 뒤 실행할 script.</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="nextTabID">nextTabID</dt>
+                            <dd><p>Tab 키로 이동할 경우, Tab 키를 누를 때 선택되는 컴포넌트의 ID.</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="scope">scope</dt>
+                            <dd><p>scope 기능 사용 여부. [default: false, true] <br />pageInherit 내부 객체의 id를 pageInherit.id + "_" + id 형식으로 전부 변형하여 id 중 복문제를 회피하고 with를 통해 pageInherit 내부는 원래 id로 접근이 가능하도록 허용.</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="scopeExternal">scopeExternal</dt>
+                            <dd><p>pageInherit 내부 화면 페이지 안에 포함된 외부 js파일을 실행할 때 with(scope)를 씌워서 실행할 지에 대한 여부. [default: false, true] <br />pageInherit내의 화면 소스를 외부 js로 분리한 경우에 필요한 속성.</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="src">src</dt>
+                            <dd><p>웹스퀘어 XML 파일의 경로.</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="tagname">tagname</dt>
+                            <dd><p>[default:div]src에 해당하는 화면을 감쌀 최상위 HTML Tag로 자식을 가질수 있는 Tag로 정의해야 한다.</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="tooltip">tooltip</dt>
+                            <dd><p>사용자가 컴포넌트에 마우스-오버할 때 표시되는 텍스트. 웹스퀘어가 제공하는 툴팁으로, 컴포넌트의 추가 정보를 명시.</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="tooltipLocaleRef">tooltipLocaleRef</dt>
+                            <dd><p>클라이언트 다국어 적용시 툴팁에 출력하는 텍스트의 key. <br />key에 해당하는 텍스트가 없을 경우 "global_undefined"가 화면에 표시됨.</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="userData1">userData1</dt>
+                            <dd><p>사용자 정의 데이터 속성. getUserData("userData1") API를 통해 설정한 값을 얻어올 수 있음. 
+<xmp  class='js sample'> // 속성 값 얻어오기 예시
+ getUserData("userData1");</xmp></p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="userData2">userData2</dt>
+                            <dd><p>사용자 정의 데이터 속성. getUserData("userData2") API를 통해 설정한 값을 얻어올 수 있음. 
+<xmp  class='js sample'> // 속성 값 얻어오기 예시
+ getUserData("userData2");</xmp></p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="userData3">userData3</dt>
+                            <dd><p>사용자 정의 데이터 속성. getUserData("userData3") API를 통해 설정한 값을 얻어올 수 있음. 
+<xmp  class='js sample'> // 속성 값 얻어오기 예시
+ getUserData("userData3");</xmp></p></dd>
+                        </dl>
+                        
+                        </section>
+                        <section class="event_section">
+                            <h2>Event Detail</h2>
+                            <dl class="api_dl">
+                            <dt id="onpageInheritload">onpageInheritload()</dt>
+                            <dd>
+                                <p>pageInherit이 활성화된 후에 발생하는 이벤트. <br />pageInherit 내부 영역이 전부 그려진 후에 이벤트가 발생.</p>
+                                
+                                
+                            </dd>
+                        </dl>
+                        
+                        </section>
+                        <section class="method_section">
+                            <h2>Method Detail</h2>
+                            <dl class="api_dl">
+                            <dt id="getWindow">getWindow()</dt>
+                            <dd>
+                                <p>pageInherit의 Scope 객체를 반환. pageInherit 화면 안의 객체를 접근하려면 이 함수를 호출함. (Scope 지원 기능.)</p>
+                                
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'> // (예제)
+ // 부모 화면에서 pageInherit1 내부의 "input1" 컴포넌트에 접근
+ // 해당 컴포넌트의 값을 "WebSquare5"로 설정.
+
+ pageInherit1.getWindow().input1.setValue("WebSquare5");
+</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        
+                        </section>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </body>
+    </html>

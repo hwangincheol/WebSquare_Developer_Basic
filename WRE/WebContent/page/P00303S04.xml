@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+        <w2:type>COMPONENT</w2:type>
+        <w2:buildDate/>
+        <w2:MSA/>
+        <xf:model>
+            <w2:dataCollection baseNode="map"/>
+            <w2:workflowCollection/>
+        </xf:model>
+        <w2:layoutInfo/>
+        <w2:publicInfo method=""/>
+        <script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function() {
+	$p.$(".notic_tit li a").click(function(){
+        $(this).parent().addClass("on").siblings().removeClass("on");
+    });
+};
+]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload">
+    	<xf:group class="noticbox flex" id="" style="">
+    		<w2:tabControl alwaysDraw="false" confirmFalseAction="new" confirmTrueAction="exist" id=""
+    			style="width: 100%;height: 300px;display:none;" useConfirmMessage="false" useMoveNextTabFocus="false" useTabKeyOnly="true">
+    			<w2:tabs disabled="false" id="tabs1" label="공지사항" style=""></w2:tabs>
+    			<w2:tabs disabled="false" id="tabs2" label="최신상품" style=""></w2:tabs>
+    			<w2:tabs disabled="false" id="tabs4" label="뉴스" style=""></w2:tabs>
+    			<w2:tabs disabled="false" id="tabs5" label="시황" style=""></w2:tabs>
+    			<w2:content alwaysDraw="false" id="content1" style="height:100%;">
+    				<xf:group class="notic_items" id="" style="">
+    					<xf:group class="left_noticbox" id="">
+    						<w2:textbox class="contxt" id="" label="[인사발령] 2021년 8월 조직개편 공지" style=""></w2:textbox>
+    						<w2:textbox class="tit" id="" label="조직개편 및 전배 " style=""></w2:textbox>
+    					</xf:group>
+    					<xf:group class="right_noticbox" id="">
+    						<w2:textbox class="ymdtxt" id="" label="2021.07.26" style=""></w2:textbox>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group class="notic_items" id="" style="">
+    					<xf:group class="left_noticbox" id="">
+    						<w2:textbox class="contxt" id="" label="[전사공지] 전사 워크샵 안내" style=""></w2:textbox>
+    						<w2:textbox class="tit" id="" label="15주년 기념 전사 원크샵" style=""></w2:textbox>
+    					</xf:group>
+    					<xf:group class="right_noticbox" id="">
+    						<w2:textbox class="ymdtxt" id="" label="2021.07.30" style=""></w2:textbox>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group class="notic_items" id="" style="">
+    					<xf:group class="left_noticbox" id="">
+    						<w2:textbox class="contxt" id="" label="[전사공지] 건강검진 실시 일정" style=""></w2:textbox>
+    						<w2:textbox class="tit" id="" label="2021년도 직장가입자 건강검진 실시 " style=""></w2:textbox>
+    					</xf:group>
+    					<xf:group class="right_noticbox" id="">
+    						<w2:textbox class="ymdtxt" id="" label="2021.08.06" style=""></w2:textbox>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group class="notic_items" id="" style="">
+    					<xf:group class="left_noticbox" id="">
+    						<w2:textbox class="contxt" id="" label="[사내소식] 2021년 11월 우수사원 표창 안내" style=""></w2:textbox>
+    						<w2:textbox class="tit" id="" label="장재혁 전임" style=""></w2:textbox>
+    					</xf:group>
+    					<xf:group class="right_noticbox" id="">
+    						<w2:textbox class="ymdtxt" id="" label="2021.11.06" style=""></w2:textbox>
+    					</xf:group>
+    				</xf:group>
+    			</w2:content>
+    			<w2:content alwaysDraw="false" id="content2" style="height:270px"></w2:content>
+    			<w2:content alwaysDraw="false" id="content4" style="height:270px"></w2:content>
+    			<w2:content alwaysDraw="false" id="content5" style="height:270px"></w2:content>
+    		</w2:tabControl>
+    		<xf:group class="notic_tit" id="" style="" tagname="ul">
+    			<xf:group class="on" id="" style="" tagname="li">
+    				<w2:anchor id="" outerDiv="false" style="">
+    					<xf:label><![CDATA[새소식]]></xf:label>
+    				</w2:anchor>
+    			</xf:group>
+    			<xf:group id="" style="" tagname="li">
+    				<w2:anchor id="" outerDiv="false" style="">
+    					<xf:label><![CDATA[이벤트]]></xf:label>
+    				</w2:anchor>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group class="notic_con scrollbar" id="" style="">
+    			<xf:group class="notic_items" id="" style="">
+    				<xf:group class="left_noticbox" id="">
+    					<w2:textbox class="contxt" id="" label="프라이빗 클라우드 기술검증 요청 공고" style=""></w2:textbox>
+    					<w2:textbox class="tit" id="" label="은행의 프라이빗 클라우드 도입을 위한 사전 기술검증" style=""></w2:textbox>
+    				</xf:group>
+    				<xf:group class="right_noticbox" id="">
+    					<w2:textbox class="ymdtxt" id="" label="2022-06-03" style=""></w2:textbox>
+    				</xf:group>
+    			</xf:group>
+    			<xf:group class="notic_items" id="" style="">
+    				<xf:group class="left_noticbox" id="">
+    					<w2:textbox class="contxt" id="" label="손님케어섹션 채팅(화상)시스템 고도화를 위한 제안 공고" style=""></w2:textbox>
+    					<w2:textbox class="tit" id="" label="'손님케어섹션 채팅(화상)시스템 고도화' 업체 선정을 위한 공고" style=""></w2:textbox>
+    				</xf:group>
+    				<xf:group class="right_noticbox" id="">
+    					<w2:textbox class="ymdtxt" id="" label="2022-06-03" style=""></w2:textbox>
+    				</xf:group>
+    			</xf:group>
+    		</xf:group>
+    	</xf:group>
+    </body>
+</html>

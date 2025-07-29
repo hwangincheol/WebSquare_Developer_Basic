@@ -1,0 +1,1196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+        <w2:type>COMPONENT</w2:type>
+        <w2:buildDate/>
+        <w2:MSA/>
+        <xf:model>
+            <w2:dataCollection baseNode="map">
+				<w2:dataList id="dataList1" baseNode="list" saveRemovedData="true" repeatNode="map">
+					<w2:columnInfo>
+						<w2:column id="col1" name="Month" dataType="text"></w2:column>
+						<w2:column id="col2" name="Price" dataType="number"></w2:column>
+					</w2:columnInfo>
+					<w2:data use="true">
+						<w2:row>
+							<col1><![CDATA[January]]></col1>
+							<col2><![CDATA[17400]]></col2>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[February]]></col1>
+							<col2><![CDATA[19800]]></col2>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[March]]></col1>
+							<col2><![CDATA[21800]]></col2>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[April]]></col1>
+							<col2><![CDATA[23800]]></col2>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[May]]></col1>
+							<col2><![CDATA[29600]]></col2>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[June]]></col1>
+							<col2><![CDATA[27600]]></col2>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[July]]></col1>
+							<col2><![CDATA[31800]]></col2>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[August]]></col1>
+							<col2><![CDATA[39700]]></col2>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[September]]></col1>
+							<col2><![CDATA[37800]]></col2>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[October]]></col1>
+							<col2><![CDATA[21900]]></col2>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[November]]></col1>
+							<col2><![CDATA[32900]]></col2>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[December]]></col1>
+							<col2><![CDATA[39800]]></col2>
+						</w2:row>
+					</w2:data>
+				</w2:dataList>
+				<w2:dataList id="dataList2" baseNode="list" saveRemovedData="true" repeatNode="map">
+					<w2:columnInfo>
+						<w2:column id="col1" name="Month" dataType="text"></w2:column>
+						<w2:column id="col2" name="2005" dataType="number"></w2:column>
+						<w2:column id="col3" name="2006" dataType="number"></w2:column>
+						<w2:column id="col4" name="2007" dataType="number"></w2:column>
+					</w2:columnInfo>
+					<w2:data use="true">
+						<w2:row>
+							<col1><![CDATA[January]]></col1>
+							<col2><![CDATA[27400]]></col2>
+							<col3><![CDATA[10000]]></col3>
+							<col4><![CDATA[10000]]></col4>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[February]]></col1>
+							<col2><![CDATA[11500]]></col2>
+							<col3><![CDATA[28110]]></col3>
+							<col4><![CDATA[23990]]></col4>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[March]]></col1>
+							<col2><![CDATA[12500]]></col2>
+							<col3><![CDATA[29800]]></col3>
+							<col4><![CDATA[32700]]></col4>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[April]]></col1>
+							<col2><![CDATA[27400]]></col2>
+							<col3><![CDATA[10000]]></col3>
+							<col4><![CDATA[29000]]></col4>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[May]]></col1>
+							<col2><![CDATA[1500]]></col2>
+							<col3><![CDATA[10000]]></col3>
+							<col4><![CDATA[10000]]></col4>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[June]]></col1>
+							<col2><![CDATA[19700]]></col2>
+							<col3><![CDATA[32600]]></col3>
+							<col4><![CDATA[32600]]></col4>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[July]]></col1>
+							<col2><![CDATA[27400]]></col2>
+							<col3><![CDATA[29700]]></col3>
+							<col4><![CDATA[31900]]></col4>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[August]]></col1>
+							<col2><![CDATA[27400]]></col2>
+							<col3><![CDATA[10000]]></col3>
+							<col4><![CDATA[21800]]></col4>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[September]]></col1>
+							<col2><![CDATA[27400]]></col2>
+							<col3><![CDATA[31800]]></col3>
+							<col4><![CDATA[42800]]></col4>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[October]]></col1>
+							<col2><![CDATA[27400]]></col2>
+							<col3><![CDATA[15000]]></col3>
+							<col4><![CDATA[11000]]></col4>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[November]]></col1>
+							<col2><![CDATA[27400]]></col2>
+							<col3><![CDATA[9800]]></col3>
+							<col4><![CDATA[11800]]></col4>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[December]]></col1>
+							<col2><![CDATA[27400]]></col2>
+							<col3><![CDATA[22900]]></col3>
+							<col4><![CDATA[20800]]></col4>
+						</w2:row>
+					</w2:data>
+				</w2:dataList>
+				<w2:dataList id="dataList3" baseNode="list" saveRemovedData="true" repeatNode="map">
+					<w2:columnInfo>
+						<w2:column id="col1" name="상품명" dataType="text"></w2:column>
+						<w2:column id="col2" name="2009" dataType="number"></w2:column>
+						<w2:column id="col3" name="2010" dataType="number"></w2:column>
+						<w2:column id="col4" name="2011" dataType="number"></w2:column>
+						<w2:column id="col5" name="2012" dataType="number"></w2:column>
+						<w2:column id="col6" name="2013" dataType="number"></w2:column>
+					</w2:columnInfo>
+					<w2:data use="true">
+						<w2:row>
+							<col1><![CDATA[상품 A]]></col1>
+							<col2><![CDATA[10]]></col2>
+							<col3><![CDATA[26]]></col3>
+							<col4><![CDATA[23]]></col4>
+							<col5><![CDATA[44]]></col5>
+							<col6><![CDATA[48]]></col6>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[상품 B]]></col1>
+							<col2><![CDATA[52]]></col2>
+							<col3><![CDATA[62]]></col3>
+							<col4><![CDATA[56]]></col4>
+							<col5><![CDATA[23]]></col5>
+							<col6><![CDATA[14]]></col6>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[상품 C]]></col1>
+							<col2><![CDATA[45]]></col2>
+							<col3><![CDATA[76]]></col3>
+							<col4><![CDATA[21]]></col4>
+							<col5><![CDATA[87]]></col5>
+							<col6><![CDATA[88]]></col6>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[상품 D]]></col1>
+							<col2><![CDATA[22]]></col2>
+							<col3><![CDATA[33]]></col3>
+							<col4><![CDATA[50]]></col4>
+							<col5><![CDATA[33]]></col5>
+							<col6><![CDATA[55]]></col6>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[상품 E]]></col1>
+							<col2><![CDATA[81]]></col2>
+							<col3><![CDATA[45]]></col3>
+							<col4><![CDATA[78]]></col4>
+							<col5><![CDATA[76]]></col5>
+							<col6><![CDATA[76]]></col6>
+						</w2:row>
+					</w2:data>
+				</w2:dataList>
+				<w2:dataList id="dataList4" baseNode="list" saveRemovedData="true" repeatNode="map">
+					<w2:columnInfo>
+						<w2:column id="col1" name="Server" dataType="text"></w2:column>
+						<w2:column id="col2" name="X" dataType="number"></w2:column>
+						<w2:column id="col3" name="Y" dataType="number"></w2:column>
+					</w2:columnInfo>
+					<w2:data use="true">
+						<w2:row>
+							<col1><![CDATA[Server 1]]></col1>
+							<col2><![CDATA[24]]></col2>
+							<col3><![CDATA[1.6]]></col3>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[Server 1]]></col1>
+							<col2><![CDATA[75]]></col2>
+							<col3><![CDATA[2.7]]></col3>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[Server 1]]></col1>
+							<col2><![CDATA[33]]></col2>
+							<col3><![CDATA[7.4]]></col3>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[Server 1]]></col1>
+							<col2><![CDATA[69]]></col2>
+							<col3><![CDATA[6.3]]></col3>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[Server 1]]></col1>
+							<col2><![CDATA[33]]></col2>
+							<col3><![CDATA[4.2]]></col3>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[Server 2]]></col1>
+							<col2><![CDATA[96]]></col2>
+							<col3><![CDATA[3.7]]></col3>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[Server 2]]></col1>
+							<col2><![CDATA[37]]></col2>
+							<col3><![CDATA[7.9]]></col3>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[Server 2]]></col1>
+							<col2><![CDATA[17]]></col2>
+							<col3><![CDATA[6.5]]></col3>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[Server 2]]></col1>
+							<col2><![CDATA[84]]></col2>
+							<col3><![CDATA[2.1]]></col3>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[Server 2]]></col1>
+							<col2><![CDATA[47]]></col2>
+							<col3><![CDATA[1.7]]></col3>
+						</w2:row>
+					</w2:data>
+				</w2:dataList>
+				<w2:dataList id="dataList5" baseNode="list" saveRemovedData="true" repeatNode="map">
+					<w2:columnInfo>
+						<w2:column id="col1" name="Server" dataType="text"></w2:column>
+						<w2:column id="col2" name="X" dataType="number"></w2:column>
+						<w2:column id="col3" name="Y" dataType="number"></w2:column>
+						<w2:column id="col4" name="Z" dataType="number"></w2:column>
+					</w2:columnInfo>
+					<w2:data use="true">
+						<w2:row>
+							<col1><![CDATA[Server 1]]></col1>
+							<col2><![CDATA[24]]></col2>
+							<col3><![CDATA[1.6]]></col3>
+							<col4><![CDATA[3.7]]></col4>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[Server 1]]></col1>
+							<col2><![CDATA[75]]></col2>
+							<col3><![CDATA[2.7]]></col3>
+							<col4><![CDATA[7.9]]></col4>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[Server 1]]></col1>
+							<col2><![CDATA[33]]></col2>
+							<col3><![CDATA[7.4]]></col3>
+							<col4><![CDATA[6.5]]></col4>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[Server 1]]></col1>
+							<col2><![CDATA[69]]></col2>
+							<col3><![CDATA[6.3]]></col3>
+							<col4><![CDATA[2.1]]></col4>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[Server 1]]></col1>
+							<col2><![CDATA[33]]></col2>
+							<col3><![CDATA[4.2]]></col3>
+							<col4><![CDATA[1.6]]></col4>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[Server 2]]></col1>
+							<col2><![CDATA[96]]></col2>
+							<col3><![CDATA[3.7]]></col3>
+							<col4><![CDATA[2.7]]></col4>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[Server 2]]></col1>
+							<col2><![CDATA[37]]></col2>
+							<col3><![CDATA[7.9]]></col3>
+							<col4><![CDATA[7.4]]></col4>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[Server 2]]></col1>
+							<col2><![CDATA[17]]></col2>
+							<col3><![CDATA[6.5]]></col3>
+							<col4><![CDATA[6.3]]></col4>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[Server 2]]></col1>
+							<col2><![CDATA[84]]></col2>
+							<col3><![CDATA[2.1]]></col3>
+							<col4><![CDATA[4.2]]></col4>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[Server 2]]></col1>
+							<col2><![CDATA[47]]></col2>
+							<col3><![CDATA[1.7]]></col3>
+							<col4><![CDATA[3.7]]></col4>
+						</w2:row>
+					</w2:data>
+				</w2:dataList>
+				<w2:dataList id="dataList6" baseNode="list" saveRemovedData="true" repeatNode="map">
+					<w2:columnInfo>
+						<w2:column id="col1" name="Year" dataType="text"></w2:column>
+						<w2:column id="col2" name="Product A" dataType="number"></w2:column>
+						<w2:column id="col3" name="Product B" dataType="number"></w2:column>
+						<w2:column id="col4" name="Service A" dataType="number"></w2:column>
+						<w2:column id="col5" name="Service B" dataType="number"></w2:column>
+						<w2:column id="col6" name="Service C" dataType="number"></w2:column>
+						<w2:column id="col7" name="Revenue A" dataType="number"></w2:column>
+						<w2:column id="col8" name="Revenue B" dataType="number"></w2:column>
+					</w2:columnInfo>
+					<w2:data use="true">
+						<w2:row>
+							<col1><![CDATA[2001]]></col1>
+							<col2><![CDATA[23]]></col2>
+							<col3><![CDATA[54]]></col3>
+							<col4><![CDATA[34]]></col4>
+							<col5><![CDATA[54]]></col5>
+							<col6><![CDATA[43]]></col6>
+							<col7><![CDATA[54]]></col7>
+							<col8><![CDATA[23]]></col8>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[2002]]></col1>
+							<col2><![CDATA[85]]></col2>
+							<col3><![CDATA[13]]></col3>
+							<col4><![CDATA[72]]></col4>
+							<col5><![CDATA[13]]></col5>
+							<col6><![CDATA[12]]></col6>
+							<col7><![CDATA[13]]></col7>
+							<col8><![CDATA[85]]></col8>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[2003]]></col1>
+							<col2><![CDATA[33]]></col2>
+							<col3><![CDATA[66]]></col3>
+							<col4><![CDATA[32]]></col4>
+							<col5><![CDATA[66]]></col5>
+							<col6><![CDATA[83]]></col6>
+							<col7><![CDATA[66]]></col7>
+							<col8><![CDATA[33]]></col8>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[2004]]></col1>
+							<col2><![CDATA[43]]></col2>
+							<col3><![CDATA[34]]></col3>
+							<col4><![CDATA[73]]></col4>
+							<col5><![CDATA[34]]></col5>
+							<col6><![CDATA[54]]></col6>
+							<col7><![CDATA[34]]></col7>
+							<col8><![CDATA[43]]></col8>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[2005]]></col1>
+							<col2><![CDATA[24]]></col2>
+							<col3><![CDATA[90]]></col3>
+							<col4><![CDATA[37]]></col4>
+							<col5><![CDATA[90]]></col5>
+							<col6><![CDATA[33]]></col6>
+							<col7><![CDATA[90]]></col7>
+							<col8><![CDATA[24]]></col8>
+						</w2:row>
+					</w2:data>
+				</w2:dataList>
+				<w2:dataList id="dataList7" baseNode="list" saveRemovedData="true" repeatNode="map">
+					<w2:columnInfo>
+						<w2:column id="col1" name="Year" dataType="text"></w2:column>
+						<w2:column id="col2" name="Product A" dataType="text"></w2:column>
+						<w2:column id="col3" name="Product B" dataType="text"></w2:column>
+						<w2:column id="col4" name="Service A" dataType="text"></w2:column>
+						<w2:column id="col5" name="Service B" dataType="text"></w2:column>
+						<w2:column id="col6" name="Service C" dataType="text"></w2:column>
+					</w2:columnInfo>
+					<w2:data use="true">
+						<w2:row>
+							<col1><![CDATA[2001]]></col1>
+							<col2><![CDATA[23]]></col2>
+							<col3><![CDATA[54]]></col3>
+							<col4><![CDATA[34]]></col4>
+							<col5><![CDATA[54]]></col5>
+							<col6><![CDATA[43]]></col6>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[2002]]></col1>
+							<col2><![CDATA[85]]></col2>
+							<col3><![CDATA[13]]></col3>
+							<col4><![CDATA[72]]></col4>
+							<col5><![CDATA[13]]></col5>
+							<col6><![CDATA[12]]></col6>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[2003]]></col1>
+							<col2><![CDATA[33]]></col2>
+							<col3><![CDATA[66]]></col3>
+							<col4><![CDATA[32]]></col4>
+							<col5><![CDATA[66]]></col5>
+							<col6><![CDATA[83]]></col6>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[2004]]></col1>
+							<col2><![CDATA[43]]></col2>
+							<col3><![CDATA[34]]></col3>
+							<col4><![CDATA[73]]></col4>
+							<col5><![CDATA[34]]></col5>
+							<col6><![CDATA[54]]></col6>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[2005]]></col1>
+							<col2><![CDATA[24]]></col2>
+							<col3><![CDATA[90]]></col3>
+							<col4><![CDATA[37]]></col4>
+							<col5><![CDATA[90]]></col5>
+							<col6><![CDATA[33]]></col6>
+						</w2:row>
+					</w2:data>
+				</w2:dataList>
+			</w2:dataCollection>
+            <w2:workflowCollection/>
+        </xf:model>
+        <w2:layoutInfo/>
+        <w2:publicInfo method=""/>
+        <script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function() {
+	/* singleSeriseChart 설정 시작 */
+    var options = { 
+        startValue: "20000", 
+        color: "990000",
+        displayValue: "Check"
+    };
+    var options1 = { 
+        color:"990000",
+        font:"15", 
+        bold:"1"
+    };
+    singleSeriseChart.setChartAttribute({Caption:"Test"});
+    singleSeriseChart.addTrendLine(options);
+    singleSeriseChart.applyStyle("font", "captionFont", options1, ["Caption","XAXISNAME"]);
+    singleSeriseChart.draw();
+    
+    scwin.radio1_onchange = function() {
+        var chartType = radio1.getValue();
+        singleSeriseChart.changeType(chartType);
+    };
+    /* singleSeriseChart 설정 끝 */
+    
+    /* multiSeriseChart 설정 시작 */
+    scwin.radio2_onchange = function() {
+        var chartType = radio2.getValue();
+        multiSeriseChart.changeType(chartType);
+    };
+    /* multiSeriseChart 설정 끝 */ 
+                    
+    /* stackedChart 설정 시작 */
+    scwin.radio3_onchange = function() {
+        var chartType = radio3.getValue();
+        stackedChart.changeType(chartType);
+    };
+    /* stackedChart 설정 시작 */
+    
+    /* combinationChart 설정 시작 */
+    scwin.radio4_onchange = function() {
+        var chartType = radio4.getValue();
+        combinationChart.changeType(chartType);
+        if(chartType == "MSCombi3D" || chartType == "MSCombi2D"){
+            combinationChart.setChartColumnRef('data:dataList2','col1',"[['col2',{'id':'col3','seriesname':'Year New','renderas':'Area'},{'id':'col4','renderas':'Line'}]]");
+        } else if( chartType == "MSColumnLine3D" ){
+            combinationChart.setChartColumnRef('data:dataList2','col1',"[['col2','col3',{'id':'col4','renderas':'Line'}]]");
+        } else if( chartType == "StackedColumn2DLine" || chartType == "StackedColumn3DLine"){
+            combinationChart.setChartColumnRef('data:dataList2','col1',"[['col2','col3',{'id':'col4','renderas':'Line'}]]");
+        } else if( chartType == "MSCombiDY2D" || chartType == "MSColumn3DLineDY" || chartType == "StackedColumn3DLineDY") {
+            combinationChart.setChartColumnRef('data:dataList2','col1',"[['col2','col3',{'id':'col4','renderas':'Line','parentYAxis':'S'}]]");
+        }
+    };
+    /* combinationChart 설정 끝 */
+};
+]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload">
+    	<xf:group class="sub_contents" id="" style="">
+			<xf:group class="pgtbox" id="" style="">
+				<w2:textbox class="pgt_tit" id="" label="Publishing Template - FusionChart" style=""></w2:textbox>
+			</xf:group>
+			<xf:group id="" class="titbox"><w2:textbox style="" id="" label="FusionChart Wrapper 컴포넌트이며, FusionCharts의 데이터는 실제 차트에 보여줄 값과 스타일 옵션들이 하나로 결합되어 있는 형태입니다.&lt;br/&gt;WebSquare5에서는 이를 분리하여 차트를 쉽게 Customizing 할 수 있도록 API를 지원하며, FusionChart는 다양한 Device, Browser, Platform에서 작동하는 JavaScript chart입니다. &lt;br/&gt;WebSquare5는 FusionChart의 기능을 사용할 수 있는 환경을 제공하며, 각 차트에 대한 자세한 Properties &amp; API는 FusionCharts 공식 홈페이지를 참조하시기 바랍니다. &lt;br/&gt;" class="" escape="false">
+			</w2:textbox></xf:group>
+			<xf:group id="" class="titbox"><w2:anchor outerDiv="false" style="" id="" href="http://docs.fusioncharts.com/charts/" target="_blank">
+				<xf:label><![CDATA[http://docs.fusioncharts.com/charts/]]></xf:label>
+			</w2:anchor></xf:group><xf:group style="border:1px dashed #ccc;" id="" class="msgbox">
+				<xf:group id="" class="tblbox"><xf:group tagname="table" style="" id="" class="w2tb tbl">
+					<w2:attributes>
+						<w2:summary></w2:summary>
+					</w2:attributes>
+					<xf:group tagname="colgroup">
+						<xf:group tagname="col" style="width:30.00%"></xf:group>
+						<xf:group tagname="col" style="width:70.00%"></xf:group>
+					</xf:group>
+					<xf:group tagname="tr" style="">
+						<xf:group tagname="th" style="" class="w2tb_th">
+							Single Series Chart
+							<w2:attributes>
+								<w2:colspan>2</w2:colspan>
+								<w2:rowspan>1</w2:rowspan>
+							</w2:attributes>
+						</xf:group>
+					</xf:group>
+					<xf:group tagname="tr">
+						<xf:group tagname="td" style="" class="w2tb_td">
+							<w2:attributes>
+								<w2:colspan></w2:colspan>
+								<w2:rowspan></w2:rowspan>
+							</w2:attributes>
+
+
+
+
+
+
+
+
+
+
+
+							<w2:textbox tagname="label" for="basicip" style="" id="" label="dataList 확인" class="formguide"></w2:textbox>
+							<w2:gridView fixedColumnWithHidden="true" dataList="dataList1" useShiftKey="true" scrollByColumn="false" style="width:100%; height:280px;" ignoreCellClick="false" id="" autoFit="allColumn" ignoreToggleOnDisabled="false" class="gvw">
+								<w2:header style="" id="header1">
+									<w2:row style="" id="row2">
+										<w2:column width="70" style="height:20px" inputType="text" id="column7" value="Month" blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="column3" value="Price" blockSelect="false" displayMode="label">
+										</w2:column>
+									</w2:row>
+								</w2:header>
+								<w2:gBody style="" id="gBody4">
+									<w2:row style="" id="row5">
+										<w2:column width="70" style="height:20px" inputType="text" id="col1" blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="col2" blockSelect="false" displayMode="label">
+										</w2:column>
+									</w2:row>
+								</w2:gBody>
+							</w2:gridView>
+						</xf:group>
+						<xf:group tagname="td" style="" class="w2tb_td">
+							<w2:attributes>
+								<w2:colspan></w2:colspan>
+								<w2:rowspan></w2:rowspan>
+							</w2:attributes>
+							<w2:textbox tagname="label" for="basicip" style="" id="" label="FusionChart 확인" class="formguide"></w2:textbox>
+							<xf:select1 ref="" appearance="full" ev:onchange="scwin.radio1_onchange" ev:onlabelclick="scwin.radio1_onlabelclick" ev:onradioclick="scwin.radio1_onradioclick" style="" id="radio1" renderType="" rows="2" class="radio" cols="" selectedIndex="-1">
+								<xf:choices>
+									<xf:item>
+										<xf:label><![CDATA[column2d]]></xf:label>
+										<xf:value><![CDATA[column2d]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[column3d]]></xf:label>
+										<xf:value><![CDATA[column3d]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[bar2d]]></xf:label>
+										<xf:value><![CDATA[bar2d]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[bar3d]]></xf:label>
+										<xf:value><![CDATA[bar3d]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[area2d]]></xf:label>
+										<xf:value><![CDATA[area2d]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[line]]></xf:label>
+										<xf:value><![CDATA[line]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[pareto2d]]></xf:label>
+										<xf:value><![CDATA[pareto2d]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[pareto3d]]></xf:label>
+										<xf:value><![CDATA[pareto3d]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[pie2d]]></xf:label>
+										<xf:value><![CDATA[pie2d]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[pie3d]]></xf:label>
+										<xf:value><![CDATA[pie3d]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[doughnut2d]]></xf:label>
+										<xf:value><![CDATA[doughnut2d]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[doughnut3d]]></xf:label>
+										<xf:value><![CDATA[doughnut3d]]></xf:value>
+									</xf:item>
+								</xf:choices>
+							</xf:select1>
+							<w2:fusionchart seriesColumns="" accessibility="true" runflashAt="IE6,IE7,IE8" drawType="javascript" valueNode="" ref="data:dataList1" labelNode="" seriesType="simple" dataList="" chartType="Column2D" style="position:relative; width:100%; height:250px;" id="singleSeriseChart" seriesNode="">
+							</w2:fusionchart>
+						</xf:group>
+					</xf:group>
+				</xf:group></xf:group>
+				<xf:group id="" class="tblbox"><xf:group tagname="table" style="" id="" class="w2tb tbl">
+					<w2:attributes>
+						<w2:summary></w2:summary>
+					</w2:attributes>
+					<xf:group tagname="colgroup">
+						<xf:group tagname="col" style="width:30.00%"></xf:group>
+						<xf:group tagname="col" style="width:70.00%"></xf:group>
+					</xf:group>
+					<xf:group tagname="tr" style="">
+						<xf:group tagname="th" style="" class="w2tb_th">
+							Multi-series Charts
+							<w2:attributes>
+								<w2:colspan>2</w2:colspan>
+								<w2:rowspan>1</w2:rowspan>
+							</w2:attributes>
+						</xf:group>
+					</xf:group>
+					<xf:group tagname="tr">
+						<xf:group tagname="td" style="" class="w2tb_td">
+							<w2:attributes>
+								<w2:colspan></w2:colspan>
+								<w2:rowspan></w2:rowspan>
+							</w2:attributes>
+							<w2:textbox tagname="label" for="basicip" style="" id="" label="dataList 확인" class="formguide"></w2:textbox>
+
+							<w2:gridView fixedColumnWithHidden="true" dataList="dataList2" useShiftKey="true" ignoreCellClick="false" scrollByColumn="false" style="width:100%; height:280px;" autoFit="allColumn" id="" ignoreToggleOnDisabled="false" class="gvw">
+								<w2:header style="" id="header1">
+									<w2:row style="" id="row2">
+										<w2:column width="70" inputType="text" style="height:20px" id="column11" value="Month" blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column width="70" inputType="text" style="height:20px" id="column9" value="2005" blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column width="70" inputType="text" style="height:20px" id="column7" value="2006" blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column width="70" inputType="text" style="height:20px" id="column3" value="2007" blockSelect="false" displayMode="label">
+										</w2:column>
+									</w2:row>
+								</w2:header>
+								<w2:gBody style="" id="gBody4">
+									<w2:row style="" id="row5">
+										<w2:column width="70" inputType="text" style="height:20px" id="col1" blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column width="70" inputType="text" style="height:20px" id="col2" blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column width="70" inputType="text" style="height:20px" id="col3" blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column width="70" inputType="text" style="height:20px" id="col4" blockSelect="false" displayMode="label">
+										</w2:column>
+									</w2:row>
+								</w2:gBody>
+							</w2:gridView>
+						</xf:group>
+						<xf:group tagname="td" style="" class="w2tb_td">
+							<w2:attributes>
+								<w2:colspan></w2:colspan>
+								<w2:rowspan></w2:rowspan>
+							</w2:attributes>
+							<w2:textbox tagname="label" for="basicip" style="" id="" label="FusionChart 확인" class="formguide"></w2:textbox>
+							<xf:select1 ref="" appearance="full" ev:onchange="scwin.radio2_onchange" ev:onlabelclick="scwin.radio1_onlabelclick" ev:onradioclick="scwin.radio1_onradioclick" style="" id="radio2" renderType="" rows="2" class="radio" cols="" selectedIndex="-1">
+								<xf:choices>
+									<xf:item>
+										<xf:label><![CDATA[MSColumn2D]]></xf:label>
+										<xf:value><![CDATA[MSColumn2D]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[MSColumn3D]]></xf:label>
+										<xf:value><![CDATA[MSColumn3D]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[MSLine]]></xf:label>
+										<xf:value><![CDATA[MSLine]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[ZoomLine]]></xf:label>
+										<xf:value><![CDATA[ZoomLine]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[MSArea]]></xf:label>
+										<xf:value><![CDATA[MSArea]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[MSBar2D]]></xf:label>
+										<xf:value><![CDATA[MSBar2D]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[MSBar3D]]></xf:label>
+										<xf:value><![CDATA[MSBar3D]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[Marimekko]]></xf:label>
+										<xf:value><![CDATA[Marimekko]]></xf:value>
+									</xf:item>
+								</xf:choices>
+							</xf:select1>
+							<w2:fusionchart seriesColumns="" accessibility="true" drawType="javascript" runflashAt="IE6,IE7,IE8" valueNode="" labelNode="" ref="data:dataList2" seriesType="advanced" dataList="" chartType="MSColumn2D" style="position:relative; width:100%; height:250px;" id="multiSeriseChart" seriesNode="">
+							</w2:fusionchart>
+						</xf:group>
+					</xf:group>
+				</xf:group></xf:group>
+				<xf:group id="" class="tblbox"><xf:group tagname="table" style="" id="" class="w2tb tbl">
+					<w2:attributes>
+						<w2:summary></w2:summary>
+					</w2:attributes>
+					<xf:group tagname="colgroup">
+						<xf:group tagname="col" style="width:30.00%"></xf:group>
+						<xf:group tagname="col" style="width:70.00%"></xf:group>
+					</xf:group>
+					<xf:group tagname="tr" style="">
+						<xf:group tagname="th" style="" class="w2tb_th">
+							Stacked Charts
+							<w2:attributes>
+								<w2:colspan>2</w2:colspan>
+								<w2:rowspan>1</w2:rowspan>
+							</w2:attributes>
+						</xf:group>
+					</xf:group>
+					<xf:group tagname="tr">
+						<xf:group tagname="td" style="" class="w2tb_td">
+							<w2:attributes>
+								<w2:colspan></w2:colspan>
+								<w2:rowspan></w2:rowspan>
+							</w2:attributes>
+							<w2:textbox tagname="label" for="basicip" style="" id="" label="dataList 확인" class="formguide"></w2:textbox>
+
+							<w2:gridView fixedColumnWithHidden="true" dataList="dataList3" useShiftKey="true" ignoreCellClick="false" scrollByColumn="false" style="width:100%; height:280px;" autoFit="allColumn" id="" ignoreToggleOnDisabled="false" class="gvw">
+								<w2:header style="" id="header1">
+									<w2:row style="" id="row2">
+										<w2:column width="70" style="height:20px" inputType="text" id="column15" value="상품명" blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="column13" value="2009" blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="column11" value="2010" blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="column9" value="2011" blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="column7" value="2012" blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="column3" value="2013" blockSelect="false" displayMode="label">
+										</w2:column>
+									</w2:row>
+								</w2:header>
+								<w2:gBody style="" id="gBody4">
+									<w2:row style="" id="row5">
+										<w2:column width="70" style="height:20px" inputType="text" id="col1" blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="col2" blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="col3" blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="col4" blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="col5" blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="col6" blockSelect="false" displayMode="label">
+										</w2:column>
+									</w2:row>
+								</w2:gBody>
+							</w2:gridView>
+						</xf:group>
+						<xf:group tagname="td" style="" class="w2tb_td">
+							<w2:attributes>
+								<w2:colspan></w2:colspan>
+								<w2:rowspan></w2:rowspan>
+							</w2:attributes>
+							<w2:textbox tagname="label" for="basicip" style="" id="" label="FusionChart 확인" class="formguide"></w2:textbox>
+							<xf:select1 ref="" appearance="full" ev:onchange="scwin.radio3_onchange" ev:onlabelclick="scwin.radio1_onlabelclick" ev:onradioclick="scwin.radio1_onradioclick" style="" id="radio3" renderType="" rows="2" class="radio" cols="" selectedIndex="-1">
+								<xf:choices>
+									<xf:item>
+										<xf:label><![CDATA[StackedColumn2D]]></xf:label>
+										<xf:value><![CDATA[StackedColumn2D]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[StackedColumn3D]]></xf:label>
+										<xf:value><![CDATA[StackedColumn3D]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[StackedArea2D]]></xf:label>
+										<xf:value><![CDATA[StackedArea2D]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[StackedBar2D]]></xf:label>
+										<xf:value><![CDATA[StackedBar2D]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[StackedBar3D]]></xf:label>
+										<xf:value><![CDATA[StackedBar3D]]></xf:value>
+									</xf:item>
+								</xf:choices>
+							</xf:select1>
+							<w2:fusionchart seriesColumns="" accessibility="true" drawType="javascript" runflashAt="IE6,IE7,IE8" valueNode="" labelNode="" ref="data:dataList3" seriesType="advanced" dataList="" chartType="StackedColumn2D" style="position:relative; width:100%; height:250px;" id="stackedChart" seriesNode="">
+							</w2:fusionchart>
+						</xf:group>
+					</xf:group>
+				</xf:group></xf:group>
+				<xf:group id="" class="tblbox"><xf:group tagname="table" style="" id="" class="w2tb tbl">
+					<w2:attributes>
+						<w2:summary></w2:summary>
+					</w2:attributes>
+					<xf:group tagname="colgroup">
+						<xf:group tagname="col" style="width:30.00%"></xf:group>
+						<xf:group tagname="col" style="width:70.00%"></xf:group>
+					</xf:group>
+					<xf:group tagname="tr" style="">
+						<xf:group tagname="th" style="" class="w2tb_th">
+							Combination Charts
+							<w2:attributes>
+								<w2:colspan>2</w2:colspan>
+								<w2:rowspan>1</w2:rowspan>
+							</w2:attributes>
+						</xf:group>
+					</xf:group>
+					<xf:group tagname="tr">
+						<xf:group tagname="td" style="" class="w2tb_td">
+							<w2:attributes>
+								<w2:colspan></w2:colspan>
+								<w2:rowspan></w2:rowspan>
+							</w2:attributes>
+							<w2:textbox tagname="label" for="basicip" style="" id="" label="dataList 확인" class="formguide"></w2:textbox>
+							<w2:gridView fixedColumnWithHidden="true" dataList="dataList2" useShiftKey="true" ignoreCellClick="false" scrollByColumn="false" style="width:100%; height:280px;" autoFit="allColumn" id="" ignoreToggleOnDisabled="false" class="gvw">
+								<w2:header style="" id="header1">
+									<w2:row style="" id="row2">
+										<w2:column width="70" style="height:20px" inputType="text" id="column11" value="Month" blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="column9" value="2005" blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="column7" value="2006" blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="column3" value="2007" blockSelect="false" displayMode="label">
+										</w2:column>
+									</w2:row>
+								</w2:header>
+								<w2:gBody style="" id="gBody4">
+									<w2:row style="" id="row5">
+										<w2:column width="70" style="height:20px" inputType="text" id="col1" blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="col2" blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="col3" blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="col4" blockSelect="false" displayMode="label">
+										</w2:column>
+									</w2:row>
+								</w2:gBody>
+							</w2:gridView>
+						</xf:group>
+						<xf:group tagname="td" style="" class="w2tb_td">
+							<w2:attributes>
+								<w2:colspan></w2:colspan>
+								<w2:rowspan></w2:rowspan>
+							</w2:attributes>
+							<w2:textbox tagname="label" for="basicip" style="" id="" label="FusionChart 확인" class="formguide"></w2:textbox>
+							<xf:select1 ref="" appearance="full" ev:onchange="scwin.radio4_onchange" ev:onlabelclick="scwin.radio1_onlabelclick" ev:onradioclick="scwin.radio1_onradioclick" style="" id="radio4" renderType="" rows="3" class="radio" cols="" selectedIndex="-1">
+								<xf:choices>
+									<xf:item>
+										<xf:label><![CDATA[MSCombi3D]]></xf:label>
+										<xf:value><![CDATA[MSCombi3D]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[MSCombi2D]]></xf:label>
+										<xf:value><![CDATA[MSCombi2D]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[MSColumnLine3D]]></xf:label>
+										<xf:value><![CDATA[MSColumnLine3D]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[StackedColumn2DLine]]></xf:label>
+										<xf:value><![CDATA[StackedColumn2DLine]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[StackedColumn3DLine]]></xf:label>
+										<xf:value><![CDATA[StackedColumn3DLine]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[MSCombiDY2D]]></xf:label>
+										<xf:value><![CDATA[MSCombiDY2D]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[MSColumn3DLineDY]]></xf:label>
+										<xf:value><![CDATA[MSColumn3DLineDY]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[StackedColumn3DLineDY]]></xf:label>
+										<xf:value><![CDATA[StackedColumn3DLineDY]]></xf:value>
+									</xf:item>
+								</xf:choices>
+							</xf:select1>
+							<w2:fusionchart seriesColumns="[['col2',{'id':'col3','seriesname':'Year New','renderas':'Area'},{'id':'col4','renderas':'Line'}]]" accessibility="true" drawType="javascript" runflashAt="IE6,IE7,IE8" valueNode="" labelNode="" ref="data:dataList2" seriesType="advanced" dataList="" chartType="MSCombi3D" style="position:relative; width:100%; height:250px;" id="combinationChart" seriesNode="">
+							</w2:fusionchart>
+						</xf:group>
+					</xf:group>
+				</xf:group></xf:group>
+				<xf:group id="" class="tblbox"><xf:group tagname="table" style="" id="" class="w2tb tbl">
+					<w2:attributes>
+						<w2:summary></w2:summary>
+					</w2:attributes>
+					<xf:group tagname="colgroup">
+						<xf:group tagname="col" style="width:30.00%"></xf:group>
+						<xf:group tagname="col" style="width:70.00%"></xf:group>
+					</xf:group>
+					<xf:group tagname="tr" style="">
+						<xf:group tagname="th" style="" class="w2tb_th">
+							Scatter Charts
+							<w2:attributes>
+								<w2:colspan>2</w2:colspan>
+								<w2:rowspan>1</w2:rowspan>
+							</w2:attributes>
+						</xf:group>
+					</xf:group>
+					<xf:group tagname="tr">
+						<xf:group tagname="td" style="" class="w2tb_td">
+							<w2:attributes>
+								<w2:colspan></w2:colspan>
+								<w2:rowspan></w2:rowspan>
+							</w2:attributes>
+							<w2:textbox tagname="label" for="basicip" style="" id="" label="dataList 확인" class="formguide"></w2:textbox>
+							<w2:gridView fixedColumnWithHidden="true" dataList="dataList4" useShiftKey="true" ignoreCellClick="false" scrollByColumn="false" style="width:100%; height:280px;" autoFit="allColumn" id="" ignoreToggleOnDisabled="false" class="gvw">
+								<w2:header style="" id="header1">
+									<w2:row style="" id="row2">
+										<w2:column width="70" style="height:20px" inputType="text" id="column9" value="Server" blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="column7" value="X" blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="column3" value="Y" blockSelect="false" displayMode="label">
+										</w2:column>
+									</w2:row>
+								</w2:header>
+								<w2:gBody style="" id="gBody4">
+									<w2:row style="" id="row5">
+										<w2:column width="70" style="height:20px" inputType="text" id="col1" blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="col2" blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="col3" blockSelect="false" displayMode="label">
+										</w2:column>
+									</w2:row>
+								</w2:gBody>
+							</w2:gridView>
+						</xf:group>
+						<xf:group tagname="td" style="" class="w2tb_td">
+							<w2:attributes>
+								<w2:colspan></w2:colspan>
+								<w2:rowspan></w2:rowspan>
+							</w2:attributes>
+							<w2:textbox tagname="label" for="basicip" style="" id="" label="FusionChart 확인" class="formguide"></w2:textbox>
+							<w2:fusionchart seriesColumns="" accessibility="true" drawType="javascript" runflashAt="IE6,IE7,IE8" valueNode="" labelNode="" ref="data:dataList4" seriesType="advanced" dataList="" chartType="Scatter" style="position:relative; width:100%; height:280px;" id="scatterCharts" seriesNode="">
+							</w2:fusionchart>
+						</xf:group>
+					</xf:group>
+				</xf:group></xf:group>
+				<xf:group id="" class="tblbox"><xf:group tagname="table" style="" id="" class="w2tb tbl">
+					<w2:attributes>
+						<w2:summary></w2:summary>
+					</w2:attributes>
+					<xf:group tagname="colgroup">
+						<xf:group tagname="col" style="width:30.00%"></xf:group>
+						<xf:group tagname="col" style="width:70.00%"></xf:group>
+					</xf:group>
+					<xf:group tagname="tr" style="">
+						<xf:group tagname="th" style="" class="w2tb_th">
+							Bubble Charts
+							<w2:attributes>
+								<w2:colspan>2</w2:colspan>
+								<w2:rowspan>1</w2:rowspan>
+							</w2:attributes>
+						</xf:group>
+					</xf:group>
+					<xf:group tagname="tr">
+						<xf:group tagname="td" style="" class="w2tb_td">
+							<w2:attributes>
+								<w2:colspan></w2:colspan>
+								<w2:rowspan></w2:rowspan>
+							</w2:attributes>
+							<w2:textbox tagname="label" for="basicip" style="" id="" label="dataList 확인" class="formguide"></w2:textbox>
+							<w2:gridView fixedColumnWithHidden="true" dataList="dataList5" useShiftKey="true" ignoreCellClick="false" scrollByColumn="false" style="width:100%; height:280px;" autoFit="allColumn" id="" ignoreToggleOnDisabled="false" class="gvw">
+								<w2:header style="" id="header1">
+									<w2:row style="" id="row2">
+										<w2:column width="70" style="height:20px" inputType="text" id="column11" value="Server" blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="column9" value="X" blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="column7" value="Y" blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="column3" value="Z" blockSelect="false" displayMode="label">
+										</w2:column>
+									</w2:row>
+								</w2:header>
+								<w2:gBody style="" id="gBody4">
+									<w2:row style="" id="row5">
+										<w2:column width="70" style="height:20px" inputType="text" id="col1" blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="col2" blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="col3" blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="col4" blockSelect="false" displayMode="label">
+										</w2:column>
+									</w2:row>
+								</w2:gBody>
+							</w2:gridView>
+						</xf:group>
+						<xf:group tagname="td" style="" class="w2tb_td">
+							<w2:attributes>
+								<w2:colspan></w2:colspan>
+								<w2:rowspan></w2:rowspan>
+							</w2:attributes>
+							<w2:textbox tagname="label" for="basicip" style="" id="" label="FusionChart 확인" class="formguide"></w2:textbox>
+							<w2:fusionchart seriesColumns="" accessibility="true" drawType="javascript" runflashAt="IE6,IE7,IE8" valueNode="" labelNode="" ref="data:dataList5" seriesType="advanced" dataList="" chartType="Bubble" style="position:relative; width:100%; height:280px;" id="bubbleCharts" seriesNode="">
+							</w2:fusionchart>
+						</xf:group>
+					</xf:group>
+				</xf:group></xf:group>
+				<xf:group id="" class="tblbox"><xf:group tagname="table" style="" id="" class="w2tb tbl">
+					<w2:attributes>
+						<w2:summary></w2:summary>
+					</w2:attributes>
+					<xf:group tagname="colgroup">
+						<xf:group tagname="col" style="width:30.00%"></xf:group>
+						<xf:group tagname="col" style="width:70.00%"></xf:group>
+					</xf:group>
+					<xf:group tagname="tr" style="">
+						<xf:group tagname="th" style="" class="w2tb_th">
+							MSStackedColumn2DLineDY Chart
+							<w2:attributes>
+								<w2:colspan>2</w2:colspan>
+								<w2:rowspan>1</w2:rowspan>
+							</w2:attributes>
+						</xf:group>
+					</xf:group>
+					<xf:group tagname="tr">
+						<xf:group tagname="td" style="" class="w2tb_td">
+							<w2:attributes>
+								<w2:colspan></w2:colspan>
+								<w2:rowspan></w2:rowspan>
+							</w2:attributes>
+							<w2:textbox tagname="label" for="basicip" style="" id="" label="dataList 확인" class="formguide"></w2:textbox>
+							<w2:gridView fixedColumnWithHidden="true" dataList="dataList6" useShiftKey="true" ignoreCellClick="false" scrollByColumn="false" style="width:100%; height:280px;" autoFit="allColumn" id="" ignoreToggleOnDisabled="false" class="gvw">
+								<w2:header style="" id="header21">
+									<w2:row style="" id="row22">
+										<w2:column width="70" style="height:20px" inputType="text" id="column39" value="Year" blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="column37" value="Product A" blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="column35" value="Product B" blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="column33" value="Service A" blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="column31" value="Service B" blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="column29" value="Service C" blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="column27" value="Revenue A" blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="column23" value="Revenue B" blockSelect="false" displayMode="label">
+										</w2:column>
+									</w2:row>
+								</w2:header>
+								<w2:gBody style="" id="gBody24">
+									<w2:row style="" id="row25">
+										<w2:column width="70" style="height:20px" inputType="text" id="col1" blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="col2" blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="col3" blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="col4" blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="col5" blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="col6" blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="col7" blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="col8" blockSelect="false" displayMode="label">
+										</w2:column>
+									</w2:row>
+								</w2:gBody>
+							</w2:gridView>
+						</xf:group>
+						<xf:group tagname="td" style="" class="w2tb_td">
+							<w2:attributes>
+								<w2:colspan></w2:colspan>
+								<w2:rowspan></w2:rowspan>
+							</w2:attributes>
+							<w2:textbox tagname="label" for="basicip" style="" id="" label="FusionChart 확인" class="formguide"></w2:textbox>
+							<w2:fusionchart seriesColumns="[['col2','col3'], ['col4','col5','col6'],[{'id':'col7','linethickness':'4'},{'id':'col8','linethickness':'4'}]]" accessibility="true" drawType="javascript" runflashAt="IE6,IE7,IE8" valueNode="" labelNode="" ref="data:dataList6" seriesType="advanced" dataList="" chartType="MSStackedColumn2DLineDY" style="position:relative; width:100%; height:280px;" id="6" seriesNode="">
+							</w2:fusionchart>
+						</xf:group>
+					</xf:group>
+				</xf:group></xf:group>
+			<xf:group id="" class="tblbox"><xf:group tagname="table" style="" id="" class="w2tb tbl">
+					<w2:attributes>
+						<w2:summary></w2:summary>
+					</w2:attributes>
+					<xf:group tagname="colgroup">
+						<xf:group tagname="col" style="width:30.00%"></xf:group>
+						<xf:group tagname="col" style="width:70.00%"></xf:group>
+					</xf:group>
+					<xf:group tagname="tr" style="">
+						<xf:group tagname="th" style="" class="w2tb_th">
+							MSStackedColumn2D Chart
+							<w2:attributes>
+								<w2:colspan>2</w2:colspan>
+								<w2:rowspan>1</w2:rowspan>
+							</w2:attributes>
+						</xf:group>
+					</xf:group>
+					<xf:group tagname="tr">
+						<xf:group tagname="td" style="" class="w2tb_td">
+							<w2:attributes>
+								<w2:colspan></w2:colspan>
+								<w2:rowspan></w2:rowspan>
+							</w2:attributes>
+							<w2:textbox tagname="label" for="basicip" style="" id="" label="dataList 확인" class="formguide"></w2:textbox>
+							<w2:gridView fixedColumnWithHidden="true" dataList="dataList7" useShiftKey="true" ignoreCellClick="false" scrollByColumn="false" style="width:100%; height:280px;" autoFit="allColumn" id="" ignoreToggleOnDisabled="false" class="gvw">
+								<w2:header style="" id="header1">
+									<w2:row style="" id="row2">
+										<w2:column width="70" style="height:20px" inputType="text" id="column15" value="Year" blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="column13" value="Product A" blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="column11" value="Product B" blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="column9" value="Service A" blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="column7" value="Service B" blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="column3" value="Service C" blockSelect="false" displayMode="label">
+										</w2:column>
+									</w2:row>
+								</w2:header>
+								<w2:gBody style="" id="gBody4">
+									<w2:row style="" id="row5">
+										<w2:column width="70" style="height:20px" inputType="text" id="col1" blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="col2" blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="col3" blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="col4" blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="col5" blockSelect="false" displayMode="label">
+										</w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="col6" blockSelect="false" displayMode="label">
+										</w2:column>
+									</w2:row>
+								</w2:gBody>
+							</w2:gridView>
+						</xf:group>
+						<xf:group tagname="td" style="" class="w2tb_td">
+							<w2:attributes>
+								<w2:colspan></w2:colspan>
+								<w2:rowspan></w2:rowspan>
+							</w2:attributes>
+							<w2:textbox tagname="label" for="basicip" style="" id="" label="FusionChart 확인" class="formguide"></w2:textbox>
+							<w2:fusionchart seriesColumns="[['col2','col3'], ['col4','col5',{'id':'col6','showvalues':'1'}]]" accessibility="true" drawType="javascript" runflashAt="IE6,IE7,IE8" valueNode="" labelNode="" ref="data:dataList7" seriesType="advanced" dataList="" chartType="MSStackedColumn2D" style="position:relative; width:100%; height:280px;" id="7" seriesNode="">
+							</w2:fusionchart>
+						</xf:group>
+					</xf:group>
+				</xf:group></xf:group></xf:group>
+		</xf:group>
+    </body>
+</html>

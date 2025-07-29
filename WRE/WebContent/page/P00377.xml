@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:w2="http://www.inswave.com/websquare"
+	xmlns:xf="http://www.w3.org/2002/xforms">
+	<head meta_screenName="[InputCalendar] 달력의 표시 기준을 입력 필드의 좌측 또는 우측으로 설정하기">
+		<w2:historyInfo>
+			<w2:history meta_no="01" meta_desc="최초작성" meta_date="20230912" meta_user="InswaveSystems"></w2:history>
+		</w2:historyInfo>
+		<w2:type>COMPONENT</w2:type>
+		<w2:buildDate />
+		<w2:MSA />
+		<xf:model>
+			<w2:dataCollection baseNode="map">
+			</w2:dataCollection>
+			<w2:workflowCollection />
+		</xf:model>
+		<w2:layoutInfo />
+		<w2:publicInfo method="" />
+		<script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function () {
+    
+};
+]]></script>
+	</head>
+	<body ev:onpageload="scwin.onpageload">
+		<xf:group class="sub_contents" id="" style="">
+			<xf:group class="ws_example_grp_desc" id="" style="">
+				<w2:textbox escape="false" id=""
+					label="InputCalendar의 속성 'rightAlign'의 설정 값에 따른 기능을 비교하는 예제입니다.&lt;br/&gt;이 속성은 화면의 달력 아이콘 클릭하면 생성되는 달력이 표시되는 위치(좌,우)의 기준을 설정하는 기능을 제공합니다.&lt;br/&gt;설정 값에 따라 입력 필드를 기준으로 좌측 또는 우측으로 달력을 표시할 수 있습니다. 단, InputCalendar의 좌측 또는 우측의 공간(너비)이 최소한 달력의 너비(width)만큼은 되어야 동작합니다. 그렇지 않으면 표시 위치가 자동 조절됩니다."
+					style="">
+				</w2:textbox>
+				<w2:textbox escape="false" id="" label="설정 값에 따른 구성은 다음과 같습니다." style=""></w2:textbox>
+				<w2:textbox escape="false" id=""
+					label="- false: [default] 입력 필드를 기준으로 좌측에 달력이 표시됩니다.&lt;br/&gt;- true: 입력 필드를 기준으로 우측에 달력이 표시됩니다."
+					style="">
+				</w2:textbox>
+				<w2:textbox class="ws_example_txt_desc_info" escape="false" id=""
+					label="이 기능은 실행된 예제 화면의 너비(width)가 최소 500px 이상인 경우에만 정상적인 기능 비교가 가능합니다. 실행된 결과는 예제 가이드를 통해 확인할 수 있습니다." style="">
+				</w2:textbox>
+				<w2:textbox class="ws_example_txt_desc_info" escape="false" id="" label="달력 아이콘을 클릭하고, 화면에 표시되는 달력의 위치를 확인합니다." style="">
+				</w2:textbox>
+			</xf:group>
+			<xf:group class="example_div_tb_style_wrap" id="" style="">
+				<xf:group class="example_div_tr_style" id="" style="">
+					<w2:textbox class="example_div_th_style" escape="false" id="" label='(기본 설정 값) 달력을 입력 필드의 좌측을 기준으로 표시하기' style=""></w2:textbox>
+					<xf:group class="example_div_td_style" id="" style="">
+						<xf:group class="mb_def_box nobottom" id="" style="text-align: center">
+							<w2:inputCalendar id="" style="width:110px;height: 26px;" rightAlign="false" class="ws_example defStyle"></w2:inputCalendar>
+						</xf:group>
+					</xf:group>
+				</xf:group>
+				<xf:group class="example_div_tr_style" id="" style="">
+					<w2:textbox class="example_div_th_style" escape="false" id="" label='달력을 입력 필드의 우측을 기준으로 표시하기' style=""></w2:textbox>
+					<xf:group class="example_div_td_style" id="" style="">
+						<xf:group class="mb_def_box nobottom" id="" style="text-align: center;">
+							<w2:inputCalendar id="" style="width:110px;height: 26px;" rightAlign="true" class="ws_example defStyle"></w2:inputCalendar>
+						</xf:group>
+					</xf:group>
+				</xf:group>
+			</xf:group>
+		</xf:group>
+	</body>
+</html>

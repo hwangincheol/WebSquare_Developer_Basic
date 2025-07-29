@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:w2="http://www.inswave.com/websquare"
+	xmlns:xf="http://www.w3.org/2002/xforms">
+	<head meta_screenName="[GridView] 데이터 복사 - 데이터 출처 설정">
+		<w2:historyInfo>
+			<w2:history meta_no="02" meta_desc="예제 파일에 설명 문구 보충" meta_date="20230216" meta_user="InswaveSystems"></w2:history>
+			<w2:history meta_no="01" meta_desc="최초작성" meta_date="20220907" meta_user="InswaveSystems"></w2:history>
+		</w2:historyInfo>
+		<w2:type>COMPONENT</w2:type>
+		<w2:buildDate />
+		<w2:MSA />
+		<xf:model>
+			<w2:dataCollection baseNode="map">
+				<w2:dataList baseNode="list" id="dlt_books" repeatNode="map">
+					<w2:columnInfo>
+						<w2:column dataType="text" id="book_name" name="도서명"></w2:column>
+						<w2:column dataType="text" id="price" name="정가"></w2:column>
+						<w2:column id="published_date" name="출간일" dataType="text"></w2:column>
+					</w2:columnInfo>
+					<w2:data use="true" xmlns="">
+						<w2:row>
+							<book_name><![CDATA[정글만리]]></book_name>
+							<price><![CDATA[16500]]></price>
+							<published_date><![CDATA[20130701]]></published_date>
+						</w2:row>
+						<w2:row>
+							<book_name><![CDATA[내가 틀릴 수도 있습니다]]></book_name>
+							<price><![CDATA[16000]]></price>
+							<published_date><![CDATA[20220418]]></published_date>
+						</w2:row>
+						<w2:row>
+							<book_name><![CDATA[공정하다는 착각]]></book_name>
+							<price><![CDATA[18000]]></price>
+							<published_date><![CDATA[20201201]]></published_date>
+						</w2:row>
+						<w2:row>
+							<book_name><![CDATA[불편한 편의점]]></book_name>
+							<price><![CDATA[14000]]></price>
+							<published_date><![CDATA[20210420]]></published_date>
+						</w2:row>
+						<w2:row>
+							<book_name><![CDATA[사람일까 상황일까]]></book_name>
+							<price><![CDATA[28000]]></price>
+							<published_date><![CDATA[20190826]]></published_date>
+						</w2:row>
+					</w2:data>
+				</w2:dataList>
+			</w2:dataCollection>
+			<w2:workflowCollection />
+		</xf:model>
+		<w2:layoutInfo />
+		<w2:publicInfo method="" />
+		<script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function () {
+
+};
+
+]]></script>
+	</head>
+	<body ev:onpageload="scwin.onpageload">
+		<xf:group class="sub_contents">
+			<xf:group class="ws_example_grp_desc">
+				<w2:textbox escape="false"
+					label='GridView에서 데이터 복사(Ctrl+C)를 할 때 데이터 출처의 설정 예제입니다.&lt;br/&gt;GridView의 "정가", "출간일" 컬럼의 값을 복사하여 비교합니다.'>
+				</w2:textbox>
+				<w2:textbox escape="false"
+					label="이 기능은 GridView의 속성 'copyOption'에 지정된 값에 의해 동작합니다.&lt;br/&gt;아래는 지정 값에 따른 동작 방식입니다.&lt;br/&gt;- dataList : (기본 값) : 데이터 복사 시 dataList에 할당된 값을 복사합니다.&lt;br/&gt;- display : 데이터 복사 시 화면에 출력된 값을 복사합니다.">
+				</w2:textbox>
+			</xf:group>
+			<xf:group class="example_div_tb_style_wrap">
+				<xf:group class="example_div_tr_style">
+					<w2:textbox class="example_div_th_style" escape="false" label="[기본설정] 연결된 DataList의 값이 복사"></w2:textbox>
+					<xf:group class="example_div_td_style">
+						<w2:textbox class="ws5_example_txt_normal" escape="false"
+							label="컬럼 '정가' 또는 '출간일'의 셀을 클릭하고 복사('Ctrl'+'C')하면 DataList에 할당된 값이 복사 됩니다.&lt;br/&gt;첫 번째 행의 '정가'열의 '16,500'을 복사하면 '16500'이 붙여넣기 됩니다.">
+						</w2:textbox>
+						<w2:gridView autoFit="allColumn" class="gvw" dataList="data:dlt_books" style="height: 150px;" visibleRowNum="all"
+							autoFitMinWidth="240" defaultCellHeight="26">
+							<w2:caption id="caption1" value="this is a grid caption."></w2:caption>
+							<w2:header id="header1">
+								<w2:row id="row1">
+									<w2:column width="178" inputType="text" id="column3" value="도서명" displayMode="label"></w2:column>
+									<w2:column width="63" inputType="text" id="column2" value="정가" displayMode="label"></w2:column>
+									<w2:column width="83" inputType="text" id="column1" value="출간일" displayMode="label"></w2:column>
+								</w2:row>
+							</w2:header>
+							<w2:gBody id="gBody1">
+								<w2:row id="row2">
+									<w2:column width="178" inputType="text" id="book_name" displayMode="label" textAlign="left">
+									</w2:column>
+									<w2:column width="63" inputType="text" id="price" displayMode="label" textAlign="right" dataType="number"
+										displayFormat="#,###">
+									</w2:column>
+									<w2:column width="83" inputType="text" id="published_date" displayMode="label" dataType="date" displayFormat="yyyy-MM-dd">
+									</w2:column>
+								</w2:row>
+							</w2:gBody>
+						</w2:gridView>
+					</xf:group>
+				</xf:group>
+				<xf:group class="example_div_tr_style">
+					<w2:textbox class="example_div_th_style" escape="false" label="출력된 값이 복사"></w2:textbox>
+					<xf:group class="example_div_td_style">
+						<w2:textbox class="ws5_example_txt_normal" escape="false"
+							label="컬럼 '정가' 또는 '출간일'의 셀을 클릭하고 복사('Ctrl'+'C')하면 화면에 보여지는 값이 복사 됩니다.&lt;br/&gt;첫 번째 행의 '정가'열의 '16,500'을 복사하면 '16,500'이 붙여넣기 됩니다.">
+						</w2:textbox>
+						<w2:gridView autoFit="allColumn" autoFitMinWidth="240" class="gvw" dataList="data:dlt_books" defaultCellHeight="26"
+							style="height: 150px;" visibleRowNum="all" copyOption="display">
+							<w2:caption id="caption1" value="this is a grid caption."></w2:caption>
+							<w2:header id="header1">
+								<w2:row id="row1">
+									<w2:column displayMode="label" id="column3" inputType="text" value="도서명" width="178"></w2:column>
+									<w2:column displayMode="label" id="column2" inputType="text" value="정가" width="63"></w2:column>
+									<w2:column displayMode="label" id="column1" inputType="text" value="출간일" width="83"></w2:column>
+								</w2:row>
+							</w2:header>
+							<w2:gBody id="gBody1">
+								<w2:row id="row2">
+									<w2:column displayMode="label" id="book_name" inputType="text" textAlign="left" width="178">
+									</w2:column>
+									<w2:column dataType="number" displayFormat="#,###" displayMode="label" id="price" inputType="text" textAlign="right"
+										width="63">
+									</w2:column>
+									<w2:column dataType="date" displayFormat="yyyy-MM-dd" displayMode="label" id="published_date" inputType="text" width="83">
+									</w2:column>
+								</w2:row>
+							</w2:gBody>
+						</w2:gridView>
+					</xf:group>
+				</xf:group>
+				<xf:group class="example_div_tr_style">
+					<xf:group class="example_div_th_style">
+						<w2:textbox escape="false" label="컬럼별 복사할 데이터 출처 설정">
+						</w2:textbox>
+					</xf:group>
+					<xf:group class="example_div_td_style">
+						<w2:textbox escape="false" label="정가 : 화면에 출력된 값으로 복사">
+						</w2:textbox>
+						<w2:textbox class="mb10" escape="false" label="출간일 : DataList의 값으로 복사">
+						</w2:textbox>
+						<w2:gridView autoFit="allColumn" autoFitMinWidth="240" class="gvw" dataList="data:dlt_books" defaultCellHeight="26"
+							style="height: 150px;" visibleRowNum="all">
+							<w2:caption id="caption1" value="this is a grid caption."></w2:caption>
+							<w2:header id="header1">
+								<w2:row id="row1">
+									<w2:column displayMode="label" id="column3" inputType="text" value="도서명" width="178"></w2:column>
+									<w2:column displayMode="label" id="column2" inputType="text" value="정가" width="63"></w2:column>
+									<w2:column displayMode="label" id="column1" inputType="text" value="출간일" width="83"></w2:column>
+								</w2:row>
+							</w2:header>
+							<w2:gBody id="gBody1">
+								<w2:row id="row2">
+									<w2:column displayMode="label" id="book_name" inputType="text" textAlign="left" width="178">
+									</w2:column>
+									<w2:column dataType="number" displayFormat="#,###" displayMode="label" id="price" inputType="text" textAlign="right"
+										width="63" copyOption="display">
+									</w2:column>
+									<w2:column dataType="date" displayFormat="yyyy-MM-dd" displayMode="label" id="published_date" inputType="text" width="83">
+									</w2:column>
+								</w2:row>
+							</w2:gBody>
+						</w2:gridView>
+					</xf:group>
+				</xf:group>
+			</xf:group>
+		</xf:group>
+	</body>
+</html>

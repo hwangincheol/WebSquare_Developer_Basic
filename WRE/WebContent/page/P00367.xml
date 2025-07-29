@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:w2="http://www.inswave.com/websquare"
+	xmlns:xf="http://www.w3.org/2002/xforms">
+	<head meta_screenName="[CheckBox] Event - onchange (값이 변경될 때 발생)" meta_type="메인" meta_vertical_guides="" meta_horizontal_guides="">
+		<w2:historyInfo>
+			<w2:history meta_no="01" meta_desc="최초작성" meta_date=" 20230906" meta_user="InswaveSystems"></w2:history>
+		</w2:historyInfo>
+		<w2:type>COMPONENT</w2:type>
+		<w2:buildDate />
+		<w2:MSA />
+		<xf:model>
+			<w2:dataCollection baseNode="map">
+			</w2:dataCollection>
+			<w2:workflowCollection />
+		</xf:model>
+		<w2:layoutInfo />
+		<w2:publicInfo method="" />
+		<script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function () {
+};
+
+/**
+ * CheckBox의 onchange 이벤트
+ */
+scwin.cbx_main_onchange = function (info) {
+    // 로그 출력
+    let strLog = "[onchange] 선택한 값 : " + info.newValue;
+    $c.frame.printExampleLog(strLog, txa_log, false);
+    console.log(strLog);
+};
+
+
+/**
+ * textarea의 로그 삭제
+ */
+scwin.btn_clearLog_onclick = function (e) {
+    let strTargetId = this.getUserData("userData1");
+    let cmpTarget;
+    if (strTargetId) {
+        cmpTarget = $p.getComponentById(strTargetId) || txa_log;
+    } else {
+        cmpTarget = txa_log;
+    }
+    //textarea value를 빈문자열로 할당.
+    cmpTarget.setValue("");
+};
+
+scwin.btn_check_onclick = function (e) {
+    let _value = sbx_value.getValue();
+
+    cbx_main.setValue(_value);
+};
+]]></script>
+	</head>
+	<body ev:onpageload="scwin.onpageload">
+		<xf:group class="sub_contents" id="" style="" nextTabID="">
+			<xf:group class="ws_example_grp_desc" id="" style="">
+				<w2:textbox escape="false" id=""
+					label='CheckBox의 onchange 이벤트 예제입니다.&lt;br/&gt;onchange 이벤트는 CheckBox의 선택 값이 변경될 때 발생하는 이벤트로, &lt;br/&gt;사용자가 화면을 조작해서 발생한 변화와 개발자가 script로 작성한 기능들에 의해 변경된 것을 모두 포함해서 발생합니다.'
+					style="">
+				</w2:textbox>
+			</xf:group>
+			<xf:group class="example_div_tb_style_wrap mb_def" id="">
+				<xf:group class="example_div_tr_style" id="" style="">
+					<xf:group class="example_div_th_style" id="" style="">
+						<w2:span class="mr_def txt_blue" id="" label="Event: onchange" style=""></w2:span>
+					</xf:group>
+					<xf:group class="example_div_td_style" id="" style="">
+						<w2:textbox escape="false" id=""
+							label="버튼의 onclick 이벤트를 활용해 SelectBox에 선택된 값으로 CheckBox의 선택된 값을 변경합니다.&lt;br/&gt;이 때도 화면에서 조작한 것과 마찬가지로 onchange 이벤트가 실행됩니다."
+							style="">
+						</w2:textbox>
+						<xf:group id="" style="">
+							<xf:select1 id="sbx_value" chooseOption="true" style="width: 50px;" submenuSize="auto" allOption=""
+								disabled="false" direction="auto" appearance="minimal" disabledClass="w2selectbox_disabled" ref="" chooseOptionLabel="선택">
+								<xf:choices>
+									<xf:item>
+										<xf:label><![CDATA[1]]></xf:label>
+										<xf:value><![CDATA[1]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[2]]></xf:label>
+										<xf:value><![CDATA[2]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[3]]></xf:label>
+										<xf:value><![CDATA[3]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[4]]></xf:label>
+										<xf:value><![CDATA[4]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[5]]></xf:label>
+										<xf:value><![CDATA[5]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[6]]></xf:label>
+										<xf:value><![CDATA[6]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[7]]></xf:label>
+										<xf:value><![CDATA[7]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[8]]></xf:label>
+										<xf:value><![CDATA[8]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[9]]></xf:label>
+										<xf:value><![CDATA[9]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[10]]></xf:label>
+										<xf:value><![CDATA[10]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[11]]></xf:label>
+										<xf:value><![CDATA[11]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[12]]></xf:label>
+										<xf:value><![CDATA[]]></xf:value>
+									</xf:item>
+								</xf:choices>
+							</xf:select1>
+							<xf:trigger class="btn_exam_exec" id="btn_check" style="" type="button" ev:onclick="scwin.btn_check_onclick">
+								<xf:label><![CDATA[Excute: setValue]]></xf:label>
+							</xf:trigger>
+						</xf:group>
+						<xf:group id="" style="">
+							<xf:select appearance="full" cols="4" id="cbx_main" ref="" rows="" selectedindex="-1" style=""
+								ev:onchange="scwin.cbx_main_onchange">
+								<xf:choices>
+									<xf:item>
+										<xf:label><![CDATA[Label 1]]></xf:label>
+										<xf:value><![CDATA[Value 1]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[Label 2]]></xf:label>
+										<xf:value><![CDATA[Value 2]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[Label 3]]></xf:label>
+										<xf:value><![CDATA[Value 3]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[Label 4]]></xf:label>
+										<xf:value><![CDATA[Value 4]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[Label 5]]></xf:label>
+										<xf:value><![CDATA[Value 5]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[Label 6]]></xf:label>
+										<xf:value><![CDATA[Value 6]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[Label 7]]></xf:label>
+										<xf:value><![CDATA[Value 7]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[Label 8]]></xf:label>
+										<xf:value><![CDATA[Value 8]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[Label 9]]></xf:label>
+										<xf:value><![CDATA[Value 9]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[Label 10]]></xf:label>
+										<xf:value><![CDATA[Value 10]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[Label 11]]></xf:label>
+										<xf:value><![CDATA[Value 11]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[Label 12]]></xf:label>
+										<xf:value><![CDATA[Value 12]]></xf:value>
+									</xf:item>
+								</xf:choices>
+							</xf:select>
+						</xf:group>
+					</xf:group>
+				</xf:group>
+				<xf:group class="example_div_tr_style" id="" style="">
+					<xf:group class="example_div_th_style" id="">
+						<w2:span class="mr_def txt_blue" id="" label="로그 확인" style=""></w2:span>
+						<xf:trigger class="com_example_btn_log_clear" ev:onclick="scwin.btn_clearLog_onclick" id="btn_clearLog" style=""
+							title="로그 삭제" type="button">
+							<xf:label><![CDATA[로그 삭제]]></xf:label>
+						</xf:trigger>
+					</xf:group>
+					<xf:group class="example_div_td_style" id="" style="">
+						<xf:textarea class="com_example_txa_log" id="txa_log" spellcheck="false" style="width: 100%;height: 140px;"></xf:textarea>
+					</xf:group>
+				</xf:group>
+			</xf:group>
+		</xf:group>
+
+
+	</body>
+</html>

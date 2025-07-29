@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+        <w2:type>COMPONENT</w2:type>
+        <w2:buildDate/>
+        <w2:MSA/>
+        <xf:model>
+            <w2:dataCollection baseNode="map"/>
+            <w2:workflowCollection/>
+        </xf:model>
+        <w2:layoutInfo/>
+        <w2:publicInfo method=""/>
+        <script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function() {
+	
+};
+]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload">
+    	<xf:group class="sub_contents" id="" style="">
+			<xf:group class="pgtbox" id="" style="">
+				<w2:textbox class="pgt_tit" id="" label="Publishing Template - Fliptoggle" style=""></w2:textbox>
+			</xf:group>
+			<xf:group class="titbox" id="" style="">
+				<w2:textbox class="" id="" label="Fliptoggle" style="" tagname="h3"></w2:textbox>
+				<w2:textbox class="" id="" label="Forms" style="" tagname="em"></w2:textbox>
+			</xf:group>
+			<xf:group id="" class="titbox"><w2:textbox style="" id="" label="모바일 환경에서 드래그나 클릭을 통해 on/off 등의 둘 중 하나의 값을 선택할 수 있는 컴포넌트입니다." class=""></w2:textbox></xf:group><xf:group class="titbox" id="" style="">
+				<w2:textbox class="" id="" label="01. Sample" style="" tagname="h3"></w2:textbox>
+			<xf:group id="" class="rt"><xf:group id="" class="rt"><w2:anchor outerDiv="false" name="" style="" href="/ws/download/fliptoggle.zip" id="" class="btn_cm">
+					<xf:label><![CDATA[Download]]></xf:label>
+				</w2:anchor></xf:group></xf:group></xf:group>
+			<xf:group class="msgbox" id="" style="border:1px dashed #ccc;">
+				<w2:fliptoggle class="wq_ftg" id="fliptoggle1" label="" style="position:relative;width:100px;height:26px;"
+					useClickToggle="false">
+					<w2:on label="On" value="1"></w2:on>
+					<w2:off label="Off" value="0"></w2:off>
+				</w2:fliptoggle>
+			</xf:group>
+			<xf:group id="" class="titbox"><w2:textbox style="" id="" label="02. Property" class="" tagname="h3"></w2:textbox></xf:group>
+			<xf:group id="" class="tblbox"><xf:group tagname="table" style="" id="" class="w2tb tbl">
+				<w2:attributes>
+					<w2:summary></w2:summary>
+				</w2:attributes>
+				<xf:group tagname="colgroup">
+					<xf:group tagname="col" style="width:20%;"></xf:group>
+					<xf:group tagname="col" style=""></xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">Property</xf:group>
+					<xf:group tagname="th" style="" class="w2tb_th">Description</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">class</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">사용자가 임의의 class를 정의할때 사용합니다.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">escape</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">&lt;&gt;&amp;&quot;를 HTML Escape 문자로 변환하여 화면에 표시할지를 결정합니다.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">id</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">사용자가 임의의 id를 정의할때 사용합니다.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">label</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">선택값들의 설명글을 입력합니다.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">useClickToggle</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">클릭이벤트를 통해서도 동작하게 할지를 지정합니다.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th">
+						tabIndex
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						Tab&amp;nbsp;Key를&amp;nbsp;이용&amp;nbsp;한&amp;nbsp;컴포넌트의&amp;nbsp;포커스&amp;nbsp;순서로&amp;nbsp;HTML의&amp;nbsp;tabindex속성과&amp;nbsp;동일한&amp;nbsp;기능을&amp;nbsp;제공한다.
+						<w2:attributes></w2:attributes>
+					</xf:group>
+				</xf:group>
+			</xf:group></xf:group>
+			<xf:group id="" class="titbox"><w2:textbox style="" id="" label="03. CSS Overriding" class="" tagname="h3"></w2:textbox></xf:group>
+			<xf:group id="" class="tblbpx"><xf:group tagname="table" style="" id="" class="w2tb tbl">
+				<w2:attributes>
+					<w2:summary></w2:summary>
+				</w2:attributes>
+				<xf:group tagname="colgroup">
+					<xf:group tagname="col" style="width:20%;"></xf:group>
+					<xf:group tagname="col" style=""></xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">Class</xf:group>
+					<xf:group tagname="th" style="" class="w2tb_th">Description</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">w2fliptoggle</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						w2fliptoggle은 웹스퀘어 엔진에서 정의된 클래스입니다, 기본적으로 html 로 떨구는 시점에서 자동으로 부여됩니다.
+						<br></br>
+						Fliptoggle의 전체 영역입니다
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">w2fliptoggle_select</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						w2fliptoggle_select는 웹스퀘어 엔진에서 정의된 클래스입니다, 기본적으로 html 로 떨구는 시점에서 자동으로 부여됩니다.
+						<br></br>
+						Fliptoggle의 label글이 들어가는 영역입니다. 기본적으로 숨김처리되어 있습니다.
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">w2fliptoggle_select</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						w2fliptoggle_select는 웹스퀘어 엔진에서 정의된 클래스입니다, 기본적으로 html 로 떨구는 시점에서 자동으로 부여됩니다.
+						<br></br>
+						Fliptoggle의 선택값 처리를 위한 select태그입니다. 기본적으로 숨김처리되어 있습니다.
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">
+						w2fliptoggle_conner_left,
+						<br></br>
+						w2fliptoggle_conner_right,
+						<br></br>
+						w2fliptoggle_mask
+					</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						w2fliptoggle은 웹스퀘어 엔진에서 정의된 클래스입니다, 기본적으로 html 로 떨구는 시점에서 자동으로 부여됩니다.
+						<br></br>
+						Fliptoggle의 실제 영역입니다.
+					</xf:group>
+				</xf:group>
+			</xf:group></xf:group>
+		</xf:group>
+    </body>
+</html>

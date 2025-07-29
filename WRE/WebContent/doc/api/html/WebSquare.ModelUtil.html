@@ -1,0 +1,1880 @@
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="../cm/css/api.css">
+    </head>
+    <body>
+        <div class="api_wrap">
+            <div class="api_wrap_inner">
+                <div class="api_container">
+                    <div class="api_content">
+                        <header class="api_header">
+                            <p class="api_component">WebSquare.ModelUtil</p>
+                            <p class="api_version">5.0_5.5005A.20230904.185702</p>
+                            <p>WebSquare.ModelUtil Package</p>
+                        </header>
+                        <section class="properties_section">
+                            <h2>Property Detail</h2>
+                            
+                        </section>
+                        <section class="event_section">
+                            <h2>Event Detail</h2>
+                            
+                        </section>
+                        <section class="method_section">
+                            <h2>Method Detail</h2>
+                            <dl class="api_dl">
+                            <dt id="abort">abort(submissionId)</dt>
+                            <dd>
+                                <p>현재 진행 중인 Submission을 중지합니다.</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">submissionId</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>중지할 Submission의 ID</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>
+ WebSquare.ModelUtil.abort( "submission1" );
+</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="copyChildrenNodes">copyChildrenNodes(srcXPath, destXPath, mode)</dt>
+                            <dd>
+                                <p>srcXPath가 가리키는 하위노드들을 destXPath가 가리키는 하위노드들로 복사합니다.<br />이 때 mode에 따라 완전히 srcXPath의 하위노드로 replace 하는 것과 ( replaceAll )<br />srcXPath와 destXPath의 하위노드를 merge하는 것과 ( overwrite )<br />srcXPath의 하위노드와 destXPath의 하위노드 간 합집합을 구하는 것 ( append )<br />destXPath 하위노드에 존재하는 노드만 값을 세팅하는 것으로 나누어 집니다. ( replaceOnly )</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">srcXPath</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>복사할 데이터의 xPath</p>
+                                            </div>
+                                        </li>
+                                    </ul><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">destXPath</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>복사할 장소의 XPath</p>
+                                            </div>
+                                        </li>
+                                    </ul><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">mode</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>( "replaceAll", "overwrite", "replaceOnly", "append" )</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>//Model에 바인드된 데이터가 다음과 같다.
+<bookstore>
+    <book idx="1">
+        <title lang="eng">Harry Potter</title>
+        <price>29.99</price>
+        </book>
+        <book idx="2">
+            <title lang="eng">Learning XML</title>
+            <price>39.95</price>
+        </book>
+</bookstore>
+
+<selectedBook>
+    <title lang="eng">Learning XML2</title>
+        <price>39.952</price>
+        <author>Erik T. Ray</author>
+</selectedBook>
+
+WebSquare.ModelUtil.copyChildrenNodes( "bookstore/book[@idx='2']" , "selectedBook", "replaceAll");
+
+//Model에 selectedBook 노드는 다음과 같다.
+<selectedBook>
+    <title lang="eng">Learning XML</title>
+    <price>39.95</price>
+</selectedBook>
+
+WebSquare.ModelUtil.copyChildrenNodes( "bookstore/book[@idx='2']" , "selectedBook", "overwrite");
+
+<selectedBook>
+    <title lang="eng">Learning XML</title>
+    <price>39.95</price>
+    <author>Erik T. Ray</author>
+</selectedBook>
+
+WebSquare.ModelUtil.copyChildrenNodes( "bookstore/book[@idx='2']" , "selectedBook", "append");
+
+<selectedBook>
+    <title lang="eng">Learning XML2</title>
+    <price>39.952</price>
+    <author>Erik T. Ray</author>
+    <title lang="eng">Learning XML</title>
+    <price>39.95</price>
+</selectedBook>
+
+WebSquare.ModelUtil.copyChildrenNodes( "bookstore/book[@idx='2']" , "selectedBook", "replaceOnly");
+
+<selectedBook>
+    <title lang="eng">Learning XML</title>
+    <price>39.95</price>
+    <author>Erik T. Ray</author>
+</selectedBook>
+</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="copyNode">copyNode(srcXPath, destXPath)</dt>
+                            <dd>
+                                <p>srcXPath에 해당하는 Node를 destXPath 에 해당하는 Node의 Child Node로 append합니다.<br />기존의 destXPath밑에 있던 node들은 사라집니다.</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">srcXPath</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>append시킬 데이터의 xPath</p>
+                                            </div>
+                                        </li>
+                                    </ul><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">destXPath</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>append되는 곳의 xPath</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>//Model에 바인드된 데이터가 다음과 같다.
+<bookstore>
+        <book idx="1">
+            <title lang="eng">Harry Potter</title>
+            <price>29.99</price>
+        </book>
+        <book idx="2">
+            <title lang="eng">Learning XML</title>
+            <price>39.95</price>
+        </book>
+</bookstore>
+WebSquare.ModelUtil.copyNode( "bookstore/book[@idx='2']" , "selectedBook");
+
+//Model에 selectedBook 노드는 다음과 같다.
+<selectedBook>
+    <book idx='2'>
+        <title lang='eng'>Learning XML</title>
+        <price>39.95</price>
+    </book>
+</selectedBook>
+</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="executeParallel">executeParallel(submission, processMsg, resolveCallback, rejectCallback, id)</dt>
+                            <dd>
+                                <p>workflow 를 생성하지않고 기존 submission들을 parallel 하게 순서를 보장하여 처리하고자 할때 사용<br />submission1 call -> submission2 call -> submission1 callback  -> submission2 callback</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">submission</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">array</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>id array  ex) ["submission1", "submission2", "submission3"]</p>
+                                            </div>
+                                        </li>
+                                    </ul><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">processMsg</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">N</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>undefined</p>
+                                            </div>
+                                        </li>
+                                    </ul><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">resolveCallback</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">function</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">N</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>function</p>
+                                            </div>
+                                        </li>
+                                    </ul><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">rejectCallback</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">function</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">N</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>function</p>
+                                            </div>
+                                        </li>
+                                    </ul><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">id</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">N</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>undefined</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>WebSquare.ModelUtil.executeParallel( ["submission1", "submission2", "submission3"],"processMsg", final_callback, reject_callback, "id1") ;
+//submission1,submission2, submission3 call
+// -> submission1 callback -> submission2 callback -> submission3 callback
+// -> final_callback or reject_callback</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="executeSerial">executeSerial(submission, processMsg, resolveCallback, rejectCallback, id)</dt>
+                            <dd>
+                                <p>workflow 를 생성하지않고 기존 submission들을 serial 하게 순서를 보장하여 처리하고자 할때 사용<br />submission1 call -> submission1 callback -> submission2 call -> submission2 callback</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">submission</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">array</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>id array  ex) ["submission1", "submission2", "submission3"]</p>
+                                            </div>
+                                        </li>
+                                    </ul><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">processMsg</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">N</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>undefined</p>
+                                            </div>
+                                        </li>
+                                    </ul><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">resolveCallback</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">function</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">N</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>function</p>
+                                            </div>
+                                        </li>
+                                    </ul><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">rejectCallback</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">function</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">N</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>function</p>
+                                            </div>
+                                        </li>
+                                    </ul><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">id</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">N</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>undefined</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>WebSquare.ModelUtil.executeSerial( ["submission1", "submission2", "submission3"], processMsg,final_callback, reject_callback) ;
+//submission1 call/callback -> submission2 call/callback -> submission3 call/callback -> final_callback or reject_callback</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="executeSubmission">executeSubmission(submissionID, requestData, obj)</dt>
+                            <dd>
+                                <p>submissionID에 해당하는 submission을 실행시킵니다.</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">submissionID</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>submission의 아이디</p>
+                                            </div>
+                                        </li>
+                                    </ul><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">requestData</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">Object</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">N</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>요청 데이터</p>
+                                            </div>
+                                        </li>
+                                    </ul><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">obj</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">Object</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">N</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>전송중 disable시킬 컴퍼넌트</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>WebSquare.ModelUtil.executeSubmission ("submission1") ;
+//id가 submission1인 submission을 실행.</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="executeWhilst">executeWhilst(submission, condFn, maxRepeat, processMsg, resolveCallback, rejectCallback, id)</dt>
+                            <dd>
+                                <p>workflow 를 생성하지않고 특정 submission을 반복적으로 호출하고자 할때 사용</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">submission</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>ID</p>
+                                            </div>
+                                        </li>
+                                    </ul><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">condFn</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">function</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>실행여부를 체크하는 pre function</p>
+                                            </div>
+                                        </li>
+                                    </ul><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">maxRepeat</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">int</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>최대실행 회수. conditon으로만 체크가능한 경우에는 무한루프에 대한 제어용으로도 사용가능</p>
+                                            </div>
+                                        </li>
+                                    </ul><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">processMsg</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">N</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>undefined</p>
+                                            </div>
+                                        </li>
+                                    </ul><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">resolveCallback</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">function</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">N</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>function</p>
+                                            </div>
+                                        </li>
+                                    </ul><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">rejectCallback</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">function</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">N</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>function</p>
+                                            </div>
+                                        </li>
+                                    </ul><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">id</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">N</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>undefined</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>WebSquare.ModelUtil.executeWhilst( "submission1", cond_check, 100, "processMsg",final_callback, reject_callback, "id1") ;
+//submission 을 cond_check sucess 이고 100회 미만 까지 반복 call/callback 수행
+// -> final_callback or reject_callback</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="executeWorkflow">executeWorkflow(workflowId)</dt>
+                            <dd>
+                                <p>workflowId or workflowObj 을 받아서 workflow 실행</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">workflowId</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">Object</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>workflow 아이디 or workflowObj</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>WebSquare.ModelUtil.executeWorkflow ("workflow1") ;
+//workflowCollection/workflow id가 workflow1인 workflow를 실행.
+//또는
+var workflowObj= {"id":"workflow1", "processMsg" : "workflow실행 중입니다.. ",
+     "step" : [{ "type":"submit", "action" : "submission1"},
+                  { "type":"submit","pre": cond, "action" : "submission2"},
+                  { "type":"submitDone", "action" : "submission1", "post":post},
+                  { "type":"submitDone", "action" : "submission2", "post":post}   ],
+                  "resolveCallback" : final_callback,
+                  "rejectCallback": reject_callback
+                  } ;
+WebSquare.ModelUtil.executeWorkflow  (workflowObj) ;
+//workflowObj object로 workflow를 실행.</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="findInstanceNode">findInstanceNode(xpath)</dt>
+                            <dd>
+                                <p>xpath에 해당하는 Instance 내부의 노드를 반환합니다. 여러개의 노드가 존재할 때 첫번째 노드를 반환합니다.</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">xpath</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>반환될 instance Node의 XPath</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+              <div class="api_tit_para">Return</div>
+                  <div class="api_parameter">
+                      <ul class="api_ul_parameter">
+                          <li>
+                              <div class="tit">Type</div>
+                              <div class="cnt">Xml Element</div>
+                          </li>
+                          <li class="api_desc">
+                              <div class="tit">Description</div>
+                              <div class="cnt">xpath로 찾은 xml element</div>
+                          </li>
+                    </ul>
+              </div>
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>//Model에 바인드된 데이터가 다음과 같다.
+<bookstore>
+    <book idx="1">
+        <title lang="eng">Harry Potter</title>
+        <price>29.99</price>
+    </book>
+    <book idx="2">
+        <title lang="eng">Learning XML</title>
+        <price>39.95</price>
+    </book>
+</bookstore>
+var xmlDoc = WebSquare.ModelUtil.findInstanceNode ("bookstore/book");
+
+//xmlDoc은 다음과 같다.
+<book idx="1">
+    <title lang="eng">Harry Potter</title>
+    <price>29.99</price>
+</book></xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="findInstanceNodes">findInstanceNodes(xpath)</dt>
+                            <dd>
+                                <p>xpath에 해당하는 Instance 내부의 노드들을 배열 형태로 반환합니다.</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">xpath</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>반환될 instance Node의 XPath</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+              <div class="api_tit_para">Return</div>
+                  <div class="api_parameter">
+                      <ul class="api_ul_parameter">
+                          <li>
+                              <div class="tit">Type</div>
+                              <div class="cnt">Object</div>
+                          </li>
+                          <li class="api_desc">
+                              <div class="tit">Description</div>
+                              <div class="cnt">xpath로 찾은Document Element(node)로 이루어진 배열</div>
+                          </li>
+                    </ul>
+              </div>
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>//Model에 바인드된 데이터가 다음과 같다.
+<bookstore>
+    <book idx="1">
+        <title lang="eng">Harry Potter</title>
+        <price>29.99</price>
+    </book>
+    <book idx="2">
+        <title lang="eng">Learning XML</title>
+        <price>39.95</price>
+    </book>
+</bookstore>
+var xmlDoc = WebSquare.ModelUtil.findInstanceNodes( "bookstore/book" );
+
+//xmlDoc.length는 2이다.
+//xmlDoc[0] 은 다음과 같다.
+<book idx="1">
+    <title lang="eng">Harry Potter</title>
+    <price>29.99</price>
+</book>
+//xmlDoc[1] 은 다음과 같다.
+<book idx="2">
+    <title lang="eng">Learning XML</title>
+    <price>39.95</price>
+</book></xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="findSerializedNode">findSerializedNode(xpath)</dt>
+                            <dd>
+                                <p>WebSquare.ModelUtil.findInstanceNode로 찾은 노드를 serialize해서 반환합니다.</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">xpath</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>반환될 instance Node의 XPath</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+              <div class="api_tit_para">Return</div>
+                  <div class="api_parameter">
+                      <ul class="api_ul_parameter">
+                          <li>
+                              <div class="tit">Type</div>
+                              <div class="cnt">String</div>
+                          </li>
+                          <li class="api_desc">
+                              <div class="tit">Description</div>
+                              <div class="cnt">Serialize된 Document Element(node)</div>
+                          </li>
+                    </ul>
+              </div>
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>//Model에 바인드된 데이터가 다음과 같다.
+<bookstore>
+    <book idx="1">
+        <title lang="eng">Harry Potter</title>
+        <price>29.99</price>
+    </book>
+    <book idx="2">
+        <title lang="eng">Learning XML</title>
+        <price>39.95</price>
+    </book>
+</bookstore>
+var xmlStr = WebSquare.ModelUtil.findSerializedNode ("bookstore/book");
+
+//xmlStr은 다음과 같다.
+<book idx="1">
+    <title lang="eng">Harry Potter</title>
+    <price>29.99</price>
+</book></xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="getInstanceValue">getInstanceValue(xpath)</dt>
+                            <dd>
+                                <p>주어진 xpath에 해당하는 Instance 내부의 노드의 nodeValue를 반환합니다.<br />만약 이 노드가 element 라면 첫번째 자식노드부터 시작하여 그의 형제 노드들을 검색하는 식으로 하여<br />노드의 nodevalue를 찾습니다.<br />만약 노드가 attribute 라면 자식노드를 검색할 필요없이 바로 노드의 nodeValue를 반환합니다.</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">xpath</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>반환될 instance Node의 XPath</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+              <div class="api_tit_para">Return</div>
+                  <div class="api_parameter">
+                      <ul class="api_ul_parameter">
+                          <li>
+                              <div class="tit">Type</div>
+                              <div class="cnt">String</div>
+                          </li>
+                          <li class="api_desc">
+                              <div class="tit">Description</div>
+                              <div class="cnt">xpath로 찾은 노드의 value</div>
+                          </li>
+                    </ul>
+              </div>
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>//Model에 바인드된 데이터가 다음과 같다.
+<bookstore>
+    <book idx="1">
+        <title lang="eng">Harry Potter</title>
+        <price>29.99</price>
+    </book>
+    <book idx="2">
+        <title lang="eng">Learning XML</title>
+        <price>39.95</price>
+    </book>
+</bookstore>
+var value1 =  WebSquare.ModelUtil.getInstanceValue( "bookstore/book/title[@lang='eng']" );
+var value2 =  WebSquare.ModelUtil.getInstanceValue( "bookstore/book/title" );
+var value3 =  WebSquare.ModelUtil.getInstanceValue( "bookstore/book/title/@lang" );
+
+//value1, value2는 Harry Potter.
+//value3은 eng.
+</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="getRefToReqData">getRefToReqData(submissionObj)</dt>
+                            <dd>
+                                <p>submission 객체의 ref를 request String  으로 변환하여 return</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">submissionObj</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">Object</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>submission 객체</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+                                
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="getRunningWorkflow">getRunningWorkflow(workflowID)</dt>
+                            <dd>
+                                <p>실행중인 첫번째 Workflow 객체를 반환합니다.</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">workflowID</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">N</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>workflow 아이디</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+              <div class="api_tit_para">Return</div>
+                  <div class="api_parameter">
+                      <ul class="api_ul_parameter">
+                          <li>
+                              <div class="tit">Type</div>
+                              <div class="cnt">Object</div>
+                          </li>
+                          <li class="api_desc">
+                              <div class="tit">Description</div>
+                              <div class="cnt">실행 중인 workflow object</div>
+                          </li>
+                    </ul>
+              </div>
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>//실행이 진행되는 구간(pre, defaultCallback, callback, resolveCallback, rejectCallback등) 에서만 객체를 구할 수 있음
+//완료된 submission들의 실행결과 객체는 workflowObj.result 로 구할 수있음
+var workflowObj = WebSquare.ModelUtil.getRunningWorkflow( );
+</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="getRunningWorkflowID">getRunningWorkflowID()</dt>
+                            <dd>
+                                <p>실행중인 Workflow ID를 반환합니다.</p>
+                                
+                                
+              <div class="api_tit_para">Return</div>
+                  <div class="api_parameter">
+                      <ul class="api_ul_parameter">
+                          <li>
+                              <div class="tit">Type</div>
+                              <div class="cnt">String</div>
+                          </li>
+                          <li class="api_desc">
+                              <div class="tit">Description</div>
+                              <div class="cnt">실행중인 workflow ID</div>
+                          </li>
+                    </ul>
+              </div>
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>//실행중인 workflow ID 반환
+var runID = WebSquare.ModelUtil.getRunningWorkflowID( );
+</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="getSubmission">getSubmission(id)</dt>
+                            <dd>
+                                <p>id에 해당하는 submission 을 반환합니다.</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">id</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>submission의 아이디</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+              <div class="api_tit_para">Return</div>
+                  <div class="api_parameter">
+                      <ul class="api_ul_parameter">
+                          <li>
+                              <div class="tit">Type</div>
+                              <div class="cnt">Object</div>
+                          </li>
+                          <li class="api_desc">
+                              <div class="tit">Description</div>
+                              <div class="cnt">id를 통해서 찾은 submission</div>
+                          </li>
+                    </ul>
+              </div>
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>//다음과 같이 submission이 존재하는 경우.
+//<xf:submission id="submission1" ref="request" target="response"
+//    action="" method="" mediatype="text/xml" encoding="UTF-8"
+//    instance="" replace="instance" errorHandler="" customHandler=""
+//    mode="asynchronous" processMsg="">
+//</xf:submission>
+
+var sub = WebSquare.ModelUtil.getSubmission( "submission1" );
+
+sub는 submission 객체이며 접근 방법은 다음과 같다.
+sub.action = "/getBookInfo.jsp";
+sub.method = "get";
+</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="getWorkflow">getWorkflow(id)</dt>
+                            <dd>
+                                <p>id에 해당하는 Workflow 객체를 반환합니다.</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">id</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>workflow 아이디</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+              <div class="api_tit_para">Return</div>
+                  <div class="api_parameter">
+                      <ul class="api_ul_parameter">
+                          <li>
+                              <div class="tit">Type</div>
+                              <div class="cnt">Object</div>
+                          </li>
+                          <li class="api_desc">
+                              <div class="tit">Description</div>
+                              <div class="cnt">id를 통해서 찾은 workflow</div>
+                          </li>
+                    </ul>
+              </div>
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>//xml에 workflow1 이 정의되어 있는 경우에는 실행 전이라도 객체를 구할 수 있음
+//동적으로 생성된 경우에는 실행이 진행되는 구간(pre, defaultCallback, callback, resolveCallback, rejectCallback등) 에서만 객체를 구할 수 있음
+//완료된 submission들의 실행결과 객체는 workflowObj.result 로 구할 수있음
+var workflowObj = WebSquare.ModelUtil.getWorkflow( "workflow1" );
+</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="isRunningWorkflow">isRunningWorkflow(workflowID)</dt>
+                            <dd>
+                                <p>실행중인 Workflow 가 있는지 여부를 반환합니다.<br />workflowID 가 전달된 경우에는 해당 id 의 workflow 실행여부를 반환합니다.</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">workflowID</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">N</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>workflow 아이디</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+              <div class="api_tit_para">Return</div>
+                  <div class="api_parameter">
+                      <ul class="api_ul_parameter">
+                          <li>
+                              <div class="tit">Type</div>
+                              <div class="cnt">boolean</div>
+                          </li>
+                          <li class="api_desc">
+                              <div class="tit">Description</div>
+                              <div class="cnt">실행여부</div>
+                          </li>
+                    </ul>
+              </div>
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>//실행중인 workflow 가 있는지 여부 반환
+var isRun = WebSquare.ModelUtil.isRunningWorkflow( );
+</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="rejectWorkflow">rejectWorkflow(reject, workflowID)</dt>
+                            <dd>
+                                <p>실행중인 Workflow 를 Reject 시킵니다. workflowID 가 전달된 경우에는 해당 workflow가 실행중인 경우에만 Reject 시킵니다.</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">reject</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">N</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>사유 메시지</p>
+                                            </div>
+                                        </li>
+                                    </ul><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">workflowID</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">N</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>undefined</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+              <div class="api_tit_para">Return</div>
+                  <div class="api_parameter">
+                      <ul class="api_ul_parameter">
+                          <li>
+                              <div class="tit">Type</div>
+                              <div class="cnt">Object</div>
+                          </li>
+                          <li class="api_desc">
+                              <div class="tit">Description</div>
+                              <div class="cnt">Reject 된 workflow Object</div>
+                          </li>
+                    </ul>
+              </div>
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>
+var workflowObj = WebSquare.ModelUtil.rejectWorkflow( );
+</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="removeChildNodes">removeChildNodes(xpath)</dt>
+                            <dd>
+                                <p>xpath에 해당하는 부모의 childNode들을 제거합니다.</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">xpath</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>childNode들을 제거할 부모의 xPath</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>//Model에 바인드된 데이터가 다음과 같다.
+<bookstore>
+    <book idx="1">
+        <title lang="eng">Harry Potter</title>
+        <price>29.99</price>
+    </book>
+    <book idx="2">
+        <title lang="eng">Learning XML</title>
+        <price>39.95</price>
+    </book>
+</bookstore>
+
+WebSquare.ModelUtil.removeChildNodes("bookstore/book");
+
+//bookstore 노드는 다음과 같다.
+<bookstore>
+    <book idx="1"/>
+    <book idx="2">
+        <title lang="eng">Learning XML</title>
+        <price>39.95</price>
+    </book>
+</bookstore>
+</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="removeInstanceNode">removeInstanceNode(xpath)</dt>
+                            <dd>
+                                <p>xpath에 해당하는 node를 부모로부터 제거합니다.</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">xpath</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>제거할 node의 XPath</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>//Model에 바인드된 데이터가 다음과 같다.
+<bookstore>
+    <book idx="1">
+        <title lang="eng">Harry Potter</title>
+        <price>29.99</price>
+    </book>
+    <book idx="2">
+        <title lang="eng">Learning XML</title>
+        <price>39.95</price>
+    </book>
+</bookstore>
+
+WebSquare.ModelUtil.removeInstanceNode("bookstore/book");
+
+//bookstore 노드는 다음과 같다.
+<bookstore>
+    <book idx="2">
+        <title lang="eng">Learning XML</title>
+        <price>39.95</price>
+    </book>
+</bookstore>
+</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="removeInstanceNodes">removeInstanceNodes(xpath)</dt>
+                            <dd>
+                                <p>xpath에 해당하는 여러 개의 node를 부모로 부터 제거합니다.</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">xpath</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>제거할 node의 xPath</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>//Model에 바인드된 데이터가 다음과 같다.
+<bookstore>
+    <book idx="1">
+        <title lang="eng">Harry Potter</title>
+        <price>29.99</price>
+    </book>
+    <book idx="2">
+        <title lang="eng">Learning XML</title>
+        <price>39.95</price>
+    </book>
+</bookstore>
+
+WebSquare.ModelUtil.removeInstanceNodes("bookstore/book");
+
+//bookstore 노드는 다음과 같다.
+<bookstore/>
+</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="setInstanceNode">setInstanceNode(doc, xpath, modelID, mode)</dt>
+                            <dd>
+                                <p>Document 혹은 Element를 Instance의 xpath에 해당하는 경로에 위치시킵니다.<br />mode가 replace인 경우에 기존에 있던 것들을 삭제하고 새로운 노드를 추가하고<br />append인 경우 기존의 노드들은 놔두고 새로운 노드를 추가합니다.<br />mode를 명시하지 않을 경우에는 "replace" 모드입니다.</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">doc</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">Object</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>Document 또는 Document Element(node)</p>
+                                            </div>
+                                        </li>
+                                    </ul><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">xpath</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>노드를 추가할 경로</p>
+                                            </div>
+                                        </li>
+                                    </ul><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">modelID</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">N</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>노드를 추가할 경로의 Model ID(현재 사용하지 않는 옵션)</p>
+                                            </div>
+                                        </li>
+                                    </ul><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">mode</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">N</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>mode ("replace", "append")</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>//Model에 바인드된 데이터가 다음과 같다.
+<bookstore>
+    <book idx="1">
+        <title lang="eng">Harry Potter</title>
+        <price>29.99</price>
+    </book>
+    <book idx="2">
+        <title lang="eng">Learning XML</title>
+        <price>39.95</price>
+    </book>
+</bookstore>
+
+<selectedBook>
+    <title lang="eng">Learning XML2</title>
+    <price>39.952</price>
+    <author>Erik T. Ray</author>
+</selectedBook>
+
+var doc = WebSquare.ModelUtil.findInstanceNode( "bookstore/book" );
+WebSquare.ModelUtil.setInstanceNode( doc, "selectedBook", null , "replace" );
+
+//Model에 selectedBook 노드는 다음과 같다.
+
+<selectedBook>
+    <book idx="1">
+        <title lang="eng">Harry Potter</title>
+        <price>29.99</price>
+    </book>
+</selectedBook>
+
+var doc = WebSquare.ModelUtil.findInstanceNode( "bookstore/book" );
+WebSquare.ModelUtil.setInstanceNode( doc, "selectedBook", null , "append" );
+
+<selectedBook>
+    <title lang="eng">Learning XML2</title>
+    <price>39.952</price>
+    <author>Erik T. Ray</author>
+    <book idx="1">
+        <title lang="eng">Harry Potter</title>
+        <price>29.99</price>
+    </book>
+</selectedBook>
+</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="setInstanceValue">setInstanceValue(xpath, value)</dt>
+                            <dd>
+                                <p>주어진 xpath에 해당하는 Instance 내부 노드를 찾아 nodeValue를 설정합니다.</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">xpath</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>instance Node의 XPath</p>
+                                            </div>
+                                        </li>
+                                    </ul><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">value</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>설정할 text value</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+              <div class="api_tit_para">Return</div>
+                  <div class="api_parameter">
+                      <ul class="api_ul_parameter">
+                          <li>
+                              <div class="tit">Type</div>
+                              <div class="cnt">Boolean</div>
+                          </li>
+                          <li class="api_desc">
+                              <div class="tit">Description</div>
+                              <div class="cnt">node가 존재하지 않을 경우 false, 반영 성공 할 경우 true</div>
+                          </li>
+                    </ul>
+              </div>
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>//Model에 바인드된 데이터가 다음과 같다.
+<bookstore>
+    <book idx="1">
+        <title lang="eng">Harry Potter</title>
+        <price>29.99</price>
+    </book>
+    <book idx="2">
+        <title lang="eng">Learning XML</title>
+        <price>39.95</price>
+    </book>
+</bookstore>
+var value1 = WebSquare.ModelUtil.setInstanceValue( "bookstore/book/title/@lang" , "kor");
+var value2 = WebSquare.ModelUtil.setInstanceValue( "bookstore/book/title" , "해리포터");
+
+//value1, value2는 true.
+//반영된 xml Document.
+<bookstore>
+    <book idx="1">
+        <title lang="kor">해리포터</title>
+        <price>29.99</price>
+    </book>
+    <book idx="2">
+        .. 중략
+    </book>
+</bookstore>
+</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        
+                        </section>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </body>
+    </html>

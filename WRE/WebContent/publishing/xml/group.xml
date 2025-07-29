@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+        <w2:type>COMPONENT</w2:type>
+        <w2:buildDate/>
+        <w2:MSA/>
+        <xf:model>
+            <w2:dataCollection baseNode="map"/>
+            <w2:workflowCollection/>
+        </xf:model>
+        <w2:layoutInfo/>
+        <w2:publicInfo method=""/>
+        <script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function() {
+	
+};
+]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload">
+    	<xf:group class="sub_contents" id="" style="">
+			<xf:group class="pgtbox" id="" style="">
+				<w2:textbox class="pgt_tit" id="" label="Publishing Template - Group" style=""></w2:textbox>
+			</xf:group>
+			<xf:group id="" class="titbox"><w2:textbox style="" id="" label="Group 컴포넌트는 여러 컴포넌트를 그룹화 시킬 수 있는 컨테이너성 컴포넌트입니다. 기본적으로 파싱 되는 마크업이 'div'이며, 페이지의 레이아웃 등에 많이 사용됩니다.&lt;br/&gt;" class="">
+			</w2:textbox></xf:group><xf:group class="titbox" id="" style="">
+				<w2:textbox class="" id="" label="01. Sample" style="" tagname="h3"></w2:textbox>
+			</xf:group>
+			<xf:group id="" class="tblbox"><xf:group tagname="table" style="" id="" class="w2tb tbl">
+				<w2:attributes>
+					<w2:summary></w2:summary>
+				</w2:attributes>
+				<xf:group tagname="colgroup">
+					<xf:group tagname="col" style="width:20%;"></xf:group>
+					<xf:group tagname="col" style=""></xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">Property</xf:group>
+					<xf:group tagname="th" style="" class="w2tb_th">Description</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">class</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						HTML의 class속성과 동일한 기능을 제공하며 css파일 또는 style블럭에 정의 한 class를 1개 또는 공백(space)를 이용하여 다중 적용이 가능하다.
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">id</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">컴포넌트의 ID로 전역객체로 할당되며 script에서 본 id로 컴포넌트에 접근이 가능하다.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">style</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">Group Component 의 style 속성에 대한 설명입니다.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">tagname</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						기본적으로 Group컴포넌트는 div Tag로 표현며 div가 아닌 다른 Tag로 표현하고자 할 때 사용한다.
+						<br></br>
+						일반적으로 Group컴포넌트에는 자식 Tag(Element)를 가질 수 있는 Tag를 정의한다.
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th">
+						tabIndex
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						Tab&amp;nbsp;Key를&amp;nbsp;이용&amp;nbsp;한&amp;nbsp;컴포넌트의&amp;nbsp;포커스&amp;nbsp;순서로&amp;nbsp;HTML의&amp;nbsp;tabindex속성과&amp;nbsp;동일한&amp;nbsp;기능을&amp;nbsp;제공한다.
+						<w2:attributes></w2:attributes>
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th">
+						tooltipFormatter
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						tooltipDisplay속성이&amp;nbsp;true일&amp;nbsp;때&amp;nbsp;데이터를&amp;nbsp;표현&amp;nbsp;할&amp;nbsp;tooltip의&amp;nbsp;내용을&amp;nbsp;변경&amp;nbsp;할&amp;nbsp;사용자&amp;nbsp;함수명.&amp;nbsp;&amp;nbsp;&amp;nbsp;사용자&amp;nbsp;함수에서는&amp;nbsp;componentId,&amp;nbsp;label을&amp;nbsp;인자로&amp;nbsp;받아&amp;nbsp;tooltip에&amp;nbsp;표현&amp;nbsp;할&amp;nbsp;string을&amp;nbsp;return한다.
+						<w2:attributes></w2:attributes>
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">html attributes</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">해당 태그에 대응하는 속성을 추가한다.</xf:group>
+				</xf:group>
+			</xf:group></xf:group>
+			<xf:group id="" class="titbox"><w2:textbox style="" id="" label="02. CSS Overriding" class="" tagname="h3"></w2:textbox></xf:group>
+			<xf:group id="" class="tblbox"><xf:group tagname="table" style="" id="" class="w2tb tbl">
+				<w2:attributes>
+					<w2:summary></w2:summary>
+				</w2:attributes>
+				<xf:group tagname="colgroup">
+					<xf:group tagname="col" style="width:20%;"></xf:group>
+					<xf:group tagname="col" style=""></xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">Class</xf:group>
+					<xf:group tagname="th" style="" class="w2tb_th">Description</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">w2group</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">w2group은 웹스퀘어 엔진에서 정의된 클래스입니다, 브라우저가 파싱할때 자동으로 부여됩니다.</xf:group>
+				</xf:group>
+			</xf:group></xf:group><xf:group adaptiveThreshold="" class="msgbox" id="" style="">
+				<xf:group id="" class="titbox"><w2:textbox style="" id="" label="Tip" class="" tagname="h3"></w2:textbox></xf:group><w2:textbox class="txt_info" id="" label="레이 아웃용 컴포넌트로 하위에 컴포넌트들을 배치 시킬 수 있으며 입력용 컴포넌트의 value 초기화 기능(init) 또는 하위 컴포넌트들에 특정 API, Function 실행 기능(invoke) 등을 사용할 수 있습니다." style="">
+				</w2:textbox><w2:textbox class="txt_info" id="" label="기본적으로 HTML div Tag로 표현되며 div Tag 이외의 child를 가질 수 있는 HTML Tag(ul, dl, ol, table 등)들을 tagname 속성을 이용하여 표현할 수 있다. Group 컴포넌트는 value를 가질 수 없는 컴포넌트이므로 value를 설정해야 하는 경우 Textbox 컴포넌트와 함께 사용합니다." style="">
+				</w2:textbox>
+				
+			</xf:group>
+		</xf:group>
+    </body>
+</html>

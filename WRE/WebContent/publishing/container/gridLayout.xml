@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+        <w2:type>COMPONENT</w2:type>
+        <w2:buildDate/>
+        <w2:MSA/>
+        <xf:model>
+            <w2:dataCollection baseNode="map"/>
+            <w2:workflowCollection/>
+        </xf:model>
+        <w2:layoutInfo/>
+        <w2:publicInfo method=""/>
+        <script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function() {
+	gp_generator.insertChild();
+    gp_generator.insertChild();
+    gp_generator.insertChild();
+    gp_generator.insertChild();
+    gp_generator.insertChild();
+};
+]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload">
+    	<xf:group class="sub_contents pub" id="" style="">
+			<xf:group class="pgtbox" id="" style="">
+				<w2:textbox class="pgt_tit" id="" label="Publishing Template - GridLayout" style=""></w2:textbox>
+			</xf:group>
+			<xf:group id="" class="titbox"><w2:textbox style="" id="" label="그리드 레이아웃" class="">
+			</w2:textbox></xf:group>
+			<xf:group class="samplebox" id="" style="">
+				<w2:gridLayout style="width: 100%;height: 300px;" gridTemplateColumns="1fr 1fr 1fr;1fr 1fr 1fr;1fr 1fr 1fr;"
+					gridTemplateRows="1fr 1fr 1fr;1fr 1fr 1fr;1fr 1fr 1fr;" gridColumn="" gridRow="" gridColumnGap="4px" gridRowGap="4px">
+				</w2:gridLayout>
+			</xf:group>
+			<xf:group id="" class="titbox">
+				<w2:textbox style="" id="" label="Property" class="" tagname="h3"></w2:textbox>
+				<xf:group class="rt" id="" style="">
+					<w2:span class="badge default" id="" label="Defualt option" style=""></w2:span>
+					<w2:span class="badge" id="" label="option" style=""></w2:span>
+				</xf:group>
+			</xf:group>
+			<xf:group id="" class="tblbox"><xf:group tagname="table" style="" id="" class="w2tb tbl">
+				<w2:attributes>
+					<w2:summary></w2:summary>
+				</w2:attributes>
+				<xf:group tagname="colgroup">
+					<xf:group tagname="col" style="width:20%;"></xf:group>
+					<xf:group tagname="col" style=""></xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">
+						<w2:textbox id="" label="속성" style="" tagname="p"></w2:textbox>
+					</xf:group>
+					<xf:group tagname="th" style="" class="w2tb_th tac">
+						<w2:textbox id="" label="설명" style="" tagname="p"></w2:textbox>
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">
+						<w2:textbox id="" label="class" style="" tagname="p"></w2:textbox>
+					</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						<w2:textbox id="" label="gridLayout컴포넌트의 class속성 값." style="" tagname="p"></w2:textbox>
+					</xf:group>
+				</xf:group>
+			<xf:group tagname="tr">
+				<xf:group tagname="th" class="w2tb_th">
+					<w2:attributes>
+						<w2:scope>row</w2:scope>
+					</w2:attributes>
+					<w2:textbox id="" label="defaultClassPostfix" style="" tagname="p"></w2:textbox>
+				</xf:group>
+				<xf:group tagname="td" class="w2tb_td">
+					<w2:attributes></w2:attributes>
+					<w2:textbox id="" label="gridLayout컴포넌트의 기본 class를 지정하기 위한 기능으로 최상위 레이아웃을 위한 컴포넌트와 내부 레이아웃의 디자인 독립성을 위한 속성." style="" tagname="p"></w2:textbox>
+				</xf:group></xf:group><xf:group tagname="tr">
+	<xf:group tagname="th" class="w2tb_th">
+		<w2:attributes>
+			<w2:scope>row</w2:scope>
+		</w2:attributes>
+		<w2:textbox id="" label="gridColumn" style="" tagname="p"></w2:textbox>
+	</xf:group>
+	<xf:group tagname="td" class="w2tb_td">
+		<w2:attributes></w2:attributes>
+		<w2:textbox id="" label="gridLayout컴포넌트의 자식요소에 적용할 column값." style="" tagname="p"></w2:textbox>
+	</xf:group></xf:group><xf:group tagname="tr">
+	<xf:group tagname="th" class="w2tb_th">
+		<w2:attributes>
+			<w2:scope>row</w2:scope>
+		</w2:attributes>
+		<w2:textbox id="" label="gridColumnGap" style="" tagname="p"></w2:textbox>
+	</xf:group>
+	<xf:group tagname="td" class="w2tb_td">
+		<w2:attributes></w2:attributes>
+		<w2:textbox id="" label="gridLayout컴포넌트의 template에 적용할 column영역간의 gap값." style="" tagname="p"></w2:textbox>
+	</xf:group></xf:group><xf:group tagname="tr">
+	<xf:group tagname="th" class="w2tb_th">
+		<w2:attributes>
+			<w2:scope>row</w2:scope>
+		</w2:attributes>
+		<w2:textbox id="" label="gridRow" style="" tagname="p"></w2:textbox>
+	</xf:group>
+	<xf:group tagname="td" class="w2tb_td">
+		<w2:attributes></w2:attributes>
+		<w2:textbox id="" label="gridLayout컴포넌트의 자식요소에 적용할 row값." style="" tagname="p"></w2:textbox>
+	</xf:group></xf:group><xf:group tagname="tr">
+	<xf:group tagname="th" class="w2tb_th">
+		<w2:attributes>
+			<w2:scope>row</w2:scope>
+		</w2:attributes>
+		<w2:textbox id="" label="gridRowGap" style="" tagname="p"></w2:textbox>
+	</xf:group>
+	<xf:group tagname="td" class="w2tb_td">
+		<w2:attributes></w2:attributes>
+		<w2:textbox id="" label="gridLayout컴포넌트의 template에 적용할 row영역간의 gap값." style="" tagname="p"></w2:textbox>
+	</xf:group></xf:group><xf:group tagname="tr">
+	<xf:group tagname="th" class="w2tb_th">
+		<w2:attributes>
+			<w2:scope>row</w2:scope>
+		</w2:attributes>
+		<w2:textbox id="" label="gridTemplateColumns" style="" tagname="p"></w2:textbox>
+	</xf:group>
+	<xf:group tagname="td" class="w2tb_td">
+		<w2:attributes></w2:attributes>
+		<w2:textbox id="" label="gridLayout컴포넌트의 template에 생성할 각 column영역에 할당할 공간 값.&lt;br/&gt;em, px, %, fr 등등..." style="" tagname="p"></w2:textbox>
+	</xf:group></xf:group><xf:group tagname="tr">
+	<xf:group tagname="th" class="w2tb_th">
+		<w2:attributes>
+			<w2:scope>row</w2:scope>
+		</w2:attributes>
+		<w2:textbox id="" label="gridTemplateRows" style="" tagname="p"></w2:textbox>
+	</xf:group>
+	<xf:group tagname="td" class="w2tb_td">
+		<w2:attributes></w2:attributes>
+		<w2:textbox id="" label="gridLayout컴포넌트의 template에 생성할 각 row영역에 할당할 공간 값.&lt;br/&gt;em, px, %, fr 등등..." style="" tagname="p"></w2:textbox>
+	</xf:group></xf:group><xf:group tagname="tr">
+	<xf:group tagname="th" class="w2tb_th">
+		<w2:attributes>
+			<w2:scope>row</w2:scope>
+		</w2:attributes>
+		<w2:textbox id="" label="id" style="" tagname="p"></w2:textbox>
+	</xf:group>
+	<xf:group tagname="td" class="w2tb_td">
+		<w2:attributes></w2:attributes>
+		<w2:textbox id="" label="gridLayout컴포넌트의 id속성 값." style="" tagname="p"></w2:textbox>
+	</xf:group></xf:group><xf:group tagname="tr">
+	<xf:group tagname="th" class="w2tb_th">
+		<w2:attributes>
+			<w2:scope>row</w2:scope>
+		</w2:attributes>
+		<w2:textbox id="" label="rowShow" style="" tagname="p"></w2:textbox>
+	</xf:group>
+	<xf:group tagname="td" class="w2tb_td">
+		<w2:attributes></w2:attributes>
+		<w2:textbox id="" label="gridLayout의 Hidden 영역을 이용하여 숨김처리하는 경우 브라우저 크기에 따른 적응형 속성의 적용에 따른 show/hide를 하기 위" style="" tagname="p"></w2:textbox>
+	</xf:group></xf:group></xf:group></xf:group>
+			<xf:group id="" class="titbox"><w2:textbox style="" id="" label="Generator API" class="" tagname="h3"></w2:textbox></xf:group>
+			<xf:group id="" class="tblbox"><xf:group tagname="table" style="" id="" class="w2tb tbl">
+				<w2:attributes>
+					<w2:summary></w2:summary>
+				</w2:attributes>
+				<xf:group tagname="colgroup">
+					<xf:group tagname="col" style="width:20%;"></xf:group>
+					<xf:group tagname="col" style=""></xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">API</xf:group>
+					<xf:group tagname="th" style="" class="w2tb_th">Description</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">getChild()</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">컴포넌트의 ID와 해당 컴포넌트가 속해 있는 반복부의 index를 기반으로 컴포넌트 객체를 반환합니다.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">insertChild()</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">index에 해당하는 위치에 반복부를 삽입한다. index가 생략 된 경우 마지막에 삽입된다.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">removeChild()</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">index에 해당하는 반복부를 삭제하며 index가 없을 경우 마지막 반복부를 삭제합니다.</xf:group>
+				</xf:group>
+			</xf:group></xf:group>
+			<xf:group adaptiveThreshold="" class="msgbox" id="" style="">
+				<xf:group id="" class="titbox"><w2:textbox style="" id="" label="Tip" class="" tagname="h3"></w2:textbox></xf:group><w2:textbox class="txt_info" id=""
+					label="사용할 수 없는 컴포넌트 * Chart * GridView * Menu * Switch * TabControl * Treeview * WindowContainer" style="">
+				</w2:textbox>
+				<w2:textbox class="txt_info" id=""
+					label='generator 사용시 반복하려는 목록의 상위 그룹에 generator를 사용해야 합니다.&lt;br/&gt;예) li태그를 반복시키려고 한다면, ul태그에 generator를 사용' style="">
+				</w2:textbox>
+				<w2:textbox class="txt_info" id="" label="Generator: 그룹을 구성하는 컴포넌트의 동적인 추가 및 삭제를 지원합니다. &lt;br/&gt;Repeat: 컴포넌트 그룹을 정적으로 생성합니다. "
+					style="">
+				</w2:textbox>
+			</xf:group>
+		</xf:group>
+    </body>
+</html>

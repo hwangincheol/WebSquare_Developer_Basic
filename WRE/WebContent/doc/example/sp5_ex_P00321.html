@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR.html11/DTD.html11.dtd">
+<html xmlns="http://www.w3.org/1999.html" xml:lang="ko"><head><meta http-equiv="Cache-Control" content="no-cache"/><meta http-equiv="Pragma" content="no-cache"/><meta http-equiv="Expires" content="-1"/><title>[WidgetContainer] 위젯 추가 - 사용자 버튼과 기능 버튼 정의하기</title><link rel="stylesheet" href="css/book.css" type="text/css" /><meta http-equiv="Content-Type" content="application.html+xml; charset=utf-8" /><meta name="EPB-UUID" content="b3283707c39ac371" /></head><body><div class="chapter_content"><h1 id="r_c0aeec1c23358feb" class="chapter_title">[WidgetContainer] 위젯 추가 - 사용자 버튼과 기능 버튼 정의하기</h1><h1 id="r_bc2bb81028358fab" class="element heading1" data-element-id="bc2bb81028358fab"><div class="r_heading_inner"><span class="heading1_n">1</span><span>개요</span></div></h1><pre id="r_cff541c22e1c0468" class="element pre" data-element-id="cff541c22e1c0468">WidgetContainer의 함수 'addWidgets'로 위젯을 추가할 때, 우측 상단의 버튼 영역에 사용자 버튼을 지정하거나 기본 기능 버튼의 사용 여부를 설정하는 예제입니다.
+함수 'addWidgets'의 첫 번째 인자의 위젯 옵션 'buttonFormatter'을 사용하여 구현할 수 있습니다.</pre><p id="r_5d59822b0af2bab9" class="element r_example_link_p" data-element-id="5d59822b0af2bab9"><a class="link" target="_blank" href="http://example.websquare.kr/link.html?p=P00321">P00321</a></p><h1 id="r_8cfcaf7c8acbef06" class="element heading1" data-element-id="8cfcaf7c8acbef06"><div class="r_heading_inner"><span class="heading1_n">2</span><span>구현된 기능</span></div></h1><ul id="r_2d02a0f50b5d311f" class="element unordered_list" data-element-id="2d02a0f50b5d311f"><li><p>위젯 추가 시 우측 상단에 사용자 버튼 설정하기</p></li></ul><h1 id="r_4375f0103cef3425" class="element heading1" data-element-id="4375f0103cef3425"><div class="r_heading_inner"><span class="heading1_n">3</span><span>예제 테스트 방법</span></div></h1><h2 id="r_0fdb6dd6d4ea43c7" class="element heading2" data-element-id="0fdb6dd6d4ea43c7"><div class="r_heading_inner"><span class="heading2_n">3.1</span><span>위젯 추가 시 우측 상단에 사용자 버튼 설정하기</span></div></h2><p id="r_694bd0704177f32b" class="element r_heading_dt_p" data-element-id="694bd0704177f32b">STEP 1. 초기 상태를 확인합니다.</p><pre id="r_9690117020b55435" class="element pre" data-element-id="9690117020b55435">WidgetContainer에 위젯 옵션 'buttonFormatter'이 지정되지 않은 기본 형식의 위젯이 추가되어있습니다.</pre><div id="r_1a20c1e114eaaadf" class="element image" data-element-id="1a20c1e114eaaadf"><p class="caption"><span class="image_caption_n">그림 1.</span>브라우저(Chrome) 실행 예시</p><p class="content"><img alt="" src="images/image1840.png" width="374" height="118" /></p></div><p id="r_aee0c256044dbbb9" class="element r_heading_dt_p" data-element-id="aee0c256044dbbb9">STEP 2. 사용자 버튼을 정의하여 위젯 추가하기</p><pre id="r_f21d226ba667a0ec" class="element pre" data-element-id="f21d226ba667a0ec">버튼 <span class="r_exec_btn_style_span">위젯 추가하기 - 우측 상단에 사용자 버튼 설정</span>을 클릭합니다.</pre><p id="r_a97c0ed3c6b37c8b" class="element r_heading_dt_p" data-element-id="a97c0ed3c6b37c8b">STEP 3. 실행된 결과를 확인합니다.</p><pre id="r_5d04c66d0fe92f9e" class="element pre" data-element-id="5d04c66d0fe92f9e">위젯의 타이틀이 '사용자 버튼 설정'인 위젯이 추가됩니다.
+위젯의 우측 상단에 사용자 버튼 2개와 기능 버튼 '최대화, '닫기'가 표시됩니다.</pre><div id="r_68e0ca7cd018dab1" class="element image" data-element-id="68e0ca7cd018dab1"><p class="caption"><span class="image_caption_n">그림 2.</span>브라우저(Chrome) 실행 예시</p><p class="content"><img alt="" src="images/image1841.png" width="376" height="248" /></p></div><h1 id="r_a3e66de89b5266d6" class="element heading1" data-element-id="a3e66de89b5266d6"><div class="r_heading_inner"><span class="heading1_n">4</span><span>구현 예시</span></div></h1><h2 id="r_ea42024c51c31acd" class="element heading2" data-element-id="ea42024c51c31acd"><div class="r_heading_inner"><span class="heading2_n">4.1</span><span>위젯 추가 시 CSS class 적용하기</span></div></h2><p id="r_789334b2ed285af6" class="element r_heading_dt_p" data-element-id="789334b2ed285af6">STEP 1. CSS class 정의하기</p><pre id="r_c9d90132507a581b" class="element pre" data-element-id="c9d90132507a581b">함수 'addWidgets'의 인자 위젯 옵션의 'buttonFormatter'에서 사용할 class 명은 다음과 같습니다.</pre><ul id="r_9e8ae4fc34534959" class="element unordered_list" data-element-id="9e8ae4fc34534959"><li><p>P00321_w2widget_btnInfo</p></li><li><p>P00321_w2widget_btnSetting</p></li></ul><p id="r_fdb6e3fe6fa27861" class="element normal" data-element-id="fdb6e3fe6fa27861">css 파일에 아래의 예시를 참고하여 class를 정의합니다. (class명의 중복을 피하기 위해 상위 element의 class명 'w2widget_title_buttons'을 함께 사용하였습니다.)</p><div id="r_7eeb981c13892f7c" class="element code support_code_numbering" data-element-id="7eeb981c13892f7c"><pre><span class="digits_1 code_line"></span><span class="r_h_comment_span">/* '[프로젝트]/css/example.css'에서 확인할 수 있습니다. */</span>
+<span class="digits_1 code_line"></span><span class="r_h_comment_span">/* P00321.xml 우측 상단의 사용자 버튼 class 정의 */</span>
+<span class="digits_1 code_line"></span><span class="r_h_selector_span">.w2widget_title_buttons</span> &gt; <span class="r_h_selector_span">.P00321_w2widget_btnInfo</span>{<span class="r_h_css_name_span">position</span>: <span class="r_h_css_value_span">relative</span>; <span class="r_h_css_name_span">width</span>: <span class="r_h_css_value_span">19px</span>; <span class="r_h_css_name_span">height</span>: <span class="r_h_css_value_span">17px</span>; <span class="r_h_css_name_span">cursor</span>: <span class="r_h_css_value_span">pointer</span>; <span class="r_h_css_name_span">background</span>: <span class="r_h_css_value_span">url('/img/icon_info.png') center 50%/15px 15px no-repeat</span>;}
+<span class="digits_1 code_line"></span><span class="r_h_selector_span">.w2widget_title_buttons</span> &gt; <span class="r_h_selector_span">.P00321_w2widget_btnSetting</span>{<span class="r_h_css_name_span">position</span>: <span class="r_h_css_value_span">relative</span>; <span class="r_h_css_name_span">width</span>: <span class="r_h_css_value_span">17px</span>; <span class="r_h_css_name_span">height</span>: <span class="r_h_css_value_span">17px</span>; <span class="r_h_css_name_span">cursor</span>: <span class="r_h_css_value_span">pointer</span>; <span class="r_h_css_name_span">background</span>: <span class="r_h_css_value_span">url('/img/btn_sub_setting.png') center 50%/15px 15px no-repeat</span>;}</pre></div><p id="r_5b69a4e330d7f365" class="element r_heading_dt_p" data-element-id="5b69a4e330d7f365">STEP 2. 위젯 옵션에 사용자 버튼 지정하기</p><pre id="r_6678d11f9ba01bd4" class="element pre" data-element-id="6678d11f9ba01bd4">WidgetContainer의 함수 'addWidgets'를 이용하여 스크립트를 작성합니다.
+함수 'addWidgets'의 첫 번째 인자에 위젯 정보가 담긴 JSON을 정의합니다.
+첫 번째 인자 위젯 옵션의 'buttonFormatter'에 함수 객체 또는 함수명을 지정합니다.
+지정한 함수에서는 우측 상단 영역에 구성할 버튼의 정보가 담긴 배열을 반환합니다.
+세부 스크립트는 아래의 예시에 작성되어 있습니다.</pre><p id="r_c9d980aa18c50e48" class="element r_caption_code_1_p" data-element-id="c9d980aa18c50e48">스크립트</p><div id="r_e5a36c7d953771ac" class="element code support_code_numbering" data-element-id="e5a36c7d953771ac"><pre><span class="digits_10 code_line"></span><span class="r_h_comment_span">// 위젯 생성 옵션 정보</span>
+<span class="digits_10 code_line"></span><span class="r_h_keyword_span">let</span> widgetOptions = {};
+<span class="digits_10 code_line"></span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">/**
+<span class="digits_10 code_line"></span> * [필수] 위젯의 우측 상단의 기능 버튼들의 설정을 반환할 함수 또는 함수의 이름
+<span class="digits_10 code_line"></span> * @param {string} argWidgetID Widget의 Runtime ID
+<span class="digits_10 code_line"></span> */</span>
+<span class="digits_10 code_line"></span>widgetOptions.buttonFormatter = <span class="r_h_keyword_span">function</span> (argWidgetID) {
+<span class="digits_10 code_line"></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="r_h_comment_span">// 우측 상단에 출력할 버튼의 정보를 Array로 반환합니다.</span>
+<span class="digits_10 code_line"></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="r_h_comment_span">// 사용자 버튼 2개와 기능 버튼 '최대화', '닫기'를 배치합니다.</span>
+<span class="digits_10 code_line"></span>&nbsp;&nbsp;&nbsp;&nbsp;return [
+<span class="digits_10 code_line"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+<span class="digits_10 code_line"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="r_h_string_span">'id'</span>: <span class="r_h_string_span">'btn_info'</span>, <span class="r_h_comment_span">// 버튼의 ID. WidgetContainer의 이벤트 'onclickcustombtn' 핸들러에서 ID로 구분하여 로직을 구성합니다.</span>
+<span class="digits_10 code_line"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="r_h_string_span">'className'</span>: <span class="r_h_string_span">'P00321_w2widget_btnInfo'</span>, <span class="r_h_comment_span">// 버튼의 class. 정의한 class는 '[프로젝트]/css/example.css'에서 확인할 수 있습니다.</span>
+<span class="digits_10 code_line"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="r_h_string_span">'isCustom'</span>: <span class="r_h_keyword_span">true</span> <span class="r_h_comment_span">// 사용자 버튼 여부</span>
+<span class="digits_10 code_line"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},
+<span class="digits_10 code_line"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+<span class="digits_10 code_line"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="r_h_string_span">'id'</span>: <span class="r_h_string_span">'btn_setting'</span>, <span class="r_h_comment_span">// 버튼의 ID. WidgetContainer의 이벤트 'onclickcustombtn' 핸들러에서 ID로 구분하여 로직을 구성합니다.</span>
+<span class="digits_10 code_line"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="r_h_string_span">'className'</span>: <span class="r_h_string_span">'P00321_w2widget_btnSetting'</span>, <span class="r_h_comment_span">// 버튼의 class. 정의한 class는 '[프로젝트]/css/example.css'에서 확인할 수 있습니다.</span>
+<span class="digits_10 code_line"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="r_h_string_span">'isCustom'</span>: <span class="r_h_keyword_span">true</span> <span class="r_h_comment_span">// 사용자 버튼 여부</span>
+<span class="digits_10 code_line"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},
+<span class="digits_10 code_line"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+<span class="digits_10 code_line"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="r_h_string_span">'useDefault'</span>: <span class="r_h_string_span">'maximize'</span> <span class="r_h_comment_span">// '최대화' 버튼 사용. (위젯 기본 기능 버튼 지정. 'fix': 고정, 'minimize': 최소화, 'maximize': 최대화, 'close': 닫기)</span>
+<span class="digits_10 code_line"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},
+<span class="digits_10 code_line"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+<span class="digits_10 code_line"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="r_h_string_span">'useDefault'</span>: <span class="r_h_string_span">'close'</span> <span class="r_h_comment_span">// '닫기' 버튼 사용 (위젯 기본 기능 버튼 지정. 'fix': 고정, 'minimize': 최소화, 'maximize': 최대화, 'close': 닫기)</span>
+<span class="digits_10 code_line"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+<span class="digits_10 code_line"></span>&nbsp;&nbsp;&nbsp;&nbsp;];
+<span class="digits_10 code_line"></span>};
+<span class="digits_10 code_line"></span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">// [필수] 위젯 ID. 동일한 ID를 가진 위젯이 있으면 추가되지 않습니다.</span>
+<span class="digits_10 code_line"></span>widgetOptions.id = <span class="r_h_string_span">"wg_exam2"</span>;
+<span class="digits_10 code_line"></span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">// [필수] 위젯 파일 경로 </span>
+<span class="digits_10 code_line"></span>widgetOptions.src = <span class="r_h_string_span">"/page/P00321S02.xml"</span>;
+<span class="digits_10 code_line"></span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">// [필수] scope 적용 여부로 true 고정</span>
+<span class="digits_10 code_line"></span>widgetOptions.scope = <span class="r_h_keyword_span">true</span>;
+<span class="digits_10 code_line"></span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">// [필수] 위젯 너비 : (설정 값 / WidgetContainer의 속성 'col'의 설정 값 * 100)으로 '%'단위로 그려집니다.</span>
+<span class="digits_10 code_line"></span>widgetOptions.unitWidth = <span class="r_h_number_span">1</span>;
+<span class="digits_10 code_line"></span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">// [필수] 위젯 높이 : (설정 값 * WidgetContainer의 속성 'unitHeightPixel'의 설정 값)으로 'px'단위로 그려집니다.</span>
+<span class="digits_10 code_line"></span>widgetOptions.unitHeight = <span class="r_h_number_span">5</span>;
+<span class="digits_10 code_line"></span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">// [권장] 위젯 타이틀</span>
+<span class="digits_10 code_line"></span>widgetOptions.title = <span class="r_h_string_span">"사용자 버튼 설정"</span>;
+<span class="digits_10 code_line"></span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">// 위젯의 x 위치</span>
+<span class="digits_10 code_line"></span>widgetOptions.x = <span class="r_h_number_span">0</span>;
+<span class="digits_10 code_line"></span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">// 위젯의 y 위치</span>
+<span class="digits_10 code_line"></span>widgetOptions.y = <span class="r_h_number_span">6</span>;
+<span class="digits_10 code_line"></span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">// WidgetContainer 'wgc_exam1'에 위젯 1개를 추가합니다.</span>
+<span class="digits_10 code_line"></span>wgc_exam1.addWidgets(widgetOptions);</pre></div><p id="r_9385f8b4090b8f0a" class="element r_heading_dt_p" data-element-id="9385f8b4090b8f0a">STEP 3. 사용자 버튼의 클릭 이벤트 핸들러 정의하기</p><pre id="r_667dd06b4d28a82a" class="element pre" data-element-id="667dd06b4d28a82a">WidgetContainer의 이벤트 'onclickcustombtn'에 핸들러를 정의합니다.
+핸들러에서는 위젯의 Runtime ID와 버튼의 ID를 파라미터로 받을 수 있습니다.
+세부 스크립트는 아래의 예시에 작성되어 있습니다.</pre><p id="r_1ffcf1d5e35277e7" class="element r_caption_code_1_p" data-element-id="1ffcf1d5e35277e7">스크립트 - 이벤트 'onclickcustombtn' 핸들러</p><div id="r_ef95e1b914fa9630" class="element code support_code_numbering" data-element-id="ef95e1b914fa9630"><pre><span class="digits_10 code_line"></span><span class="r_h_comment_span">/**
+<span class="digits_10 code_line"></span> * WidgetContainer 'wgc_exam1'의 이벤트 'onclickcustombtn' 핸들러.
+<span class="digits_10 code_line"></span> * 우측 상단의 사용자 정의 버튼 클릭 시 호출.
+<span class="digits_10 code_line"></span> * (함수 'addWidgets'의 인자 위젯 옵션의 'buttonFormatter'에 정의 한 함수에서 반환한 사용자 버튼)
+<span class="digits_10 code_line"></span> * @param {string} id Widget의 Runtime ID
+<span class="digits_10 code_line"></span> * @param {string} btnId 우측 상단의 사용자 버튼의 ID
+<span class="digits_10 code_line"></span> */</span>
+<span class="digits_10 code_line"></span>scwin.wgc_exam1_onclickcustombtn = <span class="r_h_keyword_span">function</span> (id, btnId) {
+<span class="digits_10 code_line"></span>    <span class="r_h_keyword_span">switch</span> (btnId) {
+<span class="digits_10 code_line"></span>        <span class="r_h_keyword_span">case</span> <span class="r_h_string_span">"btn_info"</span>:
+<span class="digits_10 code_line"></span>            alert(<span class="r_h_string_span">"정보 버튼 클릭"</span>);
+<span class="digits_10 code_line"></span>            <span class="r_h_keyword_span">break</span>;
+<span class="digits_10 code_line"></span>        <span class="r_h_keyword_span">case</span> <span class="r_h_string_span">"btn_setting"</span>:
+<span class="digits_10 code_line"></span>            alert(<span class="r_h_string_span">"설정 버튼 클릭"</span>);
+<span class="digits_10 code_line"></span>            <span class="r_h_keyword_span">break</span>;
+<span class="digits_10 code_line"></span>        default:
+<span class="digits_10 code_line"></span>            <span class="r_h_keyword_span">break</span>;
+<span class="digits_10 code_line"></span>    }
+<span class="digits_10 code_line"></span>};</pre></div><div id="r_ea0c01f482365381" class="element image" data-element-id="ea0c01f482365381"><p class="caption"><span class="image_caption_n">그림 3.</span>[웹스퀘어5 SP5 스튜디오의 Property View(속성창)의 이벤트 탭 예시]</p><p class="content"><img alt="" src="images/image1842.png" width="391" height="176" /></p></div><div id="r_5cb98e94d231bdb8" class="element code support_code_numbering" data-element-id="5cb98e94d231bdb8"><pre><span class="digits_1 code_line"></span><span class="r_h_comment_span">&lt;!-- widgetContainer 의 소스 본문 예시 --&gt;</span>
+<span class="digits_1 code_line"></span>&lt;w2:widgetContainer <span class="r_h_attribute_name_span">ev:onclickcustombtn</span>=<span class="r_h_attribute_value_span">"scwin.wgc_exam1_onclickcustombtn"</span> <span class="r_h_attribute_name_span">
+<span class="digits_1 code_line"></span>&nbsp;&nbsp;&nbsp;&nbsp;id</span>=<span class="r_h_attribute_value_span">"wgc_exam1"</span>&gt;
+<span class="digits_1 code_line"></span>&lt;/w2:widgetContainer&gt;</pre></div><h1 id="r_c95a8823035918f6" class="element heading1" data-element-id="c95a8823035918f6"><div class="r_heading_inner"><span class="heading1_n">5</span><span>주요 API</span></div></h1><ul id="r_303df986a8828480" class="element unordered_list" data-element-id="303df986a8828480"><li><p><span class="r_ex_api_method_span">addWidgets( option )</span></p><p>option.buttonFormatter</p></li><li><p><span class="r_ex_api_event_span">onclickcustombtn</span></p></li></ul><h1 id="r_eb64652636b80aa6" class="element heading1" data-element-id="eb64652636b80aa6"><div class="r_heading_inner"><span class="heading1_n">6</span><span>참고 문서</span></div></h1><ul id="r_8a2985aea9cdec3e" class="element unordered_list" data-element-id="8a2985aea9cdec3e"><li><p><span class="r_bold01_span">[웹스퀘어5 SP5 개발 가이드] WidgetContainer</span> </p><p>링크 : <a class="link" target="_blank" href="https://docs1.inswave.com/sp5_user_guide/2059d4ce88b2fc16#6f01c6c535be09d8">https://docs1.inswave.com/sp5_user_guide/2059d4ce88b2fc16#6f01c6c535be09d8</a></p></li></ul></div></body></html>

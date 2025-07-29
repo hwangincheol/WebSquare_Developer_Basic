@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+        <w2:type>COMPONENT</w2:type>
+        <w2:buildDate/>
+        <w2:MSA/>
+        <xf:model>
+            <w2:dataCollection baseNode="map"/>
+            <w2:workflowCollection/>
+        </xf:model>
+        <w2:layoutInfo/>
+        <w2:publicInfo method=""/>
+        <script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function() {
+	
+};
+]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload">
+    	<xf:group class="sub_contents" id="" style="">
+			<xf:group class="pgtbox" id="" style="">
+				<w2:textbox class="pgt_tit" id="" label="Publishing Template - CheckCombobox" style=""></w2:textbox>
+			</xf:group>
+			<xf:group id="" class="titbox"><w2:textbox style="" id="" label="HTML의 select Tag에서 확장된 기능을 제공하는 컴포넌트로 selectbox와 checkbox가 결합되어있어 항목을 다중으로 선택할 수 있습니다." class="" tagname="h3">
+			</w2:textbox></xf:group><xf:group class="titbox" id="" style="">
+				<w2:textbox class="" id="" label="01. Sample" style="" tagname="h3"></w2:textbox>
+			</xf:group>
+			<xf:group class="msgbox" id="" style="border:1px dashed #ccc;">
+				<xf:checkcombobox allOption="" appearance="minimal" chooseOption="" class="wq_ccb" direction="auto" disabled="false"
+					displayAllOptionLabel="false" displayMode="label" id="" style='width:200px;margin-right:26px;' submenuSize="auto">
+					<xf:choices>
+						<xf:item>
+							<xf:label><![CDATA[Red]]></xf:label>
+							<xf:value></xf:value>
+						</xf:item>
+						<xf:item>
+							<xf:label><![CDATA[Blue]]></xf:label>
+							<xf:value></xf:value>
+						</xf:item>
+						<xf:item>
+							<xf:label><![CDATA[Green]]></xf:label>
+							<xf:value></xf:value>
+						</xf:item>
+					</xf:choices>
+				</xf:checkcombobox>
+				<xf:checkcombobox allOption="" appearance="minimal" chooseOption="" class="wq_ccb" direction="auto" disabled="true"
+					displayAllOptionLabel="false" displayMode="label" id="" style="width:200px;" submenuSize="auto">
+					<xf:choices>
+						<xf:item>
+							<xf:label><![CDATA[Red]]></xf:label>
+							<xf:value></xf:value>
+						</xf:item>
+						<xf:item>
+							<xf:label><![CDATA[Blue]]></xf:label>
+							<xf:value></xf:value>
+						</xf:item>
+						<xf:item>
+							<xf:label><![CDATA[Green]]></xf:label>
+							<xf:value></xf:value>
+						</xf:item>
+					</xf:choices>
+				</xf:checkcombobox>
+			</xf:group>
+			<xf:group id="" class="titbox">
+				<w2:textbox style="" id="" label="02. Property" class="" tagname="h3"></w2:textbox>
+				<xf:group id="" class="rt">
+					<w2:anchor class="btn_cm" href="/ws/download/checkCombobox.zip" id="" name="" outerDiv="false" style="">
+						<xf:label><![CDATA[Download]]></xf:label>
+					</w2:anchor>
+				</xf:group>
+			</xf:group>
+			<xf:group id="" class="tblbox"><xf:group tagname="table" style="" id="" class="w2tb tbl">
+				<w2:attributes>
+					<w2:summary></w2:summary>
+				</w2:attributes>
+				<xf:group tagname="colgroup">
+					<xf:group tagname="col" style="width:20%;"></xf:group>
+					<xf:group tagname="col" style=""></xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">Property</xf:group>
+					<xf:group tagname="th" style="" class="w2tb_th">Description</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">allOption</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						[default:false, true] 전체항목 표시 여부로 label은 &quot;-전체-&quot; 로 value는 &quot;all&quot; 로 설정됩니다.
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">appearance</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">xforms select1의 appearance속성</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th">
+						animation
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						itemtable의&amp;nbsp;animation을&amp;nbsp;설정한다.
+						<w2:attributes></w2:attributes>
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">checkboxClickSync</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">[default:false, true] 목록의 checkbox를 클릭시 선택된 아이템셋과 싱크를 맞출지 여부</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th">
+						checkDisabledOnAllCheck
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						[default:true,&amp;nbsp;false]&amp;nbsp;&amp;nbsp;전체&amp;nbsp;선택시&amp;nbsp;disabled&amp;nbsp;처리된&amp;nbsp;항목도&amp;nbsp;함께&amp;nbsp;선택하는&amp;nbsp;기능.&amp;nbsp;&amp;nbsp;true&amp;nbsp;(기본&amp;nbsp;값):&amp;nbsp;전체&amp;nbsp;선택&amp;nbsp;시&amp;nbsp;disabled&amp;nbsp;처리된&amp;nbsp;항목도&amp;nbsp;함께&amp;nbsp;선택.&amp;nbsp;&amp;nbsp;false:&amp;nbsp;전체&amp;nbsp;선택&amp;nbsp;시&amp;nbsp;disabled&amp;nbsp;처리된&amp;nbsp;항목은&amp;nbsp;선택하지&amp;nbsp;않음.
+						<w2:attributes></w2:attributes>
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">chooseOption</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						[default:false,true] 선택항목 표시 여부로 chooseOptionLabel속성이 설정되어 있지 않으면 label은 &quot;-선택-&quot;으로 value는
+						&quot;&quot;(empty string)으로 설정됩니다.
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">chooseOptionLabel</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">chooseOption속성이 true로 설정 된 경우 label에 표현 될 text를 정의 합니다.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">class</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						HTML의 class속성과 동일한 기능을 제공하며 css파일 또는 style블럭에 정의 한 class를 1개 또는 공백(space)를 이용하여 다중 적용이 가능합니다. 기본적으로 엔진 내부에서 각 컴포넌트
+						마다의 class를 적용하고 있으며 해당 class를 이용하여 컴포넌트의 css를 공통으로 적용할 수 있습니다.
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">delimiter</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						displayMode속성에서 참조하고 있으며 value와 label을 함께 표현 할 때 사용하는 구분자입니다. displayMode속성의 &quot;delim&quot;에 해당하는 값이 본 속성에 정의 된
+						값입니다.
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">direction</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">[defulat:auto, down, up] 항목의 열림 방향.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">disabled</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						[default:false, true] HTML의 disabled속성과 동일한 기능을 제공하며 컴포넌트를 비활성화 시킵니다.
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">displayMode</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						[default:label, value delim label, label delim value] 항목의 표현 방법으로 label과 value를 함께 표현 할 수 있습니다. delim(구분자)는
+						delimiter속성에 정의 된 값을 참조합니다.
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">displaymessage</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						[default:false, true] validate API를 호출 하였을 때 검증 실패에 대한 결과 메세지를 표시 할지의 여부. 기본적으로 엔진에서 정의 된 메세지가 표현되며 별도의 메세지를 정의하고자 할
+						때는 invalidMessageFunc속성을 이용합니다.
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">escape</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">&lt;&gt;&amp;&quot;를 HTML Escape 문자로 변환하여 화면에 표시합니다.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">id</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">컴포넌트의 ID로 전역객체로 할당되며 script에서 본 id로 컴포넌트에 접근이 가능합니다.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">invalidMessage</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						validate API를 호출 하였을 때 검증 실패에 대한 결과 메세지를 본 속성의 값으로 표현되는 기능으로 displaymessage속성이 true로 되어있어야 합니다. invalidMessageFunc과
+						동시 적용이 불가합니다.
+						<br></br>
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">invalidMessageFunc</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						validate API를 호출 하였을 때 검증 실패에 대한 결과 메세지를 별도로 정의 한 Function에서 동적으로 표현 할 수 있는 기능으로 정의 된 function의 이름을 명시합니다.
+						displaymessage속성이 true로 되어있어야 하며 invalidMessage와 동시 적용이 불가합니다. 사용자 Function(아래 예시 참조)에서는 this.getType()을 통해 검증 실패
+						type(아래 type 참조)과 this.getValue()를 value값을 가져와 메세지를 동적으로 생성하여 return 합니다. type)mandatory, allowChar, ignoreChar,
+						minLength, maxLength, minByteLength, maxByteLength 예시)function fn_msg(){ var tmpType = this.getType(); var tmpValue
+						= this.getValue(); if(tmpType == &quot;mandatory&quot;){ return &quot;필수 검증 항목입니다.&quot;; } }
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">labelWidthAuto</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						[default:false, true] 컴포넌트에 정의 된 width을 무시하고 항목 중 text가 가장 긴 크기에 맞게 출력 할지 여부. 주의 사항으로 style의 position이 absolute로
+						되어있고 우측에 컴포넌트가 배치 되어있을 경우 UI가 틀어질 수 있음으로 우측에 컴포넌트가 없도록 설계되거나 컴포넌트들의 position을 relative로 설정해야합니다.
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">mandatory</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">[default:false, true]validate API를 호출 시 필수입력을 체크 할지의 여부.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">ref</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						DataCollection의 value 경로로 컴포넌트와 DataCollection의 value를 binding을 시킬 때 사용하며 &quot;data:&quot;라는 prefix는 필수로 붙여주어야 합니다.
+						작성 방법은 data:[DataCollection ID].[Key id 또는 Column id]와 같다. 예시)data:dataMap1.dept DataList와 연동 된 경우는 GridView에서 선택 된
+						Row의 값이 binding 됩니다. Instance Data와 연동 할 경우 연동 할 XML 데이터의 XPath를 명시합니다. 예시)res/userInfo/dept/@value
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">separator</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						[default:&quot; &quot;(space)] 선택 된 항목의 label을 나열(표현)하기 위한 구분자입니다.
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">sortMethod</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						[default:ascending, descending] sortOption속성에서 참조하며 sortOption에 정의 된 값에 대한 정렬 방법.
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">
+						sortOption
+						<br></br>
+					</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						[label,value] 항목을 label 또는 value를 기준으로 정렬 할 때 사용됩니다. 기본적으로 ascending으로 정렬되며 sortMethod속성에 값이 정의 된 경우 해당값으로 정렬 방법이
+						결정됩니다.
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">style</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">CheckCombobox의 style 속성</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">submenuSize</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						[default:auto, fixed] labelWidthAuto속성이 true인 경우 미동작하며 목록(항목)창 크기를 label에 맞출지 기본 width로 고정 할지에 대한 설정.
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">tabIndex</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">Tab Key를 이용 한 컴포넌트의 포커스 순서로 HTML의 tabindex속성과 동일한 기능을 제공합니다.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">title</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">HTML의 title속성과 동일한 기능으로 명시 된 값을 브라우저에서 마우스 over시 툴팁형태로 표현합니다.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">useLocale</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						[default:false, true] Client 다국어를 이용하여 항목의 label에 표현되는 값을 다국어 key를 이용하여 표현 할 지에 대한 설정입니다.( 세부 내용은 Client 다국어 가이드 참고
+						) 본 속성에 추가적으로 영향을 받는 속성으로는 chooseOptionLabel이 있으며 해당 속성에도 다국어 key가 정의되어야합니다.
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">validator</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">유효성 체크 함수명</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">visibleRowNum</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">표현 될 항목 행수.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">wmode</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						[default:false, true] wmode 사용 여부로 항목이 object(activeX 또는 flash)에 가려 질 경우 해당 속성을 사용합니다. wmode가 true이면 object 태그보다 상위에
+						보이도록 하는 설정으로 본 컴포넌트에 wmode를 설정하는 것이 아닌 object(activeX, flash 등)태그의 wmode를 사용하는 것을 권장합니다.
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th">
+						navBtn
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						itemtable에&amp;nbsp;Button을&amp;nbsp;설정한다.
+						<w2:attributes></w2:attributes>
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th">
+						nextTabID
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						tab으로&amp;nbsp;이동시&amp;nbsp;이동할&amp;nbsp;컴포넌트&amp;nbsp;ID
+						<w2:attributes></w2:attributes>
+					</xf:group>
+				</xf:group>
+			</xf:group></xf:group>
+			<xf:group id="" class="titbox"><w2:textbox style="" id="" label="03. CSS Overriding" class="" tagname="h3"></w2:textbox></xf:group>
+			<xf:group id="" class="tblbox"><xf:group tagname="table" style="" id="" class="w2tb tbl">
+				<w2:attributes>
+					<w2:summary></w2:summary>
+				</w2:attributes>
+				<xf:group tagname="colgroup">
+					<xf:group tagname="col" style="width:20%;"></xf:group>
+					<xf:group tagname="col" style=""></xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">Class</xf:group>
+					<xf:group tagname="th" style="" class="w2tb_th">Description</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">w2checkcombobox</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						w2checkcombobox는 웹스퀘어 엔진에서 정의된 클래스입니다, 기본적으로 html 로 떨구는 시점에서 자동으로 부여됩니다.
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">w2table_ccb</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						w2table_ccb는 웹스퀘어 엔진에서 정의된 클래스입니다, 기본적으로 html 로 떨구는 시점에서 자동으로 부여됩니다.
+					</xf:group>
+				</xf:group>
+			</xf:group></xf:group>
+		</xf:group>
+    </body>
+</html>

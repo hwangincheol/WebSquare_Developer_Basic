@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+        <w2:type>COMPONENT</w2:type>
+        <w2:buildDate/>
+        <w2:MSA/>
+        <xf:model>
+			<w2:dataCollection baseNode="map">
+				<w2:dataList id="dataList1" baseNode="list" saveRemovedData="true" repeatNode="map">
+					<w2:columnInfo>
+						<w2:column id="dateKind" name="dateKind" dataType="text"></w2:column>
+						<w2:column id="dateName" name="명칭" dataType="text"></w2:column>
+						<w2:column id="isHoliday" name="휴일유무" dataType="text"></w2:column>
+						<w2:column id="sDate" name="시작일" dataType="text"></w2:column>
+						<w2:column id="eDate" name="종료일" dataType="text"></w2:column>
+						<w2:column id="remarks" name="remarks" dataType="text"></w2:column>
+						<w2:column id="seq" name="seq" dataType="text"></w2:column>
+						<w2:column id="key" name="구분값" dataType="text"></w2:column>
+					</w2:columnInfo>
+					<w2:data use="true">
+						<w2:row>
+							<dateKind><![CDATA[01]]></dateKind>
+							<dateName><![CDATA[신정]]></dateName>
+							<isHoliday><![CDATA[Y]]></isHoliday>
+							<sDate><![CDATA[20170101]]></sDate>
+							<eDate><![CDATA[20170101]]></eDate>
+							<remarks><![CDATA[]]></remarks>
+							<seq><![CDATA[1]]></seq>
+							<key><![CDATA[1]]></key>
+						</w2:row>
+						<w2:row>
+							<dateKind><![CDATA[01]]></dateKind>
+							<dateName><![CDATA[설날]]></dateName>
+							<isHoliday><![CDATA[Y]]></isHoliday>
+							<sDate><![CDATA[20170127]]></sDate>
+							<eDate><![CDATA[20170127]]></eDate>
+							<remarks><![CDATA[]]></remarks>
+							<seq><![CDATA[1]]></seq>
+							<key><![CDATA[2-1]]></key>
+						</w2:row>
+						<w2:row>
+							<dateKind><![CDATA[01]]></dateKind>
+							<dateName><![CDATA[설날]]></dateName>
+							<isHoliday><![CDATA[Y]]></isHoliday>
+							<sDate><![CDATA[20170128]]></sDate>
+							<eDate><![CDATA[20170128]]></eDate>
+							<remarks><![CDATA[]]></remarks>
+							<seq><![CDATA[1]]></seq>
+							<key><![CDATA[2-2]]></key>
+						</w2:row>
+						<w2:row>
+							<dateKind><![CDATA[01]]></dateKind>
+							<dateName><![CDATA[설날]]></dateName>
+							<isHoliday><![CDATA[Y]]></isHoliday>
+							<sDate><![CDATA[20170129]]></sDate>
+							<eDate><![CDATA[20170129]]></eDate>
+							<remarks><![CDATA[]]></remarks>
+							<seq><![CDATA[1]]></seq>
+							<key><![CDATA[2-3]]></key>
+						</w2:row>
+						<w2:row>
+							<dateKind><![CDATA[01]]></dateKind>
+							<dateName><![CDATA[대체공휴일]]></dateName>
+							<isHoliday><![CDATA[Y]]></isHoliday>
+							<sDate><![CDATA[20170130]]></sDate>
+							<eDate><![CDATA[20170130]]></eDate>
+							<remarks><![CDATA[]]></remarks>
+							<seq><![CDATA[1]]></seq>
+							<key><![CDATA[2-4]]></key>
+						</w2:row>
+						<w2:row>
+							<dateKind><![CDATA[01]]></dateKind>
+							<dateName><![CDATA[삼일절]]></dateName>
+							<isHoliday><![CDATA[Y]]></isHoliday>
+							<sDate><![CDATA[20170301]]></sDate>
+							<eDate><![CDATA[20170301]]></eDate>
+							<remarks><![CDATA[]]></remarks>
+							<seq><![CDATA[1]]></seq>
+							<key><![CDATA[3]]></key>
+						</w2:row>
+						<w2:row>
+							<dateKind><![CDATA[01]]></dateKind>
+							<dateName><![CDATA[석가탄신일]]></dateName>
+							<isHoliday><![CDATA[Y]]></isHoliday>
+							<sDate><![CDATA[20170503]]></sDate>
+							<eDate><![CDATA[20170503]]></eDate>
+							<remarks><![CDATA[]]></remarks>
+							<seq><![CDATA[1]]></seq>
+							<key><![CDATA[4]]></key>
+						</w2:row>
+						<w2:row>
+							<dateKind><![CDATA[01]]></dateKind>
+							<dateName><![CDATA[어린이날]]></dateName>
+							<isHoliday><![CDATA[Y]]></isHoliday>
+							<sDate><![CDATA[20170505]]></sDate>
+							<eDate><![CDATA[20170505]]></eDate>
+							<remarks><![CDATA[]]></remarks>
+							<seq><![CDATA[1]]></seq>
+							<key><![CDATA[5]]></key>
+						</w2:row>
+						<w2:row>
+							<dateKind><![CDATA[01]]></dateKind>
+							<dateName><![CDATA[대통령선거일]]></dateName>
+							<isHoliday><![CDATA[Y]]></isHoliday>
+							<sDate><![CDATA[20170509]]></sDate>
+							<eDate><![CDATA[20170509]]></eDate>
+							<remarks><![CDATA[]]></remarks>
+							<seq><![CDATA[1]]></seq>
+							<key><![CDATA[6]]></key>
+						</w2:row>
+						<w2:row>
+							<dateKind><![CDATA[01]]></dateKind>
+							<dateName><![CDATA[현충일]]></dateName>
+							<isHoliday><![CDATA[Y]]></isHoliday>
+							<sDate><![CDATA[20170606]]></sDate>
+							<eDate><![CDATA[20170606]]></eDate>
+							<remarks><![CDATA[]]></remarks>
+							<seq><![CDATA[1]]></seq>
+							<key><![CDATA[7]]></key>
+						</w2:row>
+						<w2:row>
+							<dateKind><![CDATA[01]]></dateKind>
+							<dateName><![CDATA[제헌절]]></dateName>
+							<isHoliday><![CDATA[N]]></isHoliday>
+							<sDate><![CDATA[20170717]]></sDate>
+							<eDate><![CDATA[20170717]]></eDate>
+							<remarks><![CDATA[국경일(2014. 12. 30. 법률 12915호)이지만 관공서의 공휴일(2013. 11. 05. 대통령령 24828호)이 아님.]]></remarks>
+							<seq><![CDATA[1]]></seq>
+							<key><![CDATA[8]]></key>
+						</w2:row>
+						<w2:row>
+							<dateKind><![CDATA[01]]></dateKind>
+							<dateName><![CDATA[광복절]]></dateName>
+							<isHoliday><![CDATA[Y]]></isHoliday>
+							<sDate><![CDATA[20170815]]></sDate>
+							<eDate><![CDATA[20170815]]></eDate>
+							<remarks><![CDATA[]]></remarks>
+							<seq><![CDATA[1]]></seq>
+							<key><![CDATA[9]]></key>
+						</w2:row>
+						<w2:row>
+							<dateKind><![CDATA[01]]></dateKind>
+							<dateName><![CDATA[개천절]]></dateName>
+							<isHoliday><![CDATA[Y]]></isHoliday>
+							<sDate><![CDATA[20171003]]></sDate>
+							<eDate><![CDATA[20171003]]></eDate>
+							<remarks><![CDATA[]]></remarks>
+							<seq><![CDATA[1]]></seq>
+							<key><![CDATA[10]]></key>
+						</w2:row>
+						<w2:row>
+							<dateKind><![CDATA[01]]></dateKind>
+							<dateName><![CDATA[추석]]></dateName>
+							<isHoliday><![CDATA[Y]]></isHoliday>
+							<sDate><![CDATA[20171003]]></sDate>
+							<eDate><![CDATA[20171003]]></eDate>
+							<remarks><![CDATA[]]></remarks>
+							<seq><![CDATA[2]]></seq>
+							<key><![CDATA[11-1]]></key>
+						</w2:row>
+						<w2:row>
+							<dateKind><![CDATA[01]]></dateKind>
+							<dateName><![CDATA[추석]]></dateName>
+							<isHoliday><![CDATA[Y]]></isHoliday>
+							<sDate><![CDATA[20171004]]></sDate>
+							<eDate><![CDATA[20171004]]></eDate>
+							<remarks><![CDATA[]]></remarks>
+							<seq><![CDATA[1]]></seq>
+							<key><![CDATA[11-2]]></key>
+						</w2:row>
+						<w2:row>
+							<dateKind><![CDATA[01]]></dateKind>
+							<dateName><![CDATA[추석]]></dateName>
+							<isHoliday><![CDATA[Y]]></isHoliday>
+							<sDate><![CDATA[20171005]]></sDate>
+							<eDate><![CDATA[20171005]]></eDate>
+							<remarks><![CDATA[]]></remarks>
+							<seq><![CDATA[1]]></seq>
+							<key><![CDATA[11-3]]></key>
+						</w2:row>
+						<w2:row>
+							<dateKind><![CDATA[01]]></dateKind>
+							<dateName><![CDATA[대체공휴일]]></dateName>
+							<isHoliday><![CDATA[Y]]></isHoliday>
+							<sDate><![CDATA[20171006]]></sDate>
+							<eDate><![CDATA[20171006]]></eDate>
+							<remarks><![CDATA[]]></remarks>
+							<seq><![CDATA[1]]></seq>
+							<key><![CDATA[11-4]]></key>
+						</w2:row>
+						<w2:row>
+							<dateKind><![CDATA[01]]></dateKind>
+							<dateName><![CDATA[한글날]]></dateName>
+							<isHoliday><![CDATA[Y]]></isHoliday>
+							<sDate><![CDATA[20171009]]></sDate>
+							<eDate><![CDATA[20171009]]></eDate>
+							<remarks><![CDATA[]]></remarks>
+							<seq><![CDATA[1]]></seq>
+							<key><![CDATA[12]]></key>
+						</w2:row>
+						<w2:row>
+							<dateKind><![CDATA[01]]></dateKind>
+							<dateName><![CDATA[기독탄신일]]></dateName>
+							<isHoliday><![CDATA[Y]]></isHoliday>
+							<sDate><![CDATA[20171225]]></sDate>
+							<eDate><![CDATA[20171225]]></eDate>
+							<remarks><![CDATA[]]></remarks>
+							<seq><![CDATA[1]]></seq>
+							<key><![CDATA[13]]></key>
+						</w2:row>
+					</w2:data>
+				</w2:dataList>
+			</w2:dataCollection>
+            <w2:workflowCollection/>
+        </xf:model>
+        <w2:layoutInfo/>
+        <w2:publicInfo method=""/>
+        <script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function() {
+  	wc1.createWindow( "contaner1" ,  null, "xml/component/anchor.xml" , "contaner1");
+  	wc1.createWindow( "contaner2" ,  null, "xml/component/article.xml" , "contaner2");
+  	wc1.createWindow( "contaner3" ,  null, "xml/component/autoComplete.xml" , "contaner3");	
+};
+]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload">
+    	<xf:group class="sub_contents" id="" style="">
+    		<xf:group class="pgtbox" id="" style="">
+    			<w2:textbox class="pgt_tit" id="" label="Publishing Template - ScheduleCalendar" style=""></w2:textbox>
+    		</xf:group>
+    		<xf:group id="" class="titbox">
+    			<w2:textbox style="" id="" label="scheduleCalendar는 일정을 calendar에 출력한다." class="txt_guide"></w2:textbox>
+    		</xf:group>
+    		<xf:group class="titbox" id="" style="">
+    			<w2:textbox class="" id="" label="01. Sample" style="" tagname="h3"></w2:textbox>
+    			<xf:group id="" class="rt">
+    				<w2:anchor outerDiv="false" name="" style="" href="/ws/download/scheduleCalendar.zip" id="" class="btn_cm">
+    					<xf:label><![CDATA[Download]]></xf:label>
+    				</w2:anchor>
+    			</xf:group>
+    		</xf:group>
+
+    		<xf:group style="" id="" class="msgbox">
+    			<w2:scheduleCalendar headerLeftBtn="true" titleColumn="dateName" lang="ko" editable="" endColumn="eDate" idColumn="key"
+    				id="ui_scheduleCalendar" dataList="dataList1" defaultDate="" style="height: 400px;" selectable="" startColumn="sDate"
+    				ioFormat="yyyyMMdd" headerRightBtn="true" headerTitle="true" class="">
+    			</w2:scheduleCalendar>
+    		</xf:group>
+    		<xf:group id="" class="titbox">
+    			<w2:textbox style="" id="" label="02. Property" class="" tagname="h3"></w2:textbox>
+    		</xf:group>
+    		<xf:group id="" class="tblbox">
+    			<xf:group tagname="table" style="" id="" class="wq_tb w2tb tbl">
+    				<w2:attributes>
+    					<w2:summary></w2:summary>
+    				</w2:attributes>
+    				<xf:group tagname="colgroup">
+    					<xf:group tagname="col" style="width:20%;"></xf:group>
+    					<xf:group tagname="col" style=""></xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">Property</xf:group>
+    					<xf:group tagname="th" style="" class="w2tb_th">Description</xf:group>
+    				</xf:group>
+
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">class</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">사용자가 임의의 class를 정의할때 사용합니다.</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">dataList</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						[defulat:&quot;&quot;]scheduleCalendar에&amp;nbsp;바인딩될&amp;nbsp;dataList.&amp;nbsp;scheduleCalendar에서&amp;nbsp;필요한&amp;nbsp;dataList의&amp;nbsp;컬럼&amp;nbsp;종류는&amp;nbsp;다음과&amp;nbsp;같다.&amp;nbsp;&amp;nbsp;&quot;idCol&quot;,&amp;nbsp;&quot;startCol&quot;,&amp;nbsp;&quot;endCol&quot;,&amp;nbsp;&quot;titleCol&quot;&amp;nbsp;으로&amp;nbsp;4종류이다.(컬럼ID는&amp;nbsp;변경해도&amp;nbsp;무관).&amp;nbsp;&amp;nbsp;&amp;nbsp;scheduleCalendar컴포넌트의&amp;nbsp;dataList속성에&amp;nbsp;생성한&amp;nbsp;dataList&amp;nbsp;ID를&amp;nbsp;설정하고&amp;nbsp;그&amp;nbsp;외에&amp;nbsp;&quot;idColumn&quot;&amp;nbsp;속성&amp;nbsp;및&amp;nbsp;&quot;startColumn&quot;&amp;nbsp;속성&amp;nbsp;등에는&amp;nbsp;생성한&amp;nbsp;dataList의&amp;nbsp;&quot;컬럼ID&quot;값들을&amp;nbsp;설정해준다.&amp;nbsp;&amp;nbsp;&amp;nbsp;예를&amp;nbsp;들어서,&amp;nbsp;생성된&amp;nbsp;dataList의&amp;nbsp;ID는&amp;nbsp;&quot;dataList1&quot;이다.&amp;nbsp;&amp;nbsp;&amp;nbsp;&quot;dataList1&quot;에&amp;nbsp;추가된&amp;nbsp;컬럼은&amp;nbsp;총&amp;nbsp;4개이며,&amp;nbsp;컬럼&amp;nbsp;ID는&amp;nbsp;&quot;idCol&quot;,&amp;nbsp;&quot;startCol&quot;,&amp;nbsp;&quot;endCol&quot;,&amp;nbsp;&quot;titleCol&quot;으로&amp;nbsp;되어&amp;nbsp;있다.&amp;nbsp;&amp;nbsp;scheduleCalendar에는&amp;nbsp;다음과&amp;nbsp;같이&amp;nbsp;설정한다.&amp;nbsp;&amp;nbsp;dataList&amp;nbsp;=&amp;nbsp;&quot;dataList1&quot;&amp;nbsp;idColumn&amp;nbsp;=&amp;nbsp;&quot;idCol&quot;&amp;nbsp;startColumn&amp;nbsp;=&amp;nbsp;&quot;startCol&quot;&amp;nbsp;endColumn&amp;nbsp;=&amp;nbsp;&quot;endCol&quot;&amp;nbsp;titleColumn&amp;nbsp;=&amp;nbsp;&quot;titleCol&quot;
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">defaultDate</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						[default:&quot;&quot;]component&amp;nbsp;로딩후&amp;nbsp;초기화면에&amp;nbsp;설정된&amp;nbsp;날짜,&amp;nbsp;ioFormat와&amp;nbsp;포맷이&amp;nbsp;일치해야됨.
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">editable</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						[default:false,&amp;nbsp;true]&amp;nbsp;scheduleCalendar에&amp;nbsp;기&amp;nbsp;적용되어&amp;nbsp;있는&amp;nbsp;일정을&amp;nbsp;마우스&amp;nbsp;드래그&amp;nbsp;앤&amp;nbsp;드랍으로&amp;nbsp;&amp;nbsp;&amp;nbsp;옮겨서&amp;nbsp;start와&amp;nbsp;end&amp;nbsp;날짜를&amp;nbsp;변경할&amp;nbsp;수&amp;nbsp;있는&amp;nbsp;기능을&amp;nbsp;설정한다.
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" class="w2tb_th">
+    						endColumn
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    					</xf:group>
+    					<xf:group tagname="td" class="w2tb_td">
+    						[default:&quot;&quot;]scheduleCalendar에&amp;nbsp;입력하는&amp;nbsp;일정의&amp;nbsp;'종료&amp;nbsp;날짜'&amp;nbsp;값으로&amp;nbsp;사용될&amp;nbsp;dataList의&amp;nbsp;column&amp;nbsp;id
+    						<w2:attributes></w2:attributes>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">headerLeftBtn</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						[default:true,&amp;nbsp;false]scheduleCalanedar의&amp;nbsp;header&amp;nbsp;좌측버튼이&amp;nbsp;보이도록&amp;nbsp;설정[show,&amp;nbsp;hide]
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">headerRightBtn</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						[default:true,&amp;nbsp;false]scheduleCalanedar의&amp;nbsp;header&amp;nbsp;우측버튼이&amp;nbsp;보이도록&amp;nbsp;설정show,&amp;nbsp;hide]
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">headerTitle</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						[default:true,&amp;nbsp;false]scheduleCalanedar의&amp;nbsp;header&amp;nbsp;중앙&amp;nbsp;title이&amp;nbsp;보이도록&amp;nbsp;설정[show,&amp;nbsp;hide]
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">id</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						컴포넌트의&amp;nbsp;ID로&amp;nbsp;전역객체로&amp;nbsp;할당되며&amp;nbsp;script에서&amp;nbsp;본&amp;nbsp;id로&amp;nbsp;컴포넌트에&amp;nbsp;접근이&amp;nbsp;가능하다.
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">idColumn</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						[default:&quot;&quot;]scheduleCalendar에&amp;nbsp;입력하는&amp;nbsp;일정의&amp;nbsp;고유한&amp;nbsp;'id'값으로&amp;nbsp;사용될&amp;nbsp;dataList의&amp;nbsp;column&amp;nbsp;id
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">ioFormat</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						[default:yyyyMMdd,MMddyyyy,ddMMyyyy]start&amp;nbsp;,end&amp;nbsp;column에&amp;nbsp;입력된&amp;nbsp;날짜포멧을&amp;nbsp;설정
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">lang</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						[default:ko,&amp;nbsp;en]scheduleCalanedar에서&amp;nbsp;사용될&amp;nbsp;언어를&amp;nbsp;설정한다.
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">selectable</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						[default:false,&amp;nbsp;true]scheduleCalendar에서&amp;nbsp;특정&amp;nbsp;날짜를&amp;nbsp;선택해서&amp;nbsp;일정을&amp;nbsp;입력할&amp;nbsp;수&amp;nbsp;있다.(prompt창&amp;nbsp;발생)&amp;nbsp;&amp;nbsp;여러&amp;nbsp;날짜를&amp;nbsp;마우스로&amp;nbsp;드래그해서&amp;nbsp;다중&amp;nbsp;선택&amp;nbsp;후,&amp;nbsp;기간으로&amp;nbsp;일정을&amp;nbsp;입력할&amp;nbsp;수&amp;nbsp;있다.
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">startColumn</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						[default:&quot;&quot;]scheduleCalendar에&amp;nbsp;입력하는&amp;nbsp;일정의&amp;nbsp;'시작&amp;nbsp;날짜'&amp;nbsp;값으로&amp;nbsp;사용될&amp;nbsp;dataList의&amp;nbsp;column&amp;nbsp;id
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" class="w2tb_th">
+    						style
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    					</xf:group>
+    					<xf:group tagname="td" class="w2tb_td">
+    						사용자&amp;nbsp;정의&amp;nbsp;스타일시트
+    						<w2:attributes></w2:attributes>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" class="w2tb_th">
+    						tabIndex
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    					</xf:group>
+    					<xf:group tagname="td" class="w2tb_td">
+    						[default:&quot;&quot;]Tab&amp;nbsp;Key를&amp;nbsp;이용&amp;nbsp;한&amp;nbsp;컴포넌트의&amp;nbsp;포커스&amp;nbsp;순서로&amp;nbsp;HTML의&amp;nbsp;tabindex속성과&amp;nbsp;동일한&amp;nbsp;기능을&amp;nbsp;제공한다.
+    						<w2:attributes></w2:attributes>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">titleColumn</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						[default:&quot;&quot;]scheduleCalendar에&amp;nbsp;입력하는&amp;nbsp;일정의&amp;nbsp;title&amp;nbsp;값을&amp;nbsp;설정한다.
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">version</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						[default:2.3,&amp;nbsp;3.6]scheduleCalendar에서&amp;nbsp;사용할&amp;nbsp;버전을&amp;nbsp;설정.&amp;nbsp;디폴트로&amp;nbsp;fullCalendar&amp;nbsp;2.3.2&amp;nbsp;버젼이&amp;nbsp;로딩되고&amp;nbsp;&amp;nbsp;&amp;nbsp;&quot;3.6&quot;을&amp;nbsp;선택하면&amp;nbsp;3.6.2&amp;nbsp;버젼이&amp;nbsp;로딩된다.
+    					</xf:group>
+    				</xf:group>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group id="" class="titbox">
+    			<w2:textbox tagname="h3" style="" id="" label="03. CSS Overriding" class=""></w2:textbox>
+    		</xf:group>
+    		<xf:group id="" class="tblbox">
+    			<xf:group tagname="table" style="" id="" class="wq_tb w2tb tbl">
+    				<w2:attributes>
+    					<w2:summary></w2:summary>
+    				</w2:attributes>
+    				<xf:group tagname="colgroup">
+    					<xf:group tagname="col" style="width:300px;"></xf:group>
+    					<xf:group tagname="col" style=""></xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">Class</xf:group>
+    					<xf:group tagname="th" style="" class="w2tb_th">Description</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">w2scheduleCalendar</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						w2scheduleCalendar는&amp;nbsp;웹스퀘어&amp;nbsp;엔진에서&amp;nbsp;정의된&amp;nbsp;클래스입니다,&amp;nbsp;기본적으로&amp;nbsp;html&amp;nbsp;로&amp;nbsp;떨구는&amp;nbsp;시점에서&amp;nbsp;자동으로&amp;nbsp;부여됩니다.&amp;nbsp;scheduleCalendar&amp;nbsp;전체를&amp;nbsp;감싼&amp;nbsp;태그&amp;nbsp;입니다.
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">fc-toolbar</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						fc-toolbar&amp;nbsp;상단&amp;nbsp;년,월,주,일&amp;nbsp;등&amp;nbsp;툴바&amp;nbsp;영역을&amp;nbsp;감싸는&amp;nbsp;클래스
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">fc-left</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">좌측&amp;nbsp;페이징&amp;nbsp;영역</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">fc-right</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">우측&amp;nbsp;월,주,일&amp;nbsp;필터&amp;nbsp;영역</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">fc-center</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">년도,월&amp;nbsp;표시&amp;nbsp;영역</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" class="w2tb_th">
+    						fc-view-container
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    					</xf:group>
+    					<xf:group tagname="td" class="w2tb_td">
+    						스케쥴&amp;nbsp;달력UI&amp;nbsp;컨테이너&amp;nbsp;영역
+    						<w2:attributes></w2:attributes>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" class="w2tb_th">
+    						fc-view
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    					</xf:group>
+    					<xf:group tagname="td" class="w2tb_td">
+    						스케쥴&amp;nbsp;달력UI&amp;nbsp;table을&amp;nbsp;감싸는&amp;nbsp;영역
+    						<w2:attributes></w2:attributes>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" class="w2tb_th">
+    						fc_head
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    					</xf:group>
+    					<xf:group tagname="td" class="w2tb_td">
+    						thead의&amp;nbsp;요일을&amp;nbsp;나타낸는&amp;nbsp;영역
+    						<w2:attributes></w2:attributes>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" class="w2tb_th">
+    						fc-body
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    					</xf:group>
+    					<xf:group tagname="td" class="w2tb_td">
+    						tbody의&amp;nbsp;일자별&amp;nbsp;컨텐츠&amp;nbsp;영역
+    						<w2:attributes></w2:attributes>
+    					</xf:group>
+    				</xf:group>
+    			</xf:group>
+    		</xf:group>
+    	</xf:group>
+    </body>
+</html>

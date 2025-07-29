@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:w2="http://www.inswave.com/websquare"
+	xmlns:xf="http://www.w3.org/2002/xforms">
+	<head meta_screenName="[AutoComplete] 편집 모드 전환 이벤트 설정하기">
+		<w2:historyInfo>
+			<w2:history meta_no="01" meta_desc="최초작성" meta_date="20231121" meta_user="InswaveSystems"></w2:history>
+		</w2:historyInfo>
+		<w2:type>COMPONENT</w2:type>
+		<w2:buildDate />
+		<w2:MSA />
+		<xf:model>
+			<w2:dataCollection baseNode="map">
+			</w2:dataCollection>
+			<w2:workflowCollection />
+		</xf:model>
+		<w2:layoutInfo />
+		<w2:publicInfo method="" />
+		<script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function () {
+
+};
+]]></script>
+	</head>
+	<body ev:onpageload="scwin.onpageload">
+		<xf:group class="sub_contents" id="" style="">
+			<xf:group class="ws_example_grp_desc" id="" style="">
+				<w2:textbox escape="false" id="" label="속성 'editModeEvent'의 설정 값 비교 예제입니다.&lt;br/&gt;이 속성은 편집 모드 전환이 발생하는 이벤트를 설정할 수 있습니다."
+					style="">
+				</w2:textbox>
+				<w2:textbox escape="false" id=""
+					label='설정 값에 따른 동작은 다음과 같습니다.&lt;br/&gt;- "onclick" : [default] onclick 이벤트 발생 시 편집 모드로 전환.&lt;br/&gt;- "onfocus" : onfocus 이벤트 발생 시 편집 모드로 전환. (컴포넌트가 클릭된 경우도 포함)'
+					style="">
+				</w2:textbox>
+			</xf:group>
+			<xf:group class="example_div_tb_style_wrap" id="">
+				<xf:group class="example_div_tr_style" id="" style="">
+					<w2:textbox class="example_div_th_style" escape="false" id="" label="(기본 설정) 이벤트 'onclick' 발생 시 편집 모드 전환" style=""></w2:textbox>
+
+					<xf:group class="example_div_td_style" id="" style="">
+						<w2:textbox class="ws5_example_txt_normal" escape="false" id="" label="이벤트 'onclick'이 발생한 경우에만 편집 모드로 전환됩니다." style="">
+						</w2:textbox>
+						<xf:group id="" class="mb_def_box nobottom">
+							<w2:textbox class="ws5_example_txt_normal" escape="false" id=""
+								label="Input을 클릭(포커스)하고 키 'tab'을 눌러 동작을 비교합니다.&lt;br/&gt;실행 결과 : 편집 모드로 전환되지 않습니다." style="">
+							</w2:textbox>
+							<xf:input style="width: 120px;height: 26px;" id="" placeholder="테스트를 위한 Input" class="mr_def"></xf:input>
+							<w2:autoComplete editModeEvent="onclick" id="acb_exam1" style="width: 150px;min-height:24px;" submenuSize="auto">
+								<w2:choices>
+									<w2:item>
+										<w2:label><![CDATA[Dog]]></w2:label>
+										<w2:value><![CDATA[01]]></w2:value>
+									</w2:item>
+									<w2:item>
+										<w2:label><![CDATA[Elephant]]></w2:label>
+										<w2:value><![CDATA[02]]></w2:value>
+									</w2:item>
+									<w2:item>
+										<w2:label><![CDATA[Grape]]></w2:label>
+										<w2:value><![CDATA[03]]></w2:value>
+									</w2:item>
+									<w2:item>
+										<w2:label><![CDATA[Happy]]></w2:label>
+										<w2:value><![CDATA[04]]></w2:value>
+									</w2:item>
+								</w2:choices>
+							</w2:autoComplete>
+						</xf:group>
+					</xf:group>
+				</xf:group>
+				<xf:group class="example_div_tr_style" id="" style="">
+					<w2:textbox class="example_div_th_style" escape="false" id="" label="이벤트 'onfocus' 발생 시 편집 모드 전환" style="">
+					</w2:textbox>
+					<xf:group class="example_div_td_style" id="" style="">
+						<w2:textbox class="ws5_example_txt_normal" escape="false" id=""
+							label="이벤트 'onfoucs'이 발생한 경우에 편집 모드로 전환됩니다. 또한 컴포넌트가 클릭된 경우(이벤트 'onfocus' 발생)에도 편집 모드로 전환됩니다." style="">
+						</w2:textbox>
+						<w2:textbox class="ws5_example_txt_normal" escape="false" id=""
+							label="Input을 클릭(포커스)하고 키 'tab'을 눌러 동작을 비교합니다.&lt;br/&gt;실행 결과 : 편집 모드로 전환됩니다." style="">
+						</w2:textbox>
+						<xf:group class="mb_def_box nobottom" id="" style="">
+							<xf:input class="mr_def" id="" placeholder="테스트를 위한 Input" style="width: 120px;height: 26px;"></xf:input>
+							<w2:autoComplete editModeEvent="onfocus" id="acb_exam2" style="width: 150px;min-height:24px;" submenuSize="auto">
+								<w2:choices>
+									<w2:item>
+										<w2:label><![CDATA[Dog]]></w2:label>
+										<w2:value><![CDATA[01]]></w2:value>
+									</w2:item>
+									<w2:item>
+										<w2:label><![CDATA[Elephant]]></w2:label>
+										<w2:value><![CDATA[02]]></w2:value>
+									</w2:item>
+									<w2:item>
+										<w2:label><![CDATA[Grape]]></w2:label>
+										<w2:value><![CDATA[03]]></w2:value>
+									</w2:item>
+									<w2:item>
+										<w2:label><![CDATA[Happy]]></w2:label>
+										<w2:value><![CDATA[04]]></w2:value>
+									</w2:item>
+								</w2:choices>
+							</w2:autoComplete>
+						</xf:group>
+					</xf:group>
+				</xf:group>
+
+			</xf:group>
+		</xf:group>
+	</body>
+</html>

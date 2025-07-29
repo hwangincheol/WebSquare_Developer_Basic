@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:w2="http://www.inswave.com/websquare"
+	xmlns:xf="http://www.w3.org/2002/xforms">
+	<head meta_vertical_guides="" meta_horizontal_guides="-298">
+		<w2:historyInfo>
+			<w2:history meta_no="01" meta_desc="최초작성" meta_date="20230228" meta_user="InswaveSystems" ></w2:history>
+		</w2:historyInfo>
+		<w2:type>COMPONENT</w2:type>
+		<w2:buildDate />
+		<w2:MSA />
+		<xf:model>
+			<w2:dataCollection baseNode="map">
+			</w2:dataCollection>
+			<w2:workflowCollection />
+		</xf:model>
+		<w2:layoutInfo />
+		<w2:publicInfo method="" />
+		<script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function () {
+
+};
+
+/**
+ * 영역 [속성 'displayFormatter'에 Input 입력값을 소문자에서 대문자로 바꿔주는 함수 지정]의
+ * 입력 [ibx_exam2]의 displayFormatter 함수
+ */
+scwin.toUpperCaseFormatter = function (value) {
+    return value.toUpperCase();
+};]]></script>
+	</head>
+	<body ev:onpageload="scwin.onpageload">
+		<xf:group class="sub_contents" id="" style="">
+			<xf:group class="ws_example_grp_desc" id="" style="">
+				<w2:textbox escape="false" id=""
+					label='displayFormatter 속성에 사용자 함수를 지정하는 예제입니다.&lt;br/&gt;displayFormatter 속성으로 함수명을 지정하고 스크립트에서 해당 함수를 별도로 정의해야 합니다.&lt;br/&gt;이 기능은 아래의 속성으로 사용할 수 있습니다.&lt;br/&gt;- dataType : Input의 dataType을 명시&lt;br/&gt;- displayFormatter : 스크립트에서 선언한 함수명 기재'
+					style="">
+				</w2:textbox>
+			</xf:group>
+			<xf:group class="example_div_tb_style_wrap" id="">
+				<xf:group class="example_div_tr_style" id="" style="">
+					<w2:textbox class="example_div_th_style" escape="false" id="" label="속성 'displayFormatter'에 사용자 함수 지정" style=""></w2:textbox>
+					<xf:group class="example_div_td_style" id="" style="">
+						<w2:textbox class="ws5_example_txt_normal" escape="false" id=""
+							label='소문자 알파뱃 입력 후 Input에서 focus out 또는 Blur 시점에 사용자 함수에 의해 대문자 알파뱃으로 포맷이 변화되는 것을 확인할 수 있습니다.&lt;br/&gt;&lt;br/&gt;ex) 입력값 : abcdefgh -&gt; 출력값 : ABCDEFGH'
+							style="" displayFormat="">
+						</w2:textbox>
+						<w2:textbox class="txt_info_important" escape="false" id="" label="※Input에 포커스를 주면 처음에 입력한 값으로 돌아옵니다." style="">
+						</w2:textbox>
+						<xf:input class="" id="ibx_exam2" maxByteLength="8" style="min-width:120px;" dataType="text"
+							displayFormatter="scwin.toUpperCaseFormatter">
+						</xf:input>
+					</xf:group>
+				</xf:group>
+				<xf:group class="example_div_tr_style" id="" style="">
+				</xf:group>
+			</xf:group>
+		</xf:group>
+	</body>
+</html>

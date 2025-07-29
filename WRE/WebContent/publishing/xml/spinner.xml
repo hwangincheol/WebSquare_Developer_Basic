@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+        <w2:type>COMPONENT</w2:type>
+        <w2:buildDate/>
+        <w2:MSA/>
+        <xf:model>
+            <w2:dataCollection baseNode="map"/>
+            <w2:workflowCollection/>
+        </xf:model>
+        <w2:layoutInfo/>
+        <w2:publicInfo method=""/>
+        <script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function() {
+	
+};
+]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload">
+    	<xf:group class="sub_contents" id="" style="">
+    		<xf:group class="pgtbox" id="" style="">
+    			<w2:textbox class="pgt_tit" id="" label="Publishing Template - Spinner" style=""></w2:textbox>
+    		</xf:group>
+    		<xf:group id="" class="titbox">
+    			<w2:textbox style="" id="" label="버튼을 이용해서 텍스트 필드의 숫자를 조절할 수 있습니다." class="txt_guide"></w2:textbox>
+    		</xf:group>
+    		<xf:group class="titbox" id="" style="">
+    			<w2:textbox class="" id="" label="01. Sample" style="" tagname="h3"></w2:textbox>
+    			<xf:group id="" class="rt">
+    				<w2:anchor outerDiv="false" name="" style="" href="/ws/download/spinner.zip" id="" class="btn_cm">
+    					<xf:label><![CDATA[Download]]></xf:label>
+    				</w2:anchor>
+    			</xf:group>
+    		</xf:group>
+
+
+    		<xf:group style="" id="" class="msgbox">
+    			<xf:group class="" id="" style="">
+    				<w2:spinner buttonSize="30" id="" increment="1" inputReadOnly="false" skin="type1"
+    					style="position: relative;height:21px;width: 150px;" dataType="number" class="wq_spr mr30">
+    				</w2:spinner>
+    				<w2:spinner buttonSize="30" dataType="number" id="" increment="1" inputReadOnly="true" skin="type1"
+    					style="position: relative;height:21px;width: 150px;" class="wq_spr" disabled="true">
+    				</w2:spinner>
+    			</xf:group>
+    			<xf:group class="mt20" id="" style="">
+    				<w2:spinner buttonSize="30" class="wq_spr mr30" dataType="number" id="" increment="1" inputReadOnly="false" skin="type2"
+    					style="position: relative;height:21px;width: 150px;">
+    				</w2:spinner>
+    				<w2:spinner buttonSize="30" class="wq_spr" dataType="number" disabled="true" id="" increment="1" inputReadOnly="true"
+    					skin="type2" style="position: relative;height:21px;width: 150px;">
+    				</w2:spinner>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group id="" class="titbox">
+    			<w2:textbox style="" id="" label="02. Property" class="" tagname="h3"></w2:textbox>
+    		</xf:group>
+    		<xf:group id="" class="tblbox">
+    			<xf:group tagname="table" style="" id="" class="wq_tb w2tb tbl">
+    				<w2:attributes>
+    					<w2:summary></w2:summary>
+    				</w2:attributes>
+    				<xf:group tagname="colgroup">
+    					<xf:group tagname="col" style="width:20%;"></xf:group>
+    					<xf:group tagname="col" style=""></xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">Property</xf:group>
+    					<xf:group tagname="th" style="" class="w2tb_th">Description</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">buttonSize</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">2개의 버튼이 차지하는 공간(넓이)</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">dataType</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						data의 값의 type
+    						<br></br>
+    						- number
+    						<br></br>
+    						- date
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" class="w2tb_th">
+    						dataTypeTimeSecond
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+    					</xf:group>
+    					<xf:group tagname="td" class="w2tb_td">
+    						[default:false,&amp;nbsp;true]dataType이&amp;nbsp;time인&amp;nbsp;경우,&amp;nbsp;&quot;초&amp;nbsp;단위&quot;까지&amp;nbsp;입력해야&amp;nbsp;되고&amp;nbsp;dateIncrementType에&amp;nbsp;설정된&amp;nbsp;값에&amp;nbsp;따라&amp;nbsp;증감되는&amp;nbsp;단위가&amp;nbsp;달라진다.&amp;nbsp;예를들어서&amp;nbsp;dataType&amp;nbsp;=&amp;nbsp;&quot;time&quot;&amp;nbsp;dateIncrementType&amp;nbsp;=&amp;nbsp;&quot;second&quot;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;dataTypeTimeSecond&amp;nbsp;=&amp;nbsp;&quot;true&quot;&amp;nbsp;이면&amp;nbsp;시간:분:초&amp;nbsp;6자리로&amp;nbsp;입력가능하고&amp;nbsp;&quot;초&amp;nbsp;단위&quot;로&amp;nbsp;증감한다.&amp;nbsp;여기서&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;dateIncrementType&amp;nbsp;=&amp;nbsp;&quot;hour&quot;로&amp;nbsp;설정하면&amp;nbsp;&quot;시간&amp;nbsp;단위&quot;로&amp;nbsp;증감한다.
+    						<w2:attributes></w2:attributes>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">dateIncrementType</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						dataType이 date인 경우에 증가시킬 값
+    						<br></br>
+    						- day
+    						<br></br>
+    						- month
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">displayFormat</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">input에 값을 표시하는 format</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">displayFormatter</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">input에 값을 표시하는 포맷터 함수</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">increment</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">버튼 클릭시에 증감 값</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">inputReadOnly</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">input의 readOnly여부</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">max</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">dataType이 number인 경우에 최대 값</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">min</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">dataType이 number인 경우에 최소 값</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" class="w2tb_th">
+    						nextTabID
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+    					</xf:group>
+    					<xf:group tagname="td" class="w2tb_td">
+    						tab으로&amp;nbsp;이동시&amp;nbsp;이동할&amp;nbsp;컴포넌트&amp;nbsp;ID
+    						<w2:attributes></w2:attributes>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">skin</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						버튼 배열 타입
+    						<br></br>
+    						- type1(버튼이 우측에 위치)
+    						<br></br>
+    						- type2(버튼이 좌측에 위치)
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" class="w2tb_th">
+    						tabIndex
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+    					</xf:group>
+    					<xf:group tagname="td" class="w2tb_td">
+    						Tab&amp;nbsp;Key를&amp;nbsp;이용&amp;nbsp;한&amp;nbsp;컴포넌트의&amp;nbsp;포커스&amp;nbsp;순서로&amp;nbsp;HTML의&amp;nbsp;tabindex속성과&amp;nbsp;동일한&amp;nbsp;기능을&amp;nbsp;제공한다.
+    						<w2:attributes></w2:attributes>
+    					</xf:group>
+    				</xf:group>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group id="" class="titbox">
+    			<w2:textbox tagname="h3" style="" id="" label="03. CSS Overriding" class=""></w2:textbox>
+    		</xf:group>
+    		<xf:group id="" class="tblbox">
+    			<xf:group tagname="table" style="" id="" class="wq_tb w2tb tbl">
+    				<w2:attributes>
+    					<w2:summary></w2:summary>
+    				</w2:attributes>
+    				<xf:group tagname="colgroup">
+    					<xf:group tagname="col" style="width:20%;"></xf:group>
+    					<xf:group tagname="col" style=""></xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">Class</xf:group>
+    					<xf:group tagname="th" style="" class="w2tb_th">Description</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">
+    						w2spinner
+    						<br></br>
+    						w2_horizon
+    						<br></br>
+    						type1
+    					</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						w2treeview는 웹스퀘어 엔진에서 정의된 클래스입니다, 기본적으로 html 로 렌더링되는 시점에서 자동으로 부여됩니다.
+    						<br></br>
+    						여기에 사용자 정의 클래스를 추가해서 overriding(덮어쓰기) 하여 디자인을 바꿀 수 있습니다.
+    					</xf:group>
+    				</xf:group>
+    			</xf:group>
+    		</xf:group>
+    	</xf:group>
+    </body>
+</html>

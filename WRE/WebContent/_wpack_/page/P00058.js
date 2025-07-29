@@ -1,0 +1,7 @@
+/*amd /page/P00058.xml 1648 b063cf51ed277ddd3f1cf820bb30b0394fc30b7b8cffdae944df2d47fd6a727f */
+define({declaration:{A:{version:'1.0',encoding:'UTF-8'}},E:[{T:1,N:'html',A:{xmlns:'http://www.w3.org/1999/xhtml','xmlns:ev':'http://www.w3.org/2001/xml-events','xmlns:w2':'http://www.inswave.com/websquare','xmlns:xf':'http://www.w3.org/2002/xforms'},E:[{T:1,N:'head',A:{},E:[{T:1,N:'w2:historyInfo',E:[{T:1,N:'w2:history',A:{}}]},{T:1,N:'w2:type',E:[{T:3,text:'COMPONENT'}]},{T:1,N:'w2:buildDate'},{T:1,N:'w2:MSA'},{T:1,N:'xf:model',E:[{T:1,N:'w2:dataCollection',A:{baseNode:'map'}},{T:1,N:'w2:workflowCollection'}]},{T:1,N:'w2:layoutInfo'},{T:1,N:'w2:publicInfo',A:{method:''}},{T:1,N:'script',A:{lazy:'false',type:'text/javascript'},E:[{T:4,cdata:function(scopeObj){with(scopeObj){
+scwin.onpageload = function () {
+
+};
+
+}}}]}]},{T:1,N:'body',A:{'ev:onpageload':'scwin.onpageload'},E:[{T:1,N:'xf:group',A:{class:'sub_contents',id:'',style:''},E:[{T:1,N:'xf:group',A:{class:'ws_example_grp_desc',id:'',style:''},E:[{T:1,N:'w2:textbox',A:{escape:'false',id:'',label:'클라이언트 다국어 설정 중 localeRef 속성 예시입니다.<br/>클라이언트 다국어는 브라우저의 언어 설정값에 따라 아래의 소개가 한국어 또는 영어로 출력됩니다.<br/>브라우저의 언어 설정을 변경한 경우 브라우저를 전체 새로고침해야 변경된 언어가 반영됩니다.',style:''}}]},{T:1,N:'xf:group',A:{id:'',style:'padding: 10px; background-color: SeaShell;'},E:[{T:1,N:'w2:textbox',A:{tagname:'h3',localeRef:'c_lable_1',style:'min-width: 10px; min-height: 4px;',id:'',label:'',useLocale:'true'}},{T:1,N:'w2:textbox',A:{tagname:'p',localeRef:'c_lable_2',style:'',id:'',label:'',useLocale:'true'}}]}]}]}]}]})

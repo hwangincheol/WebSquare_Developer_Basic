@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:w2="http://www.inswave.com/websquare"
+	xmlns:xf="http://www.w3.org/2002/xforms">
+	<head meta_screenName="[GridView] inputType이 drilldown으로 지정된 열에서 버튼 '확장/축소'를 클릭할 때 이벤트 'oncellclick'이 발생하지 않도록 설정하기">
+		<w2:historyInfo>
+			<w2:history meta_no="01" meta_desc="최초작성" meta_date="20230828" meta_user="InswaveSystems"></w2:history>
+		</w2:historyInfo>
+		<w2:type>COMPONENT</w2:type>
+		<w2:buildDate />
+		<w2:MSA />
+		<xf:model>
+			<w2:dataCollection baseNode="map">
+				<w2:dataList baseNode="list" id="dlt_exam1" repeatNode="data" valueAttribute="">
+					<w2:columnInfo>
+						<w2:column dataType="text" id="depth" name="depth"></w2:column>
+						<w2:column dataType="text" id="label" name="label"></w2:column>
+						<w2:column dataType="text" id="value" name="value"></w2:column>
+						<w2:column dataType="text" id="fileName" name="fileName"></w2:column>
+					</w2:columnInfo>
+					<w2:data use="true" xmlns="">
+						<w2:row>
+							<depth><![CDATA[1]]></depth>
+							<label><![CDATA[메뉴1 (좌측 버튼 클릭)]]></label>
+							<value><![CDATA[menu1]]></value>
+							<fileName><![CDATA[menu1.xml]]></fileName>
+						</w2:row>
+						<w2:row>
+							<depth><![CDATA[2]]></depth>
+							<label><![CDATA[메뉴1-1]]></label>
+							<value><![CDATA[menu1-1]]></value>
+							<fileName><![CDATA[menu1-1.xml]]></fileName>
+						</w2:row>
+						<w2:row>
+							<depth><![CDATA[2]]></depth>
+							<label><![CDATA[메뉴1-2 (좌측 버튼 클릭)]]></label>
+							<value><![CDATA[menu1-2]]></value>
+							<fileName><![CDATA[menu1-2.xml]]></fileName>
+						</w2:row>
+						<w2:row>
+							<depth><![CDATA[3]]></depth>
+							<label><![CDATA[메뉴1-2-1]]></label>
+							<value><![CDATA[menu1-2-1]]></value>
+							<fileName><![CDATA[menu1-2-1.xml]]></fileName>
+						</w2:row>
+						<w2:row>
+							<depth><![CDATA[2]]></depth>
+							<label><![CDATA[메뉴1-3]]></label>
+							<value><![CDATA[menu1-3]]></value>
+							<fileName><![CDATA[menu1-3.xml]]></fileName>
+						</w2:row>
+						<w2:row>
+							<depth><![CDATA[1]]></depth>
+							<label><![CDATA[메뉴2 (좌측 버튼 클릭)]]></label>
+							<value><![CDATA[menu2]]></value>
+							<fileName><![CDATA[menu2.xml]]></fileName>
+						</w2:row>
+						<w2:row>
+							<depth><![CDATA[2]]></depth>
+							<label><![CDATA[메뉴2-1]]></label>
+							<value><![CDATA[menu2-1]]></value>
+							<fileName><![CDATA[menu2-1.xml]]></fileName>
+						</w2:row>
+					</w2:data>
+				</w2:dataList>
+			</w2:dataCollection>
+			<w2:workflowCollection />
+		</xf:model>
+		<w2:layoutInfo />
+		<w2:publicInfo method="" />
+		<script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function () {
+
+};
+
+/**
+ * GridView 'grd_exam1'의 'oncellclick' 이벤트 발생 시
+ */
+scwin.grd_exam1_oncellclick = function (row, col, colId) {
+    alert("이벤트 oncellclick 발생");
+};
+
+/**
+ * GridView 'grd_exam2'의 'oncellclick' 이벤트 발생 시
+ */
+scwin.grd_exam2_oncellclick = function (row, col, colId) {
+    alert("이벤트 oncellclick 발생");
+};
+]]></script>
+	</head>
+	<body ev:onpageload="scwin.onpageload">
+		<xf:group class="sub_contents">
+			<xf:group class="ws_example_grp_desc">
+				<w2:textbox escape="false"
+					label="GridView의 속성 'ignoreCellClick' 설정 비교 예제입니다.&lt;br/&gt;이 속성은 컬럼의 속성 'inputType'의 설정 값이 'drilldown'인 셀에 표시된 '확장/축소' 버튼이 클릭되었을 때 동작합니다."
+					style="">
+				</w2:textbox>
+				<w2:textbox escape="false"
+					label="속성의 설정 값에 따른 동작은 다음과 같습니다.&lt;br/&gt;- true : GridView의 이벤트 'oncellclick'가 발생하지 않음.&lt;br/&gt;- false : (기본 값) GridView의 이벤트 'oncellclick'가 발생함."
+					style="">
+				</w2:textbox>
+				<w2:textbox escape="false"
+					label="각 GridView에는 이벤트 'oncellclick' 핸들러가 설정되어 있습니다. 셀을 클릭하면 핸들러에서 브라우저 'alert'으로 문자열 '이벤트 oncellclick 발생'을 출력합니다." style=""
+					class="ws_example_txt_desc_info">
+				</w2:textbox>
+			</xf:group>
+			<xf:group class="example_div_tb_style_wrap">
+				<xf:group class="example_div_tr_style">
+					<w2:textbox class="example_div_th_style" escape="false" label="(기본 설정) 버튼 '확장/축소'를 클릭하면 이벤트 'oncellclick' 발생"></w2:textbox>
+					<xf:group class="example_div_td_style">
+						<xf:group class="mb_def_box nobottom">
+							<w2:gridView autoFit="lastColumn" autoFitMinWidth="250" class="gvw" dataList="dlt_exam1" defaultCellHeight="26"
+								ev:oncellclick="scwin.grd_exam1_oncellclick" id="grd_exam1" readOnly="true" style="height: 150px;" tooltipDisplay="true"
+								visibleRowNum="all" ignoreCellClick="false">
+								<w2:caption id="caption1" value="this is a grid caption."></w2:caption>
+								<w2:header id="header1">
+									<w2:row id="row1">
+										<w2:column blockSelect="false" displayMode="label" id="column7" inputType="text" value="drilldown" width="170">
+										</w2:column>
+										<w2:column blockSelect="false" displayMode="label" id="column9" inputType="text" value="fileName" width="100">
+										</w2:column>
+									</w2:row>
+								</w2:header>
+								<w2:gBody id="gBody1">
+									<w2:row id="row2">
+										<w2:column blockSelect="false" depthColumn="depth" displayMode="label" id="label" inputType="drilldown" showDepth="2"
+											textAlign="left" width="170" value="">
+										</w2:column>
+										<w2:column blockSelect="false" displayMode="label" id="fileName" inputType="text" textAlign="left" width="100">
+										</w2:column>
+									</w2:row>
+								</w2:gBody>
+							</w2:gridView>
+						</xf:group>
+					</xf:group>
+				</xf:group>
+				<xf:group class="example_div_tr_style">
+					<w2:textbox class="example_div_th_style" escape="false" label="버튼 '확장/축소'를 클릭하면 이벤트 'oncellclick' 미발생"></w2:textbox>
+					<xf:group class="example_div_td_style">
+						<xf:group class="mb_def_box nobottom">
+							<w2:gridView autoFit="lastColumn" autoFitMinWidth="250" class="gvw" dataList="dlt_exam1" defaultCellHeight="26"
+								ev:oncellclick="scwin.grd_exam2_oncellclick" id="grd_exam2" ignoreCellClick="true" readOnly="true" style="height: 150px;"
+								tooltipDisplay="true" visibleRowNum="all">
+								<w2:caption id="caption1" value="this is a grid caption."></w2:caption>
+								<w2:header id="header1">
+									<w2:row id="row1">
+										<w2:column blockSelect="false" displayMode="label" id="column7" inputType="text" value="drilldown" width="170">
+										</w2:column>
+										<w2:column blockSelect="false" displayMode="label" id="column9" inputType="text" value="fileName" width="100">
+										</w2:column>
+									</w2:row>
+								</w2:header>
+								<w2:gBody id="gBody1">
+									<w2:row id="row2">
+										<w2:column blockSelect="false" depthColumn="depth" displayMode="label" id="label" inputType="drilldown" showDepth="2"
+											textAlign="left" width="170" value="">
+										</w2:column>
+										<w2:column blockSelect="false" displayMode="label" id="fileName" inputType="text" textAlign="left" width="100">
+										</w2:column>
+									</w2:row>
+								</w2:gBody>
+							</w2:gridView>
+						</xf:group>
+					</xf:group>
+				</xf:group>
+			</xf:group>
+		</xf:group>
+	</body>
+</html>

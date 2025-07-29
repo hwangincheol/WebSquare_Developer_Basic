@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:w2="http://www.inswave.com/websquare"
+	xmlns:xf="http://www.w3.org/2002/xforms">
+	<head meta_screenName="[TabControl] 초기 탭 선택하기" meta_type="메인">
+		<w2:historyInfo>
+			<w2:history meta_no="01" meta_desc="최초작성" meta_date=" 20230808" meta_user="InswaveSystems"></w2:history>
+		</w2:historyInfo>
+		<w2:type>COMPONENT</w2:type>
+		<w2:buildDate />
+		<w2:MSA />
+		<xf:model>
+			<w2:dataCollection baseNode="map">
+			</w2:dataCollection>
+			<w2:workflowCollection />
+		</xf:model>
+		<w2:layoutInfo />
+		<w2:publicInfo method="" />
+		<script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function () {
+
+};
+]]></script>
+	</head>
+	<body ev:onpageload="scwin.onpageload">
+		<xf:group class="sub_contents" id="" style="" nextTabID="">
+			<xf:group class="ws_example_grp_desc" id="" style="">
+				<w2:textbox escape="false" id=""
+					label='TabControl가 로드 될 때 시작하는 탭의 Index를 설정하는 예제입니다.&lt;br/&gt;속성 selectedTabIndex에 값을 입력해서 설정합니다.&lt;br/&gt;탭의 Index는 첫 번째가 0부터 시작해서 0, 1, 2 순서대로 배정됩니다.'
+					style="">
+				</w2:textbox>
+			</xf:group>
+			<xf:group class="example_div_tb_style_wrap mb_def" id="">
+
+				<xf:group class="example_div_tr_style" id="" style="">
+
+					<xf:group class="example_div_th_style" id="" style="">
+						<w2:span class="mr_def txt_blue" id="" label="selectedIndex : 1" style=""></w2:span>
+					</xf:group>
+					<xf:group class="example_div_td_style" id="" style="">
+						<w2:textbox class="ws5_example_txt_normal" escape="false" id="" label='selectedIndex를 1로 설정해 두 번째 탭이 선택된 상태입니다.'
+							style="">
+						</w2:textbox>
+						<xf:group id="" style="margin-bottom: 5px;">
+							<w2:tabControl id="tabc_main" alwaysDraw="false" style="width: 100%;height: 80px;" selectedIndex="1">
+								<w2:tabs disabled="false" style="width:70px;height:30px;" id="tabs1" label="탭 A"></w2:tabs>
+								<w2:tabs disabled="false" style="width:70px;height:30px" id="tabs2" label="탭 B"></w2:tabs>
+								<w2:content alwaysDraw="false" style="height:50px;" id="content1">
+									<w2:textbox class="ws5_example_txt_normal" escape="false" id="" label="탭 A의 콘텐츠입니다." style="">
+									</w2:textbox>
+								</w2:content>
+								<w2:content alwaysDraw="false" style="height:50px;" id="content2">
+									<w2:textbox class="ws5_example_txt_normal" escape="false" id="" label="탭 B의 콘텐츠입니다." style="">
+									</w2:textbox>
+								</w2:content>
+							</w2:tabControl>
+						</xf:group>
+					</xf:group>
+
+				</xf:group>
+				<xf:group class="example_div_tr_style" id="" style="">
+					<xf:group class="example_div_th_style" id="" style="">
+						<w2:span class="mr_def txt_blue" id="" label="selectedIndex : 0" style=""></w2:span>
+					</xf:group>
+					<xf:group class="example_div_td_style" id="" style="">
+					<w2:textbox class="ws5_example_txt_normal" escape="false" id="" label="selectedIndex를 0으로 설정해 첫 번째 탭이 선택된 상태입니다." style=""></w2:textbox><xf:group id="" style="">
+			<w2:tabControl alwaysDraw="false" id="tac_tabControl1" selectedIndex="0" style="width: 100%;height: 80px;">
+				<w2:tabs disabled="false" id="tabs1" label="탭 A" style="width:70px;height:30px;"></w2:tabs>
+				<w2:tabs disabled="false" id="tabs2" label="탭 B" style="width:70px;height:30px"></w2:tabs>
+				<w2:content alwaysDraw="false" id="content1" style="height:50px;">
+					<w2:textbox class="ws5_example_txt_normal" escape="false" id="" label="탭 A의 콘텐츠입니다." style=""></w2:textbox>
+				</w2:content>
+				<w2:content alwaysDraw="false" id="content2" style="height:50px;">
+					<w2:textbox class="ws5_example_txt_normal" escape="false" id="" label="탭 B의 콘텐츠입니다." style=""></w2:textbox>
+				</w2:content>
+			</w2:tabControl>
+		</xf:group></xf:group>
+				</xf:group>
+			</xf:group>
+		</xf:group>
+		
+		
+	</body>
+</html>

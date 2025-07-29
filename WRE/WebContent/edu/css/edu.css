@@ -1,0 +1,11 @@
+
+/* training0_desc.xml 교육 설명 페이지에서 동영상 링크 이미지 관련 css */
+.edu_video {
+	display:inline-block;
+	width:30px;
+	height:30px;
+	margin-left:5px;
+	background:url(/edu/img/ico_edu_video.svg) no-repeat;background-size:100% auto;
+	font-size:0px;
+	text-indent:-9999px;
+}

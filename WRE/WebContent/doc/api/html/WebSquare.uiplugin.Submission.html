@@ -1,0 +1,328 @@
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="../cm/css/api.css">
+    </head>
+    <body>
+        <div class="api_wrap">
+            <div class="api_wrap_inner">
+                <div class="api_container">
+                    <div class="api_content">
+                        <header class="api_header">
+                            <p class="api_component">WebSquare.uiplugin.Submission</p>
+                            <p class="api_version">5.0_5.5005A.20230904.185702</p>
+                            <p>Submission을 정의합니다.</p>
+                        </header>
+                        <section class="properties_section">
+                            <h2>Property Detail</h2>
+                            <dl class="api_dl">
+                            <dt id="abortTrigger">abortTrigger</dt>
+                            <dd><p>프로세스가 진행중일때 'Processing Bar'의  '취소' Button의 노출 여부</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="accept">accept</dt>
+                            <dd><p>미디어 타입 및 우선순위 설정 (ex) 텍스트(text/html,text/plain,…),이미지(image/jpeg,…) 등</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="action">action</dt>
+                            <dd><p>통신 할 대상(Server 또는 data)의 URL</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="customHandler">customHandler</dt>
+                            <dd><p>사용자 정의 Handler</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="description">description</dt>
+                            <dd><p>웹단말 submision통신시 Submission description 정의</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="encoding">encoding</dt>
+                            <dd><p>서버측 encoding 타입</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="errorHandler">errorHandler</dt>
+                            <dd><p>Error 가 발생하였을때 실행되는 Handler</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="id">id</dt>
+                            <dd><p>Submission ID. <br />Submission ID는 전역 객체로 할당됨. 각 컴포넌트 ID를 통해 Script에서 해당 컴포넌트에 접근 가능.</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="instance">instance</dt>
+                            <dd><p>Instance ID</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="mediatype">mediatype</dt>
+                            <dd><p>Server로 보내는 Data의 MIME 타입</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="method">method</dt>
+                            <dd><p>HTTP통신 요청 방식</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="mode">mode</dt>
+                            <dd><p>서버와의 통신 방식(Asynchronous: 비동기식, Synchronous: 동기식)</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="processMsg">processMsg</dt>
+                            <dd><p>프로세스가 진행중일때 나타나는 메시지</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="ref">ref</dt>
+                            <dd><p>서버로 보낼 데이터 Instnace XPath 또는 데이터 콜렉션</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="replace">replace</dt>
+                            <dd><p>submission action으로부터 리턴된 response document를 적용할 정보</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="target">target</dt>
+                            <dd><p>서버로 응답 받은 데이터를 위치할 Instnace XPath 또는 데이터 콜렉션</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="useModal">useModal</dt>
+                            <dd><p>[default:false, true]submission의 'Process Message' 노출시 'modal' 사용 여부</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="userData1">userData1</dt>
+                            <dd><p>웹단말 submision통신시 사용자 정의 변수</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="userData2">userData2</dt>
+                            <dd><p>웹단말 submision통신시 사용자 정의 변수</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="webtopRef">webtopRef</dt>
+                            <dd><p>웹단말 submision통신시 IO맵핑룰을 정의하는 속성</p></dd>
+                        </dl>
+                        
+                        </section>
+                        <section class="event_section">
+                            <h2>Event Detail</h2>
+                            <dl class="api_dl">
+                            <dt id="submit">submit(e)</dt>
+                            <dd>
+                                <p>Submission 요청 전 선처리. return false시 submission 수행 안함.</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                          <li class="api_name">
+                                              <div class="tit">Name</div>
+                                              <div class="cnt">e</div>
+                                          </li>
+                                          <li class="api_type">
+                                              <div class="tit">Type</div>
+                                              <div class="cnt">Object</div>
+                                          </li>
+                                          <li class="api_desc in_tb">
+                                              <div class="tit">Description</div>
+                                              <div class="cnt">
+                                                  <p>Submission 객체</p>
+                              <table class="api_tb">
+                                <thead>
+                                    <tr>
+                                        <th>property</th>
+                                        <th>type</th>
+                                        <th class="th_desc">description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                  <td><p>e.id</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>Submission 객체의 ID 반환</p>
+                                  </td>
+                              </tr>
+                                </tbody>
+                            </table>
+                                              </div>
+                                          </li>
+                                      </ul>
+                                
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="submitdone">submitdone(e)</dt>
+                            <dd>
+                                <p>Response Status 코드 값이 정상 일 경우 동작.</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                          <li class="api_name">
+                                              <div class="tit">Name</div>
+                                              <div class="cnt">e</div>
+                                          </li>
+                                          <li class="api_type">
+                                              <div class="tit">Type</div>
+                                              <div class="cnt">Object</div>
+                                          </li>
+                                          <li class="api_desc in_tb">
+                                              <div class="tit">Description</div>
+                                              <div class="cnt">
+                                                  <p>Submission 객체</p>
+                              <table class="api_tb">
+                                <thead>
+                                    <tr>
+                                        <th>property</th>
+                                        <th>type</th>
+                                        <th class="th_desc">description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                  <td><p>e.id</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>Submission 객체의 ID 반환</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>e.resourceUri</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>통신 URI 반환</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>e.responseHeaders</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>Response Headers 내용 반환</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>e.responseStatusCode</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>Response Status Code 반환</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>e.responseReasonPhrase</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>Response Status Text 반환</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>e.responseBody</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>Response Data를 XML 데이터로 parse 한 XML 객체 반환(Response Content-Type이 JSON 인 경우 json객체를 XML로 parse)</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>e.responseText</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>Response Data 원본으로 String 형태 반환</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>e.responseJSON</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>Response Data 원본으로 JSON 형태 반환</p>
+                                  </td>
+                              </tr>
+                                </tbody>
+                            </table>
+                                              </div>
+                                          </li>
+                                      </ul>
+                                
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="submiterror">submiterror(e)</dt>
+                            <dd>
+                                <p>Response Status 코드가 오류 (200 미만 300 이상) 일 경우 동작.</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                          <li class="api_name">
+                                              <div class="tit">Name</div>
+                                              <div class="cnt">e</div>
+                                          </li>
+                                          <li class="api_type">
+                                              <div class="tit">Type</div>
+                                              <div class="cnt">Object</div>
+                                          </li>
+                                          <li class="api_desc in_tb">
+                                              <div class="tit">Description</div>
+                                              <div class="cnt">
+                                                  <p>Submission 객체</p>
+                              <table class="api_tb">
+                                <thead>
+                                    <tr>
+                                        <th>property</th>
+                                        <th>type</th>
+                                        <th class="th_desc">description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                  <td><p>e.id</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>Submission 객체의 ID 반환</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>e.errorType</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>target-error 로 고정값 반환</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>e.resourceUri</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>통신 URI 반환</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>e.responseHeaders</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>Response Headers 내용 반환</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>e.responseStatusCode</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>Response Status Code 반환</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>e.responseReasonPhrase</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>Response Status Text 반환</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>e.responseBody</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>Response Data를 XML 데이터로 parse 한 XML 객체 반환(Response Content-Type이 JSON 인 경우 json객체를 XML로 parse)</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>e.responseText</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>Response Data 원본으로 String 형태 반환</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>e.responseJSON</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>Response Data 원본으로 JSON 형태 반환</p>
+                                  </td>
+                              </tr>
+                                </tbody>
+                            </table>
+                                              </div>
+                                          </li>
+                                      </ul>
+                                
+                            </dd>
+                        </dl>
+                        
+                        </section>
+                        <section class="method_section">
+                            <h2>Method Detail</h2>
+                            
+                        </section>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </body>
+    </html>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:w2="http://www.inswave.com/websquare"
+	xmlns:xf="http://www.w3.org/2002/xforms">
+	<head meta_screenName="[GridView] 컬럼(열)의 순서를 설정하고 순서 반환받기 - 스크립트">
+		<w2:historyInfo>
+			<w2:history meta_no="01" meta_desc="최초작성" meta_date="20230822" meta_user="InswaveSystems"></w2:history>
+		</w2:historyInfo>
+		<w2:type>COMPONENT</w2:type>
+		<w2:buildDate />
+		<w2:MSA />
+		<xf:model>
+			<w2:dataCollection baseNode="map">
+				<w2:dataList id="dlt_member" saveRemovedData="true">
+					<w2:columnInfo>
+						<w2:column id="EMP_CD" name="사번" dataType="number"></w2:column>
+						<w2:column id="EMP_NM" name="성명" dataType="text"></w2:column>
+						<w2:column id="POSITION_CD" name="직위" dataType="text"></w2:column>
+						<w2:column id="ROLE_CD" name="역할" dataType="text"></w2:column>
+					</w2:columnInfo>
+					<w2:data use="true">
+						<w2:row>
+							<EMP_CD><![CDATA[10001334]]></EMP_CD>
+							<EMP_NM><![CDATA[전성은]]></EMP_NM>
+							<POSITION_CD><![CDATA[차장]]></POSITION_CD>
+							<ROLE_CD><![CDATA[퍼블리싱]]></ROLE_CD>
+						</w2:row>
+						<w2:row>
+							<EMP_CD><![CDATA[10001337]]></EMP_CD>
+							<EMP_NM><![CDATA[구정연]]></EMP_NM>
+							<POSITION_CD><![CDATA[사원]]></POSITION_CD>
+							<ROLE_CD><![CDATA[개발]]></ROLE_CD>
+						</w2:row>
+						<w2:row>
+							<EMP_CD><![CDATA[10001335]]></EMP_CD>
+							<EMP_NM><![CDATA[홍세희]]></EMP_NM>
+							<POSITION_CD><![CDATA[부장]]></POSITION_CD>
+							<ROLE_CD><![CDATA[디자인]]></ROLE_CD>
+						</w2:row>
+					</w2:data>
+				</w2:dataList>
+			</w2:dataCollection>
+			<w2:workflowCollection />
+		</xf:model>
+		<w2:layoutInfo />
+		<w2:publicInfo method="" />
+		<script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function () {
+
+};
+
+/**
+ * 로그 출력용 Textrea의 Value 삭제하기
+ */
+scwin.btn_clearLog_onclick = function (e) {
+    let strTargetId = this.getUserData("userData1");
+    let cmpTarget;
+    if (strTargetId) {
+        cmpTarget = $p.getComponentById(strTargetId) || txa_log;
+    } else {
+        cmpTarget = txa_log;
+    }
+    //textarea value를 빈문자열로 할당.
+    cmpTarget.setValue("");
+};
+
+/**
+ * 버튼 [컬럼의 순서를 '성명', '사번', '역할', '직위'로 변경하기] 클릭 시
+ */
+scwin.btn_exam1_1_onclick = function (e) {
+    // GridView 'grd_exam1'의 컬럼 순서를 '성명', '사번', '역할', '직위' 순으로 변경합니다.
+    grd_exam1.setColumnOrder(["EMP_NM", "EMP_CD", "ROLE_CD", "POSITION_CD"]);
+
+    // GridView의 컬럼 순서를 Index로 지정하는 경우
+    // grd_exam1.setColumnOrder([1,0,3,2]);
+
+    // 로그 출력
+    let strLog = '# 스크립트 실행\ngrd_exam1.setColumnOrder(["EMP_NM", "EMP_CD", "ROLE_CD", "POSITION_CD"]);';
+    $c.frame.printExampleLog(strLog, txa_log_1, false);
+    console.log(strLog);
+};
+
+/**
+ * 버튼 [컬럼의 순서를 ID로 반환받기] 클릭 시
+ */
+scwin.btn_exam2_1_onclick = function (e) {
+    // GridView 'grd_exam1'의 컬럼 순서를 ID로 반환받습니다.
+    let result = grd_exam1.getColumnOrder(true);
+
+    // 반환 값 예시) ["EMP_NM","EMP_CD","ROLE_CD","POSITION_CD"]
+
+    // 로그 출력
+    let strLog = '# 스크립트 실행\ngrd_exam1.getColumnOrder(true);\n반환 값:\n';
+    $c.frame.printExampleLog(strLog + JSON.stringify(result), txa_log_1, false);
+    console.log(strLog, result);
+};
+
+/**
+ * 버튼 [컬럼의 순서를 Index로 반환받기] 클릭 시
+ */
+scwin.btn_exam2_2_onclick = function (e) {
+    // GridView 'grd_exam1'의 컬럼 순서를 Index로 반환받습니다.
+    let result = grd_exam1.getColumnOrder();
+
+    // 반환 값 예시) [1,0,3,2]
+
+    // 로그 출력
+    let strLog = '# 스크립트 실행\ngrd_exam1.getColumnOrder();\n반환 값:\n';
+    $c.frame.printExampleLog(strLog + JSON.stringify(result), txa_log_1, false);
+    console.log(strLog, result);
+};
+]]></script>
+	</head>
+	<body ev:onpageload="scwin.onpageload">
+		<xf:group class="sub_contents" id="" style="">
+			<xf:group class="ws_example_grp_desc" id="" style="">
+				<w2:textbox escape="false" id=""
+					label="함수 'setColumnOrder'와 함수 'getColumnOrder'의 사용 예제입니다.&lt;br/&gt;각 함수의 기능은 다음과 같습니다.&lt;br/&gt;- setColumnOrder : 컬럼의 순서를 Index 또는 ID로 설정합니다.&lt;br/&gt;- getColumnOrder : 컬럼의 순서를 Index 또는 ID로 반환합니다."
+					style="">
+				</w2:textbox>
+				<w2:textbox escape="false" id=""
+					label="이 기능은 GridView의 개인화 기능을 구현할 때 주로 사용됩니다. 여기서 '개인화'는 컬럼의 순서, 컬럼 숨김, 정렬 등을 사용자별로 제공하는 기능을 의미합니다."
+					style="">
+				</w2:textbox>
+				<w2:textbox class="ws_example_txt_desc_info" escape="false" label="버튼을 클릭하면 '로그 확인' 영역과 브라우저 개발자도구의 콘솔에 로그가 출력됩니다."
+					style="">
+				</w2:textbox>
+			</xf:group>
+			<xf:group class="example_div_tb_style_wrap" id="">
+				<xf:group class="example_div_tr_style" id="" style="">
+					<xf:group class="example_div_td_style" id="" style="">
+						<xf:group class="mb_def_box nobottom" id="" style="">
+							<xf:trigger class="btn_exam_exec btn_txt_of" escape="false" ev:onclick="scwin.btn_exam1_1_onclick"
+								id="btn_exam1_1" style="" type="button">
+								<xf:label><![CDATA[컬럼의 순서를 '성명', '사번', '역할', '직위'로 변경하기]]></xf:label>
+							</xf:trigger>
+						</xf:group>
+						<xf:group class="mb_def_box nobottom" id="" style="">
+							<xf:trigger class="btn_exam_exec btn_txt_of" escape="false" id="btn_exam2_1" style="" type="button"
+								ev:onclick="scwin.btn_exam2_1_onclick">
+								<xf:label><![CDATA[컬럼의 순서를 ID로 반환받기]]></xf:label>
+							</xf:trigger>
+							<xf:trigger class="btn_exam_exec btn_txt_of" escape="false" id="btn_exam2_2" style="" type="button" ev:onclick="scwin.btn_exam2_2_onclick">
+								<xf:label><![CDATA[컬럼의 순서를 Index로 반환받기]]></xf:label>
+							</xf:trigger>
+						</xf:group>
+						<w2:gridView class="gvw" dataList="data:dlt_member" id="grd_exam1" style="height: 100px;" defaultCellHeight="26"
+							visibleRowNum="all" autoFit="allColumn">
+							<w2:caption style="" id="caption2" value="this is a grid caption."></w2:caption>
+							<w2:header style="" id="header2">
+								<w2:row style="" id="row3">
+									<w2:column width="70" inputType="text" id="column16" value="사번" displayMode="label"></w2:column>
+									<w2:column width="70" inputType="text" id="column15" value="성명" displayMode="label"></w2:column>
+									<w2:column width="70" inputType="text" id="column12" value="직위" displayMode="label"></w2:column>
+									<w2:column width="70" inputType="text" style="" id="column18" value="역할" displayMode="label"></w2:column>
+								</w2:row>
+							</w2:header>
+							<w2:gBody style="" id="gBody2">
+								<w2:row style="" id="row4">
+									<w2:column width="70" inputType="text" id="EMP_CD" displayMode="label" hidden="false"></w2:column>
+									<w2:column width="70" inputType="text" id="EMP_NM" displayMode="label"></w2:column>
+									<w2:column width="70" inputType="text" id="POSITION_CD" displayMode="label"></w2:column>
+									<w2:column width="70" inputType="text" style="" id="ROLE_CD" value="" displayMode="label"></w2:column>
+								</w2:row>
+							</w2:gBody>
+						</w2:gridView>
+						<xf:group class="mb_def_box nobottom" style="">
+							<w2:span class="mr_def txt_bold" label="로그 확인"></w2:span>
+							<xf:trigger class="com_example_btn_log_clear" ev:onclick="scwin.btn_clearLog_onclick" title="로그 삭제"
+								type="button" userData1="txa_log_1">
+								<xf:label><![CDATA[로그 삭제]]></xf:label>
+							</xf:trigger>
+						</xf:group>
+						<xf:textarea class="com_example_txa_log" id="txa_log_1" spellcheck="false" style="width: 100%;height: 110px;"></xf:textarea>
+					</xf:group>
+				</xf:group>
+			</xf:group>
+		</xf:group>
+	</body>
+</html>

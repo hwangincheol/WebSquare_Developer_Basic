@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:w2="http://www.inswave.com/websquare"
+	xmlns:xf="http://www.w3.org/2002/xforms">
+	<head meta_screenName="[GridView] 바디 컬럼, 바디 셀, 헤더 셀의 클래스를 스크립트로 적용하기" meta_type="메인">
+		<w2:historyInfo>
+			<w2:history meta_no="01" meta_desc="최초작성" meta_date=" 20230719" meta_user="InswaveSystems"></w2:history>
+		</w2:historyInfo>
+		<w2:type>COMPONENT</w2:type>
+		<w2:buildDate />
+		<w2:MSA />
+		<xf:model>
+			<w2:dataCollection baseNode="map">
+				<w2:dataList baseNode="list" id="dlt_books_1" repeatNode="map" style="" valueAttribute="">
+					<w2:columnInfo>
+						<w2:column dataType="text" id="categoryLabel" name="분류"></w2:column>
+						<w2:column dataType="text" id="label" name="도서명"></w2:column>
+					</w2:columnInfo>
+				</w2:dataList>
+			</w2:dataCollection>
+			<w2:workflowCollection />
+		</xf:model>
+		<w2:layoutInfo />
+		<w2:publicInfo method="" />
+		<script lazy="false" type="text/javascript"><![CDATA[scwin.onpageload = function () {
+    // DataList 'dlt_books_1'에 데이터 할당하기
+    let data = [
+        { "label": "공정하다는 착각", "categoryLabel": "인문" },
+        { "label": "기분을 관리하면 인생이 관리된다", "categoryLabel": "시/에세이" },
+        { "label": "내가 틀릴 수도 있습니다", "categoryLabel": "인문" },
+        { "label": "우리는 여전히 삶을 사랑하는가", "categoryLabel": "인문" },
+        { "label": "저만치 혼자서", "categoryLabel": "소설" },
+        { "label": "무엇이 옳은가", "categoryLabel": "인문" },
+        { "label": "불편한 편의점", "categoryLabel": "소설" },
+        { "label": "잘했고 잘하고 있고 잘 될 것이다", "categoryLabel": "시/에세이" },
+        { "label": "책들의 부엌", "categoryLabel": "소설" }
+    ];
+    dlt_books_1.setJSON(data);
+};
+
+/**
+ * 버튼 [바디 컬럼 '도서명'에 class 'P00298_body_column' 적용하기] 클릭 시
+ */
+scwin.btn_exam1_1_onclick = function (e) {
+    // GridView 'grd_exam'의 바디 컬럼 ID가 'label'인 컬럼에 class 'P00298_body_column'을 적용합니다.
+    grd_exam.setColumnClass("label", "P00298_body_column");
+};
+
+/**
+ * 버튼 [바디 컬럼 '분류'의 두 번째 로우의 셀에 class 'P00298_body_cell' 적용하기] 클릭 시
+ */
+scwin.btn_exam2_1_onclick = function (e) {
+    // GridView 'grd_exam'의 바디 컬럼 ID가 'categoryLabel'인 컬럼의 두 번째 셀에 class 'P00298_body_cell'을 적용합니다.
+    grd_exam.setCellClass(1, "categoryLabel", "P00298_body_cell");
+};
+
+/**
+ * 버튼 [헤더 컬럼 '도서명'에 class 'P00298_header_cell' 적용하기] 클릭 시
+ */
+scwin.btn_exam3_1_onclick = function (e) {
+    // GridView 'grd_exam'의 헤더 컬럼 ID가 'h_label'인 셀에 class 'P00298_header_cell'을 적용합니다.
+    grd_exam.setHeaderClass("h_label", "P00298_header_cell");
+};
+]]></script>
+	</head>
+	<body ev:onpageload="scwin.onpageload">
+		<xf:group class="sub_contents" id="" style="">
+			<xf:group class="ws_example_grp_desc" id="" style="">
+				<w2:textbox escape="false" id=""
+					label="GridView의 바디 컬럼 또는 바디 셀 또는 헤더 셀의 클래스를 스크립트로 적용하는 예제입니다.&lt;br/&gt;다음의 GridView 함수로 구현할 수 있습니다.&lt;br/&gt;- setColumnClass: 바디 컬럼의 클래스를 적용합니다.&lt;br/&gt;- setCellClass: 바디 셀의 클래스를 적용합니다.&lt;br/&gt;- setHeaderClass: 헤더 셀의 클래스를 적용합니다."
+					style="">
+				</w2:textbox>
+				<w2:textbox class="ws_example_txt_desc_info" escape="false" id=""
+					label="적용된 Class를 제거하는 주요 함수는 다음과 같습니다.&lt;br/&gt;- removeColumnClass: 바디 컬럼의 클래스를 제거합니다.&lt;br/&gt;- removeCellClass: 바디 셀의 클래스를 제거합니다.&lt;br/&gt;- removeHeaderClass: 헤더 셀의 클래스를 제거합니다."
+					style="">
+				</w2:textbox>
+			</xf:group>
+			<xf:group class="example_div_tb_style_wrap mb_def" id="" style="">
+				<xf:group class="example_div_tr_style" id="" style="">
+					<xf:group class="example_div_td_style" id="" style="">
+						<xf:group class="mb_def_box nobottom" id="" style="">
+							<xf:trigger id="btn_exam1_1" style="" type="button" class="btn_exam_exec btn_txt_of"
+								ev:onclick="scwin.btn_exam1_1_onclick">
+								<xf:label><![CDATA[바디 컬럼 '도서명'에 class 'P00298_body_column' 적용하기]]></xf:label>
+							</xf:trigger>
+							<xf:trigger class="btn_exam_exec btn_txt_of" id="btn_exam2_1" style="" type="button"
+								ev:onclick="scwin.btn_exam2_1_onclick">
+								<xf:label><![CDATA[바디 컬럼 '분류'의 두 번째 로우의 셀에 class 'P00298_body_cell' 적용하기]]></xf:label>
+							</xf:trigger>
+							<xf:trigger class="btn_exam_exec btn_txt_of" ev:onclick="scwin.btn_exam3_1_onclick" id="btn_exam3_1" style=""
+								type="button">
+								<xf:label><![CDATA[헤더 컬럼 '도서명'에 class 'P00298_header_cell' 적용하기]]></xf:label>
+							</xf:trigger>
+						</xf:group>
+						<xf:group id="" class="mb_def_box nobottom" style="">
+							<w2:gridView autoFit="lastColumn" autoFitMinWidth="170" class="gvw" dataList="data:dlt_books_1" defaultCellHeight="26"
+								id="grd_exam" initFixedHeightByRowNum="4" readOnly="true" rowNumWidth="26" style="height:60px;" tooltipDisplay="true"
+								visibleRowNum="4" rowNumVisible="true" fastScroll="true">
+								<w2:caption id="caption1" style="" value="this is a grid caption."></w2:caption>
+								<w2:header id="header1" style="">
+									<w2:row id="row1" style="">
+										<w2:column displayMode="label" id="h_categoryLabel" inputType="text" value="분류" width="70"></w2:column>
+										<w2:column displayMode="label" id="h_label" inputType="text" value="도서명" width="100"></w2:column>
+									</w2:row>
+								</w2:header>
+								<w2:gBody id="gBody1" style="">
+									<w2:row id="row2" style="">
+										<w2:column displayMode="label" id="categoryLabel" inputType="text" width="70"></w2:column>
+										<w2:column displayMode="label" id="label" inputType="text" textAlign="left" width="100"></w2:column>
+									</w2:row>
+								</w2:gBody>
+							</w2:gridView>
+						</xf:group>
+					</xf:group>
+				</xf:group>
+			</xf:group>
+		</xf:group>
+	</body>
+</html>

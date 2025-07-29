@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>COMPONENT</w2:type>
+    	<w2:buildDate />
+    	<w2:MSA />
+    	<xf:model>
+    		<w2:dataCollection baseNode="map" />
+    		<w2:workflowCollection />
+    	</xf:model>
+    	<w2:layoutInfo />
+    	<w2:publicInfo method="" />
+    	<script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function() {
+	
+};
+]]></script>
+    	<style type="text/css"><![CDATA[ 
+    		.btn {border-radius: 3px; display:inline-block;text-align: center; vertical-align: middle; }
+			.btn.focus, .btn:focus, .btn:hover {text-decoration: none;}
+			.btn.active, .btn:active {box-shadow: inset 0 3px 5px rgba(0,0,0,.125);}
+			.btn.large   {line-height:32px;padding:6px 20px;font-size: 14px;}
+			.btn.default {line-height:16px;padding:6px 20px;font-size: 12px;}
+			.btn.micro   {line-height:14px;padding:5px 20px;font-size: 12px;}
+			.btn.point { border: 1px solid #36aeea; color:#36aeea; background:#fff; font-weight: bold;}
+			.btn.point:hover {background:#36aeea; color:#FFF;}
+			.btn.point.w2anchor_disabled {border: 1px solid #d2d4d9; background:#d2d4d9; color:#edeef3;}
+			.btn.basic { border: 1px solid #757984; color:#757984; background:#fff;font-weight: bold;}
+			.btn.basic:hover {background:#757984; color:#FFF;}
+			.btn.basic.w2anchor_disabled {border: 1px solid #d2d4d9; background:#d2d4d9; color:#edeef3;}
+    	]]></style>
+    </head>
+    <body ev:onpageload="scwin.onpageload">
+    	<xf:group class="sub_contents" id="" style="">
+    		<xf:group class="pgtbox" id="" style="">
+    			<w2:textbox class="pgt_tit" id="" label="Publishing Template - Anchor" style="" tagname="" escape="false"></w2:textbox>
+    		</xf:group>
+    		<xf:group class="titbox" id="" style="">
+    			<w2:textbox class="" id=""
+    				label="HTML의 a Tag와 같은 기능을 제공하는 컴포넌트로 hyperlink를 정의할 수 있으며 CSS를 적용하여 버튼으로 사용합니다.&lt;br/&gt;outerDiv 속성이 공백이거나 true일경우 최상위는 div Tag로 이루어 지며, outerDiv가 false일 경우 &amp;nbsp;최상위는 a Tag 단독으로 이루어지며&lt;br/&gt;또한 웹스퀘어에서 사용할 수 있는 버튼 컴포넌트중의 하나이며 버튼을 그릴 때 기본적으로 권장하는 컴포넌트입니다."
+    				style="" escape="false">
+    			</w2:textbox>
+    		</xf:group>
+    		<xf:group class="titbox" id="" style="">
+    			<w2:textbox class="" id="" label="01. Sample" style="" tagname="h3"></w2:textbox>
+    			<xf:group class="rt" id="" style="">
+    				<w2:anchor class="btn_cm" href="/ws/download/Anchor.zip" id="" name="" outerDiv="false" style="">
+    					<xf:label><![CDATA[Download]]></xf:label>
+    				</w2:anchor>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group class="msgbox" id="" style="border:1px dashed #ccc">
+    			<xf:group style="" id="">
+    				<w2:anchor outerDiv="false" id="" style="margin-right:30px;" class="btn large point">
+    					<xf:label><![CDATA[BUTTON]]></xf:label>
+    				</w2:anchor>
+    				<w2:anchor class="btn large basic" id="" outerDiv="false" style="margin-right:30px;">
+    					<xf:label><![CDATA[BUTTON]]></xf:label>
+    				</w2:anchor>
+    				<w2:anchor class="btn large point" id="" outerDiv="false" style="" disabled="true">
+    					<xf:label><![CDATA[BUTTON]]></xf:label>
+    				</w2:anchor>
+    			</xf:group>
+    			<xf:group id="" style="margin-top:20px;">
+    				<w2:anchor class="btn default point" id="" outerDiv="false" style="margin-right:30px;">
+    					<xf:label><![CDATA[BUTTON]]></xf:label>
+    				</w2:anchor>
+    				<w2:anchor class="btn default basic" id="" outerDiv="false" style="margin-right:30px;">
+    					<xf:label><![CDATA[BUTTON]]></xf:label>
+    				</w2:anchor>
+    				<w2:anchor class="btn default point" id="" outerDiv="false" style="" disabled="true">
+    					<xf:label><![CDATA[BUTTON]]></xf:label>
+    				</w2:anchor>
+    			</xf:group>
+    			<xf:group id="" style="margin-top:20px;">
+    				<w2:anchor class="btn micro point" id="" outerDiv="false" style="margin-right:30px;">
+    					<xf:label><![CDATA[BUTTON]]></xf:label>
+    				</w2:anchor>
+    				<w2:anchor class="btn micro basic" id="" outerDiv="false" style="margin-right:30px;">
+    					<xf:label><![CDATA[BUTTON]]></xf:label>
+    				</w2:anchor>
+    				<w2:anchor class="btn micro point" id="" outerDiv="false" style="" disabled="true">
+    					<xf:label><![CDATA[BUTTON]]></xf:label>
+    				</w2:anchor>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group class="titbox" id="" style="">
+    			<w2:textbox class="" id="" label="02. Property" style="" tagname="h3"></w2:textbox>
+
+    		</xf:group>
+    		<xf:group class="tblbox" id="" style="">
+    			<xf:group tagname="table" id="" style="" class="w2tb tbl">
+    				<w2:attributes>
+    					<w2:summary></w2:summary>
+    				</w2:attributes>
+    				<xf:group tagname="colgroup">
+    					<xf:group style="width:20%;" tagname="col"></xf:group>
+    					<xf:group style="" tagname="col"></xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group style="" class="w2tb_th" tagname="th">Property</xf:group>
+    					<xf:group style="" class="w2tb_th" tagname="th">Description</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group style="" class="w2tb_th" tagname="th">class</xf:group>
+    					<xf:group style="" class="w2tb_td" tagname="td">
+    						HTML의 class속성과 동일한 기능을 제공하며 css파일 또는 style블럭에 정의 한 class를 1개 또는 공백(space)를 이용하여 다중 적용 가능
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group style="" class="w2tb_th" tagname="th">id</xf:group>
+    					<xf:group style="" class="w2tb_td" tagname="td">컴포넌트의 ID로 전역객체로 할당되며 script에서 본 id로 컴포넌트에 접근 가능</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group style="" class="w2tb_th" tagname="th">clickEventElement</xf:group>
+    					<xf:group style="" class="w2tb_td" tagname="td">
+    						default:anchor, outerDiv]outerDiv속성 값이 true인 경우, click 이벤트를 적용 할 영역 선택
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group style="" class="w2tb_th" tagname="th">disabled</xf:group>
+    					<xf:group style="" class="w2tb_td" tagname="td">
+    						[default:false, true] HTML의 disabled속성과 동일한 기능을 제공하며 컴포넌트를 비활성화 시킴
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group style="" class="w2tb_th" tagname="th">href</xf:group>
+    					<xf:group style="" class="w2tb_td" tagname="td">
+    						[default:&quot;javascript:void(null);&quot;] 이동 할 페이지의 URL 입력
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group class="w2tb_th" tagname="th">
+    						nextTabID&amp;nbsp;
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    						<w2:span class="txt_info" id="" label="SP2" style=""></w2:span>
+    					</xf:group>
+    					<xf:group class="w2tb_td" tagname="td">
+    						tab으로&amp;nbsp;이동시&amp;nbsp;이동할&amp;nbsp;컴포넌트&amp;nbsp;ID
+    						<w2:attributes></w2:attributes>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group style="" tagname="tr">
+    					<xf:group class="w2tb_th" style="" tagname="th">outerDiv</xf:group>
+    					<xf:group class="w2tb_td" style="" tagname="td">
+    						[default:true, false] 컴포넌트의 최상위를 div Tag로 감쌀지 여부.
+    						<br></br>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group style="" tagname="tr">
+    					<xf:group class="w2tb_th" style="" tagname="th">style</xf:group>
+    					<xf:group class="w2tb_td" style="" tagname="td">InputBox의 style 속성</xf:group>
+    				</xf:group>
+    				<xf:group style="" tagname="tr">
+    					<xf:group class="w2tb_th" style="" tagname="th">target</xf:group>
+    					<xf:group class="w2tb_td" style="" tagname="td">
+    						[_blank, _parent, _self, _top] a Tag의 target 속성과 동일한 기능을 제공하며 href의 속성에 정의 된 문서가 열릴 위치 정의
+    					</xf:group>
+    				</xf:group>
+    				<xf:group style="" tagname="tr">
+    					<xf:group class="w2tb_th" style="" tagname="th">title</xf:group>
+    					<xf:group class="w2tb_td" style="" tagname="td">
+    						HTML의 title속성과 동일한 기능으로 명시 된 값을 브라우저에서 마우스 over시 툴팁형태로 표현한다. 일반적으로 웹접근성 작업 시 설정
+    					</xf:group>
+    				</xf:group>
+    				<xf:group style="" tagname="tr">
+    					<xf:group class="w2tb_th" style="" tagname="th">toolTip</xf:group>
+    					<xf:group class="w2tb_td" style="" tagname="td">웹스퀘어에서 만든 toolTip으로 컴포넌트 추가정보 명시. 마우스 over시 표현됨.</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group class="w2tb_th" tagname="th">
+    						tooltipFormatter
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    						<w2:span class="txt_info" id="" label="SP2" style=""></w2:span>
+    					</xf:group>
+    					<xf:group class="w2tb_td" tagname="td">
+    						tooltipDisplay속성이&amp;nbsp;true일&amp;nbsp;때&amp;nbsp;데이터를&amp;nbsp;표현&amp;nbsp;할&amp;nbsp;tooltip의&amp;nbsp;내용을&amp;nbsp;변경&amp;nbsp;할&amp;nbsp;사용자&amp;nbsp;함수명.&amp;nbsp;&amp;nbsp;&amp;nbsp;사용자&amp;nbsp;함수에서는&amp;nbsp;componentId,&amp;nbsp;label을&amp;nbsp;인자로&amp;nbsp;받아&amp;nbsp;tooltip에&amp;nbsp;표현&amp;nbsp;할&amp;nbsp;string을&amp;nbsp;return한다.
+    						<w2:attributes></w2:attributes>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group class="w2tb_th" tagname="th">
+    						tabIndex
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    						<w2:span class="txt_info" id="" label="SP2" style=""></w2:span>
+    					</xf:group>
+    					<xf:group class="w2tb_td" tagname="td">
+    						Tab&amp;nbsp;Key를&amp;nbsp;이용&amp;nbsp;한&amp;nbsp;컴포넌트의&amp;nbsp;포커스&amp;nbsp;순서로&amp;nbsp;HTML의&amp;nbsp;tabindex속성과&amp;nbsp;동일한&amp;nbsp;기능을&amp;nbsp;제공한다.
+    						<w2:attributes></w2:attributes>
+    					</xf:group>
+    				</xf:group>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group class="titbox" id="" style="">
+    			<w2:textbox class="" id="" label="03. CSS Overriding" style="" tagname="h3"></w2:textbox>
+    		</xf:group>
+    		<xf:group id="" class="tblbox">
+    			<xf:group tagname="table" style="" id="" class="w2tb tbl">
+    				<w2:attributes>
+    					<w2:summary></w2:summary>
+    				</w2:attributes>
+    				<xf:group tagname="colgroup">
+    					<xf:group tagname="col" style="width:20%;"></xf:group>
+    					<xf:group tagname="col" style=""></xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">Class</xf:group>
+    					<xf:group tagname="th" style="" class="w2tb_th">Description</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">w2anchor</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						w2anchor은 웹스퀘어 엔진에서 정의된 클래스입니다, 브라우저가 파싱할때 자동으로 부여돼는 클래스로서 OutDiv=&quot;true&quot; 이거나 속성값을 지정하지 않았을때 부여됩니다.
+    						<br></br>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">w2anchor2</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">w2anchor2은 OutDiv 속성이 false 일때 엔진에서 자동으로 부여하는 클래스 입니다.</xf:group>
+    				</xf:group>
+    			</xf:group>
+    		</xf:group>
+    	</xf:group>
+    </body>
+</html>

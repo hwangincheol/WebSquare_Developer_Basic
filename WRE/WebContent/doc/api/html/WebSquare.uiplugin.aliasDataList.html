@@ -1,0 +1,154 @@
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="../cm/css/api.css">
+    </head>
+    <body>
+        <div class="api_wrap">
+            <div class="api_wrap_inner">
+                <div class="api_container">
+                    <div class="api_content">
+                        <header class="api_header">
+                            <p class="api_component">WebSquare.uiplugin.aliasDataList</p>
+                            <p class="api_version">5.0_5.5005A.20230904.185702</p>
+                            <p>Scope 환경에서 메인(혹은 부모) 화면에 있는 DataList를 참조할 수 있는 기능을 제공.</p>
+                        </header>
+                        <section class="properties_section">
+                            <h2>Property Detail</h2>
+                            <dl class="api_dl">
+                            <dt id="id">id</dt>
+                            <dd><p>aliasDataList의 ID. 전역객체로 할당됨.</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="scope">scope</dt>
+                            <dd><p>메인(혹은 부모) 페이지에 존재하는 참조 대상 DataList의 ID. (부모만 참조 가능하며 자식, 형제(sibling) 참조는 미지원.) <br />참조 대상 DataList의 ID를 상대 경로 혹은 절대 경로로 지정 가능. <br />참조 대상 DataList를 찾을 수 없거나, 타입이 DataList가 아닌 경우 빈 데이터를 사용.
+<xmp  class='js sample'>(사용 예)
+
+(1) 최상위페이지에 있는 dataList1_main1 참조 (상대 경로)
+  scope="../../dataList1_main1"
+
+(2) 최상위페이지에 있는 dataList1_main2 참조 (절대 경로)
+  scope="/dataList1_main2"/
+
+(3) 상위 페이지에 있는 dataList1_wframe1 참조 (상대 경로)
+  scope="../dataList1_wframe1"
+
+(4) wframe1에 있는 dataList1 참조.  (절대 경로)
+  scope="/wframe1/dataList1_wframe1"/</xmp></p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="studioSrc">studioSrc</dt>
+                            <dd><p>부모 페이지의 정보를 가져오기 위한 Studio 전용 속성.</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="userData1">userData1</dt>
+                            <dd><p>사용자 정의 데이터 속성. getUserData("userData1") API를 통해 설정한 값을 얻어올 수 있음. 
+<xmp  class='js sample'> // 속성 값 얻어오기 예시
+ getUserData("userData1");</xmp></p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="userData2">userData2</dt>
+                            <dd><p>사용자 정의 데이터 속성. getUserData("userData2") API를 통해 설정한 값을 얻어올 수 있음. 
+<xmp  class='js sample'> // 속성 값 얻어오기 예시
+ getUserData("userData2");</xmp></p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="userData3">userData3</dt>
+                            <dd><p>사용자 정의 데이터 속성. getUserData("userData3") API를 통해 설정한 값을 얻어올 수 있음. 
+<xmp  class='js sample'> // 속성 값 얻어오기 예시
+ getUserData("userData3");</xmp></p></dd>
+                        </dl>
+                        
+                        </section>
+                        <section class="event_section">
+                            <h2>Event Detail</h2>
+                            
+                        </section>
+                        <section class="method_section">
+                            <h2>Method Detail</h2>
+                            <dl class="api_dl">
+                            <dt id="getObj">getObj()</dt>
+                            <dd>
+                                <p>현재 aliasDataList가 참조하고 있는 dataList 객체를 반환.</p>
+                                
+                                
+              <div class="api_tit_para">Return</div>
+                  <div class="api_parameter">
+                      <ul class="api_ul_parameter">
+                          <li>
+                              <div class="tit">Type</div>
+                              <div class="cnt">Object</div>
+                          </li>
+                          <li class="api_desc">
+                              <div class="tit">Description</div>
+                              <div class="cnt">현재 Scope로 참조하고 있는 dataList 객체</div>
+                          </li>
+                    </ul>
+              </div>
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// Scope에 지정된 객체를 반환
+var parentDataList = aliasDataList1.getObj();</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="setScope">setScope(scope)</dt>
+                            <dd>
+                                <p>Scope를 동적으로 변경. 즉 현재 참조하는 dataList를 동적으로 바꾸는 함수. <br />실행 후, aliasDataList와 바인딩된 컴포넌트들은 자동으로 값이 초기화됨.</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">scope</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>참조할 dataList 경로</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// 참조할 dataList를 동적으로 변경.
+aliasDataList1.setScope("/dataList1");</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        
+                        </section>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </body>
+    </html>

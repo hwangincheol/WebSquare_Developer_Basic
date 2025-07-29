@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:w2="http://www.inswave.com/websquare"
+	xmlns:xf="http://www.w3.org/2002/xforms">
+	<head meta_screenName="[PageList] 브라우저에 랜더링할 때, 'table' 또는 'ul' 태그로 구성하기">
+		<w2:historyInfo>
+			<w2:history meta_no="01" meta_desc="최초작성" meta_date="20231115" meta_user="InswaveSystems"></w2:history>
+		</w2:historyInfo>
+		<w2:type>COMPONENT</w2:type>
+		<w2:buildDate />
+		<w2:MSA />
+		<xf:model>
+			<w2:dataCollection baseNode="map"></w2:dataCollection>
+			<w2:workflowCollection />
+		</xf:model>
+		<w2:layoutInfo />
+		<w2:publicInfo method="" />
+		<script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function () {
+    // PageList 'pgc_exam1', 'pgc_exam2'의 전체 페이지 수를 12로 설정합니다.
+    pgl_exam1.setCount(12);
+    pgl_exam2.setCount(12);
+};
+]]>
+		</script>
+	</head>
+	<body ev:onpageload="scwin.onpageload">
+		<xf:group class="sub_contents" id="" style="">
+			<xf:group class="ws_example_grp_desc" id="" style="">
+				<w2:textbox escape="false" id=""
+					label="속성 'renderType'의 설정 값에 따른 기능을 비교하는 예제입니다.&lt;br/&gt;이 속성은 브라우저에 랜더링하기 위해 컴포넌트를 구성할 때 사용할 HTML 요소를 선택할 수 있습니다." style="">
+				</w2:textbox>
+				<w2:textbox escape="false" id=""
+					label="설정 값에 따른 구성은 다음과 같습니다.&lt;br/&gt;- &quot;table&quot;: [default] 버튼과 페이지 숫자 영역을 'table'로 구성합니다.&lt;br/&gt;- &quot;list&quot;: 버튼과 페이지 숫자 영역을 'ul', 'li'로 구성합니다."
+					style="">
+				</w2:textbox>
+				<w2:textbox escape="false" id="" label="브라우저에 랜더링된 HTML 요소를 개발자도구(Elements)를 통해 확인합니다." style="" class="ws_example_txt_desc_info"></w2:textbox>
+			</xf:group>
+			<xf:group class="example_div_tb_style_wrap" id="">
+				<xf:group class="example_div_tr_style" id="" style="">
+					<w2:textbox class="example_div_th_style" escape="false" id="" label="(기본 설정) 'table'로 구성하기" style=""></w2:textbox>
+					<xf:group class="example_div_td_style" id="" style="">
+						<xf:group id="">
+							<w2:pageList pageSize="10" id="pgl_exam1" displayFormat="#" style="height: 30px;" renderType="table">
+							</w2:pageList>
+						</xf:group>
+					</xf:group>
+				</xf:group>
+				<xf:group class="example_div_tr_style" id="" style="">
+					<w2:textbox class="example_div_th_style" escape="false" id="" label="'ul', 'li'로 구성하기" style=""></w2:textbox>
+					<xf:group class="example_div_td_style" id="" style="">
+						<xf:group id="">
+							<w2:pageList displayFormat="#" id="pgl_exam2" pageSize="10" style="height: 30px;text-align: center;" renderType="list"></w2:pageList>
+						</xf:group>
+					</xf:group>
+				</xf:group>
+			</xf:group>
+		</xf:group>
+	</body>
+</html>

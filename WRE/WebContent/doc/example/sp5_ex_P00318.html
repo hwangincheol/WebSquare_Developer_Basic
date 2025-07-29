@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR.html11/DTD.html11.dtd">
+<html xmlns="http://www.w3.org/1999.html" xml:lang="ko"><head><meta http-equiv="Cache-Control" content="no-cache"/><meta http-equiv="Pragma" content="no-cache"/><meta http-equiv="Expires" content="-1"/><title>[WidgetContainer] 위젯 정보 반환받기</title><link rel="stylesheet" href="css/book.css" type="text/css" /><meta http-equiv="Content-Type" content="application.html+xml; charset=utf-8" /><meta name="EPB-UUID" content="b3283707c39ac371" /></head><body><div class="chapter_content"><h1 id="r_b1f39dbc43b9d1bf" class="chapter_title">[WidgetContainer] 위젯 정보 반환받기</h1><h1 id="r_f12765b4dee3e53d" class="element heading1" data-element-id="f12765b4dee3e53d"><div class="r_heading_inner"><span class="heading1_n">1</span><span>개요</span></div></h1><pre id="r_b1410413af149f1f" class="element pre" data-element-id="b1410413af149f1f">WidgetContainer에 추가된 위젯의 정보를 JSON으로 반환받는 예제입니다.</pre><pre id="r_43aa009b1e738410" class="element pre" data-element-id="43aa009b1e738410">아래의 WidgetContainer 함수를 통해 구현할 수 있습니다.</pre><ul id="r_ab4636cfc74d8776" class="element unordered_list" data-element-id="ab4636cfc74d8776"><li><p>exportWidget : 위젯의 ID로 위젯의 정보를 반환합니다.</p></li><li><p>exportWidgets : 모든 위젯의 정보를 Array로 반환합니다.</p></li></ul><p id="r_b8caf15f5a17bb84" class="element r_example_link_p" data-element-id="b8caf15f5a17bb84"><a class="link" target="_blank" href="http://example.websquare.kr/link.html?p=P00318">P00318</a></p><h1 id="r_abd4d6b6af1795c4" class="element heading1" data-element-id="abd4d6b6af1795c4"><div class="r_heading_inner"><span class="heading1_n">2</span><span>구현된 기능</span></div></h1><ul id="r_e33b61619eb9f8f9" class="element unordered_list" data-element-id="e33b61619eb9f8f9"><li><p>위젯의 ID로 위젯의 정보를 반환받기</p></li><li><p>모든 위젯 정보 반환받기</p></li></ul><h1 id="r_662b2db36691bb78" class="element heading1" data-element-id="662b2db36691bb78"><div class="r_heading_inner"><span class="heading1_n">3</span><span>예제 테스트 방법</span></div></h1><h2 id="r_e1520720c8b30580" class="element heading2" data-element-id="e1520720c8b30580"><div class="r_heading_inner"><span class="heading2_n">3.1</span><span>위젯의 ID로 위젯의 정보를 반환받기</span></div></h2><p id="r_07967a19d1e087cb" class="element r_heading_dt_p" data-element-id="07967a19d1e087cb">STEP 1. 초기 상태를 확인합니다.</p><pre id="r_1b1a91cc64a387ed" class="element pre" data-element-id="1b1a91cc64a387ed">WidgetContainer에 위젯 'ID : wg_exam1', 'ID : wg_exam2'가 추가되어 있습니다.
+테스트를 위해 위젯의 타이틀을 위젯의 ID로 표기하였습니다.</pre><div id="r_c1b5b5da0e4fbc9b" class="element image" data-element-id="c1b5b5da0e4fbc9b"><p class="caption"><span class="image_caption_n">그림 1.</span>브라우저(Chrome) 실행 예시</p><p class="content"><img alt="" src="images/image1832.png" width="354" height="245" /></p></div><p id="r_00fe089edf5ecc22" class="element r_heading_dt_p" data-element-id="00fe089edf5ecc22">STEP 2. 위젯의 ID로 위젯의 정보를 반환받습니다.</p><pre id="r_eaab354f6059bd31" class="element pre" data-element-id="eaab354f6059bd31">버튼 <span class="r_exec_btn_style_span">위젯의 ID가 'wg_exam2'인 위젯의 정보 반환받기</span>을 클릭합니다.
+WidgetContainer에 구성된 위젯 'ID : wg_exam2'가 해당합니다.</pre><p id="r_57c223d7ed69758d" class="element r_heading_dt_p" data-element-id="57c223d7ed69758d">STEP 3. 실행된 결과를 확인합니다.</p><pre id="r_9771a2e55df8084f" class="element pre" data-element-id="9771a2e55df8084f">반환 값이 화면의 로그 확인 Textarea와 브라우저의 개발자 도구의 콘솔(console)탭에 출력됩니다.</pre><p id="r_6fafa9f1d317af98" class="element r_caption_code_1_p" data-element-id="6fafa9f1d317af98">로그</p><div id="r_15c3a620492ea7da" class="element code support_code_numbering" data-element-id="15c3a620492ea7da"><pre><span class="digits_10 code_line"></span>[15:27:08] # 스크립트 wgc_exam1.exportWidget('wg_exam2'); 반환 값: 
+<span class="digits_10 code_line"></span>{
+<span class="digits_10 code_line"></span>  "id": "wg_exam2",
+<span class="digits_10 code_line"></span>  "src": "/page/P00318S02.xml",
+<span class="digits_10 code_line"></span>  "scope": true,
+<span class="digits_10 code_line"></span>  "minimized": false,
+<span class="digits_10 code_line"></span>  "maximized": false,
+<span class="digits_10 code_line"></span>  "x": 0,
+<span class="digits_10 code_line"></span>  "y": 5,
+<span class="digits_10 code_line"></span>  "unitWidth": 1,
+<span class="digits_10 code_line"></span>  "unitHeight": 5,
+<span class="digits_10 code_line"></span>  "fixed": false,
+<span class="digits_10 code_line"></span>  "oriFixed": false,
+<span class="digits_10 code_line"></span>  "title": "ID : wg_exam2",
+<span class="digits_10 code_line"></span>  "className": "w2widget",
+<span class="digits_10 code_line"></span>  "maximizeFormatter": null,
+<span class="digits_10 code_line"></span>  "buttonFormatter": null,
+<span class="digits_10 code_line"></span>  "titleClass": ""
+<span class="digits_10 code_line"></span>}</pre></div><h2 id="r_76dc2e89279c4ed6" class="element heading2" data-element-id="76dc2e89279c4ed6"><div class="r_heading_inner"><span class="heading2_n">3.2</span><span>모든 위젯 정보 반환받기</span></div></h2><p id="r_58af164002ad1f6d" class="element r_heading_dt_p" data-element-id="58af164002ad1f6d">STEP 1. 초기 상태를 확인합니다.</p><pre id="r_ae5875f7d95e70e2" class="element pre" data-element-id="ae5875f7d95e70e2">WidgetContainer에 위젯 'ID : wg_exam1', 'ID : wg_exam2'가 추가되어 있습니다.
+테스트를 위해 위젯의 타이틀을 위젯의 ID로 표기하였습니다.</pre><div id="r_bb46ab5d8ce428eb" class="element image" data-element-id="bb46ab5d8ce428eb"><p class="caption"><span class="image_caption_n">그림 2.</span>브라우저(Chrome) 실행 예시</p><p class="content"><img alt="" src="images/image1832.png" width="354" height="245" /></p></div><p id="r_a6ab76526c434ba6" class="element r_heading_dt_p" data-element-id="a6ab76526c434ba6">STEP 2. 위젯의 ID로 위젯의 정보를 반환받습니다.</p><pre id="r_f1b4d4e38ecda315" class="element pre" data-element-id="f1b4d4e38ecda315">버튼 <span class="r_exec_btn_style_span">모든 위젯 정보 반환받기</span>을 클릭합니다.</pre><p id="r_41f2452562975af7" class="element r_heading_dt_p" data-element-id="41f2452562975af7">STEP 3. 실행된 결과를 확인합니다.</p><pre id="r_cb19a73aef1d0e6a" class="element pre" data-element-id="cb19a73aef1d0e6a">반환 값이 화면의 로그 확인 textarea 또는 브라우저의 개발자 도구의 콘솔(console)탭에 출력됩니다.</pre><p id="r_4381b217ef8dcd49" class="element r_caption_code_1_p" data-element-id="4381b217ef8dcd49">로그</p><div id="r_293c4efb9d425f9f" class="element code support_code_numbering" data-element-id="293c4efb9d425f9f"><pre><span class="digits_10 code_line"></span>[15:29:22] # 스크립트 wgc_exam1.exportWidgets(); 반환 값: 
+<span class="digits_10 code_line"></span>[
+<span class="digits_10 code_line"></span>  {
+<span class="digits_10 code_line"></span>    "id": "wg_exam1",
+<span class="digits_10 code_line"></span>    "src": "/page/P00318S01.xml",
+<span class="digits_10 code_line"></span>    "scope": true,
+<span class="digits_10 code_line"></span>    "minimized": false,
+<span class="digits_10 code_line"></span>    "maximized": false,
+<span class="digits_10 code_line"></span>    "x": 0,
+<span class="digits_10 code_line"></span>    "y": 0,
+<span class="digits_10 code_line"></span>    "unitWidth": 1,
+<span class="digits_10 code_line"></span>    "unitHeight": 5,
+<span class="digits_10 code_line"></span>    "fixed": false,
+<span class="digits_10 code_line"></span>    "oriFixed": false,
+<span class="digits_10 code_line"></span>    "title": "ID : wg_exam1",
+<span class="digits_10 code_line"></span>    "className": "w2widget",
+<span class="digits_10 code_line"></span>    "maximizeFormatter": null,
+<span class="digits_10 code_line"></span>    "buttonFormatter": null,
+<span class="digits_10 code_line"></span>    "titleClass": ""
+<span class="digits_10 code_line"></span>  },
+<span class="digits_10 code_line"></span>  {
+<span class="digits_10 code_line"></span>    "id": "wg_exam2",
+<span class="digits_10 code_line"></span>    "src": "/page/P00318S02.xml",
+<span class="digits_10 code_line"></span>    "scope": true,
+<span class="digits_10 code_line"></span>    "minimized": false,
+<span class="digits_10 code_line"></span>    "maximized": false,
+<span class="digits_10 code_line"></span>    "x": 0,
+<span class="digits_10 code_line"></span>    "y": 5,
+<span class="digits_10 code_line"></span>    "unitWidth": 1,
+<span class="digits_10 code_line"></span>    "unitHeight": 5,
+<span class="digits_10 code_line"></span>    "fixed": false,
+<span class="digits_10 code_line"></span>    "oriFixed": false,
+<span class="digits_10 code_line"></span>    "title": "ID : wg_exam2",
+<span class="digits_10 code_line"></span>    "className": "w2widget",
+<span class="digits_10 code_line"></span>    "maximizeFormatter": null,
+<span class="digits_10 code_line"></span>    "buttonFormatter": null,
+<span class="digits_10 code_line"></span>    "titleClass": ""
+<span class="digits_10 code_line"></span>  }
+<span class="digits_10 code_line"></span>]</pre></div><h1 id="r_1bcdfbd824be44bf" class="element heading1" data-element-id="1bcdfbd824be44bf"><div class="r_heading_inner"><span class="heading1_n">4</span><span>구현 예시</span></div></h1><h2 id="r_d417b0ff3def0d88" class="element heading2" data-element-id="d417b0ff3def0d88"><div class="r_heading_inner"><span class="heading2_n">4.1</span><span>위젯의 ID로 위젯의 정보를 반환받기</span></div></h2><pre id="r_431183723a08a535" class="element pre" data-element-id="431183723a08a535">WidgetContainer의 함수 'exportWidget'를 이용하여 스크립트를 작성합니다.
+함수 'exportWidget'의 첫 번째 인자에 위젯의 ID를 할당합니다.
+세부 지정은 아래의 스크립트 예시에 작성되어 있습니다.</pre><p id="r_f36dc311ea9c83b0" class="element r_caption_code_1_p" data-element-id="f36dc311ea9c83b0">스크립트</p><div id="r_1e5090c98fdee055" class="element code support_code_numbering" data-element-id="1e5090c98fdee055"><pre><span class="digits_10 code_line"></span><span class="r_h_comment_span">// WidgetContainer 'wgc_exam1'에 추가된 위젯의 ID가 'wg_exam2'인 위젯의 정보를 반환받습니다.</span>
+<span class="digits_10 code_line"></span><span class="r_h_keyword_span">let</span> result = wgc_exam1.exportWidget(<span class="r_h_string_span">"wg_exam2"</span>);
+<span class="digits_10 code_line"></span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">// 반환 값 예시)</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">// {</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">//     "id": "wg_exam2",</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">//     "src": "/page/P00318S02.xml",</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">//     "scope": true,</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">//     "minimized": false,</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">//     "maximized": false,</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">//     "x": 0,</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">//     "y": 5,</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">//     "unitWidth": 1,</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">//     "unitHeight": 5,</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">//     "fixed": false,</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">//     "oriFixed": false,</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">//     "title": "ID : wg_exam2",</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">//     "className": "w2widget",</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">//     "maximizeFormatter": null,</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">//     "buttonFormatter": null,</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">//     "titleClass": ""</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">// }</span>
+<span class="digits_10 code_line"></span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">// 위젯의 ID는 함수 'addWidgets' 호출 시 옵션 'id'에 할당한 값입니다.</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">// 위젯 추가 시 스크립트 예시</span>
+<span class="digits_10 code_line"></span>wgc_exam1.addWidgets(
+<span class="digits_10 code_line"></span>&nbsp;&nbsp;&nbsp;&nbsp;{
+<span class="digits_10 code_line"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id: <span class="r_h_string_span">"wg_exam2"</span>,
+<span class="digits_10 code_line"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;src: <span class="r_h_string_span">"/page/P00318S02.xml"</span>,
+<span class="digits_10 code_line"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;title: <span class="r_h_string_span">"ID : wg_exam2"</span>,
+<span class="digits_10 code_line"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x: <span class="r_h_number_span">0</span>,
+<span class="digits_10 code_line"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;y: <span class="r_h_number_span">6</span>,
+<span class="digits_10 code_line"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;scope: <span class="r_h_keyword_span">true</span>,
+<span class="digits_10 code_line"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;unitWidth: <span class="r_h_number_span">1</span>,
+<span class="digits_10 code_line"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;unitHeight: <span class="r_h_number_span">5</span>
+<span class="digits_10 code_line"></span>&nbsp;&nbsp;&nbsp;&nbsp;}
+<span class="digits_10 code_line"></span>);</pre></div><h2 id="r_5e51fa918503ca8a" class="element heading2" data-element-id="5e51fa918503ca8a"><div class="r_heading_inner"><span class="heading2_n">4.2</span><span>모든 위젯 정보 반환받기</span></div></h2><h2 id="r_13ef43eb0f99db28" class="element heading2" data-element-id="13ef43eb0f99db28"><div class="r_heading_inner"><span class="heading2_n">4.3</span><span>위젯의 ID로 위젯의 정보를 반환받기</span></div></h2><pre id="r_3d542d17da142b97" class="element pre" data-element-id="3d542d17da142b97">WidgetContainer의 함수 'exportWidgets'를 이용하여 스크립트를 작성합니다.
+세부 지정은 아래의 스크립트 예시에 작성되어 있습니다.</pre><p id="r_dffb5457c71dd631" class="element r_caption_code_1_p" data-element-id="dffb5457c71dd631">스크립트</p><div id="r_d016be75c3247f6e" class="element code support_code_numbering" data-element-id="d016be75c3247f6e"><pre><span class="digits_10 code_line"></span><span class="r_h_comment_span">// WidgetContainer 'wgc_exam1'에 추가된 모든 위젯의 정보를 배열로 반환받습니다.</span>
+<span class="digits_10 code_line"></span><span class="r_h_keyword_span">let</span> result = wgc_exam1.exportWidgets();
+<span class="digits_10 code_line"></span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">// 반환 값 예시)</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">// [</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">//     {</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">//         "id": "wg_exam1",</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">//         "src": "/page/P00318S01.xml",</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">//         "scope": true,</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">//         "minimized": false,</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">//         "maximized": false,</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">//         "x": 0,</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">//         "y": 0,</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">//         "unitWidth": 1,</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">//         "unitHeight": 5,</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">//         "fixed": false,</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">//         "oriFixed": false,</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">//         "title": "ID : wg_exam1",</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">//         "className": "w2widget",</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">//         "maximizeFormatter": null,</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">//         "buttonFormatter": null,</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">//         "titleClass": ""</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">//     },</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">//     {</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">//         "id": "wg_exam2",</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">//         "src": "/page/P00318S02.xml",</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">//         "scope": true,</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">//         "minimized": false,</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">//         "maximized": false,</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">//         "x": 0,</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">//         "y": 5,</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">//         "unitWidth": 1,</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">//         "unitHeight": 5,</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">//         "fixed": false,</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">//         "oriFixed": false,</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">//         "title": "ID : wg_exam2",</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">//         "className": "w2widget",</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">//         "maximizeFormatter": null,</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">//         "buttonFormatter": null,</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">//         "titleClass": ""</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">//     }</span>
+<span class="digits_10 code_line"></span><span class="r_h_comment_span">// ]</span></pre></div><h1 id="r_bdcadc5db7318ce7" class="element heading1" data-element-id="bdcadc5db7318ce7"><div class="r_heading_inner"><span class="heading1_n">5</span><span>주요 API</span></div></h1><ul id="r_e1e1a39a0429fd79" class="element unordered_list" data-element-id="e1e1a39a0429fd79"><li><p><span class="r_ex_api_method_span">exportWidget( widgetId )</span></p></li><li><p><span class="r_ex_api_method_span">exportWidgets( )</span></p></li></ul><h1 id="r_ef9d95490574c8fd" class="element heading1" data-element-id="ef9d95490574c8fd"><div class="r_heading_inner"><span class="heading1_n">6</span><span>참고 문서</span></div></h1><ul id="r_06d6a09cc41f073f" class="element unordered_list" data-element-id="06d6a09cc41f073f"><li><p><span class="r_bold01_span">[웹스퀘어5 SP5 개발 가이드] WidgetContainer</span> </p><p>링크 : <a class="link" target="_blank" href="https://docs1.inswave.com/sp5_user_guide/2059d4ce88b2fc16#6f01c6c535be09d8">https://docs1.inswave.com/sp5_user_guide/2059d4ce88b2fc16#6f01c6c535be09d8</a></p></li></ul></div></body></html>

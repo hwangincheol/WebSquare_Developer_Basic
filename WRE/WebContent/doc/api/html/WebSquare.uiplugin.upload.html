@@ -1,0 +1,2272 @@
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="../cm/css/api.css">
+    </head>
+    <body>
+        <div class="api_wrap">
+            <div class="api_wrap_inner">
+                <div class="api_container">
+                    <div class="api_content">
+                        <header class="api_header">
+                            <p class="api_component">WebSquare.uiplugin.upload</p>
+                            <p class="api_version">5.0_5.5005A.20230904.185702</p>
+                            <p>업로드. 파일을 서버에 업로드할 수 있는 기능을 제공.</p>
+                        </header>
+                        <section class="properties_section">
+                            <h2>Property Detail</h2>
+                            <dl class="api_dl">
+                            <dt id="accept">accept</dt>
+                            <dd><p>&lt;input type="file"/&gt;에서 accept 속성과 동일한 기능을 제공. <br />IE10부터 지원되는 기능. <br />사용 방법은 http://www.w3schools.com/tags/att_input_accept.asp 참고. 
+<xmp  class='js sample'> (사용 예) 
+ <w2:upload id="upload1" accept=".jpg,.png,.xml,.txt"/> 
+ // jpg, png, xml, txt 파일만 선택할 수 있도록 OS의 fileManager에게 요청. </xmp></xmp><br />
+<xmp  class='js sample'>(!주의!)
+ file validation은 서버에서 별도로 확인해야 함. 
+ 본 속성을 file validation 용도로 사용할 수 없음.</xmp></p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="action">action</dt>
+                            <dd><p>업로드 서버 url(form태그 안쪽에 action속성에 들어갈 값)</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="class">class</dt>
+                            <dd><p>HTML의 class 속성과 동일한 기능을 제공. CSS 파일이나 style 블럭에 정의한 여러 개의 class를 공백으로 구분하여 적용 가능.<br />Engine 내부에서 각 컴포넌트 별로 지정된 class를 적용하나, class 속성을 이용하여 컴포넌트의 CSS를 제어 가능.</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="clickOpenFileDialog">clickOpenFileDialog</dt>
+                            <dd><p>[default:false] upload 컴포넌트를 클릭시 fileDialog가 열리는 속성</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="disabled">disabled</dt>
+                            <dd><p>컴포넌트 비활성 여부. 
+<xmp  class='js sample'> (옵션 설명)
+ "false" (기본 값) 컴포넌트를 비활성화 하지 않음. 
+ "true" 컴포넌트를 비활성화 함.</xmp></p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="id">id</dt>
+                            <dd><p>컴포넌트 ID. <br />컴포넌트 ID는 전역 객체로 할당됨. 각 컴포넌트 ID를 통해 Script에서 해당 컴포넌트에 접근 가능.</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="imageClass">imageClass</dt>
+                            <dd><p>image 모드에서 image 부분의 클래스.</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="imageStyle">imageStyle</dt>
+                            <dd><p>image 모드에서 image 부분의 스타일.</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="inputClass">inputClass</dt>
+                            <dd><p>image 모드에서 input 부분의 클래스.</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="inputStyle">inputStyle</dt>
+                            <dd><p>image 모드에서 input 부분의 스타일.</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="subDir">subDir</dt>
+                            <dd><p>Sub Directory를 지정한 노드명. <br />websquare.xml에서 /websquare/upload/baseDir/"subDir노드명"/@value값이 설정되어 있으면 설정 경로를 반환. <br />설정값이 없으면 baseDir 지정경로가 반환됨.</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="tabIndex">tabIndex</dt>
+                            <dd><p>Tab 키를 이용하여 포커스를 변경할 경우, 해당 컴포넌트에 포커스를 주는 순서. <br />HTML의 tabindex 속성과 동일.</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="targetFrame">targetFrame</dt>
+                            <dd><p>파일 업로드를 위한 임시 IFrame을 생성할 경우, IFrame을 생성할 위치를 지정.
+<xmp  class='js sample'>(옵션 설명)
+ "body" (기본 값): &lt;body&gt; 태그 아래에 생성. 
+ "self": 팝업 창마다 생성.</xmp></p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="title">title</dt>
+                            <dd><p>HTML의 title 속성과 동일. 마우스 오버 시, title로 저장한 값이 툴팁으로 표시됨. 일반적으로 웹접근성 지원용으로 설정.</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="type">type</dt>
+                            <dd><p>출력 타입설정</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="userData1">userData1</dt>
+                            <dd><p>사용자 정의 데이터 속성. <br />getUserData("userData1") API를 통해 설정한 값을 얻어올 수 있음. 
+<xmp  class='js sample'> // 속성 값 얻어오기 예시
+ getUserData("userData1");</xmp></p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="userData2">userData2</dt>
+                            <dd><p>사용자 정의 데이터 속성. <br />getUserData("userData2") API를 통해 설정한 값을 얻어올 수 있음. 
+<xmp  class='js sample'> // 속성 값 얻어오기 예시
+ getUserData("userData2");</xmp></p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="userData3">userData3</dt>
+                            <dd><p>사용자 정의 데이터 속성. <br />getUserData("userData3") API를 통해 설정한 값을 얻어올 수 있음. 
+<xmp  class='js sample'> // 속성 값 얻어오기 예시
+ getUserData("userData3");</xmp></p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="useXHR">useXHR</dt>
+                            <dd><p>ajax통신으로 파일을 업로드할지 여부.</p></dd>
+                        </dl>
+                        
+                        </section>
+                        <section class="event_section">
+                            <h2>Event Detail</h2>
+                            <dl class="api_dl">
+                            <dt id="ondone">ondone(retXml)</dt>
+                            <dd>
+                                <p>파일 업로드 끝날시 발생. (retXml: 업로드 후에 받을 수 있는 XML document)</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                          <li class="api_name">
+                                              <div class="tit">Name</div>
+                                              <div class="cnt">retXml</div>
+                                          </li>
+                                          <li class="api_type">
+                                              <div class="tit">Type</div>
+                                              <div class="cnt">XML Document</div>
+                                          </li>
+                                          <li class="api_desc in_tb">
+                                              <div class="tit">Description</div>
+                                              <p>업로드 후에 반환되는 파일 업로드에 관한 응답 XML document.</p>
+                                              <div class="cnt">
+                                                  <xmp class="js sample"><ret>
+     <key></key>                         //저장 파일 경로.
+     <storedFileList></storedFileList>   //저장된 서버 파일명.
+     <localfileList></localfileList>     //저장된 파일의 로컬 파일명.
+     <fileSizeList></fileSizeList>       //저장된 파일 사이즈.  
+     <maxUploadSize></maxUploadSize>     //허용 최대 사이즈.(byte)
+     <deniedList></deniedList>           //저장 실패한 파일명.
+     <deniedCodeList></deniedCodeList>   //저장 실패 코드 (101: 허용하지 않는 확장자, 102: 허용범위 밖의 파일 사이즈, 999: 기타 서버 오류) 
+ </ret></xmp>
+                                              </div>
+                                          </li>
+                                      </ul>
+                                
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="onInputValueChange">onInputValueChange(fileName)</dt>
+                            <dd>
+                                <p>입력창의 값이 변할때 발생</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">fileName</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                파일명
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+                            </dd>
+                        </dl>
+                        
+                        </section>
+                        <section class="method_section">
+                            <h2>Method Detail</h2>
+                            <dl class="api_dl">
+                            <dt id="addClass">addClass(className)</dt>
+                            <dd>
+                                <p>컴포넌트에 CSS class를 추가. (웹스퀘어 컴포넌트 공통.)</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">className</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>추가할 class의 이름</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// (예제)
+// input1 컴포넌트에 oddClass라는 class를 추가    
+input1.addClass("oddClass");</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="addParam">addParam(key, value)</dt>
+                            <dd>
+                                <p>Upload 객체가 입력받은 값을 업로드 시 value를 key 값으로 post로 전달.</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">key</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>Upload시에 전송될 key 값</p>
+                                            </div>
+                                        </li>
+                                    </ul><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">value</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>Upload시에 전송될 value 값</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// 예제
+ upload1.addParam('baseDir','upload');</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="bind">bind(eventType, function)</dt>
+                            <dd>
+                                <p>컴포넌트에 이벤트와 핸들러 함수를 동적으로 할당. (웹스퀘어 컴포넌트 공통.)</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">eventType</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>할당할 이벤트</p>
+                                            </div>
+                                        </li>
+                                    </ul><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">function</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">Function</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>이벤트에 대한 핸들러 함수.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// (예제 1)
+// input1의 onclick 이벤트에 대한 핸들러 함수를 직접 정의하여 할당. 
+input1.bind("onclick", function(e){ alert(input1.getValue();}));
+
+// (예제 2)
+// 미리 commObj.ev_click 함수를 정의.
+var commObj = {};
+commObj.ev_click = function(e){
+    alert("click :: "+this.id);
+};
+
+// input1 컴포넌트에 onclick 이벤트와 정의한 핸들러 함수를 동적으로 할당. 
+input1.bind("onclick", commObj.ev_click );</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="changeClass">changeClass(oldClassName, newClassName)</dt>
+                            <dd>
+                                <p>웹스퀘어 컴포넌트의 class를 변경. (웹스퀘어 컴포넌트 공통.) <br />기본적으로 addClass를 통해 추가된 class만 변경 가능. <br />웹스퀘어 컴포넌트의 class 속성에 직접 정의된 class를 삭제하려면 config.xml 파일에 아래 설정을 추가해야 함. 
+<xmp  class='js sample'>// config.xml에 아래 설정을 추가. 
+<style><removeDefaultClass value="true" /></style></xmp></p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">oldClassName</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>변경할 class</p>
+                                            </div>
+                                        </li>
+                                    </ul><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">newClassName</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>새로 사용할 class</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// inputBox 컴포넌트에 class가 속성으로 직접 정의됨.
+<xf:input id="input1" style="position: relative;width: 144px;height: 21px;" class="tmpInputClass"></xf:input>
+
+// config.xml 파일에 아래를 추가.
+<style>
+    <removeDefaultClass value="true" />
+</style>
+
+// class를 변경 가능. 
+// (tmpInputClass class를 tmpInputWarninClass로 변경.)
+input1.changeClass("tmpInputClass","tmpInputWarninClass");</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="changeFormAction">changeFormAction(action)</dt>
+                            <dd>
+                                <p>Upload 객체가 입력받은 값을 업로드할 URL을 설정.<br />입력된 action은 HTML Object 중에 Form의 action과 같은 방법을 사용.</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">action</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>Upload시에 전송될 URL</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// 예제
+ upload1.changeFormAction('http://localhost:8080/upload.jsp');</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="focus">focus()</dt>
+                            <dd>
+                                <p>웹스퀘어 컴포넌트에 포커스를 줌. (웹스퀘어 컴포넌트 공통.)</p>
+                                
+                                
+                                
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="getActionUrl">getActionUrl()</dt>
+                            <dd>
+                                <p>option의 action 속성을 반환.</p>
+                                
+                                
+              <div class="api_tit_para">Return</div>
+                  <div class="api_parameter">
+                      <ul class="api_ul_parameter">
+                          <li>
+                              <div class="tit">Type</div>
+                              <div class="cnt">String</div>
+                          </li>
+                          <li class="api_desc">
+                              <div class="tit">Description</div>
+                              <div class="cnt">option의 action 속성</div>
+                          </li>
+                    </ul>
+              </div>
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'> var returnValue = upload1.getActionUrl();
+// returnValue는 'http://localhost:8090/websquare/upload.wq?callbackFunction=upload1.callback'.</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="getDisabled">getDisabled()</dt>
+                            <dd>
+                                <p>현재 웹스퀘어 컴포넌트에 설정된 disabled 속성 값을 반환. (웹스퀘어 컴포넌트 공통.)</p>
+                                
+                                
+              <div class="api_tit_para">Return</div>
+                  <div class="api_parameter">
+                      <ul class="api_ul_parameter">
+                          <li>
+                              <div class="tit">Type</div>
+                              <div class="cnt">Boolean</div>
+                          </li>
+                          <li class="api_desc">
+                              <div class="tit">Description</div>
+                              <div class="cnt">disabled 속성 값</div>
+                          </li>
+                    </ul>
+              </div>
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// 컴포넌트의 disabled 속성 값 확인 예제
+var returnValue = componentId.getDisabled();
+// (반환 값 예시) false</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="getGenerator">getGenerator()</dt>
+                            <dd>
+                                <p>컴포넌트가 Generator에 의해 생성된 경우, 자신을 생성한 부모 Generator 객체를 반환. (웹스퀘어 컴포넌트 공통.)</p>
+                                
+                                
+              <div class="api_tit_para">Return</div>
+                  <div class="api_parameter">
+                      <ul class="api_ul_parameter">
+                          <li>
+                              <div class="tit">Type</div>
+                              <div class="cnt">Object</div>
+                          </li>
+                          <li class="api_desc">
+                              <div class="tit">Description</div>
+                              <div class="cnt">부모 Generator 객체</div>
+                          </li>
+                    </ul>
+              </div>
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>//부모 Generator가 자식으로 Trigger를 생성한 예제
+ <w2:generator id="generator1"> <w2:trigger id="trigger1" ev:onclick="scwin.trigger1_onclick"></w2:trigger></w2:generator>
+
+// 아래 예제의 경우 trigger1을 클릭하면 generator1 객체가 console에 표시됨. 
+ scwin.trigger1.onclick = function(){ console.log(this.getGenerator());} 
+</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="getID">getID()</dt>
+                            <dd>
+                                <p>웹스퀘어 컴포넌트의 ID를 반환. (웹스퀘어 컴포넌트 공통.)</p>
+                                
+                                
+              <div class="api_tit_para">Return</div>
+                  <div class="api_parameter">
+                      <ul class="api_ul_parameter">
+                          <li>
+                              <div class="tit">Type</div>
+                              <div class="cnt">String</div>
+                          </li>
+                          <li class="api_desc">
+                              <div class="tit">Description</div>
+                              <div class="cnt">웹스퀘어 컴포넌트 ID</div>
+                          </li>
+                    </ul>
+              </div>
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// 동적으로 웹스퀘어 컴포넌트를 받을 경우, 아래와 같이 ID 확인 가능.
+function fn_validCheck(tmpObj){
+    var compID = tmpObj.getID();
+}
+// 위의 예제 에서 tmpObj가 "input1" ID를 가지고 있는 경우,
+// (반환 값) "input1"</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="getInitStyle">getInitStyle(CSS)</dt>
+                            <dd>
+                                <p>컴포넌트의 초기 스타일을 반환. initStyle 속성을 true로 설정한 컴포넌트만 유효하게 동작한다.(웹스퀘어 컴포넌트 공통.)</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">CSS</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">N</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>속성 (지정하지 않으면 모든 정보 출력)</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+                                
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="getOpacity">getOpacity()</dt>
+                            <dd>
+                                <p>웹스퀘어 컴포넌트의 불투명도를 반환. (웹스퀘어 컴포넌트 공통.)<br />엔진 내부적으로 CSS의 opacity 속성 값을 반환.</p>
+                                
+                                
+              <div class="api_tit_para">Return</div>
+                  <div class="api_parameter">
+                      <ul class="api_ul_parameter">
+                          <li>
+                              <div class="tit">Type</div>
+                              <div class="cnt">Integer</div>
+                          </li>
+                          <li class="api_desc">
+                              <div class="tit">Description</div>
+                              <div class="cnt">Opacity 값</div>
+                          </li>
+                    </ul>
+              </div>
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// inputBox 컴포넌트에 opacity CSS를 적용.
+<xf:input id="input1" style="position: relative;width: 144px;height: 21px;opacity:0.2;"></xf:input>
+        
+// inputBox 컴포넌트의 opacity 값을 반환. 
+var returnValue = input1.getOpacity(); 
+// returnValue는 0 ~ 1 사이의 실수.
+// (반환 값) "0.2"</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="getOriginalID">getOriginalID()</dt>
+                            <dd>
+                                <p>웹스퀘어 컴포넌트의 originalID를 반환. (웹스퀘어 컴포넌트 공통.)<br />originalID는 Scope 기능을 사용할 경우 존재. <br />scope="true"인 WFrame를 사용할 경우, WFrame 내부의 컴포넌트 ID는 원래 사용자가 정의한 값(originalID) 앞에 prefix(wframeID + "_")가 추가되는 방식으로 변경됨.  <br />originalID는 이 때, prefix가 추가되기 전 ID를 의미.</p>
+                                
+                                
+              <div class="api_tit_para">Return</div>
+                  <div class="api_parameter">
+                      <ul class="api_ul_parameter">
+                          <li>
+                              <div class="tit">Type</div>
+                              <div class="cnt">String</div>
+                          </li>
+                          <li class="api_desc">
+                              <div class="tit">Description</div>
+                              <div class="cnt">컴포넌트의 originalID</div>
+                          </li>
+                    </ul>
+              </div>
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// WFrame을 사용하는 다중 화면 구조 예시
+
+// WFrame을 포함한 메인 화면 (main.xml) 
+<w2:wframe id="wframe1" src="text.xml" scope="true"/> 
+
+// 메인 화면 WFrame에 연결되는 소스 화면 (text.xml)
+<w2:textbox id="textbox1"/>
+
+// text.xml 화면의 내부 스크립트에서 ID 및 originalID 확인하는 예제.
+// getID 실행 
+textbox1.getID(); // 실행 결과는 "wframe1_textbox1"
+ 
+// getOriginalID 실행 
+textbox1.getOriginalID(); // 실행 결과는 "textbox1"</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="getPluginName">getPluginName()</dt>
+                            <dd>
+                                <p>웹스퀘어 컴포넌트의 이름(pluginName)을 반환. (웹스퀘어 컴포넌트 공통.)</p>
+                                
+                                
+              <div class="api_tit_para">Return</div>
+                  <div class="api_parameter">
+                      <ul class="api_ul_parameter">
+                          <li>
+                              <div class="tit">Type</div>
+                              <div class="cnt">String</div>
+                          </li>
+                          <li class="api_desc">
+                              <div class="tit">Description</div>
+                              <div class="cnt">웹스퀘어 컴포넌트의 이름 (pluginName)</div>
+                          </li>
+                    </ul>
+              </div>
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// 아래와 같이 공통 함수에서 동적으로 웹스퀘어 객체를 받는 경우, 컴포넌트 종류에 따른 분기 처리가 가능.
+var commObj = {};
+
+commObj.fn_makeReqData = function(tmpObj){
+    var tmpID = tmpObj.getID(); // 컴포넌트 ID
+    var tmpCompType = tmpObj.getPluginName();   // 컴포넌트 이름
+
+    if(tmpCompType == "input"){
+        //..로직..
+    }else if(tmpCompType == "gridView"){
+        //..로직 ..
+    }else{
+        //..로직..
+    }
+};</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="getPosition">getPosition(positionName)</dt>
+                            <dd>
+                                <p>웹스퀘어 컴포넌트의 위치(left, top)를 반환. (웹스퀘어 컴포넌트 공통.) <br />위치 값이 %로 설정된 경우, 픽셀로 변환된 값을 반환.</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">positionName</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>[left, top] 위치 종류</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+              <div class="api_tit_para">Return</div>
+                  <div class="api_parameter">
+                      <ul class="api_ul_parameter">
+                          <li>
+                              <div class="tit">Type</div>
+                              <div class="cnt">Number</div>
+                          </li>
+                          <li class="api_desc">
+                              <div class="tit">Description</div>
+                              <div class="cnt">컴포넌트의 위치 값</div>
+                          </li>
+                    </ul>
+              </div>
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// 아래와 같이 input 컴포넌트에 CSS 속성 margin이 적용된 경우,
+<xf:input id="input1" style="position: relative;width: 144px;height: 21px;margin:10px;"></xf:input>
+
+// (예제) 위의 inputBox 컴포넌트의 top 값을 확인     
+var returnValue = input1.getPosition("top"); 
+
+// 픽셀 단위의 위치 값이 반환됨.
+
+// (반환 값) 10</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="getReadOnly">getReadOnly()</dt>
+                            <dd>
+                                <p>현재 웹스퀘어 컴포넌트에 설정된 readOnly 속성 값을 반환. (웹스퀘어 컴포넌트 공통.)</p>
+                                
+                                
+              <div class="api_tit_para">Return</div>
+                  <div class="api_parameter">
+                      <ul class="api_ul_parameter">
+                          <li>
+                              <div class="tit">Type</div>
+                              <div class="cnt">Boolean</div>
+                          </li>
+                          <li class="api_desc">
+                              <div class="tit">Description</div>
+                              <div class="cnt">현재 설정되어있는 readOnly 속성</div>
+                          </li>
+                    </ul>
+              </div>
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// 컴포넌트의 readOnly 속성 값 확인 예제
+var returnValue = componentId.getReadOnly();
+// (반환 값 예시) false</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="getScope">getScope()</dt>
+                            <dd>
+                                <p>scope="true"인 WFrame의 자식 컴포넌트인 경우, 부모 WFrame 객체를 반환. (웹스퀘어 컴포넌트 공통.)  <br />scope="true"인 WFrame의 자식 컴포넌트가 아닌 경우, null을 반환.</p>
+                                
+                                
+              <div class="api_tit_para">Return</div>
+                  <div class="api_parameter">
+                      <ul class="api_ul_parameter">
+                          <li>
+                              <div class="tit">Type</div>
+                              <div class="cnt">Object</div>
+                          </li>
+                          <li class="api_desc">
+                              <div class="tit">Description</div>
+                              <div class="cnt">WFrame 객체 또는 null</div>
+                          </li>
+                    </ul>
+              </div>
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// (예제)
+// 메인페이지에 wframe1이 있고, wframe1 내부에 wframe11이 존재. 
+// 그리고, wframe11 내부에 textbox1이 존재.
+   
+textbox1.getScope(); 
+// (반환 값) wframe11 객체</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="getScopeWindow">getScopeWindow()</dt>
+                            <dd>
+                                <p>scope="true"인 WFrame의 자식 컴포넌트인 경우, 부모 WFrame 객체를 반환. (웹스퀘어 컴포넌트 공통.)<br />scope="true"인 WFrame의 자식 컴포넌트가 아닌 경우, 전역 window 객체를 반환.</p>
+                                
+                                
+              <div class="api_tit_para">Return</div>
+                  <div class="api_parameter">
+                      <ul class="api_ul_parameter">
+                          <li>
+                              <div class="tit">Type</div>
+                              <div class="cnt">Object</div>
+                          </li>
+                          <li class="api_desc">
+                              <div class="tit">Description</div>
+                              <div class="cnt">WFrame 객체의 scope 객체 또는 전역 window 객체</div>
+                          </li>
+                    </ul>
+              </div>
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// (예제)
+// 메인페이지에 wframe1이 있고, wframe1 내부에 wframe11이 존재. 
+// 그리고, wframe11 내부에 textbox1이 존재.
+   
+var scope = textbox1.getScopeWindow();
+scope.wframe11 === textbox1.getScope(); // true</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="getSize">getSize(sizeName)</dt>
+                            <dd>
+                                <p>웹스퀘어 컴포넌트의 크기(width, height)를 반환. (웹스퀘어 컴포넌트 공통.) <br />%로 설정된 경우, 픽셀로 변환된 값을 반환.</p>
+                                <div class="api_tit_para">Parameter</div>
+                                
+              <div class="api_tit_para">Return</div>
+                  <div class="api_parameter">
+                      <ul class="api_ul_parameter">
+                          <li>
+                              <div class="tit">Type</div>
+                              <div class="cnt">Number</div>
+                          </li>
+                          <li class="api_desc">
+                              <div class="tit">Description</div>
+                              <div class="cnt">컴포넌트의 크기 값</div>
+                          </li>
+                    </ul>
+              </div>
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>var returnValue = componentId.getSize("width");
+// (반환 예) 100 
+// 픽셀 단위의 크기 값이 반환됨. 
+// %로 설정된 경우, 픽셀로 변환된 값이 반환됨.</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="getStyle">getStyle(propertyName)</dt>
+                            <dd>
+                                <p>웹스퀘어 컴포넌트의 CSS 속성 값을 반환. (웹스퀘어 컴포넌트 공통.)</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">propertyName</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>반환할 CSS 속성</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+              <div class="api_tit_para">Return</div>
+                  <div class="api_parameter">
+                      <ul class="api_ul_parameter">
+                          <li>
+                              <div class="tit">Type</div>
+                              <div class="cnt">String</div>
+                          </li>
+                          <li class="api_desc">
+                              <div class="tit">Description</div>
+                              <div class="cnt">CSS 속성 값</div>
+                          </li>
+                    </ul>
+              </div>
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>//아래와 같이 input 컴포넌트가 정의 된 경우
+<xf:input id="input1" style="position: relative;width: 144px;height: 21px;"></xf:input>
+
+// (예제) 위의 inputBox 컴포넌트의 width 값을 확인   
+var returnValue = input1.getStyle("width");
+
+// (반환 값) "144px"</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="getStyleValue">getStyleValue(style)</dt>
+                            <dd>
+                                <p>[deprecated]<br />getStyle 사용 권장.<br />웹스퀘어 컴포넌트에 적용된 해당 CSS 속성 값을 반환.</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">style</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>반환하려는 CSS 속성.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+              <div class="api_tit_para">Return</div>
+                  <div class="api_parameter">
+                      <ul class="api_ul_parameter">
+                          <li>
+                              <div class="tit">Type</div>
+                              <div class="cnt">String</div>
+                          </li>
+                          <li class="api_desc">
+                              <div class="tit">Description</div>
+                              <div class="cnt">style 해당 CSS 속성 값 (색을 반환하는 경우, HexCode로 반환됨.)</div>
+                          </li>
+                    </ul>
+              </div>
+                                
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="getSubDir">getSubDir()</dt>
+                            <dd>
+                                <p>subDir 설정값을 반환.</p>
+                                
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// 예제
+ upload1.getSubDir();</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="getTitle">getTitle()</dt>
+                            <dd>
+                                <p>컴포넌트의 title 속성 값을 반환. (웹스퀘어 컴포넌트 공통.)</p>
+                                
+                                
+              <div class="api_tit_para">Return</div>
+                  <div class="api_parameter">
+                      <ul class="api_ul_parameter">
+                          <li>
+                              <div class="tit">Type</div>
+                              <div class="cnt">String</div>
+                          </li>
+                          <li class="api_desc">
+                              <div class="tit">Description</div>
+                              <div class="cnt">title 속성 값.</div>
+                          </li>
+                    </ul>
+              </div>
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// 아래와 같이 input 컴포넌트의 title 속성이 "이름 입력"으로 정의된 경우
+<xf:input id="input1" style="position: relative;width: 144px;height: 21px;" title="이름 입력"></xf:input>
+
+var tmpTitle = input1.getTitle();
+// (반환 값 예시) "이름 입력"</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="getUdcHome">getUdcHome()</dt>
+                            <dd>
+                                <p>UDC 객체가 자신을 정의한 UDC 파일 경로를 파일명을 포함해서 반환. (웹스퀘어 컴포넌트 공통.)<br />파일명은 마지막 .xml까지 포함. .xml을 제외한 경로는 getUdcRoot를 사용해서 반환.<br />UDC 객체가 아닌 컴포넌트에서 호출된 경우에는 undefined가 반환됨.</p>
+                                
+                                
+              <div class="api_tit_para">Return</div>
+                  <div class="api_parameter">
+                      <ul class="api_ul_parameter">
+                          <li>
+                              <div class="tit">Type</div>
+                              <div class="cnt">String</div>
+                          </li>
+                          <li class="api_desc">
+                              <div class="tit">Description</div>
+                              <div class="cnt">UDC 파일 경로. (UDC가 아닌 경우, undefined가 반환됨.)</div>
+                          </li>
+                    </ul>
+              </div>
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// 예제
+// UDC 파일 경로는 /a/b/udc.xml 
+// 화면 XML은  /a/c/main.xml 
+// UDC 객체의 ID는 udc1
+  
+udc1.getUdcHome(); 
+// (실행 결과) /a/b/udc.xml</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="getUdcRoot">getUdcRoot()</dt>
+                            <dd>
+                                <p>UDC 객체가 자신을 정의한  UDC 파일 경로를 반환. (웹스퀘어 컴포넌트 공통.)<br />파일명을 포함하지 않음. 파일명을 포함한 경로는 getUdcHome을 사용해서 반환.<br />UDC 객체가 아닌 컴포넌트에서 호출된 경우에는 undefined가 반환됨.</p>
+                                
+                                
+              <div class="api_tit_para">Return</div>
+                  <div class="api_parameter">
+                      <ul class="api_ul_parameter">
+                          <li>
+                              <div class="tit">Type</div>
+                              <div class="cnt">String</div>
+                          </li>
+                          <li class="api_desc">
+                              <div class="tit">Description</div>
+                              <div class="cnt">UDC 파일 경로. (UDC가 아닌 경우, undefined가 반환됨.)</div>
+                          </li>
+                    </ul>
+              </div>
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// 예제
+// UDC 파일 경로는 /a/b/udc.xml 
+// 화면 XML은  /a/c/main.xml 
+// UDC 객체의 ID는 udc1
+  
+udc1.getUdcHome();    
+// (실행 결과) /a/b/</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="getUserData">getUserData(key)</dt>
+                            <dd>
+                                <p>setUserData로 웹스퀘어 컴포넌트에 설정한 key의 value 혹은 사용자가 직접 페이지 소스(XML)에 속성으로 정의한 value를 반환. (웹스퀘어 컴포넌트 공통.)</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">key</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>데이터의 key</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+              <div class="api_tit_para">Return</div>
+                  <div class="api_parameter">
+                      <ul class="api_ul_parameter">
+                          <li>
+                              <div class="tit">Type</div>
+                              <div class="cnt">String</div>
+                          </li>
+                          <li class="api_desc">
+                              <div class="tit">Description</div>
+                              <div class="cnt">key에 해당하는 value</div>
+                          </li>
+                    </ul>
+              </div>
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// Input 컴포넌트에 사용자 속성(setTest)을 설정하는 예제
+<xf:input id="input1" style="position: relative;width: 144px;height: 21px;" setTest="Hello"></xf:input>
+
+// 위에서 설정한 setTest을 값을 반환하는 예제. 
+input1.getUserData("setTest");
+// (반환 값) "Hello"
+
+//setUserData를 통해 'valueTest'(key)와 'WebSquare'(data)로 설정하는 예제. 
+input1.setUserData("valueTest","WebSquare");
+
+// 위에서 설정한 setTest을 값을 반환하는 예제. 
+input1.getUserData("WebSquare");
+// (반환 값) "WebSquare"</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="getValue">getValue()</dt>
+                            <dd>
+                                <p>파일 이름을 반환.</p>
+                                
+                                
+              <div class="api_tit_para">Return</div>
+                  <div class="api_parameter">
+                      <ul class="api_ul_parameter">
+                          <li>
+                              <div class="tit">Type</div>
+                              <div class="cnt">String</div>
+                          </li>
+                          <li class="api_desc">
+                              <div class="tit">Description</div>
+                              <div class="cnt">파일 이름</div>
+                          </li>
+                    </ul>
+              </div>
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// 업로드하려는 파일을 선택한다.
+ var returnValue = upload1.getValue();
+// returnValue는 'C:\Users\Public\Pictures\Sample Pictures\Lighthouse.jpg'.</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="hasClass">hasClass(className)</dt>
+                            <dd>
+                                <p>웹스퀘어 컴포넌트가 특정 class를 포함하고 있는지 확인. (웹스퀘어 컴포넌트 공통.)</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">className</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>검색할 class 이름</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+              <div class="api_tit_para">Return</div>
+                  <div class="api_parameter">
+                      <ul class="api_ul_parameter">
+                          <li>
+                              <div class="tit">Type</div>
+                              <div class="cnt">Boolean</div>
+                          </li>
+                          <li class="api_desc">
+                              <div class="tit">Description</div>
+                              <div class="cnt">class의 포함 여부</div>
+                          </li>
+                    </ul>
+              </div>
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// inputBox 컴포넌트에 class가 속성으로 직접 정의됨.
+<xf:input id="input1" style="position: relative;width: 144px;height: 21px;" class="tmpInputClass"></xf:input>
+        
+var returnValue = input1.hasClass("tmpInputClass");
+// (반환 값) true</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="hide">hide()</dt>
+                            <dd>
+                                <p>웹스퀘어 컴포넌트를 화면에서 숨김. (웹스퀘어 컴포넌트 공통.)<br />display:none; 및 visibility:hidden; CSS를 적용.</p>
+                                
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// (예제) 컴포넌트를 숨김
+componentId.hide();</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="removeClass">removeClass(className)</dt>
+                            <dd>
+                                <p>웹스퀘어 컴포넌트에서 class를 삭제. (웹스퀘어 컴포넌트 공통.)<br />기본적으로 addClass를 통해 추가된 class만 삭제 가능. <br />컴포넌트의 속성으로 직접 정의된 class를 삭제하기 위해서는 config.xml 파일에 아래 설정을 추가해야 함. 
+<xmp  class='js sample'> // config.xml 파일에 아래 설정 추가 
+ <style><removeDefaultClass value="true" /></style></xmp></p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">className</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>삭제 할 class명</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// inputBox의 속성으로 class가 직접 정의된 경우,
+<xf:input id="input1" style="position: relative;width: 144px;height: 21px;" class="tmpInputClass"></xf:input>
+
+// config.xml 파일에 아래 항목을 추가.
+<style>
+    <removeDefaultClass value="true" />
+</style>
+
+// removeClass를 통해 삭제 가능. 
+input1.removeClass("tmpInputClass");</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="reset">reset()</dt>
+                            <dd>
+                                <p>컴포넌트를 초기화.</p>
+                                
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'> upload1.reset();
+// 업로드 컴포넌트가 초기화 됨.</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="setCallback">setCallback(obj)</dt>
+                            <dd>
+                                <p>파일 업로드가 끝났을 경우에 호출하는 함수를 설정.</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">obj</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">Function</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>호출하는 함수</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'> function uploadcallback( result ) {
+     var fileNm = WebSquare.xml.getValue( result,"/ret/storedFileList" );
+     alert(fileNm);
+ }
+
+ upload1.setCallback(uploadcallback);
+ upload1.submit();
+// 파일 업로드가 끝나고 uploadcallback 함수가 실행됨.</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="setDisabled">setDisabled(disabled)</dt>
+                            <dd>
+                                <p>컴포넌트의 disabled 속성을 설정.</p>
+                                <div class="api_tit_para">Parameter</div>
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>//컴포넌트에 disabled 설정
+componentId.setDisabled(true);</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="setEventPause">setEventPause(evList, flag)</dt>
+                            <dd>
+                                <p>지정한 이벤트를 중단함. (웹스퀘어 컴포넌트 공통.)</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">evList</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">N</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>중단할 이벤트 목록. (null을 지정할 경우 해당 컴포넌트의 모든 사용자 이벤트가 중단되거나 중단 해제됨.)</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// (예제 1)
+// onclick 이벤트를 중단. 
+input1.setEventPause("onclick", true); 
+
+// (예제 2)
+// onfocus 및 onblur 이벤트의 중단을 해제.
+input1.setEventPause("onfocus,onblur", false); 
+
+// (예제 3)
+// input1에 등록된 모든 사용자 이벤트를 중단.
+input1.setEventPause(null, true);</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="setInitStyle">setInitStyle(property)</dt>
+                            <dd>
+                                <p>컴포넌트의 초기 스타일을 복구한다. initStyle 속성을 true로 설정한 컴포넌트만 유효하게 동작한다 (웹스퀘어 컴포넌트 공통.)</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">property</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">N</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>CSS 속성 (지정하지 않으면 모든 속성의 초기 값으로 복구.)</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// (예제)
+group1.setInitStyle();</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="setOpacity">setOpacity(value)</dt>
+                            <dd>
+                                <p>웹스퀘어 컴포넌트의 불투명도를 설정. (웹스퀘어 컴포넌트 공통.)<br />엔진 내부적으로 CSS 속성인 opacity(불투명도)를 설정.</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">value</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">Number</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>Opacity 값 (0과 1 사이의 실수)</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// (예제) 불투명도를 0.45로 설정
+componentId.setOpacity(0.45);</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="setPosition">setPosition(left, top, mode)</dt>
+                            <dd>
+                                <p>웹스퀘어 컴포넌트의 위치(left, top)를 설정. (웹스퀘어 컴포넌트 공통.)</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">left</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">Number</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>설정할 left 위치 값 또는 null.</p>
+                                            </div>
+                                        </li>
+                                    </ul><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">top</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">Number</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>설정할 top 위치 값 또는 null.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// (예제) 컴포넌트의 top만 100px로 설정.
+componentId.setPosition(null, 100);</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="setReadOnly">setReadOnly(readOnly)</dt>
+                            <dd>
+                                <p>웹스퀘어 컴포넌트의 readOnly 속성을 설정. (웹스퀘어 컴포넌트 공통.)</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">readOnly</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">Boolean</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>readOnly 속성 활성화 여부. ( "true" : 활성화, "false" : 비활성화)</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// 컴포넌트의 readOnly 속성을 true로 설정하는 예.
+componentId.setReadOnly(true);</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="setSize">setSize(width, height)</dt>
+                            <dd>
+                                <p>웹스퀘어 컴포넌트의 크기(width, height)를 설정. (웹스퀘어 컴포넌트 공통.)</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">width</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">Number</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>새로 설정할 컴포넌트의 width 값 또는 null</p>
+                                            </div>
+                                        </li>
+                                    </ul><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">height</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">Number</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>새로 설정할 컴포넌트의 height 값 또는 null</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// (예제) 컴포넌트의 height만 100px로 설정.
+componentId.setSize(null,100);</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="setStyle">setStyle(propertyName, value)</dt>
+                            <dd>
+                                <p>웹스퀘어 컴포넌트의 CSS 속성을 설정. (웹스퀘어 컴포넌트 공통.)</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">propertyName</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>설정할 CSS 속성</p>
+                                            </div>
+                                        </li>
+                                    </ul><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">value</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>해당 CSS 속성에 적용할 값</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// (예제 1) 컴포넌트의 width를 200px로 설정
+componentId.setStyle("width", "200px");
+
+// (예제 2) 배경색을 olive로 변경
+componentId.setStyle("background-color","olive");</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="setSubDir">setSubDir(value)</dt>
+                            <dd>
+                                <p>subDir의 값을 새로 설정.</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">value</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>subDir속성에 새로 설정할 값</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'> upload1.setSubDir('subDir1');
+// websquare.xml에 정의된 subDir1의 위치로 업로드 위치를 설정.</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="setUserData">setUserData(key, value)</dt>
+                            <dd>
+                                <p>웹스퀘어 컴포넌트에 임의의 데이터를 설정. (웹스퀘어 컴포넌트 공통.) <br />컴포넌트에 설정 가능한 key를 입력해야 함. 설정 가능한 key가 아닌 경우, 해당 내용이 로그에 출력됨.</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">key</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>설정할 데이터의 key</p>
+                                            </div>
+                                        </li>
+                                    </ul><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">value</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>설정한 데이터의 value</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// 컴포넌트에 'data'라는 key로 'WebSquare'라는 value를 설정하는 예제.
+
+componentId.setUserData("data", "WebSquare");
+
+// 컴포넌트에 설정이 불가능한 key를 임력할 경우, key 설정이 불가능. 
+ 
+componentId.setUserData("title", "WebSquare");
+// 아래와 같이 로그가 출력됨. 
+// !!!WARNING - [title] can't be defined as UserData.</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="show">show(displayType)</dt>
+                            <dd>
+                                <p>웹스퀘어 컴포넌트를 화면에 표시. (웹스퀘어 컴포넌트 공통.)<br />CSS display 속성을 주어진 값으로 설정하고 "visibility: show;"를 적용.</p>
+                                <div class="api_tit_para">Parameter</div>
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// (예제) display: block; CSS를 설정.
+componentId.show();  
+
+// (예제) 위제 설정한 display 속성 값을 취소하고 원래의 display 값을 복구.
+componentId.show("");</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="submit">submit()</dt>
+                            <dd>
+                                <p>파일을 전송.</p>
+                                
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'> upload1.submit();
+ 파일을 업로드 한다.</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="toggleClass">toggleClass(className)</dt>
+                            <dd>
+                                <p>웹스퀘어 컴포넌트에서 특정 class를 제거하거나 추가. (웹스퀘어 컴포넌트 공통.)<br />웹스퀘어 컴포넌트가 파라미터로 주어진 class를 포함한 경우, 해당 class를 제거. <br />웹스퀘어 컴포넌트에 파라미터로 주어진 class가 없는 경우, 해당 class를 추가. <br />기본적으로 addClass를 통해 추가된 class만 삭제 가능. <br />웹스퀘어 컴포넌트의 속성으로 직접 정의된 class를 삭제하기 위해서는 config.xml 파일에 아래 설정을 추가. 
+<xmp  class='js sample'> // config.xml 파일에 아래 설정 추가
+ <style><removeDefaultClass value="true" /></style></xmp></p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">className</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>추가/삭제할 class</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// inputBox 컴포넌트에 class가 속성으로 직접 정의됨.
+<xf:input id="input1" style="position: relative;width: 144px;height: 21px;" class="tmpInputClass"></xf:input>
+
+//config.xml 파일에 아래를 추가.
+<style>
+    <removeDefaultClass value="true" />
+</style>
+
+// tmpInputClass class를 삭제.
+input1.toggleClass("tmpInputClass");
+
+// (위에서 삭제된) tmpInputClass class를 다시 추가.
+input1.toggleClass("tmpInputClass");</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="trigger">trigger(type, array)</dt>
+                            <dd>
+                                <p>컴포넌트에서 특정 이벤트를 발생시킴. (웹스퀘어 컴포넌트 공통.)</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">type</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>발생시킬 이벤트</p>
+                                            </div>
+                                        </li>
+                                    </ul><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">array</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">Array</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">N</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>이벤트 핸들러에 전달할 파라미터 배열</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// (예제 1)
+// input1 컴포넌트에 onclick 이벤트를 발생시킴.
+input1.trigger("onclick");
+
+// (예제 2)
+// input1에 onviewchange 이벤트를 발생시키고 핸들러 함수에 (1,2) 인자를 전달하여 호출.
+input1.trigger("onviewchange", [1,2]);</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="unbind">unbind(type, function)</dt>
+                            <dd>
+                                <p>컴포넌트에서 이벤트를 제거. (웹스퀘어 컴포넌트 공통.)</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">type</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">N</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>제거할 이벤트. (생략할 경우 해당 컴포넌트의 모든 이벤트를 제거.)</p>
+                                            </div>
+                                        </li>
+                                    </ul><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">function</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">Function</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">N</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>제거할 이벤트의 핸들러 함수. (생략할 경우 해당 위에 지정한 이벤트에 등록된 모든 핸들러 함수를 제거.)</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// (예제 1)
+// input1에 등록된 모든 이벤트를 제거.
+input1.unbind();
+
+// (예제 2)
+// input1의 onviewchange 이벤트에 대한 모든 핸들러 함수를 제거.
+input1.unbind("onviewchange");
+
+// (예제 3)
+// input1의 onviewchange 이벤트에 대한 func1 이벤트 핸들러 함수를 제거.
+input1.unbind("onviewchange", func1);</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="visible">visible(flag)</dt>
+                            <dd>
+                                <p>[deprecated] <br />show/hide 혹은 setStyle 사용을 권장.<br />엔진 내부적으로 CSS visibility 속성을 설정.</p>
+                                <div class="api_tit_para">Parameter</div>
+                                
+                                
+                            </dd>
+                        </dl>
+                        
+                        </section>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </body>
+    </html>

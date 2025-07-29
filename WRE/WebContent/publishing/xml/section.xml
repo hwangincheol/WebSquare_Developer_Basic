@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+        <w2:type>COMPONENT</w2:type>
+        <w2:buildDate/>
+        <w2:MSA/>
+        <xf:model>
+            <w2:dataCollection baseNode="map"/>
+            <w2:workflowCollection/>
+        </xf:model>
+        <w2:layoutInfo/>
+        <w2:publicInfo method=""/>
+        <script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function() {
+	
+};
+]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload">
+    	<xf:group class="sub_contents" id="" style="">
+			<xf:group class="pgtbox" id="" style="">
+				<w2:textbox class="pgt_tit" id="" label="Publishing Template - Section" style=""></w2:textbox>
+			</xf:group>
+			<xf:group id="" class="titbox"><w2:textbox style="" id="" label="문서에서 콘텐츠 영역을 나타냅니다." class="txt_guide"></w2:textbox></xf:group><xf:group class="titbox" id="" style="">
+				<w2:textbox class="" id="" label="01. Sample" style="" tagname="h3"></w2:textbox>
+			</xf:group>
+
+			<xf:group style="" id="" class="msgbox">
+				<xf:group adaptive="" class="lybox_h5" id="" style="">
+					<header id="" style="">
+						<w2:textbox id="" label="header" style="" tagname="p"></w2:textbox>
+					</header>
+					<nav id="" style="">
+						<w2:textbox id="" label="navigation" style="" tagname="p"></w2:textbox>
+					</nav>
+					<aside id="" style="">
+						<w2:textbox id="" label="aside" style="" tagname="p"></w2:textbox>
+					</aside>
+					<section id="" style="border:2px dashed #36aeea;">
+						<w2:textbox id="" label="section" style="" tagname="p"></w2:textbox>
+						<article id="" style="">
+							<w2:textbox id="" label="article" style="" tagname="p"></w2:textbox>
+						</article>
+					</section>
+					<footer id="" style="">
+						<w2:textbox id="" label="footer" style="" tagname="p"></w2:textbox>
+					</footer>
+				</xf:group>
+			</xf:group>
+			<xf:group id="" class="titbox"><w2:textbox tagname="h3" style="" id="" label="02. Property" class=""></w2:textbox></xf:group>
+			<xf:group id="" class="tblbox"><xf:group tagname="table" style="" id="" class="wq_tb w2tb tbl">
+				<w2:attributes>
+					<w2:summary></w2:summary>
+				</w2:attributes>
+				<xf:group tagname="colgroup">
+					<xf:group tagname="col" style="width:20%;"></xf:group>
+					<xf:group tagname="col" style=""></xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">Property</xf:group>
+					<xf:group tagname="th" style="" class="w2tb_th">Description</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">id</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">컴포넌트의 ID로 전역객체로 할당되며 script에서 본 id로 컴포넌트에 접근이 가능합니다.</xf:group>
+				</xf:group>
+			</xf:group></xf:group><xf:group adaptiveThreshold="" class="msgbox" id="" style="">
+				<xf:group id="" class="titbox"><w2:textbox tagname="h4" style="" id="" label="Tip" class=""></w2:textbox></xf:group><w2:textbox class="txt_info" id="" label='html5에 추가 요소로서 웹스퀘어에서 컴포넌트 별도의 속성이 없으며 필요할 경우 Attribute Add로 버튼으로 속성을 추가해 줍니다.'
+					style="">
+				</w2:textbox>
+			</xf:group>
+
+		</xf:group>
+	</body>
+</html>

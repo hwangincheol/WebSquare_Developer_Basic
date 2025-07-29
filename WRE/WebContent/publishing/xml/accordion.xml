@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+        <w2:type>COMPONENT</w2:type>
+        <w2:buildDate/>
+        <w2:MSA/>
+        <xf:model>
+            <w2:dataCollection baseNode="map"/>
+            <w2:workflowCollection/>
+        </xf:model>
+        <w2:layoutInfo/>
+        <w2:publicInfo method=""/>
+        <script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function() {
+	
+};
+]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload">
+    	<xf:group class="sub_contents" id="" style="">
+			<xf:group class="pgtbox" id="" style="">
+				<w2:textbox class="pgt_tit" id="" label='Publishing Template - Accordion' style=""></w2:textbox>
+			</xf:group>
+			<xf:group id="" class="titbox"><w2:textbox style="" id="" label="accordion의 id를 지정하고 속성들을 정의합니다." class=""></w2:textbox></xf:group>
+			<xf:group class="titbox" id="" style="">
+				<w2:textbox class="" id="" label="01. Sample" style="" tagname="h3"></w2:textbox>
+				<xf:group class="rt" id="" style="">
+					<w2:anchor class="btn_cm" href="/ws/download/Accordion.zip" id="" name="" outerDiv="false" style="">
+						<xf:label><![CDATA[Download]]></xf:label>
+					</w2:anchor>
+				</xf:group>
+			</xf:group>
+			<xf:group adaptiveThreshold="" class="msgbox" id="" style="border:1px dashed #ccc">
+				<w2:accordion id="" collapseAll="" style="" collapsible="" class="" selectedPanel="" titleDivTag="">
+					<w2:panels id="panels1" style="" class="">
+						<w2:panelTitle id="panelTitle1" style="" class="" label="Title01"></w2:panelTitle>
+						<w2:panelContent id="panelContent1" style="height:150px;" class="">
+							<xf:group id="" style="padding:10px;">
+								<w2:textbox id="" style="" label="panelContent1"></w2:textbox>
+							</xf:group>
+						</w2:panelContent>
+					</w2:panels>
+					<w2:panels id="panels2" style="" class="">
+						<w2:panelTitle id="panelTitle2" style="" class="" label="Title02"></w2:panelTitle>
+						<w2:panelContent id="panelContent2" style="height:150px;" class="">
+							<xf:group id="" style="padding:10px;">
+								<w2:textbox id="" style="" label="panelContent2"></w2:textbox>
+							</xf:group>
+						</w2:panelContent>
+					</w2:panels>
+					<w2:panels id="panels3" style="" class="">
+						<w2:panelTitle id="panelTitle3" style="" class="" label="Title03"></w2:panelTitle>
+						<w2:panelContent id="panelContent3" style="height:150px;" class="">
+							<xf:group id="" style="padding:10px;">
+								<w2:textbox id="" style="" label="panelContent3"></w2:textbox>
+							</xf:group>
+						</w2:panelContent>
+					</w2:panels>
+				</w2:accordion>
+			</xf:group>
+			<xf:group id="" class="titbox"><w2:textbox style="" id="" label="02. Property" class="" tagname="h3"></w2:textbox></xf:group>
+			<xf:group id="" class="tblbox"><xf:group tagname="table" style="" id="" class="w2tb tbl">
+				<w2:attributes>
+					<w2:summary></w2:summary>
+				</w2:attributes>
+				<xf:group tagname="colgroup">
+					<xf:group tagname="col" style="width:20%;"></xf:group>
+					<xf:group tagname="col" style=""></xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">Property</xf:group>
+					<xf:group tagname="th" style="" class="w2tb_th">Description</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">class</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						HTML의&amp;nbsp;class속성과&amp;nbsp;동일한&amp;nbsp;기능을&amp;nbsp;제공하며&amp;nbsp;css파일&amp;nbsp;또는&amp;nbsp;style블럭에&amp;nbsp;정의&amp;nbsp;한&amp;nbsp;class를&amp;nbsp;1개&amp;nbsp;또는&amp;nbsp;공백(space)를&amp;nbsp;이용하여&amp;nbsp;다중&amp;nbsp;적용이&amp;nbsp;가능하다.&amp;nbsp;&amp;nbsp;&amp;nbsp;기본적으로&amp;nbsp;엔진&amp;nbsp;내부에서&amp;nbsp;각&amp;nbsp;컴포넌트&amp;nbsp;마다의&amp;nbsp;class를&amp;nbsp;적용하고&amp;nbsp;있으며&amp;nbsp;해당&amp;nbsp;class를&amp;nbsp;이용하여&amp;nbsp;컴포넌트의&amp;nbsp;css를&amp;nbsp;공통으로&amp;nbsp;적용&amp;nbsp;할&amp;nbsp;수&amp;nbsp;있다.
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">collapseAll</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						[default:true,&amp;nbsp;false]accordion&amp;nbsp;처음&amp;nbsp;로딩&amp;nbsp;시&amp;nbsp;모든&amp;nbsp;panel이&amp;nbsp;닫혀있도록&amp;nbsp;설정한다.
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">collapsible</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						panel&amp;nbsp;title&amp;nbsp;click시&amp;nbsp;panel이&amp;nbsp;닫힐&amp;nbsp;수&amp;nbsp;있도록&amp;nbsp;설정한다.
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">id</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						컴포넌트의&amp;nbsp;ID로&amp;nbsp;전역객체로&amp;nbsp;할당되며&amp;nbsp;script에서&amp;nbsp;본&amp;nbsp;id로&amp;nbsp;컴포넌트에&amp;nbsp;접근이&amp;nbsp;가능하다.
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">selectedPanel</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						panel&amp;nbsp;id를&amp;nbsp;입력받아&amp;nbsp;맨&amp;nbsp;처음&amp;nbsp;열릴&amp;nbsp;panel을&amp;nbsp;설정한다.
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th">
+						tabIndex
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						Tab&amp;nbsp;Key를&amp;nbsp;이용&amp;nbsp;한&amp;nbsp;컴포넌트의&amp;nbsp;포커스&amp;nbsp;순서로&amp;nbsp;HTML의&amp;nbsp;tabindex속성과&amp;nbsp;동일한&amp;nbsp;기능을&amp;nbsp;제공한다.
+						<w2:attributes></w2:attributes>
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">titleDivTag</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						accordion&amp;nbsp;처음&amp;nbsp;로딩&amp;nbsp;시&amp;nbsp;모든&amp;nbsp;panel의&amp;nbsp;title영역&amp;nbsp;태그를&amp;nbsp;div로&amp;nbsp;변경한다.
+					</xf:group>
+				</xf:group>
+			</xf:group></xf:group>
+			<xf:group id="" class="titbox"><w2:textbox style="" id="" label="03. CSS Overriding" class="" tagname="h3"></w2:textbox></xf:group>
+			<xf:group id="" class="tblbox"><xf:group tagname="table" style="" id="" class="w2tb tbl">
+				<w2:attributes>
+					<w2:summary></w2:summary>
+				</w2:attributes>
+				<xf:group tagname="colgroup">
+					<xf:group tagname="col" style="width:20%;"></xf:group>
+					<xf:group tagname="col" style=""></xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">Class</xf:group>
+					<xf:group tagname="th" style="" class="w2tb_th">Description</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">w2accordion</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						w2accordion은&amp;nbsp;웹스퀘어&amp;nbsp;엔진에서&amp;nbsp;정의된&amp;nbsp;클래스입니다,&amp;nbsp;브라우저가&amp;nbsp;파싱할때&amp;nbsp;자동으로&amp;nbsp;부여돼는&amp;nbsp;클래스&amp;nbsp;입니다.&amp;nbsp;
+						<br></br>
+						accordion전체를&amp;nbsp;감싸는&amp;nbsp;그룹&amp;nbsp;입니다.
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">w2panels</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						accordion&amp;nbsp;panel을&amp;nbsp;감싸는&amp;nbsp;그룹&amp;nbsp;입니다.
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th">
+						w2panels_title
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						accordion&amp;nbsp;title&amp;nbsp;영역&amp;nbsp;입니다.
+						<w2:attributes></w2:attributes>
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th">
+						w2panels_content_closed
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						accordion이&amp;nbsp;닫혔을때&amp;nbsp;지정할&amp;nbsp;수&amp;nbsp;있는&amp;nbsp;클래스&amp;nbsp;입니다.
+						<w2:attributes></w2:attributes>
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th">
+						w2panels_content_open
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						accordion이&amp;nbsp;열렸을때&amp;nbsp;지정할&amp;nbsp;수&amp;nbsp;있는&amp;nbsp;클래스&amp;nbsp;입니다.
+						<w2:attributes></w2:attributes>
+					</xf:group>
+				</xf:group>
+			</xf:group></xf:group>
+		</xf:group>
+    </body>
+</html>

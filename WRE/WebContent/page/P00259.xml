@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:w2="http://www.inswave.com/websquare"
+	xmlns:xf="http://www.w3.org/2002/xforms">
+	<head>
+		<w2:historyInfo>
+			<w2:history meta_no="01" meta_desc="최초작성" meta_date="20230417" meta_user="InswaveSystems" ></w2:history>
+		</w2:historyInfo>
+		<w2:type>COMPONENT</w2:type>
+		<w2:buildDate />
+		<w2:MSA />
+		<xf:model>
+			<w2:dataCollection baseNode="map">
+				<w2:dataList baseNode="list" repeatNode="map" id="dlt_dataList1" saveRemovedData="true">
+					<w2:columnInfo>
+						<w2:column id="Code" name="name1" dataType="text"></w2:column>
+						<w2:column id="City" name="name2" dataType="text"></w2:column>
+						<w2:column id="Country" name="name3" dataType="text"></w2:column>
+						<w2:column id="Type" name="name4" dataType="text"></w2:column>
+					</w2:columnInfo>
+				</w2:dataList>
+			</w2:dataCollection>
+			<w2:workflowCollection />
+		</xf:model>
+		<w2:layoutInfo />
+		<w2:publicInfo method="" />
+		<script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function () {
+
+};
+
+/**
+ * 버튼 [ 선택 목록에 "Paris" 설정하기 ] 클릭 시
+ */
+scwin.btn_ex1_onclick = function (e) {
+    // SelectBox 'sbx_exam1'에 "Paris"라는 데이터를 세팅합니다.
+    sbx_exam1.setValue("Paris");
+};
+
+/**
+ * 버튼 [ 선택 목록에 "New York" 설정하기 ] 클릭 시
+ */
+scwin.btn_ex2_onclick = function (e) {
+    // SelectBox 'sbx_exam2'에 "New York"라는 데이터를 세팅합니다.
+    sbx_exam2.setValue("New York");
+};
+
+/**
+ * 버튼 [ 선택 목록에 "London" 설정하기 ] 클릭 시
+ */
+scwin.btn_ex3_onclick = function (e) {
+    // SelectBox 'sbx_exam3'에 "London"라는 데이터를 세팅합니다.
+    sbx_exam3.setValue("London");
+
+    // SelectBox 'sbx_exam3'에 표시되고 있는 항목의 인덱스를 반환합니다.
+    let index = sbx_exam3.getSelectedIndex();
+    alert("인덱스 값은 : " + index + " 입니다.");
+};]]></script>
+	</head>
+	<body ev:onpageload="scwin.onpageload">
+		<xf:group class="sub_contents" id="" style="">
+			<xf:group class="ws_example_grp_desc" id="" style="">
+				<w2:textbox escape="false" id=""
+					label='setValue() 함수로 설정하는 값이 선택 항목 목록 에 없는 경우, 처리 방법을 설정하는 예제입니다.&lt;br/&gt;&lt;br/&gt;이 기능은 아래의 속성과 함수로 사용할 수 있습니다.&lt;br/&gt;- valueNotInList : (속성)설정된 DataList의 목록에 없는 값을 set하는 경우에 대한 처리방식 설정.&lt;br/&gt;- emptyItem : (속성)선택 항목에 없는 value나 index가 동적으로 설정하는 경우 빈 값으로 label과 value를 설정.&lt;br/&gt;- setValue : (함수)파라메터로 넘어온 값에 해당하는 선택 항목을 선택.&lt;br/&gt;- getSelectedIndex : (함수)선택된 항목의 인덱스를 반환.'
+					style="">
+				</w2:textbox>
+			</xf:group>
+			<xf:group class="example_div_tb_style_wrap" id="">
+				<xf:group class="example_div_tr_style" id="" style="">
+					<w2:textbox class="example_div_th_style" escape="false" id="" label="선택 항목 목록에 없는 값은 무시하기" style=""></w2:textbox>
+					<xf:group class="example_div_td_style" id="" style="">
+						<w2:textbox class="ws5_example_txt_normal" escape="false" id=""
+							label='setValue함수에서 설정하는 값(Paris)이 SelectBox컴포넌트의 선택 목록에 없을 경우, 값을 무시합니다.' style="" displayFormat="">
+						</w2:textbox>
+						<xf:group id="" style="margin: 10px 0px 10px 0px;">
+							<xf:trigger class="btn_exam_exec btn_txt_of" ev:onclick="scwin.btn_ex1_onclick" id="btn_ex1" localeRef=""
+								style="min-width: 30px;height: 26px;" type="" useDefaultLabel="true">
+								<xf:label><![CDATA[선택 목록에 "Paris" 설정하기]]></xf:label>
+							</xf:trigger>
+						</xf:group>
+						<xf:select1 id="sbx_exam1" chooseOption="" style="width: 148px;height: 21px;" submenuSize="auto" allOption=""
+							disabled="false" direction="auto" appearance="minimal" disabledClass="w2selectbox_disabled" ref="" valueNotInList="default"
+							emptyItem="true">
+							<xf:choices>
+								<xf:item>
+									<xf:label><![CDATA[Seoul]]></xf:label>
+									<xf:value><![CDATA[1]]></xf:value>
+								</xf:item>
+								<xf:item>
+									<xf:label><![CDATA[Busan]]></xf:label>
+									<xf:value><![CDATA[2]]></xf:value>
+								</xf:item>
+								<xf:item>
+									<xf:label><![CDATA[Daegu]]></xf:label>
+									<xf:value><![CDATA[3]]></xf:value>
+								</xf:item>
+								<xf:item>
+									<xf:label><![CDATA[Jeju]]></xf:label>
+									<xf:value><![CDATA[4]]></xf:value>
+								</xf:item>
+							</xf:choices>
+						</xf:select1>
+					</xf:group>
+					<w2:textbox class="example_div_th_style" escape="false" id="" label="목록의 첫번째 항목을 표시하기" style=""></w2:textbox>
+					<xf:group class="example_div_td_style" id="" style="">
+						<w2:textbox class="ws5_example_txt_normal" escape="false" id=""
+							label="setValue함수에서 설정하는 값(New Yokr)이 SelectBox컴포넌트의 선택 목록에 없을 경우, 가장 첫번째 항목을 표시합니다." style="" displayFormat="">
+						</w2:textbox>
+						<xf:group id="" style="margin: 10px 0px 10px 0px;">
+							<xf:trigger class="btn_exam_exec btn_txt_of" ev:onclick="scwin.btn_ex2_onclick" id="btn_ex2" localeRef=""
+								style="min-width: 30px;height: 26px;" type="" useDefaultLabel="true">
+								<xf:label><![CDATA[선택 목록에 "New York" 설정하기]]></xf:label>
+							</xf:trigger>
+						</xf:group>
+						<xf:select1 id="sbx_exam2" chooseOption="" style="width: 148px;height: 21px;" submenuSize="auto" allOption=""
+							disabled="false" direction="auto" appearance="minimal" disabledClass="w2selectbox_disabled" ref="" valueNotInList="default"
+							emptyItem="false">
+							<xf:choices>
+								<xf:item>
+									<xf:label><![CDATA[Seoul]]></xf:label>
+									<xf:value><![CDATA[1]]></xf:value>
+								</xf:item>
+								<xf:item>
+									<xf:label><![CDATA[Busan]]></xf:label>
+									<xf:value><![CDATA[2]]></xf:value>
+								</xf:item>
+								<xf:item>
+									<xf:label><![CDATA[Daegu]]></xf:label>
+									<xf:value><![CDATA[3]]></xf:value>
+								</xf:item>
+								<xf:item>
+									<xf:label><![CDATA[Jeju]]></xf:label>
+									<xf:value><![CDATA[4]]></xf:value>
+								</xf:item>
+							</xf:choices>
+						</xf:select1>
+					</xf:group>
+					<w2:textbox class="example_div_th_style" escape="false" id="" label="선택 항목 목록에 없는 값을 유지하기" style=""></w2:textbox>
+					<xf:group class="example_div_td_style" id="" style="">
+						<w2:textbox class="ws5_example_txt_normal" displayFormat="" escape="false" id=""
+							label="setValue함수에서 설정하는 값(London)이 SelectBox컴포넌트의 선택 목록에 없을 경우, 설정하는 값을 유지합니다." style="">
+						</w2:textbox>
+						<xf:group id="" style="margin: 10px 0px 10px 0px;">
+							<xf:trigger class="btn_exam_exec btn_txt_of" ev:onclick="scwin.btn_ex3_onclick" id="btn_ex3" localeRef=""
+								style="min-width: 30px;height: 26px;" type="" useDefaultLabel="true">
+								<xf:label><![CDATA[선택 목록에 "London" 설정하기]]></xf:label>
+							</xf:trigger>
+						</xf:group>
+						<xf:select1 id="sbx_exam3" chooseOption="" style="width: 148px;height: 21px;" submenuSize="auto" allOption=""
+							disabled="false" direction="auto" appearance="minimal" disabledClass="w2selectbox_disabled" ref="" valueNotInList="keepValue">
+							<xf:choices>
+								<xf:item>
+									<xf:label><![CDATA[Seoul]]></xf:label>
+									<xf:value><![CDATA[1]]></xf:value>
+								</xf:item>
+								<xf:item>
+									<xf:label><![CDATA[Busan]]></xf:label>
+									<xf:value><![CDATA[2]]></xf:value>
+								</xf:item>
+								<xf:item>
+									<xf:label><![CDATA[Daegu]]></xf:label>
+									<xf:value><![CDATA[3]]></xf:value>
+								</xf:item>
+								<xf:item>
+									<xf:label><![CDATA[Jeju]]></xf:label>
+									<xf:value><![CDATA[4]]></xf:value>
+								</xf:item>
+							</xf:choices>
+						</xf:select1>
+					</xf:group>
+				</xf:group>
+			</xf:group>
+		</xf:group>
+	</body>
+</html>

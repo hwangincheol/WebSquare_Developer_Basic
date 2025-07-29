@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:w2="http://www.inswave.com/websquare"
+	xmlns:xf="http://www.w3.org/2002/xforms">
+	<head>
+		<w2:historyInfo>
+			<w2:history meta_no="01" meta_desc="최초작성" meta_date="20230321" meta_user="InswaveSystems" ></w2:history>
+		</w2:historyInfo>
+		<w2:type>COMPONENT</w2:type>
+		<w2:buildDate />
+		<w2:MSA />
+		<xf:model>
+			<w2:dataCollection baseNode="map">
+				<w2:dataList baseNode="list" repeatNode="map" id="dlt_dataList1" saveRemovedData="true">
+					<w2:columnInfo>
+						<w2:column id="name" name="name1" dataType="text"></w2:column>
+						<w2:column id="Code" name="name2" dataType="text"></w2:column>
+					</w2:columnInfo>
+					<w2:data use="true">
+						<w2:row>
+							<name><![CDATA[Seoul]]></name>
+							<Code><![CDATA[SE]]></Code>
+						</w2:row>
+						<w2:row>
+							<name><![CDATA[Busan]]></name>
+							<Code><![CDATA[BU]]></Code>
+						</w2:row>
+						<w2:row>
+							<name><![CDATA[Tokyo]]></name>
+							<Code><![CDATA[TO]]></Code>
+						</w2:row>
+						<w2:row>
+							<name><![CDATA[Osaka]]></name>
+							<Code><![CDATA[OS]]></Code>
+						</w2:row>
+						<w2:row>
+							<name><![CDATA[Beijing]]></name>
+							<Code><![CDATA[BJ]]></Code>
+						</w2:row>
+						<w2:row>
+							<name><![CDATA[Shanghai]]></name>
+							<Code><![CDATA[SG]]></Code>
+						</w2:row>
+					</w2:data>
+				</w2:dataList>
+			</w2:dataCollection>
+			<w2:workflowCollection />
+		</xf:model>
+		<w2:layoutInfo />
+		<w2:publicInfo method="" />
+		<script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function () {
+
+};
+]]></script>
+	</head>
+	<body ev:onpageload="scwin.onpageload">
+		<xf:group class="sub_contents" id="" style="">
+			<xf:group class="ws_example_grp_desc" id="" style="">
+				<w2:textbox escape="false" id=""
+					label='SelectBox컴포넌트의 선택 항목을 표시하는 방법에 관한 예제입니다.&lt;br/&gt;&lt;br/&gt;이 기능은 아래의 속성으로 사용할 수 있습니다.&lt;br/&gt;- displayMode : 선택 항목의 표현 방법.&lt;br/&gt;- delimeter : 선택 항목 목록에 value와 label을 함께 표시할 때 사용하는 구분자.'
+					style="">
+				</w2:textbox>
+			</xf:group>
+			<xf:group class="example_div_tb_style_wrap" id="">
+				<xf:group class="example_div_tr_style" id="" style="">
+					<w2:textbox class="example_div_th_style" escape="false" id="" label="label 형태로 표시하기" style=""></w2:textbox>
+					<xf:group class="example_div_td_style" id="" style="">
+						<w2:textbox class="ws5_example_txt_normal" escape="false" id=""
+							label='SelectBox컴포넌트와 바인딩되어 있는 DataList의 label 값으로 항목을 표시합니다.' style="" displayFormat="">
+						</w2:textbox>
+						<xf:select1 id="sbx_exam1" chooseOption="" style="width: 148px;height: 21px;" submenuSize="auto" allOption=""
+							disabled="false" direction="auto" appearance="minimal" disabledClass="w2selectbox_disabled" ref="" displayMode="label">
+							<xf:choices>
+								<xf:itemset nodeset="data:dlt_dataList1">
+									<xf:label ref="name"></xf:label>
+									<xf:value ref="Code"></xf:value>
+								</xf:itemset>
+							</xf:choices>
+						</xf:select1>
+					</xf:group>
+					<w2:textbox class="example_div_th_style" escape="false" id="" label="value 형태로 표시하기" style=""></w2:textbox>
+					<xf:group class="example_div_td_style" id="" style="">
+						<w2:textbox class="ws5_example_txt_normal" escape="false" id=""
+							label='SelectBox컴포넌트와 바인딩되어 있는 DataList의 value 값으로 항목을 표시합니다.' style="" displayFormat="">
+						</w2:textbox>
+						<xf:select1 id="sbx_exam2" chooseOption="" style="width: 148px;height: 21px;" submenuSize="auto" allOption=""
+							disabled="false" direction="auto" appearance="minimal" disabledClass="w2selectbox_disabled" ref="" displayMode="value">
+							<xf:choices>
+								<xf:itemset nodeset="data:dlt_dataList1">
+									<xf:label ref="name"></xf:label>
+									<xf:value ref="Code"></xf:value>
+								</xf:itemset>
+							</xf:choices>
+						</xf:select1>
+					</xf:group>
+					<w2:textbox class="example_div_th_style" escape="false" id="" label="label 구분자 value 형태로 표시하기" style=""></w2:textbox>
+					<xf:group class="example_div_td_style" id="" style="">
+						<w2:textbox class="ws5_example_txt_normal" escape="false" id=""
+							label='SelectBox컴포넌트와 바인딩되어 있는 DataList의 label과 value 값을 label (구분자) value 형태로 표시합니다.' style="" displayFormat="">
+						</w2:textbox>
+						<xf:select1 id="sbx_exam3" chooseOption="" style="width: 148px;height: 21px;" submenuSize="auto" allOption=""
+							disabled="false" direction="auto" appearance="minimal" disabledClass="w2selectbox_disabled" ref="" displayMode="label delim value"
+							delimiter=" - ">
+							<xf:choices>
+								<xf:itemset nodeset="data:dlt_dataList1">
+									<xf:label ref="name"></xf:label>
+									<xf:value ref="Code"></xf:value>
+								</xf:itemset>
+							</xf:choices>
+						</xf:select1>
+					</xf:group>
+					<w2:textbox class="example_div_th_style" escape="false" id="" label="value 구분자 label 형태로 표시하기" style=""></w2:textbox>
+					<xf:group class="example_div_td_style" id="" style="">
+						<w2:textbox class="ws5_example_txt_normal" escape="false" id=""
+							label='SelectBox컴포넌트와 바인딩되어 있는 DataList의 label과 value 값을 value (구분자) label 형태로 표시합니다.' style="" displayFormat="">
+						</w2:textbox>
+						<xf:group id="" style="margin: 10px 0px 10px 0px;"></xf:group>
+						<xf:select1 allOption="" appearance="minimal" chooseOption="" direction="auto" disabled="false"
+							disabledClass="w2selectbox_disabled" id="sbx_exam4" ref="" style="width: 148px;height: 21px;" submenuSize="auto" delimiter=" $$$ "
+							displayMode="value delim label">
+							<xf:choices>
+								<xf:itemset nodeset="data:dlt_dataList1">
+									<xf:label ref="name"></xf:label>
+									<xf:value ref="Code"></xf:value>
+								</xf:itemset>
+							</xf:choices>
+						</xf:select1>
+					</xf:group>
+				</xf:group>
+				<xf:group class="example_div_tr_style" id="" style="">
+				</xf:group>
+			</xf:group>
+		</xf:group>
+	</body>
+</html>

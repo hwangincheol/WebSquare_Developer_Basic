@@ -1,0 +1,596 @@
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="../cm/css/api.css">
+    </head>
+    <body>
+        <div class="api_wrap">
+            <div class="api_wrap_inner">
+                <div class="api_container">
+                    <div class="api_content">
+                        <header class="api_header">
+                            <p class="api_component">WebSquare.bigDecimal</p>
+                            <p class="api_version">5.0_5.5005A.20230904.185702</p>
+                            <p>String 문자열을 받아 bigDecimal 타입으로 반환.
+ JavaScript에서 10^22 이상인 정수와 10^(-7) 이하인 소수는 지수 형태로 강제 치환되고 15자리 이하의 소수점은 자동으로 버려짐.  
+ 이를 보완하기 위해 String 문자열을 받아 bigDecimal 타입으로 반환하는 기능을 제공. 
+ WebSquare.bigDecimal.calc는 String 문자열 연산식을 받아 bigDecimal 연산을 수행.
+ bigDecimal을 사용하려면 config.xml 파일의 engine 노드에 &lt;module src="externalJS/big/big.min.js"/&gt 설정해야 함.</p>
+                        </header>
+                        <section class="properties_section">
+                            <h2>Property Detail</h2>
+                            
+                        </section>
+                        <section class="event_section">
+                            <h2>Event Detail</h2>
+                            
+                        </section>
+                        <section class="method_section">
+                            <h2>Method Detail</h2>
+                            <dl class="api_dl">
+                            <dt id="">(bigStr)</dt>
+                            <dd>
+                                <p>String 문자열을 받아 bigDecimal 타입으로 반환합니다.<br />number 형식을 직접적으로 넣으면 안됩니다. 반드시 String 문자열로 인자를 전달하여야 합니다.</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">bigStr</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>숫자를 문자열로 표현한 데이터</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+              <div class="api_tit_para">Return</div>
+                  <div class="api_parameter">
+                      <ul class="api_ul_parameter">
+                          <li>
+                              <div class="tit">Type</div>
+                              <div class="cnt">Object</div>
+                          </li>
+                          <li class="api_desc">
+                              <div class="tit">Description</div>
+                              <div class="cnt">bigDecimal 타입 데이터</div>
+                          </li>
+                    </ul>
+              </div>
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>var a = WebSquare.bigDecimal("123456789012345678901234567890"); //a : 30자리 숫자 bigDecimal 데이터
+console.log(a.toString());
+var b = WebSquare.bigDecimal(123456789012345678901234567890); //잘못된 인자 전달. 반드시 문자열로 넘겨야 함.
+console.log(b.toString());</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="calc">calc(expression)</dt>
+                            <dd>
+                                <p>expression(연산식)을 입력받아 bigDecimal 연산을 수행한다. (a+b*c와 같은 형태) <br />expression에 사용되는 operand(피연산자)는 bigDecimal type이거나 bigDecimal로 치환할 수 있는 type이어야 한다.<br />SP4 이상에서는 $p.bigDecimal.calc(); 형태로 호출해야 올바로 동작한다. WebSquare.bigDecimal.calc로 호출하면 올바로 동작하지 않을 수 있다.</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">expression</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>연산식</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+              <div class="api_tit_para">Return</div>
+                  <div class="api_parameter">
+                      <ul class="api_ul_parameter">
+                          <li>
+                              <div class="tit">Type</div>
+                              <div class="cnt">Object</div>
+                          </li>
+                          <li class="api_desc">
+                              <div class="tit">Description</div>
+                              <div class="cnt">연산 결과를 bigDecimal로 반환.</div>
+                          </li>
+                    </ul>
+              </div>
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// (예제1)
+var a = $p.bigDecimal("123456789012345678901234567890"); 
+var b = $p.bigDecimal("111111111111111111111111111111");
+var c = $p.bigDecimal("678901234567890123456789012345");
+var d = $p.bigDecimal("345678934567893456789345678934");
+var ret = $p.bigDecimal.calc("a + b c + (d - a) / (c + d)"); 
+input1.setValue(ret); 
+//연산결과가 input1에 올바르게 표현됨.
+
+// (예제2)
+var a = $p.bigDecimal("1234");
+var b = 3000;
+var ret = $p.bigDecimal.calc ("a+b*b-b/(a+b)"); 
+// Number + bigDecimal 연산도 가능함. 단 Number는 17자리 이하여야 함.
+ 
+// (예제3)
+var a = "abcd"; // NaN
+var b = $p.bigDecimal("200");
+var ret = $p.bigDecimal.calc("a + b");
+input2.setValue(ret); 
+// 연산결과는 NaN 데이터를 나타내는 bigDecimal 타입. 숫자 타입이 아닌 데이터와 연산하면 전부 NaN이 반환됨.</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="compare">compare(data, type)</dt>
+                            <dd>
+                                <p>type이 true 인 경우, 입력받은 bigDecimal과 비교하여 더 작은 수를 반환한다.<br />type이 false 이거나 undifined 인 경우, 입력받은 bigDecimal과 비교하여 더 큰 수를 반환한다.</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">data</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">Object</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>비교 대상 bigDecimal 데이터</p>
+                                            </div>
+                                        </li>
+                                    </ul><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">type</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">Boolean</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">N</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>비교 방법 (true - 큰 수 반환, false - 작은 수 반환)</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+              <div class="api_tit_para">Return</div>
+                  <div class="api_parameter">
+                      <ul class="api_ul_parameter">
+                          <li>
+                              <div class="tit">Type</div>
+                              <div class="cnt">Object</div>
+                          </li>
+                          <li class="api_desc">
+                              <div class="tit">Description</div>
+                              <div class="cnt">type에 따라 비교한 값들중 더 큰 수, 더 작은 수의 bigDecimal값을 반환한다.</div>
+                          </li>
+                    </ul>
+              </div>
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>
+// 최대값 구하기
+var a = WebSquare.bigDecimal("111111111111111111111111111111");
+var b = WebSquare.bigDecimal("11111");
+
+var result = a.compare(b); 
+var result = a.compare(b,false);
+var result = a.compare(b,0);
+console.log(result.toString()); //result = WebSquare.bigDecimal("111111111111111111111111111111");
+
+// 최소값 구하기
+var a = WebSquare.bigDecimal("111111111111111111111111111111");
+var b = WebSquare.bigDecimal("11111");
+
+var result = a.compare(b,true); 
+var result = a.compare(b,1);
+console.log(result.toString()); //result = WebSquare.bigDecimal("11111");
+</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="divide">divide(bigDecimal)</dt>
+                            <dd>
+                                <p>bigDecimal 타입의 데이터를 나누는 함수</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">bigDecimal</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">Object</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>나눗셈을 수행할 bigDecimal 데이터</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+              <div class="api_tit_para">Return</div>
+                  <div class="api_parameter">
+                      <ul class="api_ul_parameter">
+                          <li>
+                              <div class="tit">Type</div>
+                              <div class="cnt">Object</div>
+                          </li>
+                          <li class="api_desc">
+                              <div class="tit">Description</div>
+                              <div class="cnt">나눗셈을 수행한 bigDecimal타입의 결과값</div>
+                          </li>
+                    </ul>
+              </div>
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>var a = WebSquare.bigDecimal("111111111111111");
+var b = WebSquare.bigDecimal("222222222222222");
+var c = WebSquare.bigDecimal("0");
+var result = a.divide(b);
+console.log(result.toString());
+var result2 = a.divide(c); //0으로 나눌경우 NaN을 표현하는 bigDecimal 데이터를 반환합니다.
+console.log(result2.toString());</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="minus">minus(bigDecimal)</dt>
+                            <dd>
+                                <p>bigDecimal 타입의 데이터를 빼는 함수</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">bigDecimal</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">Object</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>뺄셈을 수행할 bigDecimal 데이터</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+              <div class="api_tit_para">Return</div>
+                  <div class="api_parameter">
+                      <ul class="api_ul_parameter">
+                          <li>
+                              <div class="tit">Type</div>
+                              <div class="cnt">Object</div>
+                          </li>
+                          <li class="api_desc">
+                              <div class="tit">Description</div>
+                              <div class="cnt">뺄셈을 수행한 bigDecimal타입의 결과값</div>
+                          </li>
+                    </ul>
+              </div>
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>var a = WebSquare.bigDecimal("111111111111111");
+var b = WebSquare.bigDecimal("222222222222222");
+var result = a.minus(b);
+console.log(result.toString());</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="mod">mod(bigDecimal)</dt>
+                            <dd>
+                                <p>bigDecimal 타입의 데이터를 mod하는 함수</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">bigDecimal</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">Object</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>mod를 수행할 bigDecimal 데이터</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+              <div class="api_tit_para">Return</div>
+                  <div class="api_parameter">
+                      <ul class="api_ul_parameter">
+                          <li>
+                              <div class="tit">Type</div>
+                              <div class="cnt">Object</div>
+                          </li>
+                          <li class="api_desc">
+                              <div class="tit">Description</div>
+                              <div class="cnt">mod를 수행한 bigDecimal타입의 결과값</div>
+                          </li>
+                    </ul>
+              </div>
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>var a = WebSquare.bigDecimal("111111111111111111111111111111");
+var b = WebSquare.bigDecimal("11111");
+var result = a.mod(b);
+console.log(result.toString());</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="plus">plus(bigDecimal)</dt>
+                            <dd>
+                                <p>bigDecimal 타입의 데이터를 더하는 함수</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">bigDecimal</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">Object</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>덧셈을 수행할 bigDecimal 데이터</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+              <div class="api_tit_para">Return</div>
+                  <div class="api_parameter">
+                      <ul class="api_ul_parameter">
+                          <li>
+                              <div class="tit">Type</div>
+                              <div class="cnt">Object</div>
+                          </li>
+                          <li class="api_desc">
+                              <div class="tit">Description</div>
+                              <div class="cnt">덧셈을 수행한 bigDecimal타입의 결과값</div>
+                          </li>
+                    </ul>
+              </div>
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>var a = WebSquare.bigDecimal("111111111111111");
+var b = WebSquare.bigDecimal("222222222222222");
+var result = a.plus(b);
+console.log(result.toString());</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="pow">pow(bigDecimal)</dt>
+                            <dd>
+                                <p>bigDecimal 타입의 데이터를 제곱하는 함수</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">bigDecimal</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">Object</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>제곱을 수행할 bigDecimal 데이터</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+              <div class="api_tit_para">Return</div>
+                  <div class="api_parameter">
+                      <ul class="api_ul_parameter">
+                          <li>
+                              <div class="tit">Type</div>
+                              <div class="cnt">Object</div>
+                          </li>
+                          <li class="api_desc">
+                              <div class="tit">Description</div>
+                              <div class="cnt">제곱을 수행한 bigDecimal타입의 결과값</div>
+                          </li>
+                    </ul>
+              </div>
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>var a = WebSquare.bigDecimal("11111");
+var b = WebSquare.bigDecimal("5");
+var result = a.pow(b); // 단, 높은 수의 제곱은 수행하는 시간이 오래걸립니다.
+console.log(result.toString());</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="times">times(bigDecimal)</dt>
+                            <dd>
+                                <p>bigDecimal 타입의 데이터를 곱하는 함수</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">bigDecimal</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">Object</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>곱셈을 수행할 bigDecimal 데이터</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+              <div class="api_tit_para">Return</div>
+                  <div class="api_parameter">
+                      <ul class="api_ul_parameter">
+                          <li>
+                              <div class="tit">Type</div>
+                              <div class="cnt">Object</div>
+                          </li>
+                          <li class="api_desc">
+                              <div class="tit">Description</div>
+                              <div class="cnt">곱셈을 수행한 bigDecimal타입의 결과값</div>
+                          </li>
+                    </ul>
+              </div>
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>var a = WebSquare.bigDecimal("111111111111111");
+var b = WebSquare.bigDecimal("222222222222222");
+var result = a.times(b);
+console.log(result.toString());</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        
+                        </section>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </body>
+    </html>

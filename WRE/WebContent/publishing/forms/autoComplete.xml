@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+        <w2:type>COMPONENT</w2:type>
+        <w2:buildDate/>
+        <w2:MSA/>
+        <xf:model>
+            <w2:dataCollection baseNode="map"/>
+            <w2:workflowCollection/>
+        </xf:model>
+        <w2:layoutInfo/>
+        <w2:publicInfo method=""/>
+        <script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function() {
+	
+};
+]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload">
+    	<xf:group class="sub_contents pub" id="" style="">
+			<xf:group class="pgtbox" id="" style="">
+				<w2:textbox class="pgt_tit" id="" label="Publishing Template - AutoComplete" style=""></w2:textbox>
+			</xf:group>
+			<xf:group id="" class="titbox"><w2:textbox style="" id="" label="SelectBox의 확장 컴포넌트로 특정 문자열에 대한 자동완성 및 검색기능을 제공합니다.&lt;br/&gt;정적데이터와 동적데이터 설정이 가능하며, Enter키 또는 사용자 키입력을 이용하여 실시간으로 해당되는 리스트를 서버에서 조회 가능합니다." class="" escape="false">
+			</w2:textbox></xf:group>
+			<xf:group class="samplebox" id="" style="">
+				<w2:autoComplete chooseOption="" class="" displayMode="label" editType="select" id="" interactionMode="" search="start"
+					style="width:148px;margin-right:30px;" submenuSize="auto" useKeywordHighlight="false" visibleRowNum="5" allOption="" ref="">
+					<w2:choices>
+						<w2:item>
+							<w2:label><![CDATA[new row]]></w2:label>
+							<w2:value><![CDATA[]]></w2:value>
+						</w2:item>
+						<w2:item>
+							<w2:label><![CDATA[new row]]></w2:label>
+							<w2:value><![CDATA[]]></w2:value>
+						</w2:item>
+						<w2:item>
+							<w2:label><![CDATA[new row]]></w2:label>
+							<w2:value><![CDATA[]]></w2:value>
+						</w2:item>
+					</w2:choices>
+				</w2:autoComplete>
+			</xf:group>
+			<xf:group id="" class="titbox">
+				<w2:textbox style="" id="" label="Property" class="" tagname="h3"></w2:textbox>
+				<xf:group class="rt" id="" style="">
+					<w2:span class="badge default" id="" label="Defualt option" style=""></w2:span>
+					<w2:span class="badge" id="" label="option" style=""></w2:span>
+				</xf:group>
+			</xf:group>
+			<xf:group id="" class="tblbox"><xf:group tagname="table" style="" id="" class="w2tb tbl">
+				<w2:attributes>
+					<w2:summary></w2:summary>
+				</w2:attributes>
+				<xf:group tagname="colgroup">
+					<xf:group tagname="col" style="width:200px;"></xf:group>
+					<xf:group tagname="col" style=""></xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th"><w2:textbox id="" label="속성" style="" tagname="p"></w2:textbox></xf:group>
+					<xf:group tagname="th" style="" class="w2tb_th tac"><w2:textbox id="" label="설명" style="" tagname="p"></w2:textbox></xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th"><w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes><w2:textbox id="" label="animation" style="" tagname="p"></w2:textbox></xf:group>
+					<xf:group tagname="td" class="w2tb_td"><w2:attributes></w2:attributes><w2:textbox id="" label="선택 항목 목록에 적용할 애니메이션 효과를 설정" style="" tagname="p"></w2:textbox><xf:group class="grp_option" id="" style="">
+							<xf:group id="">
+								<w2:span class="badge default" id="" label="" style=""></w2:span>
+								<w2:textbox id="" label="전체 내역이 한번에 표시." style="" tagname="p"></w2:textbox>
+							</xf:group>
+							<xf:group class="" id="">
+								<w2:span class="badge" id="" label="show" style=""></w2:span>
+								<w2:textbox id="" label="한 점에서 퍼지면서 내역을 표시." style="" tagname="p"></w2:textbox>
+							</xf:group>
+							<xf:group id="">
+								<w2:span class="badge" id="" label="fadeIn" style=""></w2:span>
+								<w2:textbox id="" label=" 전체 내역을 점점 선명하게 표시. " style="" tagname="p"></w2:textbox>
+							</xf:group>
+
+							<xf:group id="">
+								<w2:span class="badge" id="" label="slideDown" style=""></w2:span>
+								<w2:textbox id="" label="하위로 내려오면서 순차적으로 내역을 표시." style="" tagname="p"></w2:textbox>
+							</xf:group>
+						</xf:group></xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th"><w2:textbox id="" label="caseSensitive" style="" tagname="p"></w2:textbox></xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						<w2:textbox id="" label="검색 시 영문 대소문자 구분 여부" style="" tagname="p"></w2:textbox>
+						<xf:group class="grp_option" id="" style="">
+							<w2:span class="badge default" id="" label="true" style=""></w2:span>
+							<w2:span class="badge" id="" label="false" style=""></w2:span>
+						</xf:group>
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th"><w2:textbox id="" label="chooseOption" style="" tagname="p"></w2:textbox></xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						<w2:textbox id=""
+							label='선택 안내 메시지 표시 여부.&lt;br/&gt;chooseOptionLabel 속성이 설정된 경우 해당 값을 표시.&lt;br/&gt;단, chooseOptionLabel 속성이 설정되지 않고 chooseOption="true"인 경우, 선택 항목 목록에 "-선택-"(label)이 표시됨. 이 때 value는 ""(empty string)으로 설정됨.' style=""
+							tagname="p" escape="false">
+						</w2:textbox>
+						<xf:group class="grp_option" id="" style="">
+							<w2:span class="badge default" id="" label="false" style=""></w2:span>
+							<w2:span class="badge" id="" label="true" style=""></w2:span>
+						</xf:group>
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th"><w2:textbox id="" label="chooseOptionLabel" style="" tagname="p"></w2:textbox></xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td"><w2:textbox id="" label='선택 안내 메시지로 표시할 텍스트의 label을 정의. chooseOption="true"인 경우 유효.' style="" tagname="p"></w2:textbox></xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th"><w2:textbox id="" label="chooseOptionValue" style="" tagname="p"></w2:textbox></xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td"><w2:textbox id="" label='선택 안내 메시지로 표시할 텍스트의 value를 정의. chooseOption="true"인 경우 유효.' style="" tagname="p"></w2:textbox></xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th"><w2:textbox id="" label="class" style="" tagname="p"></w2:textbox></xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td"><w2:textbox id="" label='HTML의 class 속성과 동일.&lt;br/&gt;CSS 파일 또는 style 블럭에 정의한 class를 적용 가능. 여러 개를 적용할 경우 공백(space)으로 구분.&lt;br/&gt;기본적으로 엔진 내부에서 컴포넌트 별로 class를 적용하고 있으나 본 속성을 이용하여 컴포넌트에 별도의 CSS 적용 가능.' style=""
+							tagname="p" escape="false">
+						</w2:textbox></xf:group>
+				</xf:group>
+				<xf:group tagname="tr">
+					<xf:group tagname="th" class="w2tb_th">
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+						<w2:textbox id="" label="closeonmouseleave" style="" tagname="p"></w2:textbox>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						<w2:attributes></w2:attributes>
+						<w2:textbox escape="false" id="" label="subLayer로 열린 경우, 선택 항목 목록에서 마우스 커서가 빠져나갈 때 목록을 닫을지 여부." style=""
+							tagname="p">
+						</w2:textbox>
+						<xf:group class="grp_option" id="" style="">
+							<w2:span class="badge default" id="" label="false" style=""></w2:span>
+							<w2:span class="badge" id="" label="true" style=""></w2:span>
+						</xf:group>
+					</xf:group></xf:group><xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th"><w2:textbox id="" label="delimiter" style="" tagname="p"></w2:textbox></xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td"><w2:textbox escape="false" id="" label='선택 항목 목록에 value와 label을 함께 표시할 때 사용하는 구분자. displayMode 속성에서 참조.&lt;br/&gt;' style=""
+							tagname="p">
+						</w2:textbox></xf:group>
+</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th"><w2:textbox id="" label="direction" style="" tagname="p"></w2:textbox></xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td"><w2:textbox escape="false" id="" label="선택 항목 목록이 열리는 방향 지정. " style=""
+							tagname="p">
+						</w2:textbox><xf:group class="grp_option" id="" style="">
+							<w2:span class="badge default" id="" label="auto" style=""></w2:span>
+							<w2:span class="badge" id="" label="down" style=""></w2:span>
+							<w2:span class="badge" id="" label="up" style=""></w2:span>
+							<w2:span class="badge" id="" label="fit" style=""></w2:span>
+						</xf:group></xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th"><w2:textbox id="" label="disabled" style="" tagname="p"></w2:textbox></xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td"><w2:textbox escape="false" id="" label="컴포넌트에 비활성 여부" style="" tagname="p"></w2:textbox></xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th"><w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes><w2:textbox id="" label="disableEdit" style="" tagname="p"></w2:textbox></xf:group>
+					<xf:group tagname="td" class="w2tb_td"><w2:attributes></w2:attributes><w2:textbox escape="false" id="" label="display 영역에 마우스 클릭 시, 목록만 표시하고 수정 모드로 진입하지 않음." style="" tagname="p"></w2:textbox><xf:group class="grp_option" id="" style="">
+							<w2:span class="badge default" id="" label="false" style=""></w2:span>
+							<w2:span class="badge" id="" label="true" style=""></w2:span>
+						</xf:group></xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th"><w2:textbox id="" label="displayMode" style="" tagname="p"></w2:textbox></xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td"><w2:textbox escape="false" id="" label="항목의 표현 방법으로 label과 value를 함께 표현 할 수 있다.&lt;br/&gt;delim(구분자)는delimiter속성에 정의 된 값을 참조한다." style="" tagname="p"></w2:textbox><xf:group class="grp_option" id="" style="">
+							<w2:span class="badge default" id="" label="label" style=""></w2:span>
+							<w2:span class="badge" id="" label="value delim label" style=""></w2:span>
+							<w2:span class="badge" id="" label="label delim value" style=""></w2:span>
+						</xf:group></xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th"><w2:textbox id="" label="editType" style="" tagname="p"></w2:textbox></xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td"><w2:textbox escape="false" id=""
+							label="사용자가 컴포넌트 클릭 시 결과 동작 지정." style="" tagname="p">
+						</w2:textbox><xf:group class="grp_option" id="" style="">
+							<xf:group id="">
+								<w2:span class="badge default" id="" label="select" style=""></w2:span>
+								<w2:textbox id="" label="포커스가 발생할 때 선택된 텍스트를 선택. " style="" tagname="p"></w2:textbox>
+							</xf:group>
+							<xf:group class="" id="">
+								<w2:span class="badge" id="" label="focus" style=""></w2:span>
+								<w2:textbox id="" label="텍스트의 맨 끝으로 커서를 이동." style="" tagname="p"></w2:textbox>
+							</xf:group>
+						</xf:group></xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th"><w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes><w2:textbox id="" label="emptyIndex" style="" tagname="p"></w2:textbox></xf:group>
+					<xf:group tagname="td" class="w2tb_td"><w2:attributes></w2:attributes><w2:textbox escape="false" id="" label="처음 autoComplete를 그릴 때 선택하게 할 아이템의 인덱스. &amp;nbsp;emptyItem 속성을 true로 주고, emptyIndex 속성을 -1 값으로 주면 초기로딩시 빈 값을 선택하게 할 수 있다." style="" tagname="p"></w2:textbox></xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th"><w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes><w2:textbox id="" label="emptyItem" style="" tagname="p"></w2:textbox></xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						<w2:attributes></w2:attributes>
+						<w2:textbox escape="false" id=""
+							label="(setValue, setSelectedIndex 등을 이용하여) 선택 항목에 없는 value나 index가 동적으로 설정하는 경우 빈 값(empty string)으로 label과 value를 설정.&lt;br/&gt;빈 값으로 value가 설정된 선택 항목이 추가되거나 삭제될 경우, 첫번째 항목이 선택됨. (HTML select의 selectedIndex=-1과 동일)&lt;br/&gt;단, emptyValue 속성을 사용하여 빈 값이 아닌 다른 값을 value로 설정 가능."
+							style="" tagname="p">
+						</w2:textbox>
+						<xf:group class="grp_option" id="" style="">
+							<w2:span class="badge default" id="" label="false" style=""></w2:span>
+							<w2:span class="badge" id="" label="true" style=""></w2:span>
+						</xf:group>
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th"><w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes><w2:textbox id="" label="emptyValue" style="" tagname="p"></w2:textbox></xf:group>
+					<xf:group tagname="td" class="w2tb_td"><w2:attributes></w2:attributes><w2:textbox escape="false" id=""
+							label='emptyItem속성이 true로 설정 된 경우 본 속성의 값으로 value를 설정한다. &amp;nbsp; 주의 사항으로 emptyValue에 정의 된 값이 항목의 value와 동일하더라도 label은 ""으로 표현된다.'
+							style="" tagname="p">
+						</w2:textbox></xf:group>
+				</xf:group>
+				<xf:group tagname="tr">
+					<xf:group tagname="th" class="w2tb_th">
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+						<w2:textbox id="" label="escape" style="" tagname="p"></w2:textbox>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						<w2:attributes></w2:attributes>
+						<w2:textbox id="" label='&lt;&gt;&amp;"를 HTML Escape 문자로 변환하여 화면에 표시.' style="" tagname="p"></w2:textbox>
+						<xf:group class="grp_option" id="" style="">
+							<w2:span class="badge default" id="" label="true" style=""></w2:span>
+							<w2:span class="badge" id="" label="false" style=""></w2:span>
+						</xf:group>
+					</xf:group></xf:group><xf:group tagname="tr">
+	<xf:group tagname="th" class="w2tb_th">
+		<w2:attributes>
+			<w2:scope>row</w2:scope>
+		</w2:attributes>
+		<w2:textbox id="" label="hideListOnFocus" style="" tagname="p"></w2:textbox>
+	</xf:group>
+	<xf:group tagname="td" class="w2tb_td">
+		<w2:attributes></w2:attributes>
+		<w2:textbox id="" label='편집 모드 진입 시 목록을 보여줄지에 대한 여부&lt;br/&gt;' style="" tagname="p"></w2:textbox>
+		<xf:group class="grp_option" id="" style="">
+			<w2:span class="badge default" id="" label="false" style=""></w2:span>
+			<w2:span class="badge" id="" label="true" style=""></w2:span>
+		</xf:group>
+	</xf:group></xf:group><xf:group tagname="tr">
+	<xf:group tagname="th" class="w2tb_th">
+		<w2:attributes>
+			<w2:scope>row</w2:scope>
+		</w2:attributes>
+		<w2:textbox id="" label="id" style="" tagname="p"></w2:textbox>
+	</xf:group>
+	<xf:group tagname="td" class="w2tb_td">
+		<w2:attributes></w2:attributes>
+		<w2:textbox id="" label="컴포넌트 ID.&lt;br/&gt;컴포넌트 ID는 전역 객체로 할당됨. 각 컴포넌트 ID를 통해 Script에서 해당 컴포넌트에 접근 가능." style="" tagname="p" escape="false"></w2:textbox>
+	</xf:group></xf:group><xf:group tagname="tr">
+	<xf:group tagname="th" class="w2tb_th">
+		<w2:attributes>
+			<w2:scope>row</w2:scope>
+		</w2:attributes>
+		<w2:textbox id="" label="noResult" style="" tagname="p"></w2:textbox>
+	</xf:group>
+	<xf:group tagname="td" class="w2tb_td">
+		<w2:attributes></w2:attributes>
+		<w2:textbox id="" label="사용자가 입력한 값에 대한 검색 결과가 없을 때, 화면에 표현하는 텍스트 처리 방식. " style="" tagname="p"></w2:textbox>
+		<xf:group class="grp_option" id="" style="">
+			<xf:group id="">
+				<w2:span class="badge default" id="" label="previous" style=""></w2:span>
+				<w2:textbox id="" label='이전 결과값 표시. (interactionMode="false"인 경우 유효.)' style="" tagname="p"></w2:textbox>
+			</xf:group>
+			<xf:group class="" id="">
+				<w2:span class="badge" id="" label="clear" style=""></w2:span>
+				<w2:textbox id="" label="입력 값 삭제. " style="" tagname="p"></w2:textbox>
+			</xf:group>
+			<xf:group class="" id="" style="">
+				<w2:span class="badge" id="" label="noEnd" style=""></w2:span>
+				<w2:textbox id="" label="입력 모드 유지. " style="" tagname="p"></w2:textbox>
+			</xf:group>
+			<xf:group class="" id="" style="">
+				<w2:span class="badge" id="" label="useData" style=""></w2:span>
+				<w2:textbox id="" label='사용자가 입력한 값을 표시하고 항목에 추가. (interactionMode="false"인 경우 유효.)' style="" tagname="p"></w2:textbox>
+			</xf:group>
+			<xf:group class="" id="" style="">
+				<w2:span class="badge" id="" label="first" style=""></w2:span>
+				<w2:textbox id="" label="첫번째 선택 항목을 표시." style="" tagname="p"></w2:textbox>
+			</xf:group>
+		</xf:group>
+	</xf:group></xf:group><xf:group tagname="tr">
+	<xf:group tagname="th" class="w2tb_th">
+		<w2:attributes>
+			<w2:scope>row</w2:scope>
+		</w2:attributes>
+		<w2:textbox id="" label="placeholder" style="" tagname="p"></w2:textbox>
+	</xf:group>
+	<xf:group tagname="td" class="w2tb_td">
+		<w2:attributes></w2:attributes>
+		<w2:textbox id="" label="HTML5의 placeholder와 동일한 기능을 제공. 사용자에게 알려줘야 할 힌트 문구 등을 명시.&lt;br/&gt;AutoComplete의 값이 비어 있을 때 placeholder로 설정한 문구가 표시되며, 값을 입력하는 순간 문구는 사라짐." style="" tagname="p" escape="false"></w2:textbox>
+	</xf:group></xf:group><xf:group tagname="tr">
+	<xf:group tagname="th" class="w2tb_th">
+		<w2:attributes>
+			<w2:scope>row</w2:scope>
+		</w2:attributes>
+		<w2:textbox id="" label="preventWheelEvent" style="" tagname="p"></w2:textbox>
+	</xf:group>
+	<xf:group tagname="td" class="w2tb_td">
+		<w2:attributes></w2:attributes>
+		<w2:textbox escape="false" id="" label="마우스 휠 이벤트 금지 여부. " style="" tagname="p"></w2:textbox>
+		<xf:group class="grp_option" id="" style="">
+			<w2:span class="badge default" id="" label="false" style=""></w2:span>
+			<w2:span class="badge" id="" label="true" style=""></w2:span>
+		</xf:group>
+	</xf:group></xf:group><xf:group tagname="tr">
+	<xf:group tagname="th" class="w2tb_th">
+		<w2:attributes>
+			<w2:scope>row</w2:scope>
+		</w2:attributes>
+		<w2:textbox id="" label="readOnly" style="" tagname="p"></w2:textbox>
+	</xf:group>
+	<xf:group tagname="td" class="w2tb_td">
+		<w2:attributes></w2:attributes>
+		<w2:textbox escape="false" id="" label="읽기 전용 적용 여부. " style="" tagname="p"></w2:textbox>
+		<xf:group class="grp_option" id="" style="">
+			<w2:span class="badge default" id="" label="false" style=""></w2:span>
+			<w2:span class="badge" id="" label="true" style=""></w2:span>
+		</xf:group>
+	</xf:group></xf:group><xf:group tagname="tr">
+	<xf:group tagname="th" class="w2tb_th">
+		<w2:attributes>
+			<w2:scope>row</w2:scope>
+		</w2:attributes>
+		<w2:textbox id="" label="renderType" style="" tagname="p"></w2:textbox>
+	</xf:group>
+	<xf:group tagname="td" class="w2tb_td">
+		<w2:attributes></w2:attributes>
+		<w2:textbox escape="false" id="" label="브라우저에 표현될 레이아웃 구조. " style="" tagname="p"></w2:textbox>
+		<xf:group class="grp_option" id="" style="">
+			<xf:group id="">
+				<w2:span class="badge" id="" label="component" style=""></w2:span>
+				<w2:textbox id="" label="&amp;lt;select&amp;gt; 태그를 사용하지 않고, 최상위 &amp;lt;div&amp;gt; 태그 하위에 table 태그를 사용하여 항목을 표현. " style="" tagname="p"></w2:textbox>
+			</xf:group>
+			<xf:group class="" id="">
+				<w2:span class="badge" id="" label="native" style=""></w2:span>
+				<w2:textbox id="" label=" HTML &amp;lt;select&amp;gt; 태그를 사용. 모든 브라우저 환경에서 동일한 모양과 기능을 제공하며, 웹접근성 준수를 위해 title 속성을 필수로 생성해야 함." style="" tagname="p"></w2:textbox>
+			</xf:group>
+		</xf:group>
+	</xf:group></xf:group><xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th"><w2:textbox id="" label="search" style="" tagname="p"></w2:textbox></xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						<w2:textbox id="" label='사용자 입력 값 검색 방법.&lt;br/&gt;interactionMode="false"인 경우 유효.'
+							style="" tagname="p" escape="false">
+						</w2:textbox>
+						<xf:group class="grp_option" id="" style="">
+							<xf:group id="">
+								<w2:span class="badge default" id="" label="start" style=""></w2:span>
+								<w2:textbox id="" label="입력값과 항목의 시작과 같을 경우만 검색. " style="" tagname="p"></w2:textbox>
+							</xf:group>
+							<xf:group class="" id="">
+								<w2:span class="badge" id="" label="contain" style=""></w2:span>
+								<w2:textbox id="" label="입력값과 항목의 시작과 같을 경우만 검색. " style="" tagname="p"></w2:textbox>
+							</xf:group>
+							<xf:group class="" id="" style="">
+								<w2:span class="badge" id="" label="none" style=""></w2:span>
+								<w2:textbox id="" label="입력값이 항목과 완전히 같은 경우만 검색. " style="" tagname="p"></w2:textbox>
+							</xf:group>
+						</xf:group>
+					</xf:group>
+</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th"><w2:textbox id="" label="searchTarget" style="" tagname="p"></w2:textbox></xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						<w2:textbox id="" label="사용자의 입력 값을 기반으로 선택 항목을 제안하기 위해 검색할 대상을 지정." style="" tagname="p"></w2:textbox>
+						<xf:group class="grp_option" id="" style="">
+							<xf:group id="">
+								<w2:span class="badge default" id="" label="label" style=""></w2:span>
+								<w2:textbox id="" label="label 검색" style="" tagname="p"></w2:textbox>
+							</xf:group>
+							<xf:group class="" id="">
+								<w2:span class="badge" id="" label="value" style=""></w2:span>
+								<w2:textbox id="" label="value 검색" style="" tagname="p"></w2:textbox>
+							</xf:group>
+							<xf:group class="" id="" style="">
+								<w2:span class="badge" id="" label="both" style=""></w2:span>
+								<w2:textbox id="" label="label과 value 모두 검색." style="" tagname="p"></w2:textbox>
+							</xf:group>
+						</xf:group>
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr">
+					<xf:group tagname="th" class="w2tb_th">
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+						<w2:textbox id="" label="sortMethod" style="" tagname="p"></w2:textbox>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						<w2:attributes></w2:attributes>
+						<w2:textbox id="" label="선택 항목 목록 정렬 방법. sortOption 속성이 정의된 경우에만 유효." style="" tagname="p"></w2:textbox>
+						<xf:group class="grp_option" id="" style="">
+							<xf:group id="">
+								<w2:span class="badge default" id="" label="ascending" style=""></w2:span>
+								<w2:textbox id="" label="오름차순으로 선택 항목 목록을 정렬." style="" tagname="p"></w2:textbox>
+							</xf:group>
+							<xf:group class="" id="">
+								<w2:span class="badge" id="" label="descending" style=""></w2:span>
+								<w2:textbox id="" label="내림차순으로 선택 항목 목록을 정렬." style="" tagname="p"></w2:textbox>
+							</xf:group>
+						</xf:group>
+					</xf:group></xf:group><xf:group tagname="tr">
+	<xf:group tagname="th" class="w2tb_th">
+		<w2:attributes>
+			<w2:scope>row</w2:scope>
+		</w2:attributes>
+		<w2:textbox id="" label="sortOption" style="" tagname="p"></w2:textbox>
+	</xf:group>
+	<xf:group tagname="td" class="w2tb_td">
+		<w2:attributes></w2:attributes>
+		<w2:textbox id="" label="선택 항목 목록 정렬 기준.&lt;br/&gt;기본적으로 오름차순으로 정렬되며, sortMethod 속성이 설정된 경우 해당 설정을 따름." style="" tagname="p"
+			escape="false">
+		</w2:textbox>
+		<xf:group class="grp_option" id="" style="">
+			<xf:group id="">
+				<w2:span class="badge" id="" label="label" style=""></w2:span>
+				<w2:textbox id="" label="label을 기준으로 선택 항목 목록 정렬." style="" tagname="p"></w2:textbox>
+			</xf:group>
+			<xf:group class="" id="">
+				<w2:span class="badge" id="" label="value" style=""></w2:span>
+				<w2:textbox id="" label="value를 기준으로 선택 항목 목록 정렬. &amp;nbsp;" style="" tagname="p"></w2:textbox>
+			</xf:group>
+		</xf:group>
+	</xf:group></xf:group><xf:group tagname="tr">
+	<xf:group tagname="th" class="w2tb_th">
+		<w2:attributes>
+			<w2:scope>row</w2:scope>
+		</w2:attributes>
+		<w2:textbox id="" label="submenuSize" style="" tagname="p"></w2:textbox>
+	</xf:group>
+	<xf:group tagname="td" class="w2tb_td">
+		<w2:attributes></w2:attributes>
+		<w2:textbox id="" label="선택 항목 목록 크기 결정 방법." style="" tagname="p"></w2:textbox>
+		<xf:group class="grp_option" id="" style="">
+			<xf:group id="">
+				<w2:span class="badge default" id="" label="fixed" style=""></w2:span>
+				<w2:textbox id="" label="기본 width 사용" style="" tagname="p"></w2:textbox>
+			</xf:group>
+			<xf:group class="" id="">
+				<w2:span class="badge" id="" label="auto" style=""></w2:span>
+				<w2:textbox id="" label="label에 따라 자동 조정." style="" tagname="p"></w2:textbox>
+			</xf:group>
+		</xf:group>
+	</xf:group></xf:group><xf:group tagname="tr">
+	<xf:group tagname="th" class="w2tb_th">
+		<w2:attributes>
+			<w2:scope>row</w2:scope>
+		</w2:attributes>
+		<w2:textbox id="" label="searchTarget" style="" tagname="p"></w2:textbox>
+	</xf:group>
+	<xf:group tagname="td" class="w2tb_td">
+		<w2:attributes></w2:attributes>
+		<w2:textbox id="" label="사용자의 입력 값을 기반으로 선택 항목을 제안하기 위해 검색할 대상을 지정." style="" tagname="p"></w2:textbox>
+	</xf:group></xf:group><xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th"><w2:textbox id="" label="tabIndex" style="" tagname="p"></w2:textbox></xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td"><w2:textbox id=""
+							label="Tab 키를 이용하여 포커스를 변경할 경우, 해당 컴포넌트에 포커스를 주는 순서.&lt;br/&gt;HTML의 tabindex 속성과 동일." style="" tagname="p" escape="false">
+						</w2:textbox></xf:group>
+				</xf:group>
+				<xf:group tagname="tr">
+					<xf:group tagname="th" class="w2tb_th">
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+						<w2:textbox id="" label="textAlign" style="" tagname="p"></w2:textbox>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						<w2:attributes></w2:attributes>
+						<w2:textbox escape="false" id="" label="선택 항목 목록 상의 텍스트 정렬. " style="" tagname="p"></w2:textbox>
+						<xf:group class="grp_option" id="" style="">
+							<xf:group id="">
+								<w2:span class="badge default" id="" label="center" style=""></w2:span>
+								<w2:textbox id="" label="가운데 정렬" style="" tagname="p"></w2:textbox>
+							</xf:group>
+							<xf:group class="" id="">
+								<w2:span class="badge" id="" label="left" style=""></w2:span>
+								<w2:textbox id="" label="왼쪽 정렬 " style="" tagname="p"></w2:textbox>
+							</xf:group>
+							<xf:group class="" id="" style="">
+								<w2:span class="badge" id="" label="right" style=""></w2:span>
+								<w2:textbox id="" label="오른쪽 정렬" style="" tagname="p"></w2:textbox>
+							</xf:group>
+						</xf:group>
+					</xf:group></xf:group><xf:group tagname="tr">
+	<xf:group tagname="th" class="w2tb_th">
+		<w2:attributes>
+			<w2:scope>row</w2:scope>
+		</w2:attributes>
+		<w2:textbox id="" label="title" style="" tagname="p"></w2:textbox>
+	</xf:group>
+	<xf:group tagname="td" class="w2tb_td">
+		<w2:attributes></w2:attributes>
+		<w2:textbox escape="false" id="" label="HTML의 title 속성과 동일. 마우스 오버 시, title로 저장한 값이 툴팁으로 표시됨. 일반적으로 웹접근성 지원용으로 설정." style=""
+			tagname="p">
+		</w2:textbox>
+	</xf:group></xf:group><xf:group tagname="tr">
+	<xf:group tagname="th" class="w2tb_th">
+		<w2:attributes>
+			<w2:scope>row</w2:scope>
+		</w2:attributes>
+		<w2:textbox id="" label="tooltipClass" style="" tagname="p"></w2:textbox>
+	</xf:group>
+	<xf:group tagname="td" class="w2tb_td">
+		<w2:attributes></w2:attributes>
+		<w2:textbox escape="false" id="" label='툴팁에 적용할 스타일 class. 툴팁을 표시할 경우(tooltipDisplay="true") 유효.' style=""
+			tagname="p">
+		</w2:textbox>
+	</xf:group></xf:group><xf:group tagname="tr">
+	<xf:group tagname="th" class="w2tb_th">
+		<w2:attributes>
+			<w2:scope>row</w2:scope>
+		</w2:attributes>
+		<w2:textbox id="" label="tooltipDisplay" style="" tagname="p"></w2:textbox>
+	</xf:group>
+	<xf:group tagname="td" class="w2tb_td">
+		<w2:attributes></w2:attributes>
+		<w2:textbox escape="false" id="" label='사용자가 선택한 값에 대한 툴팁 표시 여부.&lt;br/&gt;' style="" tagname="p"></w2:textbox>
+		<xf:group class="grp_option" id="" style="">
+			<w2:span class="badge default" id="" label="false" style=""></w2:span>
+			<w2:span class="badge" id="" label="true" style=""></w2:span>
+		</xf:group>
+	</xf:group></xf:group><xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th"><w2:textbox id="" label="tooltipTime" style="" tagname="p"></w2:textbox></xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td"><w2:textbox escape="false" id="" label='툴팁 표시 시간. (단위: 초)&lt;br/&gt;툴팁을 표시할 경우(tooltipDisplay="true")에만 유효.' style="" tagname="p"></w2:textbox></xf:group>
+</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th"><w2:textbox id="" label="type" style="" tagname="p"></w2:textbox></xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						<w2:textbox escape="false" id="" label='HTML의 type 속성과 동일.' style="" tagname="p"></w2:textbox>
+						<xf:group class="grp_option" id="" style="">
+							<w2:span class="badge default" id="" label="text" style=""></w2:span>
+						</xf:group>
+					</xf:group>
+				</xf:group>
+			<xf:group tagname="tr">
+				<xf:group tagname="th" class="w2tb_th">
+					<w2:attributes>
+						<w2:scope>row</w2:scope>
+					</w2:attributes>
+					<w2:textbox id="" label="useMousewheel" style="" tagname="p"></w2:textbox>
+				</xf:group>
+				<xf:group tagname="td" class="w2tb_td">
+					<w2:attributes></w2:attributes>
+					<w2:textbox escape="false" id="" label="선택 항목 목록 상에서 마우스 휠 사용 허용 여부." style="" tagname="p"></w2:textbox>
+					<xf:group class="grp_option" id="" style="">
+						<w2:span class="badge default" id="" label="true" style=""></w2:span>
+						<w2:span class="badge" id="" label="false" style=""></w2:span>
+					</xf:group>
+				</xf:group></xf:group><xf:group tagname="tr">
+	<xf:group tagname="th" class="w2tb_th">
+		<w2:attributes>
+			<w2:scope>row</w2:scope>
+		</w2:attributes>
+		<w2:textbox id="" label="visibleRowNum" style="" tagname="p"></w2:textbox>
+	</xf:group>
+	<xf:group tagname="td" class="w2tb_td">
+		<w2:attributes></w2:attributes>
+		<w2:textbox escape="false" id="" label='목록에서 한번에 표현 될 항목 행수. "1"로 설정하는 것은 비권장.' style="" tagname="p"></w2:textbox>
+	</xf:group></xf:group></xf:group></xf:group>
+		</xf:group>
+    </body>
+</html>

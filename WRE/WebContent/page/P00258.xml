@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:w2="http://www.inswave.com/websquare"
+	xmlns:xf="http://www.w3.org/2002/xforms">
+	<head>
+		<w2:historyInfo>
+			<w2:history meta_no="01" meta_desc="최초작성" meta_date="20230413" meta_user="InswaveSystems" ></w2:history>
+		</w2:historyInfo>
+		<w2:type>COMPONENT</w2:type>
+		<w2:buildDate />
+		<w2:MSA />
+		<xf:model>
+			<w2:dataCollection baseNode="map">
+				<w2:dataList baseNode="list" repeatNode="map" id="dlt_dataList1" saveRemovedData="true">
+					<w2:columnInfo>
+						<w2:column id="Code" name="name1" dataType="text"></w2:column>
+						<w2:column id="City" name="name2" dataType="text"></w2:column>
+						<w2:column id="Country" name="name3" dataType="text"></w2:column>
+						<w2:column id="Type" name="name4" dataType="text"></w2:column>
+					</w2:columnInfo>
+				</w2:dataList>
+			</w2:dataCollection>
+			<w2:workflowCollection />
+		</xf:model>
+		<w2:layoutInfo />
+		<w2:publicInfo method="" />
+		<script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function () {
+
+};
+
+/**
+ * 버튼 [ 선택 여부 판단하기 ] 클릭 시
+ */
+scwin.btn_ex1_onclick = function (e) {
+    // SelectBox 'sbx_exam1'의 체크 여부를 검증합니다.
+    let message = sbx_exam1.validate();
+    alert(message);
+};
+
+/**
+ * 버튼 [ 지정된 메시지 표시하기 ] 클릭 시
+ */
+scwin.btn_ex2_onclick = function (e) {
+    // SelectBox 'sbx_exam2'의 체크 여부를 검증합니다.
+    sbx_exam2.validate();
+};
+
+/**
+ * 버튼 [ 사용자 설정 메시지 표시하기 ] 클릭 시
+ */
+scwin.btn_ex3_onclick = function (e) {
+    // SelectBox 'sbx_exam3'의 체크 여부를 검증합니다.
+    sbx_exam3.validate();
+};
+
+/**
+ * 버튼 [ 사용자 지정 함수로 설정한 메시지 표시하기 ] 클릭 시
+ */
+scwin.btn_ex4_onclick = function (e) {
+    sbx_exam4.validate();
+};
+
+/**
+ * 영역 [ 사용자 지정 함수로 설정한 메시지 표시하기 ]의
+ * SelectBox컴포넌트 [sbx_exam4]의 invalidMessageFunc함수
+ */
+scwin.fn_msg = function () {
+    let invalidType = this.getType();  // invalid type
+    switch (invalidType) {
+        case "mandatory":
+            msg = "Select your favorit city.";
+            break;
+        default:
+            msg = "Enter again.";
+            break;
+    }
+    alert(msg);
+}
+]]></script>
+	</head>
+	<body ev:onpageload="scwin.onpageload">
+		<xf:group class="sub_contents" id="" style="">
+			<xf:group class="ws_example_grp_desc" id="" style="">
+				<w2:textbox escape="false" id=""
+					label='사용자가 SelectBox컴포넌트에서 선택한 데이터를 검증하는 것에 관한 예제입니다.&lt;br/&gt;&lt;br/&gt;이 기능은 아래의 속성과 함수로 사용할 수 있습니다.&lt;br/&gt;- mandatory : (속성)mandatory="true"인 경우, validate(); 함수는 검증을 수행하여 결과를 true/false로 반환&lt;br/&gt;- displaymessage : (속성)검증 실패 시 Engine 내부에 정의된 메시지 표시&lt;br/&gt;- invalidMessage : (속성)검증 결과가 실패일 경우, 속성에 지정한 값을 메시지 표시&lt;br/&gt;- invalidMessageFunc : (속성)검증 결과가 실패일 경우, 사용자 지정 함수 반환&lt;br/&gt;- validate : (함수)컴포넌트의 유효성 관련 속성값을 통해 유효성 검사를 실행'
+					style="">
+				</w2:textbox>
+			</xf:group>
+			<xf:group class="example_div_tb_style_wrap" id="">
+				<xf:group class="example_div_tr_style" id="" style="">
+					<w2:textbox class="example_div_th_style" escape="false" id="" label="선택 여부 판단하기" style=""></w2:textbox>
+					<xf:group class="example_div_td_style" id="" style="">
+						<w2:textbox class="ws5_example_txt_normal" escape="false" id="" label='SelectBox컴포넌트의 목록이 선택된 것을 확인할 수 있습니다.' style=""
+							displayFormat="">
+						</w2:textbox>
+						<xf:group id="" style="margin: 10px 0px 10px 0px;">
+							<xf:trigger class="btn_exam_exec btn_txt_of" ev:onclick="scwin.btn_ex1_onclick" id="btn_ex1" localeRef=""
+								style="min-width: 30px;height: 26px;" type="" useDefaultLabel="true">
+								<xf:label><![CDATA[선택 여부 판단하기]]></xf:label>
+							</xf:trigger>
+						</xf:group>
+						<xf:select1 id="sbx_exam1" chooseOption="true" style="width: 148px;height: 21px;" submenuSize="auto" allOption=""
+							disabled="false" direction="auto" appearance="minimal" disabledClass="w2selectbox_disabled" ref="" mandatory="true"
+							chooseOptionLabel="Select a city.">
+							<xf:choices>
+								<xf:item>
+									<xf:label><![CDATA[Seoul]]></xf:label>
+									<xf:value><![CDATA[1]]></xf:value>
+								</xf:item>
+								<xf:item>
+									<xf:label><![CDATA[New York]]></xf:label>
+									<xf:value><![CDATA[2]]></xf:value>
+								</xf:item>
+								<xf:item>
+									<xf:label><![CDATA[Paris]]></xf:label>
+									<xf:value><![CDATA[3]]></xf:value>
+								</xf:item>
+								<xf:item>
+									<xf:label><![CDATA[London]]></xf:label>
+									<xf:value><![CDATA[4]]></xf:value>
+								</xf:item>
+							</xf:choices>
+						</xf:select1>
+
+					</xf:group>
+					<w2:textbox class="example_div_th_style" escape="false" id="" label="지정된 메시지 표시하기" style=""></w2:textbox>
+					<xf:group class="example_div_td_style" id="" style="">
+						<w2:textbox class="ws5_example_txt_normal" escape="false" id=""
+							label="SelectBox컴포넌트를 선택하지 않고 아래의 버튼을 클릭 시 지정된 메시지 '필수 입력 항목입니다'가 표시됩니다." style="" displayFormat="">
+						</w2:textbox>
+						<xf:group id="" style="margin: 10px 0px 10px 0px;">
+							<xf:trigger class="btn_exam_exec btn_txt_of" ev:onclick="scwin.btn_ex2_onclick" id="btn_ex2" localeRef=""
+								style="min-width: 30px;height: 26px;" type="" useDefaultLabel="true">
+								<xf:label><![CDATA[지정된 메시지 표시하기]]></xf:label>
+							</xf:trigger>
+						</xf:group>
+
+						<xf:select1 allOption="" appearance="minimal" chooseOption="true" chooseOptionLabel="Select a city." direction="auto"
+							disabled="false" disabledClass="w2selectbox_disabled" id="sbx_exam2" ref="" style="width: 148px;height: 21px;" submenuSize="auto"
+							displaymessage="true" mandatory="true">
+							<xf:choices>
+								<xf:item>
+									<xf:label><![CDATA[Seoul]]></xf:label>
+									<xf:value><![CDATA[1]]></xf:value>
+								</xf:item>
+								<xf:item>
+									<xf:label><![CDATA[New York]]></xf:label>
+									<xf:value><![CDATA[2]]></xf:value>
+								</xf:item>
+								<xf:item>
+									<xf:label><![CDATA[Paris]]></xf:label>
+									<xf:value><![CDATA[3]]></xf:value>
+								</xf:item>
+								<xf:item>
+									<xf:label><![CDATA[London]]></xf:label>
+									<xf:value><![CDATA[4]]></xf:value>
+								</xf:item>
+							</xf:choices>
+						</xf:select1>
+					</xf:group>
+					<w2:textbox class="example_div_th_style" escape="false" id="" label="사용자 설정 메시지 표시하기" style=""></w2:textbox>
+					<xf:group class="example_div_td_style" id="" style="">
+						<w2:textbox class="ws5_example_txt_normal" displayFormat="" escape="false" id=""
+							label="SelectBox컴포넌트를 선택하지 않고 아래의 버튼을 클릭 시 사용자가 설정한 메시지가 표시됩니다." style="">
+						</w2:textbox>
+						<xf:group id="" style="margin: 10px 0px 10px 0px;">
+							<xf:trigger class="btn_exam_exec btn_txt_of" ev:onclick="scwin.btn_ex3_onclick" id="btn_ex3" localeRef=""
+								style="min-width: 30px;height: 26px;" type="" useDefaultLabel="true">
+								<xf:label><![CDATA[사용자 설정 메시지 표시하기]]></xf:label>
+							</xf:trigger>
+						</xf:group>
+						<xf:select1 allOption="" appearance="minimal" chooseOption="true" chooseOptionLabel="Select a city." direction="auto"
+							disabled="false" disabledClass="w2selectbox_disabled" displaymessage="true" id="sbx_exam3" mandatory="true" ref=""
+							style="width: 148px;height: 21px;" submenuSize="auto" invalidMessage="사용자 설정 메시지">
+							<xf:choices>
+								<xf:item>
+									<xf:label><![CDATA[Seoul]]></xf:label>
+									<xf:value><![CDATA[1]]></xf:value>
+								</xf:item>
+								<xf:item>
+									<xf:label><![CDATA[New York]]></xf:label>
+									<xf:value><![CDATA[2]]></xf:value>
+								</xf:item>
+								<xf:item>
+									<xf:label><![CDATA[Paris]]></xf:label>
+									<xf:value><![CDATA[3]]></xf:value>
+								</xf:item>
+								<xf:item>
+									<xf:label><![CDATA[London]]></xf:label>
+									<xf:value><![CDATA[4]]></xf:value>
+								</xf:item>
+							</xf:choices>
+						</xf:select1>
+					</xf:group>
+					<w2:textbox class="example_div_th_style" escape="false" id="" label="사용자 지정 함수로 설정한 메시지 표시하기" style=""></w2:textbox>
+					<xf:group class="example_div_td_style" id="" style="">
+						<w2:textbox class="ws5_example_txt_normal" displayFormat="" escape="false" id=""
+							label="SelectBox컴포넌트를 선택하지 않고 아래의 버튼을 클릭 시 사용자 지정 함수로 설정한 메시지가 표시됩니다." style="">
+						</w2:textbox>
+						<xf:group id="" style="margin: 10px 0px 10px 0px;">
+							<xf:trigger class="btn_exam_exec btn_txt_of" ev:onclick="scwin.btn_ex4_onclick" id="btn_ex4" localeRef=""
+								style="min-width: 30px;height: 26px;" type="" useDefaultLabel="true">
+								<xf:label><![CDATA[사용자 지정 함수로 설정한 메시지 표시하기]]></xf:label>
+							</xf:trigger>
+						</xf:group>
+						<xf:select1 allOption="" appearance="minimal" chooseOption="true" chooseOptionLabel="Select a city." direction="auto"
+							disabled="false" disabledClass="w2selectbox_disabled" displaymessage="true" id="sbx_exam4" mandatory="true" ref=""
+							style="width: 148px;height: 21px;" submenuSize="auto" invalidMessageFunc="scwin.fn_msg">
+							<xf:choices>
+								<xf:item>
+									<xf:label><![CDATA[Seoul]]></xf:label>
+									<xf:value><![CDATA[1]]></xf:value>
+								</xf:item>
+								<xf:item>
+									<xf:label><![CDATA[New York]]></xf:label>
+									<xf:value><![CDATA[2]]></xf:value>
+								</xf:item>
+								<xf:item>
+									<xf:label><![CDATA[Paris]]></xf:label>
+									<xf:value><![CDATA[3]]></xf:value>
+								</xf:item>
+								<xf:item>
+									<xf:label><![CDATA[London]]></xf:label>
+									<xf:value><![CDATA[4]]></xf:value>
+								</xf:item>
+							</xf:choices>
+						</xf:select1>
+					</xf:group>
+				</xf:group>
+				<xf:group class="example_div_tr_style" id="" style="">
+				</xf:group>
+			</xf:group>
+		</xf:group>
+	</body>
+</html>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+        <w2:type>COMPONENT</w2:type>
+        <w2:buildDate/>
+        <w2:MSA/>
+        <xf:model>
+            <w2:dataCollection baseNode="map">
+        		<w2:dataList id="dataList1" baseNode="list" saveRemovedData="true" repeatNode="map">
+        			<w2:columnInfo>
+        				<w2:column id="code" name="code" dataType="text"></w2:column>
+        				<w2:column id="value" name="value" dataType="text"></w2:column>
+        			</w2:columnInfo>
+        		</w2:dataList>
+        	</w2:dataCollection>
+            <w2:workflowCollection/>
+            <xf:submission id="submission1" ref="" target="data:json" action="/publishing/xml/mapData1.json" method="post" mediatype="application/json"
+        		encoding="UTF-8" instance="" replace="" errorHandler="" customHandler="" mode="asynchronous" processMsg="" ev:submit=""
+        		ev:submitdone="" ev:submiterror="">
+        	</xf:submission>
+        	<xf:submission id="submission2" ref="" target="data:json" action="/publishing/xml/mapData2.json" method="post" mediatype="application/json"
+        		encoding="UTF-8" instance="" replace="" errorHandler="" customHandler="" mode="asynchronous" processMsg="" ev:submit=""
+        		ev:submitdone="" ev:submiterror="">
+        	</xf:submission>
+        	<xf:submission id="submission3" ref="" target="data:json" action="/publishing/xml/mapData3.json" method="post" mediatype="application/json"
+        		encoding="UTF-8" instance="" replace="" errorHandler="" customHandler="" mode="asynchronous" processMsg="" ev:submit=""
+        		ev:submitdone="" ev:submiterror="">
+        	</xf:submission>
+        </xf:model>
+        <w2:layoutInfo/>
+        <w2:publicInfo method=""/>
+        <script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function() {
+	$p.executeSubmission( "submission1");
+};
+
+scwin.colorScale1 = d3.scale.linear()
+.range(["red", "yellow", "green", "turquoise", "blue"])
+.domain([0, 0.25, 0.5, 0.75, 1]);
+
+
+scwin.mapchart1_onbeforemapchange = function ( info ) {
+    if(info.newMapCode.length >= 2) {
+        return false; // 지도 확장기능 사용하지 않음 
+    }
+};
+
+scwin.mapchart1_onmapdatachange = function(dataListId) {
+    var dataList = WebSquare.util.getComponentById(dataListId);
+    switch(dataListId) {
+    case "dataList1" : 
+        var data = dataList.getAllJSON();
+        for(var i = 0; i < data.length; i++) {
+            var municipality = d3.select("#" + this.id + "_map").select(".municipality.c" + data[i].code);
+            municipality.style("fill", scwin.colorScale1(data[i].value));
+        }
+        break;
+    }                
+};
+
+scwin.trigger1_onclick = function(e) {
+    $p.executeSubmission(selectbox1.getValue());
+};
+
+scwin.aa = function(str, str1){
+    if(str == "경기도"){
+        return "test";
+    }
+};]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload">
+    	<xf:group id="" style="" adaptiveThreshold="" class="sub_contents">
+	    	<xf:group class="pgtbox" id="" style="">
+	    		<w2:textbox class="pgt_tit" id="" label="Publishing Template - MapChart" style=""></w2:textbox>
+	    	</xf:group>
+	    	<xf:group id="" class="titbox"><w2:textbox style="" id="" label="D3을 이용해 우리나라 전국 지도에 입력받은 데이터를 다양한 형태로 시각화하여 표현하는 컴포넌트입니다. &lt;br/&gt;확대 및 축소비율을 설정할 수 있으며 드래그 앤 드롭, 사용자 정의 마킹 등 기능을 제공합니다." class="">
+	    	</w2:textbox></xf:group><xf:group style="border:1px dashed #ccc;" id="" class="msgbox">
+	    		<xf:group class="w2tb tbl" id="" style="" tagname="table">
+	    			<w2:attributes>
+	    				<w2:summary></w2:summary>
+	    			</w2:attributes>
+	    			<xf:group tagname="colgroup">
+	    				<xf:group style="width:30.00%" tagname="col"></xf:group>
+	    				<xf:group style="width:70.00%" tagname="col"></xf:group>
+	    			</xf:group>
+	    			<xf:group style="" tagname="tr">
+	    				<xf:group class="w2tb_th" style="" tagname="th">
+	    					Mapchart DataList 동적 연동 Sample (submission 이용)
+	    					<w2:attributes>
+	    						<w2:colspan>2</w2:colspan>
+	    						<w2:rowspan>1</w2:rowspan>
+	    					</w2:attributes>
+	    				</xf:group>
+	    			</xf:group>
+	    			<xf:group tagname="tr">
+	    				<xf:group class="w2tb_td" style="" tagname="td">
+	    					<w2:attributes>
+	    						<w2:colspan></w2:colspan>
+	    						<w2:rowspan></w2:rowspan>
+	    					</w2:attributes>
+	    					<w2:textbox class="formguide" for="basicip" id="" label="입력란" style="" tagname="label"></w2:textbox>
+	    					<xf:select1 id="selectbox1" disabledClass="w2selectbox_disabled" appearance="minimal"
+	    						style="position: relative;height:30px;width:150px;" direction="auto" chooseOption="" allOption="" displayMode="label"
+	    						optionOrder="false" submenuSize="auto" disabled="false">
+	    						<xf:choices>
+	    							<xf:item>
+	    								<xf:label><![CDATA[submission1]]></xf:label>
+	    								<xf:value><![CDATA[submission1]]></xf:value>
+	    							</xf:item>
+	    							<xf:item>
+	    								<xf:label><![CDATA[submission2]]></xf:label>
+	    								<xf:value><![CDATA[submission2]]></xf:value>
+	    							</xf:item>
+	    							<xf:item>
+	    								<xf:label><![CDATA[submission3]]></xf:label>
+	    								<xf:value><![CDATA[submission3]]></xf:value>
+	    							</xf:item>
+	    						</xf:choices>
+	    					</xf:select1>
+	    					<xf:trigger id="trigger1" style="position: relative;height:30px;width:150px;" ev:onclick="scwin.trigger1_onclick"
+	    						type="button">
+	    						<xf:label><![CDATA[change data]]></xf:label>
+	    					</xf:trigger>
+	    				</xf:group>
+	    				<xf:group class="w2tb_td" style="" tagname="td">
+	    					<w2:attributes>
+	    						<w2:colspan></w2:colspan>
+	    						<w2:rowspan></w2:rowspan>
+	    					</w2:attributes>
+	    					<w2:textbox class="formguide" for="basicip" id="" label="Chart 확인" style="" tagname="label"></w2:textbox>
+	    					<w2:mapchart event_drilldown="ondblclick" event_select="onclick" event_tooltipon="onmouseover"
+	    						setTooltipStrFunc="scwin.aa" event_tooltipoff="onmouseout" zoomMax="1" id="mapchart1" event_drillup="oncontextmenu"
+	    						dataLists="dataList1" style="position: relative;width:100%;height:500px;" event_deselect="onmouseout"
+	    						dataMapRatio_level0="simp01" ev:onbeforemapchange="scwin.mapchart1_onbeforemapchange"
+	    						ev:onmapdatachange="scwin.mapchart1_onmapdatachange" zoomMin="1">
+	    					</w2:mapchart>
+	    				</xf:group>
+	    			</xf:group>
+	    		</xf:group>
+	    	</xf:group>
+	    </xf:group>
+    </body>
+</html>

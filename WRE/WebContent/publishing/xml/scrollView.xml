@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+        <w2:type>COMPONENT</w2:type>
+        <w2:buildDate/>
+        <w2:MSA/>
+        <xf:model>
+            <w2:dataCollection baseNode="map"/>
+            <w2:workflowCollection/>
+        </xf:model>
+        <w2:layoutInfo/>
+        <w2:publicInfo method=""/>
+        <script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function() {
+	
+};
+]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload">
+    	<xf:group class="sub_contents" id="" style="">
+			<xf:group class="pgtbox" id="" style="">
+				<w2:textbox class="pgt_tit" id="" label="Publishing Template - ScrollView" style=""></w2:textbox>
+			</xf:group>
+			<xf:group id="" class="titbox"><w2:textbox style="" id="" label="모바일에서 스크롤을 생성하는 컴포넌트이며 여러 다양한 컴포넌트를 그룹화 시킬 수 있습니다." class="txt_guide"></w2:textbox></xf:group><xf:group class="titbox" id="" style="">
+				<w2:textbox class="" id="" label="01. Sample" style="" tagname="h3"></w2:textbox>
+			</xf:group>
+			<xf:group class="msgbox" id="" style="">
+				<w2:scrollView bounce="" class="scroll_box" horizontalScroll="false" id="" paging="true" scrollType="mobile"
+					showHorizontalScroll="" showVerticalScroll="true"
+					style="width:100%;height:200px;border:1px solid #d8dfe6;background:#edeef3;position:relative;" verticalScroll="true">
+					<w2:textbox id="" label="w2slideHide는웹스퀘어 엔진에서 정의된 클래스입니다, 기본적으로 html 로 떨구는 시점에서 자동으로 부여됩니다.   "
+						style="padding:10px;">
+					</w2:textbox>
+					<w2:textbox id=""
+						label="&lt;br/&gt;SlideHide컴포넌트를 숨김처리 하기 위하여 추가된 부모 객체입니다. 슬라이드 동작시 해당 객체의 너비, 높이값이 변하면서 슬라이드 동작이 이루어집니다. &lt;br/&gt;slide_hide는 사용자 정의 클래스로 Stylesheet_ext.css 다음에 적용됩니다. 동일한 스타일 시트를 정의함으로서 overriding(덮어쓰기) 됩니다."
+						style="padding:10px;">
+					</w2:textbox>
+					<w2:textbox id=""
+						label="w2slideHide_slideHideMain는 웹스퀘어 엔진에서 정의된 클래스입니다, 기본적으로 html 로 떨구는 시점에서 자동으로 부여됩니다. SlideHide컴포넌트의 실제 영역입니다. 사용자 클래스로 접근할 경우에는 .slide_hide .w2slideHide_slideHideMain{}이런식으로 접근하여 overriding(덮어쓰기) 합니다."
+						style="padding:10px;">
+					</w2:textbox>
+					<w2:textbox id=""
+						label="w2slideHide_slideHideMain는 웹스퀘어 엔진에서 정의된 클래스입니다, 기본적으로 html 로 떨구는 시점에서 자동으로 부여됩니다. SlideHide컴포넌트의 실제 영역입니다. 사용자 클래스로 접근할 경우에는 .slide_hide .w2slideHide_slideHideMain{}이런식으로 접근하여 overriding(덮어쓰기) 합니다."
+						style="padding:10px;">
+					</w2:textbox>
+				</w2:scrollView>
+			</xf:group>
+			<xf:group id="" class="titbox"><w2:textbox tagname="h3" style="" id="" label="02. Property" class=""></w2:textbox></xf:group>
+			<xf:group id="" class="tblbox"><xf:group tagname="table" style="" id="" class="wq_tb w2tb tbl">
+				<w2:attributes>
+					<w2:summary></w2:summary>
+				</w2:attributes>
+				<xf:group tagname="colgroup">
+					<xf:group tagname="col" style="width:20%;"></xf:group>
+					<xf:group tagname="col" style=""></xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">Property</xf:group>
+					<xf:group tagname="th" style="" class="w2tb_th">Description</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">bounce</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">튕기는 효과 사용 여부</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">class</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">사용자 정의를 위한 영역</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">horizontalScroll</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">가로 스크롤 사용 여부</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">id</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">scrollView 컴포넌트의 id</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">paging</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">페이지 효과 사용 여부</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">scrollType</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						스크롤 형식을 결정하는 옵션. auto로 설정시 브라우져 기본 스크롤바를 나타낼 수 있는 경우(데스크탑) 이를 사용하도록 하고, mobile로 설정시에는 항상 모바일 기기의 스크롤바 형식의 스크롤을 사용하도록
+						함
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">showHorizontalScroll</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">가로 스크롤을 보여줄지 여부</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">showVerticalScroll</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">세로 스크롤을 보여줄지 여부</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">style</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">ScrollView의 style 속성</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">verticalScroll</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">세로 스크롤 사용 여부</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th">
+						tabIndex
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						Tab&amp;nbsp;Key를&amp;nbsp;이용&amp;nbsp;한&amp;nbsp;컴포넌트의&amp;nbsp;포커스&amp;nbsp;순서로&amp;nbsp;HTML의&amp;nbsp;tabindex속성과&amp;nbsp;동일한&amp;nbsp;기능을&amp;nbsp;제공한다.
+						<w2:attributes></w2:attributes>
+					</xf:group>
+				</xf:group>
+			</xf:group></xf:group>
+			<xf:group id="" class="titbox"><w2:textbox tagname="h3" style="" id="" label="03. CSS Overriding" class=""></w2:textbox></xf:group>
+		<xf:group id="" class="tblbox"><xf:group tagname="table" style="" id="" class="wq_tb w2tb tbl">
+				<w2:attributes>
+					<w2:summary></w2:summary>
+				</w2:attributes>
+				<xf:group tagname="colgroup">
+					<xf:group tagname="col" style="width:20%;"></xf:group>
+					<xf:group tagname="col" style=""></xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">Class</xf:group>
+					<xf:group tagname="th" style="" class="w2tb_th">Description</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">w2scrollView</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						w2scrollView는 웹스퀘어 엔진에서 정의된 클래스입니다, 기본적으로 html 로 떨구는 시점에서 자동으로 부여됩니다. scroll_box 는 사용자 정의 클래스 입니다.
+					</xf:group>
+				</xf:group>
+			</xf:group></xf:group></xf:group>
+	</body>
+</html>

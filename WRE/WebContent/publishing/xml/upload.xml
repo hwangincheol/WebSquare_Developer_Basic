@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+        <w2:type>COMPONENT</w2:type>
+        <w2:buildDate/>
+        <w2:MSA/>
+        <xf:model>
+            <w2:dataCollection baseNode="map"/>
+            <w2:workflowCollection/>
+        </xf:model>
+        <w2:layoutInfo/>
+        <w2:publicInfo method=""/>
+        <script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function() {
+	
+};
+]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload">
+    	<xf:group class="sub_contents" id="" style="">
+    		<xf:group class="pgtbox" id="" style="">
+    			<w2:textbox class="pgt_tit" id="" label="Publishing Template - Upload" style=""></w2:textbox>
+    		</xf:group>
+    		<xf:group id="" class="titbox">
+    			<w2:textbox style="" id="" label="업로드 컴포넌트를 생성하고 옵션을 통해서 다양한 기능을 지원합니다.&lt;br/&gt;" class="txt_guide"></w2:textbox>
+    		</xf:group>
+    		<xf:group class="titbox" id="" style="">
+    			<w2:textbox class="" id="" label="01. Sample" style="" tagname="h3"></w2:textbox>
+    			<xf:group id="" class="rt">
+    				<w2:anchor outerDiv="false" name="" style="" href="/ws/download/upload.zip" id="" class="btn_cm">
+    					<xf:label><![CDATA[Download]]></xf:label>
+    				</w2:anchor>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group class="msgbox" id="" style="">
+    			<w2:upload inputStyle="position:absolute;vertical-align:middle;word-wrap:break-word" type="image" id=""
+    				style="position: relative;width: 250px;height: 23px;" imageStyle="position:absolute;vertical-align:middle;word-wrap:break-word"
+    				disabled="" class="wq_upl mr30">
+    			</w2:upload>
+    			<w2:upload inputStyle="position:absolute;vertical-align:middle;word-wrap:break-word" type="" id=""
+    				style="position: relative;width: 250px;height: 23px;" imageStyle="position:absolute;vertical-align:middle;word-wrap:break-word"
+    				disabled="true" class="wq_upl mr30">
+    			</w2:upload>
+    		</xf:group>
+    		<xf:group id="" class="titbox">
+    			<w2:textbox tagname="h3" style="" id="" label="02. Property" class=""></w2:textbox>
+    		</xf:group>
+    		<xf:group id="" class="tblbox">
+    			<xf:group tagname="table" style="" id="" class="wq_tb w2tb tbl">
+    				<w2:attributes>
+    					<w2:summary></w2:summary>
+    				</w2:attributes>
+    				<xf:group tagname="colgroup">
+    					<xf:group tagname="col" style="width:20%;"></xf:group>
+    					<xf:group tagname="col" style=""></xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">Property</xf:group>
+    					<xf:group tagname="th" style="" class="w2tb_th">Description</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">imageClass</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">image모드에서 image부분의 className</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">inputClass</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">image모드에서 input부분의 className</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">
+    						tabIndex
+    						<br></br>
+    					</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">upload의 tabIndex 속성</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">type</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						출력 타입설정
+    						<br></br>
+    						- image(찾아보기 버튼을 이미지로)
+    						<br></br>
+    						- button(찾아보기 버튼을 input type 버튼으로)
+    					</xf:group>
+    				</xf:group>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group id="" class="titbox">
+    			<w2:textbox tagname="h3" style="" id="" label="03. CSS Overriding" class=""></w2:textbox>
+    		</xf:group>
+    		<xf:group id="" class="tblbox">
+    			<xf:group tagname="table" style="" id="" class="wq_tb w2tb tbl">
+    				<w2:attributes>
+    					<w2:summary></w2:summary>
+    				</w2:attributes>
+    				<xf:group tagname="colgroup">
+    					<xf:group tagname="col" style="width:20%;"></xf:group>
+    					<xf:group tagname="col" style=""></xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">Class</xf:group>
+    					<xf:group tagname="th" style="" class="w2tb_th">Description</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">w2upload</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						w2upload는 웹스퀘어 엔진에서 정의된 클래스입니다, 기본적으로 html 로 렌더링되는 시점에서 자동으로 부여됩니다. 여기에 사용자 정의 클래스를 추가해서 overriding(덮어쓰기) 하여
+    						디자인을 바꿀 수 있습니다.
+    					</xf:group>
+    				</xf:group>
+    			</xf:group>
+    		</xf:group>
+    	</xf:group>
+    </body>
+</html>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:w2="http://www.inswave.com/websquare"
+	xmlns:xf="http://www.w3.org/2002/xforms">
+	<head meta_screenName="[Input] readOnly(읽기 전용) 설정하기">
+		<w2:historyInfo>
+			<w2:history meta_no="01" meta_desc="최초작성" meta_date="20230907" meta_user="InswaveSystems"></w2:history>
+		</w2:historyInfo>
+		<w2:type>COMPONENT</w2:type>
+		<w2:buildDate />
+		<w2:MSA />
+		<xf:model>
+			<w2:dataCollection baseNode="map">
+			</w2:dataCollection>
+			<w2:workflowCollection />
+		</xf:model>
+		<w2:layoutInfo />
+		<w2:publicInfo method="" />
+		<script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function () {
+
+};
+
+/**
+ * 버튼 ['readOnly' 설정하기] 클릭 시
+ */
+scwin.btn_exam1_1_onclick = function (e) {
+    // Input 'ibx_exam1'의 속성 'readOnly'의 설정 값을 true로 지정합니다. 'readOnly'가 활성화됩니다.
+    ibx_exam1.setReadOnly(true);
+};
+
+/**
+ * 버튼 ['readOnly' 해제하기] 클릭 시
+ */
+scwin.btn_exam1_2_onclick = function (e) {
+    // Input 'ibx_exam1'의 속성 'readOnly'의 설정 값을 false로 지정합니다. 'readOnly'가 비활성화됩니다.
+    ibx_exam1.setReadOnly(false);
+};]]></script>
+	</head>
+	<body ev:onpageload="scwin.onpageload">
+		<xf:group class="sub_contents" id="" style="">
+			<xf:group class="ws_example_grp_desc" id="" style="">
+				<w2:textbox escape="false" id="" label="Input의 속성 'readOnly'와 함수 'setReadOnly' 예제입니다." style="">
+				</w2:textbox>
+				<w2:textbox escape="false" id=""
+					label="속성 'readOnly'는 입력 필드를 읽기 전용으로 설정하는 기능을 제공합니다. 'readOnly'가 true로 설정되면 사용자가 값을 수정할 수 없습니다." style="">
+				</w2:textbox>
+				<w2:textbox escape="false" id="" label="함수 'setReadOnly'는 속성 'readOnly'의 값을 설정하는 기능을 제공합니다." style="">
+				</w2:textbox>
+			</xf:group>
+			<xf:group class="example_div_tb_style_wrap" id="">
+				<xf:group class="example_div_tr_style" id="" style="">
+					<w2:textbox class="example_div_th_style" escape="false" id="" label="속성으로 'readOnly' 설정하기" style=""></w2:textbox>
+					<xf:group class="example_div_td_style" id="" style="">
+						<xf:group class="" id="" style="">
+							<w2:span class="ws_exam_txt_list" id="" label="(기본 설정) readOnly 미설정"
+								style="display: inline-block;width:170px;margin-right: 6px;">
+							</w2:span>
+							<xf:input id="" style="width:110px;" readOnly="false" initValue="readOnly 미설정">
+							</xf:input>
+						</xf:group>
+						<xf:group class="" id="" style="">
+							<w2:span class="ws_exam_txt_list" id="" label="readOnly 설정" style="display: inline-block;width:170px;margin-right: 6px;">
+							</w2:span>
+							<xf:input id="" readOnly="true" style="width:110px;" initValue="readOnly 설정">
+							</xf:input>
+						</xf:group>
+					</xf:group>
+				</xf:group>
+				<xf:group class="example_div_tr_style" id="" style="">
+					<w2:textbox class="example_div_th_style" escape="false" id="" label="스크립트로 'readOnly' 설정하기" style=""></w2:textbox>
+					<xf:group class="example_div_td_style" id="" style="">
+						<xf:group class="mb_def_box nobottom" id="" style="">
+							<xf:trigger class="btn_exam_exec btn_txt_of" ev:onclick="scwin.btn_exam1_1_onclick" id="btn_exam1_1" style=""
+								type="button">
+								<xf:label><![CDATA['readOnly' 설정하기]]></xf:label>
+							</xf:trigger>
+							<xf:trigger class="btn_exam_exec btn_txt_of" ev:onclick="scwin.btn_exam1_2_onclick" id="btn_exam1_2" style=""
+								type="button">
+								<xf:label><![CDATA['readOnly' 해제하기]]></xf:label>
+							</xf:trigger>
+						</xf:group>
+						<xf:group class="" id="" style="">
+							<xf:input id="ibx_exam1" initValue="임시 값" style="width:110px;"></xf:input>
+						</xf:group>
+					</xf:group>
+				</xf:group>
+			</xf:group>
+		</xf:group>
+	</body>
+</html>

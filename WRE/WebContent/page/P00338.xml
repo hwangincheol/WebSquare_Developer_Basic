@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:w2="http://www.inswave.com/websquare"
+	xmlns:xf="http://www.w3.org/2002/xforms">
+	<head meta_screenName="[컴포넌트 공통] ChooseOption 설정하기" meta_type="메인">
+		<w2:historyInfo>
+			<w2:history meta_no="01" meta_desc="최초작성" meta_date=" 20230817" meta_user="InswaveSystems"></w2:history>
+		</w2:historyInfo>
+		<w2:type>COMPONENT</w2:type>
+		<w2:buildDate />
+		<w2:MSA />
+		<xf:model>
+			<w2:dataCollection baseNode="map">
+			</w2:dataCollection>
+			<w2:workflowCollection />
+		</xf:model>
+		<w2:layoutInfo />
+		<w2:publicInfo method="" />
+		<script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function () {
+
+};
+
+scwin.acb_value_onselected = function () {
+    spn_res.setValue(this.getValue());
+};
+]]></script>
+	</head>
+	<body ev:onpageload="scwin.onpageload">
+		<xf:group class="sub_contents" id="" style="" nextTabID="">
+			<xf:group class="ws_example_grp_desc" id="" style="">
+				<w2:textbox escape="false" id=""
+					label='AutoComplete과 SelectBox의 공통 속성 chooseOption과 chooseOptionLabel 사용 예제입니다.&lt;br/&gt;chooseOption: 선택 안내 메시지 표시 여부를 결정하는 옵션입니다. value는 ""(empty string) 입니다.&lt;br/&gt;chooseOptionLabel: chooseOption을 사용할 때 표시할 텍스트를 설정합니다. 설정하지 않으면 "-선택-"(lable)이 표시됩니다.&lt;br/&gt;chooseOptionValue: 선택 안내 메시지 텍스트의 value (AutoComplete만 해당)'
+					style="">
+				</w2:textbox>
+			</xf:group>
+			<xf:group class="example_div_tb_style_wrap mb_def" id="">
+
+				<xf:group class="example_div_tr_style" id="" style="">
+
+					<xf:group class="example_div_th_style" id="" style="">
+						<w2:span class="mr_def txt_blue" id="" label="AutoComplete 예제" style=""></w2:span>
+					</xf:group>
+					<xf:group class="example_div_td_style" id="" style="">
+						<w2:textbox class="ws5_example_txt_normal" escape="false" id=""
+							label='AutoComplete에 chooseOption, chooseOptionLabel, chooseOptionValue를 설정한 예제입니다.' style="">
+						</w2:textbox>
+						<xf:group id="" style="margin-bottom: 5px;">
+							<w2:autoComplete allOption="" chooseOption="" editType="select" id="" ref="" search="start"
+								style="width: 148px;margin-right: 5px;" submenuSize="auto" useKeywordHighlight="false">
+								<w2:choices>
+									<w2:item>
+										<w2:label><![CDATA[A]]></w2:label>
+										<w2:value><![CDATA[A]]></w2:value>
+									</w2:item>
+									<w2:item>
+										<w2:label><![CDATA[AB]]></w2:label>
+										<w2:value><![CDATA[AB]]></w2:value>
+									</w2:item>
+									<w2:item>
+										<w2:label><![CDATA[ABC]]></w2:label>
+										<w2:value><![CDATA[ABC]]></w2:value>
+									</w2:item>
+									<w2:item>
+										<w2:label><![CDATA[ABCD]]></w2:label>
+										<w2:value><![CDATA[ABCD]]></w2:value>
+									</w2:item>
+								</w2:choices>
+							</w2:autoComplete>
+							<w2:span id="" label="미적용" style=""></w2:span>
+						</xf:group>
+						<xf:group id="" style="margin-bottom: 5px;">
+							<w2:autoComplete allOption="" chooseOption="true" editType="select" id="" ref="" search="start"
+								style="width: 148px;margin-right: 5px;" submenuSize="auto" useKeywordHighlight="false">
+								<w2:choices>
+									<w2:item>
+										<w2:label><![CDATA[A]]></w2:label>
+										<w2:value><![CDATA[A]]></w2:value>
+									</w2:item>
+									<w2:item>
+										<w2:label><![CDATA[AB]]></w2:label>
+										<w2:value><![CDATA[AB]]></w2:value>
+									</w2:item>
+									<w2:item>
+										<w2:label><![CDATA[ABC]]></w2:label>
+										<w2:value><![CDATA[ABC]]></w2:value>
+									</w2:item>
+									<w2:item>
+										<w2:label><![CDATA[ABCD]]></w2:label>
+										<w2:value><![CDATA[ABCD]]></w2:value>
+									</w2:item>
+								</w2:choices>
+							</w2:autoComplete>
+							<w2:span id="" label="chooseOption" style=""></w2:span>
+						</xf:group>
+						<xf:group id="" style="margin-bottom: 5px;">
+							<w2:autoComplete allOption="" chooseOption="true" editType="select" id="" ref="" search="start"
+								style="width: 148px;margin-right: 5px;" submenuSize="auto" useKeywordHighlight="false" chooseOptionLabel="chooseOptionLabel">
+								<w2:choices>
+									<w2:item>
+										<w2:label><![CDATA[A]]></w2:label>
+										<w2:value><![CDATA[A]]></w2:value>
+									</w2:item>
+									<w2:item>
+										<w2:label><![CDATA[AB]]></w2:label>
+										<w2:value><![CDATA[AB]]></w2:value>
+									</w2:item>
+									<w2:item>
+										<w2:label><![CDATA[ABC]]></w2:label>
+										<w2:value><![CDATA[ABC]]></w2:value>
+									</w2:item>
+									<w2:item>
+										<w2:label><![CDATA[ABCD]]></w2:label>
+										<w2:value><![CDATA[ABCD]]></w2:value>
+									</w2:item>
+								</w2:choices>
+							</w2:autoComplete>
+						</xf:group>
+						<xf:group id="" style="margin-bottom: 5px;">
+							<w2:autoComplete allOption="" chooseOption="true" chooseOptionLabel="chooseOptionValue" editType="select"
+								id="acb_value" ref="" search="start" style="width: 148px;margin-right: 5px;" submenuSize="auto" useKeywordHighlight="false"
+								chooseOptionValue="chooseOptionValue" ev:onselected="scwin.acb_value_onselected">
+								<w2:choices>
+									<w2:item>
+										<w2:label><![CDATA[A]]></w2:label>
+										<w2:value><![CDATA[A]]></w2:value>
+									</w2:item>
+									<w2:item>
+										<w2:label><![CDATA[AB]]></w2:label>
+										<w2:value><![CDATA[AB]]></w2:value>
+									</w2:item>
+									<w2:item>
+										<w2:label><![CDATA[ABC]]></w2:label>
+										<w2:value><![CDATA[ABC]]></w2:value>
+									</w2:item>
+									<w2:item>
+										<w2:label><![CDATA[ABCD]]></w2:label>
+										<w2:value><![CDATA[ABCD]]></w2:value>
+									</w2:item>
+								</w2:choices>
+							</w2:autoComplete>
+							
+						<w2:span id="spn_res" label="" style=""></w2:span></xf:group>
+					</xf:group>
+
+				</xf:group>
+				<xf:group class="example_div_tr_style" id="" style="">
+					<xf:group class="example_div_th_style" id="" style="">
+						<w2:span class="mr_def txt_blue" id="" label="SelectBox 예제" style=""></w2:span>
+					</xf:group>
+					<xf:group class="example_div_td_style" id="" style="">
+						<w2:textbox class="ws5_example_txt_normal" escape="false" id=""
+							label="AutoComplete에 chooseOption, chooseOptionLabel를 설정한 예제입니다." style="">
+						</w2:textbox>
+						<xf:group id="" style="margin-bottom: 5px;">
+							<xf:select1 allOption="" appearance="minimal" chooseOption="" class="" direction="auto" disabled="false"
+								disabledClass="w2selectbox_disabled" id="" ref="" renderType="" style="width: 148px;margin-right: 5px;" submenuSize="auto">
+								<xf:choices>
+									<xf:item>
+										<xf:label><![CDATA[new row]]></xf:label>
+										<xf:value><![CDATA[]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[new row]]></xf:label>
+										<xf:value><![CDATA[]]></xf:value>
+									</xf:item>
+								</xf:choices>
+							</xf:select1>
+							<w2:span id="" label="미적용" style=""></w2:span>
+						</xf:group>
+						<xf:group id="" style="margin-bottom: 5px;">
+							<xf:select1 allOption="true" appearance="minimal" chooseOption="true" class="" direction="auto" disabled="false"
+								disabledClass="w2selectbox_disabled" id="" ref="" renderType="" style="width: 148px;margin-right: 5px;" submenuSize="auto">
+								<xf:choices>
+									<xf:item>
+										<xf:label><![CDATA[new row]]></xf:label>
+										<xf:value></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[new row]]></xf:label>
+										<xf:value></xf:value>
+									</xf:item>
+								</xf:choices>
+							</xf:select1>
+							<w2:span id="" label="chooseOption" style=""></w2:span>
+						</xf:group>
+						<xf:group id="" style="margin-bottom: 5px;">
+							<xf:select1 allOption="true" appearance="minimal" chooseOption="true" class="" direction="auto" disabled="false"
+								disabledClass="w2selectbox_disabled" id="" ref="" renderType="" style="width: 148px;margin-right: 5px;" submenuSize="auto" chooseOptionLabel="chooseOptionLabel">
+								<xf:choices>
+									<xf:item>
+										<xf:label><![CDATA[new row]]></xf:label>
+										<xf:value></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[new row]]></xf:label>
+										<xf:value></xf:value>
+									</xf:item>
+								</xf:choices>
+							</xf:select1>
+						</xf:group>
+					</xf:group>
+				</xf:group>
+			</xf:group>
+		</xf:group>
+
+
+	</body>
+</html>

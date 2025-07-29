@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+        <w2:type>COMPONENT</w2:type>
+        <w2:buildDate/>
+        <w2:MSA/>
+        <xf:model>
+            <w2:dataCollection baseNode="map"/>
+            <w2:workflowCollection/>
+        </xf:model>
+        <w2:layoutInfo/>
+        <w2:publicInfo method=""/>
+        <script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function() {
+	gp_generator.insertChild();
+    gp_generator.insertChild();
+    gp_generator.insertChild();
+    gp_generator.insertChild();
+    gp_generator.insertChild();
+};
+]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload">
+    	<xf:group class="sub_contents" id="" style="">
+			<xf:group class="pgtbox" id="" style="">
+				<w2:textbox class="pgt_tit" id="" label="Publishing Template - Generator" style=""></w2:textbox>
+			</xf:group>
+			<xf:group id="" class="titbox"><w2:textbox style="" id="" label="특정 영역이 반복되어 표현되거나 동일한 영역을 동적으로 추가/삭제해야 할 때 사용하는 컴포넌트입니다. for(반복문)과 유사합니다." class="">
+			</w2:textbox></xf:group><xf:group class="titbox" id="" style="">
+				<w2:textbox class="" id="" label="01. Sample" style="" tagname="h3"></w2:textbox>
+			</xf:group>
+			<xf:group class="msgbox" id="" style="border:1px dashed #ccc;">
+				<xf:group id="" style="" tagname="ul" class="">
+					<w2:generator id="gp_generator" style="" tagname="ul" class="list">
+						<w2:textbox id="" label="Generator Component" style="" tagname="li" class=""></w2:textbox>
+					</w2:generator>
+				</xf:group>
+			</xf:group>
+			<xf:group id="" class="titbox"><w2:textbox style="" id="" label="02. Property" class="" tagname="h3"></w2:textbox></xf:group>
+			<xf:group id="" class="tblbox"><xf:group tagname="table" style="" id="" class="w2tb tbl">
+				<w2:attributes>
+					<w2:summary></w2:summary>
+				</w2:attributes>
+				<xf:group tagname="colgroup">
+					<xf:group tagname="col" style="width:20%;"></xf:group>
+					<xf:group tagname="col" style=""></xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">Property</xf:group>
+					<xf:group tagname="th" style="" class="w2tb_th">Description</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">class</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">사용자가 임의의 class를 정의할때 사용합니다.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">id</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">컴포넌트 ID로 전역객체로 할당되며 script에서 본 id로 컴포넌트에 접근이 가능합니다</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">tagname</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						반복되는 부분을 감싸는 태그의 태그명을 지정합니다.
+						<br></br>
+					</xf:group>
+				</xf:group>
+			</xf:group></xf:group>
+			<xf:group id="" class="titbox"><w2:textbox style="" id="" label="Generator API" class="" tagname="h3"></w2:textbox></xf:group>
+			<xf:group id="" class="tblbox"><xf:group tagname="table" style="" id="" class="w2tb tbl">
+				<w2:attributes>
+					<w2:summary></w2:summary>
+				</w2:attributes>
+				<xf:group tagname="colgroup">
+					<xf:group tagname="col" style="width:20%;"></xf:group>
+					<xf:group tagname="col" style=""></xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">API</xf:group>
+					<xf:group tagname="th" style="" class="w2tb_th">Description</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">getChild()</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">컴포넌트의 ID와 해당 컴포넌트가 속해 있는 반복부의 index를 기반으로 컴포넌트 객체를 반환합니다.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">insertChild()</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">index에 해당하는 위치에 반복부를 삽입한다. index가 생략 된 경우 마지막에 삽입된다.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">removeChild()</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">index에 해당하는 반복부를 삭제하며 index가 없을 경우 마지막 반복부를 삭제합니다.</xf:group>
+				</xf:group>
+			</xf:group></xf:group>
+			<xf:group adaptiveThreshold="" class="msgbox" id="" style="">
+				<xf:group id="" class="titbox"><w2:textbox style="" id="" label="Tip" class="" tagname="h3"></w2:textbox></xf:group><w2:textbox class="txt_info" id=""
+					label="사용할 수 없는 컴포넌트 * Chart * GridView * Menu * Switch * TabControl * Treeview * WindowContainer" style="">
+				</w2:textbox>
+				<w2:textbox class="txt_info" id=""
+					label='generator 사용시 반복하려는 목록의 상위 그룹에 generator를 사용해야 합니다.&lt;br/&gt;예) li태그를 반복시키려고 한다면, ul태그에 generator를 사용' style="">
+				</w2:textbox>
+				<w2:textbox class="txt_info" id="" label="Generator: 그룹을 구성하는 컴포넌트의 동적인 추가 및 삭제를 지원합니다. &lt;br/&gt;Repeat: 컴포넌트 그룹을 정적으로 생성합니다. "
+					style="">
+				</w2:textbox>
+			</xf:group>
+		</xf:group>
+    </body>
+</html>

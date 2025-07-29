@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:w2="http://www.inswave.com/websquare"
+	xmlns:xf="http://www.w3.org/2002/xforms">
+	<head meta_screenName="[CheckBox] 선택 항목 전체 선택 / 해제 하기" meta_type="메인">
+		<w2:historyInfo>
+			<w2:history meta_no="01" meta_desc="최초작성" meta_date=" 20230905" meta_user="InswaveSystems"></w2:history>
+		</w2:historyInfo>
+		<w2:type>COMPONENT</w2:type>
+		<w2:buildDate />
+		<w2:MSA />
+		<xf:model>
+			<w2:dataCollection baseNode="map">
+			</w2:dataCollection>
+			<w2:workflowCollection />
+		</xf:model>
+		<w2:layoutInfo />
+		<w2:publicInfo method="" />
+		<script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function () {
+};
+
+scwin.btn_true_onclick = function (e) {
+    cbx_main.checkAll(true);
+};
+
+scwin.btn_false_onclick = function (e) {
+    cbx_main.checkAll(false);
+};
+]]></script>
+	</head>
+	<body ev:onpageload="scwin.onpageload">
+		<xf:group class="sub_contents" id="" style="" nextTabID="">
+			<xf:group class="ws_example_grp_desc" id="" style="">
+				<w2:textbox escape="false" id=""
+					label='CheckBox의 선택 항목 전체를 선택 / 해제하는 예제입니다.&lt;br/&gt;CheckBox의 api인 checkAll을 사용해서 전체를 선택 / 해제 할 수 있습니다.'
+					style="">
+				</w2:textbox>
+			</xf:group>
+			<xf:group class="example_div_tb_style_wrap mb_def" id="">
+				<xf:group class="example_div_tr_style" id="" style="">
+					<xf:group class="example_div_th_style" id="" style="">
+						<w2:span class="mr_def txt_blue" id="" label="전체 선택 / 해제하기" style=""></w2:span>
+					</xf:group>
+					<xf:group class="example_div_td_style" id="" style="">
+						<xf:group id="">
+							<xf:trigger style="" id="btn_true" type="button" class="btn_exam_exec" ev:onclick="scwin.btn_true_onclick">
+								<xf:label><![CDATA[excute checkAll: true]]></xf:label>
+							</xf:trigger>
+							<xf:trigger class="btn_exam_exec" id="btn_false" style=""
+								type="button" ev:onclick="scwin.btn_false_onclick">
+								<xf:label><![CDATA[excute checkAll: false]]></xf:label>
+							</xf:trigger>
+						</xf:group>
+
+						<xf:group id="">
+							<xf:select ref="" appearance="full" style="" id="cbx_main" selectedindex="-1" rows="" cols="4">
+								<xf:choices>
+									<xf:item>
+										<xf:label><![CDATA[Label 1]]></xf:label>
+										<xf:value><![CDATA[]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[Label 2]]></xf:label>
+										<xf:value><![CDATA[]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[Label 3]]></xf:label>
+										<xf:value><![CDATA[]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[Label 4]]></xf:label>
+										<xf:value><![CDATA[]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[Label 5]]></xf:label>
+										<xf:value><![CDATA[]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[Label 6]]></xf:label>
+										<xf:value><![CDATA[]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[Label 7]]></xf:label>
+										<xf:value><![CDATA[]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[Label 8]]></xf:label>
+										<xf:value><![CDATA[]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[Label 9]]></xf:label>
+										<xf:value><![CDATA[]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[Label 10]]></xf:label>
+										<xf:value><![CDATA[]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[Label 11]]></xf:label>
+										<xf:value><![CDATA[]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[Label 12]]></xf:label>
+										<xf:value><![CDATA[]]></xf:value>
+									</xf:item>
+								</xf:choices>
+							</xf:select></xf:group></xf:group>
+				</xf:group>
+			</xf:group>
+		</xf:group>
+
+
+	</body>
+</html>

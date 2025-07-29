@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:w2="http://www.inswave.com/websquare"
+	xmlns:xf="http://www.w3.org/2002/xforms">
+	<head>
+		<w2:historyInfo>
+			<w2:history meta_no="01" meta_desc="최초작성" meta_date="20230425" meta_user="InswaveSystems" ></w2:history>
+		</w2:historyInfo>
+		<w2:type>COMPONENT</w2:type>
+		<w2:buildDate />
+		<w2:MSA />
+		<xf:model>
+			<w2:dataCollection baseNode="map">
+				<w2:dataList baseNode="list" repeatNode="map" id="dataList1" saveRemovedData="true">
+					<w2:columnInfo>
+						<w2:column id="Code" name="name1" dataType="text"></w2:column>
+						<w2:column id="City" name="name2" dataType="text"></w2:column>
+						<w2:column id="Country" name="name3" dataType="text"></w2:column>
+						<w2:column id="Type" name="name4" dataType="text"></w2:column>
+					</w2:columnInfo>
+					<w2:data use="true">
+						<w2:row>
+							<Code><![CDATA[SEL]]></Code>
+							<City><![CDATA[Seoul]]></City>
+							<Country><![CDATA[Korea]]></Country>
+							<Type><![CDATA[Domestic]]></Type>
+						</w2:row>
+						<w2:row>
+							<Code><![CDATA[BSN]]></Code>
+							<City><![CDATA[Busan]]></City>
+							<Country><![CDATA[Korea]]></Country>
+							<Type><![CDATA[Domestic]]></Type>
+						</w2:row>
+						<w2:row>
+							<Code><![CDATA[ICN]]></Code>
+							<City><![CDATA[Incheon]]></City>
+							<Country><![CDATA[Korea]]></Country>
+							<Type><![CDATA[Domestic]]></Type>
+						</w2:row>
+						<w2:row>
+							<Code><![CDATA[DJN]]></Code>
+							<City><![CDATA[Daejeon]]></City>
+							<Country><![CDATA[Korea]]></Country>
+							<Type><![CDATA[Domestic]]></Type>
+						</w2:row>
+						<w2:row>
+							<Code><![CDATA[DGU]]></Code>
+							<City><![CDATA[Daegu]]></City>
+							<Country><![CDATA[Korea]]></Country>
+							<Type><![CDATA[Domestic]]></Type>
+						</w2:row>
+						<w2:row>
+							<Code><![CDATA[OTW]]></Code>
+							<City><![CDATA[Ottawa]]></City>
+							<Country><![CDATA[Canada]]></Country>
+							<Type><![CDATA[Overseas]]></Type>
+						</w2:row>
+						<w2:row>
+							<Code><![CDATA[LDN]]></Code>
+							<City><![CDATA[Toronto]]></City>
+							<Country><![CDATA[Canada]]></Country>
+							<Type><![CDATA[Overseas]]></Type>
+						</w2:row>
+						<w2:row>
+							<Code><![CDATA[BRN]]></Code>
+							<City><![CDATA[Berlin]]></City>
+							<Country><![CDATA[Germany]]></Country>
+							<Type><![CDATA[Overseas]]></Type>
+						</w2:row>
+						<w2:row>
+							<Code><![CDATA[BJG]]></Code>
+							<City><![CDATA[Beijing]]></City>
+							<Country><![CDATA[China]]></Country>
+							<Type><![CDATA[Overseas]]></Type>
+						</w2:row>
+						<w2:row>
+							<Code><![CDATA[LDN]]></Code>
+							<City><![CDATA[London]]></City>
+							<Country><![CDATA[UK]]></Country>
+							<Type><![CDATA[Overseas]]></Type>
+						</w2:row>
+					</w2:data>
+				</w2:dataList>
+			</w2:dataCollection>
+			<w2:workflowCollection />
+			<xf:submission id="submission1" ref="" target="data:json,dlt_dataList1" action="/data/sampleData/sampleData_CheckBox.json"
+				method="post" mediatype="application/json" encoding="UTF-8" instance="" replace="" errorHandler="" customHandler="" mode="asynchronous"
+				processMsg="" ev:submit="" ev:submitdone="" ev:submiterror="" abortTrigger="">
+			</xf:submission>
+		</xf:model>
+		<w2:layoutInfo />
+		<w2:publicInfo method="" />
+		<script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function () {
+
+};
+
+/**
+ * 버튼 [비활성화하기] 클릭 시
+ */
+scwin.btn_ex1_onclick = function (e) {
+    // CheckBox 'cbx_exam1'에 DataList 'dataList1'을 연결합니다.
+    cbx_exam1.setEnableColumn("Country", "Korea");
+};
+]]></script>
+	</head>
+	<body ev:onpageload="scwin.onpageload">
+		<xf:group class="sub_contents" id="" style="">
+			<xf:group class="ws_example_grp_desc" id="" style="">
+				<w2:textbox escape="false" id=""
+					label='CheckBox컴포넌트의 특정 선택항목들을 함수를 사용하여 동적으로 비활성화하는 예제입니다.&lt;br/&gt;&lt;br/&gt;이 기능은 아래의 함수로 사용할 수 있습니다.&lt;br/&gt;- setEnableColumn : (함수)enableColumn 속성을 동적으로 설정.'
+					style="">
+				</w2:textbox>
+			</xf:group>
+			<xf:group class="example_div_tb_style_wrap" id="">
+				<xf:group class="example_div_tb_style_wrap" id="" style="">
+					<xf:group class="example_div_tr_style" id="" style="">
+						<w2:textbox class="example_div_th_style" escape="false" id="" label="선택항목 비활성화하기" style="">
+						</w2:textbox>
+						<xf:group class="example_div_td_style" id="" style="">
+							<w2:textbox class="ws5_example_txt_normal" displayFormat="" escape="false" id=""
+								label="비활성화하기 버튼을 누르면 CheckBox컴포넌트에 특정 선택항목이 비활성화되는 것을 확인한다." style="">
+							</w2:textbox>
+							<xf:group id="" style="margin: 10px 0px 10px 0px;">
+								<xf:trigger class="btn_exam_exec btn_txt_of" ev:onclick="scwin.btn_ex1_onclick" id="btn_ex1" localeRef=""
+									style="min-width: 30px;height: 26px;" type="" useDefaultLabel="true">
+									<xf:label><![CDATA[비활성화하기]]></xf:label>
+								</xf:trigger>
+							</xf:group>
+							<xf:select selectedindex="-1" id="cbx_exam1" appearance="full" style="min-width: 80px;min-height: 21px;" cols="1" rows=""
+								ref="">
+								<xf:choices>
+									<xf:itemset nodeset="data:dataList1">
+										<xf:label ref="City"></xf:label>
+										<xf:value ref="Code"></xf:value>
+									</xf:itemset>
+								</xf:choices>
+							</xf:select>
+							
+						</xf:group>
+					</xf:group>
+				</xf:group>
+			</xf:group>
+
+		</xf:group>
+	</body>
+</html>

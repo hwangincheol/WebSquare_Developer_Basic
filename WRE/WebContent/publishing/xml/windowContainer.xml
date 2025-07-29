@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+        <w2:type>COMPONENT</w2:type>
+        <w2:buildDate/>
+        <w2:MSA/>
+        <xf:model>
+            <w2:dataCollection baseNode="map"/>
+            <w2:workflowCollection/>
+        </xf:model>
+        <w2:layoutInfo/>
+        <w2:publicInfo method=""/>
+        <script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function() {
+	wc1.createWindow( "contaner1" ,  null, "/ws/xml/component/anchor.xml" , "contaner1");
+    wc1.createWindow( "contaner2" ,  null, "/ws/xml/component/article.xml" , "contaner2");
+    wc1.createWindow( "contaner3" ,  null, "/ws/xml/component/autoComplete.xml" , "contaner3");
+	
+};
+]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload">
+    	<xf:group class="sub_contents" id="" style="">
+    		<xf:group class="pgtbox" id="" style="">
+    			<w2:textbox class="pgt_tit" id="" label="Publishing Template - WindowContainer" style=""></w2:textbox>
+    		</xf:group>
+
+    		<xf:group id="" class="titbox">
+    			<w2:textbox style="" id="" label="여러 개의 화면을 화면을 제어하는 툴바와 함께 관리하기 위한 컴포넌트입니다.&lt;br/&gt;" class="txt_guide"></w2:textbox>
+    		</xf:group>
+    		<xf:group class="titbox" id="" style="">
+    			<w2:textbox class="" id="" label="01. Sample" style="" tagname="h3"></w2:textbox>
+    			<xf:group id="" class="rt">
+    				<w2:anchor outerDiv="false" name="" style="" href="/ws/download/windowContainer.zip" id="" class="btn_cm">
+    					<xf:label><![CDATA[Download]]></xf:label>
+    				</w2:anchor>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group style="" id="" class="msgbox">
+    			<w2:windowContainer class="wq_winc" defaultHeight="300" defaultWidth="300" fixArrangeFullScreen="true"
+    				hideTitleOnMaximize="true" horizontalArrangeNum="2" id="wc1" sequentialArrangeColNum="2" sequentialArrangeRowNum="2"
+    				spaInitCount="2" style="height:300px;position:relative;" toolbarPosition="top" tooltipDisplay="true" tooltipGroupClass="false" useCloseButton="true"
+    				useControlIconTitle="false" useFixButton="true" useStatusMsg="true" verticalArrangeNum="2" windowAutoResize="false" windowMaxNum="5"
+    				windowMaximizeAll="false" windowTooltipDisplay="true" useNameContainer="true" controlIconPosition="allright" frameMode="wframe">
+    				<w2:windowToolbar>
+    					<w2:nameLayer></w2:nameLayer>
+    					<w2:controlIconLayer>
+    						<w2:controlIcon></w2:controlIcon>
+    						<w2:controlIcon></w2:controlIcon>
+    						<w2:controlIcon></w2:controlIcon>
+    						<w2:controlIcon></w2:controlIcon>
+    						<w2:controlIcon></w2:controlIcon>
+    					</w2:controlIconLayer>
+    					<w2:selectedNameLayer></w2:selectedNameLayer>
+    				</w2:windowToolbar>
+    			</w2:windowContainer>
+    		</xf:group>
+    		<xf:group id="" class="titbox">
+    			<w2:textbox tagname="h3" style="" id="" label="02. Property" class=""></w2:textbox>
+    		</xf:group>
+    		<xf:group id="" class="tblbox">
+    			<xf:group tagname="table" style="" id="" class="wq_tb w2tb tbl">
+    				<w2:attributes>
+    					<w2:summary></w2:summary>
+    				</w2:attributes>
+    				<xf:group tagname="colgroup">
+    					<xf:group tagname="col" style="width:20%;"></xf:group>
+    					<xf:group tagname="col" style=""></xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">Property</xf:group>
+    					<xf:group tagname="th" style="" class="w2tb_th">Description</xf:group>
+    				</xf:group>
+
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">class</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">사용자가 임의의 class를 정의할때 사용합니다.</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">confirmFalseAction</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">같은 경로의 화면을 중복해서 열었을 경우 중복 확인 메세지에서 아니오를 선택했을때의 동작을 지정합니다.</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">confirmMessage</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">같은 경로의 화면을 중복해서 열었을 경우 나오는 중복 확인 메세지를 지정합니다.</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">confirmTrueAction</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">같은 경로의 화면을 중복해서 열었을 경우 중복 확인 메세지에서 예를 선택했을때의 동작을 지정합니다.</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" class="w2tb_th">
+    						controlIconPosition
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+    					</xf:group>
+    					<xf:group tagname="td" class="w2tb_td">
+    						[default:left]&amp;nbsp;windowContainer&amp;nbsp;제어&amp;nbsp;아이콘의&amp;nbsp;위치.&amp;nbsp;단,&amp;nbsp;useNameContainer&amp;nbsp;속성이&amp;nbsp;true일&amp;nbsp;경우&amp;nbsp;작동한다.
+    						<w2:attributes></w2:attributes>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">defaultHeight</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">윈도우 기본 높이를 지정합니다.</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">defaultWidth</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">윈도우 기본 너비를 지정합니다.</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">fixArrangeFullScreen</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">현재 윈도우수가 arrangeNum보다 작을때 화면을 전부 사용할지 여부를 설정합니다.</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">hideTitleOnMaximize</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						윈도우의 타이틀 부분을 최대화시 숨길지 여부를 설정합니다.(숨겨진 경우는 maximize 또는 restore는 controlIcon에서 할 수 있습니다.)
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">horizontalArrangeNum</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">고정 버튼을 사용할 경우, 수평 정렬시 정렬시킬 화면개수를 지정합니다.</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">id</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">사용자가 임의의 id를 정의할때 사용합니다.</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">lineBreakNum</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">수평,수직 정렬시 현재 윈도우의 개수가 해당 값 이상일때 개행 시킬지 설정합니다.</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">minimumHeight</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">윈도우 최소 높이를 지정합니다.</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">minimumWidth</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">윈도우 최소 너비를 지정합니다.</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" class="w2tb_th">
+    						nameLayerMoveGap
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+    					</xf:group>
+    					<xf:group tagname="td" class="w2tb_td">
+    						[default:&amp;nbsp;110]&amp;nbsp;useNameContainer&amp;nbsp;옵션&amp;nbsp;사용시&amp;nbsp;좌우&amp;nbsp;이동버튼으로&amp;nbsp;nameLayer를&amp;nbsp;이동시킬&amp;nbsp;거리&amp;nbsp;(단위:px)
+    						<w2:attributes></w2:attributes>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" class="w2tb_th">
+    						restoreWinSize
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+    					</xf:group>
+    					<xf:group tagname="td" class="w2tb_td">
+    						[default:false,&amp;nbsp;true]&amp;nbsp;초기&amp;nbsp;window생성시&amp;nbsp;defaultHeight,&amp;nbsp;defaultWidth로&amp;nbsp;설정했던&amp;nbsp;가로/세로&amp;nbsp;크기로&amp;nbsp;나타남.&amp;nbsp;&amp;nbsp;&amp;nbsp;관련&amp;nbsp;API&amp;nbsp;:&amp;nbsp;restoreWindowSize
+    						<w2:attributes></w2:attributes>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">sequentialArrangeColNum</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">고정 버튼을 사용할 경우, 바둑판 정렬시 정렬시킬 화면 col의 값입니다.</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">sequentialArrangeRowNum</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">고정 버튼을 사용할 경우, 바둑판 정렬시 정렬시킬 화면 row의 값입니다.</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">spaInitCount</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						windowContainer생성 시 spa용 iframe을 미리 생성해 둘 개수를 지정합니다. iframe을 미리 생성하여 createWindow 속도를 향상킬수 있습니다. 0보다 큰 값일 경우
+    						spa모드로 동작하며 0이 아닌경우 일반적으로 windowMaxNum과 같은 값을 설정합니다.
+    					</xf:group>
+    				</xf:group>
+
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">statusMsg</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">window 기본 상태 메세지를 지정합니다.</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" class="w2tb_th">
+    						spaAuto
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+    					</xf:group>
+    					<xf:group tagname="td" class="w2tb_td">
+    						[default:false,&amp;nbsp;true]&amp;nbsp;spa&amp;nbsp;모드&amp;nbsp;사용&amp;nbsp;시&amp;nbsp;빈iframe을&amp;nbsp;createWindow가&amp;nbsp;일어난&amp;nbsp;후에&amp;nbsp;1개씩만&amp;nbsp;생성하도록&amp;nbsp;하는&amp;nbsp;속성.&amp;nbsp;&amp;nbsp;이&amp;nbsp;속성은&amp;nbsp;spaInitCount보다&amp;nbsp;우선순위가&amp;nbsp;높다.&amp;nbsp;즉&amp;nbsp;이&amp;nbsp;속성이&amp;nbsp;true이면&amp;nbsp;spaInitCount&amp;nbsp;설정은&amp;nbsp;무시된다.&amp;nbsp;&amp;nbsp;창이&amp;nbsp;최대로&amp;nbsp;생성된&amp;nbsp;경우에는&amp;nbsp;빈&amp;nbsp;iframe을&amp;nbsp;생성하지&amp;nbsp;않는다.&amp;nbsp;&amp;nbsp;&amp;nbsp;(버전&amp;nbsp;정보:&amp;nbsp;5.0_2.2777B.20170904.121217&amp;nbsp;버전에서&amp;nbsp;추가)
+    						<w2:attributes></w2:attributes>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" class="w2tb_th">
+    						spaAutoDelay
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+    					</xf:group>
+    					<xf:group tagname="td" class="w2tb_td">
+    						[default:false,&amp;nbsp;true]&amp;nbsp;spaAuto&amp;nbsp;속성&amp;nbsp;사용&amp;nbsp;시&amp;nbsp;createWindow를&amp;nbsp;수행한&amp;nbsp;후&amp;nbsp;몇&amp;nbsp;ms&amp;nbsp;지난&amp;nbsp;후에&amp;nbsp;빈&amp;nbsp;iframe을&amp;nbsp;생성할지를&amp;nbsp;지정하는&amp;nbsp;속성.&amp;nbsp;&amp;nbsp;이&amp;nbsp;속성값보다&amp;nbsp;적은&amp;nbsp;간격으로&amp;nbsp;createWindow가&amp;nbsp;연속적으로&amp;nbsp;호출된&amp;nbsp;경우,&amp;nbsp;마지막&amp;nbsp;createWindow가&amp;nbsp;호출된&amp;nbsp;후에&amp;nbsp;빈&amp;nbsp;iframe을&amp;nbsp;1개&amp;nbsp;생성한다.&amp;nbsp;&amp;nbsp;&amp;nbsp;기본값은&amp;nbsp;3000ms.&amp;nbsp;즉&amp;nbsp;createWindow가&amp;nbsp;호출되고&amp;nbsp;3초&amp;nbsp;뒤에&amp;nbsp;빈&amp;nbsp;iframe을&amp;nbsp;생성한다.&amp;nbsp;&amp;nbsp;&amp;nbsp;(버전&amp;nbsp;정보:&amp;nbsp;5.0_2.2777B.20170904.121217&amp;nbsp;버전에서&amp;nbsp;추가)
+    						<w2:attributes></w2:attributes>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" class="w2tb_th">
+    						spaReplaceHistory
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+    					</xf:group>
+    					<xf:group tagname="td" class="w2tb_td">
+    						SPA&amp;nbsp;사용&amp;nbsp;시&amp;nbsp;Window&amp;nbsp;영역(IFrame&amp;nbsp;내부)의&amp;nbsp;history(앞으로&amp;nbsp;가기&amp;nbsp;및&amp;nbsp;뒤로&amp;nbsp;가기)&amp;nbsp;동작을&amp;nbsp;금지.&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;IFrame&amp;nbsp;내부&amp;nbsp;페이지의&amp;nbsp;뒤로&amp;nbsp;가기&amp;nbsp;동작을&amp;nbsp;막아서&amp;nbsp;blank&amp;nbsp;페이지로&amp;nbsp;이동하지&amp;nbsp;않는&amp;nbsp;효과.&amp;nbsp;이&amp;nbsp;경우,&amp;nbsp;뒤로&amp;nbsp;가기를&amp;nbsp;수행&amp;nbsp;할&amp;nbsp;경우&amp;nbsp;브라우저&amp;nbsp;전체가&amp;nbsp;뒤로&amp;nbsp;이동.&amp;nbsp;&amp;nbsp;&amp;nbsp;true:&amp;nbsp;뒤로&amp;nbsp;가기&amp;nbsp;및&amp;nbsp;앞으로&amp;nbsp;가기&amp;nbsp;동작을&amp;nbsp;금지.&amp;nbsp;&amp;nbsp;&amp;nbsp;false&amp;nbsp;(기본&amp;nbsp;값):&amp;nbsp;동작을&amp;nbsp;허용.
+    						<w2:attributes></w2:attributes>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" class="w2tb_th">
+    						spaReplaceHistory
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+    					</xf:group>
+    					<xf:group tagname="td" class="w2tb_td">
+    						SPA&amp;nbsp;사용&amp;nbsp;시&amp;nbsp;Window&amp;nbsp;영역(IFrame&amp;nbsp;내부)의&amp;nbsp;history(앞으로&amp;nbsp;가기&amp;nbsp;및&amp;nbsp;뒤로&amp;nbsp;가기)&amp;nbsp;동작을&amp;nbsp;금지.&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;IFrame&amp;nbsp;내부&amp;nbsp;페이지의&amp;nbsp;뒤로&amp;nbsp;가기&amp;nbsp;동작을&amp;nbsp;막아서&amp;nbsp;blank&amp;nbsp;페이지로&amp;nbsp;이동하지&amp;nbsp;않는&amp;nbsp;효과.&amp;nbsp;이&amp;nbsp;경우,&amp;nbsp;뒤로&amp;nbsp;가기를&amp;nbsp;수행&amp;nbsp;할&amp;nbsp;경우&amp;nbsp;브라우저&amp;nbsp;전체가&amp;nbsp;뒤로&amp;nbsp;이동.&amp;nbsp;&amp;nbsp;&amp;nbsp;true:&amp;nbsp;뒤로&amp;nbsp;가기&amp;nbsp;및&amp;nbsp;앞으로&amp;nbsp;가기&amp;nbsp;동작을&amp;nbsp;금지.&amp;nbsp;&amp;nbsp;&amp;nbsp;false&amp;nbsp;(기본&amp;nbsp;값):&amp;nbsp;동작을&amp;nbsp;허용.
+    						<w2:attributes></w2:attributes>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" class="w2tb_th">
+    						stopMinimizeOnNameLayer
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+    					</xf:group>
+    					<xf:group tagname="td" class="w2tb_td">
+    						선택된&amp;nbsp;윈도우의&amp;nbsp;네임레이어&amp;nbsp;클릭시&amp;nbsp;최소화하지&amp;nbsp;않고&amp;nbsp;윈도우의&amp;nbsp;크기&amp;nbsp;유지할지&amp;nbsp;여부
+    						<w2:attributes></w2:attributes>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">toolbarPosition</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">툴바의 위치를 지정합니다. 위와 아래중 하나를 선택할수 있습니다.</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">tooltipDisplay</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">네임레이어(툴바라인에 나오는 각 윈도우의 이름창)에 나오는 툴팁을 사용할지를 지정합니다.</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">tooltipGroupClass</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">툴팁에 w2group 클래스 사용여부를 지정합니다.</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" class="w2tb_th">
+    						tabIndex
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+    					</xf:group>
+    					<xf:group tagname="td" class="w2tb_td">
+    						Tab&amp;nbsp;Key를&amp;nbsp;이용&amp;nbsp;한&amp;nbsp;컴포넌트의&amp;nbsp;포커스&amp;nbsp;순서로&amp;nbsp;HTML의&amp;nbsp;tabindex속성과&amp;nbsp;동일한&amp;nbsp;기능을&amp;nbsp;제공한다.
+    						<w2:attributes></w2:attributes>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">useCloseButton</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">네임레이어(툴바라인에 나오는 각 윈도우의 이름창)에 닫기버튼 사용여부를 지정합니다.</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">useConfirmMessage</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">중복 윈도우 생성시 확인메세지 사용여부를 지정합니다.</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">useControlIconTitle</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						controlIcon (수평,수직,계단,바둑판,닫기버튼)에 title을 넣을 것인지를 결정하는 옵션입니다.
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">useFixButton</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">네임레이어(툴바라인에 나오는 각 윈도우의 이름창)의 고정버튼 사용여부를 지정합니다.</xf:group>
+    				</xf:group>
+
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">useStatusMsg</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">Window 상태 메시지 사용 유무를 지정합니다.</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" class="w2tb_th">
+    						useNameContainer
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+    					</xf:group>
+    					<xf:group tagname="td" class="w2tb_td">
+    						[default:false]&amp;nbsp;툴바에&amp;nbsp;생성되는&amp;nbsp;네임레이어를&amp;nbsp;div로&amp;nbsp;감쌀지를&amp;nbsp;결정하는&amp;nbsp;속성.
+    						<w2:attributes></w2:attributes>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">verticalArrangeNum</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">고정 버튼을 사용할 경우, 수직 정렬시 정렬시킬 화면개수를 지정합니다.</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">windowAutoResize</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">setSize()시 하위 윈도우들의 위치 및 크기의 재정렬 여부를 지정합니다.</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">windowMaximizeAll</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">윈도우의 사이즈 최대화 동시 변경 사용여부를 지정합니다.</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">windowMaxNum</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">최대 윈도우 갯수를 지정합니다.</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">windowTooltipDisplay</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">창의 헤더에 툴팁 사용여부를 지정합니다.</xf:group>
+    				</xf:group>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group id="" class="titbox">
+    			<w2:textbox tagname="h3" style="" id="" label="03. CSS Overriding" class=""></w2:textbox>
+    		</xf:group>
+    		<xf:group id="" class="tblbox">
+    			<xf:group tagname="table" style="" id="" class="wq_tb w2tb tbl">
+    				<w2:attributes>
+    					<w2:summary></w2:summary>
+    				</w2:attributes>
+    				<xf:group tagname="colgroup">
+    					<xf:group tagname="col" style="width:300px;"></xf:group>
+    					<xf:group tagname="col" style=""></xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">Class</xf:group>
+    					<xf:group tagname="th" style="" class="w2tb_th">Description</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">w2windowContainer</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						w2windowContainer는 웹스퀘어 엔진에서 정의된 클래스입니다, 기본적으로 html 로 떨구는 시점에서 자동으로 부여됩니다. windowContainer 전체를 감싼 태그 입니다.
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">w2windowContainer_window</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						w2windowContainer_windoww2windowContainer는 웹스퀘어 엔진에서 정의된 클래스입니다, 기본적으로 html 로 떨구는 시점에서 자동으로 부여됩니다.
+    						windowContainer의 메뉴바를 제외한 전체 화면창입니다.
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">w2windowContainer_windowToolbar</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						w2windowContainer_windowToolbar는 웹스퀘어 엔진에서 정의된 클래스입니다, 기본적으로 html 로 떨구는 시점에서 자동으로 부여됩니다. windowContainer의 메뉴바
+    						영역입니다.
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">
+    						w2windowContainer_controlIconLayer,&lt;br/&gt; w2windowContainer_controlIconLayer_extend
+    					</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						w2windowContainer_controlIconLayer w2windowContainer_controlIconLayer_extend는 웹스퀘어 엔진에서 정의된 클래스입니다, 기본적으로 html 로
+    						떨구는 시점에서 자동으로 부여됩니다. windowContainer의 메뉴버튼 영역입니다.
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">w2windowContainer_name</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						w2windowContainer_name는 웹스퀘어 엔진에서 정의된 클래스입니다, 기본적으로 html 로 떨구는 시점에서 자동으로 부여됩니다. windowContainer의 임레이어들의 영역입니다.
+    					</xf:group>
+    				</xf:group>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group adaptiveThreshold="" class="msgbox" id="" style="">
+    			<xf:group id="" class="titbox"><w2:textbox tagname="h4" style="" id="" label="Tip" class=""></w2:textbox></xf:group><w2:textbox class="txt_info" id=""
+    				label='보통 레이아웃용으로 쓰입니다.&lt;br/&gt;WindowContainer를 사용하기 위해서는 position 이 relative 혹은 absolute여야 합니다.' style="">
+    			</w2:textbox>
+    			<w2:textbox class="txt_info" id=""
+    				label='상단 컨트롤 버튼박스 오른쪽으로 이동 시키려고 할때 소스창에 아래 속성 추가&lt;br/&gt;useNameContainer="true"&lt;br/&gt;controlIconPosition="right" (Icon은 I대문자)'
+    				style="">
+    			</w2:textbox>
+    			<w2:textbox class="txt_info" id=""
+    				label='window를 생성(open)하는 API&lt;br/&gt;windowContaninerID.createWindow( title , iconUrl , src , windowTitle , windowId , openAction , closeAction , windowTooltip ) &lt;br/&gt;예) wc1.createWindow( "contaner1" , &amp;nbsp;null, "xml/component/anchor.xml" , "contaner1");'
+    				style="">
+    			</w2:textbox>
+    		</xf:group>
+
+    	</xf:group>
+    </body>
+</html>

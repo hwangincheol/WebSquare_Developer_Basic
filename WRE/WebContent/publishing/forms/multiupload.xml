@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+        <w2:type>COMPONENT</w2:type>
+        <w2:buildDate/>
+        <w2:MSA/>
+        <xf:model>
+            <w2:dataCollection baseNode="map"/>
+            <w2:workflowCollection/>
+        </xf:model>
+        <w2:layoutInfo/>
+        <w2:publicInfo method=""/>
+        <script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function() {
+	
+};
+]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload">
+		<xf:group class="sub_contents pub" id="" style="">
+			<xf:group class="pgtbox" id="" style="">
+				<w2:textbox class="pgt_tit" id="" label="Publishing Template - Multiupload" style=""></w2:textbox>
+			</xf:group>
+			<xf:group id="" class="titbox"><w2:textbox style="" id="" label="Multiupload는 flash로 구현되어 제공되고 있으며, 여러 개의 파일을 동시에 업로드할 수 있는 컴포넌트입니다. &amp;nbsp;또한 투명 모드(mode:transparent)를 지원함으로써 사용자가 원하는 UI를 만들 수 있습니다." class="txt_guide">
+			</w2:textbox></xf:group><xf:group id="" class="titbox"><w2:textbox style="" id="" label="Mode : flash" class="" tagname="h4"></w2:textbox></xf:group><xf:group style="" id="" class="samplebox">
+				
+				
+			<xf:group id=""><w2:multiupload filter="" mode="flash" maxcount="" action="" style="position: relative;width: 500px;height: 150px;" wmode="false" id="" maxsize="" uploadButton="">
+					</w2:multiupload></xf:group></xf:group><xf:group id="" class="titbox"><w2:textbox style="" id="" label="Mode : transparent" class="" tagname="h4"></w2:textbox></xf:group><xf:group id="" style="" class="samplebox">
+				<xf:group id="" style="position :relative; height:26px;"><w2:multiupload filter="" mode="html5_transparent" maxcount="" action="" style="position:absolute;width:100px;z-index:10;height: 26px;" wmode="true" id="" maxsize="" uploadButton="false">
+					</w2:multiupload><w2:anchor outerDiv="false" style="position:absolute; top:0; left:0;" id="" class="wq_mupl">
+						<xf:label><![CDATA[파일찾기]]></xf:label>
+					</w2:anchor></xf:group></xf:group>
+			<xf:group id="" class="titbox">
+				<w2:textbox tagname="h3" style="" id="" label="Property" class=""></w2:textbox>
+				<xf:group class="rt" id="" style="">
+					<w2:span class="badge default" id="" label="Defualt option" style=""></w2:span>
+					<w2:span class="badge" id="" label="option" style=""></w2:span>
+				</xf:group>
+			</xf:group>
+			<xf:group id="" class="tblbox"><xf:group tagname="table" style="" id="" class="w2tb tbl">
+				<w2:attributes>
+					<w2:summary></w2:summary>
+				</w2:attributes>
+				<xf:group tagname="colgroup">
+					<xf:group tagname="col" style="width:20%;"></xf:group>
+					<xf:group tagname="col" style=""></xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">
+						<w2:textbox id="" label="속성" style="" tagname="p"></w2:textbox>
+					</xf:group>
+					<xf:group tagname="th" style="" class="w2tb_th tac">
+						<w2:textbox id="" label="설명" style="" tagname="p"></w2:textbox>
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">
+						<w2:textbox id="" label="action" style="" tagname="p"></w2:textbox>
+					</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						<w2:textbox id="" label="업로드 처리 URL&lt;br/&gt;" style="" tagname="p"></w2:textbox>
+					</xf:group>
+				</xf:group>
+			<xf:group tagname="tr">
+				<xf:group tagname="th" class="w2tb_th">
+					<w2:attributes>
+						<w2:scope>row</w2:scope>
+					</w2:attributes>
+					<w2:textbox id="" label="callbackSync" style="" tagname="p"></w2:textbox>
+				</xf:group>
+				<xf:group tagname="td" class="w2tb_td">
+					<w2:attributes></w2:attributes>
+					<w2:textbox id=""
+						label="다중 파일 업로드시 callback정보를 전송순서대로 받을지 여부. true인 경우 전송순서대로 callback정보 전송, false일 경우 응답순서대로 callback 정보 전송." style="" tagname="p">
+					</w2:textbox>
+					<xf:group class="grp_option" id="" style="">
+						<w2:span class="badge default" id="" label="false" style=""></w2:span>
+						<w2:span class="badge" id="" label="true" style=""></w2:span>
+					</xf:group>
+				</xf:group></xf:group><xf:group tagname="tr">
+	<xf:group tagname="th" class="w2tb_th">
+		<w2:attributes>
+			<w2:scope>row</w2:scope>
+		</w2:attributes>
+		<w2:textbox id="" label="clearOnError" style="" tagname="p"></w2:textbox>
+	</xf:group>
+	<xf:group tagname="td" class="w2tb_td">
+		<w2:attributes></w2:attributes>
+		<w2:textbox id="" label="에러(파일 갯수 초과, 단일 첨부 사이즈 초과, 이미 존재하는 파일) 발생시 multiupload의 파일정보를 초기화 합니다." style="" tagname="p"></w2:textbox>
+		<xf:group class="grp_option" id="" style="">
+			<w2:span class="badge default" id="" label="false" style=""></w2:span>
+			<w2:span class="badge" id="" label="true" style=""></w2:span>
+		</xf:group>
+	</xf:group></xf:group><xf:group tagname="tr">
+	<xf:group tagname="th" class="w2tb_th">
+		<w2:attributes>
+			<w2:scope>row</w2:scope>
+		</w2:attributes>
+		<w2:textbox id="" label="displaySizeUnit" style="" tagname="p"></w2:textbox>
+	</xf:group>
+	<xf:group tagname="td" class="w2tb_td">
+		<w2:attributes></w2:attributes>
+		<w2:textbox id="" label="업로딩이 완료(ondone 이벤트 발생)되는 시점에 화면에 표시할 사이즈 단위. (Byte, KB, MB (기본 값), GB, TB)" style="" tagname="p"></w2:textbox>
+		<xf:group class="grp_option" id="" style="">
+			<w2:span class="badge default" id="" label="MB" style=""></w2:span>
+			<w2:span class="badge" id="" label="KB" style=""></w2:span>
+			<w2:span class="badge" id="" label="Byte" style=""></w2:span>
+			<w2:span class="badge" id="" label="GT" style=""></w2:span>
+			<w2:span class="badge" id="" label="TB" style=""></w2:span>
+		</xf:group>
+	</xf:group></xf:group><xf:group tagname="tr">
+	<xf:group tagname="th" class="w2tb_th">
+		<w2:attributes>
+			<w2:scope>row</w2:scope>
+		</w2:attributes>
+		<w2:textbox id="" label="filter" style="" tagname="p"></w2:textbox>
+	</xf:group>
+	<xf:group tagname="td" class="w2tb_td">
+		<w2:attributes></w2:attributes>
+		<w2:textbox id="" label="업로드 가능한 파일 확장자를 지정." style="" tagname="p"></w2:textbox>
+	</xf:group></xf:group><xf:group tagname="tr">
+	<xf:group tagname="th" class="w2tb_th">
+		<w2:attributes>
+			<w2:scope>row</w2:scope>
+		</w2:attributes>
+		<w2:textbox id="" label="fireEventOnError" style="" tagname="p"></w2:textbox>
+	</xf:group>
+	<xf:group tagname="td" class="w2tb_td">
+		<w2:attributes></w2:attributes>
+		<w2:textbox id="" label="에러(파일 갯수 초과, 단일 첨부 사이즈 초과, 이미 존재하는 파일) 발생시 onerror 이벤트 발생 허용 여부." style="" tagname="p"></w2:textbox>
+		<xf:group class="grp_option" id="" style="">
+			<w2:span class="badge default" id="" label="false" style=""></w2:span>
+			<w2:span class="badge" id="" label="true" style=""></w2:span>
+		</xf:group>
+	</xf:group></xf:group><xf:group tagname="tr">
+	<xf:group tagname="th" class="w2tb_th">
+		<w2:attributes>
+			<w2:scope>row</w2:scope>
+		</w2:attributes>
+		<w2:textbox id="" label="id" style="" tagname="p"></w2:textbox>
+	</xf:group>
+	<xf:group tagname="td" class="w2tb_td">
+		<w2:attributes></w2:attributes>
+		<w2:textbox id="" label="컴포넌트 ID.&lt;br/&gt;컴포넌트 ID는 전역 객체로 할당됨. 각 컴포넌트 ID를 통해 Script에서 해당 컴포넌트에 접근 가능." style="" tagname="p"></w2:textbox>
+	</xf:group></xf:group><xf:group tagname="tr">
+	<xf:group tagname="th" class="w2tb_th">
+		<w2:attributes>
+			<w2:scope>row</w2:scope>
+		</w2:attributes>
+		<w2:textbox id="" label="maxcount" style="" tagname="p"></w2:textbox>
+	</xf:group>
+	<xf:group tagname="td" class="w2tb_td">
+		<w2:attributes></w2:attributes>
+		<w2:textbox id="" label="[default:5] 전송가능한 파일의 최대 개수" style="" tagname="p"></w2:textbox>
+	</xf:group></xf:group><xf:group tagname="tr">
+	<xf:group tagname="th" class="w2tb_th">
+		<w2:attributes>
+			<w2:scope>row</w2:scope>
+		</w2:attributes>
+		<w2:textbox id="" label="maxsize" style="" tagname="p"></w2:textbox>
+	</xf:group>
+	<xf:group tagname="td" class="w2tb_td">
+		<w2:attributes></w2:attributes>
+		<w2:textbox id="" label="[default:20000] 전송가능한 파일의 최대 크기 (단위 Kb)" style="" tagname="p"></w2:textbox>
+	</xf:group></xf:group><xf:group tagname="tr">
+	<xf:group tagname="th" class="w2tb_th">
+		<w2:attributes>
+			<w2:scope>row</w2:scope>
+		</w2:attributes>
+		<w2:textbox id="" label="mode" style="" tagname="p"></w2:textbox>
+	</xf:group>
+	<xf:group tagname="td" class="w2tb_td">
+		<w2:attributes></w2:attributes>
+		<w2:textbox id="" label="UI 출력 유형을 정의" style="" tagname="p"></w2:textbox>
+		<xf:group class="grp_option" id="" style=""><xf:group id=""><w2:span style="" id="" label="false" class="badge default"></w2:span><w2:textbox tagname="p" style="" id="" label="flash (swf)로 multiupload를 지원하는 모드"></w2:textbox></xf:group><xf:group id=""><w2:span style="" id="" label="transparent" class="badge"></w2:span><w2:textbox tagname="p" style="" id="" label="flash 모드로 지원하는 UI를 사용자가 직접 구성하여 커스트마이징할 수 있는 모드"></w2:textbox></xf:group>
+		<xf:group id=""><w2:span style="" id="" label="html5_transparent" class="badge"></w2:span><w2:textbox tagname="p" style="" id="" label="ie9이하에서는 flash모드로 동작하며 그외 브라우저에서는 HTML5의 XHR을 이용하여 업로드지원하는 모드"></w2:textbox></xf:group></xf:group>
+	</xf:group></xf:group><xf:group tagname="tr">
+	<xf:group tagname="th" class="w2tb_th">
+		<w2:attributes>
+			<w2:scope>row</w2:scope>
+		</w2:attributes>
+		<w2:textbox id="" label="selectCallback" style="" tagname="p"></w2:textbox>
+	</xf:group>
+	<xf:group tagname="td" class="w2tb_td">
+		<w2:attributes></w2:attributes>
+		<w2:textbox id="" label="파일 선택후 실행 될 콜백 함수 (Mode가 transparent시 동작)" style="" tagname="p"></w2:textbox>
+	</xf:group></xf:group><xf:group tagname="tr">
+	<xf:group tagname="th" class="w2tb_th">
+		<w2:attributes>
+			<w2:scope>row</w2:scope>
+		</w2:attributes>
+		<w2:textbox id="" label="sizeUnit" style="" tagname="p"></w2:textbox>
+	</xf:group>
+	<xf:group tagname="td" class="w2tb_td">
+		<w2:attributes></w2:attributes>
+		<w2:textbox id="" label="업로딩이 완료(ondone 이벤트 발생)되는 시점에 서버에서 응답할 때 사용하는 사이즈 단위." style="" tagname="p"></w2:textbox>
+		<xf:group class="grp_option" id="" style="">
+			<w2:span class="badge default" id="" label="MB" style=""></w2:span>
+			<w2:span class="badge" id="" label="KB" style=""></w2:span>
+			<w2:span class="badge" id="" label="Byte" style=""></w2:span>
+			<w2:span class="badge" id="" label="GT" style=""></w2:span>
+			<w2:span class="badge" id="" label="TB" style=""></w2:span>
+		</xf:group>
+	</xf:group></xf:group><xf:group tagname="tr">
+	<xf:group tagname="th" class="w2tb_th">
+		<w2:attributes>
+			<w2:scope>row</w2:scope>
+		</w2:attributes>
+		<w2:textbox id="" label="tabIndex" style="" tagname="p"></w2:textbox>
+	</xf:group>
+	<xf:group tagname="td" class="w2tb_td">
+		<w2:attributes></w2:attributes>
+		<w2:textbox id="" label="Tab 키를 이용하여 포커스를 변경할 경우, 해당 컴포넌트에 포커스를 주는 순서.&lt;br/&gt;HTML의 tabindex 속성과 동일." style="" tagname="p"></w2:textbox>
+	</xf:group></xf:group><xf:group tagname="tr">
+	<xf:group tagname="th" class="w2tb_th">
+		<w2:attributes>
+			<w2:scope>row</w2:scope>
+		</w2:attributes>
+		<w2:textbox id="" label="uploadButton" style="" tagname="p"></w2:textbox>
+	</xf:group>
+	<xf:group tagname="td" class="w2tb_td">
+		<w2:attributes></w2:attributes>
+		<w2:textbox id="" label="전송버튼 숨김 여부" style="" tagname="p"></w2:textbox>
+	</xf:group></xf:group></xf:group></xf:group>
+			<xf:group id="" class="titbox"><w2:textbox style="" id="" label="03. CSS Overriding" class="" tagname="h3"></w2:textbox></xf:group>
+			<xf:group id="" class="tblbox"><xf:group tagname="table" style="" id="" class="wq_tb w2tb tbl">
+				<w2:attributes>
+					<w2:summary></w2:summary>
+				</w2:attributes>
+				<xf:group tagname="colgroup">
+					<xf:group tagname="col" style="width:20%;"></xf:group>
+					<xf:group tagname="col" style=""></xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">Class</xf:group>
+					<xf:group tagname="th" style="" class="w2tb_th">Description</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">w2multiupload_uploader</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td"></xf:group>
+				</xf:group>
+			</xf:group></xf:group><xf:group adaptiveThreshold="" class="msgbox" id="" style="">
+				<xf:group id="" class="titbox"><w2:textbox tagname="h4" style="" id="" label="Tip" class=""></w2:textbox></xf:group><w2:textbox class="txt_info" id=""
+					label='투명모드(mode:transparent)&lt;br/&gt;multiUpload 컴포넌트의 mode="transparent" 를 사용, 선택한 파일목록을 그리드로 구현&lt;br/&gt;1) 버튼 위에 mode="transparent" 속성의 multiupload 컴포넌트를 위치한다.&lt;br/&gt;2) 버튼 클릭시 투명모드의 multiupmoad컴포넌트의 추가 버튼클릭 이벤트가 발생한다.'
+					style="">
+				</w2:textbox>
+			</xf:group>
+		</xf:group>
+	</body>
+</html>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+        <w2:type>COMPONENT</w2:type>
+        <w2:buildDate/>
+        <w2:MSA/>
+        <xf:model>
+            <w2:dataCollection baseNode="map"/>
+            <w2:workflowCollection/>
+        </xf:model>
+        <w2:layoutInfo/>
+        <w2:publicInfo method=""/>
+        <script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function() {
+	
+};
+]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload">
+    	<xf:group class="sub_contents" id="" style="">
+    		<xf:group class="pgtbox" id="" style="">
+    			<w2:textbox class="pgt_tit" id="" label="Publishing Template - TabControl" style=""></w2:textbox>
+    		</xf:group>
+    		<xf:group id="" class="titbox">
+    			<w2:textbox style="" id="" label="다건의 탭과 콘텐츠를 생성할 수 있는 레이 아웃용 컴포넌트로 동적으로 탭을 생성하거나 삭제할 수 있습니다.&lt;br/&gt;"
+    				class="txt_guide">
+    			</w2:textbox>
+    		</xf:group>
+    		<xf:group class="titbox" id="" style="">
+    			<w2:textbox class="" id="" label="01. Sample" style="" tagname="h3"></w2:textbox>
+    			<xf:group id="" class="rt">
+    				<w2:anchor outerDiv="false" name="" style="" href="/ws/download/tabControl.zip" id="" class="btn_cm">
+    					<xf:label><![CDATA[Download]]></xf:label>
+    				</w2:anchor>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group style="" id="" class="msgbox">
+    			<xf:group class="wq_tbc_box" id="" style="position: relative ;width:100%;height: 200px;">
+    				<w2:tabControl confirmTrueAction="exist" useTabKeyOnly="true" useMoveNextTabFocus="false" id=""
+    					style="position: relative ;width:100%;height: 200px;" useConfirmMessage="false" confirmFalseAction="new" alwaysDraw="false"
+    					class="wq_tbc" tabScroll="true" userData1="" closable="">
+    					<w2:tabs label="TAB1" id="tabs1" style="width:100px;height:28px;" disabled=""></w2:tabs>
+    					<w2:tabs id="tabs2" style="height:28px;width:100px;" label="TAB2" disabled="false"></w2:tabs>
+    					<w2:tabs id="tabs3" style="height:28px;width:100px;" label="TAB3" disabled="false"></w2:tabs>
+    					<w2:content id="content1" style="height:172px;" alwaysDraw="false"></w2:content>
+    					<w2:content id="content2" style="height:172px;" alwaysDraw="false"></w2:content>
+    					<w2:content id="content3" style="height:172px;" alwaysDraw="false"></w2:content>
+    				</w2:tabControl>
+    				<w2:anchor class="btn_closeall" ev:onclick="scwin.closeall_onclick" id="btn_closeall" outerDiv="false" style="">
+    					<xf:label><![CDATA[closeAll]]></xf:label>
+    				</w2:anchor>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group id="" class="titbox">
+    			<w2:textbox tagname="h3" style="" id="" label="02. Property" class=""></w2:textbox>
+    		</xf:group>
+    		<xf:group id="" class="tblbox">
+    			<xf:group tagname="table" style="" id="" class="wq_tb w2tb  tbl">
+    				<w2:attributes>
+    					<w2:summary></w2:summary>
+    				</w2:attributes>
+    				<xf:group tagname="colgroup">
+    					<xf:group tagname="col" style="width:20%;"></xf:group>
+    					<xf:group tagname="col" style=""></xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">Property</xf:group>
+    					<xf:group tagname="th" style="" class="w2tb_th">Description</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">adaptive</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						[layout]browser의 width에 따른 적응형 웹 모드로 adaptiveThreshold속성값(width값)을 참조하여 동작합니다.
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">adaptiveThreshold</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						[default:480]adaptive속성이 정의되어있는 경우 browser의 width에 따른 레이아웃 변경을 위한 전환 width값. px단위로 계산됩니다.
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">alwaysDraw</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">content 영역 내용을 미리 그려줄지 여부</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">closable</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">tab의 닫기 버튼을 활성화 할지의 여부로, 개별 closable 속성은 개별 tab에서 설정 합니다.</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">focusOnStart</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						[default:true, false]화면 로딩 시 활성화된 탭에 포커스를 이동시킬지에 대한 여부. 기본값은 true입니다.
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">hiddenTab</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						사용자 정의 데이터 속성. getUserData(&quot;userData3&quot;) API를 통해 설정한 값을 얻어올 수 있습니다.
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">selectedIndex</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">선택되어 있는 tab의 인덱스</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">spaInitCount</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						컴포넌트 초기 로딩 시 미리 SPA모드용 iframe을 생성할 개수. SPA는 iframe을 미리 생성하여 웹스퀘어 엔진 자원을 로딩해 놓는 기능으로 addTab시에 화면 로딩 속도를 향상 시킬수
+    						있습니다. 0보다 큰 값일 경우 SPA모드로 동작하며 일반적으로 windowMaxNum속성과 같은 값을 설정합니다.
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">tabScroll</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						[default:false, true]상단 탭들의 이동과 선택의 편의성을 제공하는 기능의 사용 여부로 하위버전의 호환성을 위해 기본 false로 설정되어있습니다.
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" class="w2tb_th">
+    						tabPosition
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+    					</xf:group>
+    					<xf:group tagname="td" class="w2tb_td">
+    						tab의&amp;nbsp;위치를&amp;nbsp;지정하는&amp;nbsp;속성.&amp;nbsp;&amp;nbsp;&amp;nbsp;기본적으로는&amp;nbsp;tab이&amp;nbsp;위에&amp;nbsp;위치하지만,&amp;nbsp;이&amp;nbsp;속성을&amp;nbsp;공백으로&amp;nbsp;둔&amp;nbsp;것과&amp;nbsp;top으로&amp;nbsp;직접&amp;nbsp;지정한것과는&amp;nbsp;css등의&amp;nbsp;차이가&amp;nbsp;있다.&amp;nbsp;(하위&amp;nbsp;호환을&amp;nbsp;위함.)
+    						<w2:attributes></w2:attributes>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">useTabKeyOnly</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						[default:false, true]탭 키로만 내비게이션(tab이동)을 하는 모드로 false일 경우 방향키로도 tab간 이동이 가능합니다. 해당 속성은 웹 접근성 지원을 위한 모드입니다.
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">windowMaxNum</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						[default:-1]최대 tab 개수로 -1로 설정할 경우 최대 tab개수에 제한을 두지 않는다. spaInitCount속성값을 설정 한 경우 일반적으로 해당 속성의 값과 동일하게 설정합니다.
+    					</xf:group>
+    				</xf:group>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group id="" class="titbox">
+    			<w2:textbox tagname="h3" style="" id="" label="03. CSS Overriding" class=""></w2:textbox>
+    		</xf:group>
+    		<xf:group id="" class="tblbox">
+    			<xf:group tagname="table" style="" id="" class="wq_tb w2tb  tbl">
+    				<w2:attributes>
+    					<w2:summary></w2:summary>
+    				</w2:attributes>
+    				<xf:group tagname="colgroup">
+    					<xf:group tagname="col" style="width:20%;"></xf:group>
+    					<xf:group tagname="col" style=""></xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">Class</xf:group>
+    					<xf:group tagname="th" style="" class="w2tb_th">Description</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">w2tabcontrol</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						w2tabcontrol는 웹스퀘어 엔진에서 정의된 클래스입니다, 기본적으로 html 로 떨구는 시점에서 자동으로 부여됩니다. 각각의 스위치를 감싼 요소 입니다.
+    					</xf:group>
+    				</xf:group>
+    			</xf:group>
+    		</xf:group>
+    	</xf:group>
+    </body>
+</html>

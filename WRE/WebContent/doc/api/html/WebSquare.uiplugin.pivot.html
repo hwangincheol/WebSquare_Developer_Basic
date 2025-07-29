@@ -1,0 +1,3124 @@
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="../cm/css/api.css">
+    </head>
+    <body>
+        <div class="api_wrap">
+            <div class="api_wrap_inner">
+                <div class="api_container">
+                    <div class="api_content">
+                        <header class="api_header">
+                            <p class="api_component">WebSquare.uiplugin.pivot</p>
+                            <p class="api_version">5.0_5.5005A.20230904.185702</p>
+                            <p>피봇. 데이터를 2차원으로 표시.
+ 데이터를 2차원 축에 표시하여 통계치를 표시. 
+ Sum, Avg, Count, Minimum, Maximum 등의 통계치를 지원. 사용자 함수를 통한 통계치 정의도 가능. 
+ Excel의 pivotTable과 비슷한 기능을 제공. 
+ (지원 브라우저: IE10 이상.)</p>
+                        </header>
+                        <section class="properties_section">
+                            <h2>Property Detail</h2>
+                            <dl class="api_dl">
+                            <dt id="aggregatorName">aggregatorName</dt>
+                            <dd><p>[default:Sum]기본 aggregator(통계함수)를 설정하는 옵션이다. field에 정의된 aggregator가 우선순위가 높으며, field에 정의된 aggregator가 없을 경우 해당 옵션의 aggregator를 사용한다. <br />aggregator는 Sum, Average, Count, Minimum, Maximum 등 기본적으로 제공되는 aggregator외에 사용자 정의 함수 aggregator를 등록할 수 있다.</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="allTotalName">allTotalName</dt>
+                            <dd><p>총합계 부분 label
+<xmp  class='js sample'>(관련 속성)
+ showGrandTotal="true"</xmp></p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="autoFit">autoFit</dt>
+                            <dd><p>[lastColumn, allColumn] pivot table에 정의 된 width에 맞춰 여백이 없이 가득 채워주는 기능으로 가로 스크롤이 생기지 않는다.<br />allColumn은 여백을 모든 컬럼에 분배하여 조절하며 lastColumn은 마지막 컬럼을 allColumn은 모든 컬럼의 너비를 조정한다.</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="autoFitMinWidth">autoFitMinWidth</dt>
+                            <dd><p>pivot의 최소 width(px단위)를 지정하는 기능으로 autoFit속성의 값이 allColumn일 때 적용된다.</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="autoPopupInvalidMessage">autoPopupInvalidMessage</dt>
+                            <dd><p>key 입력시 regExp에 정의되지 않은 문자 입력시 자동으로 경고창 띄워줄지 여부</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="bodyTextAlign">bodyTextAlign</dt>
+                            <dd><p>[default:center, left, right] header를 제외한 body 항목의 text 정렬 방법.</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="chartDataSeperator">chartDataSeperator</dt>
+                            <dd><p>chart data 생성시 x,y data label sepator [default:'-']</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="chartLegendSeperator">chartLegendSeperator</dt>
+                            <dd><p>chart data 생성시 범례의 label sepator [default:'-']</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="class">class</dt>
+                            <dd><p>HTML의 class 속성과 동일한 기능을 제공. CSS 파일이나 style 블럭에 정의한 여러 개의 class를 공백으로 구분하여 적용 가능.<br />Engine 내부에서 각 컴포넌트 별로 지정된 class를 적용하나, class 속성을 이용하여 컴포넌트의 CSS를 제어 가능.</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="cols">cols</dt>
+                            <dd><p>pivot을 초기에 보여줄 때 column축에 둘 컬럼을 정의한다. 구분자","를 통해 column id를 입력한다.<br />입력된 column의 순서에 따라 결과가 달라진다. <br />(ex1) cols="col3,col4,col5" (ex2) cols="col5,col3,col4"</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="dataList">dataList</dt>
+                            <dd><p>pivot과 연동할 dataList id</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="decimalSep">decimalSep</dt>
+                            <dd><p>소수 정수 구분 문자. useNumberFormat true일 경우 적용.</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="digitsAfterDecimal">digitsAfterDecimal</dt>
+                            <dd><p>소수점 자릿수. useNumberFormat true일 경우 적용.</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="excludeHiddenList">excludeHiddenList</dt>
+                            <dd><p>Header의 hiddenList에서도 제외할 column.</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="grandTotalDisplayType">grandTotalDisplayType</dt>
+                            <dd><p>전체 총계를 표시할 위치 선택. [default: both, vertical, horizontal]
+<xmp  class='js sample'>(옵션 설명)
+ "both" (기본 값) 표의 하단 및 오른쪽 모두에 표시. 
+ "vertical" 우측에만 표시. 
+ "horizontal" 하단에만 표시.</xmp></p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="grandTotalName">grandTotalName</dt>
+                            <dd><p>header의 vals 합계 부분 label</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="headerListOrder">headerListOrder</dt>
+                            <dd><p>HeaderList 순서 정의.</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="headerTextAlign">headerTextAlign</dt>
+                            <dd><p>[default:center, left, right] header에 대한 text 정렬 방법.</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="hiddenHeaderList">hiddenHeaderList</dt>
+                            <dd><p>Header에서 보여주지 않을 headerList 정의.</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="id">id</dt>
+                            <dd><p>컴포넌트 ID. <br />컴포넌트 ID는 전역 객체로 할당됨. 각 컴포넌트 ID를 통해 Script에서 해당 컴포넌트에 접근 가능.</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="invalidMessage">invalidMessage</dt>
+                            <dd><p>validate API의 검증 결과가 실패일 경우 표시할 메시지. displaymessage="true"일 경우만 유효.<br />invalidMessageFunc과 동시 적용 불가.
+<xmp  class='js sample'>(관련 API)
+ validate();
+ displaymessage="true"
+ invalidMessageFunc 속성과 동시 적용 불가.</xmp></p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="noColumnMove">noColumnMove</dt>
+                            <dd><p>pivot data영역의 header column을 마우스로 drag하여 컬럼을 이동할 수 있는 기능 사용 여부.</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="noResultMessage">noResultMessage</dt>
+                            <dd><p>pivot의 조회 결과가 없을 시 표시되는 메세지</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="noResultMessageClass">noResultMessageClass</dt>
+                            <dd><p>pivot의 결과 없음 메시지의 class</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="noResultMessageStyle">noResultMessageStyle</dt>
+                            <dd><p>pivot의 결과 없음 메시지의 style</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="noResultMessageVisible">noResultMessageVisible</dt>
+                            <dd><p>pivot의 조회 결과가 없을 시 메시지 표시 여부</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="prefix">prefix</dt>
+                            <dd><p>data 앞에 붙일 문자. useNumberFormat true일 경우 적용.</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="rows">rows</dt>
+                            <dd><p>pivot을 초기에 보여줄 때 row축에 둘 컬럼을 정의한다. 구분자","를 통해 column id를 입력한다.<br />입력된 column의 순서에 따라 결과가 달라진다. <br />(ex1) rows="col1,col2" (ex2) rows="col2,col1"</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="scaler">scaler</dt>
+                            <dd><p>배수 값. useNumberFormat true일 경우 적용.</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="showGrandTotal">showGrandTotal</dt>
+                            <dd><p>합계 부분을 보여줄지 여부</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="showZero">showZero</dt>
+                            <dd><p>data가 없을 경우 0으로 보여줄지 여부. useNumberFormat true일 경우 적용.</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="sortFunction">sortFunction</dt>
+                            <dd><p>rows,cols,vals 축 각각에 해당하는 data의 순서를 전체적으로 직접 정의하고 싶은 경우 column id를 인자로 받는 사용자함수를 작성한 후 함수명을 해당 옵션으로 입력한다. <br />field 각각의 sortOrder 속성을 통해 보다 쉽게 출력되는 data 순서를 조작할 수 있다.<br />이 속성이 정의되어있고 해당 사용자함수가 존재하는경우 field에 정의된 sortOrder 속성은 무시된다.</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="suffix">suffix</dt>
+                            <dd><p>data 뒤에 붙일 문자. useNumberFormat true일 경우 적용.</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="textAlign">textAlign</dt>
+                            <dd><p>[default:center, left, right] 항목의 text 정렬 방법.</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="thousandsSep">thousandsSep</dt>
+                            <dd><p>3자리 마다 구분 문자. useNumberFormat true일 경우 적용.</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="totalTextAlign">totalTextAlign</dt>
+                            <dd><p>[default:center, left, right] 합계 항목의 text 정렬 방법.</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="useNumberFormat">useNumberFormat</dt>
+                            <dd><p>사용자 정의 number format 옵션 사용 여부. (digitsAfterDecimal, scaler, showZero, decimalSep, thousandsSep, prefix, suffix)</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="userData1">userData1</dt>
+                            <dd><p>사용자 정의 데이터 속성. getUserData("userData1") API를 통해 설정한 값을 얻어올 수 있음. 
+<xmp  class='js sample'> // 속성 값 얻어오기 예시
+ getUserData("userData1");</xmp></p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="userData2">userData2</dt>
+                            <dd><p>사용자 정의 데이터 속성. getUserData("userData2") API를 통해 설정한 값을 얻어올 수 있음. 
+<xmp  class='js sample'> // 속성 값 얻어오기 예시
+ getUserData("userData2");</xmp></p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="userData3">userData3</dt>
+                            <dd><p>사용자 정의 데이터 속성. getUserData("userData3") API를 통해 설정한 값을 얻어올 수 있음. 
+<xmp  class='js sample'> // 속성 값 얻어오기 예시
+ getUserData("userData3");</xmp></p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="vals">vals</dt>
+                            <dd><p>pivot을 초기에 보여줄 때 value축에 둘 컬럼을 정의한다. 구분자","를 통해 column id를 입력한다.<br />vals로 설정된 column이 2개 이상일 경우 Σ값 레이블이 생성된다. <br />입력된 column의 순서에 따라 결과가 달라진다.<br />(ex1) vals="col6,col7" (ex2) cols="col5,col3,col4"</p></dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="valuesAxis">valuesAxis</dt>
+                            <dd><p>[default:row] Σ값 레이블이 생성된 경우 (value축 컬럼이 2개 이상인경우) Σ값 레이블의 위치를 설정하는 옵션이다.</p></dd>
+                        </dl>
+                        
+                        </section>
+                        <section class="event_section">
+                            <h2>Event Detail</h2>
+                            <dl class="api_dl">
+                            <dt id="oncellclick">oncellclick(info)</dt>
+                            <dd>
+                                <p>셀이 클릭 된 경우 발생한다.</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                          <li class="api_name">
+                                              <div class="tit">Name</div>
+                                              <div class="cnt">info</div>
+                                          </li>
+                                          <li class="api_type">
+                                              <div class="tit">Type</div>
+                                              <div class="cnt">Object</div>
+                                          </li>
+                                          <li class="api_desc in_tb">
+                                              <div class="tit">Description</div>
+                                              <div class="cnt">
+                                                  <p>rowIndex, colIndex, rowData를 포함한 오브젝트를 반환한다.</p>
+                              <table class="api_tb">
+                                <thead>
+                                    <tr>
+                                        <th>property</th>
+                                        <th>type</th>
+                                        <th class="th_desc">description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                  <td><p>info.rowIndex</p></td>
+                                  <td><p>&lt;Number&gt;</p></td>
+                                  <td>
+                                      <p>이벤트가 일어난 셀의 row index</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>info.colIndex</p></td>
+                                  <td><p>&lt;Number&gt;</p></td>
+                                  <td>
+                                      <p>이벤트가 일어난 셀의 column index</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>info.rowData</p></td>
+                                  <td><p>&lt;String&gt;</p></td>
+                                  <td>
+                                      <p>이벤트가 일어난 셀의 row index에 해당하는 cell data 배열</p>
+                                  </td>
+                              </tr>
+                                </tbody>
+                            </table>
+                                              </div>
+                                          </li>
+                                      </ul>
+                                
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="onrefresh">onrefresh(options)</dt>
+                            <dd>
+                                <p>pivot 설정이 동적으로 바뀐경우 (축을 옮기거나, aggregator가 바뀌거나, exclusions이 바뀌는 등) 발생하는 이벤트.</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">options</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">JSON</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                pivot의 options(rows, cols, vals 등) 객체
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+                            </dd>
+                        </dl>
+                        
+                        </section>
+                        <section class="method_section">
+                            <h2>Method Detail</h2>
+                            <dl class="api_dl">
+                            <dt id="addClass">addClass(className)</dt>
+                            <dd>
+                                <p>컴포넌트에 CSS class를 추가. (웹스퀘어 컴포넌트 공통.)</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">className</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>추가할 class의 이름</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// (예제)
+// input1 컴포넌트에 oddClass라는 class를 추가    
+input1.addClass("oddClass");</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="bind">bind(eventType, function)</dt>
+                            <dd>
+                                <p>컴포넌트에 이벤트와 핸들러 함수를 동적으로 할당. (웹스퀘어 컴포넌트 공통.)</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">eventType</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>할당할 이벤트</p>
+                                            </div>
+                                        </li>
+                                    </ul><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">function</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">Function</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>이벤트에 대한 핸들러 함수.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// (예제 1)
+// input1의 onclick 이벤트에 대한 핸들러 함수를 직접 정의하여 할당. 
+input1.bind("onclick", function(e){ alert(input1.getValue();}));
+
+// (예제 2)
+// 미리 commObj.ev_click 함수를 정의.
+var commObj = {};
+commObj.ev_click = function(e){
+    alert("click :: "+this.id);
+};
+
+// input1 컴포넌트에 onclick 이벤트와 정의한 핸들러 함수를 동적으로 할당. 
+input1.bind("onclick", commObj.ev_click );</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="changeClass">changeClass(oldClassName, newClassName)</dt>
+                            <dd>
+                                <p>웹스퀘어 컴포넌트의 class를 변경. (웹스퀘어 컴포넌트 공통.) <br />기본적으로 addClass를 통해 추가된 class만 변경 가능. <br />웹스퀘어 컴포넌트의 class 속성에 직접 정의된 class를 삭제하려면 config.xml 파일에 아래 설정을 추가해야 함. 
+<xmp  class='js sample'>// config.xml에 아래 설정을 추가. 
+<style><removeDefaultClass value="true" /></style></xmp></p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">oldClassName</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>변경할 class</p>
+                                            </div>
+                                        </li>
+                                    </ul><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">newClassName</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>새로 사용할 class</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// inputBox 컴포넌트에 class가 속성으로 직접 정의됨.
+<xf:input id="input1" style="position: relative;width: 144px;height: 21px;" class="tmpInputClass"></xf:input>
+
+// config.xml 파일에 아래를 추가.
+<style>
+    <removeDefaultClass value="true" />
+</style>
+
+// class를 변경 가능. 
+// (tmpInputClass class를 tmpInputWarninClass로 변경.)
+input1.changeClass("tmpInputClass","tmpInputWarninClass");</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="focus">focus()</dt>
+                            <dd>
+                                <p>웹스퀘어 컴포넌트에 포커스를 줌. (웹스퀘어 컴포넌트 공통.)</p>
+                                
+                                
+                                
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="getDisabled">getDisabled()</dt>
+                            <dd>
+                                <p>현재 웹스퀘어 컴포넌트에 설정된 disabled 속성 값을 반환. (웹스퀘어 컴포넌트 공통.)</p>
+                                
+                                
+              <div class="api_tit_para">Return</div>
+                  <div class="api_parameter">
+                      <ul class="api_ul_parameter">
+                          <li>
+                              <div class="tit">Type</div>
+                              <div class="cnt">Boolean</div>
+                          </li>
+                          <li class="api_desc">
+                              <div class="tit">Description</div>
+                              <div class="cnt">disabled 속성 값</div>
+                          </li>
+                    </ul>
+              </div>
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// 컴포넌트의 disabled 속성 값 확인 예제
+var returnValue = componentId.getDisabled();
+// (반환 값 예시) false</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="getGenerator">getGenerator()</dt>
+                            <dd>
+                                <p>컴포넌트가 Generator에 의해 생성된 경우, 자신을 생성한 부모 Generator 객체를 반환. (웹스퀘어 컴포넌트 공통.)</p>
+                                
+                                
+              <div class="api_tit_para">Return</div>
+                  <div class="api_parameter">
+                      <ul class="api_ul_parameter">
+                          <li>
+                              <div class="tit">Type</div>
+                              <div class="cnt">Object</div>
+                          </li>
+                          <li class="api_desc">
+                              <div class="tit">Description</div>
+                              <div class="cnt">부모 Generator 객체</div>
+                          </li>
+                    </ul>
+              </div>
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>//부모 Generator가 자식으로 Trigger를 생성한 예제
+ <w2:generator id="generator1"> <w2:trigger id="trigger1" ev:onclick="scwin.trigger1_onclick"></w2:trigger></w2:generator>
+
+// 아래 예제의 경우 trigger1을 클릭하면 generator1 객체가 console에 표시됨. 
+ scwin.trigger1.onclick = function(){ console.log(this.getGenerator());} 
+</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="getID">getID()</dt>
+                            <dd>
+                                <p>웹스퀘어 컴포넌트의 ID를 반환. (웹스퀘어 컴포넌트 공통.)</p>
+                                
+                                
+              <div class="api_tit_para">Return</div>
+                  <div class="api_parameter">
+                      <ul class="api_ul_parameter">
+                          <li>
+                              <div class="tit">Type</div>
+                              <div class="cnt">String</div>
+                          </li>
+                          <li class="api_desc">
+                              <div class="tit">Description</div>
+                              <div class="cnt">웹스퀘어 컴포넌트 ID</div>
+                          </li>
+                    </ul>
+              </div>
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// 동적으로 웹스퀘어 컴포넌트를 받을 경우, 아래와 같이 ID 확인 가능.
+function fn_validCheck(tmpObj){
+    var compID = tmpObj.getID();
+}
+// 위의 예제 에서 tmpObj가 "input1" ID를 가지고 있는 경우,
+// (반환 값) "input1"</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="getInitStyle">getInitStyle(CSS)</dt>
+                            <dd>
+                                <p>컴포넌트의 초기 스타일을 반환. initStyle 속성을 true로 설정한 컴포넌트만 유효하게 동작한다.(웹스퀘어 컴포넌트 공통.)</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">CSS</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">N</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>속성 (지정하지 않으면 모든 정보 출력)</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+                                
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="getOpacity">getOpacity()</dt>
+                            <dd>
+                                <p>웹스퀘어 컴포넌트의 불투명도를 반환. (웹스퀘어 컴포넌트 공통.)<br />엔진 내부적으로 CSS의 opacity 속성 값을 반환.</p>
+                                
+                                
+              <div class="api_tit_para">Return</div>
+                  <div class="api_parameter">
+                      <ul class="api_ul_parameter">
+                          <li>
+                              <div class="tit">Type</div>
+                              <div class="cnt">Integer</div>
+                          </li>
+                          <li class="api_desc">
+                              <div class="tit">Description</div>
+                              <div class="cnt">Opacity 값</div>
+                          </li>
+                    </ul>
+              </div>
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// inputBox 컴포넌트에 opacity CSS를 적용.
+<xf:input id="input1" style="position: relative;width: 144px;height: 21px;opacity:0.2;"></xf:input>
+        
+// inputBox 컴포넌트의 opacity 값을 반환. 
+var returnValue = input1.getOpacity(); 
+// returnValue는 0 ~ 1 사이의 실수.
+// (반환 값) "0.2"</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="getOriginalID">getOriginalID()</dt>
+                            <dd>
+                                <p>웹스퀘어 컴포넌트의 originalID를 반환. (웹스퀘어 컴포넌트 공통.)<br />originalID는 Scope 기능을 사용할 경우 존재. <br />scope="true"인 WFrame를 사용할 경우, WFrame 내부의 컴포넌트 ID는 원래 사용자가 정의한 값(originalID) 앞에 prefix(wframeID + "_")가 추가되는 방식으로 변경됨.  <br />originalID는 이 때, prefix가 추가되기 전 ID를 의미.</p>
+                                
+                                
+              <div class="api_tit_para">Return</div>
+                  <div class="api_parameter">
+                      <ul class="api_ul_parameter">
+                          <li>
+                              <div class="tit">Type</div>
+                              <div class="cnt">String</div>
+                          </li>
+                          <li class="api_desc">
+                              <div class="tit">Description</div>
+                              <div class="cnt">컴포넌트의 originalID</div>
+                          </li>
+                    </ul>
+              </div>
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// WFrame을 사용하는 다중 화면 구조 예시
+
+// WFrame을 포함한 메인 화면 (main.xml) 
+<w2:wframe id="wframe1" src="text.xml" scope="true"/> 
+
+// 메인 화면 WFrame에 연결되는 소스 화면 (text.xml)
+<w2:textbox id="textbox1"/>
+
+// text.xml 화면의 내부 스크립트에서 ID 및 originalID 확인하는 예제.
+// getID 실행 
+textbox1.getID(); // 실행 결과는 "wframe1_textbox1"
+ 
+// getOriginalID 실행 
+textbox1.getOriginalID(); // 실행 결과는 "textbox1"</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="getPluginName">getPluginName()</dt>
+                            <dd>
+                                <p>웹스퀘어 컴포넌트의 이름(pluginName)을 반환. (웹스퀘어 컴포넌트 공통.)</p>
+                                
+                                
+              <div class="api_tit_para">Return</div>
+                  <div class="api_parameter">
+                      <ul class="api_ul_parameter">
+                          <li>
+                              <div class="tit">Type</div>
+                              <div class="cnt">String</div>
+                          </li>
+                          <li class="api_desc">
+                              <div class="tit">Description</div>
+                              <div class="cnt">웹스퀘어 컴포넌트의 이름 (pluginName)</div>
+                          </li>
+                    </ul>
+              </div>
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// 아래와 같이 공통 함수에서 동적으로 웹스퀘어 객체를 받는 경우, 컴포넌트 종류에 따른 분기 처리가 가능.
+var commObj = {};
+
+commObj.fn_makeReqData = function(tmpObj){
+    var tmpID = tmpObj.getID(); // 컴포넌트 ID
+    var tmpCompType = tmpObj.getPluginName();   // 컴포넌트 이름
+
+    if(tmpCompType == "input"){
+        //..로직..
+    }else if(tmpCompType == "gridView"){
+        //..로직 ..
+    }else{
+        //..로직..
+    }
+};</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="getPosition">getPosition(positionName)</dt>
+                            <dd>
+                                <p>웹스퀘어 컴포넌트의 위치(left, top)를 반환. (웹스퀘어 컴포넌트 공통.) <br />위치 값이 %로 설정된 경우, 픽셀로 변환된 값을 반환.</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">positionName</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>[left, top] 위치 종류</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+              <div class="api_tit_para">Return</div>
+                  <div class="api_parameter">
+                      <ul class="api_ul_parameter">
+                          <li>
+                              <div class="tit">Type</div>
+                              <div class="cnt">Number</div>
+                          </li>
+                          <li class="api_desc">
+                              <div class="tit">Description</div>
+                              <div class="cnt">컴포넌트의 위치 값</div>
+                          </li>
+                    </ul>
+              </div>
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// 아래와 같이 input 컴포넌트에 CSS 속성 margin이 적용된 경우,
+<xf:input id="input1" style="position: relative;width: 144px;height: 21px;margin:10px;"></xf:input>
+
+// (예제) 위의 inputBox 컴포넌트의 top 값을 확인     
+var returnValue = input1.getPosition("top"); 
+
+// 픽셀 단위의 위치 값이 반환됨.
+
+// (반환 값) 10</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="getReadOnly">getReadOnly()</dt>
+                            <dd>
+                                <p>현재 웹스퀘어 컴포넌트에 설정된 readOnly 속성 값을 반환. (웹스퀘어 컴포넌트 공통.)</p>
+                                
+                                
+              <div class="api_tit_para">Return</div>
+                  <div class="api_parameter">
+                      <ul class="api_ul_parameter">
+                          <li>
+                              <div class="tit">Type</div>
+                              <div class="cnt">Boolean</div>
+                          </li>
+                          <li class="api_desc">
+                              <div class="tit">Description</div>
+                              <div class="cnt">현재 설정되어있는 readOnly 속성</div>
+                          </li>
+                    </ul>
+              </div>
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// 컴포넌트의 readOnly 속성 값 확인 예제
+var returnValue = componentId.getReadOnly();
+// (반환 값 예시) false</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="getScope">getScope()</dt>
+                            <dd>
+                                <p>scope="true"인 WFrame의 자식 컴포넌트인 경우, 부모 WFrame 객체를 반환. (웹스퀘어 컴포넌트 공통.)  <br />scope="true"인 WFrame의 자식 컴포넌트가 아닌 경우, null을 반환.</p>
+                                
+                                
+              <div class="api_tit_para">Return</div>
+                  <div class="api_parameter">
+                      <ul class="api_ul_parameter">
+                          <li>
+                              <div class="tit">Type</div>
+                              <div class="cnt">Object</div>
+                          </li>
+                          <li class="api_desc">
+                              <div class="tit">Description</div>
+                              <div class="cnt">WFrame 객체 또는 null</div>
+                          </li>
+                    </ul>
+              </div>
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// (예제)
+// 메인페이지에 wframe1이 있고, wframe1 내부에 wframe11이 존재. 
+// 그리고, wframe11 내부에 textbox1이 존재.
+   
+textbox1.getScope(); 
+// (반환 값) wframe11 객체</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="getScopeWindow">getScopeWindow()</dt>
+                            <dd>
+                                <p>scope="true"인 WFrame의 자식 컴포넌트인 경우, 부모 WFrame 객체를 반환. (웹스퀘어 컴포넌트 공통.)<br />scope="true"인 WFrame의 자식 컴포넌트가 아닌 경우, 전역 window 객체를 반환.</p>
+                                
+                                
+              <div class="api_tit_para">Return</div>
+                  <div class="api_parameter">
+                      <ul class="api_ul_parameter">
+                          <li>
+                              <div class="tit">Type</div>
+                              <div class="cnt">Object</div>
+                          </li>
+                          <li class="api_desc">
+                              <div class="tit">Description</div>
+                              <div class="cnt">WFrame 객체의 scope 객체 또는 전역 window 객체</div>
+                          </li>
+                    </ul>
+              </div>
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// (예제)
+// 메인페이지에 wframe1이 있고, wframe1 내부에 wframe11이 존재. 
+// 그리고, wframe11 내부에 textbox1이 존재.
+   
+var scope = textbox1.getScopeWindow();
+scope.wframe11 === textbox1.getScope(); // true</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="getSize">getSize(sizeName)</dt>
+                            <dd>
+                                <p>웹스퀘어 컴포넌트의 크기(width, height)를 반환. (웹스퀘어 컴포넌트 공통.) <br />%로 설정된 경우, 픽셀로 변환된 값을 반환.</p>
+                                <div class="api_tit_para">Parameter</div>
+                                
+              <div class="api_tit_para">Return</div>
+                  <div class="api_parameter">
+                      <ul class="api_ul_parameter">
+                          <li>
+                              <div class="tit">Type</div>
+                              <div class="cnt">Number</div>
+                          </li>
+                          <li class="api_desc">
+                              <div class="tit">Description</div>
+                              <div class="cnt">컴포넌트의 크기 값</div>
+                          </li>
+                    </ul>
+              </div>
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>var returnValue = componentId.getSize("width");
+// (반환 예) 100 
+// 픽셀 단위의 크기 값이 반환됨. 
+// %로 설정된 경우, 픽셀로 변환된 값이 반환됨.</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="getStyle">getStyle(propertyName)</dt>
+                            <dd>
+                                <p>웹스퀘어 컴포넌트의 CSS 속성 값을 반환. (웹스퀘어 컴포넌트 공통.)</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">propertyName</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>반환할 CSS 속성</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+              <div class="api_tit_para">Return</div>
+                  <div class="api_parameter">
+                      <ul class="api_ul_parameter">
+                          <li>
+                              <div class="tit">Type</div>
+                              <div class="cnt">String</div>
+                          </li>
+                          <li class="api_desc">
+                              <div class="tit">Description</div>
+                              <div class="cnt">CSS 속성 값</div>
+                          </li>
+                    </ul>
+              </div>
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>//아래와 같이 input 컴포넌트가 정의 된 경우
+<xf:input id="input1" style="position: relative;width: 144px;height: 21px;"></xf:input>
+
+// (예제) 위의 inputBox 컴포넌트의 width 값을 확인   
+var returnValue = input1.getStyle("width");
+
+// (반환 값) "144px"</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="getStyleValue">getStyleValue(style)</dt>
+                            <dd>
+                                <p>[deprecated]<br />getStyle 사용 권장.<br />웹스퀘어 컴포넌트에 적용된 해당 CSS 속성 값을 반환.</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">style</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>반환하려는 CSS 속성.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+              <div class="api_tit_para">Return</div>
+                  <div class="api_parameter">
+                      <ul class="api_ul_parameter">
+                          <li>
+                              <div class="tit">Type</div>
+                              <div class="cnt">String</div>
+                          </li>
+                          <li class="api_desc">
+                              <div class="tit">Description</div>
+                              <div class="cnt">style 해당 CSS 속성 값 (색을 반환하는 경우, HexCode로 반환됨.)</div>
+                          </li>
+                    </ul>
+              </div>
+                                
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="getTitle">getTitle()</dt>
+                            <dd>
+                                <p>컴포넌트의 title 속성 값을 반환. (웹스퀘어 컴포넌트 공통.)</p>
+                                
+                                
+              <div class="api_tit_para">Return</div>
+                  <div class="api_parameter">
+                      <ul class="api_ul_parameter">
+                          <li>
+                              <div class="tit">Type</div>
+                              <div class="cnt">String</div>
+                          </li>
+                          <li class="api_desc">
+                              <div class="tit">Description</div>
+                              <div class="cnt">title 속성 값.</div>
+                          </li>
+                    </ul>
+              </div>
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// 아래와 같이 input 컴포넌트의 title 속성이 "이름 입력"으로 정의된 경우
+<xf:input id="input1" style="position: relative;width: 144px;height: 21px;" title="이름 입력"></xf:input>
+
+var tmpTitle = input1.getTitle();
+// (반환 값 예시) "이름 입력"</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="getTotalRow">getTotalRow()</dt>
+                            <dd>
+                                <p>행의 개수를 반환한다.</p>
+                                
+                                
+              <div class="api_tit_para">Return</div>
+                  <div class="api_parameter">
+                      <ul class="api_ul_parameter">
+                          <li>
+                              <div class="tit">Type</div>
+                              <div class="cnt">Number</div>
+                          </li>
+                          <li class="api_desc">
+                              <div class="tit">Description</div>
+                              <div class="cnt">행의 개수</div>
+                          </li>
+                    </ul>
+              </div>
+                                
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="getUdcHome">getUdcHome()</dt>
+                            <dd>
+                                <p>UDC 객체가 자신을 정의한 UDC 파일 경로를 파일명을 포함해서 반환. (웹스퀘어 컴포넌트 공통.)<br />파일명은 마지막 .xml까지 포함. .xml을 제외한 경로는 getUdcRoot를 사용해서 반환.<br />UDC 객체가 아닌 컴포넌트에서 호출된 경우에는 undefined가 반환됨.</p>
+                                
+                                
+              <div class="api_tit_para">Return</div>
+                  <div class="api_parameter">
+                      <ul class="api_ul_parameter">
+                          <li>
+                              <div class="tit">Type</div>
+                              <div class="cnt">String</div>
+                          </li>
+                          <li class="api_desc">
+                              <div class="tit">Description</div>
+                              <div class="cnt">UDC 파일 경로. (UDC가 아닌 경우, undefined가 반환됨.)</div>
+                          </li>
+                    </ul>
+              </div>
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// 예제
+// UDC 파일 경로는 /a/b/udc.xml 
+// 화면 XML은  /a/c/main.xml 
+// UDC 객체의 ID는 udc1
+  
+udc1.getUdcHome(); 
+// (실행 결과) /a/b/udc.xml</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="getUdcRoot">getUdcRoot()</dt>
+                            <dd>
+                                <p>UDC 객체가 자신을 정의한  UDC 파일 경로를 반환. (웹스퀘어 컴포넌트 공통.)<br />파일명을 포함하지 않음. 파일명을 포함한 경로는 getUdcHome을 사용해서 반환.<br />UDC 객체가 아닌 컴포넌트에서 호출된 경우에는 undefined가 반환됨.</p>
+                                
+                                
+              <div class="api_tit_para">Return</div>
+                  <div class="api_parameter">
+                      <ul class="api_ul_parameter">
+                          <li>
+                              <div class="tit">Type</div>
+                              <div class="cnt">String</div>
+                          </li>
+                          <li class="api_desc">
+                              <div class="tit">Description</div>
+                              <div class="cnt">UDC 파일 경로. (UDC가 아닌 경우, undefined가 반환됨.)</div>
+                          </li>
+                    </ul>
+              </div>
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// 예제
+// UDC 파일 경로는 /a/b/udc.xml 
+// 화면 XML은  /a/c/main.xml 
+// UDC 객체의 ID는 udc1
+  
+udc1.getUdcHome();    
+// (실행 결과) /a/b/</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="getUserData">getUserData(key)</dt>
+                            <dd>
+                                <p>setUserData로 웹스퀘어 컴포넌트에 설정한 key의 value 혹은 사용자가 직접 페이지 소스(XML)에 속성으로 정의한 value를 반환. (웹스퀘어 컴포넌트 공통.)</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">key</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>데이터의 key</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+              <div class="api_tit_para">Return</div>
+                  <div class="api_parameter">
+                      <ul class="api_ul_parameter">
+                          <li>
+                              <div class="tit">Type</div>
+                              <div class="cnt">String</div>
+                          </li>
+                          <li class="api_desc">
+                              <div class="tit">Description</div>
+                              <div class="cnt">key에 해당하는 value</div>
+                          </li>
+                    </ul>
+              </div>
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// Input 컴포넌트에 사용자 속성(setTest)을 설정하는 예제
+<xf:input id="input1" style="position: relative;width: 144px;height: 21px;" setTest="Hello"></xf:input>
+
+// 위에서 설정한 setTest을 값을 반환하는 예제. 
+input1.getUserData("setTest");
+// (반환 값) "Hello"
+
+//setUserData를 통해 'valueTest'(key)와 'WebSquare'(data)로 설정하는 예제. 
+input1.setUserData("valueTest","WebSquare");
+
+// 위에서 설정한 setTest을 값을 반환하는 예제. 
+input1.getUserData("WebSquare");
+// (반환 값) "WebSquare"</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="hasClass">hasClass(className)</dt>
+                            <dd>
+                                <p>웹스퀘어 컴포넌트가 특정 class를 포함하고 있는지 확인. (웹스퀘어 컴포넌트 공통.)</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">className</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>검색할 class 이름</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+              <div class="api_tit_para">Return</div>
+                  <div class="api_parameter">
+                      <ul class="api_ul_parameter">
+                          <li>
+                              <div class="tit">Type</div>
+                              <div class="cnt">Boolean</div>
+                          </li>
+                          <li class="api_desc">
+                              <div class="tit">Description</div>
+                              <div class="cnt">class의 포함 여부</div>
+                          </li>
+                    </ul>
+              </div>
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// inputBox 컴포넌트에 class가 속성으로 직접 정의됨.
+<xf:input id="input1" style="position: relative;width: 144px;height: 21px;" class="tmpInputClass"></xf:input>
+        
+var returnValue = input1.hasClass("tmpInputClass");
+// (반환 값) true</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="hide">hide()</dt>
+                            <dd>
+                                <p>웹스퀘어 컴포넌트를 화면에서 숨김. (웹스퀘어 컴포넌트 공통.)<br />display:none; 및 visibility:hidden; CSS를 적용.</p>
+                                
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// (예제) 컴포넌트를 숨김
+componentId.hide();</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="pivotCSVDownload">pivotCSVDownload(options)</dt>
+                            <dd>
+                                <p>데이터를 CSV 파일로 저장한다. (JDK 1.5이상에서 사용 가능)</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">options</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">JSON</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                 <p>JSON형태로 저장된 Pivot의 csv 다운로드 옵션<br /></p>
+                            <table class="api_tb">
+                                <thead>
+                                    <tr>
+                                        <th>property</th>
+                                        <th>type</th>
+                                        <th class="th_desc">description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                  <td><p>options.fileName</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: csvfile.csv] 엑셀파일 선택 대화상자가 나타날 때 기본으로 지정 될 파일 이름</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.delim</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: ';'] CSV 파일에서 데이터를 구분할 구분자</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.useHeaderX</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: false] Axis 영역을 포함한 headerX 저장 여부 (true: 저장, false: 저장 하지 않음)</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.useHeaderY</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: false] Axis 영역을 포함한 headerY 저장 여부 (true: 저장, false: 저장 하지 않음)</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.useTotal</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: true] 다운로드시 합계를 출력 할지 여부( "true"인경우 출력, "false"인경우 미출력), pivot 속성중 grandTotalDisplayType이 설정되어 있는경우 grandTotalDisplayType속성이 적용된다.</p>
+                                  </td>
+                              </tr>
+                                </tbody>
+                            </table>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>//저장 할 컬럼 정의
+var colArr = [];
+colArr[0] = "name";
+colArr[1] = "corp";
+
+//저장 옵션
+var options = {
+  fileName:           "saveCSV.csv",
+  delim:              ";"
+};
+pivotTable.pivotCSVDownload(options);
+
+//별도의 옵션이 없을 경우 빈 객체를 파라메터로 넘겨줘야 한다.
+pivotTable.pivotCSVDownload({});</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="pivotCSVUpload">pivotCSVUpload(options)</dt>
+                            <dd>
+                                <p>csv 파일을 읽어 Pivot의 데이터를 설정한다. (JDK 1.5이상에서 사용 가능)</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">options</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">JSON</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                 <p>JSON형태로 저장된 Pivot의 csv 업로드 옵션<br /></p>
+                            <table class="api_tb">
+                                <thead>
+                                    <tr>
+                                        <th>property</th>
+                                        <th>type</th>
+                                        <th class="th_desc">description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                  <td><p>options.delim</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: ',']CSV 파일에서 데이터를 구분할 구분자</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.escapeChar</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>CSV 데이터에서 제거해야 되는 문자셋 ( ex) '\'' )</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.startRowIndex</p></td>
+                                  <td><p>&lt;Number:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: 0] csv파일에서 Pivot의 데이터가 시작되는 행의 번호, startRowIndex가 설정되면, header 설정은 무시된다.</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.skipSpace</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: 0, 1]공백무시 여부(1이면 무시 0이면 포함)</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.append</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: 0, 1]csv파일에서 가져온 데이터를 Pivot에 append시킬지 여부(1이면 현재 Pivot에 데이터를 추가로 넣어줌 0이면 현재 Pivot의 데이터를 삭제하고 넣음)</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.popupUrl</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>업로드시에 호출할 popup의 url</p>
+                                  </td>
+                              </tr>
+                                </tbody>
+                            </table>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>var options = {
+  delim:              ",",
+  escapeChar:         "'",
+  startRowIndex:        1
+};
+pivotTable.pivotCSVUpload(options);
+
+//별도의 옵션이 없을 경우 빈 객체를 파라메터로 넘겨줘야 한다.
+pivotTable.pivotCSVUpload({});</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="pivotExcelDownload">pivotExcelDownload(options, infoArr)</dt>
+                            <dd>
+                                <p>Pivot의 데이터를 엑셀 파일로 저장한다. (JDK 1.5이상에서 사용 가능)</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">options</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">Object</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                 <p>JSON형태로 저장된 Pivot의 엑셀 다운로드 옵션<br /></p>
+                            <table class="api_tb">
+                                <thead>
+                                    <tr>
+                                        <th>property</th>
+                                        <th>type</th>
+                                        <th class="th_desc">description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                  <td><p>options.fileName</p></td>
+                                  <td><p>&lt;String:Y&gt;</p></td>
+                                  <td>
+                                      <p>[default: excel.xls] 다운로드하려는 파일의 이름으로 필수 입력 값이다.</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.sheetName</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: sheet] excel의 sheet의 이름</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.startRowIndex</p></td>
+                                  <td><p>&lt;Number:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: 0] excel파일에서 Pivot의 데이터가 시작되는 행의 번호(헤더 포함)</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.startColumnIndex</p></td>
+                                  <td><p>&lt;Number:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: 0] excel파일에서 Pivot의 데이터가 시작되는 열의 번호(헤더 포함)</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.axisLColor</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: #FFFFFF] excel파일에서 좌측 상단 axis 영역의 색</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.axisLFontName</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: 없음] excel파일에서 좌측 상단 axis 영역의 font name</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.axisLFontSize</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: 10] excel파일에서 좌측 상단 axis 영역의 font size</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.axisLFontColor</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: 없음] excel파일에서 좌측 상단 axis 영역의 font색</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.axisLFontWeight</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[defalut: 없음] excel파일에서 좌측 상단 axis 영역의 Bold 지정( ex) "bold" );</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.axisLTextAlign</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: 없음] excel파일에서 좌측 상단 axis 영역의 정렬값 ("center", "right", "left")</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.axisRColor</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: #FFFFFF] excel파일에서 우측 상단 axis 영역의 색</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.axisRFontName</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: 없음] excel파일에서 우측 상단 axis 영역의 font name</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.axisRFontSize</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: 10] excel파일에서 우측 상단 axis 영역의 font size</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.axisRFontColor</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: 없음] excel파일에서 우측 상단 axis 영역의 font색</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.axisRFontWeight</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: 없음] excel파일에서 우측 상단 axis 영역의 Bold 지정( ex) "bold" );</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.axisRTextAlign</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: 없음] excel파일에서 우측 상단 axis 영역의 정렬값 ("center", "right", "left")</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.axisBColor</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: #FFFFFF] excel파일에서 하단 상단 axis 영역의 색</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.axisBFontName</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: 없음] excel파일에서 하단 상단 axis 영역의 font name</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.axisBFontSize</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: 10] excel파일에서 하단 상단 axis 영역의 font size</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.axisBFontColor</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: 없음] excel파일에서 하단 상단 axis 영역의 font색</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.axisBFontWeight</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: 없음] excel파일에서 하단 상단 axis 영역의 Bold 지정( ex) "bold" );</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.axisBTextAlign</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: 없음] excel파일에서 하단 상단 axis 영역의 정렬값 ("center", "right", "left")</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.headerXColor</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: #FFFFFF] excel파일에서 상단 header 영역의 색</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.headerXFontName</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: 없음] excel파일에서 상단 header 영역의 font name</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.headerXFontSize</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: 10] excel파일에서 상단 header 영역의 font size</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.headerXFontColor</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[defalut: 없음] excel파일에서 상단 header 영역의 font색</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.headerXFontWeight</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: 없음] excel파일에서 상단 header 영역의 Bold 지정( ex) "bold" );</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.headerXTextAlign</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: 없음] excel파일에서 상단 header 영역의 정렬값 ("center", "right", "left")</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.headerXWidth</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: 없음] excel파일에서 상단 header 컬럼의 width 값</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.headerYColor</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: #FFFFFF] excel파일에서 좌측축 영역의 색</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.headerYFontName</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: 없음] excel파일에서 좌측축 영역의 font name</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.headerYFontSize</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: 10] excel파일에서 좌측축 영역의 font size</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.headerYFontColor</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: 없음] excel파일에서 좌측축 영역의 font색</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.headerYFontWeight</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: 없음] excel파일에서 좌측축 영역의 Bold 지정 ( ex) "bold" )</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.headerYTextAlign</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: 없음] excel파일에서 좌측축 영역의 정렬값 ("center", "right", "left")</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.headerYWidth</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: 없음] excel파일에서 좌측축 컬럼의 width 값</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.totalXColor</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: #FFFFFF] excel파일에서 상단 header의 합계 영역의 색</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.totalXFontName</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: 없음] excel파일에서 상단 header의 합계 영역의 font name</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.totalXFontSize</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: 10] excel파일에서 상단 header의 합계 영역의 font size</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.totalXFontColor</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: 없음] excel파일에서 상단 header의 합계 영역의 font색</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.totalXFontWeight</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: 없음] excel파일에서 상단 header의 합계 영역의 Bold 지정 ( ex) "bold" )</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.totalXTextAlign</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: 없음] excel파일에서 상단 header의 합계 영역의 정렬값 ("center", "right", "left")</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.totalXWidth</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: 없음] excel파일에서 상단 header의 합계 컬럼의 width 값</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.totalYColor</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: #FFFFFF] excel파일에서 좌측축의 합계 영역의 색</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.totalYFontName</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: 없음] excel파일에서 좌측축의 합계 영역의 font name</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.totalYFontSize</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: 10] excel파일에서 좌측축의 합계 영역의 font size</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.totalYFontColor</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: 없음] excel파일에서 좌측축의 합계 영역의 font색</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.totalYFontWeight</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: 없음] excel파일에서 좌측축의 합계 영역의 Bold 지정 ( ex) "bold" )</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.totalYTextAlign</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: 없음] excel파일에서 좌측축의 합계 영역의 정렬값 ("center", "right", "left")</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.totalYFormat</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: 없음] excel파일에서 좌측축의 합계 영역의 format (ex) #,###)</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.totalYWidth</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: 없음] excel파일에서 좌측축의 합계 영역 컬럼의 width값</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.bodyColor</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: #FFFFFF] excel파일에서 body영역의 색</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.bodyFontName</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: 없음] excel파일에서 body영역의 font name</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.bodyFontSize</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: 10] excel파일에서 body영역의 font size</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.bodyFontColor</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: 없음] excel파일에서 body영역의 font색</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.bodyFontWeight</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: 없음] excel파일에서 body영역의 Bold 지정 ( ex) "bold" )</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.bodyTextAlign</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: 없음] excel파일에서 body영역의 정렬값 ("center", "right", "left")</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.bodyFormat</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: 없음] excel파일에서 body영역의 format (ex) #,##0.00)</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.bodyWidth</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: 없음] excel파일에서 body영역 컬럼의 width 값</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.bodyDefaultValue</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: 없음] excel파일에서 body영역 컬럼값이 비어있는 경우 대체할 수 있는 값설정</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.sumColor</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: #FFFFFF] excel파일에서 body 영역의 합계부분의 색</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.sumFontName</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: 없음] excel파일에서 body 영역의 합계부분의 font name</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.sumFontSize</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: 10] excel파일에서 body 영역의 합계부분의 font size</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.sumFontColor</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: 없음] excel파일에서 body 영역의 합계부분의 font색</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.sumFontWeight</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: 없음] excel파일에서 body 영역의 합계부분의 Bold 지정 ( ex) "bold" )</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.sumTextAlign</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: 없음] excel파일에서 body 영역의 합계부분의 정렬값 ("center", "right", "left")</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.sumFormat</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: 없음] excel파일에서 body 영역의 합계부분의 format (ex) #,###)</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.sumWidth</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: 없음] excel파일에서 body 영역 컬럼의 width 값</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.showProcess</p></td>
+                                  <td><p>&lt;Boolean:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: true] 다운로드 시 프로세스 창을 보여줄지 여부</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.bodyWordwrap</p></td>
+                                  <td><p>&lt;Boolean:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: false] 다운로드시 바디의 줄 바꿈 기능</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.useHeaderX</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: true] 다운로드시 상단 Header를 출력 할지 여부( "true"인경우 출력, "false"인경우 미출력)</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.useHeaderY</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: true] 다운로드시 좌측 Header를 출력 할지 여부( "true"인경우 출력, "false"인경우 미출력)</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.headerYMerge</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: false] 좌측축영역에 데이터가 같은 경우 colSpan 할지 여부</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.useTotal</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: true] 다운로드시 합계를 출력 할지 여부( "true"인경우 출력, "false"인경우 미출력), pivot 속성중 grandTotalDisplayType이 설정되어 있는경우 grandTotalDisplayType속성이 적용된다.</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.separator</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: ,] 다운로드시 서버로 데이터 전송할때, 데이터를 구분짓는 구분자, default는 comma(,)</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.freezePane</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: ""] 틀고정을 위한 좌표값 및 좌표값의 오픈셋 ( ex) freezePane="3,4" X축 3, Y축 4에서 틀고정, freezePane="0,1,0,5" X축 0, Y축 1에서 X축으로 0, Y축으로 5로 틀공정  )</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.autoSizeColumn</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: false] 너비자동맞춤 설정 유무</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.displayGridlines</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: false] 엑셀 전체 셀의 눈금선 제거 유무</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.useDataFormat</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: 없음] "true"인 경우, dataType에 따라 Excel 파일의 표시 형식을 출력.  dataType="text"인 셀은 Excel의 표시 형식에 '텍스트' 출력. dataType="number" 혹은 "bigDecimal" 셀은 bodyFormat에 따라 데이터를 출력. (예: bodyFormat="#,##0.00")</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.optionParam</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: 없음] DRM연계시 연계모듈에 전달할 데이터 (서버에서 (String)request.getAttribute("optionParam") 로 참조가능 )</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.printSet</p></td>
+                                  <td><p>&lt;Object:N&gt;</p></td>
+                                  <td>
+                                      <p>JSON형태로 저장된 Excel Print관련 설정</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.printSet.fitToPage</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: false] 엑셀 프린터 출력시 쪽맞춤 사용 유무</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.printSet.landScape</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: false] 엑셀 프린터 출력시 가로 방향 출력 유무</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.printSet.fitWidth</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: 1] 엑셀 프린터 출력시 용지너비</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.printSet.fitHeight</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: 1] 엑셀 프린터 출력시 용지높이</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.printSet.scale</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: 100] 엑셀 프린터 출력시 확대/축소 배율, scale을 사용할 경우 fitToPage는 false로 설정 해야 한다.</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>options.printSet.pageSize</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>[default: A4] 엑셀 프린터 출력시 인쇄용지 설정 ( ex) "A3", "A4", "A5", "B4" )</p>
+                                  </td>
+                              </tr>
+                                </tbody>
+                            </table>
+                                            </div>
+                                        </li>
+                                    </ul><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">infoArr</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">Object</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">N</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                 <p>Pivot에 대한 내용을 추가로 다른 셀에 표현하는 경우 사용하는 배열<br /></p>
+                            <table class="api_tb">
+                                <thead>
+                                    <tr>
+                                        <th>property</th>
+                                        <th>type</th>
+                                        <th class="th_desc">description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                  <td><p>infoArr.rowIndex</p></td>
+                                  <td><p>&lt;Number:N&gt;</p></td>
+                                  <td>
+                                      <p>내용을 표시할 행번호</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>infoArr.colIndex</p></td>
+                                  <td><p>&lt;Number:N&gt;</p></td>
+                                  <td>
+                                      <p>내용을 표시할 열번호</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>infoArr.rowSpan</p></td>
+                                  <td><p>&lt;Number:N&gt;</p></td>
+                                  <td>
+                                      <p>병합할 행의 수</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>infoArr.colSpan</p></td>
+                                  <td><p>&lt;Number:N&gt;</p></td>
+                                  <td>
+                                      <p>병합할 열의 수</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>infoArr.text</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>표시할 내용</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>infoArr.textAlign</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>표시할 내용의 정렬 방법 (left, center, right)</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>infoArr.fontSize</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>font size 설정 ( ex) "20px" )</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>infoArr.fontName</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>font name 설정</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>infoArr.color</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>font color 설정 ( ex) "red" )</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>infoArr.fontWeight</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>font weight 설정 ( ex) "bold" )</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>infoArr.drawBorder</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>cell의 border 지정 ( ex) true )</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>infoArr.wordWrap</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>cell의 줄 바꿈 기능 ( ex) "true" )</p>
+                                  </td>
+                              </tr><tr>
+                                  <td><p>infoArr.bgColor</p></td>
+                                  <td><p>&lt;String:N&gt;</p></td>
+                                  <td>
+                                      <p>cell의 배경 color 설정 ( ex) "red" )</p>
+                                  </td>
+                              </tr>
+                                </tbody>
+                            </table>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>//별도의 옵션 없이 excel을 download 할 경우
+var excelOpt = {};  //excel download 옵션
+excelOpt.fileName = "excelData.xls";    //또는 xlsx 확장자 사용
+
+pivotTable.pivotExcelDownload( excelOpt );</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="removeClass">removeClass(className)</dt>
+                            <dd>
+                                <p>웹스퀘어 컴포넌트에서 class를 삭제. (웹스퀘어 컴포넌트 공통.)<br />기본적으로 addClass를 통해 추가된 class만 삭제 가능. <br />컴포넌트의 속성으로 직접 정의된 class를 삭제하기 위해서는 config.xml 파일에 아래 설정을 추가해야 함. 
+<xmp  class='js sample'> // config.xml 파일에 아래 설정 추가 
+ <style><removeDefaultClass value="true" /></style></xmp></p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">className</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>삭제 할 class명</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// inputBox의 속성으로 class가 직접 정의된 경우,
+<xf:input id="input1" style="position: relative;width: 144px;height: 21px;" class="tmpInputClass"></xf:input>
+
+// config.xml 파일에 아래 항목을 추가.
+<style>
+    <removeDefaultClass value="true" />
+</style>
+
+// removeClass를 통해 삭제 가능. 
+input1.removeClass("tmpInputClass");</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="setDisabled">setDisabled(disabled)</dt>
+                            <dd>
+                                <p>웹스퀘어 컴포넌트의 disabled 속성을 설정. (웹스퀘어 컴포넌트 공통.)</p>
+                                <div class="api_tit_para">Parameter</div>
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// 컴포넌트의 disabled 속성을 활성화.
+componentId.setDisabled(true);</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="setEventPause">setEventPause(evList, flag)</dt>
+                            <dd>
+                                <p>지정한 이벤트를 중단함. (웹스퀘어 컴포넌트 공통.)</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">evList</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">N</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>중단할 이벤트 목록. (null을 지정할 경우 해당 컴포넌트의 모든 사용자 이벤트가 중단되거나 중단 해제됨.)</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// (예제 1)
+// onclick 이벤트를 중단. 
+input1.setEventPause("onclick", true); 
+
+// (예제 2)
+// onfocus 및 onblur 이벤트의 중단을 해제.
+input1.setEventPause("onfocus,onblur", false); 
+
+// (예제 3)
+// input1에 등록된 모든 사용자 이벤트를 중단.
+input1.setEventPause(null, true);</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="setFixedColumn">setFixedColumn(fixedColNum)</dt>
+                            <dd>
+                                <p>세로 틀고정을 설정한다.</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">fixedColNum</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">Number</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>맨 왼쪽부터 시작해서 영역을 고정시킬 컬럼들의 수.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>//앞에서 2개 컬럼 틀고정
+pivot1.setFixedColumn(1);</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="setFixedRow">setFixedRow(fixedRow)</dt>
+                            <dd>
+                                <p>가로 틀고정을 설정한다.</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">fixedRow</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">Number</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>맨 왼쪽부터 시작해서 영역을 고정시킬 컬럼들의 수.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>//앞에서 2개 행 틀고정
+pivot1.setFixedRow(1);</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="setInitStyle">setInitStyle(property)</dt>
+                            <dd>
+                                <p>컴포넌트의 초기 스타일을 복구한다. initStyle 속성을 true로 설정한 컴포넌트만 유효하게 동작한다 (웹스퀘어 컴포넌트 공통.)</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">property</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">N</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>CSS 속성 (지정하지 않으면 모든 속성의 초기 값으로 복구.)</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// (예제)
+group1.setInitStyle();</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="setOpacity">setOpacity(value)</dt>
+                            <dd>
+                                <p>웹스퀘어 컴포넌트의 불투명도를 설정. (웹스퀘어 컴포넌트 공통.)<br />엔진 내부적으로 CSS 속성인 opacity(불투명도)를 설정.</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">value</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">Number</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>Opacity 값 (0과 1 사이의 실수)</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// (예제) 불투명도를 0.45로 설정
+componentId.setOpacity(0.45);</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="setPivotInit">setPivotInit(valsStr)</dt>
+                            <dd>
+                                <p>pivot의 vals 영역을 새로 설정한 후 해당 설정에 맞게 pivot을 다시 그립니다. 여러 영역을 한꺼번에 변경할 경우에는 setOption API를 대신 사용합니다.</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">valsStr</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">N</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>vals영역에 넣을 필드들을 구분자 ,를 이용하여 나열한다. 순서가 바뀌면 그려지는 모양 또한 바뀐다.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                     pivotTable.setPivotInit( );
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="setPosition">setPosition(left, top, mode)</dt>
+                            <dd>
+                                <p>웹스퀘어 컴포넌트의 위치(left, top)를 설정. (웹스퀘어 컴포넌트 공통.)</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">left</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">Number</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>설정할 left 위치 값 또는 null.</p>
+                                            </div>
+                                        </li>
+                                    </ul><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">top</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">Number</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>설정할 top 위치 값 또는 null.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// (예제) 컴포넌트의 top만 100px로 설정.
+componentId.setPosition(null, 100);</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="setReadOnly">setReadOnly(readOnly)</dt>
+                            <dd>
+                                <p>웹스퀘어 컴포넌트의 readOnly 속성을 설정. (웹스퀘어 컴포넌트 공통.)</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">readOnly</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">Boolean</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>readOnly 속성 활성화 여부. ( "true" : 활성화, "false" : 비활성화)</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// 컴포넌트의 readOnly 속성을 true로 설정하는 예.
+componentId.setReadOnly(true);</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="setSize">setSize(width, height)</dt>
+                            <dd>
+                                <p>웹스퀘어 컴포넌트의 크기(width, height)를 설정. (웹스퀘어 컴포넌트 공통.)</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">width</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">Number</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>새로 설정할 컴포넌트의 width 값 또는 null</p>
+                                            </div>
+                                        </li>
+                                    </ul><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">height</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">Number</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>새로 설정할 컴포넌트의 height 값 또는 null</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// (예제) 컴포넌트의 height만 100px로 설정.
+componentId.setSize(null,100);</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="setStyle">setStyle(propertyName, value)</dt>
+                            <dd>
+                                <p>웹스퀘어 컴포넌트의 CSS 속성을 설정. (웹스퀘어 컴포넌트 공통.)</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">propertyName</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>설정할 CSS 속성</p>
+                                            </div>
+                                        </li>
+                                    </ul><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">value</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>해당 CSS 속성에 적용할 값</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// (예제 1) 컴포넌트의 width를 200px로 설정
+componentId.setStyle("width", "200px");
+
+// (예제 2) 배경색을 olive로 변경
+componentId.setStyle("background-color","olive");</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="setUserData">setUserData(key, value)</dt>
+                            <dd>
+                                <p>웹스퀘어 컴포넌트에 임의의 데이터를 설정. (웹스퀘어 컴포넌트 공통.) <br />컴포넌트에 설정 가능한 key를 입력해야 함. 설정 가능한 key가 아닌 경우, 해당 내용이 로그에 출력됨.</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">key</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>설정할 데이터의 key</p>
+                                            </div>
+                                        </li>
+                                    </ul><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">value</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>설정한 데이터의 value</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// 컴포넌트에 'data'라는 key로 'WebSquare'라는 value를 설정하는 예제.
+
+componentId.setUserData("data", "WebSquare");
+
+// 컴포넌트에 설정이 불가능한 key를 임력할 경우, key 설정이 불가능. 
+ 
+componentId.setUserData("title", "WebSquare");
+// 아래와 같이 로그가 출력됨. 
+// !!!WARNING - [title] can't be defined as UserData.</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="setvals">setvals(valsStr)</dt>
+                            <dd>
+                                <p>pivot의 vals 영역을 새로 설정한 후 해당 설정에 맞게 pivot을 다시 그립니다. 여러 영역을 한꺼번에 변경할 경우에는 setOption API를 대신 사용합니다.</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">valsStr</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>vals영역에 넣을 필드들을 구분자 ,를 이용하여 나열한다. 순서가 바뀌면 그려지는 모양 또한 바뀐다.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'> pivotTable.setvals( "field5, field5" );  // vals 영역에 field5,6를 위치시킨다.
+ pivotTable.setvals( "field6, field5" );  // vals 영역에 field6,5를 위치시킨다. 위의 명령과 실행결과가 다르다는 것에 유의한다.</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="show">show(displayType)</dt>
+                            <dd>
+                                <p>웹스퀘어 컴포넌트를 화면에 표시. (웹스퀘어 컴포넌트 공통.)<br />CSS display 속성을 주어진 값으로 설정하고 "visibility: show;"를 적용.</p>
+                                <div class="api_tit_para">Parameter</div>
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// (예제) display: block; CSS를 설정.
+componentId.show();  
+
+// (예제) 위제 설정한 display 속성 값을 취소하고 원래의 display 값을 복구.
+componentId.show("");</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="toggleClass">toggleClass(className)</dt>
+                            <dd>
+                                <p>웹스퀘어 컴포넌트에서 특정 class를 제거하거나 추가. (웹스퀘어 컴포넌트 공통.)<br />웹스퀘어 컴포넌트가 파라미터로 주어진 class를 포함한 경우, 해당 class를 제거. <br />웹스퀘어 컴포넌트에 파라미터로 주어진 class가 없는 경우, 해당 class를 추가. <br />기본적으로 addClass를 통해 추가된 class만 삭제 가능. <br />웹스퀘어 컴포넌트의 속성으로 직접 정의된 class를 삭제하기 위해서는 config.xml 파일에 아래 설정을 추가. 
+<xmp  class='js sample'> // config.xml 파일에 아래 설정 추가
+ <style><removeDefaultClass value="true" /></style></xmp></p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">className</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>추가/삭제할 class</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// inputBox 컴포넌트에 class가 속성으로 직접 정의됨.
+<xf:input id="input1" style="position: relative;width: 144px;height: 21px;" class="tmpInputClass"></xf:input>
+
+//config.xml 파일에 아래를 추가.
+<style>
+    <removeDefaultClass value="true" />
+</style>
+
+// tmpInputClass class를 삭제.
+input1.toggleClass("tmpInputClass");
+
+// (위에서 삭제된) tmpInputClass class를 다시 추가.
+input1.toggleClass("tmpInputClass");</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="trigger">trigger(type, array)</dt>
+                            <dd>
+                                <p>컴포넌트에서 특정 이벤트를 발생시킴. (웹스퀘어 컴포넌트 공통.)</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">type</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>발생시킬 이벤트</p>
+                                            </div>
+                                        </li>
+                                    </ul><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">array</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">Array</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">N</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>이벤트 핸들러에 전달할 파라미터 배열</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// (예제 1)
+// input1 컴포넌트에 onclick 이벤트를 발생시킴.
+input1.trigger("onclick");
+
+// (예제 2)
+// input1에 onviewchange 이벤트를 발생시키고 핸들러 함수에 (1,2) 인자를 전달하여 호출.
+input1.trigger("onviewchange", [1,2]);</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="unbind">unbind(type, function)</dt>
+                            <dd>
+                                <p>컴포넌트에서 이벤트를 제거. (웹스퀘어 컴포넌트 공통.)</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">type</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">N</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>제거할 이벤트. (생략할 경우 해당 컴포넌트의 모든 이벤트를 제거.)</p>
+                                            </div>
+                                        </li>
+                                    </ul><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">function</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">Function</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">N</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>제거할 이벤트의 핸들러 함수. (생략할 경우 해당 위에 지정한 이벤트에 등록된 모든 핸들러 함수를 제거.)</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>// (예제 1)
+// input1에 등록된 모든 이벤트를 제거.
+input1.unbind();
+
+// (예제 2)
+// input1의 onviewchange 이벤트에 대한 모든 핸들러 함수를 제거.
+input1.unbind("onviewchange");
+
+// (예제 3)
+// input1의 onviewchange 이벤트에 대한 func1 이벤트 핸들러 함수를 제거.
+input1.unbind("onviewchange", func1);</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="visible">visible(flag)</dt>
+                            <dd>
+                                <p>[deprecated] <br />show/hide 혹은 setStyle 사용을 권장.<br />엔진 내부적으로 CSS visibility 속성을 설정.</p>
+                                <div class="api_tit_para">Parameter</div>
+                                
+                                
+                            </dd>
+                        </dl>
+                        
+                        </section>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </body>
+    </html>

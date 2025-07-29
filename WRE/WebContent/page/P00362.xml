@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:w2="http://www.inswave.com/websquare"
+	xmlns:xf="http://www.w3.org/2002/xforms">
+	<head meta_screenName="[AutoComplete] 연동된 데이터 유지 설정하기" meta_type="메인">
+		<w2:historyInfo>
+			<w2:history meta_no="01" meta_desc="최초작성" meta_date=" 20230823" meta_user="InswaveSystems"></w2:history>
+		</w2:historyInfo>
+		<w2:type>COMPONENT</w2:type>
+		<w2:buildDate />
+		<w2:MSA />
+		<xf:model>
+			<w2:dataCollection baseNode="map">
+				<w2:dataList baseNode="list" repeatNode="map" id="dlt_data" saveRemovedData="true">
+					<w2:columnInfo>
+						<w2:column id="label" name="label" dataType="text"></w2:column>
+						<w2:column id="value" name="value" dataType="text"></w2:column>
+					</w2:columnInfo>
+					<w2:data use="true">
+						<w2:row>
+							<label><![CDATA[Korean]]></label>
+							<value><![CDATA[ko]]></value>
+						</w2:row>
+						<w2:row>
+							<label><![CDATA[America]]></label>
+							<value><![CDATA[us]]></value>
+						</w2:row>
+						<w2:row>
+							<label><![CDATA[China]]></label>
+							<value><![CDATA[cn]]></value>
+						</w2:row>
+						<w2:row>
+							<label><![CDATA[Japan]]></label>
+							<value><![CDATA[jp]]></value>
+						</w2:row>
+						<w2:row>
+							<label><![CDATA[France]]></label>
+							<value><![CDATA[fr]]></value>
+						</w2:row>
+					</w2:data>
+				</w2:dataList>
+				<w2:dataMap baseNode="map" id="dm_true">
+					<w2:keyInfo>
+						<w2:key id="key1" name="name1" dataType="text"></w2:key>
+					</w2:keyInfo>
+					<w2:data use="true">
+						<key1><![CDATA[]]></key1>
+					</w2:data>
+				</w2:dataMap>
+				<w2:dataMap baseNode="map" id="dma_false" style="">
+					<w2:keyInfo>
+						<w2:key dataType="text" id="key1" name="name1"></w2:key>
+					</w2:keyInfo>
+					<w2:data use="true">
+						<key1><![CDATA[]]></key1>
+					</w2:data>
+				</w2:dataMap>
+			</w2:dataCollection>
+			<w2:workflowCollection />
+		</xf:model>
+		<w2:layoutInfo />
+		<w2:publicInfo method="" />
+		<script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function () {
+
+};
+
+]]></script>
+	</head>
+	<body ev:onpageload="scwin.onpageload">
+		<xf:group class="sub_contents" id="" style="" nextTabID="">
+			<xf:group class="ws_example_grp_desc" id="" style="">
+				<w2:textbox escape="false" id=""
+					label='AutoComplete의 selectedData 속성에 대한 예제입니다.&lt;br/&gt;selectedData 속성은 AutoComplete이 dataCollection과 연동돼있을 때 저장되어 있는 값이 AutoComplete의 아이템 중 해당하는 것이 없을 때 dataColloction의 값이 유지되도록 하는 설정입니다.&lt;br/&gt;true(기본 값): 선택 항목에 존재하지 않는 경우 연동된 dataCollection의 값을 유지하지 않습니다.&lt;br/&gt;false : 선택 항목에 존재하지 않더라도 연동된 dataCollection의 값을 유지합니다.'
+					style="">
+				</w2:textbox>
+			</xf:group>
+			<xf:group class="example_div_tb_style_wrap mb_def" id="">
+				<xf:group class="example_div_tr_style" id="" style="">
+					<xf:group class="example_div_th_style" id="" style="">
+						<w2:span class="mr_def txt_blue" id="" label="selectedData: true" style=""></w2:span>
+					</xf:group>
+					<xf:group class="example_div_td_style" id="" style="">
+						<w2:textbox class="ws5_example_txt_normal" escape="false" id=""
+							label='selectedData가 true로 설정되면 dataCollection에 연동 된 값이 선택 항목에 존재하지 않으면 값을 지우게 됩니다.&lt;br/&gt;아래 AutoComplete과 InputBox는 같은 dataMap에 연동되어 있습니다.&lt;br/&gt;InputBox으로 값을 입력하더라도 AutoComplete의 선택항목에 존재하지 않으면 값이 지워지게 됩니다.'
+							style="">
+						</w2:textbox>
+						<xf:group id="" style="margin-bottom: 5px;">
+							<xf:input adjustMaxLength="false" id="" style="width: 100%;" ref="data:dm_true.key1"></xf:input>
+							<w2:autoComplete editType="select" id="acm_true" useKeywordHighlight="false" style="" submenuSize="auto"
+								search="start" useLocale="false" selectedData="true" allOption="" chooseOption="true" chooseOptionLabel=""
+								ref="data:dm_true.key1">
+								<w2:choices>
+									<w2:itemset nodeset="data:dlt_data">
+										<w2:label ref="label"></w2:label>
+										<w2:value ref="value"></w2:value>
+									</w2:itemset>
+								</w2:choices>
+							</w2:autoComplete>
+
+
+						</xf:group>
+						<xf:group id=""></xf:group>
+					</xf:group>
+				</xf:group>
+				<xf:group class="example_div_tr_style" id="" style="">
+					<xf:group class="example_div_th_style" id="" style="">
+						<w2:span class="mr_def txt_blue" id="" label="selectedData: false" style=""></w2:span>
+					</xf:group>
+					<xf:group class="example_div_td_style" id="" style="">
+						<w2:textbox class="ws5_example_txt_normal" escape="false" id=""
+							label="selectedData가 false로 설정되면 dataCollection에 연동된 값이 선택 항목에 존재하지 않아도 값을 유지하게 됩니다.&lt;br/&gt;아래 AutoComplete과 InputBox는 같은 dataMap에 연동되어 있습니다.&lt;br/&gt;selecgtedData가 true로 설정된 것과 다르게 AutoComplete의 선택 항목에 없는 값을 입력해도 값이 유지되는 것을 확인할 수 있습니다."
+							style="">
+						</w2:textbox>
+						<xf:group id="" style="margin-bottom: 5px;">
+							<xf:input adjustMaxLength="false" id="" ref="data:dma_false.key1" style="width: 100%"></xf:input>
+							<w2:autoComplete allOption="" chooseOption="true" chooseOptionLabel="" editType="select" id="acb_false"
+								ref="data:dma_false.key1" search="start" selectedData="false" style="" submenuSize="auto" useKeywordHighlight="false"
+								useLocale="false">
+								<w2:choices>
+									<w2:itemset nodeset="data:dlt_data">
+										<w2:label ref="label"></w2:label>
+										<w2:value ref="value"></w2:value>
+									</w2:itemset>
+								</w2:choices>
+							</w2:autoComplete>
+
+						</xf:group>
+						<xf:group id=""></xf:group>
+					</xf:group>
+				</xf:group>
+				<xf:group class="example_div_tr_style" id="" style="">
+					<xf:group class="example_div_th_style" id="" style="">
+						<w2:span class="mr_def txt_blue" id="" label="참고 : AutoComplete 선택 항목 데이터" style=""></w2:span>
+					</xf:group>
+					<xf:group class="example_div_td_style" id="" style="">
+						<xf:group adaptiveThreshold="" class="gvwbox" id="" style="">
+							<w2:gridView autoFit="allColumn" checkReadOnlyOnPasteEnable="" class="gvw" dataList="data:dlt_data"
+								defaultCellHeight="26" focusMode="row" id="" keepDefaultColumnWidth="true" rowNumHeaderValue="No" rowNumVisible="true"
+								rowNumWidth="50" rowStatusHeaderValue="상태" rowStatusVisible="false" rowStatusWidth="50" scrollByColumn="false"
+								scrollByColumnAdaptive="false" style="height: 100px;" visibleRowNum="5">
+								<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
+								<w2:header style="" id="header1">
+									<w2:row style="" id="row1">
+										<w2:column width="70" inputType="text" style="" id="column2" value="label" displayMode="label"></w2:column>
+										<w2:column width="70" inputType="text" style="" id="column1" value="value" displayMode="label"></w2:column>
+									</w2:row>
+								</w2:header>
+								<w2:gBody style="" id="gBody1">
+									<w2:row style="" id="row2">
+										<w2:column width="70" inputType="text" style="" id="label" value="" displayMode="label"></w2:column>
+										<w2:column width="70" inputType="text" style="" id="value" value="" displayMode="label"></w2:column>
+									</w2:row>
+								</w2:gBody>
+							</w2:gridView>
+						</xf:group>
+					</xf:group>
+				</xf:group>
+				
+			</xf:group>
+		</xf:group>
+
+
+	</body>
+</html>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+        <w2:type>COMPONENT</w2:type>
+        <w2:buildDate/>
+        <w2:MSA/>
+        <xf:model>
+            <w2:dataCollection baseNode="map"/>
+            <w2:workflowCollection/>
+        </xf:model>
+        <w2:layoutInfo/>
+        <w2:publicInfo method=""/>
+        <script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function() {
+	
+};
+]]></script>
+		<style type="text/css"><![CDATA[ 
+			span.atype {font-weight:bold; font-size:20px; color:#5b71cb}
+			span.btype {font-weight:bold; font-size:14px;margin-left:10px}
+		]]></style>
+    </head>
+    <body ev:onpageload="scwin.onpageload">
+    	<xf:group class="sub_contents" id="" style="">
+    		<xf:group class="pgtbox" id="" style="">
+    			<w2:textbox class="pgt_tit" id="" label="Publishing Template - Span" style=""></w2:textbox>
+    		</xf:group>
+    		<xf:group id="" class="titbox">
+    			<w2:textbox style="" id="" label="tagname 속성이 span인 TextBox 컴포넌트입니다. " class="txt_guide"></w2:textbox>
+    		</xf:group>
+    		<xf:group class="titbox" id="" style="">
+    			<w2:textbox class="" id="" label="01. Sample" style="" tagname="h3"></w2:textbox>
+    			<xf:group id="" class="rt">
+    				<w2:anchor outerDiv="false" name="" style="" href="/ws/download/span.zip" id="" class="btn_cm">
+    					<xf:label><![CDATA[Download]]></xf:label>
+    				</w2:anchor>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group class="msgbox" id="" style="">
+    			<w2:span label="WebSquare5" id="" style="position: relative ;" class="atype"></w2:span>
+    			<w2:span class="btype" id="" label="Span" style="position: relative ;"></w2:span>
+    		</xf:group>
+    		<xf:group id="" class="titbox">
+    			<w2:textbox tagname="h3" style="" id="" label="02. Property" class=""></w2:textbox>
+    		</xf:group>
+    		<xf:group id="" class="tblbox">
+    			<xf:group tagname="table" style="position: relative ;width:100%;" id="" class="wq_tb w2tb tbl">
+    				<w2:attributes>
+    					<w2:summary></w2:summary>
+    				</w2:attributes>
+    				<xf:group tagname="colgroup">
+    					<xf:group tagname="col" style="width:20%;"></xf:group>
+    					<xf:group tagname="col" style=""></xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">Property</xf:group>
+    					<xf:group tagname="th" style="" class="w2tb_th">Description</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">class</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						HTML의 class속성과 동일한 기능을 제공하며 css파일 또는 style블럭에 정의 한 class를 1개 또는 공백(space)를 이용하여 다중 적용이 가능합니다.
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">dataType</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						[default:text, number, date, time, link]컴포넌트 value의 data type을 명시하며 해당 값은 엔진에서 제공하는 displayFormat등의 속성에서 참조합니다.
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">displayFormat</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						엔진 내부에서 dataType 속성에 정의한 type에 따라 동작되며 excel의 서식을 적용하는 방식처럼 value의 format을 적용 할 수 있습니다.
+    						<br></br>
+    						displayFormatter와 동시적용이 안됩니다. 예시)dateType이 number일 경우 #,###.#0 으로 적용하면 3자리수 마다 ,가 찍히며 소수점 2자리까지 표현됩니다.
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">id</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">컴포넌트의 ID로 전역객체로 할당되며 script에서 본 id로 컴포넌트에 접근이 가능합니다.</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">label</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">컴포넌트의 value로 화면에 출력하고자 하는 text를 정의합니다.</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">style</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">InputBox의 style 속성</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" class="w2tb_th">
+    						tabIndex
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+    					</xf:group>
+    					<xf:group tagname="td" class="w2tb_td">
+    						Tab&amp;nbsp;Key를&amp;nbsp;이용&amp;nbsp;한&amp;nbsp;컴포넌트의&amp;nbsp;포커스&amp;nbsp;순서로&amp;nbsp;HTML의&amp;nbsp;tabindex속성과&amp;nbsp;동일한&amp;nbsp;기능을&amp;nbsp;제공합니다.
+    						<w2:attributes></w2:attributes>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">html attributes</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">해당 태그에 대응하는 속성을 추가합니다.</xf:group>
+    				</xf:group>
+    			</xf:group>
+    		</xf:group>
+    	</xf:group>
+    </body>
+</html>

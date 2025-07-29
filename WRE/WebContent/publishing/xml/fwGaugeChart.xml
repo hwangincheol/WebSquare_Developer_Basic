@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+        <w2:type>COMPONENT</w2:type>
+        <w2:buildDate/>
+        <w2:MSA/>
+        <xf:model>
+            <w2:dataCollection baseNode="map">
+				<w2:dataList baseNode="list" id="dataList1" repeatNode="map" saveRemovedData="true" style="">
+					<w2:columnInfo>
+						<w2:column dataType="text" id="label" name="test1"></w2:column>
+						<w2:column dataType="text" id="value" name="test2"></w2:column>
+					</w2:columnInfo>
+					<w2:data use="true">
+						<w2:row>
+							<label><![CDATA[a1]]></label>
+							<value><![CDATA[10]]></value>
+						</w2:row>
+						<w2:row>
+							<label><![CDATA[a2]]></label>
+							<value><![CDATA[40]]></value>
+						</w2:row>
+						<w2:row>
+							<label><![CDATA[a3]]></label>
+							<value><![CDATA[50]]></value>
+						</w2:row>
+						<w2:row>
+							<label><![CDATA[a4]]></label>
+							<value><![CDATA[60]]></value>
+						</w2:row>
+						<w2:row>
+							<label><![CDATA[a5]]></label>
+							<value><![CDATA[100]]></value>
+						</w2:row>
+					</w2:data>
+				</w2:dataList>
+			</w2:dataCollection>
+            <w2:workflowCollection/>
+        </xf:model>
+        <w2:layoutInfo/>
+        <w2:publicInfo method=""/>
+        <script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function() {
+	
+};
+]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload">
+    	<xf:group class="sub_contents" id="" style="">
+			<xf:group class="pgtbox" id="" style="">
+				<w2:textbox class="pgt_tit" id="" label="Publishing Template - FwGaugeChart" style=""></w2:textbox>
+			</xf:group>
+			<xf:group id="" class="titbox"><w2:textbox style="" id="" label="FwGaugeChart는 FusionWidget Wrapper 컴포넌트입니다. &lt;br/&gt;FusionWidgets의 데이터는 실제 차트에 보여줄 값과 스타일 옵션들이 하나로 결합되어 있는 형태입니다. &lt;br/&gt;WebSquare5에서는 이를 분리하여 차트를 쉽게 Customizing 할 수 있도록 API를 지원합니다." class="">
+			</w2:textbox></xf:group><xf:group class="msgbox" id="" style="border:1px dashed #ccc;">
+			<xf:group id="" class="tblbox"><xf:group tagname="table" style="" id="" class="w2tb tbl">
+					<w2:attributes>
+						<w2:summary></w2:summary>
+					</w2:attributes>
+					<xf:group tagname="colgroup">
+						<xf:group tagname="col" style="width:25.00%"></xf:group>
+						<xf:group tagname="col" style="width:25.00%"></xf:group>
+						<xf:group tagname="col" style="width:25.00%"></xf:group>
+						<xf:group tagname="col" style="width:25.00%"></xf:group>
+					</xf:group>
+					<xf:group tagname="tr" style="">
+						<xf:group tagname="th" style="" class="w2tb_th">
+							FwGaugeChart Sample
+							<w2:attributes>
+								<w2:colspan>4</w2:colspan>
+								<w2:rowspan>1</w2:rowspan>
+							</w2:attributes>
+						</xf:group>
+					</xf:group>
+					<xf:group tagname="tr">
+						<xf:group tagname="td" style="" class="w2tb_td">
+							<w2:fwGaugeChart ref="data:dataList1" chartType="angulargauge" style="width:80%;height: 300px;" valueNode="value" id="">
+							</w2:fwGaugeChart>
+						</xf:group>
+						<xf:group tagname="td" style="" class="w2tb_td">
+							<w2:fwGaugeChart ref="data:dataList1" chartType="bulb" style="width:80%;height: 300px;" valueNode="value" id="">
+							</w2:fwGaugeChart>
+						</xf:group>
+						<xf:group tagname="td" style="" class="w2tb_td">
+							<w2:fwGaugeChart ref="data:dataList1" chartType="cylinder" style="width:80%;height: 300px;" valueNode="value" id="">
+							</w2:fwGaugeChart>
+						</xf:group>
+						<xf:group tagname="td" style="" class="w2tb_td">
+							<w2:fwGaugeChart ref="data:dataList1" chartType="hled" style="width:80%;height: 300px;" valueNode="value" id="">
+							</w2:fwGaugeChart>
+						</xf:group>
+					</xf:group>
+					<xf:group tagname="tr">
+						<xf:group tagname="td" style="" class="w2tb_td">
+							<w2:fwGaugeChart ref="data:dataList1" chartType="hlineargauge" style="width:80%;height: 300px;" valueNode="value" id="">
+							</w2:fwGaugeChart>
+						</xf:group>
+						<xf:group tagname="td" style="" class="w2tb_td">
+							<w2:fwGaugeChart ref="data:dataList1" chartType="thermometer" style="width:80%;height: 300px;" valueNode="value" id="">
+							</w2:fwGaugeChart>
+						</xf:group>
+						<xf:group tagname="td" style="" class="w2tb_td">
+							<w2:fwGaugeChart ref="data:dataList1" chartType="vled" style="width:80%;height: 300px;" valueNode="value" id="">
+							</w2:fwGaugeChart>
+						</xf:group>
+						<xf:group tagname="td" style="" class="w2tb_td"></xf:group>
+					</xf:group>
+				</xf:group></xf:group></xf:group>
+
+			<xf:group adaptiveThreshold="" class="msgbox" id="" style="">
+				<xf:group id="" class="titbox"><w2:textbox style="" id="" label="Tip" class="" tagname="h3"></w2:textbox></xf:group><w2:textbox class="txt_info" id="" label="DataCollection 만들고 디자인뷰에서 해당컴포넌트를 더블클릭하여 ref, labelNode, valueNode 등 연결해야 됩니다."
+					style="">
+				</w2:textbox>
+			</xf:group>
+		</xf:group>
+    </body>
+</html>

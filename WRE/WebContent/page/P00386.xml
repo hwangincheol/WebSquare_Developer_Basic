@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:w2="http://www.inswave.com/websquare"
+	xmlns:xf="http://www.w3.org/2002/xforms">
+	<head meta_screenName="[Textbox] 데이터 타입 설정에 따른 출력 값 비교하기">
+		<w2:historyInfo>
+			<w2:history meta_no="01" meta_desc="최초작성" meta_date="20230920" meta_user="InswaveSystems"></w2:history>
+		</w2:historyInfo>
+		<w2:type>COMPONENT</w2:type>
+		<w2:buildDate />
+		<w2:MSA />
+		<xf:model>
+			<w2:dataCollection baseNode="map">
+			</w2:dataCollection>
+			<w2:workflowCollection />
+		</xf:model>
+		<w2:layoutInfo />
+		<w2:publicInfo method="" />
+		<script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function () {
+
+};
+]]></script>
+	</head>
+	<body ev:onpageload="scwin.onpageload">
+		<xf:group class="sub_contents" style="">
+			<xf:group class="ws_example_grp_desc" style="">
+				<w2:textbox escape="false"
+					label="속성 'dataType'의 설정 값에 따른 비교 예제입니다.&lt;br/&gt;이 속성은 컴포넌트의 값(속성 'label'의 설정 값)을 화면에 표시할 때, 서식을 적용하기 위해 사용합니다.&lt;br/&gt;서식은 속성 'displayFormat'의 설정 값을 참조하여 적용합니다.&lt;br/&gt;속성 'displayFormat'의 설정 값이 없는 경우 속성 'dataType'의 설정 값에 따라 기본 서식이 설정된 경우도 있습니다."
+					style="">
+				</w2:textbox>
+				<w2:textbox escape="false" label="컴포넌트의 값은 서식이 적용되지 않은 값이 할당됩니다.&lt;br/&gt;서식이 적용된 값은 함수 'getFormatValue'를 통해 반환받을 수 있습니다."
+					style="">
+				</w2:textbox>
+				<w2:textbox escape="false" label="속성 dataType의 설정 값에 따른 기능은 아래와 같습니다." style=""></w2:textbox>
+				<w2:textbox escape="false"
+					label="- &quot;text&quot; : 문자열.&lt;br/&gt;- &quot;number&quot; : 숫자 형식의 문자열.&lt;br/&gt;- &quot;date&quot; : 날짜 형식의 문자열. 기본 서식은 'yyyy/MM/dd'입니다.&lt;br/&gt;- &quot;time&quot; : 시간 형식의 문자열. 기본 서식은 'HH:mm'입니다."
+					style=""></w2:textbox>
+				<w2:textbox escape="false"
+					label="이 예제는 속성 'dataType'의 설정 값에 따른 몇가지의 서식(속성 'displayFormat')이 적용되었습니다.&lt;br/&gt;속성 'dataType', 'label', 'displayFormat'의 설정 값에 따른 실행 결과를 비교합니다."
+					style="">
+				</w2:textbox>
+			</xf:group>
+			<xf:group class="example_div_tb_style_wrap" style="">
+				<xf:group class="example_div_tr_style" style="">
+					<w2:textbox class="example_div_th_style" escape="false" label='(기본 설정 값) dataType="text"' style=""></w2:textbox>
+					<xf:group class="example_div_td_style" style="">
+						<xf:group class="no_bottom" style="">
+							<w2:span class="ws_exam_txt_list" label='label="ms" displayFormat=""' style="display: block;"></w2:span>
+							<xf:group id="" style="overflow:hidden;">
+								<w2:span
+									style="margin-left:8px;display: inline-block;min-width:30px;margin-left:8px;display: inline-block;min-width:30px;float:left;"
+									label="실행 결과:" class="txt_bold"></w2:span>
+								<w2:textbox dataType="text" style="margin-left:8px;min-width:60px;float:left;display:inline-block;line-height:26px;"
+									label="ms" class="">
+								</w2:textbox>
+							</xf:group>
+						</xf:group>
+						<xf:group class="no_bottom" style="">
+							<w2:span class="ws_exam_txt_list" label='label="ms" displayFormat="(단위: ##)"' style="display: block;"></w2:span>
+							<xf:group id="" style="overflow:hidden;">
+								<w2:span
+									style="margin-left:8px;display: inline-block;min-width:30px;margin-left:8px;display: inline-block;min-width:30px;float:left;"
+									label="실행 결과:" class="txt_bold"></w2:span>
+								<w2:textbox dataType="text" displayFormat="(단위: ##)"
+									style="margin-left:8px;min-width:60px;float:left;display:inline-block;line-height:26px;" label="ms" class="">
+								</w2:textbox>
+							</xf:group>
+							<w2:span class="ws5_exam_txt_blue no_bold" dataType="text" label="(속성 'label'의 설정 값의 문자열 길이가 고정일 때 '#'을 사용하여 서식을 지정할 수 있습니다)"
+								style="margin-left: 8px;display:block;min-width:60px;">
+							</w2:span>
+						</xf:group>
+						<xf:group class="" style="">
+							<w2:span class="ws_exam_txt_list" label='label="12345000" displayFormat="#,###"' style="display: block;"></w2:span>
+							<xf:group id="" style="overflow:hidden;">
+								<w2:span
+									style="margin-left:8px;display: inline-block;min-width:30px;margin-left:8px;display: inline-block;min-width:30px;float:left;"
+									label="실행 결과:" class="txt_bold"></w2:span>
+								<w2:textbox dataType="text" displayFormat="#,###"
+									style="margin-left:8px;min-width:60px;float:left;display:inline-block;line-height:26px;" label="12345000" class="">
+								</w2:textbox>
+							</xf:group>
+							<w2:span class="ws5_exam_txt_blue no_bold" dataType="text"
+								label="(3자리 마다 ','를 출력하려면 속성 'dataType'의 설정 값을 'number'로 지정해야 합니다.)" style="margin-left: 8px;display:block;min-width:60px;">
+							</w2:span>
+						</xf:group>
+					</xf:group>
+				</xf:group>
+				<xf:group class="example_div_tr_style" style="">
+					<w2:textbox class="example_div_th_style" escape="false" label='dataType="number"' style=""></w2:textbox>
+					<xf:group class="example_div_td_style" style="">
+						<xf:group class="" style="">
+							<w2:span class="ws_exam_txt_list" label='label="12345000.6" displayFormat=""' style="display: block;"></w2:span>
+							<xf:group id="" style="overflow:hidden;">
+								<w2:span
+									style="margin-left:8px;display: inline-block;min-width:30px;margin-left:8px;display: inline-block;min-width:30px;float:left;"
+									label="실행 결과:" class="txt_bold"></w2:span>
+								<w2:textbox dataType="number" style="margin-left:8px;min-width:60px;float:left;display:inline-block;line-height:26px;"
+									label="12345000.6" class="">
+								</w2:textbox>
+							</xf:group>
+						</xf:group>
+						<xf:group class="" style="">
+							<w2:span class="ws_exam_txt_list" label='label="12345000.6" displayFormat="#,###"' style="display: block;"></w2:span>
+							<xf:group id="" style="overflow:hidden;">
+								<w2:span
+									style="margin-left:8px;display: inline-block;min-width:30px;margin-left:8px;display: inline-block;min-width:30px;float:left;"
+									label="실행 결과:" class="txt_bold"></w2:span>
+								<w2:textbox dataType="number" displayFormat="#,###"
+									style="margin-left:8px;min-width:60px;float:left;display:inline-block;line-height:26px;" label="12345000.6" class="">
+								</w2:textbox>
+							</xf:group>
+						</xf:group>
+						<xf:group class="" style="">
+							<w2:span class="ws_exam_txt_list" label='label="12345000.6" displayFormat="#,###.#0"' style="display: block;"></w2:span>
+							<xf:group id="" style="overflow:hidden;">
+								<w2:span
+									style="margin-left:8px;display: inline-block;min-width:30px;margin-left:8px;display: inline-block;min-width:30px;float:left;"
+									label="실행 결과:" class="txt_bold"></w2:span>
+								<w2:textbox dataType="number" displayFormat="#,###.#0"
+									style="margin-left:8px;min-width:60px;float:left;display:inline-block;line-height:26px;" label="12345000.6" class="">
+								</w2:textbox>
+							</xf:group>
+						</xf:group>
+						<xf:group class="" style="">
+							<w2:span class="ws_exam_txt_list" label='label="12345000.6" displayFormat="#,###[floor]"' style="display: block;">
+							</w2:span>
+							<xf:group id="" style="overflow:hidden;">
+								<w2:span
+									style="margin-left:8px;display: inline-block;min-width:30px;margin-left:8px;display: inline-block;min-width:30px;float:left;"
+									label="실행 결과:" class="txt_bold"></w2:span>
+								<w2:textbox dataType="number" displayFormat="#,###[floor]"
+									style="margin-left:8px;min-width:60px;float:left;display:inline-block;line-height:26px;" label="12345000.6" class="">
+								</w2:textbox>
+							</xf:group>
+						</xf:group>
+						<xf:group class="" style="">
+							<w2:span class="ws_exam_txt_list" label='label="12345000" displayFormat="#,### byte"' style="display: block;"></w2:span>
+							<xf:group id="" style="overflow:hidden;">
+								<w2:span
+									style="margin-left:8px;display: inline-block;min-width:30px;margin-left:8px;display: inline-block;min-width:30px;float:left;"
+									label="실행 결과:" class="txt_bold"></w2:span>
+								<w2:textbox dataType="number" displayFormat="#,### byte"
+									style="margin-left:8px;min-width:60px;float:left;display:inline-block;line-height:26px;" label="12345000" class="">
+								</w2:textbox>
+							</xf:group>
+						</xf:group>
+					</xf:group>
+				</xf:group>
+				<xf:group class="example_div_tr_style" style="">
+					<w2:textbox class="example_div_th_style" escape="false" label='dataType="date"' style=""></w2:textbox>
+					<xf:group class="example_div_td_style" style="">
+						<xf:group class="" style="">
+							<w2:span class="ws_exam_txt_list" label='label="19450815" displayFormat=""' style="display: block;"></w2:span>
+							<xf:group id="" style="overflow:hidden;">
+								<w2:span
+									style="margin-left:8px;display: inline-block;min-width:30px;margin-left:8px;display: inline-block;min-width:30px;float:left;"
+									label="실행 결과:" class="txt_bold"></w2:span>
+								<w2:textbox dataType="date" style="margin-left:8px;min-width:60px;float:left;display:inline-block;line-height:26px;"
+									label="19450815" class="">
+								</w2:textbox>
+							</xf:group>
+						</xf:group>
+						<xf:group class="" style="">
+							<w2:span class="ws_exam_txt_list" label='label="19450815" displayFormat="yyyy-MM-dd"' style="display: block;"></w2:span>
+							<xf:group id="" style="overflow:hidden;">
+								<w2:span
+									style="margin-left:8px;display: inline-block;min-width:30px;margin-left:8px;display: inline-block;min-width:30px;float:left;"
+									label="실행 결과:" class="txt_bold"></w2:span>
+								<w2:textbox dataType="date" displayFormat="yyyy-MM-dd"
+									style="margin-left:8px;min-width:60px;float:left;display:inline-block;line-height:26px;" label="19450815" class="">
+								</w2:textbox>
+							</xf:group>
+						</xf:group>
+						<xf:group class="" style="">
+							<w2:span class="ws_exam_txt_list" label='label="19450815" displayFormat="MM-dd yyyy"' style="display: block;"></w2:span>
+							<xf:group id="" style="overflow:hidden;">
+								<w2:span
+									style="margin-left:8px;display: inline-block;min-width:30px;margin-left:8px;display: inline-block;min-width:30px;float:left;"
+									label="실행 결과:" class="txt_bold"></w2:span>
+								<w2:textbox dataType="date" displayFormat="MM-dd yyyy"
+									style="margin-left:8px;min-width:60px;float:left;display:inline-block;line-height:26px;" label="19450815" class="">
+								</w2:textbox>
+							</xf:group>
+						</xf:group>
+					</xf:group>
+				</xf:group>
+				<xf:group class="example_div_tr_style" style="">
+					<w2:textbox class="example_div_th_style" escape="false" label='dateType="time"' style=""></w2:textbox>
+					<xf:group class="example_div_td_style" style="">
+						<xf:group class="" style="">
+							<w2:span class="ws_exam_txt_list" label='label="175930" displayFormat=""' style="display: block;"></w2:span>
+							<xf:group id="" style="overflow:hidden;">
+								<w2:span
+									style="margin-left:8px;display: inline-block;min-width:30px;margin-left:8px;display: inline-block;min-width:30px;float:left;"
+									label="실행 결과:" class="txt_bold"></w2:span>
+								<w2:textbox dataType="time" style="margin-left:8px;min-width:60px;float:left;display:inline-block;line-height:26px;"
+									label="175930" class="">
+								</w2:textbox>
+							</xf:group>
+						</xf:group>
+						<xf:group class="" style="">
+							<w2:span class="ws_exam_txt_list" label='label="175930" displayFormat="HH:mm"' style="display: block;"></w2:span>
+							<xf:group id="" style="overflow:hidden;">
+								<w2:span
+									style="margin-left:8px;display: inline-block;min-width:30px;margin-left:8px;display: inline-block;min-width:30px;float:left;"
+									label="실행 결과:" class="txt_bold"></w2:span>
+								<w2:textbox dataType="time" displayFormat="HH:mm"
+									style="margin-left:8px;min-width:60px;float:left;display:inline-block;line-height:26px;" label="175930" class="">
+								</w2:textbox>
+							</xf:group>
+						</xf:group>
+						<xf:group class="" style="">
+							<w2:span class="ws_exam_txt_list" label='label="175930" displayFormat="HH:mm:ss"' style="display: block;"></w2:span>
+							<xf:group id="" style="overflow:hidden;">
+								<w2:span
+									style="margin-left:8px;display: inline-block;min-width:30px;margin-left:8px;display: inline-block;min-width:30px;float:left;"
+									label="실행 결과:" class="txt_bold"></w2:span>
+								<w2:textbox dataType="time" displayFormat="HH:mm:ss"
+									style="margin-left:8px;min-width:60px;float:left;display:inline-block;line-height:26px;" label="175930" class="">
+								</w2:textbox>
+							</xf:group>
+						</xf:group>
+					</xf:group>
+				</xf:group>
+			</xf:group>
+		</xf:group>
+	</body>
+</html>

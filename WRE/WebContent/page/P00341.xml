@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:w2="http://www.inswave.com/websquare"
+	xmlns:xf="http://www.w3.org/2002/xforms">
+	<head meta_screenName="[DataList] 로우(행) 수 반환받기" meta_type="메인">
+		<w2:historyInfo>
+			<w2:history meta_no="01" meta_desc="최초작성" meta_date="20230817" meta_user="InswaveSystems"></w2:history>
+		</w2:historyInfo>
+		<w2:type>COMPONENT</w2:type>
+		<w2:buildDate />
+		<w2:MSA />
+		<xf:model>
+			<w2:dataCollection baseNode="map">
+				<w2:dataList baseNode="list" id="dlt_books" repeatNode="map" style="" valueAttribute="">
+					<w2:columnInfo>
+						<w2:column dataType="text" id="categoryLabel" name="분류"></w2:column>
+						<w2:column dataType="text" id="label" name="도서명"></w2:column>
+					</w2:columnInfo>
+					<w2:data use="true">
+						<w2:row>
+							<categoryLabel><![CDATA[인문]]></categoryLabel>
+							<label><![CDATA[공정하다는 착각]]></label>
+						</w2:row>
+						<w2:row>
+							<categoryLabel><![CDATA[소설]]></categoryLabel>
+							<label><![CDATA[저만치 혼자서]]></label>
+						</w2:row>
+						<w2:row>
+							<categoryLabel><![CDATA[인문]]></categoryLabel>
+							<label><![CDATA[내가 틀릴 수도 있습니다]]></label>
+						</w2:row>
+						<w2:row>
+							<categoryLabel><![CDATA[인문]]></categoryLabel>
+							<label><![CDATA[무엇이 옳은가]]></label>
+						</w2:row>
+						<w2:row>
+							<categoryLabel><![CDATA[소설]]></categoryLabel>
+							<label><![CDATA[불편한 편의점]]></label>
+						</w2:row>
+						<w2:row>
+							<categoryLabel><![CDATA[소설]]></categoryLabel>
+							<label><![CDATA[책들의 부엌]]></label>
+						</w2:row>
+					</w2:data>
+				</w2:dataList>
+			</w2:dataCollection>
+			<w2:workflowCollection />
+		</xf:model>
+		<w2:layoutInfo />
+		<w2:publicInfo />
+		<script lazy="false" type="text/javascript"><![CDATA[scwin.onpageload = function () {
+    // 예제 테스트를 위해 필터를 적용합니다.
+    dlt_books.setColumnFilter({ type: 'row', colIndex: 'categoryLabel', key: "인문", condition: 'and' });
+};
+
+/**
+ * 버튼 [DataList의 전체 로우 수 반환받기] 클릭 시
+ */
+scwin.btn_exam1_1_onclick = function (e) {
+    // DataList 'dlt_books'의 전체 로우 수를 반환받습니다.
+    let result = dlt_books.getTotalRow();
+
+    // 반환 값 예시) 6
+
+    alert("getTotalRow() 반환 값: " + result);
+
+    // 로그 출력
+    console.log('# 함수 getTotalRow() 반환 값');
+    console.log(result);
+};
+
+/**
+ * 버튼 [필터가 적용된 DataList의 로우 수 반환받기] 클릭 시 
+ */
+scwin.btn_exam2_1_onclick = function (e) {
+    // DataList 'dlt_books'에 필터가 적용된 로우 수 반환받기
+    let result = dlt_books.getRowCount();
+
+    // 반환 값 예시) 3
+
+    alert("getRowCount() 반환 값: " + result);
+
+    // 로그 출력
+    console.log('# 함수 getRowCount() 반환 값');
+    console.log(result);
+};
+]]></script>
+	</head>
+	<body ev:onpageload="scwin.onpageload">
+		<xf:group class="sub_contents">
+			<xf:group class="ws_example_grp_desc">
+				<w2:textbox escape="false"
+					label="DataList의 로우(행) 수를 반환하는 함수 예시입니다.&lt;br/&gt;제공하는 함수는 두 가지이며 다음과 같습니다.&lt;br/&gt;- getTotalRow( ): 원래의 데이터를 기준으로 반환합니다.&lt;br/&gt;- getRowCount( ): 화면에 보여지는 데이터를 기준으로 반환합니다.(필터에 의해 제외된 데이터와 GridView의 drilldown이 적용되어 접혀진 데이터는 포함되지 않습니다.)"
+					style="" class=""></w2:textbox>
+			</xf:group>
+			<xf:group class="example_div_tb_style_wrap">
+				<xf:group class="example_div_tr_style">
+					<xf:group class="example_div_td_style">
+						<xf:group class="mb_def_box nobottom" id="" style="">
+							<xf:trigger class="btn_exam_exec btn_txt_of" escape="false" ev:onclick="scwin.btn_exam1_1_onclick" id="btn_exam1_1"
+								style="" type="button">
+								<xf:label><![CDATA[DataList의 전체 로우 수 반환받기]]></xf:label>
+							</xf:trigger>
+						</xf:group>
+						<xf:group class="mb_def_box nobottom" id="" style="">
+							<xf:trigger class="btn_exam_exec btn_txt_of" escape="false" ev:onclick="scwin.btn_exam2_1_onclick" id="btn_exam2_1"
+								style="" type="button">
+								<xf:label><![CDATA[필터가 적용된 DataList의 로우 수 반환받기]]></xf:label>
+							</xf:trigger>
+						</xf:group>
+						<w2:textbox class="ws5_example_txt_normal" escape="false" id=""
+							label="테스트를 위해 DataList에 필터가 적용되었습니다.&lt;br/&gt;아래의 GridView는 DataList의 데이터를 확인하기 위해 구성되었습니다." style="">
+						</w2:textbox>
+						<w2:gridView autoFit="lastColumn" autoFitMinWidth="170" class="gvw" dataList="data:dlt_books" defaultCellHeight="26" id=""
+							initFixedHeightByRowNum="3" readOnly="true" rowNumWidth="26" style="height:60px;" tooltipDisplay="true" visibleRowNum="3">
+							<w2:caption id="caption1" style="" value="this is a grid caption."></w2:caption>
+							<w2:header id="header1" style="">
+								<w2:row id="row1" style="">
+									<w2:column displayMode="label" id="column5" inputType="text" value="분류" width="70"></w2:column>
+									<w2:column displayMode="label" id="column3" inputType="text" value="도서명" width="100"></w2:column>
+								</w2:row>
+							</w2:header>
+							<w2:gBody id="gBody1" style="">
+								<w2:row id="row2" style="">
+									<w2:column displayMode="label" id="categoryLabel" inputType="text" width="70"></w2:column>
+									<w2:column displayMode="label" id="label" inputType="text" textAlign="left" width="100"></w2:column>
+								</w2:row>
+							</w2:gBody>
+						</w2:gridView>
+					</xf:group>
+				</xf:group>
+			</xf:group>
+		</xf:group>
+	</body>
+</html>

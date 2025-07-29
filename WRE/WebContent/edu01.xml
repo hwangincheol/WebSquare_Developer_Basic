@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:w2="http://www.inswave.com/websquare"
+		xmlns:xf="http://www.w3.org/2002/xforms">
+		<head>
+			<w2:type>COMPONENT</w2:type>
+			<w2:buildDate />
+			<w2:MSA />
+			<xf:model>
+				<w2:dataCollection baseNode="map">
+					<w2:dataMap baseNode="map" id="dataMap1">
+						<w2:keyInfo>
+							<w2:key id="key1" name="name1" dataType="text"></w2:key>
+							<w2:key id="key2" name="name2" dataType="text"></w2:key>
+							<w2:key id="key3" name="name3" dataType="text"></w2:key>
+						</w2:keyInfo>
+						<w2:data>
+							<key1></key1>
+							<key2></key2>
+							<key3></key3>
+						</w2:data>
+					</w2:dataMap>
+					<w2:dataList baseNode="list" repeatNode="map" id="dataList1" saveRemovedData="true">
+						<w2:columnInfo>
+							<w2:column id="col1" name="name1" dataType="text"></w2:column>
+							<w2:column id="col2" name="name2" dataType="text"></w2:column>
+							<w2:column id="col3" name="name3" dataType="text"></w2:column>
+						</w2:columnInfo>
+						<w2:data>
+							<w2:row></w2:row>
+							<w2:row></w2:row>
+							<w2:row></w2:row>
+						</w2:data>
+					</w2:dataList>
+					<w2:linkedDataList bind="" id="linkedDataList1">
+						<w2:condition type="filter"><![CDATA[]]></w2:condition>
+						<w2:condition type="sort"><![CDATA[]]></w2:condition>
+					</w2:linkedDataList>
+				</w2:dataCollection>
+				<w2:workflowCollection />
+			</xf:model>
+			<w2:layoutInfo />
+			<w2:publicInfo method="" />
+			<script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function() {
+	//init 함수 기능
+     ipt1.setValue("987654321")
+
+
+};
+
+scwin.ipt1_onclick = function(e) {
+
+};
+]]></script>
+		</head>
+		<body ev:onpageload="scwin.onpageload">
+			<xf:input id="ipt1" style="width:201px;height:49px;margin-right: 10px;" initValue="123456789" dataType="number"
+				displayFormat="#,###" applyFormat="all" ev:onclick="scwin.ipt1_onclick" ref="data:dataMap1.key2">
+			</xf:input>
+			<w2:searchbox id="" style="width: 150px;height: 21px;"></w2:searchbox>
+			<xf:secret id="" style="width: 144px;height: 21px;"></xf:secret>
+			<w2:inputCalendar id="" style="width: 150px;height: 23px;" calendarValueType="yearMonthDate"></w2:inputCalendar>
+			<w2:editor style="width: 500px;height: 300px;" id=""></w2:editor>
+			<w2:textbox id="" label="1줄&lt;br/&gt;2줄" style="width:207px;height:70px;" tagname="h2" escape="false"></w2:textbox>
+			<w2:multiupload mode="html5_transparent" style="width: 500px;height: 150px;" id="" uploadButton=""></w2:multiupload>
+			<xf:group id="" style="width: 200px;height: 200px;">
+				<xf:input id="" style="width: 144px;height: 21px;"></xf:input>
+			</xf:group>
+			<w2:windowContainer id="" style="position: relative;width: 500px;height: 300px;">
+				<w2:windowToolbar>
+					<w2:controlIconLayer>
+						<w2:controlIcon></w2:controlIcon>
+						<w2:controlIcon></w2:controlIcon>
+						<w2:controlIcon></w2:controlIcon>
+						<w2:controlIcon></w2:controlIcon>
+						<w2:controlIcon></w2:controlIcon>
+					</w2:controlIconLayer>
+					<w2:nameLayer></w2:nameLayer>
+					<w2:selectedNameLayer></w2:selectedNameLayer>
+				</w2:windowToolbar>
+			</w2:windowContainer>
+		</body>
+</html>

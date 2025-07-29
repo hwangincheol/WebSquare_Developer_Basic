@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+        <w2:type>COMPONENT</w2:type>
+        <w2:buildDate/>
+        <w2:MSA/>
+        <xf:model>
+            <w2:dataCollection baseNode="map"/>
+            <w2:workflowCollection/>
+        </xf:model>
+        <w2:layoutInfo/>
+        <w2:publicInfo method=""/>
+        <script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function() {
+	
+};
+]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload">
+    	<xf:group class="sub_contents" id="" style="">
+    		<xf:group class="pgtbox" id="" style="">
+    			<w2:textbox class="pgt_tit" id="" label="Publishing Template - Trigger" style=""></w2:textbox>
+    		</xf:group>
+    		<xf:group id="" class="titbox">
+    			<w2:textbox style="" id=""
+    				label='Trigger는 type에 따라 이미지 형태의 버튼과 button 형태로 사용할 수 있으며,&lt;br/&gt;HTML에서 input 태그의 type=button과 유사한 인터페이스를 제공하는 컨트롤로 특정 Action과 컨트롤을 연계할 때 주로 사용되는 컴포넌트입니다.&lt;br/&gt;&lt;br/&gt;- button : input Tag의 type="button"으로 구성됩니다.&lt;br/&gt;- image : table Tag로 이루어져 있고 left, center, right에 각각에 CSS 적용이 가능합니다.(image 링크)&lt;br/&gt;- anchor : 최상위 anchor Tag로 이루어져 있고 button의 text는 span Tag로 구성됩니다.'
+    				class="txt_guide">
+    			</w2:textbox>
+    		</xf:group>
+    		<xf:group class="titbox" id="" style="">
+    			<w2:textbox class="" id="" label="01. Sample" style="" tagname="h3"></w2:textbox>
+    			<xf:group id="" class="rt">
+    				<w2:anchor outerDiv="false" name="" style="" href="/ws/download/trigger.zip" id="" class="btn_cm">
+    					<xf:label><![CDATA[Download]]></xf:label>
+    				</w2:anchor>
+    			</xf:group>
+    		</xf:group>
+
+
+
+
+    		<xf:group style="" id="" class="msgbox">
+    			<xf:group id="" class="titbox"><w2:textbox tagname="h4" style="" id="" label='type="button"' class=""></w2:textbox></xf:group><xf:group class="mt20" id="" style="">
+    				<xf:trigger type="button" id="" style="" class="btn_cm">
+    					<xf:label><![CDATA[Trigger]]></xf:label>
+    				</xf:trigger>
+
+
+    			</xf:group>
+    			<xf:group id="" class="titbox"><w2:textbox tagname="h4" style="" id="" label='type="image"' class=""></w2:textbox></xf:group><xf:group id="" style="" class="mt20">
+    				<xf:trigger id="" style="" type="image" class="btn_cm">
+    					<xf:label><![CDATA[Trigger]]></xf:label>
+    				</xf:trigger>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group id="" class="titbox">
+    			<w2:textbox tagname="h3" style="" id="" label="02. Property" class=""></w2:textbox>
+    		</xf:group>
+    		<xf:group id="" class="tblbox"><xf:group tagname="table" style="" id="" class="wq_tb w2tb tbl">
+    			<w2:attributes>
+    				<w2:summary></w2:summary>
+    			</w2:attributes>
+    			<xf:group tagname="colgroup">
+    				<xf:group tagname="col" style="width:20%;"></xf:group>
+    				<xf:group tagname="col" style=""></xf:group>
+    			</xf:group>
+    			<xf:group tagname="tr" style="">
+    				<xf:group tagname="th" style="" class="w2tb_th">Property</xf:group>
+    				<xf:group tagname="th" style="" class="w2tb_th">Description</xf:group>
+    			</xf:group>
+    			<xf:group tagname="tr" style="">
+    				<xf:group tagname="th" style="" class="w2tb_th">centerOffImageClass</xf:group>
+    				<xf:group tagname="td" style="" class="w2tb_td">
+    					type속성의 값이 &quot;image&quot;일 경우만 적용되며 중앙 td에 적용될 class명을 정의한다.class에는 image의 url을 명시하며 일반적으로 width값은 제외합니다.
+    				</xf:group>
+    			</xf:group>
+    			<xf:group tagname="tr" style="">
+    				<xf:group tagname="th" style="" class="w2tb_th">centerOnImageClass</xf:group>
+    				<xf:group tagname="td" style="" class="w2tb_td">
+    					type속성의 값이 &quot;image&quot;일 경우만 적용되며 마우스 over 시 중앙 td에 적용될 class명을 정의한다.class에는 image의 url을 명시하며 일반적으로 width값은
+    					제외합니다.
+    				</xf:group>
+    			</xf:group>
+    			<xf:group tagname="tr" style="">
+    				<xf:group tagname="th" style="" class="w2tb_th">class</xf:group>
+    				<xf:group tagname="td" style="" class="w2tb_td">
+    					HTML의 class속성과 동일한 기능을 제공하며 css파일 또는 style블럭에 정의 한 class를 1개 또는 공백(space)를 이용하여 다중 적용이 가능합니다.
+    				</xf:group>
+    			</xf:group>
+    			<xf:group tagname="tr" style="">
+    				<xf:group tagname="th" style="" class="w2tb_th">id</xf:group>
+    				<xf:group tagname="td" style="" class="w2tb_td">컴포넌트의 ID로 전역객체로 할당되며 script에서 본 id로 컴포넌트에 접근이 가능합니다.</xf:group>
+    			</xf:group>
+    			<xf:group tagname="tr" style="">
+    				<xf:group tagname="th" style="" class="w2tb_th">disabled</xf:group>
+    				<xf:group tagname="td" style="" class="w2tb_td">
+    					[default:false, true]HTML의 disabled속성과 동일한 기능을 제공하며 컴포넌트를 비활성화 시킵니다.
+    				</xf:group>
+    			</xf:group>
+    			<xf:group tagname="tr" style="">
+    				<xf:group tagname="th" style="" class="w2tb_th">leftOffImageClass</xf:group>
+    				<xf:group tagname="td" style="" class="w2tb_td">
+    					type속성의 값이 &quot;image&quot;일 경우만 적용되며 왼쪽 td에 적용될 class명을 정의한다. class에는 image의 url과 width 속성은 필수로 정의합니다.
+    				</xf:group>
+    			</xf:group>
+    			<xf:group tagname="tr" style="">
+    				<xf:group tagname="th" style="" class="w2tb_th">leftOnImageClass</xf:group>
+    				<xf:group tagname="td" style="" class="w2tb_td">
+    					type속성의 값이 &quot;image&quot;일 경우만 적용되며 마우스 over 시 왼쪽 td에 적용될 class명을 정의한다.class에는 image의 url과 width 속성은 필수로 정의합니다.
+    				</xf:group>
+    			</xf:group>
+    			<xf:group tagname="tr" style="">
+    				<xf:group tagname="th" class="w2tb_th">
+    					nextTabID
+    					<w2:attributes>
+    						<w2:scope>row</w2:scope>
+    					</w2:attributes>
+    					<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+    				</xf:group>
+    				<xf:group tagname="td" class="w2tb_td">
+    					tab으로&amp;nbsp;이동시&amp;nbsp;이동할&amp;nbsp;컴포넌트&amp;nbsp;ID
+    					<w2:attributes></w2:attributes>
+    				</xf:group>
+    			</xf:group>
+    			<xf:group tagname="tr" style="">
+    				<xf:group tagname="th" style="" class="w2tb_th">rightOffImageClass</xf:group>
+    				<xf:group tagname="td" style="" class="w2tb_td">
+    					type속성의 값이 &quot;image&quot;일 경우만 적용되며 오른쪽 td에 적용될 class명을 정의한다. class에는 image의 url과 width 속성은 필수로 정의합니다.
+    				</xf:group>
+    			</xf:group>
+    			<xf:group tagname="tr" style="">
+    				<xf:group tagname="th" style="" class="w2tb_th">rightOnImageClass</xf:group>
+    				<xf:group tagname="td" style="" class="w2tb_td">
+    					type속성의 값이 &quot;image&quot;일 경우만 적용되며 오른쪽 td에 적용될 class명을 정의한다. class에는 image의 url과 width 속성은 필수로 정의합니다.
+    				</xf:group>
+    			</xf:group>
+    			<xf:group tagname="tr" style="">
+    				<xf:group tagname="th" style="" class="w2tb_th">style</xf:group>
+    				<xf:group tagname="td" style="" class="w2tb_td">InputBox의 style 속성</xf:group>
+    			</xf:group>
+    			<xf:group tagname="tr" style="">
+    				<xf:group tagname="th" style="" class="w2tb_th">tabIndex</xf:group>
+    				<xf:group tagname="td" style="" class="w2tb_td">Tab Key를 이용 한 컴포넌트의 포커스 순서로 HTML의 tabindex속성과 동일한 기능을 제공합니다.</xf:group>
+    			</xf:group>
+    			<xf:group tagname="tr" style="">
+    				<xf:group tagname="th" style="" class="w2tb_th">toolTip</xf:group>
+    				<xf:group tagname="td" style="" class="w2tb_td">웹스퀘어에서 만든 toolTip으로 컴포넌트의 추가정보를 명시한다. 마우스 over시 표현됩니다.</xf:group>
+    			</xf:group>
+    			<xf:group tagname="tr" style="">
+    				<xf:group tagname="th" style="" class="w2tb_th">type</xf:group>
+    				<xf:group tagname="td" style="" class="w2tb_td">
+    					[default:button, image, anchor]Trigger 표현 방법을 정의하며 각 타입별 HTML 표현 방식은 아래와 같습니다.
+    					<br></br>
+    					button : HTML input Tag로 표현되며 type=&quot;button&quot;으로 구성 된다.
+    					<br></br>
+    					image : 최상위 table Tag로 이루어져있고 left, center, right에 각각에 class적용이 가능합니다.
+    					<br></br>
+    					anchor : 최상위 anchor Tag로 이루어져있고 button의 text는 span Tag로 구성됩니다.
+    				</xf:group>
+    			</xf:group>
+    		</xf:group></xf:group><xf:group id="" class="titbox">
+    			<w2:textbox tagname="h3" style="" id="" label="03. CSS Overriding" class=""></w2:textbox>
+    		</xf:group>
+    		<xf:group id="" class="tblbox"><xf:group tagname="table" style="" id="" class="wq_tb w2tb tbl">
+    			<w2:attributes>
+    				<w2:summary></w2:summary>
+    			</w2:attributes>
+    			<xf:group tagname="colgroup">
+    				<xf:group tagname="col" style="width:20%;"></xf:group>
+    				<xf:group tagname="col" style=""></xf:group>
+    			</xf:group>
+    			<xf:group tagname="tr" style="">
+    				<xf:group tagname="th" style="" class="w2tb_th">Class</xf:group>
+    				<xf:group tagname="th" style="" class="w2tb_th">Description</xf:group>
+    			</xf:group>
+    			<xf:group tagname="tr" style="">
+    				<xf:group tagname="th" style="" class="w2tb_th">w2trigger</xf:group>
+    				<xf:group tagname="td" style="" class="w2tb_td">
+    					w2trigger은 웹스퀘어 엔진에서 정의된 클래스입니다, 브라우저가 파싱할때 자동으로 부여됩니다.
+    					<br></br>
+    					type이 &quot;buttom&quot; 이거나 공백일 경우 생성됩니다.
+    				</xf:group>
+    			</xf:group>
+    			<xf:group tagname="tr" style="">
+    				<xf:group tagname="th" style="" class="w2tb_th">w2trigger_table</xf:group>
+    				<xf:group tagname="td" style="" class="w2tb_td">웹스퀘어 엔진에서 정의된 클래스로서 type이 &quot;image&quot;일경우 생성됩니다.</xf:group>
+    			</xf:group>
+    			<xf:group tagname="tr" style="">
+    				<xf:group tagname="th" style="" class="w2tb_th">w2trigger_anchor</xf:group>
+    				<xf:group tagname="td" style="" class="w2tb_td">웹스퀘어 엔진에서 정의된 클래스로서 type이 &quot;anchor&quot;일경우 생성됩니다.</xf:group>
+    			</xf:group>
+    		</xf:group></xf:group><xf:group adaptiveThreshold="" class="msgbox" id="" style="">
+    			<xf:group id="" class="titbox"><w2:textbox tagname="h4" style="" id="" label="Tip" class=""></w2:textbox></xf:group><w2:textbox class="txt_info" id="" label="타입을 이미지로 설정할 경우 table로 파싱이 됩니다." style=""></w2:textbox>
+    			<w2:textbox class="txt_info" id=""
+    				label="타입을 이미지로 설정할 경우 배치성 테이블 형태로 (summary, caption 태그 제외됨) 사용하여도 웹 접근성에 문제가 되진 않지만 명확한 웹 접근성 준수를 위해 Property 창에 class에서 새로운 class 명을 주어 input 스타일을 변경해 주는 방법을 권장합니다."
+    				style="">
+    			</w2:textbox>
+    		</xf:group>
+
+    	</xf:group>
+    </body>
+</html>

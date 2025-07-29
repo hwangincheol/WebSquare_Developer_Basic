@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+        <w2:type>COMPONENT</w2:type>
+        <w2:buildDate/>
+        <w2:MSA/>
+        <xf:model>
+            <w2:dataCollection baseNode="map"/>
+            <w2:workflowCollection/>
+        </xf:model>
+        <w2:layoutInfo/>
+        <w2:publicInfo method=""/>
+        <script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function() {
+	
+};
+]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload">
+    	<xf:group class="sub_contents" id="" style="">
+    		<xf:group class="pgtbox" id="" style="">
+    			<w2:textbox class="pgt_tit" id="" label="Publishing Template - Textarea" style=""></w2:textbox>
+    		</xf:group>
+    		<xf:group id="" class="titbox">
+    			<w2:textbox style="" id=""
+    				label="HTML textarea Tag와 유사한 인터페이스를 갖는 컴포넌트로 개행이 있는 Text를 쓰거나 표현할 수 있습니다.&lt;br/&gt;본 컴포넌트는 textarea Tag로 구성되어 있습니다."
+    				class="txt_guide">
+    			</w2:textbox>
+    		</xf:group>
+    		<xf:group class="titbox" id="" style="">
+    			<w2:textbox class="" id="" label="01. Sample" style="" tagname="h3"></w2:textbox>
+    			<xf:group id="" class="rt">
+    				<w2:anchor outerDiv="false" name="" style="" href="/ws/download/textarea.zip" id="" class="btn_cm">
+    					<xf:label><![CDATA[Download]]></xf:label>
+    				</w2:anchor>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group class="msgbox" id="" style="">
+    			<xf:textarea class="wq_tta mr30" id="basicta" style="height:100px;width:200px;"></xf:textarea>
+    			<xf:textarea class="wq_tta" id="textarea1" style="height:100px;width:200px;" readOnly="true"></xf:textarea>
+    		</xf:group>
+    		<xf:group id="" class="titbox">
+    			<w2:textbox tagname="h3" style="" id="" label="02. Property" class=""></w2:textbox>
+    		</xf:group>
+    		<xf:group id="" class="tblbox">
+    			<xf:group tagname="table" style="" id="" class="wq_tb w2tb tbl">
+    				<w2:attributes>
+    					<w2:summary></w2:summary>
+    				</w2:attributes>
+    				<xf:group tagname="colgroup">
+    					<xf:group tagname="col" style="width:20%;"></xf:group>
+    					<xf:group tagname="col" style=""></xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">Property</xf:group>
+    					<xf:group tagname="th" style="" class="w2tb_th">Description</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">class</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						HTML의 class속성과 동일한 기능을 제공하며 css파일 또는 style블럭에 정의 한 class를 1개 또는 공백(space)를 이용하여 다중 적용이 가능합니다.
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">id</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">컴포넌트의 ID로 전역객체로 할당되며 script에서 본 id로 컴포넌트에 접근이 가능합니다.</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">disabled</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						[default:false, true]HTML의 disabled속성과 동일한 기능을 제공하며 컴포넌트를 비활성화 시킵니다.
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">focusRemember</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						[false, true] IE9이하 구형 브라우저에서 focus를 받을 경우 이전 focus를 받았을 때의 커서 위치로 커서를 이동시킬지의 여부. (신형 브라우저는 브라우저가 자동으로 이전 focus의
+    						커서 위치를 기억합니다.)
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">
+    						maxlength
+    						<br></br>
+    					</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">입력 가능한 최대길이로 엔진에서 maxLength 이상의 글자를 입력하면 자동으로 잘라냅니다.</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">minlength</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">validate API를 호출 할 때 엔진에서 최소길이 체크 시에 참조합니다.</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" class="w2tb_th">
+    						nextTabID
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+    					</xf:group>
+    					<xf:group tagname="td" class="w2tb_td">
+    						tab으로&amp;nbsp;이동시&amp;nbsp;이동할&amp;nbsp;컴포넌트&amp;nbsp;ID
+    						<w2:attributes></w2:attributes>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">placeholder</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						HTML5의 placeholder 기능으로 사용자에게 알려줘야 할 문구(hint)등을 명시합니다. 브라우저마다의 동작 방식이 상이할 수 있다.(예를 들어 IE는 focus시 hint가 사라지지만
+    						Chrome의 경우 text가 입력 되어야 사라집니다.)
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">readOnly</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						[default:false, true]readonly의 여부로 HTML의 readonly속성과 동일한 기능을 제공합니다.
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">style</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">InputBox의 style 속성</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">tabIndex</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						Tab Key를 이용 한 컴포넌트의 포커스 순서로 HTML의 tabindex속성과 동일한 기능을 제공합니다.
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">title</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						HTML의 title속성과 동일한 기능으로 명시 된 값을 브라우저에서 마우스 over시 툴팁형태로 표현합니다. 일반적으로 웹접근성 작업 시 설정합니다.
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">toolTip</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">웹스퀘어에서 만든 toolTip으로 컴포넌트의 추가정보를 명시합니다. 마우스 over시 표현됩니다.</xf:group>
+    				</xf:group>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group id="" class="titbox">
+    			<w2:textbox tagname="h3" style="" id="" label="03. CSS Overriding" class=""></w2:textbox>
+    		</xf:group>
+    		<xf:group id="" class="tblbox">
+    			<xf:group tagname="table" adaptiveThreshold="" style="" id="" class="wq_tb w2tb tbl">
+    				<w2:attributes>
+    					<w2:summary></w2:summary>
+    				</w2:attributes>
+    				<xf:group tagname="colgroup">
+    					<xf:group tagname="col" style="width:20%;"></xf:group>
+    					<xf:group tagname="col" style=""></xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">Class</xf:group>
+    					<xf:group tagname="th" style="" class="w2tb_th">Description</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">w2textarea</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">w2textarea은 웹스퀘어 엔진에서 정의된 클래스입니다. 브라우저가 파싱할때 자동으로 부여됩니다.</xf:group>
+    				</xf:group>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group adaptiveThreshold="" class="msgbox" id="" style="">
+    			<xf:group id="" class="titbox"><w2:textbox tagname="h4" style="" id="" label="Tip" class=""></w2:textbox></xf:group><w2:textbox class="txt_info" id="" label="html의 textarea 태그로 파싱합니다." style=""></w2:textbox>
+    			<w2:textbox class="txt_info" id="" label="Textbox와 TextArea의 for값과 id값의 1:1매칭을 권장합니다.&lt;br/&gt;" style=""></w2:textbox>
+    			<w2:textbox class="txt_info" id="" label="for값과 id값의 1:1매칭이 불가 할 경우 title속성을 추가합니다." style=""></w2:textbox>
+    		</xf:group>
+    	</xf:group>
+    </body>
+</html>

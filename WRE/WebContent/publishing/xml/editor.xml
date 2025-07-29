@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+        <w2:type>COMPONENT</w2:type>
+        <w2:buildDate/>
+        <w2:MSA/>
+        <xf:model>
+            <w2:dataCollection baseNode="map"/>
+            <w2:workflowCollection/>
+        </xf:model>
+        <w2:layoutInfo/>
+        <w2:publicInfo method=""/>
+        <script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function() {
+	
+};
+]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload">
+    	<xf:group class="sub_contents" id="" style="">
+			<xf:group class="pgtbox" id="" style="">
+				<w2:textbox class="pgt_tit" id="" label="Publishing Template - Editor" style=""></w2:textbox>
+			</xf:group>
+			<xf:group id="" class="titbox"><w2:textbox style="" id="" label="오픈소스인 CKEditer를 이용한 컴포넌트입니다." class=""></w2:textbox></xf:group><xf:group class="titbox" id="" style="">
+				<w2:textbox class="" id="" label="01. Sample" style="" tagname="h3"></w2:textbox>
+			</xf:group>
+			<xf:group class="msgbox" id="" style="border:1px dashed #ccc;">
+				<w2:editor id="" style="width:100%;height:200px;"></w2:editor>
+			</xf:group>
+			<xf:group id="" class="titbox"><w2:textbox style="" id="" label="02. Property" class="" tagname="h3"></w2:textbox></xf:group>
+			<xf:group id="" class="tblbox"><xf:group tagname="table" style="" id="" class="w2tb tbl">
+				<w2:attributes>
+					<w2:summary></w2:summary>
+				</w2:attributes>
+				<xf:group tagname="colgroup">
+					<xf:group tagname="col" style="width:20%;"></xf:group>
+					<xf:group tagname="col" style=""></xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">Property</xf:group>
+					<xf:group tagname="th" style="" class="w2tb_th">Description</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">id</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">컴포넌트의 ID로 전역객체로 할당되며 script에서 본 id로 컴포넌트에 접근이 가능합니다.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">imageLoadURL</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						업로드된 이미지를 조회하는 URL(servlet), 조회하는 Servlet은 &quot;fileName&quot;을 parameter로 받아서 처리하도록 해야 합니다.
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">language</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">언어셋을 설정합니다. en: 영문, ko : 국문</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">menubar</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">editor의 toolbar의 종류</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">style</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">Editor의 style을 inline으로 추가합니다.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">subDir</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						subDir=&quot;test1&quot;라고 하면, websquare.xml(//upload/imgUpload/test1/@value)에 정의되어 있는 경로 업로드 합니다.
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">transParentDisable</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">isabled시 색이 변하지 않습니다.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th">
+						tabIndex
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						Tab&amp;nbsp;Key를&amp;nbsp;이용&amp;nbsp;한&amp;nbsp;컴포넌트의&amp;nbsp;포커스&amp;nbsp;순서로&amp;nbsp;HTML의&amp;nbsp;tabindex속성과&amp;nbsp;동일한&amp;nbsp;기능을&amp;nbsp;제공한다.
+						<w2:attributes></w2:attributes>
+					</xf:group>
+				</xf:group>
+			</xf:group></xf:group>
+			<xf:group id="" class="titbox"><w2:textbox style="" id="" label="03. CSS Overriding" class="" tagname="h3"></w2:textbox></xf:group>
+		<xf:group id="" class="tblbox"><xf:group tagname="table" style="" id="" class="w2tb tbl">
+				<w2:attributes>
+					<w2:summary></w2:summary>
+				</w2:attributes>
+				<xf:group tagname="colgroup">
+					<xf:group tagname="col" style="width:20%;"></xf:group>
+					<xf:group tagname="col" style=""></xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">Class</xf:group>
+					<xf:group tagname="th" style="" class="w2tb_th">Description</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">w2editor</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						w2editor은 웹스퀘어 엔진에서 정의된 클래스입니다
+						<br></br>
+						브라우저가 파싱할때 자동으로 부여 돼며 어떤 에디터를 포함하던지 항상 자동 추가돼는 클래스입니다.
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">cke_skin_office2003</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">컴포넌트가 내부에디터인 ck에디터인 경우 에디터 전체를 포함하는 클래스입니다.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">cke_editor</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">ck에디터의 디자인테이블 전체를 포함하는 클래스입니다.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">cke_top</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">디자인테이블 안쪽 ck에디터의 상단 툴바를 전체 포함하는 클래스입니다.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">cke_contents</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">디자인테이블 안쪽 ck에디터의 중간영역인 텍스트 입력부분을 전체 포함하는 클래스입니다.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">cke_bottom</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">디자인테이블 안쪽 ck에디터의 하단 전체를 포함하는 클래스입니다.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">inline</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">websquare의 style 편집기에서 해당 style을 직접 수정합니다.</xf:group>
+				</xf:group>
+			</xf:group></xf:group></xf:group>
+    </body>
+</html>

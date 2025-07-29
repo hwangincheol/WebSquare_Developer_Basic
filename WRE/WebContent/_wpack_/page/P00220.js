@@ -1,0 +1,14 @@
+/*amd /page/P00220.xml 3091 b6db19214adc0d4997136c789de9f16626a5aed62aef9d653c10ba0aaf05aad5 */
+define({declaration:{A:{version:'1.0',encoding:'UTF-8'}},E:[{T:1,N:'html',A:{xmlns:'http://www.w3.org/1999/xhtml','xmlns:ev':'http://www.w3.org/2001/xml-events','xmlns:w2':'http://www.inswave.com/websquare','xmlns:xf':'http://www.w3.org/2002/xforms'},E:[{T:1,N:'head',A:{},E:[{T:1,N:'w2:historyInfo',E:[{T:1,N:'w2:history',A:{}}]},{T:1,N:'w2:type',E:[{T:3,text:'COMPONENT'}]},{T:1,N:'w2:buildDate'},{T:1,N:'w2:MSA'},{T:1,N:'xf:model',E:[{T:1,N:'w2:dataCollection',A:{baseNode:'map'}},{T:1,N:'w2:workflowCollection'}]},{T:1,N:'w2:layoutInfo'},{T:1,N:'w2:publicInfo',A:{method:''}},{T:1,N:'script',A:{lazy:'false',type:'text/javascript'},E:[{T:4,cdata:function(scopeObj){with(scopeObj){
+scwin.onpageload = function () {
+    //InputCalendar에 지정할 시스템 날짜를 yyyyMMdd 형태로 저장합니다.
+    let sysDate = $p.getCurrentServerDate("yyyyMMdd");
+
+    //InputCalendar 'ica_exam_1'에 시스템 날짜를 지정합니다.
+    ica_exam_1.setValue(sysDate);
+
+    //InputCalendar 'ica_exam_2'에 시스템 날짜를 지정합니다.
+    ica_exam_2.setValue(sysDate);
+};
+
+}}}]}]},{T:1,N:'body',A:{'ev:onpageload':'scwin.onpageload'},E:[{T:1,N:'xf:group',A:{class:'sub_contents',id:'',style:''},E:[{T:1,N:'xf:group',A:{class:'ws_example_grp_desc',id:'',style:''},E:[{T:1,N:'w2:textbox',A:{escape:'false',id:'',label:'달력 아이콘을 클릭하여 달력을 표시할 경우, 달력 상에 Today 버튼이 함께 표시됩니다. <br/>Today 버튼을 클릭하면 현재 날짜를 선택할 수 있습니다.<br/>이 기능은 아래의 속성으로 사용할 수 있습니다.<br/>- showToday : Today 버튼의 표시 또는 비표시',style:'margin-bottom: 10px;'}}]},{T:1,N:'xf:group',A:{class:'example_div_tb_style_wrap',id:''},E:[{T:1,N:'xf:group',A:{class:'example_div_tr_style',id:'',style:''},E:[{T:1,N:'w2:textbox',A:{class:'example_div_th_style',escape:'false',id:'',label:'(기본 설정) showToday = "true"',style:''}},{T:1,N:'xf:group',A:{class:'example_div_td_style',id:'',style:''},E:[{T:1,N:'w2:textbox',A:{class:'ws5_example_txt_normal',escape:'false',id:'',label:'달력 아이콘 클릭 후 달력의 하단에 today 버튼이 있는 것을 확인합니다.',style:''}},{T:1,N:'w2:inputCalendar',A:{calendarValueType:'yearMonthDate',focusOnDateSelect:'false',id:'ica_exam_1',rightAlign:'false',style:'width:100px;min-height: 24px;',renderDiv:'true',class:'mr_def'}}]}]},{T:1,N:'xf:group',A:{class:'example_div_tr_style',id:'',style:''},E:[{T:1,N:'w2:textbox',A:{class:'example_div_th_style',escape:'false',id:'',label:'showToday = "false"',style:''}},{T:1,N:'xf:group',A:{class:'example_div_td_style',id:'',style:''},E:[{T:1,N:'w2:textbox',A:{class:'ws5_example_txt_normal',escape:'false',id:'',label:'달력 아이콘 클릭 후 달력의 하단에 today 버튼이 없는 것을 확인합니다.',style:''}},{T:1,N:'w2:inputCalendar',A:{calendarValueType:'yearMonthDate',focusOnDateSelect:'false',id:'ica_exam_2',rightAlign:'false',style:'width:100px;min-height: 24px;',renderDiv:'true',class:'mr_def',dayMoveFixed:'true',showToday:'false'}}]}]}]}]}]}]}]})

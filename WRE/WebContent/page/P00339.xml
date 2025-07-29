@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:w2="http://www.inswave.com/websquare"
+	xmlns:xf="http://www.w3.org/2002/xforms">
+	<head meta_screenName="[SelectBox] 전체 메뉴 추가하기" meta_type="메인">
+		<w2:historyInfo>
+			<w2:history meta_no="01" meta_desc="최초작성" meta_date=" 20230818" meta_user="InswaveSystems"></w2:history>
+		</w2:historyInfo>
+		<w2:type>COMPONENT</w2:type>
+		<w2:buildDate />
+		<w2:MSA />
+		<xf:model>
+			<w2:dataCollection baseNode="map">
+			</w2:dataCollection>
+			<w2:workflowCollection />
+		</xf:model>
+		<w2:layoutInfo />
+		<w2:publicInfo method="" />
+		<script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function () {
+
+};
+
+scwin.sbx_select11_onselected = function () {
+    spa_span1.setValue(this.getValue());
+};
+]]></script>
+	</head>
+	<body ev:onpageload="scwin.onpageload">
+		<xf:group class="sub_contents" id="" style="" nextTabID="">
+			<xf:group class="ws_example_grp_desc" id="" style="">
+				<w2:textbox escape="false" id=""
+					label='SelectBox의 속성 allOption 속성을 사용해 전체 메뉴를 추가하는 예제입니다.&lt;br/&gt;allOption은 전체 항목 표시 여부를 결정하는 속성입니다.&lt;br/&gt;label은 "-전체-"로, value는 "all"로 설정됩니다.'
+					style="">
+				</w2:textbox>
+			</xf:group>
+			<xf:group class="example_div_tb_style_wrap mb_def" id="">
+				<xf:group class="example_div_tr_style" id="" style="">
+					<xf:group class="example_div_th_style" id="" style="">
+						<w2:span class="mr_def txt_blue" id="" label="allOption 적용하기" style=""></w2:span>
+					</xf:group>
+					<xf:group class="example_div_td_style" id="" style="">
+						<w2:textbox class="ws5_example_txt_normal" escape="false" id=""
+							label='SelectBox를 선택하면 value 값을 표시합니다.' style="">
+						</w2:textbox>
+						<xf:group id="" style="margin-bottom: 5px;">
+							<xf:select1 allOption="true" appearance="minimal" chooseOption="" class="" direction="auto" disabled="false"
+								disabledClass="w2selectbox_disabled" id="sbx_select11" ref="" renderType="" style="width: 148px;margin-right: 10px;"
+								submenuSize="auto" ev:onselected="scwin.sbx_select11_onselected">
+								<xf:choices>
+									<xf:item>
+										<xf:label><![CDATA[Korean]]></xf:label>
+										<xf:value><![CDATA[ko]]></xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[English]]></xf:label>
+										<xf:value><![CDATA[en]]></xf:value>
+									</xf:item>
+								</xf:choices>
+							</xf:select1>
+							<w2:span id="spa_span1" label=" - " style="margin-left: 5px;font-weight: bold;;"></w2:span>
+							<w2:span id="spn_res" label="" style=""></w2:span>
+						</xf:group>
+
+					</xf:group>
+				</xf:group>
+			</xf:group>
+		</xf:group>
+
+
+	</body>
+</html>

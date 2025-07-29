@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g id="_16" data-name="16" transform="translate(-224 -35)">
+    <rect id="사각형_147782" data-name="사각형 147782" width="16" height="16" transform="translate(224 35)" fill="none"/>
+    <rect id="사각형_147783" data-name="사각형 147783" width="14" height="14" transform="translate(225 36)" fill="none"/>
+    <g id="그룹_162602" data-name="그룹 162602">
+      <path id="빼기_55" data-name="빼기 55" d="M-4082.25-1319h-5.251a1.5,1.5,0,0,1-1.5-1.5v-11a1.5,1.5,0,0,1,1.5-1.5h5.476l4.025,4.024v3.476h-1v-2.938h-3.9V-1332h-4.6a.5.5,0,0,0-.5.5v11a.5.5,0,0,0,.5.5h5.251v1Z" transform="translate(4314 1369)" fill="#b1b3bc"/>
+      <path id="합치기_59" data-name="합치기 59" d="M-33.062-5.318V-8.875h-4.3l1.085.985-.965.89L-40-9.5l2.756-2.5.983.875-1.1,1H-32v4.807Z" transform="translate(268 54.318)" fill="#b1b3bc"/>
+    </g>
+  </g>
+</svg>

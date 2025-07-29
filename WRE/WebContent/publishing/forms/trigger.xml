@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+        <w2:type>COMPONENT</w2:type>
+        <w2:buildDate/>
+        <w2:MSA/>
+        <xf:model>
+            <w2:dataCollection baseNode="map"/>
+            <w2:workflowCollection/>
+        </xf:model>
+        <w2:layoutInfo/>
+        <w2:publicInfo method=""/>
+        <script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function() {
+	
+};
+]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload">
+    	<xf:group class="sub_contents pub" id="" style="">
+    		<xf:group class="pgtbox" id="" style="">
+    			<w2:textbox class="pgt_tit" id="" label="Publishing Template - Trigger" style=""></w2:textbox>
+    		</xf:group>
+    		<xf:group id="" class="titbox">
+    			<w2:textbox style="" id=""
+    				label='Trigger는 type에 따라 이미지 형태의 버튼과 button 형태로 사용할 수 있으며,&lt;br/&gt;HTML에서 input 태그의 type=button과 유사한 인터페이스를 제공하는 컨트롤로 특정 Action과 컨트롤을 연계할 때 주로 사용되는 컴포넌트입니다.&lt;br/&gt;&lt;br/&gt;- button : input Tag의 type="button"으로 구성됩니다.&lt;br/&gt;- image : table Tag로 이루어져 있고 left, center, right에 각각에 CSS 적용이 가능합니다.(image 링크)&lt;br/&gt;- anchor : 최상위 anchor Tag로 이루어져 있고 button의 text는 span Tag로 구성됩니다.'
+    				class="txt_guide">
+    			</w2:textbox>
+    		</xf:group>
+
+
+
+
+    		<xf:group style="" id="" class="samplebox">
+    			<xf:group id="" class="titbox"><w2:textbox tagname="h4" style="" id="" label='type="button"' class=""></w2:textbox></xf:group><xf:group class="mt20" id="" style="">
+    				<xf:trigger type="button" id="" style="" class="btn_cm">
+    					<xf:label><![CDATA[Trigger]]></xf:label>
+    				</xf:trigger>
+
+
+    			</xf:group>
+    			<xf:group id="" class="titbox"><w2:textbox tagname="h4" style="" id="" label='type="image"' class=""></w2:textbox></xf:group><xf:group id="" style="" class="mt20">
+    				<xf:trigger id="" style="" type="image" class="btn_cm">
+    					<xf:label><![CDATA[Trigger]]></xf:label>
+    				</xf:trigger>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group id="" class="titbox">
+    			<w2:textbox tagname="h3" style="" id="" label="Property" class=""></w2:textbox>
+    			<xf:group class="rt" id="" style="">
+    				<w2:span class="badge default" id="" label="Defualt option" style=""></w2:span>
+    				<w2:span class="badge" id="" label="option" style=""></w2:span>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group id="" class="tblbox"><xf:group tagname="table" style="" id="" class="w2tb tbl">
+    			<w2:attributes>
+    				<w2:summary></w2:summary>
+    			</w2:attributes>
+    			<xf:group tagname="colgroup">
+    				<xf:group tagname="col" style="width:20%;"></xf:group>
+    				<xf:group tagname="col" style=""></xf:group>
+    			</xf:group>
+    			<xf:group tagname="tr" style="">
+    				<xf:group tagname="th" style="" class="w2tb_th"><w2:textbox id="" label="속성" style="" tagname="p"></w2:textbox></xf:group>
+    				<xf:group tagname="th" style="" class="w2tb_th tac"><w2:textbox id="" label="설명" style="" tagname="p"></w2:textbox></xf:group>
+    			</xf:group>
+    			<xf:group tagname="tr" style="">
+    				<xf:group tagname="th" style="" class="w2tb_th">
+    					<w2:textbox id="" label="anchorWithGroupClass" style="" tagname="p"></w2:textbox>
+    				</xf:group>
+    				<xf:group tagname="td" style="" class="w2tb_td">
+    					<w2:textbox id="" label='type="anchor"인 경우, w2group 클래스의 적용 여부' style="" tagname="p"></w2:textbox>
+    					<xf:group class="grp_option" id="" style="">
+    						<w2:span class="badge default" id="" label="flase" style=""></w2:span>
+    						<w2:span class="badge" id="" label="true" style=""></w2:span>
+    					</xf:group>
+    				</xf:group>
+    			</xf:group>
+    		<xf:group tagname="tr">
+    			<xf:group tagname="th" class="w2tb_th">
+    				<w2:attributes>
+    					<w2:scope>row</w2:scope>
+    				</w2:attributes>
+    				<w2:textbox id="" label="centerOffImageClass" style="" tagname="p"></w2:textbox>
+    			</xf:group>
+    			<xf:group tagname="td" class="w2tb_td">
+    				<w2:attributes></w2:attributes>
+    				<w2:textbox id="" label='type="image"인 경우, 중앙 &lt;td&gt;에 적용할 클래스.&lt;br/&gt;클래스에 이미지 url을 명시하며 일반적으로 width 값은 제외.(left class와 right class에 명시.)' style="" tagname="p"></w2:textbox>
+    			</xf:group></xf:group><xf:group tagname="tr">
+	<xf:group tagname="th" class="w2tb_th">
+		<w2:attributes>
+			<w2:scope>row</w2:scope>
+		</w2:attributes>
+		<w2:textbox id="" label="centerOnImageClass" style="" tagname="p"></w2:textbox>
+	</xf:group>
+	<xf:group tagname="td" class="w2tb_td">
+		<w2:attributes></w2:attributes>
+		<w2:textbox id=""
+			label='type="image"인 경우, 마우스-오버 시 중앙&lt;td&gt;에 적용할 클래스.&lt;br/&gt;클래스에 이미지 url를 명시하고 일반적인 경우 width 속성은 제외. (left class와 right class에 명시)'
+			style="" tagname="p">
+		</w2:textbox>
+	</xf:group></xf:group><xf:group tagname="tr">
+	<xf:group tagname="th" class="w2tb_th">
+		<w2:attributes>
+			<w2:scope>row</w2:scope>
+		</w2:attributes>
+		<w2:textbox id="" label="class" style="" tagname="p"></w2:textbox>
+	</xf:group>
+	<xf:group tagname="td" class="w2tb_td">
+		<w2:attributes></w2:attributes>
+		<w2:textbox id="" label="HTML의 class 속성과 동일한 기능을 제공.&lt;br/&gt;CSS 파일이나 style 블럭에 정의한 여러 개의 class를 공백으로 구분하여 적용 가능.&lt;br/&gt;Engine 내부에서 각 컴포넌트 별로 지정된 class를 적용하나, class 속성을 이용하여 컴포넌트의 CSS를 제어 가능." style="" tagname="p"></w2:textbox>
+	</xf:group></xf:group><xf:group tagname="tr">
+	<xf:group tagname="th" class="w2tb_th">
+		<w2:attributes>
+			<w2:scope>row</w2:scope>
+		</w2:attributes>
+		<w2:textbox id="" label="disabled" style="" tagname="p"></w2:textbox>
+	</xf:group>
+	<xf:group tagname="td" class="w2tb_td">
+		<w2:attributes></w2:attributes>
+		<w2:textbox id="" label="컴포넌트 비활성 여부" style="" tagname="p"></w2:textbox>
+		<xf:group class="grp_option" id="" style="">
+			<w2:span class="badge default" id="" label="flase" style=""></w2:span>
+			<w2:span class="badge" id="" label="true" style=""></w2:span>
+		</xf:group>
+	</xf:group></xf:group><xf:group tagname="tr">
+	<xf:group tagname="th" class="w2tb_th">
+		<w2:attributes>
+			<w2:scope>row</w2:scope>
+		</w2:attributes>
+		<w2:textbox id="" label="id" style="" tagname="p"></w2:textbox>
+	</xf:group>
+	<xf:group tagname="td" class="w2tb_td">
+		<w2:attributes></w2:attributes>
+		<w2:textbox id="" label="컴포넌트 ID.&lt;br/&gt;컴포넌트 ID는 전역 객체로 할당됨. 각 컴포넌트 ID를 통해 Script에서 해당 컴포넌트에 접근 가능." style="" tagname="p"></w2:textbox>
+	</xf:group></xf:group><xf:group tagname="tr">
+	<xf:group tagname="th" class="w2tb_th">
+		<w2:attributes>
+			<w2:scope>row</w2:scope>
+		</w2:attributes>
+		<w2:textbox id="" label="leftOffImageClass" style="" tagname="p"></w2:textbox>
+	</xf:group>
+	<xf:group tagname="td" class="w2tb_td">
+		<w2:attributes></w2:attributes>
+		<w2:textbox id="" label='type="image"인 경우, 왼쪽 &lt;td&gt;에 적용할 클래스.&lt;br/&gt;클래스에 이미지 url과 width 속성을 반드시 정의해야 함. (center &lt;td&gt; 영역의 width를 정의하지 않을 않을 경우)' style="" tagname="p"></w2:textbox>
+	</xf:group></xf:group><xf:group tagname="tr">
+	<xf:group tagname="th" class="w2tb_th">
+		<w2:attributes>
+			<w2:scope>row</w2:scope>
+		</w2:attributes>
+		<w2:textbox id="" label="leftOnImageClass" style="" tagname="p"></w2:textbox>
+	</xf:group>
+	<xf:group tagname="td" class="w2tb_td">
+		<w2:attributes></w2:attributes>
+		<w2:textbox id=""
+			label='type="image"인 경우, 마우스-오버 시 왼쪽 &lt;td&gt;에 적용할 클래스.&lt;br/&gt;클래스에 이미지 url과 width 속성을 반드시 정의해야 함.(center &lt;td&gt; 영역의 width를 정의하지 않을 않을 경우)'
+			style="" tagname="p">
+		</w2:textbox>
+	</xf:group></xf:group><xf:group tagname="tr">
+	<xf:group tagname="th" class="w2tb_th">
+		<w2:attributes>
+			<w2:scope>row</w2:scope>
+		</w2:attributes>
+		<w2:textbox id="" label="nextTabID" style="" tagname="p"></w2:textbox>
+	</xf:group>
+	<xf:group tagname="td" class="w2tb_td">
+		<w2:attributes></w2:attributes>
+		<w2:textbox id=""
+			label='Tab 키로 이동할 경우, Tab 키를 누를 때 선택되는 컴포넌트의 ID.'
+			style="" tagname="p">
+		</w2:textbox>
+	</xf:group></xf:group><xf:group tagname="tr">
+	<xf:group tagname="th" class="w2tb_th">
+		<w2:attributes>
+			<w2:scope>row</w2:scope>
+		</w2:attributes>
+		<w2:textbox id="" label="rightOffImageClass" style="" tagname="p"></w2:textbox>
+	</xf:group>
+	<xf:group tagname="td" class="w2tb_td">
+		<w2:attributes></w2:attributes>
+		<w2:textbox id=""
+			label='type="image"인 경우, 오른쪽 &lt;td&gt;에 적용할 클래스.&lt;br/&gt;클래스에 이미지 url과 width 속성을 반드시 정의해야 함. (center &lt;td&gt; 영역의 width를 정의하지 않을 않을 경우)'
+			style="" tagname="p">
+		</w2:textbox>
+	</xf:group></xf:group><xf:group tagname="tr">
+	<xf:group tagname="th" class="w2tb_th">
+		<w2:attributes>
+			<w2:scope>row</w2:scope>
+		</w2:attributes>
+		<w2:textbox id="" label="rightOnImageClass" style="" tagname="p"></w2:textbox>
+	</xf:group>
+	<xf:group tagname="td" class="w2tb_td">
+		<w2:attributes></w2:attributes>
+		<w2:textbox id=""
+			label='type="image"인 경우, 오른쪽 &lt;td&gt;에 적용할 클래스.&lt;br/&gt;클래스에 이미지 url과 width 속성을 반드시 정의해야 함. (center &lt;td&gt; 영역의 width를 정의하지 않을 않을 경우)'
+			style="" tagname="p">
+		</w2:textbox>
+	</xf:group></xf:group><xf:group tagname="tr">
+	<xf:group tagname="th" class="w2tb_th">
+		<w2:attributes>
+			<w2:scope>row</w2:scope>
+		</w2:attributes>
+		<w2:textbox id="" label="tabIndex" style="" tagname="p"></w2:textbox>
+	</xf:group>
+	<xf:group tagname="td" class="w2tb_td">
+		<w2:attributes></w2:attributes>
+		<w2:textbox id=""
+			label='type="image"인 경우, 왼쪽 &lt;td&gt;에 적용할 클래스.&lt;br/&gt;클래스에 이미지 url과 width 속성을 반드시 정의해야 함. (center &lt;td&gt; 영역의 width를 정의하지 않을 않을 경우)'
+			style="" tagname="p">
+		</w2:textbox>
+	</xf:group></xf:group><xf:group tagname="tr">
+	<xf:group tagname="th" class="w2tb_th">
+		<w2:attributes>
+			<w2:scope>row</w2:scope>
+		</w2:attributes>
+		<w2:textbox id="" label="title" style="" tagname="p"></w2:textbox>
+	</xf:group>
+	<xf:group tagname="td" class="w2tb_td">
+		<w2:attributes></w2:attributes>
+		<w2:textbox id=""
+			label='HTML의 title 속성과 동일. 마우스 오버 시, title로 저장한 값이 툴팁으로 표시됨. 일반적으로 웹접근성 지원용으로 설정.'
+			style="" tagname="p">
+		</w2:textbox>
+	</xf:group></xf:group><xf:group tagname="tr">
+	<xf:group tagname="th" class="w2tb_th">
+		<w2:attributes>
+			<w2:scope>row</w2:scope>
+		</w2:attributes>
+		<w2:textbox id="" label="tooltip" style="" tagname="p"></w2:textbox>
+	</xf:group>
+	<xf:group tagname="td" class="w2tb_td">
+		<w2:attributes></w2:attributes>
+		<w2:textbox id="" label="사용자가 컴포넌트에 마우스-오버할 때 표시되는 텍스트. 웹스퀘어가 제공하는 툴팁으로, 컴포넌트의 추가 정보를 명시." style="" tagname="p"></w2:textbox>
+	</xf:group></xf:group><xf:group tagname="tr">
+	<xf:group tagname="th" class="w2tb_th">
+		<w2:attributes>
+			<w2:scope>row</w2:scope>
+		</w2:attributes>
+		<w2:textbox id="" label="tooltipPositionX" style="" tagname="p"></w2:textbox>
+	</xf:group>
+	<xf:group tagname="td" class="w2tb_td">
+		<w2:attributes></w2:attributes>
+		<w2:textbox id="" label="tooltip의 값이 있는 경우, 툴팁의 X좌표. (단위: px)" style="" tagname="p"></w2:textbox>
+	</xf:group></xf:group><xf:group tagname="tr">
+	<xf:group tagname="th" class="w2tb_th">
+		<w2:attributes>
+			<w2:scope>row</w2:scope>
+		</w2:attributes>
+		<w2:textbox id="" label="tooltipPositionY" style="" tagname="p"></w2:textbox>
+	</xf:group>
+	<xf:group tagname="td" class="w2tb_td">
+		<w2:attributes></w2:attributes>
+		<w2:textbox id="" label="tooltip의 값이 있는 경우, 툴팁의 Y좌표. (단위: px)" style="" tagname="p"></w2:textbox>
+	</xf:group></xf:group><xf:group tagname="tr">
+	<xf:group tagname="th" class="w2tb_th">
+		<w2:attributes>
+			<w2:scope>row</w2:scope>
+		</w2:attributes>
+		<w2:textbox id="" label="type" style="" tagname="p"></w2:textbox>
+	</xf:group>
+	<xf:group tagname="td" class="w2tb_td">
+		<w2:attributes></w2:attributes>
+		<w2:textbox id="" label="Trigger 표현 방식" style="" tagname="p"></w2:textbox>
+		<xf:group class="grp_option" id="" style=""><xf:group id=""><w2:span style="" id="" label="button" class="badge default"></w2:span><w2:textbox tagname="p" style="" id="" label='HTML input 태그로 표현되며 type="button"으로 구성.&lt;br/&gt;'>
+			</w2:textbox></xf:group>
+			<xf:group id=""><w2:span style="" id="" label="image" class="badge"></w2:span><w2:textbox tagname="p" style="" id="" label='최상위는 table 태그로 구성되고, left, center, right에 각각에 class 적용이 가능.(본 컴포넌트의 center, left, right로 시작하는 속성을 참조.)'>
+			</w2:textbox></xf:group>
+		<xf:group id=""><w2:span style="" id="" label="anchor" class="badge"></w2:span><w2:textbox tagname="p" style="" id="" label='최상위는 anchor 태그로 구성되고, button의 text는 span 태그로 구성.'>
+			</w2:textbox></xf:group></xf:group>
+	</xf:group></xf:group></xf:group></xf:group><xf:group adaptiveThreshold="" class="msgbox info" id="" style=""><w2:textbox class="txt_info" id="" label="타입을 이미지로 설정할 경우 table로 파싱이 됩니다." style=""></w2:textbox>
+    			<w2:textbox class="txt_info" id=""
+    				label="타입을 이미지로 설정할 경우 배치성 테이블 형태로 (summary, caption 태그 제외됨) 사용하여도 웹 접근성에 문제가 되진 않지만 명확한 웹 접근성 준수를 위해 Property 창에 class에서 새로운 class 명을 주어 input 스타일을 변경해 주는 방법을 권장합니다."
+    				style="">
+    			</w2:textbox>
+    		</xf:group>
+
+    	</xf:group>
+    </body>
+</html>

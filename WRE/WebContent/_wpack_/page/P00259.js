@@ -1,0 +1,34 @@
+/*amd /page/P00259.xml 7576 12acff80cf7b581771caa8a162b8ee38ca8cf588e799397b30bc0b8914db697d */
+define({declaration:{A:{version:'1.0',encoding:'UTF-8'}},E:[{T:1,N:'html',A:{xmlns:'http://www.w3.org/1999/xhtml','xmlns:ev':'http://www.w3.org/2001/xml-events','xmlns:w2':'http://www.inswave.com/websquare','xmlns:xf':'http://www.w3.org/2002/xforms'},E:[{T:1,N:'head',E:[{T:1,N:'w2:historyInfo',E:[{T:1,N:'w2:history',A:{}}]},{T:1,N:'w2:type',E:[{T:3,text:'COMPONENT'}]},{T:1,N:'w2:buildDate'},{T:1,N:'w2:MSA'},{T:1,N:'xf:model',E:[{T:1,N:'w2:dataCollection',A:{baseNode:'map'},E:[{T:1,N:'w2:dataList',A:{baseNode:'list',repeatNode:'map',id:'dlt_dataList1',saveRemovedData:'true'},E:[{T:1,N:'w2:columnInfo',E:[{T:1,N:'w2:column',A:{id:'Code',name:'name1',dataType:'text'}},{T:1,N:'w2:column',A:{id:'City',name:'name2',dataType:'text'}},{T:1,N:'w2:column',A:{id:'Country',name:'name3',dataType:'text'}},{T:1,N:'w2:column',A:{id:'Type',name:'name4',dataType:'text'}}]}]}]},{T:1,N:'w2:workflowCollection'}]},{T:1,N:'w2:layoutInfo'},{T:1,N:'w2:publicInfo',A:{method:''}},{T:1,N:'script',A:{lazy:'false',type:'text/javascript'},E:[{T:4,cdata:function(scopeObj){with(scopeObj){
+scwin.onpageload = function () {
+
+};
+
+/**
+ * 버튼 [ 선택 목록에 "Paris" 설정하기 ] 클릭 시
+ */
+scwin.btn_ex1_onclick = function (e) {
+    // SelectBox 'sbx_exam1'에 "Paris"라는 데이터를 세팅합니다.
+    sbx_exam1.setValue("Paris");
+};
+
+/**
+ * 버튼 [ 선택 목록에 "New York" 설정하기 ] 클릭 시
+ */
+scwin.btn_ex2_onclick = function (e) {
+    // SelectBox 'sbx_exam2'에 "New York"라는 데이터를 세팅합니다.
+    sbx_exam2.setValue("New York");
+};
+
+/**
+ * 버튼 [ 선택 목록에 "London" 설정하기 ] 클릭 시
+ */
+scwin.btn_ex3_onclick = function (e) {
+    // SelectBox 'sbx_exam3'에 "London"라는 데이터를 세팅합니다.
+    sbx_exam3.setValue("London");
+
+    // SelectBox 'sbx_exam3'에 표시되고 있는 항목의 인덱스를 반환합니다.
+    let index = sbx_exam3.getSelectedIndex();
+    alert("인덱스 값은 : " + index + " 입니다.");
+};
+}}}]}]},{T:1,N:'body',A:{'ev:onpageload':'scwin.onpageload'},E:[{T:1,N:'xf:group',A:{class:'sub_contents',id:'',style:''},E:[{T:1,N:'xf:group',A:{class:'ws_example_grp_desc',id:'',style:''},E:[{T:1,N:'w2:textbox',A:{escape:'false',id:'',label:'setValue() 함수로 설정하는 값이 선택 항목 목록 에 없는 경우, 처리 방법을 설정하는 예제입니다.<br/><br/>이 기능은 아래의 속성과 함수로 사용할 수 있습니다.<br/>- valueNotInList : (속성)설정된 DataList의 목록에 없는 값을 set하는 경우에 대한 처리방식 설정.<br/>- emptyItem : (속성)선택 항목에 없는 value나 index가 동적으로 설정하는 경우 빈 값으로 label과 value를 설정.<br/>- setValue : (함수)파라메터로 넘어온 값에 해당하는 선택 항목을 선택.<br/>- getSelectedIndex : (함수)선택된 항목의 인덱스를 반환.',style:''}}]},{T:1,N:'xf:group',A:{class:'example_div_tb_style_wrap',id:''},E:[{T:1,N:'xf:group',A:{class:'example_div_tr_style',id:'',style:''},E:[{T:1,N:'w2:textbox',A:{class:'example_div_th_style',escape:'false',id:'',label:'선택 항목 목록에 없는 값은 무시하기',style:''}},{T:1,N:'xf:group',A:{class:'example_div_td_style',id:'',style:''},E:[{T:1,N:'w2:textbox',A:{class:'ws5_example_txt_normal',escape:'false',id:'',label:'setValue함수에서 설정하는 값(Paris)이 SelectBox컴포넌트의 선택 목록에 없을 경우, 값을 무시합니다.',style:'',displayFormat:''}},{T:1,N:'xf:group',A:{id:'',style:'margin: 10px 0px 10px 0px;'},E:[{T:1,N:'xf:trigger',A:{class:'btn_exam_exec btn_txt_of','ev:onclick':'scwin.btn_ex1_onclick',id:'btn_ex1',localeRef:'',style:'min-width: 30px;height: 26px;',type:'',useDefaultLabel:'true'},E:[{T:1,N:'xf:label',E:[{T:4,cdata:'선택 목록에 "Paris" 설정하기'}]}]}]},{T:1,N:'xf:select1',A:{id:'sbx_exam1',chooseOption:'',style:'width: 148px;height: 21px;',submenuSize:'auto',allOption:'',disabled:'false',direction:'auto',appearance:'minimal',disabledClass:'w2selectbox_disabled',ref:'',valueNotInList:'default',emptyItem:'true'},E:[{T:1,N:'xf:choices',E:[{T:1,N:'xf:item',E:[{T:1,N:'xf:label',E:[{T:4,cdata:'Seoul'}]},{T:1,N:'xf:value',E:[{T:4,cdata:'1'}]}]},{T:1,N:'xf:item',E:[{T:1,N:'xf:label',E:[{T:4,cdata:'Busan'}]},{T:1,N:'xf:value',E:[{T:4,cdata:'2'}]}]},{T:1,N:'xf:item',E:[{T:1,N:'xf:label',E:[{T:4,cdata:'Daegu'}]},{T:1,N:'xf:value',E:[{T:4,cdata:'3'}]}]},{T:1,N:'xf:item',E:[{T:1,N:'xf:label',E:[{T:4,cdata:'Jeju'}]},{T:1,N:'xf:value',E:[{T:4,cdata:'4'}]}]}]}]}]},{T:1,N:'w2:textbox',A:{class:'example_div_th_style',escape:'false',id:'',label:'목록의 첫번째 항목을 표시하기',style:''}},{T:1,N:'xf:group',A:{class:'example_div_td_style',id:'',style:''},E:[{T:1,N:'w2:textbox',A:{class:'ws5_example_txt_normal',escape:'false',id:'',label:'setValue함수에서 설정하는 값(New Yokr)이 SelectBox컴포넌트의 선택 목록에 없을 경우, 가장 첫번째 항목을 표시합니다.',style:'',displayFormat:''}},{T:1,N:'xf:group',A:{id:'',style:'margin: 10px 0px 10px 0px;'},E:[{T:1,N:'xf:trigger',A:{class:'btn_exam_exec btn_txt_of','ev:onclick':'scwin.btn_ex2_onclick',id:'btn_ex2',localeRef:'',style:'min-width: 30px;height: 26px;',type:'',useDefaultLabel:'true'},E:[{T:1,N:'xf:label',E:[{T:4,cdata:'선택 목록에 "New York" 설정하기'}]}]}]},{T:1,N:'xf:select1',A:{id:'sbx_exam2',chooseOption:'',style:'width: 148px;height: 21px;',submenuSize:'auto',allOption:'',disabled:'false',direction:'auto',appearance:'minimal',disabledClass:'w2selectbox_disabled',ref:'',valueNotInList:'default',emptyItem:'false'},E:[{T:1,N:'xf:choices',E:[{T:1,N:'xf:item',E:[{T:1,N:'xf:label',E:[{T:4,cdata:'Seoul'}]},{T:1,N:'xf:value',E:[{T:4,cdata:'1'}]}]},{T:1,N:'xf:item',E:[{T:1,N:'xf:label',E:[{T:4,cdata:'Busan'}]},{T:1,N:'xf:value',E:[{T:4,cdata:'2'}]}]},{T:1,N:'xf:item',E:[{T:1,N:'xf:label',E:[{T:4,cdata:'Daegu'}]},{T:1,N:'xf:value',E:[{T:4,cdata:'3'}]}]},{T:1,N:'xf:item',E:[{T:1,N:'xf:label',E:[{T:4,cdata:'Jeju'}]},{T:1,N:'xf:value',E:[{T:4,cdata:'4'}]}]}]}]}]},{T:1,N:'w2:textbox',A:{class:'example_div_th_style',escape:'false',id:'',label:'선택 항목 목록에 없는 값을 유지하기',style:''}},{T:1,N:'xf:group',A:{class:'example_div_td_style',id:'',style:''},E:[{T:1,N:'w2:textbox',A:{class:'ws5_example_txt_normal',displayFormat:'',escape:'false',id:'',label:'setValue함수에서 설정하는 값(London)이 SelectBox컴포넌트의 선택 목록에 없을 경우, 설정하는 값을 유지합니다.',style:''}},{T:1,N:'xf:group',A:{id:'',style:'margin: 10px 0px 10px 0px;'},E:[{T:1,N:'xf:trigger',A:{class:'btn_exam_exec btn_txt_of','ev:onclick':'scwin.btn_ex3_onclick',id:'btn_ex3',localeRef:'',style:'min-width: 30px;height: 26px;',type:'',useDefaultLabel:'true'},E:[{T:1,N:'xf:label',E:[{T:4,cdata:'선택 목록에 "London" 설정하기'}]}]}]},{T:1,N:'xf:select1',A:{id:'sbx_exam3',chooseOption:'',style:'width: 148px;height: 21px;',submenuSize:'auto',allOption:'',disabled:'false',direction:'auto',appearance:'minimal',disabledClass:'w2selectbox_disabled',ref:'',valueNotInList:'keepValue'},E:[{T:1,N:'xf:choices',E:[{T:1,N:'xf:item',E:[{T:1,N:'xf:label',E:[{T:4,cdata:'Seoul'}]},{T:1,N:'xf:value',E:[{T:4,cdata:'1'}]}]},{T:1,N:'xf:item',E:[{T:1,N:'xf:label',E:[{T:4,cdata:'Busan'}]},{T:1,N:'xf:value',E:[{T:4,cdata:'2'}]}]},{T:1,N:'xf:item',E:[{T:1,N:'xf:label',E:[{T:4,cdata:'Daegu'}]},{T:1,N:'xf:value',E:[{T:4,cdata:'3'}]}]},{T:1,N:'xf:item',E:[{T:1,N:'xf:label',E:[{T:4,cdata:'Jeju'}]},{T:1,N:'xf:value',E:[{T:4,cdata:'4'}]}]}]}]}]}]}]}]}]}]}]})

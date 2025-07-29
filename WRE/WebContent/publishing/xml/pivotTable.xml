@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+        <w2:type>COMPONENT</w2:type>
+        <w2:buildDate/>
+        <w2:MSA/>
+        <xf:model>
+			<w2:dataCollection baseNode="map">
+				<w2:dataList baseNode="list" id="dataList1" repeatNode="map" saveRemovedData="true" style="">
+					<w2:columnInfo>
+						<w2:column dataType="text" id="a1" name="시도별"></w2:column>
+						<w2:column dataType="text" id="a2" name="산업별"></w2:column>
+						<w2:column dataType="text" id="a3" name="시점"></w2:column>
+						<w2:column dataType="text" id="a4" name="사업체수[개]"></w2:column>
+						<w2:column dataType="text" id="a5" name="월평균종사자수[명]"></w2:column>
+						<w2:column dataType="text" id="a6" name="연간급여액[백만원]"></w2:column>
+						<w2:column dataType="text" id="a7" name="생산액[백만원]"></w2:column>
+						<w2:column dataType="text" id="a8" name="출하액[백만원]"></w2:column>
+						<w2:column dataType="text" id="a9" name="재고액-연초[백만원]"></w2:column>
+						<w2:column dataType="text" id="a10" name="재고액-연말[백만원]"></w2:column>
+						<w2:column dataType="text" id="a11" name="주요생산비[백만원]"></w2:column>
+						<w2:column dataType="text" id="a12" name="부가가치[백만원]"></w2:column>
+						<w2:column dataType="text" id="a13" name="유형자산연말잔액[백만원]"></w2:column>
+					</w2:columnInfo>
+				</w2:dataList>
+			</w2:dataCollection>
+            <w2:workflowCollection/>
+        </xf:model>
+        <w2:layoutInfo/>
+        <w2:publicInfo method=""/>
+        <script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function() {
+             var inputData = [{"a1":"전국","a2":"광업 및 제조업(C~D)","a3":"1995 년","a4":"97284","a5":"2981813","a6":"38257253","a7":"366561783","a8":"360579069","a9":"20745462","a10":"26728176","a11":"205868890","a12":"160692893","a13":"166527384"},
+             {"a1":"전국","a2":"광업 및 제조업(C~D)","a3":"1996 년","a4":"98119","a5":"2924990","a6":"42754450","a7":"403777999","a8":"399620143","a9":"24443390","a10":"28601246","a11":"228236342","a12":"175541657","a13":"188971669"},
+             {"a1":"서울특별시","a2":"광업 및 제조업(C~D)","a3":"1995 년","a4":"20295","a5":"369866","a6":"4256866","a7":"29005676","a8":"28635537","a9":"1651644","a10":"2021783","a11":"15257456","a12":"13748220","a13":"8833797"},
+             {"a1":"서울특별시","a2":"광업 및 제조업(C~D)","a3":"1996 년","a4":"19648","a5":"341319","a6":"4346137","a7":"30668698","a8":"30363711","a9":"1844009","a10":"2148996","a11":"16318215","a12":"14350483","a13":"10258900"},
+             {"a1":"부산광역시","a2":"광업 및 제조업(C~D)","a3":"1995 년","a4":"9546","a5":"232735","a6":"2541847","a7":"17500257","a8":"17351197","a9":"863511","a10":"1012571","a11":"9698757","a12":"7801500","a13":"7053150"},
+             {"a1":"부산광역시","a2":"광업 및 제조업(C~D)","a3":"1996 년","a4":"9494","a5":"219901","a6":"2714631","a7":"18090563","a8":"18035467","a9":"920376","a10":"975472","a11":"10042365","a12":"8048198","a13":"8409145"},
+             {"a1":"인천광역시","a2":"광업 및 제조업(C~D)","a3":"1995 년","a4":"7680","a5":"245790","a6":"3252715","a7":"29009359","a8":"28389319","a9":"1795108","a10":"2415148","a11":"17261305","a12":"11748054","a13":"12640862"},
+             {"a1":"인천광역시","a2":"광업 및 제조업(C~D)","a3":"1996 년","a4":"7889","a5":"239406","a6":"3582054","a7":"32129968","a8":"31908800","a9":"2079048","a10":"2300216","a11":"18481295","a12":"13648673","a13":"13089619"},
+             {"a1":"광주광역시","a2":"광업 및 제조업(C~D)","a3":"1995 년","a4":"1226","a5":"53068","a6":"669537","a7":"6444931","a8":"6386884","a9":"273375","a10":"331422","a11":"3789099","a12":"2655832","a13":"2890381"},
+             {"a1":"광주광역시","a2":"광업 및 제조업(C~D)","a3":"1996 년","a4":"1344","a5":"53797","a6":"769343","a7":"7212593","a8":"7162804","a9":"335727","a10":"385516","a11":"4034329","a12":"3178264","a13":"3376412"}];
+
+             dataList1.setJSON(inputData);
+};
+]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload">
+    	<xf:group class="sub_contents" id="" style="">
+    		<xf:group class="pgtbox" id="" style="">
+    			<w2:textbox class="pgt_tit" id="" label="Publishing Template - PivotTable" style=""></w2:textbox>
+    		</xf:group>
+    		<xf:group id="" class="titbox">
+    			<w2:textbox style="" id="" label="다차원 데이터 분석 기능을 제공하는 테이블입니다.&lt;br/&gt;(평균 합, 카운트 등을 나타내고 싶을 때 사용)" class="txt_guide">
+    			</w2:textbox>
+    		</xf:group>
+    		<xf:group class="titbox" id="" style="">
+    			<w2:textbox class="" id="" label="01. Sample" style="" tagname="h3"></w2:textbox>
+    			<xf:group id="" class="rt">
+    				<w2:anchor outerDiv="false" name="" style="" href="/ws/download/pivotTable.zip" id="" class="btn_cm">
+    					<xf:label><![CDATA[Download]]></xf:label>
+    				</w2:anchor>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group id="" class="titbox">
+    			<w2:textbox style="" id="" label="02. Property" class="" tagname="h3"></w2:textbox>
+    		</xf:group>
+    		<xf:group id="" class="tblbox">
+    			<xf:group tagname="table" style="" id="" class="wq_tb w2tb tbl">
+    				<w2:attributes>
+    					<w2:summary></w2:summary>
+    				</w2:attributes>
+    				<xf:group tagname="colgroup">
+    					<xf:group tagname="col" style="width:20%;"></xf:group>
+    					<xf:group tagname="col" style=""></xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">Property</xf:group>
+    					<xf:group tagname="th" style="" class="w2tb_th">Description</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">cols</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						pivotTable을 초기에 보여줄 때 column축에 둘 컬럼을 정의한다. 구분자&quot;,&quot;를 통해 column id를 입력한다. 입력된 column의 순서에 따라 결과가 달라진다.
+    						<br></br>
+    						(ex1) cols=&quot;col3,col4,col5&quot; (ex2) cols=&quot;col5,col3,col4&quot;
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">dataList</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">pivotTable과 연동할 dataList id</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">defaultAggregator</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						[default:Sum]기본 aggregator(통계함수)를 설정하는 옵션이다. field에 정의된 aggregator가 우선순위가 높으며, field에 정의된 aggregator가 없을 경우 해당
+    						옵션의 aggregator를 사용한다. aggregator는 Sum, Average, Count, Minimum, Maximum 등 기본적으로 제공되는 aggregator외에 사용자 정의 함수
+    						aggregator를 등록할 수 있다.
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">renderMode</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						[default:full]pivotTable을 그릴 때 레이블 영역을 전부 그릴지(full), 레이블 영역을 전부 감추고 테이블만 그릴지(compact)를 선택하는 모드.
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">rows</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						pivotTable을 초기에 보여줄 때 row축에 둘 컬럼을 정의한다. 구분자&quot;,&quot;를 통해 column id를 입력한다. 입력된 column의 순서에 따라 결과가 달라진다.
+    						<br></br>
+    						(ex1) rows=&quot;col1,col2&quot; (ex2) rows=&quot;col2,col1&quot;
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">vals</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						pivotTable을 초기에 보여줄 때 value축에 둘 컬럼을 정의한다. 구분자&quot;,&quot;를 통해 column id를 입력한다. vals로 설정된 column이 2개 이상일 경우 Σ값
+    						레이블이 생성된다. 입력된 column의 순서에 따라 결과가 달라진다. (ex1) vals=&quot;col6,col7&quot; (ex2) cols=&quot;col5,col3,col4&quot;
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">valuesAxis</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						[default:row] Σ값 레이블이 생성된 경우 (value축 컬럼이 2개 이상인경우) Σ값 레이블의 위치를 설정하는 옵션이다.
+    					</xf:group>
+    				</xf:group>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group id="" class="titbox">
+    			<w2:textbox style="" id="" label="03. CSS Overriding" class="" tagname="h3"></w2:textbox>
+    		</xf:group>
+    		<xf:group id="" class="tblbox">
+    			<xf:group tagname="table" style="" id="" class="wq_tb w2tb tbl">
+    				<w2:attributes>
+    					<w2:summary></w2:summary>
+    				</w2:attributes>
+    				<xf:group tagname="colgroup">
+    					<xf:group tagname="col" style="width:20%;"></xf:group>
+    					<xf:group tagname="col" style=""></xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">Class</xf:group>
+    					<xf:group tagname="th" style="" class="w2tb_th">Description</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">w2pivotTable</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						w2pivotTable는 웹스퀘어 엔진에서 정의된 클래스입니다, 기본적으로 html 로 렌더링되는 시점에서 자동으로 부여됩니다. 여기에 사용자 정의 클래스를 추가해서 overriding(덮어쓰기) 하여
+    						디자인을 바꿀 수 있습니다.
+    						<br></br>
+    					</xf:group>
+    				</xf:group>
+    			</xf:group>
+    		</xf:group>
+    	</xf:group>
+    </body>
+</html>

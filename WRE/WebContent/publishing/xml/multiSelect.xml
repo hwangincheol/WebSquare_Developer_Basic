@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+        <w2:type>COMPONENT</w2:type>
+        <w2:buildDate/>
+        <w2:MSA/>
+        <xf:model>
+            <w2:dataCollection baseNode="map"/>
+            <w2:workflowCollection/>
+        </xf:model>
+        <w2:layoutInfo/>
+        <w2:publicInfo method=""/>
+        <script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function() {
+	
+};
+]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload">
+    	<xf:group class="sub_contents" id="" style="">
+			<xf:group class="pgtbox" id="" style="">
+				<w2:textbox class="pgt_tit" id="" label="Publishing Template - MultiSelect" style=""></w2:textbox>
+			</xf:group>
+			<xf:group id="" class="titbox"><w2:textbox style="" id="" label="여러 항목 중에서 선택할 수 있는 컴포넌트입니다." class=""></w2:textbox></xf:group><xf:group class="titbox" id="" style="">
+				<w2:textbox class="" id="" label="01. Sample" style="" tagname="h3"></w2:textbox>
+			<xf:group id="" class="rt"><w2:anchor outerDiv="false" name="" style="" href="/ws/download/multiSelect.zip" id="" class="btn_cm">
+					<xf:label><![CDATA[Download]]></xf:label>
+				</w2:anchor></xf:group></xf:group>
+			<xf:group class="msgbox" id="" style="">
+				<xf:select appearance="minimal" id="" style="position: relative;width: 150px;margin-right:30px;" class="">
+					<xf:choices>
+						<xf:item>
+							<xf:label><![CDATA[Seoul]]></xf:label>
+							<xf:value><![CDATA[]]>
+							</xf:value>
+						</xf:item>
+						<xf:item>
+							<xf:label><![CDATA[Pusan]]></xf:label>
+							<xf:value><![CDATA[]]>
+							</xf:value>
+						</xf:item>
+						<xf:item>
+							<xf:label><![CDATA[JeJU]]></xf:label>
+							<xf:value><![CDATA[]]>
+							</xf:value>
+						</xf:item>
+					</xf:choices>
+				</xf:select>
+
+				<xf:select appearance="minimal" id="" style="position: relative;width: 150px;" disabled="true" class="">
+					<xf:choices>
+						<xf:item>
+							<xf:label><![CDATA[Seoul]]></xf:label>
+							<xf:value></xf:value>
+						</xf:item>
+						<xf:item>
+							<xf:label><![CDATA[Pusan]]></xf:label>
+							<xf:value></xf:value>
+						</xf:item>
+						<xf:item>
+							<xf:label><![CDATA[JeJU]]></xf:label>
+							<xf:value></xf:value>
+						</xf:item>
+					</xf:choices>
+				</xf:select>
+			</xf:group>
+			<xf:group id="" class="titbox"><w2:textbox style="" id="" label="02. Property" class="" tagname="h3"></w2:textbox></xf:group>
+			<xf:group id="" class="tblbox"><xf:group tagname="table" style="" id="" class="w2tb tbl">
+				<w2:attributes>
+					<w2:summary></w2:summary>
+				</w2:attributes>
+				<xf:group tagname="colgroup">
+					<xf:group tagname="col" style="width:20%;"></xf:group>
+					<xf:group tagname="col" style=""></xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">Property</xf:group>
+					<xf:group tagname="th" style="" class="w2tb_th">Description</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">class</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						HTML의 class속성과 동일한 기능을 제공하며 css파일 또는 style블럭에 정의 한 class를 1개 또는 공백(space)를 이용하여 다중 적용이 가능합니다.
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">defaultClass</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">멀티셀렉트에 대한 기본 클래스입니다.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">disabled</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						[default:false, true] HTML의 disabled속성과 동일한 기능을 제공하며 컴포넌트를 비활성화 시킵니다.
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th">
+						dataListAutoRefresh
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						[default:&amp;nbsp;false,&amp;nbsp;true]&amp;nbsp;multiselect의&amp;nbsp;선택&amp;nbsp;대상&amp;nbsp;목록이&amp;nbsp;DataList와&amp;nbsp;바인딩된&amp;nbsp;경우,&amp;nbsp;addItem&amp;nbsp;혹은&amp;nbsp;deleteItem&amp;nbsp;함수&amp;nbsp;실행에&amp;nbsp;따른&amp;nbsp;DataList&amp;nbsp;자동&amp;nbsp;갱신&amp;nbsp;여부.&amp;nbsp;&amp;nbsp;&amp;nbsp;true:&amp;nbsp;자동&amp;nbsp;갱신.&amp;nbsp;false:&amp;nbsp;기본&amp;nbsp;값.&amp;nbsp;자동&amp;nbsp;갱신&amp;nbsp;안&amp;nbsp;함.&amp;nbsp;&amp;nbsp;&amp;nbsp;하위&amp;nbsp;호환을&amp;nbsp;위한&amp;nbsp;설정으로&amp;nbsp;true를&amp;nbsp;권장.&amp;nbsp;(config.xml&amp;nbsp;파일에&amp;nbsp;설정하여&amp;nbsp;일괄&amp;nbsp;적용.)
+						<w2:attributes></w2:attributes>
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">escape</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">&lt;&gt;&amp;&quot;와 같은 특수문자를 HTML Escape 문자로 변환하여 화면에 표시합니다.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">id</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">컴포넌트의 ID로 전역객체로 할당되며 script에서 본 id로 컴포넌트에 접근이 가능합니다.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th">
+						nextTabID
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						tab으로&amp;nbsp;이동시&amp;nbsp;이동할&amp;nbsp;컴포넌트&amp;nbsp;ID
+						<w2:attributes></w2:attributes>
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">separator</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">선택된 항목이 여러 개일 때 구분할 구분자</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">style</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">InputBox의 style 속성</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">tabIndex</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">Tab Key를 이용 한 컴포넌트의 포커스 순서로 HTML의 tabindex속성과 동일한 기능을 제공합니다.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">useLocale</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">MultiSelect에대한 다국어사용 여부를 지원합니다.</xf:group>
+				</xf:group>
+			</xf:group></xf:group>
+			<xf:group id="" class="titbox"><w2:textbox style="" id="" label="03. CSS Overriding" class="" tagname="h3"></w2:textbox></xf:group>
+			<xf:group id="" class="tblbox"><xf:group tagname="table" style="" id="" class="w2tb tbl">
+				<w2:attributes>
+					<w2:summary></w2:summary>
+				</w2:attributes>
+				<xf:group tagname="colgroup">
+					<xf:group tagname="col" style="width:20%;"></xf:group>
+					<xf:group tagname="col" style=""></xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">Class</xf:group>
+					<xf:group tagname="th" style="" class="w2tb_th">Description</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">w2multiselect_div</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						w2multiselect_div 은 웹스퀘어 엔진에서 정의된 클래스입니다, 브라우저가 파싱할때 자동으로 부여됩니다.
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">w2multiselect_table</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						MultiSelect 컴포넌트의 기본 레이아웃 구조인 테이블 레이아웃의 최상위 클래스입니다.
+						<br></br>
+						본 컴포넌트의 클래스는 웹스퀘어에서 자동으로 정의되는 클래스입니다.
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">w2multiselect_tr</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">MultiSelect컴포넌트 테이블레이아웃 구조에서 테이블의 TR에 자동으로 부여되는 클래스입니다.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">w2multiselect_td</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">MultiSelect컴포넌트 테이블레이아웃 구조에서 테이블의 TD에 자동으로 부여되는 클래스입니다.</xf:group>
+				</xf:group>
+			</xf:group></xf:group>
+			<xf:group adaptiveThreshold="" class="msgbox" id="" style="">
+				<xf:group id="" class="titbox"><w2:textbox style="" id="" label="Tip" class="" tagname="h3"></w2:textbox></xf:group><w2:textbox class="txt_info" id="" label="MultiSelect 컴포넌트를 제작했을때의 기본 레이아웃 구조는 테이블 레이아웃 으로 MultiSelect가 구성 됩니다." style=""></w2:textbox>
+			</xf:group>
+		</xf:group>
+    </body>
+</html>

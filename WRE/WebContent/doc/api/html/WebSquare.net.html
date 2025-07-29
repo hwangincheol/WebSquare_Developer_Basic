@@ -1,0 +1,346 @@
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="../cm/css/api.css">
+    </head>
+    <body>
+        <div class="api_wrap">
+            <div class="api_wrap_inner">
+                <div class="api_container">
+                    <div class="api_content">
+                        <header class="api_header">
+                            <p class="api_component">WebSquare.net</p>
+                            <p class="api_version">5.0_5.5005A.20230904.185702</p>
+                            <p>WebSquare.net Package</p>
+                        </header>
+                        <section class="properties_section">
+                            <h2>Property Detail</h2>
+                            
+                        </section>
+                        <section class="event_section">
+                            <h2>Event Detail</h2>
+                            
+                        </section>
+                        <section class="method_section">
+                            <h2>Method Detail</h2>
+                            <dl class="api_dl">
+                            <dt id="ajax">ajax(options)</dt>
+                            <dd>
+                                <p>ajax 통신용 함수</p>
+                                <div class="api_tit_para">Parameter</div>
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>//위의 예시 중 options.success에 지정 한 callback Function 정의 형태.
+doSucess = function(e) {
+//e는 웹스퀘어 엔진에서 통신 후 결과를 담을 JSON 객체이다.
+//e.resourceUri - 통신 URI 반환
+//e.responseHeaders - Response Headers 내용 반환
+//e.responseStatusCode - Response Status Code 반환
+//e.responseReasonPhrase - Response Status Text 반환
+//e.responseBody - Response Data를 XML 데이터로 parse 한 XML 객체 반환.( Response Content-Type이 JSON 인 경우 json객체를 XML로 parse)
+//e.responseText - Response Data 원본으로 String 형태 반환
+    
+//responseText를 alert으로 출력.
+alert("success\n" + e.responseText);
+};
+    
+doError = function(e) { //functoin을 직접 정의 한 경우.
+//e.errorType - "target-error" 고정값 반환
+//e.resourceUri - 통신 URI 반환
+//e.responseHeaders - Response Headers 내용 반환
+//e.responseStatusCode - Response Status Code 반환
+//e.responseReasonPhrase - Response Status Text 반환
+//e.requestBody - Request Data로 String 형태 반환
+//e.responseText - Response Data 원본으로 String 형태 반환
+
+//satus code alert으로 출력.
+alert("errorCode:" + e.responseStatusCode);
+};  
+
+var options = {};
+options.action = "../$p/extra/test.jsp";
+options.mode = "asynchronous";
+options.mediatype = "text/xml";
+options.method = "post";
+options.requestData = "<test/>";
+options.requestHeader = {"temp1":"hello", "temp2":"world"}; // temp1 및 temp2 헤더를 요청 헤더에 추가
+options.success = doSucess;
+options.error = doError;
+WebSquare.net.ajax( options );</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="download">download(actionUrl, XML, sendMethod, isXHR)</dt>
+                            <dd>
+                                <p>서버에서 파일을 다운로드 받는 함수.</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">actionUrl</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>파일을 다운 받기 위해서 접속해야 하는 주소</p>
+                                            </div>
+                                        </li>
+                                    </ul><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">XML</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>문자열은 xmlValue라는 이름으로 서버로 올라간다. 값을 지정하지 않은 경우(undefined인 경우) xmlValue라는 값은 제외하고 서버로 전송한다.</p>
+                                            </div>
+                                        </li>
+                                    </ul><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">sendMethod</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>get, post와 같은 전송 방식, 기본값은 post이다.</p>
+                                            </div>
+                                        </li>
+                                    </ul><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">isXHR</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">Y</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>xhr 통신 유무 (기본값은 false)</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>
+ WebSquare.net.download( url, "<test></test>", "post" );
+</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="getAllBASE64Parameter">getAllBASE64Parameter()</dt>
+                            <dd>
+                                <p>Base64로 Encoding 된 get방식의 전체 parameter를 Base64 Decoding하여 JSON 형태로 반환합니다.</p>
+                                
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>
+WebSquare.net.getAllBASE64Parameter();</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="getAllParameter">getAllParameter()</dt>
+                            <dd>
+                                <p>전체 parameter를 JSON 형태로 반환합니다.</p>
+                                
+                                
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>
+WebSquare.net.getAllParameter();
+</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="getBASE64Parameter">getBASE64Parameter(param)</dt>
+                            <dd>
+                                <p>Base64로 Encoding 된 get방식의 parameter(param)를 Base64 Decoding하여 반환합니다.</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">param</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">N</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>값을 가져올 uri에서 지정된 param</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+              <div class="api_tit_para">Return</div>
+                  <div class="api_parameter">
+                      <ul class="api_ul_parameter">
+                          <li>
+                              <div class="tit">Type</div>
+                              <div class="cnt">String</div>
+                          </li>
+                          <li class="api_desc">
+                              <div class="tit">Description</div>
+                              <div class="cnt">param 문자열 반환</div>
+                          </li>
+                    </ul>
+              </div>
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>
+WebSquare.net.getBASE64Parameter("name");
+</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        <dl class="api_dl">
+                            <dt id="getParameter">getParameter(param)</dt>
+                            <dd>
+                                <p>get방식으로 넘어온 parameter를 String으로 반환합니다.</p>
+                                <div class="api_tit_para">Parameter</div><ul class="api_ul_parameter">
+                                        <li class="api_name">
+                                            <div class="tit">Name</div>
+                                            <div class="cnt">param</div>
+                                        </li>
+                                        <li class="api_type">
+                                            <div class="tit">Type</div>
+                                            <div class="cnt">String</div>
+                                        </li>
+                                        <li class="api_require">
+                                            <div class="tit">Required</div>
+                                            <div class="cnt">N</div>
+                                        </li>
+                                        <li class="api_desc in_tb">
+                                            <div class="tit">Description</div>
+                                            <div class="cnt">
+                                                <p>값을 가져올 uri에서 지정된 param</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                
+              <div class="api_tit_para">Return</div>
+                  <div class="api_parameter">
+                      <ul class="api_ul_parameter">
+                          <li>
+                              <div class="tit">Type</div>
+                              <div class="cnt">String</div>
+                          </li>
+                          <li class="api_desc">
+                              <div class="tit">Description</div>
+                              <div class="cnt">param 문자열</div>
+                          </li>
+                    </ul>
+              </div>
+                                
+            <div class="api_sample">
+                <div class="hd_sample">
+                    <p>Sample</p>
+                    <div class="api_btnbox" style="display:none">
+                        <button type="button" class="api_btn_copy">Copy</button>
+                        <button type="button" class="api_btn_move">Insert</button>
+                    </div>
+                </div>
+                <div class="cnt_sample">
+                    <xmp  class='js sample'>
+WebSquare.net.getParameter("name");
+</xmp>
+                </div>
+            </div>
+                            </dd>
+                        </dl>
+                        
+                        </section>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </body>
+    </html>

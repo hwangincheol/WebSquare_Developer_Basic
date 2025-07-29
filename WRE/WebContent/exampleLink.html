@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="-1">
+<title>WebSquare5 SP5 Example Link</title>
+<script type="text/javascript" src="/frame/js/check_index.js"></script>
+<script type="text/javascript">
+	window.onload = async function () {
+		let res = await WE_GET_SCHEDULE();
+		
+		if (res.is_inspection === true) {
+			location.href = WE_UPDATE_URL;
+		} else {
+			location.href = WE_MAIN_URL_WITH_QUERY;
+		}
+		
+	};
+	
+</script>
+</head>
+<body>
+</body>
+</html>

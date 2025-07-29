@@ -1,0 +1,94 @@
+/* 예제 파일에서 사용하는 CSS 모음 */
+
+/* 예제 공통  - 공백 표현 */
+.P00000_preColumn > .w2grid_input {white-space: pre;}
+
+/* P00029.xml class 제어 예제 */
+.P00029_exam1 {border-color: #e40a0a; color: #e40a0a;}
+.P00029_exam2 {border-color: #0070c0; color: #0070c0;}
+
+/* P00035.xml TableLayout 스타일 조절 */
+.P00035 .w2tb .w2tb_th { padding: 3px 0px; }
+.P00035 .w2tb .w2tb_td {padding: 6px 6px 0px 6px; min-height: 32px; box-sizing: border-box;}
+.P00035 .w2tb .w2tb_td > * {margin-bottom: 6px; padding-bottom: 0px;}
+.P00035 .w2tb .w2tb_td > *:last-child {margin-right: 0px;}
+.P00035 .w2tb .btn_exam_exec {padding: 0 4px;}
+@media screen and (max-width: 360px) { .P00035 .w2tb colgroup col:first-child { width: 56px !important; } }
+
+/* P00145.xml WindowContainer의 선택된 윈도우 style */
+.P00145.w2windowContainer .w2window_selected { border-color: MediumBlue;}
+.P00145.w2windowContainer .w2window_selected .w2window_selected_header .w2window_header_title{ color: MediumBlue; }
+
+/* P00186.xml 예제 */
+.w2grid .P00186_exam1 {background-color: #F0E68C;}
+
+/* P00189.xml 예제 */
+.P00189_exam2 .w2grid_default_disabled {background-color: #808080 !important; color: #A9A9A9 !important;}
+
+/* P00233.xml 예제 */
+.w2grid .P00233_exam1 {background-color: #F0E68C !important; color: #DC143C !important;}
+
+/* P00271.xml 모바일에서 예제 테스트를 위해 th 영역 크기 조절 */
+.P00271.tbl.w2tb_adaptive_layout .w2tb_td:before {width: 70px !important;}
+.P00271.tbl.w2tb_adaptive_layout .w2tb_td {padding-left: 76px !important;}
+
+/* P00298.xml 클래스 적용 예제 */
+.P00298_header_cell nobr{color: #DC143C;}
+.P00298_header_cell nobr:before {content:"[필수] ";}
+.P00298_body_cell > * {color: #0000FF;}
+.P00298_body_column {background-color: #FFD700 !important;}
+
+/* P00316.xml TreeView의 선택된 노드 색 강조하기 */
+.P00316 .w2treeview_label.w2treeview_select_node { color: #FF4500;}
+.P00316 .w2treeview_label {line-height: 1.8em;}
+
+/* P00317.xml TreeView의 선택된 노드 색 강조하기 */
+.P00317 .w2treeview_label.w2treeview_select_node { color: #FF4500;}
+.P00317 .w2treeview_label {line-height: 1.8em;}
+
+/* P00320.xml 위젯의 class 'P00320_wg2' 적용하기 */
+/* 위젯 최상위 div */
+.P00320_wg2.w2widget{border-radius: 5px; box-sizing: border-box; background-color: #D2B48C; border-width: 0px}
+/* 위젯의 상단 타이틀 영역 */
+.P00320_wg2.w2widget .w2widget_title{height: auto; padding: 5px 5px 5px 6px; cursor: move; overflow: hidden; background-color: transparent;border-style: none;}
+/* 위젯의 상단 타이틀 영역의 좌측 아이콘 */
+.P00320_wg2.w2widget .w2widget_title .w2widget_icon{width: 20px; height: 20px; margin-right: 3px; display: none;}
+/* 위젯의 상단 타이틀 영역의 좌측 타이틀 문자열 */
+.P00320_wg2.w2widget .w2widget_title .w2widget_title_text{float:left; width: auto !important; font-size:12px; color: #ffffff; text-indent: 4px; line-height: 20px; letter-spacing: 1px;}
+/* 위젯의 상단 타이틀 영역의 우측 버튼 영역 */
+.P00320_wg2.w2widget .w2widget_title .w2widget_title_buttons{overflow: hidden; display: block;}
+.P00320_wg2.w2widget .w2widget_title .w2widget_title_buttons > div{width: 20px; height: 20px; margin: 0px !important; float: left; display: block;}
+/* 위젯의 상단 타이틀 영역의 우측 버튼 [고정] */
+.P00320_wg2.w2widget .w2widget_title .w2widget_title_buttons > .w2widget_btnFix{background: url('/img/icon_white_hold.png') center 50%/15px 15px no-repeat;}
+/* 위젯의 상단 타이틀 영역의 우측 버튼 [최소] */
+.P00320_wg2.w2widget .w2widget_title .w2widget_title_buttons > .w2widget_btnMinimize{background: url('/img/icon_white_mini.png') center 50%/15px 15px no-repeat;}
+/* 위젯의 상단 타이틀 영역의 우측 버튼 [최대] */
+.P00320_wg2.w2widget .w2widget_title .w2widget_title_buttons > .w2widget_btnMaximize{background: url('/img/icon_white_max.png') center 50%/15px 15px no-repeat;}
+/* 위젯의 상단 타이틀 영역의 우측 버튼 [닫기] */
+.P00320_wg2.w2widget .w2widget_title .w2widget_title_buttons > .w2widget_btnClose{background: url('/img/icon_white_close.png') center 50%/15px 15px no-repeat;}
+/* 위젯의 컨텐츠 영역 */
+.P00320_wg2.w2widget .w2widget_content{position: absolute; top: 28px; left: 5px; right: 5px; bottom:5px; border-radius: 0px 0px 3px 3px; background-color: #fff;}
+/* 위젯의 상단 타이틀 영역의 우측 버튼 [고정]이 활성화된 경우 */
+.P00320_wg2.w2widget.w2widget_fixed .w2widget_title .w2widget_title_buttons > .w2widget_btnFix{background: url('/img/icon_gray_hold.png') center 50%/15px 15px no-repeat;}
+.P00320_wg2.w2widget.w2widget_fixed .w2widget_title{cursor: inherit;}
+
+/* P00321.xml 우측 상단의 사용자 버튼 class 정의 */
+.w2widget_title_buttons > .P00321_w2widget_btnInfo{position: relative; width: 19px; height: 17px; cursor: pointer; background: url('/img/icon_info.png') center 50%/15px 15px no-repeat;}
+.w2widget_title_buttons > .P00321_w2widget_btnSetting{position: relative; width: 17px; height: 17px; cursor: pointer; background: url('/img/btn_sub_setting.png') center 50%/15px 15px no-repeat;}
+
+/* P00324.xml 컴포넌트에 class 추가 */
+.P00324_highlight,
+.P00324_highlight .w2inputCalendar_divInput {border-color:tomato !important;}
+
+/* P00373.xml InputCeldar의 입력 필드 설정*/
+.P00373 .w2inputCalendar_divInput {text-align: left; padding-left: 6px; padding-right: 26px;} 
+
+/* P00387.xml Treeview의 속성 'tooltipGroupClass' 예제 기능 비교 */
+.P00387.w2group.w2treeview_tooltip.tooltipStyleClass {border: 1px solid #c7254e;background-color: #fff; color:#c7254e;}
+.P00387.w2treeview_tooltip.tooltipStyleClass {border: 1px solid #000;background-color: #efefef; color:#000;}
+
+/* P00407.xml Textarea의 리사이즈 예제 기능 비교 */
+.P00407_resize_none { resize: none; } /* resize 사용 안함 */
+.P00407_resize_both { resize: both; } /* resize 상하, 좌우 사용 */
+.P00407_resize_horizontal { resize: horizontal; } /* resize 좌우 사용 */
+.P00407_resize_vertical { resize: vertical; } /* resize 상하 사용 */

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:w2="http://www.inswave.com/websquare"
+	xmlns:xf="http://www.w3.org/2002/xforms">
+	<head meta_screenName="[Input] 입력 필드에 'readOnly' 또는 'disabeld'가 설정된 경우에도 힌트 문자열(placeholder) 표시하기">
+		<w2:historyInfo>
+			<w2:history meta_no="01" meta_desc="최초작성" meta_date="20230904" meta_user="InswaveSystems"></w2:history>
+		</w2:historyInfo>
+		<w2:type>COMPONENT</w2:type>
+		<w2:buildDate />
+		<w2:MSA />
+		<xf:model>
+			<w2:dataCollection baseNode="map">
+			</w2:dataCollection>
+			<w2:workflowCollection />
+		</xf:model>
+		<w2:layoutInfo />
+		<w2:publicInfo method="" />
+		<script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function () {
+
+};
+]]></script>
+	</head>
+	<body ev:onpageload="scwin.onpageload">
+		<xf:group class="sub_contents" id="" style="">
+			<xf:group class="ws_example_grp_desc" id="" style="">
+				<w2:textbox escape="false" id=""
+					label="Input의 속성 'showPlaceHolderOnReadOnly' 설정 값 비교 예제입니다.&lt;br/&gt;이 속성은 속성 'placeholder'에 문자열이 설정되어있고, 속성 'readOnly'의 설정 값이 'true'이거나 속성 'disabled'의 설정 값이 'true'로 설정된 경우에 동작합니다."
+					style="">
+				</w2:textbox>
+				<w2:textbox escape="false" id=""
+					label="속성의 설정 값에 따른 동작은 다음과 같습니다.&lt;br/&gt;- true : 속성 'placeholder'의 설정 값이 입력 필드에 표시됩니다.&lt;br/&gt;- false : (기본 값) 속성 'placeholder'의 설정 값이 입력 필드에 표시되지 않습니다."
+					style="">
+				</w2:textbox>
+				<w2:textbox class="ws_example_txt_desc_info" escape="false"
+					label="각 Input 컴포넌트에 속성 'placeholder'의 설정 값이 '입력 힌트 예시입니다.'로 설정되어 있습니다." style="">
+				</w2:textbox>
+			</xf:group>
+			<xf:group class="example_div_tb_style_wrap" id="">
+				<xf:group class="example_div_tr_style" id="" style="">
+					<w2:textbox class="example_div_th_style" escape="false" id="" label='(기본 설정) showPlaceHolderOnReadOnly="false"' style="">
+					</w2:textbox>
+					<xf:group class="example_div_td_style" id="" style="">
+						<xf:group class="mb_def_box nobottom" id="" style="">
+							<xf:group class="" id="" style="">
+								<w2:span class="ws_exam_txt_list" id="" label="readOnly 설정" style="display: inline-block;width:92px;margin-right: 6px;">
+								</w2:span>
+								<xf:input id="" placeholder="입력 힌트 예시입니다." style="width:140px;" readOnly="true" showPlaceHolderOnReadOnly="false"></xf:input>
+							</xf:group>
+							<xf:group class="" id="" style="">
+								<w2:span class="ws_exam_txt_list" id="" label="disabled 설정" style="display: inline-block;width:92px;margin-right: 6px;">
+								</w2:span>
+								<xf:input id="" placeholder="입력 힌트 예시입니다." style="width:140px;" disabled="true" showPlaceHolderOnReadOnly="false"></xf:input>
+							</xf:group>
+						</xf:group>
+					</xf:group>
+				</xf:group>
+				<xf:group class="example_div_tr_style" id="" style="">
+					<w2:textbox class="example_div_th_style" escape="false" id="" label='showPlaceHolderOnReadOnly="true"' style="">
+					</w2:textbox>
+					<xf:group class="example_div_td_style" id="" style="">
+						<xf:group class="mb_def_box nobottom" id="" style="">
+							<xf:group class="" id="" style="">
+								<w2:span class="ws_exam_txt_list" id="" label="readOnly 설정" style="display: inline-block;width:92px;margin-right: 6px;">
+								</w2:span>
+								<xf:input id="" placeholder="입력 힌트 예시입니다." readOnly="true" style="width:140px;" showPlaceHolderOnReadOnly="true"></xf:input>
+							</xf:group>
+							<xf:group class="" id="" style="">
+								<w2:span class="ws_exam_txt_list" id="" label="disabled 설정" style="display: inline-block;width:92px;margin-right: 6px;">
+								</w2:span>
+								<xf:input disabled="true" id="" placeholder="입력 힌트 예시입니다." style="width:140px;" showPlaceHolderOnReadOnly="true"></xf:input>
+							</xf:group>
+						</xf:group>
+					</xf:group>
+				</xf:group>
+			</xf:group>
+		</xf:group>
+	</body>
+</html>

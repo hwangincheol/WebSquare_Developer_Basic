@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+        <w2:type>COMPONENT</w2:type>
+        <w2:buildDate/>
+        <w2:MSA/>
+        <xf:model>
+            <w2:dataCollection baseNode="map">
+				<w2:dataList id="dataList1" baseNode="list" style="" repeatNode="map">
+					<w2:columnInfo>
+						<w2:column id="label" name="label" dataType="text"></w2:column>
+						<w2:column id="series1" name="value" dataType="number"></w2:column>
+					</w2:columnInfo>
+					<w2:data use="true">
+						<w2:row>
+							<label><![CDATA[Website Visits]]></label>
+							<series1><![CDATA[1460000]]></series1>
+						</w2:row>
+						<w2:row>
+							<label><![CDATA[Programme Details Section Visits]]></label>
+							<series1><![CDATA[930000]]></series1>
+						</w2:row>
+						<w2:row>
+							<label><![CDATA[Attempts to Register]]></label>
+							<series1><![CDATA[540000]]></series1>
+						</w2:row>
+						<w2:row>
+							<label><![CDATA[Successful Registrations]]></label>
+							<series1><![CDATA[210000]]></series1>
+						</w2:row>
+						<w2:row>
+							<label><![CDATA[Logged In]]></label>
+							<series1><![CDATA[190000]]></series1>
+						</w2:row>
+						<w2:row>
+							<label><![CDATA[Purchased on Introductory Offers]]></label>
+							<series1><![CDATA[120000]]></series1>
+						</w2:row>
+					</w2:data>
+				</w2:dataList>
+				<w2:dataList baseNode="list" id="dataList2" style="" saveRemovedData="true" repeatNode="map">
+					<w2:columnInfo>
+						<w2:column id="label" name="label" dataType="text"></w2:column>
+						<w2:column id="value" name="value" dataType="text"></w2:column>
+					</w2:columnInfo>
+					<w2:data use="true">
+						<w2:row>
+							<label><![CDATA[Website Visits]]></label>
+							
+							<value><![CDATA[1460000]]></value>
+						</w2:row>
+						<w2:row>
+							<label><![CDATA[Programme Details Section Visits]]></label>
+							<value><![CDATA[930000]]></value>
+							
+						</w2:row>
+						<w2:row>
+							<label><![CDATA[Attempts to Register]]></label>
+							<value><![CDATA[540000]]></value>
+							
+						</w2:row>
+						<w2:row>
+							<label><![CDATA[Successful Registrations]]></label>
+							<value><![CDATA[210000]]></value>
+							
+						</w2:row>
+						<w2:row>
+							<label><![CDATA[Logged In]]></label>
+							<value><![CDATA[190000]]></value>
+							
+						</w2:row>
+						<w2:row>
+							<label><![CDATA[Purchased on Introductory Offers]]></label>
+							<value><![CDATA[120000]]></value>
+							
+						</w2:row>
+					</w2:data>
+				</w2:dataList>
+			</w2:dataCollection>
+            <w2:workflowCollection/>
+        </xf:model>
+        <w2:layoutInfo/>
+        <w2:publicInfo method=""/>
+        <script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function() {
+	
+};
+]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload">
+    	<xf:group class="sub_contents" id="" style="">
+			<xf:group class="pgtbox" id="" style="">
+				<w2:textbox class="pgt_tit" id="" label="Publishing Template - FwFunnelChart" style=""></w2:textbox>
+			</xf:group>
+			<xf:group id="" class="titbox"><w2:textbox style="" id="" label="FwFunnelChart는 FusionWidget Wrapper 컴포넌트입니다. &lt;br/&gt;FusionWidgets의 데이터는 실제 차트에 보여줄 값과 스타일 옵션들이 하나로 결합되어 있는 형태입니다. &lt;br/&gt;WebSquare5에서는 이를 분리하여 차트를 쉽게 Customizing 할 수 있도록 API를 지원합니다." class="">
+			</w2:textbox></xf:group><xf:group style="border:1px dashed #ccc;" id="" class="msgbox">
+				<xf:group id="" class="tbl"><xf:group tagname="table" style="" id="" class="w2tb tbl">
+					<w2:attributes>
+						<w2:summary></w2:summary>
+					</w2:attributes>
+					<xf:group tagname="colgroup">
+						<xf:group tagname="col" style="width:30.00%"></xf:group>
+						<xf:group tagname="col" style="width:70.00%"></xf:group>
+					</xf:group>
+					<xf:group tagname="tr" style="">
+						<xf:group tagname="th" style="" class="w2tb_th">
+							FwBulletChart Sample1
+							<w2:attributes>
+								<w2:colspan>2</w2:colspan>
+								<w2:rowspan>1</w2:rowspan>
+							</w2:attributes>
+						</xf:group>
+					</xf:group>
+					<xf:group tagname="tr">
+						<xf:group tagname="td" style="" class="w2tb_td">
+							<w2:attributes>
+								<w2:colspan></w2:colspan>
+								<w2:rowspan></w2:rowspan>
+							</w2:attributes>
+							<w2:textbox tagname="label" for="basicip" style="" id="" label="dataList 확인" class="formguide"></w2:textbox>
+							<w2:gridView fixedColumnWithHidden="true" dataList="dataList1" useShiftKey="true" style="width:100%; height:252px;" scrollByColumn="false" id="gridView1" autoFit="allColumn" class="gvw">
+								<w2:header style="" id="header1">
+									<w2:row style="" id="row2">
+										<w2:column width="70" style="height:20px" inputType="text" id="column7" value="label" blockSelect="false">
+										</w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="column3" value="value" blockSelect="false">
+										</w2:column>
+									</w2:row>
+								</w2:header>
+								<w2:gBody style="" id="gBody4">
+									<w2:row style="" id="row5">
+										<w2:column width="70" style="height:20px" inputType="text" id="label" blockSelect="false"></w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="series1" blockSelect="false"></w2:column>
+									</w2:row>
+								</w2:gBody>
+							</w2:gridView>
+						</xf:group>
+						<xf:group tagname="td" style="" class="w2tb_td">
+							<w2:attributes>
+								<w2:colspan></w2:colspan>
+								<w2:rowspan></w2:rowspan>
+							</w2:attributes>
+							<w2:textbox tagname="label" for="basicip" style="" id="" label="FusionChart 확인" class="formguide"></w2:textbox>
+							<w2:fwFunnelChart ref="data:dataList1" seriesColumns="[['series1']]" labelNode="label" accessibility="true" seriesType="advanced" valueNode="" style="width: 500px;height: 250px;" id="fwFunnelChart1" seriesNode="">
+							</w2:fwFunnelChart>
+						</xf:group>
+					</xf:group>
+				</xf:group></xf:group>
+			<xf:group id="" class="tbl"><xf:group tagname="table" style="" id="" class="w2tb tbl">
+					<w2:attributes>
+						<w2:summary></w2:summary>
+					</w2:attributes>
+					<xf:group tagname="colgroup">
+						<xf:group tagname="col" style="width:30.00%"></xf:group>
+						<xf:group tagname="col" style="width:70.00%"></xf:group>
+					</xf:group>
+					<xf:group tagname="tr" style="">
+						<xf:group tagname="th" style="" class="w2tb_th">
+							FwBulletChart Sample2
+							<w2:attributes>
+								<w2:colspan>2</w2:colspan>
+								<w2:rowspan>1</w2:rowspan>
+							</w2:attributes>
+						</xf:group>
+					</xf:group>
+					<xf:group tagname="tr">
+						<xf:group tagname="td" style="" class="w2tb_td">
+							<w2:attributes>
+								<w2:colspan></w2:colspan>
+								<w2:rowspan></w2:rowspan>
+							</w2:attributes>
+							<w2:textbox tagname="label" for="basicip" style="" id="" label="dataList 확인" class="formguide"></w2:textbox>
+							<w2:gridView fixedColumnWithHidden="true" dataList="dataList2" useShiftKey="true" scrollByColumn="false" style="width:100%; height:252px;" id="gridView2" autoFit="allColumn" class="gvw">
+								<w2:header style="" id="header1">
+									<w2:row style="" id="row2">
+										<w2:column width="70" style="height:20px" inputType="text" id="column9" value="label" blockSelect="false">
+										</w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="column3" value="value" blockSelect="false">
+										</w2:column>
+									</w2:row>
+								</w2:header>
+								<w2:gBody style="" id="gBody4">
+									<w2:row style="" id="row5">
+										<w2:column width="70" style="height:20px" inputType="text" id="label" blockSelect="false"></w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="value" blockSelect="false"></w2:column>
+									</w2:row>
+								</w2:gBody>
+							</w2:gridView>
+						</xf:group>
+						<xf:group tagname="td" style="" class="w2tb_td">
+							<w2:attributes>
+								<w2:colspan></w2:colspan>
+								<w2:rowspan></w2:rowspan>
+							</w2:attributes>
+							<w2:textbox tagname="label" for="basicip" style="" id="" label="FusionChart 확인" class="formguide"></w2:textbox>
+							<w2:fwFunnelChart labelNode="label" ref="data:dataList2" seriesColumns="" accessibility="true" seriesType="simple" style="width: 500px;height: 250px;" valueNode="value" id="fwFunnelChart2" seriesNode="">
+							</w2:fwFunnelChart>
+						</xf:group>
+					</xf:group>
+				</xf:group></xf:group></xf:group>
+			<xf:group adaptiveThreshold="" class="msgbox" id="" style="">
+				<xf:group id="" class="titbox"><w2:textbox style="" id="" label="Tip" class="" tagname="h3"></w2:textbox></xf:group><w2:textbox class="txt_info" id="" label="DataCollection 만들고 디자인뷰에서 해당컴포넌트를 더블클릭하여 ref, labelNode, valueNode 등 연결해야 됩니다."
+					style="">
+				</w2:textbox>
+			</xf:group>
+		</xf:group>
+    </body>
+</html>

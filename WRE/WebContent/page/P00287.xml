@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:w2="http://www.inswave.com/websquare"
+	xmlns:xf="http://www.w3.org/2002/xforms">
+	<head meta_screenName="[GridView] 속성 'mergeCell'의 설정 값 비교하기" meta_type="메인">
+		<w2:historyInfo>
+			<w2:history meta_no="01" meta_desc="최초작성" meta_date="20230711" meta_user="InswaveSystems"></w2:history>
+		</w2:historyInfo>
+		<w2:type>COMPONENT</w2:type>
+		<w2:buildDate />
+		<w2:MSA />
+		<xf:model>
+			<w2:dataCollection baseNode="map">
+				<w2:dataList baseNode="list" id="dlt_statistic" repeatNode="map" style="" valueAttribute="">
+					<w2:columnInfo>
+						<w2:column dataType="text" id="category1" name="대분류"></w2:column>
+						<w2:column dataType="text" id="category2" name="중분류"></w2:column>
+						<w2:column dataType="text" id="quarter1" name="Q1"></w2:column>
+						<w2:column dataType="text" id="quarter2" name="Q2"></w2:column>
+						<w2:column dataType="text" id="quarter3" name="Q3"></w2:column>
+						<w2:column dataType="text" id="quarter4" name="Q4"></w2:column>
+					</w2:columnInfo>
+					<w2:data use="true" xmlns="">
+						<w2:row>
+							<category1><![CDATA[소설]]></category1>
+							<category2><![CDATA[국내]]></category2>
+							<quarter1><![CDATA[100]]></quarter1>
+							<quarter2><![CDATA[100]]></quarter2>
+							<quarter3><![CDATA[100]]></quarter3>
+							<quarter4><![CDATA[100]]></quarter4>
+						</w2:row>
+						<w2:row>
+							<category1><![CDATA[소설]]></category1>
+							<category2><![CDATA[국내]]></category2>
+							<quarter1><![CDATA[300]]></quarter1>
+							<quarter2><![CDATA[200]]></quarter2>
+							<quarter3><![CDATA[200]]></quarter3>
+							<quarter4><![CDATA[100]]></quarter4>
+						</w2:row>
+						<!--
+							<w2:row>
+							<category1><![CDATA[소설]]></category1>
+							<category2><![CDATA[국외]]></category2>
+							<quarter1><![CDATA[400]]></quarter1>
+							<quarter2><![CDATA[100]]></quarter2>
+							<quarter3><![CDATA[200]]></quarter3>
+							<quarter4><![CDATA[100]]></quarter4>
+							</w2:row>
+						-->
+						<w2:row>
+							<category1><![CDATA[소설]]></category1>
+							<category2><![CDATA[국외]]></category2>
+							<quarter1><![CDATA[500]]></quarter1>
+							<quarter2><![CDATA[200]]></quarter2>
+							<quarter3><![CDATA[200]]></quarter3>
+							<quarter4><![CDATA[500]]></quarter4>
+						</w2:row>
+						<w2:row>
+							<category1><![CDATA[인문]]></category1>
+							<category2><![CDATA[인문]]></category2>
+							<quarter1><![CDATA[600]]></quarter1>
+							<quarter2><![CDATA[600]]></quarter2>
+							<quarter3><![CDATA[100]]></quarter3>
+							<quarter4><![CDATA[700]]></quarter4>
+						</w2:row>
+						<w2:row>
+							<category1><![CDATA[인문]]></category1>
+							<category2><![CDATA[인문]]></category2>
+							<quarter1><![CDATA[100]]></quarter1>
+							<quarter2><![CDATA[200]]></quarter2>
+							<quarter3><![CDATA[100]]></quarter3>
+							<quarter4><![CDATA[800]]></quarter4>
+						</w2:row>
+					</w2:data>
+				</w2:dataList>
+			</w2:dataCollection>
+			<w2:workflowCollection />
+		</xf:model>
+		<w2:layoutInfo />
+		<w2:publicInfo method="" />
+		<script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function () {
+
+};
+]]></script>
+	</head>
+	<body ev:onpageload="scwin.onpageload">
+		<xf:group class="sub_contents" id="" style="">
+			<xf:group class="ws_example_grp_desc" id="" style="">
+				<w2:textbox escape="false" id=""
+					label="GridView의 병합 기능을 제공하는 속성 'mergeCells'의 설정 값 비교 예제입니다.&lt;br/&gt;GridView에 동일한 DataList를 연결하였습니다.&lt;br/&gt;설정 값에 따라 GridView에 출력되는 데이터의 모양을 확인합니다."
+					style=""></w2:textbox>
+				<xf:group id="" style="" tagname="details">
+					<w2:textbox class="" id="" label="설정 값에 따른 기능 설명 보기" style="" tagname="summary"></w2:textbox>
+					<w2:textbox class="" escape="false" id=""
+						label="- never: 자동 병합을 사용하지 않음.&lt;br/&gt;- bycol: column 내에서 연속적으로 데이터가 같은 cell들을 병합.&lt;br/&gt;- byrow: row 내에서 연속적으로 데이터가 같은 cell들을 병합.&lt;br/&gt;- bycolrec: 'bycol' 조건을 적용하고, 병합되지 않은 cell들을 대상으로 'byrow' 조건을 적용.&lt;br/&gt;- byrowrec: 'byrow' 조건을 적용하고, 병합되지 않은 cell들을 대상으로 'bycol을' 조건을 적용.&lt;br/&gt;- byrestriccol: column 내에서 연속적으로 데이터가 같은 cell을 병합. 두 번째 컬럼부터 왼쪽의 컬럼이 병합된 경우만 적용.&lt;br/&gt;- byrestricrow: row 내에서 연속적으로 데이터가 같은 cell을 병합. 두 번째 행부터 상위(현재 행-1) 행이 병합된 경우만 적용."
+						style="margin-bottom: 6px;">
+					</w2:textbox>
+				</xf:group>
+			</xf:group>
+			<xf:group class="example_div_tb_style_wrap mb_def" id="">
+				<xf:group class="example_div_tr_style" id="" style="">
+					<w2:textbox class="example_div_th_style" escape="false" id="" label="(기본 값) 속성 'mergeCells'을 'never'로 지정" style="">
+					</w2:textbox>
+					<xf:group class="example_div_td_style" id="" style="">
+						<w2:textbox class="ws5_example_txt_normal" escape="false" id="" label="병합을 사용하지 않음." style="">
+						</w2:textbox>
+						<w2:gridView applyAllColumnStyle="false" autoFit="allColumn" autoFitMinWidth="252" class="gvw"
+							dataList="data:dlt_statistic" defaultCellHeight="26" id="" ignoreCellClick="false" ignoreToggleOnDisabled="false"
+							keepDefaultColumnWidth="true" mergeCells="never" rowNumVisible="true" rowNumWidth="28" scrollByColumn="false"
+							scrollByColumnAdaptive="false" style="height: 100px;" summaryAuto="false" summaryOnlyAuto="false" useShiftKey="true"
+							visibleRowNum="all" readOnly="true">
+							<w2:caption id="caption3" style="" value="this is a grid caption."></w2:caption>
+							<w2:header id="header3" style="">
+								<w2:row id="row5" style="">
+									<w2:column blockSelect="false" displayMode="label" id="column59" inputType="text" value="대분류" width="50">
+									</w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="column57" inputType="text" value="중분류" width="50">
+									</w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="column55" inputType="text" value="Q1" width="38">
+									</w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="column53" inputType="text" value="Q2" width="38">
+									</w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="column51" inputType="text" value="Q3" width="38">
+									</w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="column49" inputType="text" value="Q4" width="38">
+									</w2:column>
+								</w2:row>
+							</w2:header>
+							<w2:gBody id="gBody3" style="">
+								<w2:row id="row6" style="">
+									<w2:column blockSelect="false" displayMode="label" id="category1" inputType="text" width="50"></w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="category2" inputType="text" width="50"></w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="quarter1" inputType="text" width="38"></w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="quarter2" inputType="text" width="38"></w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="quarter3" inputType="text" width="38"></w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="quarter4" inputType="text" width="38"></w2:column>
+								</w2:row>
+							</w2:gBody>
+						</w2:gridView>
+					</xf:group>
+				</xf:group>
+				<xf:group class="example_div_tr_style" id="" style="">
+					<w2:textbox class="example_div_th_style" escape="false" id="" label="속성 'mergeCells'을 'bycol'로 지정" style=""></w2:textbox>
+					<xf:group class="example_div_td_style" id="" style="">
+						<w2:textbox class="ws5_example_txt_normal" escape="false" id="" label="column 내에서 연속적으로 데이터가 같은 cell들을 병합." style=""></w2:textbox>
+						<w2:gridView applyAllColumnStyle="false" autoFit="allColumn" autoFitMinWidth="252" class="gvw"
+							dataList="data:dlt_statistic" defaultCellHeight="26" id="" ignoreCellClick="false" ignoreToggleOnDisabled="false"
+							keepDefaultColumnWidth="true" mergeCells="bycol" rowNumVisible="true" rowNumWidth="28" scrollByColumn="false"
+							scrollByColumnAdaptive="false" style="height: 100px;" summaryAuto="false" summaryOnlyAuto="false" useShiftKey="true"
+							visibleRowNum="all" readOnly="true">
+							<w2:caption id="caption3" style="" value="this is a grid caption."></w2:caption>
+							<w2:header id="header3" style="">
+								<w2:row id="row5" style="">
+									<w2:column blockSelect="false" displayMode="label" id="column59" inputType="text" value="대분류" width="50">
+									</w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="column57" inputType="text" value="중분류" width="50">
+									</w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="column55" inputType="text" value="Q1" width="38">
+									</w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="column53" inputType="text" value="Q2" width="38">
+									</w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="column51" inputType="text" value="Q3" width="38">
+									</w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="column49" inputType="text" value="Q4" width="38">
+									</w2:column>
+								</w2:row>
+							</w2:header>
+							<w2:gBody id="gBody3" style="">
+								<w2:row id="row6" style="">
+									<w2:column blockSelect="false" displayMode="label" id="category1" inputType="text" width="50"></w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="category2" inputType="text" width="50"></w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="quarter1" inputType="text" width="38"></w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="quarter2" inputType="text" width="38"></w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="quarter3" inputType="text" width="38"></w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="quarter4" inputType="text" width="38"></w2:column>
+								</w2:row>
+							</w2:gBody>
+						</w2:gridView>
+					</xf:group>
+				</xf:group>
+				<xf:group class="example_div_tr_style" id="" style="">
+					<w2:textbox class="example_div_th_style" escape="false" id="" label="속성 'mergeCells'을 'byrow'로 지정" style=""></w2:textbox>
+					<xf:group class="example_div_td_style" id="" style="">
+						<w2:textbox class="ws5_example_txt_normal" escape="false" id="" label="row 내에서 연속적으로 데이터가 같은 cell들을 병합." style=""></w2:textbox>
+						<w2:gridView applyAllColumnStyle="false" autoFit="allColumn" autoFitMinWidth="252" class="gvw"
+							dataList="data:dlt_statistic" defaultCellHeight="26" id="" ignoreCellClick="false" ignoreToggleOnDisabled="false"
+							keepDefaultColumnWidth="true" mergeCells="byrow" rowNumVisible="true" rowNumWidth="28" scrollByColumn="false"
+							scrollByColumnAdaptive="false" style="height: 100px;" summaryAuto="false" summaryOnlyAuto="false" useShiftKey="true"
+							visibleRowNum="all" readOnly="true">
+							<w2:caption id="caption3" style="" value="this is a grid caption."></w2:caption>
+							<w2:header id="header3" style="">
+								<w2:row id="row5" style="">
+									<w2:column blockSelect="false" displayMode="label" id="column59" inputType="text" value="대분류" width="50">
+									</w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="column57" inputType="text" value="중분류" width="50">
+									</w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="column55" inputType="text" value="Q1" width="38">
+									</w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="column53" inputType="text" value="Q2" width="38">
+									</w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="column51" inputType="text" value="Q3" width="38">
+									</w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="column49" inputType="text" value="Q4" width="38">
+									</w2:column>
+								</w2:row>
+							</w2:header>
+							<w2:gBody id="gBody3" style="">
+								<w2:row id="row6" style="">
+									<w2:column blockSelect="false" displayMode="label" id="category1" inputType="text" width="50"></w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="category2" inputType="text" width="50"></w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="quarter1" inputType="text" width="38"></w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="quarter2" inputType="text" width="38"></w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="quarter3" inputType="text" width="38"></w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="quarter4" inputType="text" width="38"></w2:column>
+								</w2:row>
+							</w2:gBody>
+						</w2:gridView>
+					</xf:group>
+				</xf:group>
+				<xf:group class="example_div_tr_style" id="" style="">
+					<w2:textbox class="example_div_th_style" escape="false" id="" label="속성 'mergeCells'을 'bycolrec'로 지정" style=""></w2:textbox>
+					<xf:group class="example_div_td_style" id="" style="">
+						<w2:textbox class="ws5_example_txt_normal" escape="false" id=""
+							label="'bycol' 조건을 적용하고, 병합되지 않은 cell들을 대상으로 'byrow' 조건을 적용." style=""></w2:textbox>
+						<w2:gridView applyAllColumnStyle="false" autoFit="allColumn" autoFitMinWidth="252" class="gvw"
+							dataList="data:dlt_statistic" defaultCellHeight="26" id="" ignoreCellClick="false" ignoreToggleOnDisabled="false"
+							keepDefaultColumnWidth="true" mergeCells="bycolrec" rowNumVisible="true" rowNumWidth="28" scrollByColumn="false"
+							scrollByColumnAdaptive="false" style="height: 100px;" summaryAuto="false" summaryOnlyAuto="false" useShiftKey="true"
+							visibleRowNum="all" readOnly="true">
+							<w2:caption id="caption3" style="" value="this is a grid caption."></w2:caption>
+							<w2:header id="header3" style="">
+								<w2:row id="row5" style="">
+									<w2:column blockSelect="false" displayMode="label" id="column59" inputType="text" value="대분류" width="50">
+									</w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="column57" inputType="text" value="중분류" width="50">
+									</w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="column55" inputType="text" value="Q1" width="38">
+									</w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="column53" inputType="text" value="Q2" width="38">
+									</w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="column51" inputType="text" value="Q3" width="38">
+									</w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="column49" inputType="text" value="Q4" width="38">
+									</w2:column>
+								</w2:row>
+							</w2:header>
+							<w2:gBody id="gBody3" style="">
+								<w2:row id="row6" style="">
+									<w2:column blockSelect="false" displayMode="label" id="category1" inputType="text" width="50"></w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="category2" inputType="text" width="50"></w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="quarter1" inputType="text" width="38"></w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="quarter2" inputType="text" width="38"></w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="quarter3" inputType="text" width="38"></w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="quarter4" inputType="text" width="38"></w2:column>
+								</w2:row>
+							</w2:gBody>
+						</w2:gridView>
+					</xf:group>
+				</xf:group>
+				<xf:group class="example_div_tr_style" id="" style="">
+					<w2:textbox class="example_div_th_style" escape="false" id="" label="속성 'mergeCells'을 'byrowrec'로 지정" style=""></w2:textbox>
+					<xf:group class="example_div_td_style" id="" style="">
+						<w2:textbox class="ws5_example_txt_normal" escape="false" id=""
+							label="'byrow' 조건을 적용하고, 병합되지 않은 cell들을 대상으로 'bycol을' 조건을 적용." style=""></w2:textbox>
+						<w2:gridView applyAllColumnStyle="false" autoFit="allColumn" autoFitMinWidth="252" class="gvw"
+							dataList="data:dlt_statistic" defaultCellHeight="26" id="" ignoreCellClick="false" ignoreToggleOnDisabled="false"
+							keepDefaultColumnWidth="true" mergeCells="byrowrec" rowNumVisible="true" rowNumWidth="28" scrollByColumn="false"
+							scrollByColumnAdaptive="false" style="height: 100px;" summaryAuto="false" summaryOnlyAuto="false" useShiftKey="true"
+							visibleRowNum="all" readOnly="true">
+							<w2:caption id="caption3" style="" value="this is a grid caption."></w2:caption>
+							<w2:header id="header3" style="">
+								<w2:row id="row5" style="">
+									<w2:column blockSelect="false" displayMode="label" id="column59" inputType="text" value="대분류" width="50">
+									</w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="column57" inputType="text" value="중분류" width="50">
+									</w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="column55" inputType="text" value="Q1" width="38">
+									</w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="column53" inputType="text" value="Q2" width="38">
+									</w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="column51" inputType="text" value="Q3" width="38">
+									</w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="column49" inputType="text" value="Q4" width="38">
+									</w2:column>
+								</w2:row>
+							</w2:header>
+							<w2:gBody id="gBody3" style="">
+								<w2:row id="row6" style="">
+									<w2:column blockSelect="false" displayMode="label" id="category1" inputType="text" width="50"></w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="category2" inputType="text" width="50"></w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="quarter1" inputType="text" width="38"></w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="quarter2" inputType="text" width="38"></w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="quarter3" inputType="text" width="38"></w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="quarter4" inputType="text" width="38"></w2:column>
+								</w2:row>
+							</w2:gBody>
+						</w2:gridView>
+					</xf:group>
+				</xf:group>
+				<xf:group class="example_div_tr_style" id="" style="">
+					<w2:textbox class="example_div_th_style" escape="false" id="" label="속성 'mergeCells'을 'byrestriccol'로 지정" style=""></w2:textbox>
+					<xf:group class="example_div_td_style" id="" style="">
+						<w2:textbox class="ws5_example_txt_normal" escape="false" id=""
+							label="column 내에서 연속적으로 데이터가 같은 cell을 병합. 두 번째 컬럼부터 왼쪽의 컬럼이 병합된 경우만 적용." style=""></w2:textbox>
+						<w2:gridView applyAllColumnStyle="false" autoFit="allColumn" autoFitMinWidth="252" class="gvw"
+							dataList="data:dlt_statistic" defaultCellHeight="26" id="" ignoreCellClick="false" ignoreToggleOnDisabled="false"
+							keepDefaultColumnWidth="true" mergeCells="byrestriccol" rowNumVisible="true" rowNumWidth="28" scrollByColumn="false"
+							scrollByColumnAdaptive="false" style="height: 100px;" summaryAuto="false" summaryOnlyAuto="false" useShiftKey="true"
+							visibleRowNum="all" readOnly="true">
+							<w2:caption id="caption3" style="" value="this is a grid caption."></w2:caption>
+							<w2:header id="header3" style="">
+								<w2:row id="row5" style="">
+									<w2:column blockSelect="false" displayMode="label" id="column59" inputType="text" value="대분류" width="50">
+									</w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="column57" inputType="text" value="중분류" width="50">
+									</w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="column55" inputType="text" value="Q1" width="38">
+									</w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="column53" inputType="text" value="Q2" width="38">
+									</w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="column51" inputType="text" value="Q3" width="38">
+									</w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="column49" inputType="text" value="Q4" width="38">
+									</w2:column>
+								</w2:row>
+							</w2:header>
+							<w2:gBody id="gBody3" style="">
+								<w2:row id="row6" style="">
+									<w2:column blockSelect="false" displayMode="label" id="category1" inputType="text" width="50"></w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="category2" inputType="text" width="50"></w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="quarter1" inputType="text" width="38"></w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="quarter2" inputType="text" width="38"></w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="quarter3" inputType="text" width="38"></w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="quarter4" inputType="text" width="38"></w2:column>
+								</w2:row>
+							</w2:gBody>
+						</w2:gridView>
+					</xf:group>
+				</xf:group>
+				<xf:group class="example_div_tr_style" id="" style="">
+					<w2:textbox class="example_div_th_style" escape="false" id="" label="속성 'mergeCells'을 'byrestricrow'로 지정" style=""></w2:textbox>
+					<xf:group class="example_div_td_style" id="" style="">
+						<w2:textbox class="ws5_example_txt_normal" escape="false" id=""
+							label="row 내에서 연속적으로 데이터가 같은 cell을 병합. 두 번째 행부터 상위(현재 행-1) 행이 병합된 경우만 적용." style=""></w2:textbox>
+						<w2:gridView applyAllColumnStyle="false" autoFit="allColumn" autoFitMinWidth="252" class="gvw"
+							dataList="data:dlt_statistic" defaultCellHeight="26" id="" ignoreCellClick="false" ignoreToggleOnDisabled="false"
+							keepDefaultColumnWidth="true" mergeCells="byrestricrow" rowNumVisible="true" rowNumWidth="28" scrollByColumn="false"
+							scrollByColumnAdaptive="false" style="height: 100px;" summaryAuto="false" summaryOnlyAuto="false" useShiftKey="true"
+							visibleRowNum="all" readOnly="true">
+							<w2:caption id="caption3" style="" value="this is a grid caption."></w2:caption>
+							<w2:header id="header3" style="">
+								<w2:row id="row5" style="">
+									<w2:column blockSelect="false" displayMode="label" id="column59" inputType="text" value="대분류" width="50">
+									</w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="column57" inputType="text" value="중분류" width="50">
+									</w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="column55" inputType="text" value="Q1" width="38">
+									</w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="column53" inputType="text" value="Q2" width="38">
+									</w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="column51" inputType="text" value="Q3" width="38">
+									</w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="column49" inputType="text" value="Q4" width="38">
+									</w2:column>
+								</w2:row>
+							</w2:header>
+							<w2:gBody id="gBody3" style="">
+								<w2:row id="row6" style="">
+									<w2:column blockSelect="false" displayMode="label" id="category1" inputType="text" width="50"></w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="category2" inputType="text" width="50"></w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="quarter1" inputType="text" width="38"></w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="quarter2" inputType="text" width="38"></w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="quarter3" inputType="text" width="38"></w2:column>
+									<w2:column blockSelect="false" displayMode="label" id="quarter4" inputType="text" width="38"></w2:column>
+								</w2:row>
+							</w2:gBody>
+						</w2:gridView>
+					</xf:group>
+				</xf:group>
+			</xf:group>
+		</xf:group>
+	</body>
+</html>

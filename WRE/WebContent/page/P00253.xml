@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:w2="http://www.inswave.com/websquare"
+	xmlns:xf="http://www.w3.org/2002/xforms">
+	<head>
+		<w2:historyInfo>
+			<w2:history meta_no="01" meta_desc="최초작성" meta_date="20230320" meta_user="InswaveSystems" ></w2:history>
+		</w2:historyInfo>
+		<w2:type>COMPONENT</w2:type>
+		<w2:buildDate />
+		<w2:MSA />
+		<xf:model>
+			<w2:dataCollection baseNode="map">	
+				<w2:dataList baseNode="list" repeatNode="map" id="dlt_dataList1" saveRemovedData="true">
+					<w2:columnInfo>
+						<w2:column id="name" name="name1" dataType="text"></w2:column>
+						<w2:column id="Code" name="name2" dataType="text"></w2:column>
+						<w2:column id="depth" name="name3" dataType="text"></w2:column>
+					</w2:columnInfo>
+					<w2:data use="true">
+						<w2:row>
+							<name><![CDATA[Asia]]></name>
+							<Code><![CDATA[AS]]></Code>
+							<depth><![CDATA[1]]></depth>
+						</w2:row>
+						<w2:row>
+							<name><![CDATA[Korea]]></name>
+							<Code><![CDATA[KO]]></Code>
+							<depth><![CDATA[2]]></depth>
+						</w2:row>
+						<w2:row>
+							<name><![CDATA[Seoul]]></name>
+							<Code><![CDATA[SE]]></Code>
+							<depth><![CDATA[3]]></depth>
+						</w2:row>
+						<w2:row>
+							<name><![CDATA[Busan]]></name>
+							<Code><![CDATA[BU]]></Code>
+							<depth><![CDATA[3]]></depth>
+						</w2:row>
+						<w2:row>
+							<name><![CDATA[Japan]]></name>
+							<Code><![CDATA[JP]]></Code>
+							<depth><![CDATA[2]]></depth>
+						</w2:row>
+						<w2:row>
+							<name><![CDATA[Tokyo]]></name>
+							<Code><![CDATA[TO]]></Code>
+							<depth><![CDATA[3]]></depth>
+						</w2:row>
+						<w2:row>
+							<name><![CDATA[Osaka]]></name>
+							<Code><![CDATA[OS]]></Code>
+							<depth><![CDATA[3]]></depth>
+						</w2:row>
+						<w2:row>
+							<name><![CDATA[China]]></name>
+							<Code><![CDATA[CH]]></Code>
+							<depth><![CDATA[2]]></depth>
+						</w2:row>
+						<w2:row>
+							<name><![CDATA[Beijing]]></name>
+							<Code><![CDATA[BJ]]></Code>
+							<depth><![CDATA[3]]></depth>
+						</w2:row>
+						<w2:row>
+							<name><![CDATA[Shanghai]]></name>
+							<Code><![CDATA[SG]]></Code>
+							<depth><![CDATA[3]]></depth>
+						</w2:row>
+						<w2:row>
+							<name><![CDATA[Europe]]></name>
+							<Code><![CDATA[EU]]></Code>
+							<depth><![CDATA[1]]></depth>
+						</w2:row>
+						<w2:row>
+							<name><![CDATA[United Kingdom]]></name>
+							<Code><![CDATA[UK]]></Code>
+							<depth><![CDATA[2]]></depth>
+						</w2:row>
+						<w2:row>
+							<name><![CDATA[Manchester]]></name>
+							<Code><![CDATA[MC]]></Code>
+							<depth><![CDATA[3]]></depth>
+						</w2:row>
+						<w2:row>
+							<name><![CDATA[Liverpool]]></name>
+							<Code><![CDATA[LP]]></Code>
+							<depth><![CDATA[3]]></depth>
+						</w2:row>
+						<w2:row>
+							<name><![CDATA[France]]></name>
+							<Code><![CDATA[FR]]></Code>
+							<depth><![CDATA[2]]></depth>
+						</w2:row>
+						<w2:row>
+							<name><![CDATA[Paris]]></name>
+							<Code><![CDATA[PR]]></Code>
+							<depth><![CDATA[3]]></depth>
+						</w2:row>
+						<w2:row>
+							<name><![CDATA[Marseille]]></name>
+							<Code><![CDATA[MS]]></Code>
+							<depth><![CDATA[3]]></depth>
+						</w2:row>
+						<w2:row>
+							<name><![CDATA[German]]></name>
+							<Code><![CDATA[GE]]></Code>
+							<depth><![CDATA[2]]></depth>
+						</w2:row>
+						<w2:row>
+							<name><![CDATA[Berlin]]></name>
+							<Code><![CDATA[BL]]></Code>
+							<depth><![CDATA[3]]></depth>
+						</w2:row>
+						<w2:row>
+							<name><![CDATA[Hamburg]]></name>
+							<Code><![CDATA[HB]]></Code>
+							<depth><![CDATA[3]]></depth>
+						</w2:row>
+						<w2:row>
+							<name><![CDATA[America]]></name>
+							<Code><![CDATA[AM]]></Code>
+							<depth><![CDATA[1]]></depth>
+						</w2:row>
+						<w2:row>
+							<name><![CDATA[Canada]]></name>
+							<Code><![CDATA[CA]]></Code>
+							<depth><![CDATA[2]]></depth>
+						</w2:row>
+						<w2:row>
+							<name><![CDATA[Toronto]]></name>
+							<Code><![CDATA[TT]]></Code>
+							<depth><![CDATA[3]]></depth>
+						</w2:row>
+						<w2:row>
+							<name><![CDATA[Montreal]]></name>
+							<Code><![CDATA[MT]]></Code>
+							<depth><![CDATA[3]]></depth>
+						</w2:row>
+						<w2:row>
+							<name><![CDATA[Mexico]]></name>
+							<Code><![CDATA[Me]]></Code>
+							<depth><![CDATA[2]]></depth>
+						</w2:row>
+						<w2:row>
+							<name><![CDATA[Mexico City]]></name>
+							<Code><![CDATA[MC]]></Code>
+							<depth><![CDATA[3]]></depth>
+						</w2:row>
+						<w2:row>
+							<name><![CDATA[Tijuana]]></name>
+							<Code><![CDATA[TJ]]></Code>
+							<depth><![CDATA[3]]></depth>
+						</w2:row>
+						<w2:row>
+							<name><![CDATA[United states america]]></name>
+							<Code><![CDATA[USA]]></Code>
+							<depth><![CDATA[2]]></depth>
+						</w2:row>
+						<w2:row>
+							<name><![CDATA[New York]]></name>
+							<Code><![CDATA[NY]]></Code>
+							<depth><![CDATA[3]]></depth>
+						</w2:row>
+						<w2:row>
+							<name><![CDATA[Los Angeles]]></name>
+							<Code><![CDATA[LA]]></Code>
+							<depth><![CDATA[3]]></depth>
+						</w2:row>
+						<w2:row>
+							<name><![CDATA[Africa]]></name>
+							<Code><![CDATA[AF]]></Code>
+							<depth><![CDATA[1]]></depth>
+						</w2:row>
+						<w2:row>
+							<name><![CDATA[Nigeria]]></name>
+							<Code><![CDATA[NI]]></Code>
+							<depth><![CDATA[2]]></depth>
+						</w2:row>
+						<w2:row>
+							<name><![CDATA[Lagos]]></name>
+							<Code><![CDATA[LG]]></Code>
+							<depth><![CDATA[3]]></depth>
+						</w2:row>
+						<w2:row>
+							<name><![CDATA[Kano]]></name>
+							<Code><![CDATA[KN]]></Code>
+							<depth><![CDATA[3]]></depth>
+						</w2:row>
+						<w2:row>
+							<name><![CDATA[Ethiopia]]></name>
+							<Code><![CDATA[ET]]></Code>
+							<depth><![CDATA[2]]></depth>
+						</w2:row>
+						<w2:row>
+							<name><![CDATA[Addis Ababa]]></name>
+							<Code><![CDATA[AA]]></Code>
+							<depth><![CDATA[3]]></depth>
+						</w2:row>
+						<w2:row>
+							<name><![CDATA[Dire Dawa]]></name>
+							<Code><![CDATA[DD]]></Code>
+							<depth><![CDATA[3]]></depth>
+						</w2:row>
+						<w2:row>
+							<name><![CDATA[Egypt]]></name>
+							<Code><![CDATA[EG]]></Code>
+							<depth><![CDATA[2]]></depth>
+						</w2:row>
+						<w2:row>
+							<name><![CDATA[Cairo]]></name>
+							<Code><![CDATA[CI]]></Code>
+							<depth><![CDATA[3]]></depth>
+						</w2:row>
+						<w2:row>
+							<name><![CDATA[Alexandria]]></name>
+							<Code><![CDATA[AX]]></Code>
+							<depth><![CDATA[3]]></depth>
+						</w2:row>
+						<w2:row>
+							<name><![CDATA[Oceania]]></name>
+							<Code><![CDATA[OC]]></Code>
+							<depth><![CDATA[1]]></depth>
+						</w2:row>
+						<w2:row>
+							<name><![CDATA[Australia]]></name>
+							<Code><![CDATA[AU]]></Code>
+							<depth><![CDATA[2]]></depth>
+						</w2:row>
+						<w2:row>
+							<name><![CDATA[Sydney]]></name>
+							<Code><![CDATA[SY]]></Code>
+							<depth><![CDATA[3]]></depth>
+						</w2:row>
+						<w2:row>
+							<name><![CDATA[Melbourne]]></name>
+							<Code><![CDATA[MB]]></Code>
+							<depth><![CDATA[3]]></depth>
+						</w2:row>
+						<w2:row>
+							<name><![CDATA[New Zealand]]></name>
+							<Code><![CDATA[NZ]]></Code>
+							<depth><![CDATA[2]]></depth>
+						</w2:row>
+						<w2:row>
+							<name><![CDATA[Auckland]]></name>
+							<Code><![CDATA[AK]]></Code>
+							<depth><![CDATA[3]]></depth>
+						</w2:row>
+						<w2:row>
+							<name><![CDATA[Christchurch]]></name>
+							<Code><![CDATA[CT]]></Code>
+							<depth><![CDATA[3]]></depth>
+						</w2:row>
+						<w2:row>
+							<name><![CDATA[Fiji]]></name>
+							<Code><![CDATA[FI]]></Code>
+							<depth><![CDATA[2]]></depth>
+						</w2:row>
+						<w2:row>
+							<name><![CDATA[Nasinu]]></name>
+							<Code><![CDATA[NN]]></Code>
+							<depth><![CDATA[3]]></depth>
+						</w2:row>
+						<w2:row>
+							<name><![CDATA[Suva]]></name>
+							<Code><![CDATA[SV]]></Code>
+							<depth><![CDATA[3]]></depth>
+						</w2:row>
+					</w2:data>
+				</w2:dataList>
+			</w2:dataCollection>
+			<w2:workflowCollection />
+		</xf:model>
+		<w2:layoutInfo />
+		<w2:publicInfo method="" />
+		<script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function () {
+
+};
+]]></script>
+	</head>
+	<body ev:onpageload="scwin.onpageload">
+		<xf:group class="sub_contents" id="" style="">
+			<xf:group class="ws_example_grp_desc" id="" style="">
+				<w2:textbox escape="false" id=""
+					label='SelectBox컴포넌트를 계층 구조의 데이터를 선택 항목으로 표시하는 방법에 관한 예제입니다.&lt;br/&gt;&lt;br/&gt;이 기능은 아래의 속성으로 사용할 수 있습니다.&lt;br/&gt;- depthColumn : 목록을 계층 구조로 보여줄 때 사용하는 속성.&lt;br/&gt;- depthColumnHeight : depthColumn 기능 사용 시 목록의 높이 값.&lt;br/&gt;- depthColumnWidth : depthColumn 기능 사용 시 목록의 너비 값.'
+					style="">
+				</w2:textbox>
+			</xf:group>
+			<xf:group class="example_div_tb_style_wrap" id="">
+				<xf:group class="example_div_tr_style" id="" style="">
+					<w2:textbox class="example_div_th_style" escape="false" id="" label="계층 구조로 표시하기" style=""></w2:textbox>
+					<xf:group class="example_div_td_style" id="" style="">
+						<w2:textbox class="ws5_example_txt_normal" escape="false" id="" label='SelectBox컴포넌트 클릭하여 데이터들이 계층구조로 표시되어있는 것을 확인한다.'
+							style="" displayFormat="">
+						</w2:textbox>
+						<xf:select1 id="sbx_exam1" chooseOption="" style="width: 148px;height: 21px;" submenuSize="auto" allOption=""
+							disabled="false" direction="auto" appearance="minimal" disabledClass="w2selectbox_disabled" ref="" depthColumn="depth">
+							<xf:choices>
+								<xf:itemset nodeset="data:dlt_dataList1">
+									<xf:label ref="name"></xf:label>
+									<xf:value ref="Code"></xf:value>
+								</xf:itemset>
+							</xf:choices>
+						</xf:select1>
+					</xf:group>
+					<w2:textbox class="example_div_th_style" escape="false" id="" label="계층 구조의 너비 높이 지정하기" style=""></w2:textbox>
+					<xf:group class="example_div_td_style" id="" style="">
+						<w2:textbox class="ws5_example_txt_normal" escape="false" id="" label='SelectBox컴포넌트 클릭하여 계층 구조의 높이 너비가 바뀐 것을 확인합니다.'
+							style="" displayFormat="">
+						</w2:textbox>
+						<xf:group id="" style="margin: 10px 0px 10px 0px;"></xf:group>
+						<xf:select1 allOption="" appearance="minimal" chooseOption="" depthColumn="depth" direction="auto" disabled="false"
+							disabledClass="w2selectbox_disabled" id="sbx_exam2" ref="" style="width: 148px;height: 21px;" submenuSize="auto"
+							depthColumnWidth="200" depthColumnHeight="150">
+							<xf:choices>
+								<xf:itemset nodeset="data:dlt_dataList1">
+									<xf:label ref="name"></xf:label>
+									<xf:value ref="Code"></xf:value>
+								</xf:itemset>
+							</xf:choices>
+						</xf:select1>
+					</xf:group>
+				</xf:group>
+				<xf:group class="example_div_tr_style" id="" style="">
+				</xf:group>
+			</xf:group>
+		</xf:group>
+	</body>
+</html>

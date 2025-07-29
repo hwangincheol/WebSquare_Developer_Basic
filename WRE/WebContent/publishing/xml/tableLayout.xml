@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+        <w2:type>COMPONENT</w2:type>
+        <w2:buildDate/>
+        <w2:MSA/>
+        <xf:model>
+            <w2:dataCollection baseNode="map"/>
+            <w2:workflowCollection/>
+        </xf:model>
+        <w2:layoutInfo/>
+        <w2:publicInfo method=""/>
+        <script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function() {
+	
+};
+]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload">
+    	<xf:group class="sub_contents" id="" style="">
+    		<xf:group class="pgtbox" id="" style="">
+    			<w2:textbox class="pgt_tit" id="" label="Publishing Template - TableLayout" style=""></w2:textbox>
+    		</xf:group>
+    		<xf:group id="" class="titbox">
+    			<w2:textbox style="" id="" label="표를 만들때 사용하는 컴포넌트입니다." class="txt_guide"></w2:textbox>
+    		</xf:group>
+    		<xf:group class="titbox" id="" style="">
+    			<w2:textbox class="" id="" label="01. Sample" style="" tagname="h3"></w2:textbox>
+    			<xf:group id="" class="rt">
+    				<w2:anchor outerDiv="false" name="" style="" href="/ws/download/tableLayout.zip" id="" class="btn_cm">
+    					<xf:label><![CDATA[Download]]></xf:label>
+    				</w2:anchor>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group style="" id="" class="msgbox">
+    			<xf:group class="wq_tb w2tb" id="" style="position: relative ;width:100%;" tagname="table" adaptive="layout">
+    				<w2:attributes>
+    					<w2:summary></w2:summary>
+    				</w2:attributes>
+    				<xf:group tagname="colgroup">
+    					<xf:group style="width:15%;" tagname="col"></xf:group>
+    					<xf:group style="" tagname="col"></xf:group>
+    					<xf:group style="width:15%;" tagname="col"></xf:group>
+    					<xf:group style="" tagname="col"></xf:group>
+    				</xf:group>
+    				<xf:group style="" tagname="tr">
+    					<xf:group class="w2tb_th" style="" tagname="th">TABLE TH</xf:group>
+    					<xf:group class="w2tb_td" style="" tagname="td"></xf:group>
+    					<xf:group class="w2tb_th" style="" tagname="th">TABLE TH</xf:group>
+    					<xf:group class="w2tb_td" style="" tagname="td"></xf:group>
+    				</xf:group>
+    				<xf:group style="" tagname="tr">
+    					<xf:group class="w2tb_th" style="" tagname="th">TABLE TH</xf:group>
+    					<xf:group class="w2tb_td" style="" tagname="td"></xf:group>
+    					<xf:group class="w2tb_th" style="" tagname="th">TABLE TH</xf:group>
+    					<xf:group class="w2tb_td" style="" tagname="td"></xf:group>
+    				</xf:group>
+    				<xf:group style="" tagname="tr">
+    					<xf:group class="w2tb_th" style="" tagname="th">TABLE TH</xf:group>
+    					<xf:group class="w2tb_td" style="" tagname="td"></xf:group>
+    					<xf:group class="w2tb_th" style="" tagname="th">TABLE TH</xf:group>
+    					<xf:group class="w2tb_td" style="" tagname="td"></xf:group>
+    				</xf:group>
+    				<xf:group style="" tagname="tr">
+    					<xf:group class="w2tb_th" style="" tagname="th">TABLE TH</xf:group>
+    					<xf:group class="w2tb_td" style="" tagname="td"></xf:group>
+    					<xf:group class="w2tb_th" style="" tagname="th">TABLE TH</xf:group>
+    					<xf:group class="w2tb_td" style="" tagname="td"></xf:group>
+    				</xf:group>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group id="" class="titbox">
+    			<w2:textbox style="" id="" label="02. Property" class="" tagname="h3"></w2:textbox>
+    		</xf:group>
+    		<xf:group id="" class="tblbox">
+    			<xf:group tagname="table" style="" id="" class="wq_tb w2tb tbl">
+    				<w2:attributes>
+    					<w2:summary></w2:summary>
+    				</w2:attributes>
+    				<xf:group tagname="colgroup">
+    					<xf:group tagname="col" style="width:20%;"></xf:group>
+    					<xf:group tagname="col" style=""></xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">Property</xf:group>
+    					<xf:group tagname="th" style="" class="w2tb_th">Description</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">adaptive</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						tagname이 table일 경우 적응형 웹(다양한 화면크기와 디바이스에 맞게 레이아웃을 변경) 모드. 속성값이 crosstab인 경우, thead와 tbody가 각각 하나씩 있어야 합니다.
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">adaptiveThreshold</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						tagname이 table일 경우 adaptive가 설정되어 있을 경우 레이아웃 변경을 하기 위한 breakpoint(기본값 : 48)
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" class="w2tb_th">
+    						tooltipFormatter
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+    					</xf:group>
+    					<xf:group tagname="td" class="w2tb_td">
+    						tooltipDisplay속성이&amp;nbsp;true일&amp;nbsp;때&amp;nbsp;데이터를&amp;nbsp;표현&amp;nbsp;할&amp;nbsp;tooltip의&amp;nbsp;내용을&amp;nbsp;변경&amp;nbsp;할&amp;nbsp;사용자&amp;nbsp;함수명.&amp;nbsp;&amp;nbsp;&amp;nbsp;사용자&amp;nbsp;함수에서는&amp;nbsp;componentId,&amp;nbsp;label을&amp;nbsp;인자로&amp;nbsp;받아&amp;nbsp;tooltip에&amp;nbsp;표현&amp;nbsp;할&amp;nbsp;string을&amp;nbsp;return한다.
+    						<w2:attributes></w2:attributes>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" class="w2tb_th">
+    						tabIndex
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+    					</xf:group>
+    					<xf:group tagname="td" class="w2tb_td">
+    						Tab&amp;nbsp;Key를&amp;nbsp;이용&amp;nbsp;한&amp;nbsp;컴포넌트의&amp;nbsp;포커스&amp;nbsp;순서로&amp;nbsp;HTML의&amp;nbsp;tabindex속성과&amp;nbsp;동일한&amp;nbsp;기능을&amp;nbsp;제공한다.
+    						<w2:attributes></w2:attributes>
+    					</xf:group>
+    				</xf:group>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group id="" class="titbox">
+    			<w2:textbox style="" id="" label="03. CSS Overriding" class="" tagname="h3"></w2:textbox>
+    		</xf:group>
+    		<xf:group id="" class="tblbox">
+    			<xf:group tagname="table" style="" id="" class="wq_tb w2tb tbl">
+    				<w2:attributes>
+    					<w2:summary></w2:summary>
+    				</w2:attributes>
+    				<xf:group tagname="colgroup">
+    					<xf:group tagname="col" style="width:20%;"></xf:group>
+    					<xf:group tagname="col" style=""></xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">Class</xf:group>
+    					<xf:group tagname="th" style="" class="w2tb_th">Description</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">
+    						w2group
+    						<br></br>
+    						w2tb
+    					</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						w2group과 w2tb는 웹스퀘어 엔진에서 정의된 클래스입니다, 기본적으로 html 로 렌더링되는 시점에서 자동으로 부여됩니다. 여기에 사용자 정의 클래스를 추가해서 overriding(덮어쓰기)
+    						하여 디자인을 바꿀 수 있습니다.
+    					</xf:group>
+    				</xf:group>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group adaptiveThreshold="" class="msgbox" id="" style="">
+    			<xf:group id="" class="titbox"><w2:textbox tagname="h4" style="" id="" label="Tip" class=""></w2:textbox></xf:group><w2:textbox class="txt_info" id=""
+    				label='Table 컬럼의 가로 값은 colgroup안 col의 style에 width="가로값" 을 수정해서 맞춰주시면 됩니다.&lt;br/&gt;col의 갯수와 컬럼의 갯수는 같아야 됩니다.' style="">
+    			</w2:textbox>
+    		</xf:group>
+
+    	</xf:group>
+    </body>
+</html>

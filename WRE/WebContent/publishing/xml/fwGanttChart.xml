@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+        <w2:type>COMPONENT</w2:type>
+        <w2:buildDate/>
+        <w2:MSA/>
+        <xf:model>
+            <w2:dataCollection baseNode="map">
+				<w2:dataList baseNode="list" id="dataList1" style="" saveRemovedData="true" repeatNode="map">
+					<w2:columnInfo>
+						<w2:column id="processes" name="processes" dataType="text"></w2:column>
+						<w2:column id="tasks" name="tasks" dataType="text"></w2:column>
+						<w2:column id="startTime" name="startTime" dataType="text"></w2:column>
+						<w2:column id="endTime" name="endTime" dataType="text"></w2:column>
+					</w2:columnInfo>
+					<w2:data use="true">
+						<w2:row>
+							<processes><![CDATA[tom]]></processes>
+							<tasks><![CDATA[cook]]></tasks>
+							<startTime><![CDATA[2015/05/07 08:30:00]]></startTime>
+							<endTime><![CDATA[2015/05/07 10:00:00]]></endTime>
+						</w2:row>
+						<w2:row>
+							<processes><![CDATA[endy]]></processes>
+							<tasks><![CDATA[game]]></tasks>
+							<startTime><![CDATA[2015/05/07 09:00:00]]></startTime>
+							<endTime><![CDATA[2015/05/07 11:00:00]]></endTime>
+						</w2:row>
+						<w2:row>
+							<processes><![CDATA[eric]]></processes>
+							<tasks><![CDATA[walk]]></tasks>
+							<startTime><![CDATA[2015/05/07 12:00:00]]></startTime>
+							<endTime><![CDATA[2015/05/07 13:00:00]]></endTime>
+						</w2:row>
+						<w2:row>
+							<processes><![CDATA[mike]]></processes>
+							<tasks><![CDATA[homework]]></tasks>
+							<startTime><![CDATA[2015/05/07 16:00:00]]></startTime>
+							<endTime><![CDATA[2015/05/07 17:00:00]]></endTime>
+						</w2:row>
+						<w2:row>
+							<processes><![CDATA[tom]]></processes>
+							<tasks><![CDATA[game]]></tasks>
+							<startTime><![CDATA[2015/05/08 16:00:00]]></startTime>
+							<endTime><![CDATA[2015/05/08 17:00:00]]></endTime>
+						</w2:row>
+						<w2:row>
+							<processes><![CDATA[endy]]></processes>
+							<tasks><![CDATA[walk]]></tasks>
+							<startTime><![CDATA[2015/05/08 09:00:00]]></startTime>
+							<endTime><![CDATA[2015/05/08 11:00:00]]></endTime>
+						</w2:row>
+						<w2:row>
+							<processes><![CDATA[eric]]></processes>
+							<tasks><![CDATA[cook]]></tasks>
+							<startTime><![CDATA[2015/05/08 12:00:00]]></startTime>
+							<endTime><![CDATA[2015/05/08 13:00:00]]></endTime>
+						</w2:row>
+						<w2:row>
+							<processes><![CDATA[mike]]></processes>
+							<tasks><![CDATA[homework]]></tasks>
+							<startTime><![CDATA[2015/05/08 14:00:00]]></startTime>
+							<endTime><![CDATA[2015/05/08 15:00:00]]></endTime>
+						</w2:row>
+					</w2:data>
+				</w2:dataList>
+				<w2:dataList baseNode="list" id="dataList2" style="" saveRemovedData="true" repeatNode="map">
+					<w2:columnInfo>
+						<w2:column id="processes" name="processes" dataType="text"></w2:column>
+						<w2:column id="taskid" name="taskid" dataType="text"></w2:column>
+						<w2:column id="tasks" name="tasks" dataType="text"></w2:column>
+						<w2:column id="startTime" name="startTime" dataType="text"></w2:column>
+						<w2:column id="endTime" name="endTime" dataType="text"></w2:column>
+					</w2:columnInfo>
+					<w2:data use="true">
+						<w2:row>
+
+							<processes><![CDATA[John S]]></processes>
+							<taskid><![CDATA[1]]></taskid>
+							<tasks><![CDATA[Logo-I]]></tasks>
+							<startTime><![CDATA[07/21/2014 09:30:00]]></startTime>
+							<endTime><![CDATA[07/21/2014 17:00:00]]></endTime>
+						</w2:row>
+						<w2:row>
+
+							<processes><![CDATA[John S]]></processes>
+							<taskid><![CDATA[2]]></taskid>
+							<tasks><![CDATA[Logo-II]]></tasks>
+							<startTime><![CDATA[07/22/2014 09:30:00]]></startTime>
+							<endTime><![CDATA[07/22/2014 16:30:00]]></endTime>
+						</w2:row>
+						<w2:row>
+
+							<processes><![CDATA[John S]]></processes>
+							<taskid><![CDATA[3]]></taskid>
+							<tasks><![CDATA[website template]]></tasks>
+							<startTime><![CDATA[07/23/2014 14:00:00]]></startTime>
+							<endTime><![CDATA[07/23/2014 16:30:00]]></endTime>
+						</w2:row>
+						<w2:row>
+
+							<processes><![CDATA[David G]]></processes>
+							<taskid><![CDATA[4]]></taskid>
+							<tasks><![CDATA[PHP Blueprint]]></tasks>
+							<startTime><![CDATA[07/21/2014 10:00:00]]></startTime>
+							<endTime><![CDATA[07/25/2014 14:30:00]]></endTime>
+						</w2:row>
+						<w2:row>
+
+							<processes><![CDATA[Mary P]]></processes>
+							<taskid><![CDATA[5]]></taskid>
+							<tasks><![CDATA[Testing Specification]]></tasks>
+							<startTime><![CDATA[07/21/2014 10:00:00]]></startTime>
+							<endTime><![CDATA[07/21/2014 15:30:00]]></endTime>
+						</w2:row>
+						<w2:row>
+
+							<processes><![CDATA[Mary P]]></processes>
+							<taskid><![CDATA[6]]></taskid>
+							<tasks><![CDATA[Testing tool research]]></tasks>
+							<endTime><![CDATA[07/22/2014 16:00:00]]></endTime>
+							<startTime><![CDATA[07/22/2014 09:30:00]]></startTime>
+						</w2:row>
+						<w2:row>
+
+							<processes><![CDATA[Mary P]]></processes>
+							<taskid><![CDATA[7]]></taskid>
+							<tasks><![CDATA[Testing tool integration]]></tasks>
+							<startTime><![CDATA[07/23/2014 09:30:00]]></startTime>
+							<endTime><![CDATA[07/25/2014 16:30:00]]></endTime>
+						</w2:row>
+						<w2:row>
+
+							<processes><![CDATA[Andrew H]]></processes>
+							<taskid><![CDATA[8]]></taskid>
+							<tasks><![CDATA[QA]]></tasks>
+							<startTime><![CDATA[07/22/2014 09:30:00]]></startTime>
+							<endTime><![CDATA[07/22/2014 16:30:00]]></endTime>
+						</w2:row>
+						<w2:row>
+
+							<processes><![CDATA[Andrew H]]></processes>
+							<taskid><![CDATA[9]]></taskid>
+							<tasks><![CDATA[QA]]></tasks>
+							<endTime><![CDATA[07/23/2014 16:30:00]]></endTime>
+							<startTime><![CDATA[07/23/2014 09:00:00]]></startTime>
+						</w2:row>
+						<w2:row>
+
+							<processes><![CDATA[Andrew H]]></processes>
+							<taskid><![CDATA[10]]></taskid>
+							<tasks><![CDATA[QA]]></tasks>
+							<endTime><![CDATA[07/25/2014 14:30:00]]></endTime>
+							<startTime><![CDATA[07/24/2014 09:30:00]]></startTime>
+						</w2:row>
+						<w2:row>
+
+							<processes><![CDATA[Neil M]]></processes>
+							<taskid><![CDATA[11]]></taskid>
+							<startTime><![CDATA[07/25/2014 15:00:00]]></startTime>
+							<tasks><![CDATA[Weekly Meet]]></tasks>
+							<endTime><![CDATA[07/25/2014 16:59:00]]></endTime>
+						</w2:row>
+					</w2:data>
+				</w2:dataList>
+			</w2:dataCollection>
+            <w2:workflowCollection/>
+        </xf:model>
+        <w2:layoutInfo/>
+        <w2:publicInfo method=""/>
+        <script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function() {
+	
+};
+]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload">
+    	<xf:group class="sub_contents" id="" style="">
+			<xf:group class="pgtbox" id="" style="">
+				<w2:textbox class="pgt_tit" id="" label="Publishing Template - FwGanttChart" style=""></w2:textbox>
+			</xf:group>
+			<xf:group id="" class="titbox"></xf:group><w2:textbox style="" id="" label="FwGanttChart는 FusionWidget Wrapper 컴포넌트입니다. &lt;br/&gt;FusionWidgets의 데이터는 실제 차트에 보여줄 값과 스타일 옵션들이 하나로 결합되어 있는 형태입니다. &lt;br/&gt;WebSquare5에서는 이를 분리하여 차트를 쉽게 Customizing 할 수 있도록 API를 지원합니다." class="">
+			</w2:textbox><xf:group class="msgbox" id="" style="border:1px dashed #ccc;">
+				<xf:group id="" class="tbl"><xf:group tagname="table" style="" id="" class="w2tb tbl">
+					<w2:attributes>
+						<w2:summary></w2:summary>
+					</w2:attributes>
+					<xf:group tagname="colgroup">
+						<xf:group tagname="col" style="width:30.00%"></xf:group>
+						<xf:group tagname="col" style="width:70.00%"></xf:group>
+					</xf:group>
+					<xf:group tagname="tr" style="">
+						<xf:group tagname="th" style="" class="w2tb_th">
+							fwGanttChart (timeBase:datetime) Sample
+							<w2:attributes>
+								<w2:colspan>2</w2:colspan>
+								<w2:rowspan>1</w2:rowspan>
+							</w2:attributes>
+						</xf:group>
+					</xf:group>
+					<xf:group tagname="tr">
+						<xf:group tagname="td" style="" class="w2tb_td">
+							<w2:attributes>
+								<w2:colspan></w2:colspan>
+								<w2:rowspan></w2:rowspan>
+							</w2:attributes>
+							<w2:textbox tagname="label" for="basicip" style="" id="" label="dataList 확인" class="formguide"></w2:textbox>
+							<w2:gridView fixedColumnWithHidden="true" dataList="dataList1" useShiftKey="true" scrollByColumn="false" style="width:100%;height:252px;" id="gridView4" autoFit="allColumn" class="gvw">
+								<w2:header style="" id="header1">
+									<w2:row style="" id="row2">
+										<w2:column width="70" style="height:20px" inputType="text" id="column11" value="processes" blockSelect="false">
+										</w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="column9" value="tasks" blockSelect="false">
+										</w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="column7" value="startTime" blockSelect="false">
+										</w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="column3" value="endTime" blockSelect="false">
+										</w2:column>
+									</w2:row>
+								</w2:header>
+								<w2:gBody style="" id="gBody4">
+									<w2:row style="" id="row5">
+										<w2:column width="70" style="height:20px" inputType="text" id="processes" blockSelect="false"></w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="tasks" blockSelect="false"></w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="startTime" blockSelect="false"></w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="endTime" blockSelect="false"></w2:column>
+									</w2:row>
+								</w2:gBody>
+							</w2:gridView>
+						</xf:group>
+						<xf:group tagname="td" style="" class="w2tb_td">
+							<w2:attributes>
+								<w2:colspan></w2:colspan>
+								<w2:rowspan></w2:rowspan>
+							</w2:attributes>
+							<w2:textbox tagname="label" for="basicip" style="" id="" label="FusionChart 확인" class="formguide"></w2:textbox>
+							<w2:fwGanttChart ref="data:dataList1" timeGap="12" style="width: 500px;height: 250px;" categoryDepth="2" id="fwGanttChart1" timeBase="dateTime" taskNode="tasks" endDateNode="endTime" seperator="~" processNode="processes" startDateNode="startTime" dateformat="yyyy/mm/dd">
+							</w2:fwGanttChart>
+						</xf:group>
+					</xf:group>
+				</xf:group></xf:group>
+			<xf:group id="" class="tbl"><xf:group tagname="table" style="" id="" class="w2tb tbl">
+					<w2:attributes>
+						<w2:summary></w2:summary>
+					</w2:attributes>
+					<xf:group tagname="colgroup">
+						<xf:group tagname="col" style="width:30.00%"></xf:group>
+						<xf:group tagname="col" style="width:70.00%"></xf:group>
+					</xf:group>
+					<xf:group tagname="tr" style="">
+						<xf:group tagname="th" style="" class="w2tb_th">
+							fwGanttChart (timeBase:datetime) Sample
+							<w2:attributes>
+								<w2:colspan>2</w2:colspan>
+								<w2:rowspan>1</w2:rowspan>
+							</w2:attributes>
+						</xf:group>
+					</xf:group>
+					<xf:group tagname="tr">
+						<xf:group tagname="td" style="" class="w2tb_td">
+							<w2:attributes>
+								<w2:colspan></w2:colspan>
+								<w2:rowspan></w2:rowspan>
+							</w2:attributes>
+							<w2:textbox tagname="label" for="basicip" style="" id="" label="dataList 확인" class="formguide"></w2:textbox>
+							<w2:gridView fixedColumnWithHidden="true" dataList="dataList2" useShiftKey="true" scrollByColumn="false" style="width:100%;height:252px;" autoFit="allColumn" id="gridView10" class="gvw">
+								<w2:header style="" id="header1">
+									<w2:row style="" id="row2">
+										<w2:column width="70" style="height:20px" inputType="text" id="column13" value="processes" blockSelect="false">
+										</w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="column11" value="taskid" blockSelect="false">
+										</w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="column9" value="tasks" blockSelect="false">
+										</w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="column7" value="startTime" blockSelect="false">
+										</w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="column3" value="endTime" blockSelect="false">
+										</w2:column>
+									</w2:row>
+								</w2:header>
+								<w2:gBody style="" id="gBody4">
+									<w2:row style="" id="row5">
+										<w2:column width="70" style="height:20px" inputType="text" id="processes" blockSelect="false"></w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="taskid" blockSelect="false"></w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="tasks" blockSelect="false"></w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="startTime" blockSelect="false"></w2:column>
+										<w2:column width="70" style="height:20px" inputType="text" id="endTime" blockSelect="false"></w2:column>
+									</w2:row>
+								</w2:gBody>
+							</w2:gridView>
+						</xf:group>
+						<xf:group tagname="td" style="" class="w2tb_td">
+							<w2:attributes>
+								<w2:colspan></w2:colspan>
+								<w2:rowspan></w2:rowspan>
+							</w2:attributes>
+							<w2:textbox tagname="label" for="basicip" style="" id="" label="FusionChart 확인" class="formguide"></w2:textbox>
+							<w2:fwGanttChart ref="data:dataList2" timeGap="24" style="width: 500px;height: 250px;" categoryDepth="2" id="ganntChart2" timeBase="dateTime" endDateNode="endTime" taskNode="tasks" taskIdNode="taskid" startDateNode="startTime" dateformat="mm/dd/yyyy" processNode="processes">
+							</w2:fwGanttChart>
+						</xf:group>
+					</xf:group>
+				</xf:group></xf:group></xf:group>
+			<xf:group adaptiveThreshold="" class="msgbox" id="" style="">
+				<xf:group id="" class="titbox"><w2:textbox style="" id="" label="Tip" class="" tagname="h3"></w2:textbox></xf:group><w2:textbox class="txt_info" id="" label="DataCollection 만들고 디자인뷰에서 해당컴포넌트를 더블클릭하여 ref, labelNode, valueNode 등 연결해야 됩니다."
+					style="">
+				</w2:textbox>
+			</xf:group>
+		</xf:group>
+    </body>
+</html>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+        <w2:type>COMPONENT</w2:type>
+        <w2:buildDate/>
+        <w2:MSA/>
+        <xf:model>
+            <w2:dataCollection baseNode="map"/>
+            <w2:workflowCollection/>
+        </xf:model>
+        <w2:layoutInfo/>
+        <w2:publicInfo method=""/>
+        <script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function() {
+	
+};
+]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload">
+    	<xf:group class="sub_contents" id="" style="">
+    		<xf:group class="pgtbox" id="" style="">
+    			<w2:textbox class="pgt_tit" id="" label="Publishing Template - SearchBox" style=""></w2:textbox>
+    		</xf:group>
+    		<xf:group id="" class="titbox">
+    			<w2:textbox style="" id=""
+    				label='InputBox 컴포넌트의 확장 컴포넌트로 InputBox와 동일한 기능을 제공하며 부가적으로 컴포넌트의 우측에 "X" 아이콘이 포함되어 있습니다. &lt;br/&gt;해당 아이콘은 input에 Text가 입력되어있을 때 보입니다.'
+    				class="txt_guide">
+    			</w2:textbox>
+    		</xf:group>
+    		<xf:group class="titbox" id="" style="">
+    			<w2:textbox class="" id="" label="01. Sample" style="" tagname="h3"></w2:textbox>
+    			<xf:group id="" class="rt">
+    				<w2:anchor outerDiv="false" name="" style="" href="/ws/download/searchBox.zip" id="" class="btn_cm">
+    					<xf:label><![CDATA[Download]]></xf:label>
+    				</w2:anchor>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group class="msgbox" id="" style="">
+    			<w2:searchbox id="" style="position: relative;width: 150px;height: 21px;" class="wq_shb mr30"></w2:searchbox>
+    			<w2:searchbox class="wq_shb" id="" style="position: relative;width: 150px;height: 21px;" dateMask="" disabled="true"></w2:searchbox>
+    		</xf:group>
+    		<xf:group id="" class="titbox">
+    			<w2:textbox tagname="h3" style="" id="" label="02. Property" class=""></w2:textbox>
+    		</xf:group>
+    		<xf:group id="" class="tblbox">
+    			<xf:group tagname="table" style="" id="" class="wq_tb w2tb tbl">
+    				<w2:attributes>
+    					<w2:summary></w2:summary>
+    				</w2:attributes>
+    				<xf:group tagname="colgroup">
+    					<xf:group tagname="col" style="width:20%;"></xf:group>
+    					<xf:group tagname="col" style=""></xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">Property</xf:group>
+    					<xf:group tagname="th" style="" class="w2tb_th">Description</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">disabled</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						[default:false, true]HTML의 disabled속성과 동일한 기능을 제공하며 컴포넌트를 비활성화 시킵니다.
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">displayFormat</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						엔진 내부에서 dataType 속성에 정의한 type에 따라 동작되며 excel의 서식을 적용하는 방식처럼 value의 format을 적용 할 수 있습니다.
+    						<br></br>
+    						displayFormatter와 동시적용이 불가합니다. 예시)dateType이 number일 경우 #,###.#0 으로 적용하면 3자리수 마다 ,가 찍히며 소수점 2자리까지 표현됩니다.
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">readOnly</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						[default:false, true]readonly의 여부로 HTML의 readonly속성과 동일한 기능을 제공합니다.
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">class</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						HTML의 class속성과 동일한 기능을 제공하며 css파일 또는 style블럭에 정의 한 class를 1개 또는 공백(space)를 이용하여 다중 적용이 가능합니다.
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">id</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">컴포넌트의 ID로 전역객체로 할당되며 script에서 본 id로 컴포넌트에 접근이 가능합니다.</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">title</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						HTML의 title속성과 동일한 기능으로 명시 된 값을 브라우저에서 마우스 over시 툴팁형태로 표현합니다. 일반적으로 웹접근성 작업 시 설정합니다.
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">style</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">InputBox의 style 속성</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">onFocusClass</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">onFocus시 적용할 class명</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">readOnly</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						[default:false, true]readonly의 여부로 HTML의 readonly속성과 동일한 기능을 제공합니다.
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">readOnlyClass</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">readOnly 상태 일때 적용할 class명</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">tabIndex</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						Tab Key를 이용 한 컴포넌트의 포커스 순서로 HTML의 tabindex속성과 동일한 기능을 제공합니다.
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">
+    						minlength
+    						<br></br>
+    					</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">validate API를 호출 할 때 엔진에서 최소길이 체크 시에 참조합니다.</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">maxlength</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">입력 가능한 최대길이로 엔진에서 maxLength 이상의 글자를 입력하면 자동으로 잘라냅니다.</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" class="w2tb_th">
+    						nextTabID
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+    					</xf:group>
+    					<xf:group tagname="td" class="w2tb_td">
+    						tab으로&amp;nbsp;이동시&amp;nbsp;이동할&amp;nbsp;컴포넌트&amp;nbsp;ID
+    						<w2:attributes></w2:attributes>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">html attributes</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">해당 태그에 대응하는 속성을 추가합니다.</xf:group>
+    				</xf:group>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group id="" class="titbox">
+    			<w2:textbox tagname="h3" style="" id="" label="03. CSS Overriding" class=""></w2:textbox>
+    		</xf:group>
+    		<xf:group id="" class="tblbox">
+    			<xf:group tagname="table" style="" id="" class="wq_tb w2tb tbl">
+    				<w2:attributes>
+    					<w2:summary></w2:summary>
+    				</w2:attributes>
+    				<xf:group tagname="colgroup">
+    					<xf:group tagname="col" style="width:20%;"></xf:group>
+    					<xf:group tagname="col" style=""></xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">Class</xf:group>
+    					<xf:group tagname="th" style="" class="w2tb_th">Description</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">w2input</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">w2input은 웹스퀘어 엔진에서 정의된 클래스입니다, 브라우저가 파싱할때 자동으로 부여됩니다.</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">w2searchbox_reset</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						input박스 우측 &quot;X&quot; 버튼에 대한 input박스 리셋 아이콘 버튼에 관련된 클래스 입니다. input박스에 택스트 입력시 활성화
+    					</xf:group>
+    				</xf:group>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group adaptiveThreshold="" class="msgbox" id="" style="">
+    			<xf:group id="" class="titbox"><w2:textbox style="" id="" label="Tip" class="" tagname="h4"></w2:textbox></xf:group><w2:textbox class="txt_info" id=""
+    				label='IE10 브라우저 이상에서는 기본적으로 HTML input Tag에 "X" 아이콘이 추가되어있으므로 이를 해제해야 이중으로 "X" 아이콘이 나오지 않는다.&lt;br/&gt;' style="">
+    			</w2:textbox>
+    		</xf:group>
+    	</xf:group>
+    </body>
+</html>

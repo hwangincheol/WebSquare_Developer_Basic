@@ -1,0 +1,1057 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+        <w2:type>COMPONENT</w2:type>
+        <w2:buildDate/>
+        <w2:MSA/>
+        <xf:model>
+            <w2:dataCollection baseNode="map">
+				<w2:dataList baseNode="list" id="dataList1" repeatNode="map" saveRemovedData="true" style="">
+					<w2:columnInfo>
+						<w2:column dataType="text" id="col1" name="HEADER"></w2:column>
+						<w2:column dataType="text" id="col2" name="HEADER"></w2:column>
+						<w2:column dataType="text" id="col3" name="HEADER"></w2:column>
+						<w2:column dataType="text" id="col7" name="HEADER"></w2:column>
+					</w2:columnInfo>
+					<w2:data use="true">
+						<w2:row>
+							<col1><![CDATA[1]]></col1>
+							<col2><![CDATA[BODY]]></col2>
+							<col3><![CDATA[BODY]]></col3>
+							<col7><![CDATA[BODY]]></col7>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[2]]></col1>
+							<col2><![CDATA[BODY]]></col2>
+							<col3><![CDATA[BODY]]></col3>
+							<col7><![CDATA[BODY]]></col7>
+						</w2:row>
+						<w2:row>
+							<col2><![CDATA[BODY]]></col2>
+							<col3><![CDATA[BODY]]></col3>
+							<col1><![CDATA[3]]></col1>
+							<col7><![CDATA[BODY]]></col7>
+						</w2:row>
+						<w2:row>
+							<col2><![CDATA[BODY]]></col2>
+							<col1><![CDATA[4]]></col1>
+							<col3><![CDATA[BODY]]></col3>
+							<col7><![CDATA[BODY]]></col7>
+						</w2:row>
+						<w2:row>
+							<col1><![CDATA[5]]></col1>
+							<col2><![CDATA[BODY]]></col2>
+							<col3><![CDATA[BODY]]></col3>
+							<col7><![CDATA[BODY]]></col7>
+						</w2:row>
+					</w2:data>
+				</w2:dataList>
+			</w2:dataCollection>
+            <w2:workflowCollection/>
+        </xf:model>
+        <w2:layoutInfo/>
+        <w2:publicInfo method=""/>
+        <script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function() {
+	
+};
+]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload">
+    	<xf:group class="sub_contents" id="" style="">
+			<xf:group class="pgtbox" id="" style="">
+				<w2:textbox class="pgt_tit" id="" label="Publishing Template - GridView" style=""></w2:textbox>
+			</xf:group>
+			<xf:group id="" class="titbox"><w2:textbox style="" id="" label="GridView는 DataCollection을 Binding 하여 편리하게 데이터를 표현할 수 있는 컴포넌트입니다. &lt;br/&gt;Grid 컴포넌트와 동일한 편집 기능을 갖고 있으며 데이터를 바인딩 할 때 기본값을 생성해줍니다." class="">
+			</w2:textbox></xf:group><xf:group class="titbox" id="" style="">
+				<w2:textbox class="" id="" label="01. Sample" style="" tagname="h3"></w2:textbox>
+			<xf:group id="" class="rt"><w2:anchor outerDiv="false" name="" style="" href="/ws/download/gridView.zip" id="" class="btn_cm">
+					<xf:label><![CDATA[Download]]></xf:label>
+				</w2:anchor></xf:group></xf:group>
+			<xf:group class="msgbox" id="" style="border:1px dashed #ccc;">
+				<w2:gridView autoFit="allColumn" class="gvw" dataList="dataList1" editModeEvent="" evenRowBackgroundColor="#FFFFFF"
+					fixedColumnWithHidden="true" focusMode="row" id="" ignoreCellClick="false" oddRowBackgroundColor="#FFFFFF" readOnly="true"
+					rowMouseOver="" rowMouseOverColor="#F8FAFC" rowNumHeaderValue="NO." rowNumVisible="true" rowNumWidth="30" scrollByColumn="false"
+					senseReader="true" style="height:125px;" useShiftKey="true" visibleRowNum="5">
+					<w2:header id="header1" style="">
+						<w2:row id="row2" style="">
+							<w2:column blockSelect="false" displayMode="label" id="column11" inputType="text" style="height:29px;"
+								value="HEADER" width="70">
+							</w2:column>
+							<w2:column blockSelect="false" displayMode="label" id="column9" inputType="text" style="height:20px"
+								value="HEADER" width="70">
+							</w2:column>
+							<w2:column blockSelect="false" displayMode="label" id="column7" inputType="text" style="height:20px"
+								value="HEADER" width="70">
+							</w2:column>
+							<w2:column blockSelect="false" displayMode="label" id="column3" inputType="text" style="height:20px"
+								value="HEADER" width="70">
+							</w2:column>
+						</w2:row>
+					</w2:header>
+					<w2:gBody id="gBody4" style="">
+						<w2:row id="row5" style="">
+							<w2:column blockSelect="false" displayMode="label" id="col1" inputType="" style="height:29px;" width="70"
+								adaptiveStyle="">
+							</w2:column>
+							<w2:column blockSelect="false" displayMode="label" id="col2" inputType="text" style="height:20px" width="70"></w2:column>
+							<w2:column blockSelect="false" displayMode="label" id="col3" inputType="text" style="height:20px" width="70">
+							</w2:column>
+							<w2:column blockSelect="false" displayMode="label" id="col7" inputType="text" style="height:20px" width="70"></w2:column>
+						</w2:row>
+					</w2:gBody>
+				</w2:gridView>
+			</xf:group>
+			<xf:group id="" class="titbox"><w2:textbox style="" id="" label="02. Property" class="" tagname="h3"></w2:textbox></xf:group>
+			<xf:group id="" class="titbox"><w2:textbox style="" id="" label="GridView Property" class="" tagname="h4"></w2:textbox></xf:group>
+			<xf:group id="" class="tblbox"><xf:group tagname="table" style="" id="" class="w2tb tbl">
+				<w2:attributes>
+					<w2:summary></w2:summary>
+				</w2:attributes>
+				<xf:group tagname="colgroup">
+					<xf:group tagname="col" style="width:20%;"></xf:group>
+					<xf:group tagname="col" style=""></xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">Property</xf:group>
+					<xf:group tagname="th" style="" class="w2tb_th">Description</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">adaptive</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">적응형 웹(다양한 화면크기와 디바이스에 맞게 레이아웃을 변경) 모드. 기본(none)</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">adaptiveThreshold</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">adaptive가 설정되어 있을 경우 레이아웃 변경을 하기 위한 breakpoint (기본값 : 480)</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th">
+						applyAllColumnStyle
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+						<w2:span style="" label="SP2" id="" class="txt_info"></w2:span>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						column에&amp;nbsp;정의된&amp;nbsp;스타일들을&amp;nbsp;모두&amp;nbsp;적용할지&amp;nbsp;여부(기본값은&amp;nbsp;false이며&amp;nbsp;column에&amp;nbsp;정의된&amp;nbsp;스타일&amp;nbsp;속성&amp;nbsp;중&amp;nbsp;첫번?만&amp;nbsp;적용됨)
+						<w2:attributes></w2:attributes>
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">autoFit</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						gridVeiw에 정의 된 width에 맞춰 여백이 없이 가득 채워주는 기능으로 가로 스크롤이 생기지 않습니다.
+						<br></br>
+						allColumn은 여백을 모든 컬럼에 분배하여 조절하며 lastColumn은 마지막 컬럼을 allColumn은 모든 컬럼의 너비를 조정합니다.
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">autoFitMinWidth</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						gridView의 최소 width(px단위)를 지정하는 기능으로 autoFit속성의 값이 allColumn일 때 적용됩니다.
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">class</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						HTML의 class속성과 동일한 기능을 제공하며 css파일 또는 style블럭에 정의한 class를 1개 또는 공백(space)를 이용하여 다중 적용이 가능합니다.
+						<br></br>
+						gridView컴포넌트는 매우 복잡한 구조를 가진 컴포넌트로 css의 selector를 이용하여 하위 항목에 접근 해야 합니다.
+						<br></br>
+						기본적으로 엔진 내부에서 컴포넌트별로 class를 적용하고 있으며 해당 class를 이용하여 컴포넌트의 css를 공통으로 적용 할 수 있습니다.
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">columnMove</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						gridView 헤더를 마우스로 drag하여 컬럼을 이동할 수 있는 기능으로 drag시에 이동 될 컬럼의 header value속성에 명시 된 값이 tooltip형태로 표현됩니다.
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th">
+						checkEditableInputClass
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						[default:&amp;nbsp;false,&amp;nbsp;true]&amp;nbsp;inputType&amp;nbsp;=&amp;nbsp;&quot;text&quot;&amp;nbsp;이고&amp;nbsp;cell의&amp;nbsp;상태가&amp;nbsp;readOnly이거나&amp;nbsp;disable인&amp;nbsp;경우,&amp;nbsp;&amp;nbsp;&amp;nbsp;nobr&amp;nbsp;태그에&amp;nbsp;&quot;w2grid_input&quot;&amp;nbsp;class를&amp;nbsp;삭제하도록&amp;nbsp;설정.&amp;nbsp;&amp;nbsp;true:&amp;nbsp;readOnly&amp;nbsp;또는&amp;nbsp;disable시&amp;nbsp;nobr태그에&amp;nbsp;&quot;w2grid_input&quot;&amp;nbsp;class&amp;nbsp;삭제됨&amp;nbsp;&amp;nbsp;false&amp;nbsp;:&amp;nbsp;nobr태그에&amp;nbsp;항상&amp;nbsp;&quot;w2grid_input&quot;&amp;nbsp;class가&amp;nbsp;적용됨.
+						<w2:attributes></w2:attributes>
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th">
+						checkReadOnlyOnPast
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						[default:false,&amp;nbsp;true]&amp;nbsp;Ctrl(또는&amp;nbsp;cmd)+V를&amp;nbsp;눌러&amp;nbsp;클립보드에서&amp;nbsp;그리드로&amp;nbsp;붙여넣기하는&amp;nbsp;경우&amp;nbsp;readOnly&amp;nbsp;되어있는&amp;nbsp;컬럼에&amp;nbsp;데이터를&amp;nbsp;세팅할지&amp;nbsp;여부&amp;nbsp;&amp;nbsp;true&amp;nbsp;:&amp;nbsp;readOnly가&amp;nbsp;적용된&amp;nbsp;컬럼에&amp;nbsp;'붙여넣기'&amp;nbsp;기능이&amp;nbsp;동작하지&amp;nbsp;않는다.&amp;nbsp;&amp;nbsp;&amp;nbsp;false:&amp;nbsp;readOnly가&amp;nbsp;적용된&amp;nbsp;컬럼에&amp;nbsp;'붙여넣기'&amp;nbsp;기능이&amp;nbsp;동작한다.
+						<w2:attributes></w2:attributes>
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th">
+						contextMenu
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						[default:&amp;nbsp;false,&amp;nbsp;true]&amp;nbsp;context&amp;nbsp;menu&amp;nbsp;사용&amp;nbsp;여부
+						<w2:attributes></w2:attributes>
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">
+						dataList
+						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+					</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">gridView의 data에 해당하는 DataCollection의 DataList id.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">disabledBackgroundColor</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">disabled이 적용 된 cell 또는 행의 배경색.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">disabledFontColor</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">disabled이 적용 된 cell 또는 행의 글자색.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th">
+						dataDragSelect
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						[true,&amp;nbsp;false]&amp;nbsp;여러&amp;nbsp;개의&amp;nbsp;그리드&amp;nbsp;셀들을&amp;nbsp;드래그로&amp;nbsp;선택할&amp;nbsp;수&amp;nbsp;있을지&amp;nbsp;여부(dataDragDrop&amp;nbsp;기능과&amp;nbsp;함께&amp;nbsp;사용할&amp;nbsp;수&amp;nbsp;없음.)
+						<w2:attributes></w2:attributes>
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th">
+						defaultCellHeight
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						셀의&amp;nbsp;기본&amp;nbsp;높이
+						<w2:attributes></w2:attributes>
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th">
+						disabledScrollHidden
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						[default:false,&amp;nbsp;true]&amp;nbsp;gridView가&amp;nbsp;disabled될&amp;nbsp;때&amp;nbsp;scroll도&amp;nbsp;함께&amp;nbsp;감출&amp;nbsp;것인가에&amp;nbsp;대한&amp;nbsp;옵션.&amp;nbsp;&amp;nbsp;&amp;nbsp;비&amp;nbsp;IE&amp;nbsp;브라우저에서&amp;nbsp;gridView가&amp;nbsp;disabled&amp;nbsp;되더라도&amp;nbsp;스크롤은&amp;nbsp;움직일&amp;nbsp;수&amp;nbsp;있는&amp;nbsp;현상을&amp;nbsp;원천적으로&amp;nbsp;차단하기&amp;nbsp;위한&amp;nbsp;속성이다.
+						<w2:attributes></w2:attributes>
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th">
+						drilldownToggleScrollFix
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						[default:false,&amp;nbsp;true]&amp;nbsp;drilldown&amp;nbsp;컬럼에서&amp;nbsp;+버튼을&amp;nbsp;클릭하여&amp;nbsp;목록을&amp;nbsp;펼칠&amp;nbsp;때&amp;nbsp;gridView&amp;nbsp;스크롤이&amp;nbsp;움직이지&amp;nbsp;않고&amp;nbsp;고정되도록&amp;nbsp;하는&amp;nbsp;속성
+						<w2:attributes></w2:attributes>
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th">
+						dynamic
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						[default:false,&amp;nbsp;true]&amp;nbsp;gridView&amp;nbsp;껍데기만&amp;nbsp;그려놓은&amp;nbsp;상태에서&amp;nbsp;setGridStyle을&amp;nbsp;통해&amp;nbsp;동적으로&amp;nbsp;생성하는&amp;nbsp;그리드인지에&amp;nbsp;대한&amp;nbsp;여부&amp;nbsp;&amp;nbsp;dynamic=true일&amp;nbsp;경우&amp;nbsp;gridView에&amp;nbsp;w2:header나&amp;nbsp;w2:body가&amp;nbsp;존재하지&amp;nbsp;않더라도&amp;nbsp;경고&amp;nbsp;메세지를&amp;nbsp;출력하지&amp;nbsp;않는다.
+						<w2:attributes></w2:attributes>
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">evenRowBackgroundColor</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">짝수 행의 배경색</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th">
+						euroMask
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						[default:&amp;nbsp;&quot;&quot;]&amp;nbsp;화폐단위&amp;nbsp;변경을&amp;nbsp;위해&amp;nbsp;dataType&amp;nbsp;=&amp;nbsp;&quot;euro&quot;&amp;nbsp;로&amp;nbsp;설정한&amp;nbsp;경우나&amp;nbsp;changeCurrency&amp;nbsp;API를&amp;nbsp;사용했을&amp;nbsp;때&amp;nbsp;적용되는&amp;nbsp;마스킹&amp;nbsp;값.
+						<w2:attributes></w2:attributes>
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th">
+						excludeModifiedRows
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						[default:false,&amp;nbsp;true]&amp;nbsp;subtotal(소계)과&amp;nbsp;footer(합계)등에&amp;nbsp;사용되는&amp;nbsp;expression속성에서&amp;nbsp;modifyRowStatus&amp;nbsp;API로&amp;nbsp;&quot;D&quot;상태가&amp;nbsp;적용된&amp;nbsp;row를&amp;nbsp;제외하고&amp;nbsp;계산한다.(&amp;nbsp;modifyRowStatus&amp;nbsp;API를&amp;nbsp;사용한&amp;nbsp;경우&amp;nbsp;)
+						<w2:attributes></w2:attributes>
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">fixedColumn</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">세로 틀고정을 시킬 컬럼의 위치로 첫번째 컬럼일 경우 &quot;1&quot;로 입력 설정</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">fixedColumnWithHidden</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						[default:true, false] fixedColumn속성의 위치값에 hiddenColumn을 포함하여 계산할지 여부
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th">
+						fixedRow
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						세로&amp;nbsp;틀고정을&amp;nbsp;시킬&amp;nbsp;컬럼의&amp;nbsp;위치로&amp;nbsp;첫번째&amp;nbsp;로우일&amp;nbsp;경우&amp;nbsp;&quot;1&quot;로&amp;nbsp;입력&amp;nbsp;설정
+						<w2:attributes></w2:attributes>
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th">
+						footerSummaryAuto
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						[default:&amp;nbsp;&quot;&quot;(빈&amp;nbsp;값)]&amp;nbsp;captionAuto&amp;nbsp;설정에&amp;nbsp;상관&amp;nbsp;없이&amp;nbsp;footer의&amp;nbsp;summary&amp;nbsp;속성에&amp;nbsp;바닥글을&amp;nbsp;자동&amp;nbsp;생성.&amp;nbsp;&amp;nbsp;관련&amp;nbsp;속성:&amp;nbsp;captionTitle,&amp;nbsp;footerSummary
+						<w2:attributes></w2:attributes>
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">hideHeader</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">[default:false, true] header 숨김 여부.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th">
+						hammerEnabled
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						[default:true,&amp;nbsp;false]&amp;nbsp;모바일에서&amp;nbsp;dblclick이벤트를&amp;nbsp;Hammer.JS의&amp;nbsp;press이벤트로&amp;nbsp;처리할것인지에&amp;nbsp;대한&amp;nbsp;여부
+						<w2:attributes></w2:attributes>
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th">
+						hammerPressTime
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						press이벤트가&amp;nbsp;발생하기까지&amp;nbsp;누르고&amp;nbsp;있어야&amp;nbsp;할&amp;nbsp;시간.&amp;nbsp;단위는&amp;nbsp;ms이며,&amp;nbsp;기본값은&amp;nbsp;251ms이다.
+						<w2:attributes></w2:attributes>
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">id</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">컴포넌트의 ID로 전역객체로 할당되며 script에서 본 id로 컴포넌트에 접근이 가능합니다.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">ignoreCellClick</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						drilldown사용할때 toggle 이미지 클릭시 gridView에 oncellclick 이벤트를 발생시키지않음
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">ignoreToggleOnDisabled</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						drilldown사용할때 toggle 이미지 클릭시 해당 셀에 disabled가 적용되어 있을 경우 toggle시키지 않음.
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">keepDefaultColumnWidth</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						[default:false, true] autoFit속성을 true로 설정할 경우 rowNum컬럼(rowNumVisible속성)과 rowStatus컬럼(rowStatusVisible속성)의 width를
+						고정한다.
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th">
+						mergeCells
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						행&amp;nbsp;또는&amp;nbsp;열&amp;nbsp;기준으로&amp;nbsp;연속적으로&amp;nbsp;같은&amp;nbsp;데이터들을&amp;nbsp;merge한다.&amp;nbsp;https://inswave.com/jira/browse/WPF-1402&amp;nbsp;&amp;nbsp;never&amp;nbsp;:&amp;nbsp;mergeCells에&amp;nbsp;의해&amp;nbsp;자동으로&amp;nbsp;merge된&amp;nbsp;것들을&amp;nbsp;해제한다.&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;bycol&amp;nbsp;:&amp;nbsp;같은&amp;nbsp;column&amp;nbsp;내에서&amp;nbsp;연속적으로&amp;nbsp;데이터가&amp;nbsp;같은&amp;nbsp;row들을&amp;nbsp;merge한다&amp;nbsp;&amp;nbsp;byrow&amp;nbsp;:&amp;nbsp;같은&amp;nbsp;row&amp;nbsp;내에서&amp;nbsp;연속적으로&amp;nbsp;데이터가&amp;nbsp;같은&amp;nbsp;column들을&amp;nbsp;merge한다.&amp;nbsp;&amp;nbsp;bycolrec&amp;nbsp;:&amp;nbsp;bycol후,&amp;nbsp;merge되지&amp;nbsp;않은&amp;nbsp;cell들을&amp;nbsp;대상으로&amp;nbsp;byrow를&amp;nbsp;실행한다&amp;nbsp;&amp;nbsp;byrowrec&amp;nbsp;:&amp;nbsp;byrow후,&amp;nbsp;merge되지&amp;nbsp;않은&amp;nbsp;cell들을&amp;nbsp;대상으로&amp;nbsp;bycol을&amp;nbsp;수행한다.&amp;nbsp;&amp;nbsp;byrestriccol&amp;nbsp;:&amp;nbsp;같은&amp;nbsp;column&amp;nbsp;내에서&amp;nbsp;연속적으로&amp;nbsp;데이터가&amp;nbsp;같으면서&amp;nbsp;동시에&amp;nbsp;자신의&amp;nbsp;왼쪽에&amp;nbsp;위치한&amp;nbsp;column이&amp;nbsp;merge된&amp;nbsp;경우&amp;nbsp;해당&amp;nbsp;row들을&amp;nbsp;merge한다.&amp;nbsp;(n+1컬럼에&amp;nbsp;n컬럼을&amp;nbsp;upperColumn으로&amp;nbsp;지정한&amp;nbsp;형태)&amp;nbsp;&amp;nbsp;byrestricrow&amp;nbsp;:&amp;nbsp;같은&amp;nbsp;row&amp;nbsp;내에서&amp;nbsp;연속적으로&amp;nbsp;데이터가&amp;nbsp;같으면서&amp;nbsp;동시에&amp;nbsp;자신의&amp;nbsp;위쪽에&amp;nbsp;위치한&amp;nbsp;row가&amp;nbsp;merge된&amp;nbsp;경우&amp;nbsp;해당&amp;nbsp;row들을&amp;nbsp;merge한다.&amp;nbsp;(n+행에&amp;nbsp;n행을&amp;nbsp;upperRow으로&amp;nbsp;지정한&amp;nbsp;형태)
+						<w2:attributes></w2:attributes>
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th">
+						mergeCellsFixedCols
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						fixedColumn&amp;nbsp;영역&amp;nbsp;내에서&amp;nbsp;행&amp;nbsp;또는&amp;nbsp;열&amp;nbsp;기준으로&amp;nbsp;연속적으로&amp;nbsp;같은&amp;nbsp;데이터들을&amp;nbsp;merge한다.&amp;nbsp;https://inswave.com/jira/browse/WPF-1402&amp;nbsp;&amp;nbsp;never&amp;nbsp;:&amp;nbsp;mergeCells에&amp;nbsp;의해&amp;nbsp;자동으로&amp;nbsp;merge된&amp;nbsp;것들을&amp;nbsp;해제한다.&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;bycol&amp;nbsp;:&amp;nbsp;같은&amp;nbsp;column&amp;nbsp;내에서&amp;nbsp;연속적으로&amp;nbsp;데이터가&amp;nbsp;같은&amp;nbsp;row들을&amp;nbsp;merge한다&amp;nbsp;&amp;nbsp;byrow&amp;nbsp;:&amp;nbsp;같은&amp;nbsp;row&amp;nbsp;내에서&amp;nbsp;연속적으로&amp;nbsp;데이터가&amp;nbsp;같은&amp;nbsp;column들을&amp;nbsp;merge한다.&amp;nbsp;&amp;nbsp;bycolrec&amp;nbsp;:&amp;nbsp;bycol후,&amp;nbsp;merge되지&amp;nbsp;않은&amp;nbsp;cell들을&amp;nbsp;대상으로&amp;nbsp;byrow를&amp;nbsp;실행한다&amp;nbsp;&amp;nbsp;byrowrec&amp;nbsp;:&amp;nbsp;byrow후,&amp;nbsp;merge되지&amp;nbsp;않은&amp;nbsp;cell들을&amp;nbsp;대상으로&amp;nbsp;bycol을&amp;nbsp;수행한다.
+						<w2:attributes></w2:attributes>
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th">
+						mergeCellsFixedRows
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						fixedRow&amp;nbsp;영역&amp;nbsp;내에서&amp;nbsp;행&amp;nbsp;또는&amp;nbsp;열&amp;nbsp;기준으로&amp;nbsp;연속적으로&amp;nbsp;같은&amp;nbsp;데이터들을&amp;nbsp;merge한다.&amp;nbsp;https://inswave.com/jira/browse/WPF-1402&amp;nbsp;&amp;nbsp;never&amp;nbsp;:&amp;nbsp;mergeCells에&amp;nbsp;의해&amp;nbsp;자동으로&amp;nbsp;merge된&amp;nbsp;것들을&amp;nbsp;해제한다.&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;bycol&amp;nbsp;:&amp;nbsp;같은&amp;nbsp;column&amp;nbsp;내에서&amp;nbsp;연속적으로&amp;nbsp;데이터가&amp;nbsp;같은&amp;nbsp;row들을&amp;nbsp;merge한다&amp;nbsp;&amp;nbsp;byrow&amp;nbsp;:&amp;nbsp;같은&amp;nbsp;row&amp;nbsp;내에서&amp;nbsp;연속적으로&amp;nbsp;데이터가&amp;nbsp;같은&amp;nbsp;column들을&amp;nbsp;merge한다.&amp;nbsp;&amp;nbsp;bycolrec&amp;nbsp;:&amp;nbsp;bycol후,&amp;nbsp;merge되지&amp;nbsp;않은&amp;nbsp;cell들을&amp;nbsp;대상으로&amp;nbsp;byrow를&amp;nbsp;실행한다&amp;nbsp;&amp;nbsp;byrowrec&amp;nbsp;:&amp;nbsp;byrow후,&amp;nbsp;merge되지&amp;nbsp;않은&amp;nbsp;cell들을&amp;nbsp;대상으로&amp;nbsp;bycol을&amp;nbsp;수행한다.
+						<w2:attributes></w2:attributes>
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th">
+						moveKeyEditMode
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						방향키로&amp;nbsp;원하는&amp;nbsp;방향에&amp;nbsp;위치한&amp;nbsp;셀의&amp;nbsp;editMode&amp;nbsp;상태에&amp;nbsp;바로&amp;nbsp;진입한다.
+						<w2:attributes></w2:attributes>
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th">
+						nextTabID
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						tab으로&amp;nbsp;이동시&amp;nbsp;이동할&amp;nbsp;컴포넌트&amp;nbsp;ID
+						<w2:attributes></w2:attributes>
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th">
+						numberMask
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						[default:&amp;nbsp;&quot;&quot;]&amp;nbsp;화폐단위&amp;nbsp;변경을&amp;nbsp;위해&amp;nbsp;dataType&amp;nbsp;=&amp;nbsp;&quot;number&quot;&amp;nbsp;로&amp;nbsp;설정한&amp;nbsp;경우나&amp;nbsp;changeCurrency&amp;nbsp;API를&amp;nbsp;사용했을&amp;nbsp;때&amp;nbsp;적용되는&amp;nbsp;마스킹&amp;nbsp;값.
+						<w2:attributes></w2:attributes>
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">oddEvenColorDisplay</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">[default:true, false] 행의 짝,홀수의 반복색을 사용할지의 여부.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th">
+						pasteOption
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						[default:&amp;nbsp;&quot;&quot;,&amp;nbsp;focus]&amp;nbsp;Ctrl(또는&amp;nbsp;cmd)&amp;nbsp;+&amp;nbsp;V를&amp;nbsp;눌러&amp;nbsp;클립보드에&amp;nbsp;복사된&amp;nbsp;컬럼&amp;nbsp;단위의&amp;nbsp;데이터의&amp;nbsp;붙여넣을&amp;nbsp;방법을&amp;nbsp;지정하는&amp;nbsp;속성
+						<w2:attributes></w2:attributes>
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th">
+						preventAddRowOnPaste
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						[default:&amp;nbsp;false,&amp;nbsp;true]&amp;nbsp;Ctrl(또는&amp;nbsp;cmd)+V를&amp;nbsp;눌러&amp;nbsp;클립보드에서&amp;nbsp;그리드로&amp;nbsp;붙여넣기하는&amp;nbsp;경우&amp;nbsp;새로운&amp;nbsp;행을&amp;nbsp;추가시킬지의&amp;nbsp;여부
+						<w2:attributes></w2:attributes>
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th">
+						preventCopy
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						[default:&amp;nbsp;false,&amp;nbsp;true]&amp;nbsp;Ctrl(또는&amp;nbsp;cmd)+C를&amp;nbsp;눌러&amp;nbsp;그리드&amp;nbsp;전체의&amp;nbsp;데이터를&amp;nbsp;클립보드에&amp;nbsp;복사하는&amp;nbsp;동작을&amp;nbsp;방지.
+						<w2:attributes></w2:attributes>
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th">
+						preventCopyColumn
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						[default:&amp;nbsp;&quot;&quot;]&amp;nbsp;Ctrl(또는&amp;nbsp;cmd)&amp;nbsp;+&amp;nbsp;C를&amp;nbsp;눌러&amp;nbsp;컬럼&amp;nbsp;단위의&amp;nbsp;데이터를&amp;nbsp;클립보드에&amp;nbsp;복사하는&amp;nbsp;동작을&amp;nbsp;방지.&amp;nbsp;&amp;nbsp;&amp;nbsp;preventCopyColumn속성을&amp;nbsp;적용할&amp;nbsp;컬럼&amp;nbsp;ID를&amp;nbsp;string형태로&amp;nbsp;적용한다.&amp;nbsp;&amp;nbsp;&amp;nbsp;(사용&amp;nbsp;예)&amp;nbsp;preventCopyColumn&amp;nbsp;=&amp;nbsp;&quot;col1,col2&quot;;
+						<w2:attributes></w2:attributes>
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th">
+						preventPaste
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						[default:&amp;nbsp;false,&amp;nbsp;true]&amp;nbsp;Ctrl(또는&amp;nbsp;cmd)+V를&amp;nbsp;눌러&amp;nbsp;클립보드에&amp;nbsp;복사된&amp;nbsp;컬럼&amp;nbsp;단위의&amp;nbsp;데이터를&amp;nbsp;붙여넣는&amp;nbsp;동작을&amp;nbsp;방지.
+						<w2:attributes></w2:attributes>
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th">
+						preventPasteColumn
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						[default:&amp;nbsp;&quot;&quot;]&amp;nbsp;Ctrl(또는&amp;nbsp;cmd)&amp;nbsp;+&amp;nbsp;V를&amp;nbsp;눌러&amp;nbsp;클립보드에&amp;nbsp;복사된&amp;nbsp;컬럼&amp;nbsp;단위의&amp;nbsp;데이터를&amp;nbsp;붙여넣는&amp;nbsp;동작을&amp;nbsp;방지.&amp;nbsp;&amp;nbsp;&amp;nbsp;preventPasteColumn속성을&amp;nbsp;적용할&amp;nbsp;컬럼&amp;nbsp;ID를&amp;nbsp;string형태로&amp;nbsp;적용한다.&amp;nbsp;&amp;nbsp;&amp;nbsp;(사용&amp;nbsp;예)&amp;nbsp;preventPasteColumn&amp;nbsp;=&amp;nbsp;&quot;col1,col2&quot;;
+						<w2:attributes></w2:attributes>
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">readOnly</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						[default:false, true] gridView전체의 각 cell을 readOnly로 적용하며 body 컬럼의 readOnly속성이 설정된 경우 해당 컬럼의 속성이 우선시 됩니다.
+						<br></br>
+						readOnly 속성은 gridView,column,row,cell 별로 속성 또는 API로 조절이 가능하며 우선 순위에 따라 적용된됩니다.
+						<br></br>
+						우선 순위는 아래와 같습니다. gridView &lt; column &lt; row &lt; cell (column과 row의 우선 순위는 gridView의 readOnlyPriority속성에 의해 변경
+						가능)
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">readOnlyBackgroundColor</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">readOnly속성이 true인 cell의 배경색.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">readOnlyBackgroundImg</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">readOnly속성이 true인 cell의 배경 이미지의 경로.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">readOnlyBackgroundImgCSS</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						readOnly속성이 true인 cell의 배경이미지의 CSS 구문으로 readOnlyBackgroundImg속성보다 우선됩니다.
+						<br></br>
+						예시 ) background: steelblue url(&quot;이미지경로&quot;) 10px 50% no-repeat;
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">resize</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						[default:true, false] header의 컬럼 경계선에서 마우스 drag를 이용하여 컬럼의 폭 크기를 조절 할지의 여부.
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">rowMouseOver</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">[default:true, false] 마우스 over시에 over된 행의 배경색을 표시할지의 여부.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">rowMouseOverColor</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">마우스 over시의 행 배경색.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">rowNumBackgroundColor</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">rowNumVisiblue속성이 true인 경우 해당 body 컬럼의 배경색.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">rowNumHeaderValue</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">행 번호를 표시할 column의 head에 표시할 text</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">rowNumVisible</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">행 번호 표시 여부</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">rowNumWidth</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">rowNumVisiblue속성이 true인 경우 해당 컬럼의 width.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">rowStatusHeaderValue</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">행 상태를 표시할 column의 head에 표시할 text</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">rowStatusVisible</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">행 상태 표시 여부</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">rowStatusWidth</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">rowStatusVisible 속성이 true인 경우 해당 컬럼의 width.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th">
+						rowNumLocaleRef
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						rowNum&amp;nbsp;컬럼에&amp;nbsp;설정할&amp;nbsp;localeRef&amp;nbsp;키.
+						<w2:attributes></w2:attributes>
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th">
+						rowNumStatusUniqueId
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						[default:false,&amp;nbsp;true]&amp;nbsp;rowNumVisible&amp;nbsp;또는&amp;nbsp;rowNumStatus&amp;nbsp;사용&amp;nbsp;시&amp;nbsp;각&amp;nbsp;row별로&amp;nbsp;unique한&amp;nbsp;id를&amp;nbsp;사용할지에&amp;nbsp;대한&amp;nbsp;여부&amp;nbsp;&amp;nbsp;기본값은&amp;nbsp;false로&amp;nbsp;이&amp;nbsp;경우&amp;nbsp;모든&amp;nbsp;rowNum&amp;nbsp;td들의&amp;nbsp;id는&amp;nbsp;_headerRowNumber이고&amp;nbsp;rowStatus&amp;nbsp;td들의&amp;nbsp;id는&amp;nbsp;_headerStatusNumber가&amp;nbsp;된다.&amp;nbsp;&amp;nbsp;&amp;nbsp;W3C&amp;nbsp;validator를&amp;nbsp;통과하기&amp;nbsp;위해서는&amp;nbsp;이&amp;nbsp;속성값이&amp;nbsp;true여야&amp;nbsp;한다.&amp;nbsp;즉&amp;nbsp;이&amp;nbsp;속성값을&amp;nbsp;true로&amp;nbsp;사용할&amp;nbsp;것을&amp;nbsp;권장한다.
+						<w2:attributes></w2:attributes>
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th">
+						rowStatusLocaleRef
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						rowStatus&amp;nbsp;컬럼에&amp;nbsp;설정할&amp;nbsp;localeRef&amp;nbsp;키.
+						<w2:attributes></w2:attributes>
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th">
+						rupeeMask
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						[default:&amp;nbsp;&quot;&quot;]&amp;nbsp;화폐단위&amp;nbsp;변경을&amp;nbsp;위해&amp;nbsp;dataType&amp;nbsp;=&amp;nbsp;&quot;rupee&quot;&amp;nbsp;로&amp;nbsp;설정한&amp;nbsp;경우나&amp;nbsp;changeCurrency&amp;nbsp;API를&amp;nbsp;사용했을&amp;nbsp;때&amp;nbsp;적용되는&amp;nbsp;마스킹&amp;nbsp;값.
+						<w2:attributes></w2:attributes>
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th">
+						sortable
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						gridView의&amp;nbsp;헤더&amp;nbsp;클릭을&amp;nbsp;통한&amp;nbsp;데이터&amp;nbsp;정렬&amp;nbsp;지원&amp;nbsp;여부
+						<w2:attributes></w2:attributes>
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">selectedCellColor</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">선택 된 cell의 배경색.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">selectedCellOverColor</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						선택 된 cell에 마우스 over시의 배경색.(지정하지 않으면 rowMouseOverColor속성의 값을 사용)
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">selectedRowColor</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">선택 된 행의 배경색.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">selectedRowOverColor</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">선택 된 행에 마우스 over시의 배경색.(지정하지 않으면 rowMouseOverColor속성의 값을 사용)</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">senseReader</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						[default:false, true] 웹 접근성을 지원하기 위한 모드. 이 모드를 true로 설정하면 tab키로 gridView의 모든 cell을 순회할 수 있습니다.
+						<br></br>
+						또한 inputType=&quot;text&quot;, &quot;select&quot;, &quot;radio&quot;, &quot;checkbox&quot;인 경우
+						embeddedInput=&quot;true&quot;를 적용하여 cell내부에 직접 input(또는 select,radio,checkbox)가 포함되어 그려지게 되어 이를 리더기에서 인식할 수 있게 됩니다.
+						<br></br>
+						focusMode=&quot;none&quot;, focusMove=&quot;false&quot; 속성과 함께 사용할 것을 권장합니다.
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">style</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">GridView의 style 속성</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">summary</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						HTML의 table Tag의 summary 속성과 동일한 기능을 제공한다. 일반적으로 웹접근성 화면 구현시 사용됩니다.
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th">
+						showImageTooltip
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						[default:&amp;nbsp;false,&amp;nbsp;true]&amp;nbsp;inputType&amp;nbsp;=&amp;nbsp;&quot;image&quot;인&amp;nbsp;경우,&amp;nbsp;tooltip이&amp;nbsp;나오도록&amp;nbsp;설정함.&amp;nbsp;&amp;nbsp;true:&amp;nbsp;inputType&amp;nbsp;=&amp;nbsp;&quot;image&quot;인&amp;nbsp;경우,&amp;nbsp;tooltip&amp;nbsp;기능이&amp;nbsp;동작함.&amp;nbsp;&amp;nbsp;&amp;nbsp;false&amp;nbsp;(기본&amp;nbsp;값):&amp;nbsp;inputType&amp;nbsp;=&amp;nbsp;&quot;image&quot;인&amp;nbsp;경우,&amp;nbsp;tooltip&amp;nbsp;기능이&amp;nbsp;동작&amp;nbsp;안&amp;nbsp;함.
+						<w2:attributes></w2:attributes>
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th">
+						syncScroll
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						다수의&amp;nbsp;grid를&amp;nbsp;동시에&amp;nbsp;세로로&amp;nbsp;scroll시키기&amp;nbsp;위한&amp;nbsp;옵션.&amp;nbsp;grid의&amp;nbsp;row의&amp;nbsp;갯수가&amp;nbsp;동일할&amp;nbsp;경우에만&amp;nbsp;동작.
+						<w2:attributes></w2:attributes>
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th">
+						syncScrollId
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						scroll을&amp;nbsp;동기화&amp;nbsp;시킬&amp;nbsp;grid의&amp;nbsp;id
+						<w2:attributes></w2:attributes>
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th">
+						titleAuto
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						[default:&amp;nbsp;false,&amp;nbsp;true]&amp;nbsp;cell의&amp;nbsp;header&amp;nbsp;inputType&amp;nbsp;=&amp;nbsp;&quot;text&quot;이고&amp;nbsp;cell의&amp;nbsp;inputType이&amp;nbsp;&quot;text,&amp;nbsp;link,&amp;nbsp;checkbox,&amp;nbsp;button,&amp;nbsp;radio,&amp;nbsp;select(tableRender&amp;nbsp;=&amp;nbsp;&quot;ul&quot;인&amp;nbsp;경우),&amp;nbsp;secret&quot;일&amp;nbsp;때,&amp;nbsp;&amp;nbsp;cell의&amp;nbsp;title속성에&amp;nbsp;자동으로&amp;nbsp;다음과&amp;nbsp;같은&amp;nbsp;값이&amp;nbsp;나타나도록&amp;nbsp;설정함.&amp;nbsp;&amp;nbsp;예를들어서&amp;nbsp;cell의&amp;nbsp;header&amp;nbsp;Tiltle&amp;nbsp;값이&amp;nbsp;&quot;name1&quot;&amp;nbsp;이고&amp;nbsp;cell의&amp;nbsp;data값이&amp;nbsp;&quot;1&quot;이며&amp;nbsp;inputType&amp;nbsp;=&amp;nbsp;&quot;text&quot;&amp;nbsp;인&amp;nbsp;경우,&amp;nbsp;해당&amp;nbsp;cell의&amp;nbsp;title속성&amp;nbsp;값은&amp;nbsp;title&amp;nbsp;=&amp;nbsp;&quot;name1&amp;nbsp;1&quot;&amp;nbsp;으로&amp;nbsp;나타남.&amp;nbsp;&amp;nbsp;만약&amp;nbsp;cell의&amp;nbsp;data값이&amp;nbsp;&quot;&quot;인&amp;nbsp;경우에는&amp;nbsp;해당&amp;nbsp;cell의&amp;nbsp;title속성&amp;nbsp;값은&amp;nbsp;title&amp;nbsp;=&amp;nbsp;&quot;name&amp;nbsp;text&quot;으로&amp;nbsp;나타남.
+						<w2:attributes></w2:attributes>
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">tooltipDisplay</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						[default:false, true] cell의 데이터가 width보다 긴 경우 해당 데이터를 마우스 over시 툴팁으로 표현할지의 여부.
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th">
+						tooltipDisplayColumn
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						[default:&amp;nbsp;false,&amp;nbsp;true]&amp;nbsp;특정&amp;nbsp;컬럼만&amp;nbsp;tooltip이&amp;nbsp;표현되도록&amp;nbsp;컬럼명을&amp;nbsp;설정함&amp;nbsp;&amp;nbsp;사용&amp;nbsp;예)&amp;nbsp;tooltipDisplayColumn&amp;nbsp;=&amp;nbsp;&quot;col1,col2&quot;;
+						<w2:attributes></w2:attributes>
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th">
+						tooltipHeader
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						[default:false,&amp;nbsp;true]&amp;nbsp;gridView의&amp;nbsp;header에&amp;nbsp;tooltip을&amp;nbsp;나타내는&amp;nbsp;설정.tooltipDisplay&amp;nbsp;=&amp;nbsp;&quot;true&quot;(또는&amp;nbsp;tooltipShowAlways=&quot;true&quot;)로&amp;nbsp;설정&amp;nbsp;후&amp;nbsp;동작함.&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;기존에&amp;nbsp;tooltip&amp;nbsp;관련&amp;nbsp;옵션인&amp;nbsp;tooltipDisplay&amp;nbsp;및&amp;nbsp;tooltipDisplayTime등과&amp;nbsp;기능이&amp;nbsp;일치한다.
+						<w2:attributes></w2:attributes>
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th">
+						tengeMask
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						[default:&amp;nbsp;&quot;&quot;]&amp;nbsp;화폐단위&amp;nbsp;변경을&amp;nbsp;위해&amp;nbsp;dataType&amp;nbsp;=&amp;nbsp;&quot;tenge&quot;&amp;nbsp;로&amp;nbsp;설정한&amp;nbsp;경우나&amp;nbsp;changeCurrency&amp;nbsp;API를&amp;nbsp;사용했을&amp;nbsp;때&amp;nbsp;적용되는&amp;nbsp;마스킹&amp;nbsp;값.
+						<w2:attributes></w2:attributes>
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">visibleRowNum</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">화면에 표현 될 행 수. &quot;all&quot;로 설정 시 모든 row가 스크롤 없이 표현됩니다.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">wheelStop</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						[default:false] 그리드 스크롤이 맨 아래로 내려갔을 때 wheel을 한 경우 브라우저 스크롤을 막을지에 대한 여부
+					</xf:group>
+				</xf:group>
+			</xf:group></xf:group>
+			<xf:group id="" class="titbox"><w2:textbox style="" id="" label="GridView[Column] Property" class="" tagname="h3"></w2:textbox></xf:group>
+			<xf:group id="" class="tblbox"><xf:group tagname="table" style="" id="" class="w2tb tbl">
+				<w2:attributes>
+					<w2:summary></w2:summary>
+				</w2:attributes>
+				<xf:group tagname="colgroup">
+					<xf:group tagname="col" style="width:20%;"></xf:group>
+					<xf:group tagname="col" style=""></xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">Property</xf:group>
+					<xf:group tagname="th" style="" class="w2tb_th">Description</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th">
+						allOption
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						inputType이&amp;nbsp;selectbox인&amp;nbsp;경우에&amp;nbsp;전체를&amp;nbsp;선택하는&amp;nbsp;라벨을&amp;nbsp;표시할지&amp;nbsp;여부
+						<w2:attributes></w2:attributes>
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">calendarClass</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						[default:class1, class2, class3, class4, class5]Calendr의 스킨 종류를 정의합니다.
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">calendarValueType</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">inputType이 calendar인 경우에 calendar의 타입</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">class</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">column에 적용될 class</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">colMerge</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">선택한 열에서 동일데이터 행 반복시 하나의 셀로 표현할지 여부</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">colSpan</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">span할 열의 수</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">dataType</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						column의 데이터 Type 설정하지 않은 경우 dataColleciton(dataList)의 dataType을 설정하게 됩니다(권장사항). subTotal, Footer는 gridView column에
+						dataType을 설정 합니다.
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">depthColumn</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">inputType이 drilldown일 때 depth를 표시해줄 열의 id</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">depthType</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						grid의 drilldown 사용 시 노드의 연관관계를 표현하는 방식 nbsp : 공백(default), div : 빈 div상자, line : 이미지로 표현, none : 미표현
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">disabled</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">셀의 disabled 여부</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">disabledClass</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">셀이 disabled 일때 추가할 class이름</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">imageHeight</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">inputType이 image인 경우에 이미지의 높이</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">imageSrc</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">inputType이 image인 경우에 이미지의 경로</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">imageWidth</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">inputType이 image인 경우에 이미지의 폭</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">imeMode</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						inputType이 text인 경우 ime-mode(css) 값을 설정합니다. (ime-mode가 지원 가능한 일부 브라우저에서 동작함)
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">inputType</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						셀의 타입
+						<br></br>
+						- text : 열의 셀 값을 일반 텍스트로 표현합니다.
+						<br></br>
+						- link : 열의 셀 값을 밑줄 쳐진 강조된 텍스트로 표현합니다.
+						<br></br>
+						- checkbox : 열의 셀 값을 true/falseValue 에 따라 다중 행 선택이 가능합니다.
+						<br></br>
+						- button : 열의 셀 값을 버튼으로 표현합니다.
+						<br></br>
+						- image : 열의 셀 값을 이미지 표현합니다.
+						<br></br>
+						- radio : 열의 셀 값을 true/falseValue 에 따라 하나의 행 선택이 가능합니다.
+						<br></br>
+						- select : 설정된 항목 리스트 중에서 열의 셀 값과 같은 value의 label(name)을 선택합니다.
+						<br></br>
+						- calendar : 열의 셀 값을 설정된 날짜 형태(기본:yyyy-MM-dd)로 표현하며, 달력 아이콘을 보여준다. 달력 아이콘으로 캘린더에서 선택 가능합니다.
+						<br></br>
+						- expression : expression 속성에 WebSquare가 제공하는 기능함수를 사용하여 텍스트를 표현합니다.
+						<br></br>
+						- 다른 컬럼을 참조하여 새로운 데이터를 생성하는 사용자 정의 함수를 만들어 사용이 가능합니다.
+						<br></br>
+						- expression 속성 값의 예 : display('columnID'), rowIndex(), userExp(rowIndex(), display('columnID'))
+						<br></br>
+						- textarea : 열의 셀 값을 여러줄의 텍스트로 표현합니다.
+						<br></br>
+						- drilldown : +, - 버튼이 있는 트리 형태로 표현합니다.
+						<br></br>
+						- textImage : 열의 셀 값을 일반 텍스트로 표현하며, 아이콘을 보여준다. 이벤트처리함수(imageClickFunction)를 사용하여 아이콘 클릭에 따른 동작을 설정할 수 있습니다.
+						<br></br>
+						- checkcombobox : checkbox 와 combobox 가 결합된 형태로 한가지 이상의 항목을 선택할 수 있는 combobox 입니다.
+						<br></br>
+						- autoComplete : 텍스트를 입력하면 자동으로 해당 텍스트를 갖고 있는 값을 표시합니다.
+						<br></br>
+						- secret : 텍스트를 안보이도록 감추기 기능을 합니다.
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">rowSpan</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">span할 행의 수</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">showDepth</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">inputType이 drilldown인 경우에 처음 로딩시 보여줄 depth</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">textAlign</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">셀의 텍스트 정렬 부분</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">value</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">셀의 값</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">viewType</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						그리드 셀이 편집중인 상태가 아닐때 기본 형태로 보여질지, 아니면 icon을 표시하는 형태로 보여지질 결정하는 타입
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">width</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">컬럼의 width 값</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th">
+						fastScroll
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						세로&amp;nbsp;스크롤&amp;nbsp;이동시&amp;nbsp;빠르게&amp;nbsp;스크롤되는&amp;nbsp;효과를&amp;nbsp;주는&amp;nbsp;기능으로&amp;nbsp;시간내에&amp;nbsp;그릴수&amp;nbsp;있는&amp;nbsp;부분까지만&amp;nbsp;표현한다.
+						<br></br>
+						&amp;nbsp;&amp;nbsp;그려지지&amp;nbsp;못하는&amp;nbsp;영역에는&amp;nbsp;&quot;화면&amp;nbsp;갱신&amp;nbsp;중&amp;nbsp;입니다.&quot;&amp;nbsp;라는&amp;nbsp;메세지가&amp;nbsp;표현된다.
+						<w2:attributes></w2:attributes>
+					</xf:group>
+				</xf:group>
+			</xf:group></xf:group>
+			<xf:group id="" class="titbox"><w2:textbox style="" id="" label="03. CSS Overriding" class="" tagname="h3"></w2:textbox></xf:group>
+			<xf:group id="" class="tblbox"><xf:group tagname="table" style="position: relative ;width:100%;" id="" class="w2tb tbl">
+				<w2:attributes>
+					<w2:summary></w2:summary>
+				</w2:attributes>
+				<xf:group tagname="colgroup">
+					<xf:group tagname="col" style="width:20%;"></xf:group>
+					<xf:group tagname="col" style=""></xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">Class</xf:group>
+					<xf:group tagname="th" style="" class="w2tb_th">Description</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">w2grid</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						w2grid은 웹스퀘어 엔진에서 정의된 클래스입니다, 브라우저가 파싱할때 자동으로 부여됩니다.
+						<br></br>
+					</xf:group>
+				</xf:group>
+			</xf:group></xf:group>
+			<xf:group adaptiveThreshold="" class="msgbox" id="" style="">
+				<xf:group id="" class="titbox"><w2:textbox style="" id="" label="Tip" class="" tagname="h3"></w2:textbox></xf:group><w2:textbox class="txt_info" id=""
+					label='DataCollection의 Data는 직접 만들어진 Excel을 복사해서 붙여넣기가 가능합니다. 반대로 입력한 데이터를 Excel에 붙여넣기도 가능합니다.&lt;br/&gt;' style="">
+				</w2:textbox>
+				<w2:textbox class="txt_info" id=""
+					label="autofit를 allColumn으로 설정 시 브라우저를 원하는 대로 늘리거나 줄여도 그리드는 100%로 리사이징 됩니다. &lt;br/&gt;최소 넓이 값을 넣으려면 autoFitMinWidth 속성값을 사용합니다.&lt;br/&gt;예) 해당 값을 1024px로 지정하면 그리드풀사이징에서 해당 사이즈로 줄었을 때 가로 스크롤이 발생되며 리사이징을 막습니다."
+					style="">
+				</w2:textbox>
+				<w2:textbox class="txt_info" id=""
+					label='body column의 inputType(text,checkbox,rdio,select,calendar)클래스명과 inputbox,selectbox,calendar 같은 컴포넌트의 클래스명이 동일합니다.&lt;br/&gt;예로 inputbox의 파싱되는 클래스명 "w2input"라는 클래스명으로 특정 css 지정시 그리드뷰의 inputType에도 같이 영향을 줄 수 있으므로 주의하셔야 합니다.'
+					style="">
+				</w2:textbox>
+			</xf:group>
+		</xf:group>
+    </body>
+</html>

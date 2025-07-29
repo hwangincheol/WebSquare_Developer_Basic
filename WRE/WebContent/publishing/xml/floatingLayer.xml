@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+        <w2:type>COMPONENT</w2:type>
+        <w2:buildDate/>
+        <w2:MSA/>
+        <xf:model>
+            <w2:dataCollection baseNode="map"/>
+            <w2:workflowCollection/>
+        </xf:model>
+        <w2:layoutInfo/>
+        <w2:publicInfo method=""/>
+        <script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function() {
+	
+};
+]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload">
+    	<xf:group class="sub_contents" id="" style="">
+			<xf:group class="pgtbox" id="" style="">
+				<w2:textbox class="pgt_tit" id="" label="Publishing Template - FloatingLayer" style=""></w2:textbox>
+			</xf:group>
+			<xf:group id="" class="titbox"><w2:textbox style="" id="" label="화면 안에 팝업 형태로 띄워지는 layer 컴포넌트입니다.&lt;br/&gt;팝업과 다른 점은 UI 컴포넌트이기 때문에 팝업을 띄울 화면에 미리 배치시키고 show/hide API를 이용하여 숨기거나 보이게 합니다.&lt;br/&gt;Group 컴포넌트와 같은 구조로 컴포넌트 하위(안쪽)로 직접 컴포넌트를 배치하거나 WFrame 또는 IFrame 컴포넌트를 배치시켜 화면을 link할 수도 있습니다.&lt;br/&gt;일반적으로 body 하위에 배치하며 본 컴포넌트의 최상위는 div Tag로 이루어져 있으며 하위로 복합 Tag들로 구성되어있습니다." class="">
+			</w2:textbox></xf:group><xf:group class="titbox" id="" style="">
+				<w2:textbox class="" id="" label="01. Sample" style="" tagname="h3"></w2:textbox>
+			<xf:group id="" class="rt"><w2:anchor outerDiv="false" name="" style="" href="/ws/download/floatingLayer.zip" id="" class="btn_cm">
+					<xf:label><![CDATA[Download]]></xf:label>
+				</w2:anchor></xf:group></xf:group>
+			<xf:group id="" style="height: 400px;border:1px dashed #ccc;" class="msgbox">
+				<w2:floatingLayer id="" title="Title" style="position: absolute;width: 300px;height: 300px;" class="wq_fly "></w2:floatingLayer>
+			</xf:group>
+			<xf:group id="" class="titbox"><w2:textbox style="" id="" label="02. Property" class="" tagname="h3"></w2:textbox></xf:group>
+			<xf:group id="" class="tblbox"><xf:group tagname="table" style="" id="" class="w2tb tbl">
+				<w2:attributes>
+					<w2:summary></w2:summary>
+				</w2:attributes>
+				<xf:group tagname="colgroup">
+					<xf:group tagname="col" style="width:20%;"></xf:group>
+					<xf:group tagname="col" style=""></xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">Property</xf:group>
+					<xf:group tagname="th" style="" class="w2tb_th">Description</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">bodyBottomClass</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						중앙 아래의 테두리에 적용할 class명. 기본적으로 background 속성에 image의 url이 적용되어있으므로 image를 제거하고자 할 때는 background-image:none;을 적용해야합니다.
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">bodyCenterClass</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">내부 컨텐츠가 배치되는 중앙에 적용할 class명.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">bodyLeftBottomClass</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						왼쪽 아래의 테두리에 적용할 class명. 기본적으로 background 속성에 image의 url이 적용되어있으므로 image를 제거하고자 할 때는 background-image:none;을 적용해야합니다.
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">bodyLeftClass</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						왼쪽 테두리에 적용할 class명. 기본적으로 background 속성에 image의 url이 적용되어있으므로 image를 제거하고자 할 때는 background-image:none;을 적용해야합니다.
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">bodyRightBottomClass</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						오른쪽 아래의 테두리에 적용할 class명. 기본적으로 background 속성에 image의 url이 적용되어있으므로 image를 제거하고자 할 때는 background-image:none;을
+						적용해야합니다.
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">bodyRightClass</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						오른쪽 테두리에 적용할 class명. 기본적으로 background 속성에 image의 url이 적용되어있으므로 image를 제거하고자 할 때는 background-image:none;을 적용해야합니다.
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">class</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						HTML의 class속성과 동일한 기능을 제공하며 css파일 또는 style블럭에 정의한 class를 1개 또는 공백(space)를 이용하여 다중 적용이 가능합니다.
+						<br></br>
+						컴포넌트의 layout이 복잡한 구조를 가지고 있기 때문에 css의 selector를 이용하여 하위 항목에 접근해야합니다.
+						<br></br>
+						기본적으로 엔진 내부에서 컴포넌트별로 class를 적용하고 있으며 해당 class를 이용하여 컴포넌트의 css를 공통으로 적용할 수 있습니다.
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">closeButtonClass</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						상단 title영역의 우측 닫기 버튼에 적용할 class. 닫기 버튼은 image로 되어있으며 background 속성에 image의 url이 적용되어있습니다. 일반적으로 해당 image의 url만 변경하여
+						사용하며 버튼 image의 사이즈는 width:11px, height:10px 입니다.
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th">
+						dragResizable
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						[default:false]&amp;nbsp;마우스&amp;nbsp;드래그를&amp;nbsp;이용한&amp;nbsp;리사이즈&amp;nbsp;사용&amp;nbsp;여부
+						<w2:attributes></w2:attributes>
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th">
+						fixed
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						[default:false]&amp;nbsp;floatingLayer를&amp;nbsp;움직이지&amp;nbsp;않도록&amp;nbsp;설정하는&amp;nbsp;속성
+						<w2:attributes></w2:attributes>
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">headerCenterClass</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						상단 header의 중앙 영역에 적용할 class명. 기본적으로 background 속성에 image의 url이 적용되어있으므로 image를 제거하고자 할 때는 background-image:none;을
+						적용해야합니다.
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">headerLeftClass</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						상단 header의 왼쪽 영역에 적용할 class명. 기본적으로 background 속성에 image의 url이 적용되어있으므로 image를 제거하고자 할 때는 background-image:none;을
+						적용해야합니다.
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">headerRightClass</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						상단 header의 오른쪽 영역에 적용할 class명. 기본적으로 background 속성에 image의 url이 적용되어있으므로 image를 제거하고자 할 때는 background-image:none;을
+						적용해야합니다.
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">id</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">컴포넌트 ID로 전역객체로 할당되며 script에서 본 id로 컴포넌트에 접근이 가능합니다</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">movable</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">[default:true, true] 컴포넌트가 drag&amp;drop 이동 유무</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">style</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">FloatingLayer의 style 속성</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">title</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">상단 header에 표현되는 Text값으로 해당 영역에 HTML title속성에도 동일한 값이 설정됩니다.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">titleClass</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">상단 header에 표현되는 Text(title)에 적용할 class명.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th">
+						tabIndex
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						Tab&amp;nbsp;Key를&amp;nbsp;이용&amp;nbsp;한&amp;nbsp;컴포넌트의&amp;nbsp;포커스&amp;nbsp;순서로&amp;nbsp;HTML의&amp;nbsp;tabindex속성과&amp;nbsp;동일한&amp;nbsp;기능을&amp;nbsp;제공한다.
+						<w2:attributes></w2:attributes>
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">useModal</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						[default:false, true]컴포넌트의 show될 때 modal(본 컴포넌트 이외의 컴포넌트 제어를 막습니다)을 적용할 지의 여부
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th">
+						useModalStack
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						[default:false,&amp;nbsp;true]modal&amp;nbsp;적용&amp;nbsp;시&amp;nbsp;modal을&amp;nbsp;단계적으로&amp;nbsp;적용할지에&amp;nbsp;대한&amp;nbsp;여부
+						<w2:attributes></w2:attributes>
+					</xf:group>
+				</xf:group>
+			</xf:group></xf:group>
+			<xf:group id="" class="titbox"><w2:textbox style="" id="" label="03. CSS Overriding" class="" tagname="h3"></w2:textbox></xf:group>
+			<xf:group id="" class="tblbox"><xf:group tagname="table" style="" id="" class="w2tb tbl">
+				<w2:attributes>
+					<w2:summary></w2:summary>
+				</w2:attributes>
+				<xf:group tagname="colgroup">
+					<xf:group tagname="col" style="width:20%;"></xf:group>
+					<xf:group tagname="col" style=""></xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">Class</xf:group>
+					<xf:group tagname="th" style="" class="w2tb_th">Description</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">w2floatingLayer</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						w2floatingLayer는 웹스퀘어 엔진에서 정의된 클래스입니다. 기본적으로 html 로 떨구는 시점에서 자동으로 부여됩니다.
+					</xf:group>
+				</xf:group>
+			</xf:group></xf:group>
+			<xf:group adaptiveThreshold="" class="msgbox" id="" style="">
+				<xf:group id="" class="titbox"><w2:textbox style="" id="" label="Tip" class="" tagname="h3"></w2:textbox></xf:group><w2:textbox class="txt_info" id=""
+					label="floatingLayer가 다른 컴포넌트보다 상위에 놓이도록 하려면 z-index 값을 변경하세요.&lt;br/&gt;ex) Iframe팝업일경우 z-index는 6010이 적용됩니다." style="">
+				</w2:textbox>
+			</xf:group>
+		</xf:group>
+    </body>
+</html>

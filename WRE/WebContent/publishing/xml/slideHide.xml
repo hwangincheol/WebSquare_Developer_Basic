@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+        <w2:type>COMPONENT</w2:type>
+        <w2:buildDate/>
+        <w2:MSA/>
+        <xf:model>
+            <w2:dataCollection baseNode="map"/>
+            <w2:workflowCollection/>
+        </xf:model>
+        <w2:layoutInfo/>
+        <w2:publicInfo method=""/>
+        <script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function() {
+	
+};
+]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload">
+    	<xf:group class="sub_contents" id="" style="">
+			<xf:group class="pgtbox" id="" style="">
+				<w2:textbox class="pgt_tit" id="" label="Publishing Template - SlideHide" style=""></w2:textbox>
+			</xf:group>
+			<xf:group id="" class="titbox"><w2:textbox style="" id="" label="특정 영역을 사용자가 지정한 이벤트(click, mouseOver)가 발생하면 좌, 우 또는 상,하 중 사용자가 지정한 방향으로 영역이 슬라이드 되면서 보이거나 숨김처리가  가능한 기능입니다." class="txt_guide">
+			</w2:textbox></xf:group><xf:group class="titbox" id="" style="">
+				<w2:textbox class="" id="" label="01. Sample" style="" tagname="h3"></w2:textbox>
+			<xf:group id="" class="rt"><w2:anchor outerDiv="false" name="" style="" href="/ws/download/slideHide.zip" id="" class="btn_cm">
+					<xf:label><![CDATA[Download]]></xf:label>
+				</w2:anchor></xf:group></xf:group>
+			<xf:group class="msgbox" id="" style="">
+				<w2:slideHide class="box_sdh" firstStatus="slide" hideEvent="onclick" id="" moveSize="7" showSize="20"
+					slideDirection="right" slideEvent="onclick" style="">
+					<xf:group id="" style="" class="btn_sdh">
+						<xf:image id="" style="width:22px;height:100px;" src="/ws/images/style/component/btn_sdh.png"></xf:image>
+					</xf:group>
+					<w2:textbox id="" label="" ref="" style="" tagname="" class="bg_sdh"></w2:textbox>
+				</w2:slideHide>
+			</xf:group>
+			<xf:group id="" class="titbox"><w2:textbox tagname="h3" style="" id="" label="02. Property" class=""></w2:textbox></xf:group>
+			<xf:group id="" class="tblbox"><xf:group tagname="table" style="" id="" class="wq_tb w2tb tbl">
+				<w2:attributes>
+					<w2:summary></w2:summary>
+				</w2:attributes>
+				<xf:group tagname="colgroup">
+					<xf:group tagname="col" style="width:20%;"></xf:group>
+					<xf:group tagname="col" style=""></xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">Property</xf:group>
+					<xf:group tagname="th" style="" class="w2tb_th">Description</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">class</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">사용자가 임의의 class를 정의할때 사용합니다</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">firstStatus</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">처음에 보여질지 숨겨져 있을지 여부를 설정합니다.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">hideEvent</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">hide가 발생할 이벤트의 종류를 지정합니다.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">id</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">사용자가 임의의 id를 정의할때 사용합니다.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">moveSize</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						애니메이션시 한번에 움직일 단위입니다. 높을수록 애니메이션 프레임이 저하되며 속도는 빨라집니다. 반대로 단위가 낮으면 애니메이션 프레임은 높아지며 속도는 느려집니다.
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">showSize</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">hide 되고난 후 보여지는 크기를 지정합니다.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">slideDirection</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">slide방향을 지정합니다.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">slideEvent</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">slide가 발생할 이벤트의 종류를 지정합니다.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th">
+						tabIndex
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						Tab&amp;nbsp;Key를&amp;nbsp;이용&amp;nbsp;한&amp;nbsp;컴포넌트의&amp;nbsp;포커스&amp;nbsp;순서로&amp;nbsp;HTML의&amp;nbsp;tabindex속성과&amp;nbsp;동일한&amp;nbsp;기능을&amp;nbsp;제공한다.
+						<w2:attributes></w2:attributes>
+					</xf:group>
+				</xf:group>
+			</xf:group></xf:group>
+			<xf:group id="" class="titbox"><w2:textbox tagname="h3" style="" id="" label="03. CSS Overriding" class=""></w2:textbox></xf:group>
+		<xf:group id="" class="tblbox"><xf:group tagname="table" style="" id="" class="wq_tb w2tb tbl">
+				<w2:attributes>
+					<w2:summary></w2:summary>
+				</w2:attributes>
+				<xf:group tagname="colgroup">
+					<xf:group tagname="col" style="width:20%;"></xf:group>
+					<xf:group tagname="col" style=""></xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">Class</xf:group>
+					<xf:group tagname="th" style="" class="w2tb_th">Description</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">w2slideHide, slide_hide</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						w2slideHide는웹스퀘어 엔진에서 정의된 클래스입니다, 기본적으로 html 로 떨구는 시점에서 자동으로 부여됩니다.
+						<br></br>
+						SlideHide컴포넌트를 숨김처리 하기 위하여 추가된 부모 객체입니다. 슬라이드 동작시 해당 객체의 너비, 높이값이 변하면서 슬라이드 동작이 이루어집니다.
+						<br></br>
+						slide_hide는 사용자 정의 클래스로 Stylesheet_ext.css 다음에 적용됩니다. 동일한 스타일 시트를 정의함으로서 overriding(덮어쓰기) 됩니다.
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">w2slideHide_slideHideMain</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						w2slideHide_slideHideMain는 웹스퀘어 엔진에서 정의된 클래스입니다, 기본적으로 html 로 떨구는 시점에서 자동으로 부여됩니다. SlideHide컴포넌트의 실제 영역입니다. 사용자 클래스로
+						접근할 경우에는 .slide_hide .w2slideHide_slideHideMain{}이런식으로 접근하여 overriding(덮어쓰기) 합니다.
+					</xf:group>
+				</xf:group>
+			</xf:group></xf:group></xf:group>
+	</body>
+</html>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+        <w2:type>COMPONENT</w2:type>
+        <w2:buildDate/>
+        <w2:MSA/>
+        <xf:model>
+            <w2:dataCollection baseNode="map"/>
+            <w2:workflowCollection/>
+        </xf:model>
+        <w2:layoutInfo/>
+        <w2:publicInfo method=""/>
+        <script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function() {
+		scwin.fn_setProgressbar();	//progressbar component
+	};
+	
+	//change progressbar class
+	scwin.fn_setProgressbar = function(progressbarClass, preProgressbarClass){
+		var prefixStr = "ui_prg0",i;
+		for(i=1;i<6;i++){
+			$p.getComponentById(prefixStr+i).animate(0, 70, 1000, function(){});
+		}
+		
+	};
+	
+	//progressbar class selectbox
+	scwin.ui_prgType_onviewchange = function(info) {
+		scwin.fn_setProgressbar(info.newValue, info.oldValue);
+	};
+
+]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload">
+    	<xf:group class="sub_contents" id="" style="">
+    		<xf:group class="pgtbox" id="" style="">
+    			<w2:textbox class="pgt_tit" id="" label="Publishing Template - Progressbar" style=""></w2:textbox>
+    		</xf:group>
+    		<xf:group id="" class="titbox">
+    			<w2:textbox style="" id=""
+    				label="HTML의 a Tag와 같은 기능을 제공하는 컴포넌트로 hyperlink를 정의할 수 있으며 CSS를 적용하여 버튼으로 사용합니다.&lt;br/&gt;outerDiv 속성이 공백이거나 true일경우 최상위는 div Tag로 이루어 지며, outerDiv가 false일 경우 &amp;nbsp;최상위는 a Tag 단독으로 이루어지며&lt;br/&gt;또한 웹스퀘어에서 사용할 수 있는 버튼 컴포넌트중의 하나이며 버튼을 그릴 때 기본적으로 권장하는 컴포넌트입니다."
+    				class="txt_guide">
+    			</w2:textbox>
+    		</xf:group>
+    		<xf:group class="titbox" id="" style="">
+    			<w2:textbox class="" id="" label="01. Sample" style="" tagname="h3"></w2:textbox>
+    			<xf:group id="" class="rt">
+    				<w2:anchor outerDiv="false" name="" style="" href="/ws/download/progressbar.zip" id="" class="btn_cm">
+    					<xf:label><![CDATA[Download]]></xf:label>
+    				</w2:anchor>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group adaptiveThreshold="" class="msgbox" id="" style="">
+    			<xf:group class="" id="" style="padding: 0px 20px;height: 70px;">
+    				<w2:progressbar autoClose="false" duration="1000" id="ui_prg01" max="100" min="0" progressClass="type1" step="1"
+    					style="position: relative;height: 30px;width:300px;top:30px;" valueType="percent">
+    				</w2:progressbar>
+    			</xf:group>
+    			<xf:group class="" id="" style="padding: 0px 20px;height: 70px;">
+    				<w2:progressbar autoClose="false" duration="1000" id="ui_prg02" max="100" min="0" progressClass="type2" step="1"
+    					style="position: relative;height: 30px;width:300px;top:30px;" valueType="percent">
+    				</w2:progressbar>
+    			</xf:group>
+    			<xf:group class="" id="" style="padding: 0px 20px;height: 70px;">
+    				<w2:progressbar autoClose="false" duration="1000" id="ui_prg03" max="100" min="0" progressClass="type4" step="1"
+    					style="position: relative;height: 30px;width:300px;top:30px;" valueType="percent">
+    				</w2:progressbar>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group id="" class="titbox">
+    			<w2:textbox tagname="h3" style="" id="" label="02. Property" class=""></w2:textbox>
+    		</xf:group>
+    		<xf:group id="" class="tblbox">
+    			<xf:group tagname="table" style="" id="" class="wq_tb w2tb tbl">
+    				<w2:attributes>
+    					<w2:summary></w2:summary>
+    				</w2:attributes>
+    				<xf:group tagname="colgroup">
+    					<xf:group tagname="col" style="width:20%;"></xf:group>
+    					<xf:group tagname="col" style=""></xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">Property</xf:group>
+    					<xf:group tagname="th" style="" class="w2tb_th">Description</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">autoClose</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						[default:false,&amp;nbsp;true]progressbar&amp;nbsp;100%시&amp;nbsp;자동삭제여부
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">class</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						HTML의&amp;nbsp;class속성과&amp;nbsp;동일한&amp;nbsp;기능을&amp;nbsp;제공하며&amp;nbsp;css파일&amp;nbsp;또는&amp;nbsp;style블럭에&amp;nbsp;정의한&amp;nbsp;class를&amp;nbsp;1개&amp;nbsp;또는&amp;nbsp;공백(space)를&amp;nbsp;이용하여&amp;nbsp;다중&amp;nbsp;적용이&amp;nbsp;가능하다.
+    						<br></br>
+    						기본적으로&amp;nbsp;엔진&amp;nbsp;내부에서&amp;nbsp;컴포넌트별로&amp;nbsp;class를&amp;nbsp;적용하고&amp;nbsp;있으며&amp;nbsp;해당&amp;nbsp;class를&amp;nbsp;이용하여&amp;nbsp;컴포넌트의&amp;nbsp;css를&amp;nbsp;공통으로&amp;nbsp;적용할&amp;nbsp;수&amp;nbsp;있다.
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">duration</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">[default:1000]애니메이션&amp;nbsp;지속시간</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">id</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						컴포넌트의&amp;nbsp;ID로&amp;nbsp;전역객체로&amp;nbsp;할당되며&amp;nbsp;script에서&amp;nbsp;본&amp;nbsp;id로&amp;nbsp;컴포넌트에&amp;nbsp;접근이&amp;nbsp;가능하다.
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">max</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">[default:100]progressbar&amp;nbsp;최대값</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" class="w2tb_th">
+    						min
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    					</xf:group>
+    					<xf:group tagname="td" class="w2tb_td">
+    						[deafult:0]progressbar&amp;nbsp;최소값
+    						<w2:attributes></w2:attributes>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">progressClass</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						[default:type2,type1,type3,type4,type5,type6,type7,type8,type9]스킨&amp;nbsp;종류를&amp;nbsp;정의한다.
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">ref</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						[default:&quot;&quot;]model&amp;nbsp;instance[dataList,dataMap]의&amp;nbsp;바인딩&amp;nbsp;정보
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">step</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">[default:10]progressbar에&amp;nbsp;증가치&amp;nbsp;설정</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">valueType</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						[default:percent,&amp;nbsp;number]progressbar로&amp;nbsp;나타낼&amp;nbsp;숫자.&amp;nbsp;%로&amp;nbsp;나타낼지&amp;nbsp;여부
+    					</xf:group>
+    				</xf:group>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group id="" class="titbox">
+    			<w2:textbox tagname="h3" style="" id="" label="03. CSS Overriding" class=""></w2:textbox>
+    		</xf:group>
+    		<xf:group id="" class="tblbox">
+    			<xf:group tagname="table" style="" id="" class="wq_tb w2tb tbl">
+    				<w2:attributes>
+    					<w2:summary></w2:summary>
+    				</w2:attributes>
+    				<xf:group tagname="colgroup">
+    					<xf:group tagname="col" style="width:20%;"></xf:group>
+    					<xf:group tagname="col" style=""></xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">Class</xf:group>
+    					<xf:group tagname="th" style="" class="w2tb_th">Description</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">.w2progressbar_bar</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						.w2progressbar_bar은&amp;nbsp;웹스퀘어&amp;nbsp;엔진에서&amp;nbsp;정의된&amp;nbsp;클래스입니다,&amp;nbsp;브라우저가&amp;nbsp;파싱할때&amp;nbsp;자동으로&amp;nbsp;부여돼는&amp;nbsp;클래스&amp;nbsp;입니다.
+    						<br></br>
+    					</xf:group>
+    				</xf:group>
+    			</xf:group>
+    		</xf:group>
+    	</xf:group>
+    </body>
+</html>

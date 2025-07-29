@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+        <w2:type>COMPONENT</w2:type>
+        <w2:buildDate/>
+        <w2:MSA/>
+        <xf:model>
+            <w2:dataCollection baseNode="map"/>
+            <w2:workflowCollection/>
+        </xf:model>
+        <w2:layoutInfo/>
+        <w2:publicInfo method=""/>
+        <script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function() {
+	
+};
+]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload">
+    	<xf:group class="sub_contents" id="" style="">
+			<xf:group class="pgtbox" id="" style="">
+				<w2:textbox class="pgt_tit" id="" label="Publishing Template - IFrame" style=""></w2:textbox>
+			</xf:group>
+			<xf:group id="" class="titbox"><w2:textbox style="" id="" label="HTML의 iframe과 같은 기능을 제공하는 컴포넌트입니다." class=""></w2:textbox></xf:group><xf:group class="titbox" id="" style="">
+				<w2:textbox class="tit_h2 sample" id="" label="01. Sample" style=""></w2:textbox>
+			</xf:group>
+			<xf:group id="" class="tblbox"><xf:group tagname="table" style="" id="" class="w2tb tbl">
+				<w2:attributes>
+					<w2:summary></w2:summary>
+				</w2:attributes>
+				<xf:group tagname="colgroup">
+					<xf:group tagname="col" style="width:20%;"></xf:group>
+					<xf:group tagname="col" style=""></xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">Property</xf:group>
+					<xf:group tagname="th" style="" class="w2tb_th">Description</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">allowTransparency</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">IE 브라우저에서만 적용 가능하며 컴포넌트에 투명한 배경을 사용할 지 여부를 지정합니다.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">class</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">사용자가 임의의 class를 정의할때 사용합니다.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">id</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">사용자가 임의의 id를 정의할때 사용합니다.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">name</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">HTML의 name속성과 동일한 기능을 제공하며 anchor 등에서 target으로 설정할 수 있습니다.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th">
+						relativePath
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						[default:false,&amp;nbsp;true]&amp;nbsp;xml이&amp;nbsp;아닌&amp;nbsp;다른&amp;nbsp;주소(예&amp;nbsp;:.html)에&amp;nbsp;대해서도&amp;nbsp;src&amp;nbsp;상대경로를&amp;nbsp;지원하는&amp;nbsp;속성&amp;nbsp;&amp;nbsp;xml(*.xml)은&amp;nbsp;기본적으로&amp;nbsp;상대경로를&amp;nbsp;지원하나,&amp;nbsp;그&amp;nbsp;외에는&amp;nbsp;기본적으로&amp;nbsp;상대경로를&amp;nbsp;지원하지&amp;nbsp;않는다.&amp;nbsp;하위호환유지를&amp;nbsp;위한&amp;nbsp;속성.
+						<w2:attributes></w2:attributes>
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">scrolling</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						[auto, no, yes]src에 해당하는 화면의 width/height가 ifrmae의 width/height보다 클 때 스크롤바를 표시할지의 여부를 지정합니다.
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">spa</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						링크를 통해 이동하거나 화면을 다시 로딩하였을때 해당 컴포넌트가 동일하게 존재할 경우 다시 로딩하지 않고 변경된 부분만 로딩합니다.
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th">
+						spaReplaceHistory
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						SPA&amp;nbsp;사용&amp;nbsp;시&amp;nbsp;IFrame&amp;nbsp;내부의&amp;nbsp;history(앞으로&amp;nbsp;가기&amp;nbsp;및&amp;nbsp;뒤로&amp;nbsp;가기)&amp;nbsp;동작을&amp;nbsp;금지.&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;IFrame&amp;nbsp;내부&amp;nbsp;페이지의&amp;nbsp;뒤로&amp;nbsp;가기&amp;nbsp;동작을&amp;nbsp;막아서&amp;nbsp;blank&amp;nbsp;페이지로&amp;nbsp;이동하지&amp;nbsp;않는&amp;nbsp;효과.&amp;nbsp;이&amp;nbsp;경우,&amp;nbsp;뒤로&amp;nbsp;가기를&amp;nbsp;수행&amp;nbsp;할&amp;nbsp;경우&amp;nbsp;브라우저&amp;nbsp;전체가&amp;nbsp;뒤로&amp;nbsp;이동.&amp;nbsp;&amp;nbsp;&amp;nbsp;true:&amp;nbsp;뒤로&amp;nbsp;가기&amp;nbsp;및&amp;nbsp;앞으로&amp;nbsp;가기&amp;nbsp;동작을&amp;nbsp;금지.&amp;nbsp;&amp;nbsp;&amp;nbsp;false&amp;nbsp;(기본&amp;nbsp;값):&amp;nbsp;동작을&amp;nbsp;허용.
+						<w2:attributes></w2:attributes>
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">src</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">iframe이 표시할 화면 URL을 입력합니다.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">title</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">HTML의 title속성과 동일한 기능으로 명시 된 값을 브라우저에서 마우스 over시 툴팁형태로 표현합니다.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">toolTip</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">웹스퀘어에서 만든 toolTip으로 컴포넌트의 추가정보를 명시합니다. 마우스 over시 표현됩니다.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">userData1</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						사용자 정의 데이터 속성. getUserData(&quot;userData1&quot;) API를 통해 설정한 값을 얻어올 수 있습니다.
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">userData2</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						사용자 정의 데이터 속성. getUserData(&quot;userData2&quot;) API를 통해 설정한 값을 얻어올 수 있습니다.
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">userData3</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						사용자 정의 데이터 속성. getUserData(&quot;userData3&quot;) API를 통해 설정한 값을 얻어올 수 있습니다.
+					</xf:group>
+				</xf:group>
+			</xf:group></xf:group><xf:group adaptiveThreshold="" class="msgbox" id="" style="">
+				<xf:group id="" class="titbox"><w2:textbox style="" id="" label="Tip" class="" tagname="h3"></w2:textbox></xf:group><w2:textbox class="txt_info" id=""
+					label='IFrame 컴포넌트는 SPA 모드를 지원하며 링크를 통해 이동하거나 화면을 다시 로딩하였을 때 해당 컴포넌트가 동일하게 존재할 경우 다시 로딩하지 않고 변경된 부분만 로딩함으로써 리소스를 절약하고 로딩 속도를 향상시킬 수 있습니다.'
+					style="">
+				</w2:textbox>
+			</xf:group>
+		</xf:group>
+    </body>
+</html>

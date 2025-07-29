@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+        <w2:type>COMPONENT</w2:type>
+        <w2:buildDate/>
+        <w2:MSA/>
+        <xf:model>
+            <w2:dataCollection baseNode="map"/>
+            <w2:workflowCollection/>
+        </xf:model>
+        <w2:layoutInfo/>
+        <w2:publicInfo method=""/>
+        <script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function() {
+	
+};
+]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload">
+    	<xf:group class="sub_contents" id="" style="">
+			<xf:group class="pgtbox" id="" style="">
+				<w2:textbox class="pgt_tit" id="" label="Publishing Template - PageInherit" style=""></w2:textbox>
+			</xf:group>
+			<xf:group id="" class="titbox"><w2:textbox style="" id="" label="일반적인 Include처럼 다른 웹스퀘어 xml 화면 파일을 현재 화면에 include 시킬 때 사용하는 컴포넌트입니다.&lt;br/&gt;가장 먼저 로드되기 때문에 공통적인 모듈 등을 묶어서 include 시킬 때 사용하기 좋은 컴포넌트입니다." class="txt_guide">
+			</w2:textbox></xf:group><xf:group class="titbox" id="" style="">
+				<w2:textbox class="" id="" label="01. Sample" style="" tagname="h3"></w2:textbox>
+			<xf:group id="" class="rt"><w2:anchor outerDiv="false" name="" style="display: none;" href="/ws/download/pageInherit.zip" id="" class="btn_cm">
+					<xf:label><![CDATA[Download]]></xf:label>
+				</w2:anchor></xf:group></xf:group>
+			<xf:group id="" class="tblbox"><xf:group tagname="table" style="" id="" class="wq_tb w2tb tbl">
+				<w2:attributes>
+					<w2:summary></w2:summary>
+				</w2:attributes>
+				<xf:group tagname="colgroup">
+					<xf:group tagname="col" style="width:20%;"></xf:group>
+					<xf:group tagname="col" style=""></xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">Property</xf:group>
+					<xf:group tagname="th" style="" class="w2tb_th">Description</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">class</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">사용자가 임의의 class를 정의할때 사용합니다.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">id</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">사용자가 임의의 id를 정의할때 사용합니다.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">initScript</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						PageInherit단위로 실행하는 initScript입니다. 하는 역할은 config의 initScript설정과 동일합니다.
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">src</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">PageInherit이 표시할 화면 URL을 입력합니다.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">tagname</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">PageInherit컴포넌트를 감싸는 태그의 태그명을 지정합니다.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">toolTip</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">웹스퀘어에서 만든 toolTip으로 컴포넌트의 추가정보를 명시합니다. 마우스 over시 표현됩니다.</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" class="w2tb_th">
+						tabIndex
+						<w2:attributes>
+							<w2:scope>row</w2:scope>
+						</w2:attributes>
+						<w2:span style="" id="" label="SP2" class="txt_info"></w2:span>
+					</xf:group>
+					<xf:group tagname="td" class="w2tb_td">
+						Tab&amp;nbsp;Key를&amp;nbsp;이용&amp;nbsp;한&amp;nbsp;컴포넌트의&amp;nbsp;포커스&amp;nbsp;순서로&amp;nbsp;HTML의&amp;nbsp;tabindex속성과&amp;nbsp;동일한&amp;nbsp;기능을&amp;nbsp;제공한다.
+						<w2:attributes></w2:attributes>
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">userData1</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						사용자 정의 데이터 속성. getUserData(&quot;userData1&quot;) API를 통해 설정한 값을 얻어올 수 있습니다.
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">userData2</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						사용자 정의 데이터 속성. getUserData(&quot;userData2&quot;) API를 통해 설정한 값을 얻어올 수 있습니다.
+					</xf:group>
+				</xf:group>
+				<xf:group tagname="tr" style="">
+					<xf:group tagname="th" style="" class="w2tb_th">userData3</xf:group>
+					<xf:group tagname="td" style="" class="w2tb_td">
+						사용자 정의 데이터 속성. getUserData(&quot;userData3&quot;) API를 통해 설정한 값을 얻어올 수 있습니다.
+					</xf:group>
+				</xf:group>
+			</xf:group></xf:group>
+			
+			<xf:group id="" class="msgbox"><xf:group id="" class="titbox"><w2:textbox style="" id="" label="WFrame과의 차이점" class="" tagname="h4"></w2:textbox></xf:group><xf:group adaptive="" tagname="ul" style="" id="" class="list">
+				<w2:textbox tagname="li" style="" id="" label="dataCollection, instance, JavaScript, CSS를 공통화 하는 기능을 wframe에서 제공하지만 wframe을 포함한 페이지에서 wframe에 선언된 dataCollection, instance, JavaScript, CSS를 재정의(overriding)할 수 없다는 문제점이 있습니다." class="">
+				</w2:textbox>
+				<w2:textbox tagname="li" style="" id="" label="pageInherit 컴포넌트는 wframe의 문제점을 극복할 수 있는 컴포넌트 입니다." class=""></w2:textbox>
+				<w2:textbox tagname="li" style="" id="" label="새로 삽입하는 웹 페이지의 DataCollection, 인스턴스, JavaScript, CSS를 재정의할 수 있습니다." class="">
+				</w2:textbox>
+			</xf:group></xf:group><xf:group adaptiveThreshold="" class="msgbox" id="" style="">
+				<xf:group id="" class="titbox"><w2:textbox style="" id="" label="Tip" class="" tagname="h4"></w2:textbox></xf:group><w2:textbox class="txt_info" id=""
+					label='주로 공통이 되는 top, left 메뉴 등에서 사용합니다. 동적으로 setSrc를 하며 화면을 바꿔야 할 때는 iframe을 사용해야 합니다. (pageInherit은 include 시 한 번만 src 설정할 수 있음)'
+					style="">
+				</w2:textbox>
+			</xf:group>
+		</xf:group>
+	</body>
+</html>

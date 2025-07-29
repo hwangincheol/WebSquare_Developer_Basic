@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:w2="http://www.inswave.com/websquare"
+	xmlns:xf="http://www.w3.org/2002/xforms">
+	<head meta_screenName="P00325의 서브 페이지 01">
+		<w2:historyInfo>
+			<w2:history meta_no="01" meta_desc="최초작성" meta_date="20230810" meta_user="InswaveSystems" ></w2:history>
+		</w2:historyInfo>
+		<w2:type>COMPONENT</w2:type>
+		<w2:buildDate />
+		<w2:MSA />
+		<xf:model>
+			<w2:dataCollection baseNode="map">
+				<w2:aliasDataList scope="../dlt_books" id="adl_s01"></w2:aliasDataList>
+			</w2:dataCollection>
+			<w2:workflowCollection />
+		</xf:model>
+		<w2:layoutInfo />
+		<w2:publicInfo method="" />
+		<script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function () {
+
+};
+]]></script>
+	</head>
+	<body ev:onpageload="scwin.onpageload">
+		<w2:textbox class="ws5_example_txt_normal" escape="false" id="" label="이 영역은 WFrame 입니다.&lt;br/&gt;파일명: P00325S01.xml" style=""></w2:textbox>
+		<xf:group id="" class="mb_def_box nobottom">
+			<w2:textbox class="ws5_example_txt_normal" escape="false" id=""
+				label="AliasDataList의 scope : '&lt;code class=&quot;ws5_exam_txt_blue&quot;&gt;../dlt_books&lt;/code&gt;'" style="">
+			</w2:textbox>
+			<w2:gridView dataList="data:adl_s01" style="height:60px;" autoFit="allColumn" id="grd_exam1" class="gvw" defaultCellHeight="26"
+				autoFitMinWidth="222" visibleRowNum="2" editModeEvent="onclick">
+				<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
+				<w2:header style="" id="header1">
+					<w2:row style="" id="row1">
+						<w2:column width="146" inputType="text" id="column3" value="도서명" displayMode="label"></w2:column>
+						<w2:column width="76" inputType="text" id="column1" value="출간일" displayMode="label"></w2:column>
+					</w2:row>
+				</w2:header>
+				<w2:gBody style="" id="gBody1">
+					<w2:row style="" id="row2">
+						<w2:column textAlign="left" width="146" inputType="text" id="book_name" value="" displayMode="label"></w2:column>
+						<w2:column dataType="date" width="76" displayFormat="yyyy-MM-dd" inputType="text" id="published_date" value=""
+							displayMode="label">
+						</w2:column>
+					</w2:row>
+				</w2:gBody>
+			</w2:gridView>
+			<w2:wframe id="" src="/page/P00325S01S01.xml" style="min-height: 30px;border: 2px solid seagreen;padding: 6px 6px 0px 6px;"></w2:wframe>
+		</xf:group>
+	</body>
+</html>

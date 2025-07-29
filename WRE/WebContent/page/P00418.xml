@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:w2="http://www.inswave.com/websquare"
+	xmlns:xf="http://www.w3.org/2002/xforms">
+	<head meta_screenName="[PageList] 남은 페이지 표시 유형 설정하기">
+		<w2:historyInfo>
+			<w2:history meta_no="01" meta_desc="최초작성" meta_date="20231120" meta_user="InswaveSystems"></w2:history>
+		</w2:historyInfo>
+		<w2:type>COMPONENT</w2:type>
+		<w2:buildDate />
+		<w2:MSA />
+		<xf:model>
+			<w2:dataCollection baseNode="map"></w2:dataCollection>
+			<w2:workflowCollection />
+		</xf:model>
+		<w2:layoutInfo />
+		<w2:publicInfo method="" />
+		<script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function () {
+    // PageList 'pgc_exam1', 'pgc_exam2'의 전체 페이지 수를 14로 설정합니다.
+    pgl_exam1.setCount(14);
+    pgl_exam2.setCount(14);
+
+    // PageList 'pgc_exam1', 'pgc_exam2'의 선택된 페이지를 12로 설정합니다.
+    pgl_exam1.setSelectedIndex(12);
+    pgl_exam2.setSelectedIndex(12);
+};
+]]>
+		</script>
+	</head>
+	<body ev:onpageload="scwin.onpageload">
+		<xf:group class="sub_contents" id="" style="">
+			<xf:group class="ws_example_grp_desc" id="" style="">
+				<w2:textbox escape="false" id=""
+					label="속성 'pagingType'의 설정 값 비교 예제입니다.&lt;br/&gt;이 속성은 잔여 페이지(전체 페이지 % 화면에 표시할 페이지 수)를 화면에 표시하는 방식을 지정할 수 있습니다." style="">
+				</w2:textbox>
+				<w2:textbox escape="false" id=""
+					label="설정 값에 따른 동작은 다음과 같습니다.&lt;br/&gt;- &quot;1&quot; : [default] 속성 'pageSize'에 지정한 값을 기준으로 페이지를 표시합니다. 속성 'buttonShowType'의 설정 값이 '3'이면 이 설정은 지원하지 않습니다.&lt;br/&gt;- &quot;2&quot; : 남은 페이지만 표시합니다."
+					style="">
+				</w2:textbox>
+				<w2:textbox escape="false" id=""
+					label="아래의 예시는 다음과 같은 조건이 동일하게 설정되었습니다.&lt;br/&gt;- 화면에 표시할 페이지 수(속성 'pageSize') : '10'&lt;br/&gt;- 전체 페이지 수 : '14'&lt;br/&gt;- 선택된 페이지 : '12'"
+					style="">
+				</w2:textbox>
+			</xf:group>
+			<xf:group class="example_div_tb_style_wrap" id="">
+				<xf:group class="example_div_tr_style" id="" style="">
+					<w2:textbox class="example_div_th_style" escape="false" id="" label='(기본 설정) pagingType="1"' style=""></w2:textbox>
+					<xf:group class="example_div_td_style" id="" style="">
+						<w2:textbox class="ws5_example_txt_normal" escape="false" id="" label="속성 'pageSize'에 지정한 값을 기준으로 페이지를 표시합니다." style=""></w2:textbox>
+						<w2:pageList displayFormat="#" id="pgl_exam1" style="height: 30px;" pagingType="1" pageSize="10"></w2:pageList>
+					</xf:group>
+				</xf:group>
+				<xf:group class="example_div_tr_style" id="" style="">
+					<w2:textbox class="example_div_th_style" escape="false" id="" label='pagingType="2"' style=""></w2:textbox>
+					<xf:group class="example_div_td_style" id="" style="">
+						<w2:textbox class="ws5_example_txt_normal" escape="false" id="" label="남은 페이지만 표시합니다." style=""></w2:textbox>
+						<w2:pageList displayFormat="#" id="pgl_exam2" style="height: 30px;" pagingType="2" pageSize="10"></w2:pageList>
+					</xf:group>
+				</xf:group>
+			</xf:group>
+		</xf:group>
+	</body>
+</html>

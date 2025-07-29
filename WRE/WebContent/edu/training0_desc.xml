@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/edu/css/edu.css" type="text/css"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head meta_screenName="교육설명">
+    	<w2:historyInfo>
+    		<w2:history meta_no="01" meta_desc="커리큘럼 소개 부분에 동영상 플레이 아이콘이 추가되었습니다." meta_date="20230901" meta_user="InswaveSystems"></w2:history>
+    		<w2:history meta_no="02" meta_desc="교육 문서 현행화에 따른 문서 페이지 number를 수정하였습니다." meta_date="20231026" meta_user="InswaveSystems"></w2:history>
+    		<w2:history meta_no="03" meta_desc="교육문서 명 영문으로 변경 및 그에 따른 코딩 수정" meta_date="20231027" meta_user="InswaveSystems"></w2:history>
+    		<w2:history meta_no="04" meta_desc="소스 내에 inline css 제거 후 edu.css 파일에서 관리하도록 변경 " meta_date="20231110" meta_user="InswaveSystems"></w2:history>
+    	</w2:historyInfo>
+    	<w2:type palette="support">COMPONENT</w2:type>
+    	<w2:buildDate />
+    	<xf:model>
+    		<xf:instance>
+    			<data xmlns="" />
+    		</xf:instance>
+    		<w2:dataCollection baseNode="map">
+    		</w2:dataCollection>
+    		<w2:workflowCollection></w2:workflowCollection>
+    	</xf:model>
+    	<script type="text/javascript" lazy="false"><![CDATA[
+scwin.onpageload = function() { 
+	
+};
+		
+
+scwin.anc_icon1_onclick = function(e) {  
+	 var rowJSON = {
+		//"pdfNm": "/edu/docs/WebSquare5개발자교육커리큘럼.pdf#page=2",
+		"pdfNm": "/edu/docs/WebSquare5_developer_curiculum.pdf#page=2",
+		"title": "WebSquare5개발자교육커리큘럼",
+		"label": "교육 상세 시간표" 
+	};
+
+	 scwin.openPopup(rowJSON, false, "wframePopup");
+};
+
+scwin.anc_icon2_onclick = function(e) {
+
+	 var rowJSON = {
+		//"pdfNm": "/edu/docs/WebSquare5개발자교육이론_SP5.pdf#page=1",
+		"pdfNm": "/edu/docs/WebSquare5_developer_basic_SP5.pdf#page=1",
+		"title": "WebSquare5개발자교육이론_SP5" ,
+		"label": "웹스퀘어5 기본이론" 
+	};
+
+	 scwin.openPopup(rowJSON, false, "wframePopup");
+};
+
+scwin.anc_icon3_onclick = function(e) {
+
+	 var rowJSON = {
+		//"pdfNm": "/edu/docs/WebSquare5심화교육이론.pdf#page=1",
+		"pdfNm": "/edu/docs/WebSquare5_developer_advanced.pdf#page=1",
+		"title": "WebSquare5심화교육이론" ,
+		"label": "웹스퀘어5 심화이론" 
+	};
+
+	 scwin.openPopup(rowJSON, false, "wframePopup");
+};
+
+scwin.openPopup = function(rowJSON, useIFrameMode, openType) {
+    //dataObject{ dataType: ["xml","string","json","array"], data: "전달 데이터" , name :"변수명"}
+    var _width = "850px";
+    var _height = "850px";
+    
+    if(useIFrameMode == false){
+        _width = "850px";
+        _height = "850px";
+    }
+    
+    var dataObj = {
+        type : "json",
+        data : rowJSON,
+        name : "rowObj"
+    };
+
+    var options = {
+        id : "popup1",
+        //popupUrl : "popup.html",
+        type : openType,
+
+        width : _width,
+        height : _height,
+
+        top : 130,
+        left : 250,
+
+        popupName : rowJSON.title,
+        modal : true,
+        useIFrame : useIFrameMode,
+
+        resizable : true,
+        status : true,
+        menubar : false,
+        scrollbars : false,
+        title : false,
+
+        dataObject : dataObj
+    };
+
+    //모바일에서의 크기,위치 조절을 위해 공통 함수 사용하였습니다. 기본 옵션은 최초 선언된 options를 참고하시기 바랍니다.
+    options.left = "auto";
+    options = $c.frame.getPopupPosition(options); 
+
+    $p.openPopup("/edu/training0_pdf.xml", options);
+};
+
+scwin.txt_desc_onclick = function(e) {
+
+	
+	 var _page ="";
+	 var _label = "";
+
+	_page = this.getUserData("userData1"); 
+	_label = this.getUserData("userData2"); 
+
+	 var rowJSON = {
+		//"pdfNm": "/edu/docs/WebSquare5개발자교육이론_SP5.pdf#page="+ _page,
+		"pdfNm": "/edu/docs/WebSquare5_developer_basic_SP5.pdf#page="+ _page,
+		"title": "WebSquare5개발자교육이론" ,
+		"label": _label  
+	};
+
+	 scwin.openPopup(rowJSON, false, "wframePopup");
+};
+ 
+ 
+ 
+scwin.txt_link_onclick = function(e) {
+
+	var _url = "";
+	var _path= "";  
+	_path = this.getUserData("userData1"); 
+    _url =  $c.frame.getBasePageURL(true)+"#w2xPath="+_path; 
+	window.open(_url, "_blank");
+};
+  
+
+scwin.textbox_link_onclick = function(e) {
+ 
+	var strPage;
+    var jsnMenu;
+    var _main;
+ 
+	strPage = this.getUserData("userData1"); 
+ 
+	 
+    _main = $p.main();   
+	switch (typeof _main.scwin.menu) { 
+		case "object": 
+			
+			jsnMenu = _main.scwin.menu.getMenuByPage(strPage);
+			if (jsnMenu && jsnMenu.ID) {
+				_main.scwin.dispPage(jsnMenu, true);
+			}
+
+			break;
+		default:
+			var _url = ""; 
+			_url =  $c.frame.getBasePageURL(true)+"#w2xPath="+strPage; 
+			
+			window.open(_url, "_blank");
+			break;
+
+	} 
+}; 
+
+scwin.btn_play1_onclick = function (e) {
+	// 1교시 동영상 
+	window.open("https://www.youtube.com/watch?v=KEPuK3erXWM&list=PL7a9HhkvOVb09T_2Xdxs4sPgyDjkGlT9G&index=1");
+};
+
+scwin.btn_play2_onclick = function (e) {
+	// 2교시 동영상 
+	window.open("https://www.youtube.com/watch?v=BIgFry-z39Y&list=PL7a9HhkvOVb09T_2Xdxs4sPgyDjkGlT9G&index=2");
+};
+
+scwin.btn_play3_onclick = function (e) {
+	// 3교시 동영상 
+	window.open("https://www.youtube.com/watch?v=1hK9ZEUCp-Q&list=PL7a9HhkvOVb09T_2Xdxs4sPgyDjkGlT9G&index=3");
+};
+
+scwin.btn_play4_onclick = function (e) {
+	// 4교시 동영상 
+	window.open("https://www.youtube.com/watch?v=pkAo2GguTlQ&list=PL7a9HhkvOVb09T_2Xdxs4sPgyDjkGlT9G&index=4");
+};
+
+scwin.btn_play5_onclick = function (e) {
+	// 5교시 동영상 
+	window.open("https://www.youtube.com/watch?v=NT7g9qWaHG0&list=PL7a9HhkvOVb09T_2Xdxs4sPgyDjkGlT9G&index=5&t=1361s");
+};
+]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload">
+    	<xf:group style="padding: 10px;" id="" class="">
+    	</xf:group>
+    	<xf:group class="intro" id="" style="">
+    		<xf:group class="int_top" id="" style="">
+    			<xf:group class="bg_wrap" id="">
+    				<w2:textbox class="txt_big" escape="false" id="" label="WebSquare5 개발자 교육" style=""></w2:textbox>
+    				<w2:textbox class="txt_small server" escape="false" id="" label="HTML, CSS, JavaScript 등 기본적인 웹 지식을 가지고 있으며 &lt;br/&gt;다만 WebSquare5 제품을 처음 접하는 개발자 대상의 커리큘럼" style=""></w2:textbox>
+    				<xf:group class="ban_box" id="" style="">
+    					<xf:group class="anc_banner ico3" id="anc_icon1" style="" tagname="a" ev:onclick="scwin.anc_icon1_onclick"> 
+    						<w2:textbox escape="false" id="" label="개발자 교육 &lt;br/&gt; &amp;nbsp; 커리큘럼" style="" tagname="p"></w2:textbox>
+    						<w2:textbox escape="false" id="" label="바로열기" style="" tagname="span"
+    							userData1="">
+    						</w2:textbox>
+    					</xf:group>
+    					<xf:group class="anc_banner ico2" id="anc_icon2" style="" tagname="a" ev:onclick="scwin.anc_icon2_onclick">
+    						<w2:textbox escape="false" id="" label="개발자 교육&lt;br/&gt; &amp;nbsp;이론문서" style="" tagname="p"></w2:textbox>
+    						<w2:textbox escape="false" id="" label="바로열기" style="" tagname="span"
+    							userData1="">
+    						</w2:textbox>
+    					</xf:group>
+    					<xf:group class="anc_banner ico2" id="anc_icon3" style="" tagname="a" ev:onclick="scwin.anc_icon3_onclick">
+    						<w2:textbox escape="false" id="" label="개발자 교육&lt;br/&gt;심화문서" style="" tagname="p"></w2:textbox>
+    						<w2:textbox escape="false" id="" label="바로열기" style="" tagname="span"
+    							userData1="">
+    						</w2:textbox>
+    					</xf:group>
+    				</xf:group>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group class="int_mid" id="" style="">
+    			<xf:group class="ins_box" id="" style="">
+    				<w2:textbox class="txt_ins_big tac" id="" label="커리큘럼" style=""></w2:textbox>
+    			</xf:group>
+    			<xf:group class="prj_list" id="" style="" tagname="ol">
+    				<xf:group id="" style="overflow: hidden;" tagname="li">
+    					<xf:group id="" class="txt_content" style="float:left;clear:none;">
+    						<w2:textbox ev:onclick="scwin.txt_desc_onclick" style="cursor: pointer;" id="txt_desc1"
+    							label="교육자료 소개, WebSquare5 소개" class="txt_prj_big" userData1="5" userData2="WebSquare5 소개">
+    						</w2:textbox>
+    						<w2:textbox ev:onclick="scwin.txt_desc_onclick" style="cursor: pointer;" id="txt_desc2"
+    							label="WebSquare5 Studio 설명" class="txt_prj_big" userData1="27" userData2="WebSquare5 Studio 설명">
+    						</w2:textbox>
+    					</xf:group>
+    					<xf:group class="" id="" style="width:30px;height: 30px;float:left;clear:none;margin-left: 10px;">
+    						<w2:anchor outerDiv="false" id="btn_play1" style="" class="edu_video" ev:onclick="scwin.btn_play1_onclick">
+    							<xf:label><![CDATA[]]></xf:label>
+    						</w2:anchor>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group id="" style="overflow: hidden;" tagname="li">
+    					<xf:group id="" class="txt_content" style="float:left;clear:none;">
+    						<w2:textbox ev:onclick="scwin.txt_desc_onclick" style="cursor: pointer;" id="txt_desc3"
+    							label="컴포넌트 기본 사용방법" class="txt_prj_big" userData2="컴포넌트 기본 사용방법" userData1="40">
+    						</w2:textbox>
+    					</xf:group>
+    					<xf:group class="" id="" style="width:30px;height: 30px;float:left;clear:none;margin-left: 10px;">
+    						<w2:anchor class="edu_video" ev:onclick="scwin.btn_play2_onclick" id="btn_play2" outerDiv="false" style="">
+    							<xf:label></xf:label>
+    						</w2:anchor>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group id="" style="overflow: hidden;" tagname="li">
+    					<xf:group id="" class="txt_content" style="float:left;clear:none;">
+    						<w2:textbox class="txt_prj_big" ev:onclick="scwin.txt_desc_onclick" id="textbox13" label="CSS 적용방법"
+    							style="cursor: pointer;" userData1="44" userData2="컴포넌트 기본 사용방법">
+    						</w2:textbox>
+    					</xf:group>
+    					<xf:group class="" id="" style="width:30px;height: 30px;float:left;clear:none;margin-left: 10px;">
+    						<w2:anchor class="edu_video" ev:onclick="scwin.btn_play3_onclick" id="btn_play3" outerDiv="false" style="">
+    							<xf:label></xf:label>
+    						</w2:anchor>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group id="" style="overflow: hidden;" tagname="li">
+    					<xf:group id="" class="txt_content" style="float:left;clear:none;">
+    						<w2:textbox ev:onclick="scwin.txt_link_onclick" style="cursor: pointer;" id="txt_desc7"
+    							label="[시연] 목록성 컴포넌트 사용 방법" class="txt_prj_big" userData1="/edu/training1_dataMap.xml">
+    						</w2:textbox>
+    						<w2:textbox ev:onclick="scwin.txt_desc_onclick" style="cursor: pointer;" id="txt_desc8" label="[실습] DataCollection 과 Submission 처리 방법"
+    							class="txt_prj_big" userData1="74" userData2="디버깅 방법">
+    						</w2:textbox>
+    					</xf:group>
+    					<xf:group class="" id="" style="width:30px;height: 30px;float:left;clear:none;margin-left: 10px;">
+    						<w2:anchor class="edu_video" ev:onclick="scwin.btn_play4_onclick" id="btn_play4" outerDiv="false" style="">
+    							<xf:label></xf:label>
+    						</w2:anchor>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group id="" style="overflow: hidden;" tagname="li">
+    					<xf:group id="" class="txt_content" style="float:left;clear:none;">
+    						<w2:textbox ev:onclick="scwin.txt_link_onclick" style="cursor: pointer;" id="txt_desc9"
+    							label="[시연] DataCollection 과 gridView 연동" class="txt_prj_big" userData1="/edu/training1_gridView.xml">
+    						</w2:textbox>
+    						<w2:textbox ev:onclick="scwin.txt_desc_onclick" style="cursor: pointer;" id="txt_desc10"
+    							label="(gridView편집,속성,이벤트,API)" class="txt_prj_big" userData1="67" userData2="DataCollection 과 gridView 연동">
+    						</w2:textbox>
+    					</xf:group>
+    					<xf:group class="" id="" style="width:30px;height: 30px;float:left;clear:none;margin-left: 10px;">
+    						<w2:anchor class="edu_video" ev:onclick="scwin.btn_play5_onclick" id="btn_play5" outerDiv="false" style="">
+    							<xf:label></xf:label>
+    						</w2:anchor>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group id="" style="" tagname="li">
+    					<xf:group id="" class="txt_content">
+    						<xf:group class="" id="" style="" tagname="details">
+    							<w2:textbox escape="false" id="" label="자주 묻는 질문" style="cursor: pointer;" tagname="summary" class="txt_prj_big"></w2:textbox>
+    							<w2:textbox class="" escape="false" id="textbox_link1" label="1. JSON 관련 기본 API" style="cursor: pointer;"
+    								userData1="/page/P00036.xml" ev:onclick="scwin.textbox_link_onclick">
+    							</w2:textbox>
+    							<w2:textbox class="" escape="false" id="textbox_link2" label="2. [GridView] 관련" style=""></w2:textbox>
+    							<w2:textbox class="" escape="false" ev:onclick="scwin.textbox_link_onclick" id="textbox3"
+    								label="2-1. 컨텍스트 메뉴 사용 설정하기" style="cursor: pointer;" userData1="/page/P00169.xml">
+    							</w2:textbox>
+    							<w2:textbox class="" escape="false" ev:onclick="scwin.textbox_link_onclick" id="textbox7"
+    								label="2-2. Groupby 기능 적용하기" style="cursor: pointer;" userData1="/page/P00194.xml">
+    							</w2:textbox>
+    							<w2:textbox class="" escape="false" ev:onclick="scwin.textbox_link_onclick" id="textbox8"
+    								label="2-3. scrollEnd 기능을 사용한 데이터 추가하기" style="cursor: pointer;" userData1="/page/P00054.xml">
+    							</w2:textbox>
+    							<w2:textbox class="" escape="false" ev:onclick="scwin.textbox_link_onclick" id="textbox12"
+    								label="2-4.GridView Style 개인화 하기" style="cursor: pointer;" userData1="/page/P00198.xml">
+    							</w2:textbox>
+    							<w2:textbox class="" escape="false" ev:onclick="scwin.textbox_link_onclick" id="textbox6"
+    								label="2-5.컬럼 동적 변경" style="cursor: pointer;" userData1="/page/P00014.xml">
+    							</w2:textbox>
+    							<w2:textbox class="" escape="false" ev:onclick="scwin.textbox_link_onclick" id="textbox4" label="3.특이기능"
+    								style="">
+    							</w2:textbox>
+    							<w2:textbox class="" escape="false" ev:onclick="scwin.textbox_link_onclick" id="textbox5" label="3-1.Pivot"
+    								style="cursor: pointer;" userData1="/page/P00139.xml">
+    							</w2:textbox>
+
+    							<w2:textbox class="" escape="false" ev:onclick="scwin.textbox_link_onclick" id="textbox10" label="3-2.Fusion 차트"
+    								style="cursor: pointer;" userData1="/page/P00017.xml">
+    							</w2:textbox>
+    							<w2:textbox class="" escape="false" ev:onclick="scwin.textbox_link_onclick" id="textbox11" label="3-3.위젯 컨테이너"
+    								style="cursor: pointer;" userData1="/page/P00007.xml">
+    							</w2:textbox>
+
+    						</xf:group>
+    						<w2:textbox style="cursor: pointer;" id="txt_desc12" label="Q&amp;A" class="txt_prj_big"></w2:textbox>
+    					</xf:group>
+    				</xf:group>
+    			</xf:group>
+    		</xf:group>
+    	</xf:group>
+    </body>
+</html>

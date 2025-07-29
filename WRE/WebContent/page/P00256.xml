@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:w2="http://www.inswave.com/websquare"
+	xmlns:xf="http://www.w3.org/2002/xforms">
+	<head>
+		<w2:historyInfo>
+			<w2:history meta_no="01" meta_desc="최초작성" meta_date="20230323" meta_user="InswaveSystems" ></w2:history>
+		</w2:historyInfo>
+		<w2:type>COMPONENT</w2:type>
+		<w2:buildDate />
+		<w2:MSA />
+		<xf:model>
+			<w2:dataCollection baseNode="map">
+				<w2:dataList baseNode="list" repeatNode="map" id="dlt_dataList1" saveRemovedData="true">
+					<w2:columnInfo>
+						<w2:column id="Code" name="name1" dataType="text"></w2:column>
+						<w2:column id="City" name="name2" dataType="text"></w2:column>
+						<w2:column id="Country" name="name3" dataType="text"></w2:column>
+						<w2:column id="Type" name="name4" dataType="text"></w2:column>
+					</w2:columnInfo>
+				</w2:dataList>
+			</w2:dataCollection>
+			<w2:workflowCollection />
+		</xf:model>
+		<w2:layoutInfo />
+		<w2:publicInfo method="" />
+		<script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function () {
+    let jsonData = [
+        { "Code": "SEL", "City": "Seoul", "Country": "Korea", "Type": "Domestic" },
+        { "Code": "BSN", "City": "Busan", "Country": "Korea", "Type": "Domestic" },
+        { "Code": "ICN", "City": "Incheon", "Country": "Korea", "Type": "Domestic" },
+        { "Code": "DJN", "City": "Daejeon", "Country": "Korea", "Type": "Domestic" },
+        { "Code": "DGU", "City": "Daegu", "Country": "Korea", "Type": "Domestic" },
+        { "Code": "OTW", "City": "Ottawa", "Country": "Canada", "Type": "Overseas" },
+        { "Code": "LDN", "City": "Toronto", "Country": "Canada", "Type": "Overseas" },
+        { "Code": "BRN", "City": "Berlin", "Country": "Germany", "Type": "Overseas" },
+        { "Code": "BJG", "City": "Beijing", "Country": "China", "Type": "Overseas" },
+        { "Code": "LDN", "City": "London", "Country": "UK", "Type": "Overseas" },
+    ];
+
+    // DataList 'dlt_dataList1'에 json데이터 'jsonData'를 set합니다.
+    dlt_dataList1.setJSON(jsonData);
+
+    // SelectBox 'sbx_exam1'에 DataList 'dlt_dataList1'을 바인딩합니다.
+    sbx_exam1.setNodeSet("data:dlt_dataList1", "City", "Code");
+
+    // SelectBox 'sbx_exam2'에 DataList 'dlt_dataList1'을 바인딩합니다.
+    sbx_exam2.setNodeSet("data:dlt_dataList1", "City", "Code");
+};
+
+]]></script>
+	</head>
+	<body ev:onpageload="scwin.onpageload">
+		<xf:group class="sub_contents" id="" style="">
+			<xf:group class="ws_example_grp_desc" id="" style="">
+				<w2:textbox escape="false" id=""
+					label='enableColum 및 enableColumnFalseValue 속성을 사용하여 선택 목록의 특정 항목을 비활성화하는 예제입니다.&lt;br/&gt;&lt;br/&gt;이 기능은 아래의 속성으로 사용할 수 있습니다.&lt;br/&gt;- enableColumn : 선택 항목 목록에서 특정 항목을 disable 처리하는 기능.&lt;br/&gt;- enableColumnFalseValue : enableColumn 사용 시 목록에서 특정 항목을 감추기 위한 조건에 해당하는 값.'
+					style="">
+				</w2:textbox>
+			</xf:group>
+			<xf:group class="example_div_tb_style_wrap" id="">
+				<xf:group class="example_div_tr_style" id="" style="">
+					<w2:textbox class="example_div_th_style" escape="false" id="" label="특정 항목 비활성화 적용 전" style=""></w2:textbox>
+					<xf:group class="example_div_td_style" id="" style="">
+						<w2:textbox class="ws5_example_txt_normal" escape="false" id="" label='SelectBox컴포넌트에 선택 목록이 비활성화 없이 표시된 것을 확인한다.' style=""
+							displayFormat="">
+						</w2:textbox>
+						<xf:select1 id="sbx_exam1" chooseOption="" style="width: 148px;height: 21px;" submenuSize="auto" allOption=""
+							disabled="false" direction="auto" appearance="minimal" disabledClass="w2selectbox_disabled" ref="">
+							<xf:choices>
+								<xf:itemset nodeset="data:dlt_dataList1">
+									<xf:label ref="name"></xf:label>
+									<xf:value ref="Code"></xf:value>
+								</xf:itemset>
+							</xf:choices>
+						</xf:select1>
+					</xf:group>
+					<w2:textbox class="example_div_th_style" escape="false" id="" label="특정 항목 비활성화 적용 후" style=""></w2:textbox>
+					<xf:group class="example_div_td_style" id="" style="">
+						<w2:textbox class="ws5_example_txt_normal" escape="false" id="" label='SelectBox컴포넌트에 선택 목록이 비활성화 없이 표시된 것을 확인한다.' style=""
+							displayFormat="">
+						</w2:textbox>
+						<xf:select1 id="sbx_exam2" chooseOption="" style="width: 148px;height: 21px;" submenuSize="auto" allOption=""
+							disabled="false" direction="auto" appearance="minimal" disabledClass="w2selectbox_disabled" ref="" enableColumn="Type"
+							enableColumnFalseValue="Domestic">
+							<xf:choices>
+								<xf:itemset nodeset="data:dlt_dataList1">
+									<xf:label ref="name"></xf:label>
+									<xf:value ref="Code"></xf:value>
+								</xf:itemset>
+							</xf:choices>
+						</xf:select1>
+					</xf:group>
+				</xf:group>
+				<xf:group class="example_div_tr_style" id="" style="">
+				</xf:group>
+			</xf:group>
+		</xf:group>
+	</body>
+</html>

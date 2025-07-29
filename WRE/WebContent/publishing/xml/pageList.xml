@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+        <w2:type>COMPONENT</w2:type>
+        <w2:buildDate/>
+        <w2:MSA/>
+        <xf:model>
+            <w2:dataCollection baseNode="map"/>
+            <w2:workflowCollection/>
+        </xf:model>
+        <w2:layoutInfo/>
+        <w2:publicInfo method=""/>
+        <script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function() {
+		  	page01.setCount( 100 );		
+	  		page02.setCount( 100 );	
+	  		page03.setCount( 100 );		
+};
+]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload">
+    	<xf:group class="sub_contents" id="" style="">
+    		<xf:group class="pgtbox" id="" style="">
+    			<w2:textbox class="pgt_tit" id="" label="Publishing Template - PageList" style=""></w2:textbox>
+    		</xf:group>
+    		<xf:group id="" class="titbox">
+    			<w2:textbox style="" id="" label="대량의 데이터를 페이지 단위로 조회할 수 있는 링크를 생성해주는 컴포넌트입니다. " class="txt_guide"></w2:textbox>
+    		</xf:group>
+    		<xf:group class="titbox" id="" style="">
+    			<w2:textbox class="" id="" label="01. Sample" style="" tagname="h3"></w2:textbox>
+    			<xf:group id="" class="rt">
+    				<w2:anchor outerDiv="false" name="" style="" href="/ws/download/pageList.zip" id="" class="btn_cm">
+    					<xf:label><![CDATA[Download]]></xf:label>
+    				</w2:anchor>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group style="" id="" class="msgbox">
+    			<w2:pageList class="wq_pglist " displayButtonType="display" displayFormat="#" displaySearchbox="true" id="page01"
+    				pageSize="10" renderType="list" style="display:none" leftPageBackImage="/images/component/skyblue/img_pgl_fst.png"
+    				leftPageImage="/images/component/skyblue/img_pgl_prv.png" rightPageBackImage="/images/component/skyblue/img_pgl_nxt.png"
+    				rightPageImage="/images/component/skyblue/img_pgl_lst.png">
+    			</w2:pageList>
+    			<w2:pageList buttonShowType="1" class="wq_pglist " displayButtonType="display" displayFormat="#" displaySearchbox=""
+    				id="page02" pageSize="10" renderType="list" style="display: none;" tabIndex="" useDelim=""
+    				leftPageBackImage="/images/component/skyblue/img_pgl_fst.png" leftPageImage="/images/component/skyblue/img_pgl_prv.png"
+    				rightPageBackImage="/images/component/skyblue/img_pgl_nxt.png" rightPageImage="/images/component/skyblue/img_pgl_lst.png">
+    			</w2:pageList>
+    			<w2:pageList buttonShowType="" class="wq_pglist " displayButtonType="display" displayFormat="#" displaySearchbox=""
+    				id="page03" pageSize="10" renderType="table" style="" tabIndex="" useDelim="">
+    			</w2:pageList>
+    		</xf:group>
+    		<xf:group id="" class="titbox">
+    			<w2:textbox style="" id="" label="02. Property" class="" tagname="h3"></w2:textbox>
+    		</xf:group>
+    		<xf:group id="" class="tblbox">
+    			<xf:group tagname="table" style="" id="" class="wq_tb w2tb tbl">
+    				<w2:attributes>
+    					<w2:summary></w2:summary>
+    				</w2:attributes>
+    				<xf:group tagname="colgroup">
+    					<xf:group tagname="col" style="width:24%;"></xf:group>
+    					<xf:group tagname="col" style=""></xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">Property</xf:group>
+    					<xf:group tagname="th" style="" class="w2tb_th">Description</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">buttonShowType</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						페이지 이동 버튼의 타입 (default는 0)
+    						<br></br>
+    						0 : 이전 목록 페이지, 다음 목록 페이지 버튼으로 구성
+    						<br></br>
+    						1 : 이전 목록 페이지, 이전 페이지, 다음 페이지, 다음 목록 페이지 버튼으로 구성
+    						<br></br>
+    						2 : 이전 페이지, 다음 페이지 버튼으로 구성
+    						<br></br>
+    						3 : 첫 페이지, 이전 목록 페이지, 다음 목록 페이지, 마지막 페이지 버튼으로 구성
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">deliImage</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">구분자의 이미지</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">deliWidth</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">구분자의 가로 사이즈</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">delimiter</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">구분자</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">displayButtonType</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						첫페이지 또는 마지막 페이지시 페이지버튼 처리
+    						<br></br>
+    						display : 항상표시
+    						<br></br>
+    						auto : 마지막 페이지엔 표시안함
+    						<br></br>
+    						displayOver : pageCount가 pageSize보다 클때 표시(작을 경우엔 display와 동일하게 동작)
+    						<br></br>
+    						autoOver : pageCount가 pageSize보다 클때 표시(작을 경우엔 auto와 동일하게 동작)
+    						<br></br>
+    						autoHidden : 첫 페이지, 마지막 페이지에 보여지는 수 만큼은 표시안함
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">displayFormat</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">index가 표시되는 Format</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">leftPageBackImage</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">페이지를 왼쪽으로 pageSize단위 만큼 바꾸는 버튼의 이미지</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">leftPageBackImageClass</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">페이지를 왼쪽으로 pageSize단위 만큼 바꾸는 버튼의 class</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">leftPageImage</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">페이지를 왼쪽으로 한칸 바꾸는 버튼의 이미지</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">leftPageImageClass</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">페이지를 왼쪽으로 한칸 바꾸는 버튼의 class</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">naviType</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">buttonShowType 2일 때만 가능한, 페이지 1개 이동관련 옵션 (pagingType은 무시)</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">oneMoveButtonWidth</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">페이지를 한칸 바꾸는 버튼의 width</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">pageSize</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">한 페이지에 보이는 숫자의 수</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">pagingType</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						남은 페이지의 수가 pageSize보다 작을 때 보는 방식
+    						<br></br>
+    						1 : pagingSize에 맞춰서 표현
+    						<br></br>
+    						2 : 남은 페이지만 표현
+    						<br></br>
+    						buttonShowType이 3인 경우에는 PagingType 1은 지원안함
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">renderType</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						렌더링되는 레이아웃 구조에 따라 &quot;table&quot;, &quot;list&quot; 두가지 지원
+    						<br></br>
+    						table : table 구조로 구성되어 있음.
+    						<br></br>
+    						list : ul &gt; li &gt; a의 구조로 구성되어 있음.
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">rightPageBackImage</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">페이지를 왼쪽으로 한칸 바꾸는 버튼의 이미지</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">rightPageBackImageClass</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">페이지를 오른쪽으로 pageSize단위 만큼 바꾸는 버튼의 class</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">rightPageImage</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">페이지를 오른쪽으로 pageSize단위 만큼 바꾸는 버튼의 이미지</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">rightPageImageClass</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">페이지를 오른쪽으로 한칸 바꾸는 버튼의 class</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">shiftMoveButtonWidth</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">페이지를 pageSize단위 만큼 바꾸는 버튼의 width</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">useDelim</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">구분자 사용여부 , useDelim가 true 일때만 delimeter 사용가능</xf:group>
+    				</xf:group>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group id="" class="titbox">
+    			<w2:textbox tagname="h3" style="" id="" label="03. CSS Overriding" class=""></w2:textbox>
+    		</xf:group>
+    		<xf:group id="" class="tblbox">
+    			<xf:group tagname="table" style="" id="" class="tbl">
+    				<w2:attributes>
+    					<w2:summary></w2:summary>
+    				</w2:attributes>
+    				<xf:group tagname="colgroup">
+    					<xf:group tagname="col" style="width:24%;"></xf:group>
+    					<xf:group tagname="col" style=""></xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">Class</xf:group>
+    					<xf:group tagname="th" style="" class="w2tb_th">Description</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">w2pageList</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						w2pageList는 웹스퀘어 엔진에서 정의된 클래스입니다, 기본적으로 html 로 렌더링되는 시점에서 자동으로 부여됩니다. 여기에 사용자 정의 클래스를 추가해서 overriding(덮어쓰기) 하여
+    						디자인을 바꿀 수 있습니다.
+    					</xf:group>
+    				</xf:group>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group adaptiveThreshold="" class="msgbox" id="" style="">
+    			<xf:group id="" class="titbox"><w2:textbox style="" id="" label="Tip" class="h4"></w2:textbox></xf:group><w2:textbox class="txt_info" id="" label="웹접근성 준수 시 renderType을 list로 설정합니다." style=""></w2:textbox>
+    			<w2:textbox class="txt_info" id="" label="API 설정을 해야 페이지 리스트 디자인 화면이 브라우저에서 보여집니다.&lt;br/&gt;예) pageListID.setCount(1000);"
+    				style="">
+    			</w2:textbox>
+    		</xf:group>
+    	</xf:group>
+    </body>
+</html>

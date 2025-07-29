@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+        <w2:type>COMPONENT</w2:type>
+        <w2:buildDate/>
+        <w2:MSA/>
+        <xf:model>
+            <w2:dataCollection baseNode="map"/>
+            <w2:workflowCollection/>
+        </xf:model>
+        <w2:layoutInfo/>
+        <w2:publicInfo method=""/>
+        <script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function() {
+	// Widget Call
+	widgetContainer1.addWidgets({
+            id : "widget0",
+            title : "Widget01",
+            src : "",
+            scope : true,
+            x : 0,
+            y : 0,
+            unitWidth : 1,
+            unitHeight : 1
+        });
+
+        widgetContainer1.addWidgets({
+            id : "widget1",
+            title : "Widget02",
+            src : "",
+            scope : true,
+            x : 1,
+            y : 0,
+            unitWidth : 1,
+            unitHeight : 1
+        });
+
+        widgetContainer1.addWidgets({
+            id : "widget2",
+            title : "Widget03",
+             src : "",
+            scope : true,
+            x : 2,
+            y : 0,
+            unitWidth : 1,
+            unitHeight : 1
+        });
+        
+        widgetContainer1.addWidgets({
+            id : "widget3",
+            title : "Widget04",
+             src : "",
+            scope : true,
+            x : 0,
+            y : 1,
+            unitWidth : 1,
+            unitHeight : 1
+        });
+        
+        widgetContainer1.addWidgets({
+            id : "widget4",
+            title : "Widget05",
+             src : "",
+            scope : true,
+            x : 1,
+            y : 1,
+            unitWidth : 1,
+            unitHeight : 1
+        });
+        
+        widgetContainer1.addWidgets({
+            id : "widget5",
+            title : "Widget06",
+             src : "",
+            scope : true,
+            x : 2,
+            y : 1,
+            unitWidth : 1,
+            unitHeight : 1
+        });
+};
+]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload">
+    	<xf:group class="sub_contents" id="" style="">
+    		<xf:group class="pgtbox" id="" style="">
+    			<w2:textbox class="pgt_tit" id="" label="Publishing Template - WidgetContainer" style=""></w2:textbox>
+    		</xf:group>
+    		<xf:group id="" class="titbox">
+    			<w2:textbox style="" id=""
+    				label="widgetContainer는 그 내부에 widget들을 포함하고 있으며 widget들의 상호작용을 관리한다.&lt;br/&gt;widgetContainer는 내부적으로 이차원 격자로 이루어져있다. 단위 길이는 cols만큼 windowContainer의 가로 길이를 나눈 값이고, 단위 높이는 unitHeightPixel이다.&lt;br/&gt;widgetContainer를 사용하면 해당 이차원 격자 구조 내에서 widget들을 옮기거나 크기를 바꿀 수 있다.&lt;br/&gt;또한, widgetContainer는 내부의 widget들의 정보를 JSON을 통해 추출하고 원복할 수 있는 기능을 제공함으로써 특정 화면 설정을 저장할 수 있게 해준다."
+    				class="txt_guide">
+    			</w2:textbox>
+    		</xf:group>
+    		<xf:group class="titbox" id="" style="">
+    			<w2:textbox class="" id="" label="01. Sample" style="" tagname="h3"></w2:textbox>
+    			<xf:group id="" class="rt">
+    				<w2:anchor outerDiv="false" name="" style="" href="/ws/download/widgetContainer.zip" id="" class="btn_cm">
+    					<xf:label><![CDATA[Download]]></xf:label>
+    				</w2:anchor>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group id="" style="height:640px;" class="msgbox">
+    			<w2:widgetContainer widgetMove="" minUnitWidth="" cols="3" horizontalMargin="10" verticalMargin="10" params="false"
+    				widgetResize="" mode="switch" threshold="null" id="widgetContainer1" style="width: 100%;height: 100%;" minUnitHeight=""
+    				unitHeightPixel="320">
+    			</w2:widgetContainer>
+    		</xf:group>
+    		<xf:group id="" class="titbox">
+    			<w2:textbox tagname="h3" style="" id="" label="02. Property" class=""></w2:textbox>
+    		</xf:group>
+    		<xf:group id="" class="tblbox">
+    			<xf:group tagname="table" style="" id="" class="wq_tb w2tb tbl">
+    				<w2:attributes>
+    					<w2:summary></w2:summary>
+    				</w2:attributes>
+    				<xf:group tagname="colgroup">
+    					<xf:group tagname="col" style="width:20%;"></xf:group>
+    					<xf:group tagname="col" style=""></xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">Property</xf:group>
+    					<xf:group tagname="th" style="" class="w2tb_th">Description</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">cols</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						widgetContainer의&amp;nbsp;열의&amp;nbsp;갯수.&amp;nbsp;widgetContainer은&amp;nbsp;자신의&amp;nbsp;가로&amp;nbsp;길이를&amp;nbsp;cols의&amp;nbsp;갯수만큼&amp;nbsp;나누어&amp;nbsp;단위&amp;nbsp;길이를&amp;nbsp;결정한다.
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">horizontalMargin</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">widget간의&amp;nbsp;수평&amp;nbsp;마진의&amp;nbsp;픽셀값.</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">id</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						컴포넌트의&amp;nbsp;ID로&amp;nbsp;전역객체로&amp;nbsp;할당되며&amp;nbsp;script에서&amp;nbsp;본&amp;nbsp;id로&amp;nbsp;컴포넌트에&amp;nbsp;접근이&amp;nbsp;가능하다.
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">maxUnitHeight</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">widget의&amp;nbsp;최대&amp;nbsp;단위&amp;nbsp;높이.</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">maxUnitHeight</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">widget의&amp;nbsp;최대&amp;nbsp;단위&amp;nbsp;높이.</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">maxUnitWidth</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">widget의&amp;nbsp;최대&amp;nbsp;단위&amp;nbsp;길이.</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">minUnitHeight</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">widget의&amp;nbsp;최소&amp;nbsp;단위&amp;nbsp;높이.</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" class="w2tb_th">
+    						minUnitWidth
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    					</xf:group>
+    					<xf:group tagname="td" class="w2tb_td">
+    						widget의&amp;nbsp;최소&amp;nbsp;단위&amp;nbsp;길이.
+    						<w2:attributes></w2:attributes>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" class="w2tb_th">
+    						mode
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    					</xf:group>
+    					<xf:group tagname="td" class="w2tb_td">
+    						widget간의&amp;nbsp;충돌에&amp;nbsp;대한&amp;nbsp;widgetContainer의&amp;nbsp;기본동작을&amp;nbsp;설정한다.
+    						<br></br>
+    						pushpull&amp;nbsp;:&amp;nbsp;가능한&amp;nbsp;모든&amp;nbsp;widget을&amp;nbsp;위로&amp;nbsp;끌어&amp;nbsp;올리며,&amp;nbsp;충돌이&amp;nbsp;일어나는&amp;nbsp;경우&amp;nbsp;충돌이&amp;nbsp;일어난&amp;nbsp;widget들을&amp;nbsp;아래로&amp;nbsp;밀어&amp;nbsp;내린다.
+    						<br></br>
+    						switch&amp;nbsp;:&amp;nbsp;충돌이&amp;nbsp;일어날&amp;nbsp;시&amp;nbsp;충돌이&amp;nbsp;발생한&amp;nbsp;widget과&amp;nbsp;위치전환을&amp;nbsp;시도한다.&amp;nbsp;단,&amp;nbsp;자신보다&amp;nbsp;작은&amp;nbsp;widget과만&amp;nbsp;위치전환이&amp;nbsp;가능하다.
+    						<w2:attributes></w2:attributes>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" class="w2tb_th">
+    						params
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    					</xf:group>
+    					<xf:group tagname="td" class="w2tb_td">
+    						widget&amp;nbsp;객체가&amp;nbsp;저장하고&amp;nbsp;있는&amp;nbsp;사용자&amp;nbsp;정의&amp;nbsp;데이터.
+    						<br></br>
+    						런타임&amp;nbsp;도중에&amp;nbsp;setParams를&amp;nbsp;통해&amp;nbsp;재정의&amp;nbsp;될&amp;nbsp;수&amp;nbsp;있고,&amp;nbsp;getParams를&amp;nbsp;통해&amp;nbsp;가져올&amp;nbsp;수&amp;nbsp;있다.
+    						<br></br>
+    						또한,&amp;nbsp;이&amp;nbsp;값은&amp;nbsp;getWidgetInfo나&amp;nbsp;exportWidgets&amp;nbsp;시&amp;nbsp;'params'라는&amp;nbsp;속성으로&amp;nbsp;추출된다.
+    						<w2:attributes></w2:attributes>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" class="w2tb_th">
+    						threshold
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    					</xf:group>
+    					<xf:group tagname="td" class="w2tb_td">
+    						widgetContainer의&amp;nbsp;가로&amp;nbsp;사이즈가&amp;nbsp;threshold보다&amp;nbsp;작아지면,&amp;nbsp;하나의&amp;nbsp;칼럼에&amp;nbsp;위젯들을&amp;nbsp;나열한다.
+    						<br></br>
+    						또한,&amp;nbsp;threshold를&amp;nbsp;넘었을&amp;nbsp;경우&amp;nbsp;move와&amp;nbsp;resize가&amp;nbsp;불가능해진다.
+    						<br></br>
+    						모바일&amp;nbsp;편의성을&amp;nbsp;위한&amp;nbsp;옵션으로,&amp;nbsp;설정하지&amp;nbsp;않았을&amp;nbsp;경우&amp;nbsp;widgetContainer의&amp;nbsp;사이즈가&amp;nbsp;작아져도&amp;nbsp;위젯들은&amp;nbsp;원래의&amp;nbsp;위치에&amp;nbsp;렌더된다
+    						<w2:attributes></w2:attributes>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" class="w2tb_th">
+    						unitHeightPixel
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    					</xf:group>
+    					<xf:group tagname="td" class="w2tb_td">
+    						widgetContainer의&amp;nbsp;단위&amp;nbsp;높이의&amp;nbsp;픽셀값.&amp;nbsp;unitHeightPixel은&amp;nbsp;height&amp;nbsp;===&amp;nbsp;1&amp;nbsp;인&amp;nbsp;widget의&amp;nbsp;실제&amp;nbsp;높이가&amp;nbsp;된다.
+    						<w2:attributes></w2:attributes>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" class="w2tb_th">
+    						verticalMargin
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    					</xf:group>
+    					<xf:group tagname="td" class="w2tb_td">
+    						widget간의&amp;nbsp;수직&amp;nbsp;마진의&amp;nbsp;픽셀값.
+    						<w2:attributes></w2:attributes>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" class="w2tb_th">
+    						widgetMove
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    					</xf:group>
+    					<xf:group tagname="td" class="w2tb_td">
+    						widget들의&amp;nbsp;이동&amp;nbsp;가능&amp;nbsp;여부.
+    						<w2:attributes></w2:attributes>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" class="w2tb_th">
+    						widgetResize
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    					</xf:group>
+    					<xf:group tagname="td" class="w2tb_td">
+    						widget들의&amp;nbsp;리사이징&amp;nbsp;가능&amp;nbsp;여부.
+    						<w2:attributes></w2:attributes>
+    					</xf:group>
+    				</xf:group>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group id="" class="titbox">
+    			<w2:textbox tagname="h3" style="" id="" label="03. CSS Overriding" class=""></w2:textbox>
+    		</xf:group>
+    		<xf:group id="" class="tblbox">
+    			<xf:group tagname="table" style="" id="" class="wq_tb w2tb tbl">
+    				<w2:attributes>
+    					<w2:summary></w2:summary>
+    				</w2:attributes>
+    				<xf:group tagname="colgroup">
+    					<xf:group tagname="col" style="width:20%;"></xf:group>
+    					<xf:group tagname="col" style=""></xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">Class</xf:group>
+    					<xf:group tagname="th" style="" class="w2tb_th">Description</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">w2widget</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">widget&amp;nbsp;아이템을&amp;nbsp;감싸는&amp;nbsp;영역</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" class="w2tb_th">
+    						w2widget_title
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    					</xf:group>
+    					<xf:group tagname="td" class="w2tb_td">
+    						widget&amp;nbsp;title영역
+    						<w2:attributes></w2:attributes>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" class="w2tb_th">
+    						w2widget_content
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    					</xf:group>
+    					<xf:group tagname="td" class="w2tb_td">
+    						widget&amp;nbsp;contents영역
+    						<w2:attributes></w2:attributes>
+    					</xf:group>
+    				</xf:group>
+    			</xf:group>
+    		</xf:group>
+    	</xf:group></body>
+</html>

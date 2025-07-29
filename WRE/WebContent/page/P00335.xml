@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:w2="http://www.inswave.com/websquare"
+	xmlns:xf="http://www.w3.org/2002/xforms">
+	<head meta_screenName="[Selectbox] disabled Class 적용하기" meta_type="메인">
+		<w2:historyInfo>
+			<w2:history meta_no="01" meta_desc="최초작성" meta_date=" 20230814" meta_user="InswaveSystems"></w2:history>
+			<w2:history meta_no="02" meta_desc="예제 화면에 정의된 Internal Style의 Class명이 변경되었습니다.\n- 변경 전: toggleClassTest\n- 변경 후: P00335_toggleClass" meta_date="20231110" meta_user="InswaveSystems"></w2:history>
+		</w2:historyInfo>
+		<w2:type>COMPONENT</w2:type>
+		<w2:buildDate />
+		<w2:MSA />
+		<xf:model>
+			<w2:dataCollection baseNode="map"></w2:dataCollection>
+			<w2:workflowCollection />
+		</xf:model>
+		<w2:layoutInfo />
+		<w2:publicInfo method="" />
+		<script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function () {
+
+};
+
+
+
+scwin.btn_toggle_onclick = function (e) {
+    var _disabled = sbx_main.getDisabled();
+    
+    sbx_main.setDisabled(!_disabled);
+};
+]]></script>
+		<style type="text/css"><![CDATA[
+			.P00335_toggleClass {border :3px solid red; background-color : black; }
+			.P00335_toggleClass .w2selectbox_label {color : white;}
+		 ]]></style>
+	</head>
+	<body ev:onpageload="scwin.onpageload">
+		<xf:group class="sub_contents" id="" style="" nextTabID="">
+			<xf:group class="ws_example_grp_desc" id="" style="">
+				<w2:textbox escape="false" id=""
+					label='SelectBox의 disabledClass를 적용하는 예제입니다.&lt;br/&gt;disabledClass는 SelectBox가 disabled 됐을 때 적용하는 class를 지정하는 속성입니다.'
+					style="">
+				</w2:textbox>
+			</xf:group>
+			<xf:group class="example_div_tb_style_wrap mb_def" id="">
+				<xf:group class="example_div_tr_style" id="" style="">
+					<xf:group class="example_div_th_style" id="" style="">
+						<w2:span class="mr_def txt_blue" id="" label="Disabled Class 적용하기" style=""></w2:span>
+					</xf:group>
+					<xf:group class="example_div_td_style" id="" style="">
+						<w2:textbox class="ws5_example_txt_normal" escape="false" id=""
+							label="버튼을 클릭하면 SelectBox가 disabled 되며 disabledClass로 입력한 class가 적용됩니다." style="">
+						</w2:textbox>
+						<xf:group id="" style="margin-bottom: 5px;">
+							<xf:select1 id="sbx_main" chooseOption="true" style="width: 148px;margin-right: 15px;" submenuSize="auto" allOption=""
+								disabled="false" direction="auto" appearance="minimal" disabledClass="P00335_toggleClass" chooseOptionLabel="선택" ref=""
+								textAlign="left">
+								<xf:choices>
+									<xf:item>
+										<xf:label><![CDATA[Label 1]]></xf:label>
+										<xf:value><![CDATA[]]>
+										</xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[Label 2]]></xf:label>
+										<xf:value><![CDATA[]]>
+										</xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[Label 3]]></xf:label>
+										<xf:value><![CDATA[]]>
+										</xf:value>
+									</xf:item>
+									<xf:item>
+										<xf:label><![CDATA[Lable 4]]></xf:label>
+										<xf:value><![CDATA[]]>
+										</xf:value>
+									</xf:item>
+								</xf:choices>
+							</xf:select1>
+							<xf:trigger class="btn_exam_exec" id="btn_toggle" style="" type="button" ev:onclick="scwin.btn_toggle_onclick">
+								<xf:label><![CDATA[toggle Disabled Class]]></xf:label>
+							</xf:trigger>
+						</xf:group>
+					</xf:group>
+				</xf:group>
+			</xf:group>
+		</xf:group>
+
+
+	</body>
+</html>

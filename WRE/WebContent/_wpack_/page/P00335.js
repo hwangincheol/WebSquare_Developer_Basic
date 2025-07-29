@@ -1,0 +1,15 @@
+/*amd /page/P00335.xml 2969 d830fb84d69b3c6f357347d0fe7a1ac0d8b4ccd723661d9f401213956a39767c */
+define({declaration:{A:{version:'1.0',encoding:'UTF-8'}},E:[{T:1,N:'html',A:{xmlns:'http://www.w3.org/1999/xhtml','xmlns:ev':'http://www.w3.org/2001/xml-events','xmlns:w2':'http://www.inswave.com/websquare','xmlns:xf':'http://www.w3.org/2002/xforms'},E:[{T:1,N:'head',A:{},E:[{T:1,N:'w2:historyInfo',E:[{T:1,N:'w2:history',A:{}},{T:1,N:'w2:history',A:{}}]},{T:1,N:'w2:type',E:[{T:3,text:'COMPONENT'}]},{T:1,N:'w2:buildDate'},{T:1,N:'w2:MSA'},{T:1,N:'xf:model',E:[{T:1,N:'w2:dataCollection',A:{baseNode:'map'}},{T:1,N:'w2:workflowCollection'}]},{T:1,N:'w2:layoutInfo'},{T:1,N:'w2:publicInfo',A:{method:''}},{T:1,N:'script',A:{lazy:'false',type:'text/javascript'},E:[{T:4,cdata:function(scopeObj){with(scopeObj){
+scwin.onpageload = function () {
+
+};
+
+
+
+scwin.btn_toggle_onclick = function (e) {
+    var _disabled = sbx_main.getDisabled();
+    
+    sbx_main.setDisabled(!_disabled);
+};
+
+}}}]},{T:1,N:'style',A:{type:'text/css'},E:[{T:4,cdata:'.P00335_toggleClass{border:3px solid red;background-color:#000}.P00335_toggleClass .w2selectbox_label{color:#fff}'}]}]},{T:1,N:'body',A:{'ev:onpageload':'scwin.onpageload'},E:[{T:1,N:'xf:group',A:{class:'sub_contents',id:'',style:'',nextTabID:''},E:[{T:1,N:'xf:group',A:{class:'ws_example_grp_desc',id:'',style:''},E:[{T:1,N:'w2:textbox',A:{escape:'false',id:'',label:'SelectBox의 disabledClass를 적용하는 예제입니다.<br/>disabledClass는 SelectBox가 disabled 됐을 때 적용하는 class를 지정하는 속성입니다.',style:''}}]},{T:1,N:'xf:group',A:{class:'example_div_tb_style_wrap mb_def',id:''},E:[{T:1,N:'xf:group',A:{class:'example_div_tr_style',id:'',style:''},E:[{T:1,N:'xf:group',A:{class:'example_div_th_style',id:'',style:''},E:[{T:1,N:'w2:span',A:{class:'mr_def txt_blue',id:'',label:'Disabled Class 적용하기',style:''}}]},{T:1,N:'xf:group',A:{class:'example_div_td_style',id:'',style:''},E:[{T:1,N:'w2:textbox',A:{class:'ws5_example_txt_normal',escape:'false',id:'',label:'버튼을 클릭하면 SelectBox가 disabled 되며 disabledClass로 입력한 class가 적용됩니다.',style:''}},{T:1,N:'xf:group',A:{id:'',style:'margin-bottom: 5px;'},E:[{T:1,N:'xf:select1',A:{id:'sbx_main',chooseOption:'true',style:'width: 148px;margin-right: 15px;',submenuSize:'auto',allOption:'',disabled:'false',direction:'auto',appearance:'minimal',disabledClass:'P00335_toggleClass',chooseOptionLabel:'선택',ref:'',textAlign:'left'},E:[{T:1,N:'xf:choices',E:[{T:1,N:'xf:item',E:[{T:1,N:'xf:label',E:[{T:4,cdata:'Label 1'}]},{T:1,N:'xf:value'}]},{T:1,N:'xf:item',E:[{T:1,N:'xf:label',E:[{T:4,cdata:'Label 2'}]},{T:1,N:'xf:value'}]},{T:1,N:'xf:item',E:[{T:1,N:'xf:label',E:[{T:4,cdata:'Label 3'}]},{T:1,N:'xf:value'}]},{T:1,N:'xf:item',E:[{T:1,N:'xf:label',E:[{T:4,cdata:'Lable 4'}]},{T:1,N:'xf:value'}]}]}]},{T:1,N:'xf:trigger',A:{class:'btn_exam_exec',id:'btn_toggle',style:'',type:'button','ev:onclick':'scwin.btn_toggle_onclick'},E:[{T:1,N:'xf:label',E:[{T:4,cdata:'toggle Disabled Class'}]}]}]}]}]}]}]}]}]}]})

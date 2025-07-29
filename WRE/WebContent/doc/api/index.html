@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹스퀘어 SP5 API 가이드</title>
+    <link rel="stylesheet" href="cm/css/api.css">
+	<style>
+		.api_container{
+			padding:0px 0px 30px 0px;
+			overflow-y: hidden;
+		}
+	</style>
+	<script>
+
+ 		document.addEventListener('DOMContentLoaded', function() {
+ 		    var depthBtns = document.querySelectorAll('.depth_title button');
+
+ 		    depthBtns.forEach(function(btn) {
+ 		        btn.addEventListener('click', function() {
+ 		            var depthTitle = this.parentNode;
+ 		            var depthUl = depthTitle.nextElementSibling;
+
+ 		            this.classList.toggle('depth_close');
+ 		            depthUl.classList.toggle('on');
+ 		        });
+ 		    });
+ 		});
+		
+		
+		const init = () => {
+	
+			let url = "./html/$p.html";
+			let url1 = getParameter("html");
+			let url2 = getParameter("anchor");
+			let url3 = getParameter("ismobile");
+
+			const mainFrame = document.getElementById('mainFrame');
+
+			if(url1 != "") {
+				url = url1;
+				
+				if(url2 != "") {
+					url = url + "#" + url2;
+				}
+				
+				if(url3 === "true"){
+					document.getElementById('api_side').style.display="none"; 
+				}
+				
+				mainFrame.src = url;
+			}
+
+			const wsLink = document.querySelectorAll('a.ws_link');
+
+			wsLink.forEach(function(button) {
+				button.addEventListener('click', function(e){
+					wsLink.forEach(function(elem) {
+						elem.classList.remove('selected');
+					});
+					this.classList.add('selected');
+					mainFrame.src = this.href;
+					e.preventDefault();
+				});
+			});
+			
+			
+			
+		}
+	
+		
+		const getParameter = (param) => {
+			try {
+				const _idx = location.search.indexOf("?");
+				if( _idx >= 0 ) {
+					const srch = location.search.substring(_idx+1);
+					const arrayOfSrch = srch.split("&");
+					for (var i=0; i < arrayOfSrch.length; i++) {
+						const tmpArray = arrayOfSrch[i].split("=");
+						if (tmpArray.length == 2 && tmpArray[0] == param)	{
+							if( tmpArray[1] == "" && typeof defaultValue != 'undefined') {
+								return "";
+							} else {
+								return tmpArray[1];
+							}
+						}
+					}
+				}
+			} catch( e ) {}
+			return "";
+		}
+	</script>
+</head>
+<body onload="init()">
+    <div class="api_wrap">
+        <div class="api_wrap_inner">
+			<div id="api_side" class="api_side">
+				<!-- <div class="api_side_btn">
+					<div class="api_logo">Inswave</div>
+					<button class="api_btn_list on">목록</button>
+				</div> -->
+				<div class="api_side_list">
+					<ul class="api_depth1">
+						<li>
+							<div class="depth_title">	
+								<button type="button">펼치기</button>
+								<span class="ws_link">파트 I. 유틸리티</span>
+							</div>
+							<ul class="api_depth2 on">
+								<li>
+									<div class="depth_title">	
+										<button type="button">펼치기</button>
+										<a href="html/$p.html" class="ws_link">1. $p</a>
+									</div>
+									<ul class="api_depth3 on">
+										<li><a href="html/$p.data.html" class="ws_link">1.1 .data</a></li>
+										<li><a href="html/$p.local.html" class="ws_link">1.2 .local</a></li>
+										<li><a href="html/$p.top.html" class="ws_link">1.3 .top</a></li>
+									</ul>
+								</li>
+								<li>
+									<div class="depth_title">	
+										<button type="button">펼치기</button>
+										<span class="ws_link">2. WebSquare</span>
+									</div>
+									<ul class="api_depth3 on">
+										<li><a href="html/WebSquare.ModelUtil.html" class="ws_link">2.1 .ModelUtil</a></li>
+										<li><a href="html/WebSquare.bigDecimal.html" class="ws_link">2.2 .bigDecimal</a></li>
+										<li><a href="html/WebSquare.collection.html" class="ws_link">2.3 .collection</a></li>
+										<li><a href="html/WebSquare.cookie.html" class="ws_link">2.4 .cookie</a></li>
+										<li><a href="html/WebSquare.date.html" class="ws_link">2.5 .date</a></li>
+										<li><a href="html/WebSquare.json.html" class="ws_link">2.6 .json</a></li>
+										<li><a href="html/WebSquare.layer.html" class="ws_link">2.7 .layer</a></li>
+										<li><a href="html/WebSquare.localStorage.html" class="ws_link">2.8 .localStorage</a></li>
+										<li><a href="html/WebSquare.logger.html" class="ws_link">2.9 .logger</a></li>
+										<li><a href="html/WebSquare.net.html" class="ws_link">2.10 .net</a></li>
+										<li><a href="html/WebSquare.session.html" class="ws_link">2.11 .session</a></li>
+										<li><a href="html/WebSquare.style.html" class="ws_link">2.12 .style</a></li>
+										<li><a href="html/WebSquare.util.html" class="ws_link">2.13 .util</a></li>
+										<li><a href="html/WebSquare.xml.html" class="ws_link">2.14 .xml</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="api_depth1">
+						<li>
+							<div class="depth_title">	
+								<button type="button">펼치기</button>
+								<span class="ws_link">파트 II. Data Collection</span>
+							</div>
+							<ul class="api_depth2 on">
+								<li><a href="html/WebSquare.uiplugin.dataCollection.html" class="ws_link">3. dataCollection</a></li>
+								<li><a href="html/WebSquare.uiplugin.dataList.html" class="ws_link">4. dataList</a></li>
+								<li><a href="html/WebSquare.uiplugin.dataMap.html" class="ws_link">5. dataMap</a></li>
+								<li><a href="html/WebSquare.uiplugin.linkedDataList.html" class="ws_link">6. linkedDataList</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="api_depth1">
+						<li>
+							<div class="depth_title">	
+								<button type="button">펼치기</button>
+								<span class="ws_link">파트 III.컴포넌트</span>
+							</div>
+							<ul class="api_depth2 on">
+								<li><a href="html/WebSquare.uiplugin.Model.html" class="ws_link">7. Model</a></li>
+								<li><a href="html/WebSquare.uiplugin.Submission.html" class="ws_link">8. Submission</a></li>
+								<li><a href="html/WebSquare.uiplugin.Switch.html" class="ws_link">9. Switch</a></li>
+								<li><a href="html/WebSquare.uiplugin.Workflow.html" class="ws_link">10. Workflow</a></li>
+								<li><a href="html/WebSquare.uiplugin.WorkflowCollection.html" class="ws_link">11. WorkflowCollection</a></li>
+								<li><a href="html/WebSquare.uiplugin.accordion.html" class="ws_link">12. accordion</a></li>
+								<li><a href="html/WebSquare.uiplugin.aliasDataList.html" class="ws_link">13. aliasDataList</a></li>
+								<li><a href="html/WebSquare.uiplugin.aliasDataMap.html" class="ws_link">14. aliasDataMap</a></li>
+								<li><a href="html/WebSquare.uiplugin.aliasLinkedDataList.html" class="ws_link">15. aliasLinkedDataList</a></li>
+								<li><a href="html/WebSquare.uiplugin.anchor.html" class="ws_link">16. anchor</a></li>
+								<li><a href="html/WebSquare.uiplugin.article.html" class="ws_link">17. article</a></li>
+								<li><a href="html/WebSquare.uiplugin.aside.html" class="ws_link">18. aside</a></li>
+								<li><a href="html/WebSquare.uiplugin.audio.html" class="ws_link">19. audio</a></li>
+								<li><a href="html/WebSquare.uiplugin.autoComplete.html" class="ws_link">20. autoComplete</a></li>
+								<li><a href="html/WebSquare.uiplugin.body.html" class="ws_link">21. body</a></li>
+								<li><a href="html/WebSquare.uiplugin.calendar.html" class="ws_link">22. calendar</a></li>
+								<li><a href="html/WebSquare.uiplugin.canvas.html" class="ws_link">23. canvas</a></li>
+								<li><a href="html/WebSquare.uiplugin.checkbox.html" class="ws_link">24. checkbox</a></li>
+								<li><a href="html/WebSquare.uiplugin.checkcombobox.html" class="ws_link">25. checkcombobox</a></li>
+								<li><a href="html/WebSquare.uiplugin.datePicker.html" class="ws_link">26. datePicker</a></li>
+								<li><a href="html/WebSquare.uiplugin.editor.html" class="ws_link">27. editor</a></li>
+								<li><a href="html/WebSquare.uiplugin.fliptoggle.html" class="ws_link">28. fliptoggle</a></li>
+								<li><a href="html/WebSquare.uiplugin.floatingLayer.html" class="ws_link">29. floatingLayer</a></li>
+								<li><a href="html/WebSquare.uiplugin.footer.html" class="ws_link">30. footer</a></li>
+								<li>
+									<div class="depth_title">	
+										<button type="button">펼치기</button>
+										<a href="html/WebSquare.uiplugin.fusionchart.html" class="ws_link">31. fusionchart</a>
+									</div>
+									<ul class="api_depth3 on">
+										<li><a href="html/WebSquare.uiplugin.fwBulletChart.html" class="ws_link">31.1 fwBulletChart</a></li>
+										<li><a href="html/WebSquare.uiplugin.fwFunnelChart.html" class="ws_link">31.2 fwFunnelChart</a></li>
+										<li><a href="html/WebSquare.uiplugin.fwGanttChart.html" class="ws_link">31.3 fwGanttChart</a></li>
+										<li><a href="html/WebSquare.uiplugin.fwGaugeChart.html" class="ws_link">31.4 fwGaugeChart</a></li>
+										<li><a href="html/WebSquare.uiplugin.fwPyramidChart.html" class="ws_link">31.5 fwPyramidChart</a></li>
+										<li><a href="html/WebSquare.uiplugin.fwRealtimeChart.html" class="ws_link">31.6 fwRealtimeChart</a></li>
+										<li><a href="html/WebSquare.uiplugin.fwSparkChart.html" class="ws_link">31.7 fwSparkChart</a></li>
+									</ul>
+								</li>
+								<li><a href="html/WebSquare.uiplugin.generator.html" class="ws_link">32. generator</a></li>
+								<li><a href="html/WebSquare.uiplugin.grid.html" class="ws_link">33. grid</a></li>
+								<li><a href="html/WebSquare.uiplugin.gridLayout.html" class="ws_link">34. gridLayout</a></li>
+								<li>
+									<div class="depth_title">	
+										<button type="button">펼치기</button>
+										<a href="html/WebSquare.uiplugin.gridView.html" class="ws_link">35. gridView</a>
+									</div>
+									<ul class="api_depth3 on">
+										<li><a href="html/WebSquare.uiplugin.gridView.header.html" class="ws_link">35.1 .header</a></li>
+										<li><a href="html/WebSquare.uiplugin.gridView.gBody.html" class="ws_link">35.2 .body</a></li>
+										<li><a href="html/WebSquare.uiplugin.gridView.subTotal.html" class="ws_link">35.3 .subTotal</a></li>
+										<li><a href="html/WebSquare.uiplugin.gridView.footer.html" class="ws_link">35.4 .footer</a></li>
+										<li><a href="html/WebSquare.uiplugin.gridView.column.html" class="ws_link">35.5 .column</a></li>
+									</ul>
+								</li>
+								<li><a href="html/WebSquare.uiplugin.group.html" class="ws_link">36. group</a></li>
+								<li><a href="html/WebSquare.uiplugin.header.html" class="ws_link">37. header</a></li>
+								<li><a href="html/WebSquare.uiplugin.iframe.html" class="ws_link">38. iframe</a></li>
+								<li><a href="html/WebSquare.uiplugin.image.html" class="ws_link">39. image</a></li>
+								<li><a href="html/WebSquare.uiplugin.input.html" class="ws_link">40. input</a></li>
+								<li><a href="html/WebSquare.uiplugin.inputCalendar.html" class="ws_link">41. inputCalendar</a></li>
+								<li><a href="html/WebSquare.uiplugin.mapchart.html" class="ws_link">42. mapchart</a></li>
+								<li><a href="html/WebSquare.uiplugin.multiselect.html" class="ws_link">43. multiselect</a></li>
+								<li><a href="html/WebSquare.uiplugin.multiupload.html" class="ws_link">44. multiupload</a></li>
+								<li><a href="html/WebSquare.uiplugin.nav.html" class="ws_link">45. nav</a></li>
+								<li><a href="html/WebSquare.uiplugin.output.html" class="ws_link">46. output</a></li>
+								<li><a href="html/WebSquare.uiplugin.pageControl.html" class="ws_link">47. pageControl</a></li>
+								<li><a href="html/WebSquare.uiplugin.pageInherit.html" class="ws_link">48. pageInherit</a></li>
+								<li><a href="html/WebSquare.uiplugin.pageList.html" class="ws_link">49. pageList</a></li>
+								<li><a href="html/WebSquare.uiplugin.panelContainer.html" class="ws_link">50. panelContainer</a></li>
+								<li><a href="html/WebSquare.uiplugin.pivot.html" class="ws_link">51. pivot</a></li>
+								<li><a href="html/WebSquare.uiplugin.pivotTable.html" class="ws_link">52. pivotTable</a></li>
+								<li><a href="html/WebSquare.uiplugin.progressbar.html" class="ws_link">53. progressbar</a></li>
+								<li><a href="html/WebSquare.uiplugin.radio.html" class="ws_link">54. radio</a></li>
+								<li><a href="html/WebSquare.uiplugin.repeat.html" class="ws_link">55. repeat</a></li>
+								<li><a href="html/WebSquare.uiplugin.roundRectangle.html" class="ws_link">56. roundRectangle</a></li>
+								<li><a href="html/WebSquare.uiplugin.scheduleCalendar.html" class="ws_link">57. scheduleCalendar</a></li>
+								<li><a href="html/WebSquare.uiplugin.scrollView.html" class="ws_link">58. scrollView</a></li>
+								<li><a href="html/WebSquare.uiplugin.searchbox.html" class="ws_link">59. searchbox</a></li>
+								<li><a href="html/WebSquare.uiplugin.secret.html" class="ws_link">60. secret</a></li>
+								<li><a href="html/WebSquare.uiplugin.section.html" class="ws_link">61. section</a></li>
+								<li><a href="html/WebSquare.uiplugin.selectbox.html" class="ws_link">62. selectbox</a></li>
+								<li><a href="html/WebSquare.uiplugin.slideHide.html" class="ws_link">63. slideHide</a></li>
+								<li><a href="html/WebSquare.uiplugin.slider.html" class="ws_link">64. slider</a></li>
+								<li><a href="html/WebSquare.uiplugin.span.html" class="ws_link">65. span</a></li>
+								<li><a href="html/WebSquare.uiplugin.spinner.html" class="ws_link">66. spinner</a></li>
+								<li><a href="html/WebSquare.uiplugin.tabControl.html" class="ws_link">67. tabControl</a></li>
+								<li>
+									<div class="depth_title">	
+										<button type="button">펼치기</button>
+										<a href="html/WebSquare.uiplugin.tableLayout.html" class="ws_link">68. tableLayout</a>
+									</div>
+									<ul class="api_depth3 on">
+										<li><a href="html/WebSquare.uiplugin.tableLayout.td.html" class="ws_link">68.1 .td</a></li>
+										<li><a href="html/WebSquare.uiplugin.tableLayout.th.html" class="ws_link">68.2 .th</a></li>
+										<li><a href="html/WebSquare.uiplugin.tableLayout.tr.html" class="ws_link">68.3 .tr</a></li>
+									</ul>
+								</li>
+								<li><a href="html/WebSquare.uiplugin.tag.html" class="ws_link">69. tag</a></li>
+								<li><a href="html/WebSquare.uiplugin.textarea.html" class="ws_link">70. textarea</a></li>
+								<li><a href="html/WebSquare.uiplugin.textbox.html" class="ws_link">71. textbox</a></li>
+								<li><a href="html/WebSquare.uiplugin.treeview.html" class="ws_link">72. treeview</a></li>
+								<li><a href="html/WebSquare.uiplugin.trigger.html" class="ws_link">73. trigger</a></li>
+								<li><a href="html/WebSquare.uiplugin.upload.html" class="ws_link">74. upload</a></li>
+								<li><a href="html/WebSquare.uiplugin.video.html" class="ws_link">75. video</a></li>
+								<li><a href="html/WebSquare.uiplugin.wframe.html" class="ws_link">76. wframe</a></li>
+								<li><a href="html/WebSquare.uiplugin.widgetContainer.html" class="ws_link">77. widgetContainer</a></li>
+								<li><a href="html/WebSquare.uiplugin.windowContainer.html" class="ws_link">78. windowContainer</a></li>
+								<li><a href="html/WebSquare.uiplugin.xhtml.html" class="ws_link">79. xhtml</a></li>
+								<li><a href="html/WebSquare.uiplugin.xsl.html" class="ws_link">80. xsl</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<iframe id="mainFrame" src="./html/$p.html" style="width:100%;height:100%;border:0"></iframe>
+        </div>
+    </div>
+</body>
+</html>

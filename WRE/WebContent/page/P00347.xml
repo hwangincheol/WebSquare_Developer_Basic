@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:w2="http://www.inswave.com/websquare"
+	xmlns:xf="http://www.w3.org/2002/xforms">
+	<head meta_screenName="[GridView] 헤더의 ID 또는 Index로 헤더의 Value 반환받기">
+		<w2:historyInfo>
+			<w2:history meta_no="01" meta_desc="최초작성" meta_date="20230828" meta_user="InswaveSystems"></w2:history>
+		</w2:historyInfo>
+		<w2:type>COMPONENT</w2:type>
+		<w2:buildDate />
+		<w2:MSA />
+		<xf:model>
+			<w2:dataCollection baseNode="map">
+				<w2:dataList baseNode="list" id="dlt_books" repeatNode="map" style="" valueAttribute="">
+					<w2:columnInfo>
+						<w2:column dataType="text" id="categoryLabel" name="분류"></w2:column>
+						<w2:column dataType="text" id="label" name="도서명"></w2:column>
+					</w2:columnInfo>
+					<w2:data use="true">
+						<w2:row>
+							<categoryLabel><![CDATA[인문]]></categoryLabel>
+							<label><![CDATA[내가 틀릴 수도 있습니다]]></label>
+						</w2:row>
+						<w2:row>
+							<categoryLabel><![CDATA[소설]]></categoryLabel>
+							<label><![CDATA[저만치 혼자서]]></label>
+						</w2:row>
+					</w2:data>
+				</w2:dataList>
+			</w2:dataCollection>
+			<w2:workflowCollection />
+		</xf:model>
+		<w2:layoutInfo />
+		<w2:publicInfo method="" />
+		<script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function () {
+
+};
+
+/**
+ * 로그 출력용 Textrea의 Value 삭제하기
+ */
+scwin.btn_clearLog_onclick = function (e) {
+    let strTargetId = this.getUserData("userData1");
+    let cmpTarget;
+    if (strTargetId) {
+        cmpTarget = $p.getComponentById(strTargetId) || txa_log;
+    } else {
+        cmpTarget = txa_log;
+    }
+    //textarea value를 빈문자열로 할당.
+    cmpTarget.setValue("");
+};
+
+/**
+ * 버튼 [첫 번째 컬럼의 ID로 헤더 값 반환받기] 클릭 시
+ */
+scwin.btn_exam1_1_onclick = function (e) {
+    // GridView 'grd_exam1'의 헤더 ID가 'h_categoryLabel'인 헤더 컬럼의 Value를 반환받습니다. 
+    let result = grd_exam1.getHeaderValue("h_categoryLabel");
+
+    // 반환 값 예시) '분류'
+
+    // 로그 출력
+    let strLog = '# 스크립트 실행\ngrd_exam1.getHeaderValue("h_categoryLabel");\n';
+    $c.frame.printExampleLog(strLog + '반환 값)' + result, txa_log_1, false);
+    console.log(strLog);
+    console.log(result);
+};
+
+/**
+ * 버튼 [두 번째 컬럼의 Index로 헤더 값 반환받기] 클릭 시
+ */
+scwin.btn_exam2_1_onclick = function (e) {
+    // GridView 'grd_exam1'의 헤더 Index가 1인 헤더 컬럼의 Value를 반환받습니다. 
+    let result = grd_exam1.getHeaderValue(grd_exam1.getHeaderID(1));
+
+    // 반환 값 예시) '도서명'
+
+    // 로그 출력
+    let strLog = '# 스크립트 실행\ngrd_exam1.getHeaderValue(grd_exam1.getHeaderID(1));\n';
+    $c.frame.printExampleLog(strLog + '반환 값)' + result, txa_log_1, false);
+    console.log(strLog);
+    console.log(result);
+};
+]]></script>
+	</head>
+	<body ev:onpageload="scwin.onpageload">
+		<xf:group class="sub_contents" id="" style="">
+			<xf:group class="ws_example_grp_desc" id="" style="">
+				<w2:textbox escape="false" id=""
+					label="GridView의 헤더 값을 반환받는 함수 'getHeaderValue' 예시입니다.&lt;br/&gt;함수 'getHeaderValue'는 헤더의 ID를 인자로 받아 Value를 반환합니다.&lt;br/&gt;헤더의 Index로 헤더 값을 반환받고자 할 때는 함수 'getHeaderID'와 함께 사용하여 구현할 수 있습니다."
+					style="">
+				</w2:textbox>
+				<w2:textbox class="ws_example_txt_desc_info" escape="false" label="버튼을 클릭하면 '로그 확인' 영역과 브라우저 개발자도구의 콘솔에 로그가 출력됩니다." style="">
+				</w2:textbox>
+			</xf:group>
+			<xf:group class="example_div_tb_style_wrap" id="">
+				<xf:group class="example_div_tr_style" id="" style="">
+					<xf:group class="example_div_td_style" id="" style="">
+						<xf:group class="mb_def_box nobottom" id="" style="">
+							<xf:trigger class="btn_exam_exec btn_txt_of" escape="false" ev:onclick="scwin.btn_exam1_1_onclick" id="btn_exam1_1"
+								style="" type="button">
+								<xf:label><![CDATA[첫 번째 컬럼의 ID로 헤더 값 반환받기]]></xf:label>
+							</xf:trigger>
+						</xf:group>
+						<xf:group class="mb_def_box nobottom" id="" style="">
+							<xf:trigger class="btn_exam_exec btn_txt_of" escape="false" id="btn_exam2_1" style="" type="button"
+								ev:onclick="scwin.btn_exam2_1_onclick">
+								<xf:label><![CDATA[두 번째 컬럼의 Index로 헤더 값 반환받기]]></xf:label>
+							</xf:trigger>
+						</xf:group>
+						<w2:gridView autoFit="lastColumn" autoFitMinWidth="170" class="gvw" dataList="data:dlt_books" defaultCellHeight="26"
+							initFixedHeightByRowNum="2" readOnly="true" style="height:60px;" tooltipDisplay="true" visibleRowNum="2" id="grd_exam1">
+							<w2:caption id="caption1" style="" value="this is a grid caption."></w2:caption>
+							<w2:header id="header1" style="">
+								<w2:row id="row1" style="">
+									<w2:column displayMode="label" id="h_categoryLabel" inputType="text" value="분류" width="70"></w2:column>
+									<w2:column displayMode="label" id="h_label" inputType="text" value="도서명" width="100"></w2:column>
+								</w2:row>
+							</w2:header>
+							<w2:gBody id="gBody1" style="">
+								<w2:row id="row2" style="">
+									<w2:column displayMode="label" id="categoryLabel" inputType="text" width="70"></w2:column>
+									<w2:column displayMode="label" id="label" inputType="text" textAlign="left" width="100"></w2:column>
+								</w2:row>
+							</w2:gBody>
+						</w2:gridView>
+						<xf:group class="mb_def_box nobottom" style="">
+							<w2:span class="mr_def txt_bold" label="로그 확인"></w2:span>
+							<xf:trigger class="com_example_btn_log_clear" ev:onclick="scwin.btn_clearLog_onclick" title="로그 삭제" type="button"
+								userData1="txa_log_1">
+								<xf:label><![CDATA[로그 삭제]]></xf:label>
+							</xf:trigger>
+						</xf:group>
+						<xf:textarea class="com_example_txa_log" id="txa_log_1" spellcheck="false" style="width: 100%;height: 110px;"></xf:textarea>
+					</xf:group>
+				</xf:group>
+			</xf:group>
+		</xf:group>
+	</body>
+</html>
